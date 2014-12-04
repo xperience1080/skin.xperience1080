@@ -24,7 +24,7 @@
             <onfocus condition="!stringcompare(Skin.String(HomeWidget.3.Type),service.skin.widgets) + !stringcompare(Skin.String(HomeWidget.3.Type),script.randomandlastitems) + System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=$INFO[Skin.String(HomeWidget.3.Type)],prefix=HomeWidget3)</onfocus>
             <onfocus condition="!stringcompare(Skin.String(HomeWidget.4.Type),service.skin.widgets) + !stringcompare(Skin.String(HomeWidget.4.Type),script.randomandlastitems) + System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=$INFO[Skin.String(HomeWidget.4.Type)],prefix=HomeWidget4)</onfocus>
             <onfocus condition="!stringcompare(Skin.String(HomeWidget.5.Type),service.skin.widgets) + !stringcompare(Skin.String(HomeWidget.5.Type),script.randomandlastitems) + System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=$INFO[Skin.String(HomeWidget.5.Type)],prefix=HomeWidget5)</onfocus>
-            <onfocus condition="IsEmpty(Window(startup).Property(Started)) + IsEmpty(Window(startup).Property(Skin.Initialization))">ReplaceWindow(Home)</onfocus>
+            <onfocus condition="IsEmpty(Window(startup).Property(Started)) + IsEmpty(Window(startup).Property(Skin.Initialization))">ReplaceWindow($INFO[System.StartupWindow])</onfocus>
             <onfocus condition="!IsEmpty(Window(startup).Property(Skin.Initialization))">SetFocus(11)</onfocus>
         </control>
         <control type="button" id="11">
