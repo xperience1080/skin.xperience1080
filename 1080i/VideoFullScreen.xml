@@ -9,7 +9,7 @@
                 <posx>-100</posx>
                 <posy>-30</posy>
                 <width>2120</width>
-                <height>358</height>
+                <height>380</height>
                 <texture border="43,42,43,42">osd/fullscreen/back-codec.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -38,7 +38,7 @@
                 <posx>130</posx>
                 <posy>198</posy>
                 <width>1660</width>
-                <height>98</height>
+                <height>118</height>
                 <textcolor>bbwhite</textcolor>
                 <font>Font-Condensed-S34</font>
                 <label>-</label>
@@ -47,7 +47,7 @@
         <!-- Live TV signal info -->
         <control type="group">
     		<visible>Player.ShowCodec + VideoPlayer.Content(LiveTV) + system.getbool(pvrplayback.signalquality)</visible>
-    		<posy>312</posy>
+    		<posy>320</posy>
     		<control type="image">
     		    <description>media info background image</description>
     		    <posx>-100</posx>

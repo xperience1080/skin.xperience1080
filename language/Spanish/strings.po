@@ -100,6 +100,10 @@ msgctxt "#41140"
 msgid "Manage custom home widgets"
 msgstr "Administrar widgets personalizados del menú principal"
 
+msgctxt "#41140"
+msgid "Manage custom home widgets"
+msgstr "Administrar widgets personalizados del menú principal"
+
 msgctxt "#41141"
 msgid "Type"
 msgstr "Tipo"
@@ -227,6 +231,50 @@ msgstr "Tendencias en series"
 msgctxt "#41175"
 msgid "Home tile"
 msgstr "Cuadrícula Inicio"
+
+msgctxt "#41164"
+msgid "Random items"
+msgstr "items al azar"
+
+msgctxt "#41165"
+msgid "Only unwatched items"
+msgstr "Solo items no vistos"
+
+msgctxt "#41166"
+msgid "Only partially watched items"
+msgstr "Solo items vistos parcialmente"
+
+msgctxt "#41167"
+msgid "Manage custom home widgets"
+msgstr "Administrar widgets personalizados del menú principal"
+
+msgctxt "#41168"
+msgid "Manage custom home widget"
+msgstr "Administrar widgets personalizados del menú principal"
+
+msgctxt "#41169"
+msgid "Upcoming movies"
+msgstr "Próximos estrenos"
+
+msgctxt "#41170"
+msgid "In theaters now"
+msgstr "Ahora en cines"
+
+msgctxt "#41171"
+msgid "Popular movies"
+msgstr "Películas populares"
+
+msgctxt "#41172"
+msgid "Top rated movies"
+msgstr "Películas más valoradas"
+
+msgctxt "#41173"
+msgid "Trending movies"
+msgstr "Tendencias en películas"
+
+msgctxt "#41174"
+msgid "Trending shows"
+msgstr "Tendencias en series"
 
 msgctxt "#41190"
 msgid "Views"
@@ -763,6 +811,10 @@ msgstr "Actualización de repositorios activada..."
 msgctxt "#42136"
 msgid "Updating local add-on directories..."
 msgstr "Actualizando add-on locales..."
+
+msgctxt "#42160"
+msgid "TV guide"
+msgstr "Guía TV"
 
 msgctxt "#42160"
 msgid "TV guide"

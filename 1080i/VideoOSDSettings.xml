@@ -18,17 +18,31 @@
                 <texture>osd/fullscreen/osdsettings-separators.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="label" id="2">
+            <control type="label">
                 <description>Settings</description>
                 <posx>510</posx>
                 <posy>245</posy>
                 <width>900</width>
                 <height>34</height>
                 <align>center</align>
-                <label>-</label>
+                <label>$LOCALIZE[3] - $LOCALIZE[5]</label>
                 <font>Font-Condensed-S34-B</font>
                 <textcolor>bbwhite</textcolor>
                 <shadowcolor>66000000</shadowcolor>
+                <visible>Window.IsVisible(123)</visible>
+            </control>
+            <control type="label">
+                <description>Settings</description>
+                <posx>510</posx>
+                <posy>245</posy>
+                <width>900</width>
+                <height>34</height>
+                <align>center</align>
+                <label>$LOCALIZE[292] - $LOCALIZE[5]</label>
+                <font>Font-Condensed-S34-B</font>
+                <textcolor>bbwhite</textcolor>
+                <shadowcolor>66000000</shadowcolor>
+                <visible>Window.IsVisible(124)</visible>
             </control>
             <control type="group">
                 <control type="grouplist" id="5">
@@ -101,7 +115,7 @@
                     <font>Font-Condensed-S30-B</font>
                     <textoffsetx>35</textoffsetx>
                 </control>
-                <control type="sliderex" id="10">
+                <control type="sliderex" id="13">
                     <description>Slider</description>
                     <height>77</height>
                     <align>left</align>
@@ -115,9 +129,9 @@
                     <textoffsetx>35</textoffsetx>
                     <sliderwidth>300</sliderwidth>
                     <sliderheight>35</sliderheight>
-                    <texturesliderbar border="22,1,22,1">buttons/OSD/slider_back.png</texturesliderbar>
-                    <textureslidernib>buttons/OSD/orb_nofo.png</textureslidernib>
-                    <textureslidernibfocus>buttons/OSD/orb_fo.png</textureslidernibfocus>
+                    <texturesliderbar border="22,1,22,1">buttons/osd/slider_back.png</texturesliderbar>
+                    <textureslidernib>buttons/osd/orb_nofo.png</textureslidernib>
+                    <textureslidernibfocus>buttons/osd/orb_fo.png</textureslidernibfocus>
                 </control>
             </control>
         </control>

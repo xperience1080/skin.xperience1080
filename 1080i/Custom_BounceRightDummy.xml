@@ -5,4 +5,4 @@
     <visible>!IsEmpty(Window(Home).Property(BounceRight))</visible>
     <animation effect="fade" start="100" end="0" time="325">WindowClose</animation>
     <controls></controls>
-</window>
+</window> 

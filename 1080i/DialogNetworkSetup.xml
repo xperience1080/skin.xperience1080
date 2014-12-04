@@ -110,7 +110,7 @@
                         <onright>10</onright>
                     </control>
                     <control type="group" id="9003">
-                        <control type="button" id="11">
+                        <control type="edit" id="11">
                             <description>Server Address</description>
                             <posx>0</posx>
                             <posy>74</posy>
@@ -152,7 +152,7 @@
                             <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(12)" reversible="false">Conditional</animation>
                         </control>
                     </control>
-                    <control type="button" id="16">
+                    <control type="edit" id="16">
                         <description>Remote</description>
                         <posx>0</posx>
                         <posy>148</posy>
@@ -171,7 +171,7 @@
                         <onright>16</onright>
                         <ondown>13</ondown>
                     </control>
-                    <control type="button" id="13">
+                    <control type="edit" id="13">
                         <description>Port</description>
                         <posx>0</posx>
                         <posy>208</posy>
@@ -191,7 +191,7 @@
                         <onright>13</onright>
                         <ondown>14</ondown>
                     </control>
-                    <control type="button" id="14">
+                    <control type="edit" id="14">
                         <description>Username</description>
                         <posx>0</posx>
                         <posy>268</posy>
@@ -211,7 +211,7 @@
                         <onright>14</onright>
                         <ondown>15</ondown>
                     </control>
-                    <control type="button" id="15">
+                    <control type="edit" id="15">
                         <description>password</description>
                         <posx>0</posx>
                         <posy>328</posy>
@@ -290,7 +290,7 @@
                         <animation effect="slide" end="0,180" time="0" condition="Control.HasFocus(15)">Conditional</animation>
                     </control>
                 </control>
-
+            
                 <control type="group" id="9002">
                     <posx>466</posx>
                     <posy>730</posy>

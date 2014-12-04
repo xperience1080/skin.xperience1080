@@ -140,6 +140,10 @@ msgctxt "#42231"
 msgid "Banner"
 msgstr "Banner"
 
+msgctxt "#42233"
+msgid "Cover"
+msgstr "Cover"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Áp phích"

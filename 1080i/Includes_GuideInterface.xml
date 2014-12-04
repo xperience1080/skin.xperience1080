@@ -478,14 +478,14 @@
             <control type="group">
                 <visible>!ControlGroup(9120).HasFocus(91203) + !ControlGroup(9120).HasFocus(91204)</visible>
                 <control type="image">
-                    <posx>590</posx>
+                    <posx>655</posx>
                     <posy>-20</posy>
                     <width>105</width>
                     <height>105</height>
                     <texture>views/thumb/other/star_nofo.png</texture>
                 </control>
                 <control type="label">
-                    <posx>658</posx>
+                    <posx>680</posx>
                     <posy>1</posy>
                     <width>55</width>
                     <height>66</height>
@@ -497,7 +497,7 @@
                 </control>
             </control>
             <control type="label">
-                <posx>638</posx>
+                <posx>720</posx>
                 <posy>1</posy>
                 <width>75</width>
                 <height>66</height>
@@ -565,14 +565,14 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="image">
-                    <posx>590</posx>
+                    <posx>655</posx>
                     <posy>37</posy>
                     <width>105</width>
                     <height>105</height>
                     <texture>views/thumb/other/star_fo.png</texture>
                 </control>
                 <control type="label">
-                    <posx>658</posx>
+                    <posx>680</posx>
                     <posy>76</posy>
                     <width>55</width>
                     <height>30</height>
@@ -617,14 +617,14 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="image">
-                    <posx>590</posx>
+                    <posx>655</posx>
                     <posy>37</posy>
                     <width>105</width>
                     <height>105</height>
                     <texture>views/thumb/other/star_fo.png</texture>
                 </control>
                 <control type="label">
-                    <posx>658</posx>
+                    <posx>680</posx>
                     <posy>76</posy>
                     <width>55</width>
                     <height>30</height>
@@ -669,7 +669,7 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
-                    <posx>614</posx>
+                    <posx>717</posx>
                     <posy>76</posy>
                     <width>100</width>
                     <height>30</height>
@@ -923,14 +923,14 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
-                    <posx>22</posx>
+                    <posx>717</posx>
                     <posy>0</posy>
                     <width>691</width>
                     <height>66</height>
                     <label>$INFO[ListItem.Label2]</label>
                     <textcolor>77white</textcolor>
                     <shadowcolor>22000000</shadowcolor>
-                    <font>Font-Condensed-S38</font>
+                    <font>Font-Condensed-S34-B</font>
                     <align>right</align>
                     <scroll>false</scroll>
                 </control>

@@ -26,7 +26,7 @@ msgstr "Włącz tryb kiosk"
 
 msgctxt "#41102"
 msgid "Show now playing video in background"
-msgstr "Używaj odtwarzane wideo w roli tła"
+msgstr "Pokaż teraz odtwarzane wideo w tle"
 
 msgctxt "#41103"
 msgid "Display artist slideshow in music visualisation"
@@ -38,19 +38,11 @@ msgstr "Animowany pokaz slajdów artystów "
 
 msgctxt "#41106"
 msgid "Show fanart above visualisation"
-msgstr "Pokaż tapetę powyżej wizualizacji"
+msgstr "Pokaż fan art powyżej wizualizacji"
 
 msgctxt "#41107"
 msgid "Enable CDArt"
-msgstr "Tylko podgląd "
-
-msgctxt "#41108"
-msgid "Automatically switch to music visualisation upon play"
-msgstr "Automatyczne przełączanie na wizualizację muzyczną przy odtwarzaniu"
-
-msgctxt "#41109"
-msgid "Enable auto scrolling for text boxes"
-msgstr "Włącz przewijanie tesktów"
+msgstr "Tylko podgląd CDArt"
 
 msgctxt "#41112"
 msgid "Invert spin control"
@@ -74,11 +66,11 @@ msgstr "Zarządzaj kategoriami"
 
 msgctxt "#41134"
 msgid "Show profile image"
-msgstr "Pokaż zdjęcia profili"
+msgstr "Pokaż zdjęcia profili "
 
 msgctxt "#41135"
 msgid "Show submenu arrow"
-msgstr "Pokaż podmenu"
+msgstr "Pokaż miniatury epizodów zamiast fanart'ów dla ostatnio dodanych odcinków"
 
 msgctxt "#41136"
 msgid "Manage custom home items"
@@ -98,7 +90,7 @@ msgstr "Ikona"
 
 msgctxt "#41140"
 msgid "Manage custom home widgets"
-msgstr "Zarządzaj zdefiniowanymi widżetami"
+msgstr "Zarządzaj bieżącym panelem"
 
 msgctxt "#41141"
 msgid "Type"
@@ -110,35 +102,35 @@ msgstr "Ścieżka"
 
 msgctxt "#41143"
 msgid "Recommended size 633x437px"
-msgstr "Zalecany rozmiar 633x437"
+msgstr "Zalecany rozmiar 633x437px"
 
 msgctxt "#41145"
 msgid "Video add-on"
-msgstr "Wtyczki Wideo"
+msgstr "Dodatki Wideo"
 
 msgctxt "#41146"
 msgid "Music add-on"
-msgstr "Wtyczki Audio"
+msgstr "Dodatki Audio"
 
 msgctxt "#41147"
 msgid "Picture add-on"
-msgstr "Wtyczki Obrazów"
+msgstr "Dodatki Obrazów"
 
 msgctxt "#41148"
 msgid "Program add-on"
-msgstr "Wtyczki Programów"
+msgstr "Dodatki Aplikacji"
 
 msgctxt "#41149"
 msgid "Video Playlist"
-msgstr "Lista odtwarzania wideo"
+msgstr "Playlista Wideo"
 
 msgctxt "#41150"
 msgid "Music Playlist"
-msgstr "Lista odtwarzania muzyki"
+msgstr "Playlista Audio"
 
 msgctxt "#41151"
 msgid "Custom"
-msgstr "Własny"
+msgstr "Własny "
 
 msgctxt "#41152"
 msgid "Music panel opens"
@@ -150,7 +142,7 @@ msgstr "Ulubione"
 
 msgctxt "#41154"
 msgid "Recommended size 283x283px"
-msgstr "Zalecany rozmiar 283x283"
+msgstr "Zalecany rozmiar 283x283px"
 
 msgctxt "#41156"
 msgid "Show name"
@@ -162,7 +154,7 @@ msgstr "Kafel wideo"
 
 msgctxt "#41158"
 msgid "TV Show tile"
-msgstr "Kafel seriali"
+msgstr "Kafel serialu"
 
 msgctxt "#41159"
 msgid "App tile"
@@ -178,27 +170,27 @@ msgstr "Kafel muzyki"
 
 msgctxt "#41162"
 msgid "Widget"
-msgstr "Widżet"
+msgstr "Widget"
 
 msgctxt "#41164"
 msgid "Random items"
-msgstr "Pozycje losowe"
+msgstr "Losowe elementy"
 
 msgctxt "#41165"
 msgid "Only unwatched items"
-msgstr "Tylko nieoglądane"
+msgstr "Tylko nieoglądnięte"
 
 msgctxt "#41166"
 msgid "Only partially watched items"
-msgstr "Tylko częściowo oglądane"
+msgstr "Tylko częściowo oglądnięte"
 
 msgctxt "#41167"
 msgid "Manage custom home widgets"
-msgstr "Zarządzaj zdefiniowanymi widżetami"
+msgstr "Zarządzaj bieżącym panelem"
 
 msgctxt "#41168"
 msgid "Manage custom home widget"
-msgstr "Zarządzaj zdefiniowanym widżetem"
+msgstr "Zarządzaj bieżącym panelem"
 
 msgctxt "#41169"
 msgid "Upcoming movies"
@@ -218,11 +210,11 @@ msgstr "Najwyżej oceniane filmy"
 
 msgctxt "#41173"
 msgid "Trending movies"
-msgstr "Filmy na czasie"
+msgstr "Trendy wideo"
 
 msgctxt "#41174"
 msgid "Trending shows"
-msgstr "Programy telewizyjne na czasie"
+msgstr "Trendy programy"
 
 msgctxt "#41175"
 msgid "Home tile"
@@ -234,7 +226,7 @@ msgstr "Odsłony"
 
 msgctxt "#41191"
 msgid "Show fanart"
-msgstr "Pokazuj tapetę"
+msgstr "Pokaż fan art "
 
 msgctxt "#41192"
 msgid "Motion picture rating country"
@@ -246,11 +238,11 @@ msgstr "Wybierz grafikę ograniczeń wiekowych "
 
 msgctxt "#41200"
 msgid "Show power button (setting does not affect home screen)"
-msgstr "Przycisk wyłączania (widoczny tylko na głównym panelu)"
+msgstr "Ukryj przycisk wyłączenia (widoczne tylko na głównym panelu)"
 
 msgctxt "#41201"
 msgid "Show options button"
-msgstr "Pokazuj przycisk opcji"
+msgstr "Ukryj przyciski opcji"
 
 msgctxt "#41202"
 msgid "Play trailer on opening movie information"
@@ -262,11 +254,11 @@ msgstr "Odtwarzaj zwiastun zminimalizowany"
 
 msgctxt "#41220"
 msgid "Live TV"
-msgstr "Telewizja"
+msgstr "Telewizja "
 
 msgctxt "#41221"
 msgid "Use genre colors in the epg"
-msgstr "Kolory rodzajowe w Przewodniku TV"
+msgstr "Kolory rodzajowe w EPG"
 
 msgctxt "#41240"
 msgid "Enable music visualisation"
@@ -274,7 +266,7 @@ msgstr "Włącz wizualizację muzyczną"
 
 msgctxt "#41242"
 msgid "Set default focus to subtitle button (video osd)"
-msgstr "Rozpocznij od przycisku napisów (menu ekranowe wideo)"
+msgstr "Rozpocznij od przycisku napisów (video osd)"
 
 msgctxt "#41250"
 msgid "Backgrounds"
@@ -282,11 +274,11 @@ msgstr "Tła"
 
 msgctxt "#41251"
 msgid "Global"
-msgstr "Globalne"
+msgstr "Globalne "
 
 msgctxt "#41252"
 msgid "Single image"
-msgstr "Pojedynczy obraz"
+msgstr "Pojedyńczy obraz"
 
 msgctxt "#41253"
 msgid "Multi image"
@@ -326,15 +318,15 @@ msgstr "Dodatki"
 
 msgctxt "#41281"
 msgid "Subtitle add-on"
-msgstr "Dodatek Napisy"
+msgstr "Dodatek napisów"
 
 msgctxt "#41282"
 msgid "Songtext add-on"
-msgstr "Dodatek Tekst utworu"
+msgstr "Dodatek tekstu piosenek"
 
 msgctxt "#41283"
 msgid "Enable TVTunes add-on"
-msgstr "Aktywuj dodatek TVTunes"
+msgstr "Włącz dodatek TVTunes"
 
 msgctxt "#41284"
 msgid "Download theme songs"
@@ -342,19 +334,19 @@ msgstr "Pobierz utwór motywu"
 
 msgctxt "#41285"
 msgid "Enable TV Show Next Aired"
-msgstr "Pokazuj daty emisji następnych odcinków"
+msgstr "Włącz TV Show Next Aired"
 
 msgctxt "#41290"
 msgid "Configure TV Show Next Aired"
-msgstr "Konfiguruj dodatek TV Show Next Aired"
+msgstr "Konfiguracja TV Show Next Aired"
 
 msgctxt "#41293"
 msgid "Update next aired data on startup"
-msgstr "Aktualizuj daty emisji odcinków na starcie"
+msgstr "Aktualizuj na starcie"
 
 msgctxt "#41294"
 msgid "Update art (landscape, logo, clearart) after database update"
-msgstr "Aktualizuj grafiki (panorama, logo, przezrocze) po aktualizacji bazy"
+msgstr "Aktualizacja grafiki (tło, loga, okładki) po aktualizacji bazy danych"
 
 msgctxt "#41303"
 msgid "Tracks"
@@ -370,7 +362,7 @@ msgstr "Pobierz okładkę"
 
 msgctxt "#41306"
 msgid "Get fanart"
-msgstr "Pobierz tapetę"
+msgstr "Pobierz fan art"
 
 msgctxt "#41307"
 msgid "Refresh"
@@ -410,7 +402,7 @@ msgstr "Podgląd"
 
 msgctxt "#41326"
 msgid "Get info"
-msgstr "Pobierz informacje"
+msgstr "Pobierz info"
 
 msgctxt "#41327"
 msgid "Year of release"
@@ -458,7 +450,7 @@ msgstr "Koniec o:"
 
 msgctxt "#41405"
 msgid "Login"
-msgstr "Wymagany identyfikator"
+msgstr "Login"
 
 msgctxt "#41440"
 msgid "System Info"
@@ -502,7 +494,7 @@ msgstr "Nowe seriale"
 
 msgctxt "#41452"
 msgid "No media playing"
-msgstr "Brak pliku do odtwarzania"
+msgstr "Brak pliku do odtwarzania "
 
 msgctxt "#41453"
 msgid "User"
@@ -514,7 +506,7 @@ msgstr "Adres IP"
 
 msgctxt "#41455"
 msgid "Free memory"
-msgstr "Wolnej pamięci"
+msgstr "Wolna pamięć"
 
 msgctxt "#41456"
 msgid "Resolution"
@@ -522,7 +514,7 @@ msgstr "Rozdzielczość"
 
 msgctxt "#41457"
 msgid "System uptime"
-msgstr "Czas pracy sytemu"
+msgstr "Uruchomiony"
 
 msgctxt "#41458"
 msgid "Skin version"
@@ -546,7 +538,7 @@ msgstr "Naciśnij \"do góry\", aby wysunąć"
 
 msgctxt "#41507"
 msgid "Power"
-msgstr "Koniec"
+msgstr "Wyłącz"
 
 msgctxt "#41524"
 msgid "Home"
@@ -558,7 +550,7 @@ msgstr "wyszukaj w bibliotece XBMC"
 
 msgctxt "#41550"
 msgid "Spotlight"
-msgstr "Polecane"
+msgstr "Spotlight"
 
 msgctxt "#41551"
 msgid "Ongoing tv shows"
@@ -606,15 +598,15 @@ msgstr "Uruchamianie skóry"
 
 msgctxt "#41620"
 msgid "View options"
-msgstr "Opcje widoku"
+msgstr "Podgląd opcji"
 
 msgctxt "#41621"
 msgid "Set games path"
-msgstr "Ustaw ścieżkę do folderu gier"
+msgstr "Ustaw ścieżkę gry "
 
 msgctxt "#41622"
 msgid "Reset games path"
-msgstr "Wyczyść ścieżkę do folderu gier"
+msgstr "Usuń ścieżkę gry "
 
 msgctxt "#41689"
 msgid "Location"
@@ -622,15 +614,15 @@ msgstr "Lokalizacja"
 
 msgctxt "#41690"
 msgid "Hide fanart"
-msgstr "Ukrywaj tapety"
+msgstr "Ukryj fan art"
 
 msgctxt "#41691"
 msgid "Set fanart path"
-msgstr "Ustaw ścieżkę do folderu tapet"
+msgstr "Ustaw ścieżkę fan art'u"
 
 msgctxt "#41692"
 msgid "Hide daily fanart"
-msgstr "Ukrywaj tapety"
+msgstr "Ukryj aktualny fan art"
 
 msgctxt "#41693"
 msgid "Moon phase"
@@ -642,19 +634,19 @@ msgstr "Aktualna pogoda "
 
 msgctxt "#41695"
 msgid "10 day forecast"
-msgstr "Prognoza 10 dniowa"
+msgstr "Prognoza 10-dniowa"
 
 msgctxt "#41696"
 msgid "Hourly forecast"
-msgstr "Prognoza godzinna"
+msgstr "Najbliższa prognoza"
 
 msgctxt "#41716"
 msgid "Playlist options"
-msgstr "Opcje listy odtwarzania"
+msgstr "Opcje playlisty"
 
 msgctxt "#41805"
 msgid "Aired"
-msgstr "Premiera"
+msgstr "Wyemitowano"
 
 msgctxt "#41813"
 msgid "Episodes"
@@ -662,7 +654,7 @@ msgstr "Epizodów"
 
 msgctxt "#41817"
 msgid "Items"
-msgstr "Pozycje"
+msgstr "Pozycji"
 
 msgctxt "#41819"
 msgid "Page"
@@ -674,7 +666,7 @@ msgstr "Pozycja"
 
 msgctxt "#41920"
 msgid "Recently added"
-msgstr "Ostatnio dodane"
+msgstr "Ostatnio dodane:"
 
 msgctxt "#42000"
 msgid "Select"
@@ -690,11 +682,11 @@ msgstr "Zamknij"
 
 msgctxt "#42010"
 msgid "View options"
-msgstr "Opcje widoku"
+msgstr "Przeglądaj opcje"
 
 msgctxt "#42015"
 msgid "Show info"
-msgstr "Pokazuj informacje"
+msgstr "Pokaż informacje"
 
 msgctxt "#42017"
 msgid "Main options"
@@ -708,21 +700,17 @@ msgctxt "#42019"
 msgid "Use posters"
 msgstr "Użyj plakatów"
 
-msgctxt "#42020"
-msgid "Show plot on focus"
-msgstr "Wyśrodkuj na informacjach"
-
 msgctxt "#42021"
 msgid "View"
 msgstr "Podgląd"
 
 msgctxt "#42022"
 msgid "Use landscape"
-msgstr "Używaj panoramy"
+msgstr "Użyj plakatu"
 
 msgctxt "#42023"
 msgid "Use clearart"
-msgstr "Używaj przezroczy"
+msgstr "Użyj clearart "
 
 msgctxt "#42024"
 msgid "Small thumbs"
@@ -730,11 +718,11 @@ msgstr "Mała okładka"
 
 msgctxt "#42025"
 msgid "Update art"
-msgstr "Aktualizuj grafiki"
+msgstr "Aktualizuj art"
 
 msgctxt "#42026"
 msgid "Use logo"
-msgstr "Używaj logo"
+msgstr "Użyj logo"
 
 msgctxt "#42130"
 msgid "Category"
@@ -750,11 +738,11 @@ msgstr "Opis niedostępny"
 
 msgctxt "#42133"
 msgid "Update repositories"
-msgstr "Aktualizuj repozytoria"
+msgstr "Aktualizacja repozytoriów"
 
 msgctxt "#42134"
 msgid "Update add-ons"
-msgstr "Aktualizuj dodatki"
+msgstr "Aktualizacja dodatków"
 
 msgctxt "#42135"
 msgid "Updating enabled add-on repositories..."
@@ -762,11 +750,11 @@ msgstr "Aktualizacja repozytoriów ..."
 
 msgctxt "#42136"
 msgid "Updating local add-on directories..."
-msgstr "Aktualizacja wtyczek z lokalnych katalogów ..."
+msgstr "Aktualizacja dodatków z lokalnych katalogów ..."
 
 msgctxt "#42160"
 msgid "TV guide"
-msgstr "Przewodzik TV"
+msgstr "Program TV"
 
 msgctxt "#42162"
 msgid "on"
@@ -782,7 +770,7 @@ msgstr "Dodaj grupę"
 
 msgctxt "#42182"
 msgid "Rename Group"
-msgstr "Przemianuj grupę"
+msgstr "Zmień nazwę grupy"
 
 msgctxt "#42183"
 msgid "Delete Group"
@@ -858,7 +846,7 @@ msgstr "Panel ■ "
 
 msgctxt "#42226"
 msgid "Landscape"
-msgstr "Panorama"
+msgstr "Tapeta "
 
 msgctxt "#42227"
 msgid "Poster"
@@ -898,7 +886,7 @@ msgstr "Plakat"
 
 msgctxt "#42251"
 msgid "Fanart"
-msgstr "Tapeta"
+msgstr "Fan art"
 
 msgctxt "#42252"
 msgid "Banner"
@@ -906,7 +894,7 @@ msgstr "Baner"
 
 msgctxt "#42253"
 msgid "Landscape"
-msgstr "Panorama"
+msgstr "Krajobraz"
 
 msgctxt "#42254"
 msgid "Logo"
@@ -914,4 +902,4 @@ msgstr "Logo"
 
 msgctxt "#42255"
 msgid "ClearArt"
-msgstr "Przezrocze"
+msgstr "Clear Art "

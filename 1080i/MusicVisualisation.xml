@@ -143,7 +143,7 @@
                                 <posy>0</posy>
                                 <width min="0" max="400">auto</width>
                                 <height>100</height>
-                                <label>[B]$INFO[MusicPlayer.ChannelNumber][/B]</label>
+                                <label>[B]$INFO[MusicPlayer.ChannelNumberLabel][/B]</label>
                                 <textcolor>99FFFFFF</textcolor>
                                 <font>Font-Condensed-S100</font>
                                 <align>left</align>
@@ -183,7 +183,7 @@
                                     <texture diffuse="osd/fullscreen/cd-diffuse.png" background="true">$INFO[Player.FolderPath,,cdart.png]</texture>
                                     <animation effect="rotate" center="auto" start="360" end="0" time="2500" loop="true" condition="!Player.Paused">Conditional</animation>
                                 </control>
-                            </control>
+                            </control>             
                             <control type="image">
                                 <posx>80</posx>
                                 <posy>67</posy>

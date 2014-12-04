@@ -114,7 +114,7 @@
         <align>left</align>
         <aligny>top</aligny>
     </include>
-
+    
     <include name="HomeProfileInfoLabel">
         <posx>110</posx>
         <posy>46</posy>
@@ -138,47 +138,47 @@
         <value condition="IsEmpty(Skin.String(HomePicturesSingleImage))">$INFO[Skin.String(GlobalBackdropSingle)]</value>
         <value>$INFO[Skin.String(HomePicturesSingleImage)]</value>
     </variable>
-
+     
     <variable name="HomePictureImageMulti">
         <value condition="IsEmpty(Skin.String(HomePicturesMultiImage))">$INFO[Skin.String(GlobalBackdropMulti)]</value>
         <value>$INFO[Skin.String(HomePicturesMultiImage)]</value>
     </variable>
-
+    
     <variable name="HomeDVDLabel">
         <value condition="System.HasMediaDVD">$LOCALIZE[208]</value>
         <value>$LOCALIZE[41524]</value>
     </variable>
-
+    
     <variable name="SpotlightLabelVAR">
         <value condition="stringcompare(Skin.String(HomeWidget.1.Type),script.randomandlastitems) + !IsEmpty(Window.Property(HomeWidget1.Name))">$INFO[Window.Property(HomeWidget1.Name)]</value>
         <value condition="!IsEmpty(Skin.String(HomeWidget.1.TypeName))">$INFO[Skin.String(HomeWidget.1.TypeName)]</value>
         <value>$LOCALIZE[41550]</value>
     </variable>
-
+    
     <variable name="OngoingTVShowsLabelVAR">
     <value condition="stringcompare(Skin.String(HomeWidget.2.Type),script.randomandlastitems) + !IsEmpty(Window.Property(HomeWidget2.Name))">$INFO[Window.Property(HomeWidget2.Name)]</value>
         <value condition="!IsEmpty(Skin.String(HomeWidget.2.TypeName))">$INFO[Skin.String(HomeWidget.2.TypeName)]</value>
         <value>$LOCALIZE[41551]</value>
     </variable>
-
+    
     <variable name="NewMoviesLabelVAR">
     <value condition="stringcompare(Skin.String(HomeWidget.3.Type),script.randomandlastitems) + !IsEmpty(Window.Property(HomeWidget3.Name))">$INFO[Window.Property(HomeWidget3.Name)]</value>
         <value condition="!IsEmpty(Skin.String(HomeWidget.3.TypeName))">$INFO[Skin.String(HomeWidget.3.TypeName)]</value>
         <value>$LOCALIZE[41552]</value>
     </variable>
-
+    
     <variable name="NewShowsLabelVAR">
     <value condition="stringcompare(Skin.String(HomeWidget.4.Type),script.randomandlastitems) + !IsEmpty(Window.Property(HomeWidget4.Name))">$INFO[Window.Property(HomeWidget4.Name)]</value>
         <value condition="!IsEmpty(Skin.String(HomeWidget.4.TypeName))">$INFO[Skin.String(HomeWidget.4.TypeName)]</value>
         <value>$LOCALIZE[41553]</value>
     </variable>
-
+    
     <variable name="FeaturedAlbumsLabelVAR">
     <value condition="stringcompare(Skin.String(HomeWidget.5.Type),script.randomandlastitems) + !IsEmpty(Window.Property(HomeWidget5.Name))">$INFO[Window.Property(HomeWidget5.Name)]</value>
         <value condition="!IsEmpty(Skin.String(HomeWidget.5.TypeName))">$INFO[Skin.String(HomeWidget.5.TypeName)]</value>
         <value>$LOCALIZE[41556]</value>
     </variable>
-
+ 
     <include name="HomeProfileInfo">
         <control type="group">
             <visible>!Window.IsActive(favourites) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml) + ![Window.IsVisible(virtualkeyboard) + !IsEmpty(Window.Property(HomeSearch))]</visible>
@@ -188,7 +188,7 @@
             <control type="group">
                 <visible>!Skin.HasSetting(HideHomeProfileInfo)</visible>
                 <animation type="Conditional" condition="System.HasMediaDVD">
-                    <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
+                    <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                     <effect type="zoom" start="100" end="50" center="125,80" tween="sine" easing="inout" time="300" />
                 </animation>
                 <control type="image">
@@ -472,19 +472,19 @@
             </control>
         </control>
     </include>
-
+    
     <include name="HomeControlListFocus2">
         <focusposition>2</focusposition>
     </include>
-
+    
     <include name="HomeControlListFocus1">
         <focusposition>1</focusposition>
     </include>
-
+    
     <include name="HomeControlListFocus0">
         <focusposition>0</focusposition>
     </include>
-
+    
     <include name="HomeControlList">
         <control type="wraplist" id="20">
             <description>Control list</description>
@@ -543,14 +543,14 @@
                     <property name="multi">$INFO[Skin.String(HomeMusicMultiImage)]</property>
                     <property name="music">1</property>
                     <visible>!Skin.HasSetting(HomeMusic)</visible>
-                </item>
+                </item>                 
                 <item id="6">
                     <label>$LOCALIZE[41504]</label>
                     <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeProgramsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeProgramsMultiImage)]</property>
                     <visible>!Skin.HasSetting(HomePrograms)</visible>
-                </item>
+                </item>         
                 <item id="7">
                     <label>$LOCALIZE[8]</label>
                     <onclick>noop</onclick>
@@ -563,11 +563,11 @@
                     <property name="single">$INFO[Skin.String(HomeSettingsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeSettingsMultiImage)]</property>
                     <property name="settings">1</property>
-                </item>
+                </item> 
             </content>
         </control>
     </include>
-
+    
     <include name="HomeItems">
         <control type="grouplist" id="40">
             <posx>-200</posx>
@@ -608,19 +608,19 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(1) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -739,7 +739,7 @@
                     <onright>AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onright>
                     <onright>Control.Move(20,1)</onright>
                     <onright>525</onright>
-                    <onclick>ActivateWindow(pvr)</onclick>
+                    <onclick>ActivateWindow(tvchannels)</onclick>
                     <onup>80</onup>
                     <ondown>901</ondown>
                 </control>
@@ -747,27 +747,27 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(9)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(9)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation effect="slide" end="-156" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(1)">Conditional</animation>
@@ -907,44 +907,32 @@
                             <item id="1">
                                 <label>$LOCALIZE[19023]</label>
                                 <icon>windows/home/icons/tvshows.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(32)</onclick>
-                                <onclick>SetFocus(11)</onclick>
+                                <onclick>ActivateWindow(tvchannels)</onclick>
                             </item>
                             <item id="2">
                                 <label>$LOCALIZE[19024]</label>
                                 <icon>windows/home/icons/radio.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(33)</onclick>
-                                <onclick>SetFocus(12)</onclick>
+                                <onclick>ActivateWindow(radiochannels)</onclick>
                             </item>
                             <item id="3">
                                 <label>$LOCALIZE[19069]</label>
                                 <icon>windows/home/icons/epg.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(31)</onclick>
-                                <onclick>SetFocus(10)</onclick>
+                                <onclick>ActivateWindow(tvguide)</onclick>
                             </item>
                             <item id="4">
                                 <label>$LOCALIZE[19163]</label>
                                 <icon>windows/home/icons/recordings.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(34)</onclick>
-                                <onclick>SetFocus(13)</onclick>
+                                <onclick>ActivateWindow(tvrecordings)</onclick>
                             </item>
                             <item id="5">
                                 <label>$LOCALIZE[19040]</label>
                                 <icon>windows/home/icons/timers.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(35)</onclick>
-                                <onclick>SetFocus(14)</onclick>
+                                <onclick>ActivateWindow(tvtimers)</onclick>
                             </item>
                             <item id="6">
                                 <label>$LOCALIZE[137]</label>
                                 <icon>windows/home/icons/search-tv.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(36)</onclick>
-                                <onclick>SetFocus(17)</onclick>
+                                <onclick>ActivateWindow(tvsearch)</onclick>
                             </item>
                         </content>
                     </control>
@@ -983,27 +971,27 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMovies)] | [Container(20).HasFocus(5) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMovies)] | [Container(20).HasFocus(5) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(2) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -1627,27 +1615,27 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(3)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(5) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(5) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(3) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -2213,7 +2201,7 @@
                                 <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit,HomeVideoTile1,3003)</onclick>
                                 <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit.Type,$INFO[Skin.String(HomeVideoTile1.Type)],3003)</onclick>
                                 <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit.ShowLabel,$INFO[Skin.String(HomeVideoTile1.ShowLabel)],3003)</onclick>
-                                <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeVideoTile1.Animate)],3003)</onclick>
+                                <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeVideoTile1.Animate)],3003)</onclick>                                
                                 <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">ActivateWindow(3003)</onclick>
                                 <onclick condition="!IsEmpty(Window.Property(EditTile))">ClearProperty(EditTile)</onclick>
                                 <icon>$INFO[Skin.String(HomeVideoTile1.Icon)]</icon>
@@ -2341,27 +2329,27 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(4)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(4) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -3009,27 +2997,27 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(5)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(7) + Skin.HasSetting(HomePrograms)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(7) + Skin.HasSetting(HomePrograms)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation effect="slide" end="-39" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(2) | Container(20).HasFocus(3) | Container(20).HasFocus(4)">Conditional</animation>
@@ -3673,27 +3661,27 @@
                     <posy>100</posy>
                     <posx>585</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(6)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation effect="slide" end="-50" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]">Conditional</animation>
@@ -4095,27 +4083,27 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(7) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -4301,8 +4289,8 @@
                                 <posx>38</posx>
                                 <posy>34</posy>
                                 <height>138</height>
-                                <width>138</width>
-                                <texture>$INFO[Window(Weather).Property(Current.FanartCode),weather/medium/,.png]</texture>
+                                <width>138</width>            
+                                <texture>$INFO[Window(Weather).Property(Current.FanartCode),weather/medium/,.png]</texture>    
                             </control>
                             <control type="group">
                                 <posx>216</posx>
@@ -4907,19 +4895,19 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(8) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">

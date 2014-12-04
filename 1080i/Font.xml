@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-    <fontset id="Default" unicode="true">
+    <fontset id="Default">
         <font>
             <name>Font-Condensed-S20</name>
             <filename>OpenSansCond.ttf</filename>
@@ -228,7 +228,7 @@
             <filename>OpenSansCond.ttf</filename>
             <size>100</size>
         </font>
-
+        
         <!-- Confluence Fonts (For Add-On Compatibility) -->
         <font>
     		<name>font10</name>

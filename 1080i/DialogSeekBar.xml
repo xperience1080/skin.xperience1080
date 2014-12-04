@@ -212,7 +212,7 @@
                                     <posy>0</posy>
                                     <width min="0" max="400">auto</width>
                                     <height>100</height>
-                                    <label>[B]$INFO[VideoPlayer.ChannelNumber][/B]</label>
+                                    <label>[B]$INFO[VideoPlayer.ChannelNumberLabel][/B]</label>
                                     <textcolor>99FFFFFF</textcolor>
                                     <font>Font-Condensed-S100</font>
                                     <align>left</align>

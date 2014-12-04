@@ -8,7 +8,7 @@
         <control type="group">
             <include>KeyboardAnimations</include>
             <visible>!Window.IsVisible(3003)</visible>
-
+            
             <control type="label">
                 <description>Heading</description>
                 <posx>473</posx>
@@ -19,7 +19,7 @@
                 <textcolor>ddwhite</textcolor>
                 <align>center</align>
             </control>
-
+ 
             <control type="image">
                 <posx>920</posx>
                 <posy>246</posy>
@@ -41,7 +41,7 @@
             	<height>481</height>
             	<texture border="5">dialogs/default/inner.png</texture>
             </control>
-
+            
             <control type="grouplist" id="3">
                 <include>SettingsDialogGrouplistVars</include>
                 <visible>stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[41131])</visible>
@@ -78,7 +78,7 @@
                     <label>$LOCALIZE[41504]</label>
                 </control>
             </control>
-
+            
             <control type="grouplist" id="3">
                 <include>SettingsDialogGrouplistVars</include>
                 <visible>!IsEmpty(Window(skinsettings).property(Guide.Custom))</visible>
@@ -127,7 +127,7 @@
                     <visible>Skin.HasSetting(CustomHomePanel4)</visible>
                 </control>
             </control>
-
+            
             <control type="scrollbar" id="61">
                 <posx>1269</posx>
                 <posy>303</posy>
@@ -144,7 +144,7 @@
                 <orientation>vertical</orientation>
                 <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(61)">Conditional</animation>
             </control>
-
+            
             <control type="group" id="10">
                 <posx>626</posx>
                 <posy>776</posy>

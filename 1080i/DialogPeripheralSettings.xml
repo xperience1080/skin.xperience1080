@@ -10,7 +10,7 @@
                 <include>KeyboardAnimations</include>
                 <include>OptionsShutdownAnimation</include>
                 <visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(FileBrowser)</visible>
-
+                
                 <control type="image">
                     <posx>920</posx>
                     <posy>246</posy>
@@ -32,7 +32,7 @@
                 	<height>481</height>
                 	<texture border="5">dialogs/default/inner.png</texture>
                 </control>
-
+                
                 <control type="label">
                     <description>Heading</description>
                     <posx>473</posx>
@@ -43,20 +43,7 @@
                     <textcolor>ddwhite</textcolor>
                     <align>center</align>
                 </control>
-
-                <control type="label" id="3">
-                    <description>No Settings Label</description>
-                    <posx>479</posx>
-                    <posy>510</posy>
-                    <width>962</width>
-                    <height>60</height>
-                    <textoffsetx>20</textoffsetx>
-                    <align>center</align>
-                    <label>$LOCALIZE[35004]</label>
-                    <font>Font-Condensed-S32</font>
-                    <textcolor>FF585858</textcolor>
-                </control>
-
+                
                 <control type="grouplist" id="5">
                     <description>control area</description>
                     <posx>479</posx>
@@ -71,7 +58,7 @@
                     <ondown>5</ondown>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                 </control>
-
+                
                 <control type="image" id="62">
                     <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
                 </control>
@@ -96,7 +83,7 @@
                     <orientation>vertical</orientation>
                     <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(61)">Conditional</animation>
                 </control>
-
+                
                 <control type="button" id="7">
                     <description>default</description>
                     <height>60</height>
@@ -110,7 +97,7 @@
                     <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
                     <texturenofocus>dialogs/default/separator-btn.png</texturenofocus>
                 </control>
-
+                
                 <control type="radiobutton" id="8">
                     <description>radioButton</description>
                     <height>60</height>
@@ -126,7 +113,7 @@
                     <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
                     <texturenofocus>dialogs/default/separator-btn.png</texturenofocus>
                 </control>
-
+                
                 <control type="spincontrolex" id="9">
                     <description>Directory Content</description>
                     <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
@@ -142,8 +129,8 @@
                     <textoffsetx>20</textoffsetx>
                     <spinposx>16</spinposx>
                 </control>
-
-                <control type="sliderex" id="10">
+    
+                <control type="sliderex" id="13">
                     <description>Default Slider</description>
                     <posx>0</posx>
                     <posy>0</posy>
@@ -162,13 +149,13 @@
                     <textoffsetx>20</textoffsetx>
                     <pulseonselect>false</pulseonselect>
                 </control>
-
+                
                 <control type="image" id="11">
                     <description>Separator image</description>
                     <height>0</height>
                     <texture>-</texture>
                 </control>
-
+    
                 <control type="group" id="8000">
                     <posx>466</posx>
                     <posy>776</posy>

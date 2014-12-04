@@ -108,7 +108,7 @@
                             <aligny>center</aligny>
                             <textcolor>FF585858</textcolor>
                             <scroll>false</scroll>
-                        </control>
+                        </control>  
                     </control>
                     <control type="group">
                         <visible>Control.HasFocus(450)</visible>

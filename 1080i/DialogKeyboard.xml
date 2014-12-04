@@ -44,13 +44,14 @@
                     <align>center</align>
                     <textcolor>77FFFFFF</textcolor>
                 </control>
-                <control type="label" id="310">
+                <control type="edit" id="312">
                     <description>Edit Text</description>
                     <posx>36</posx>
-                    <posy>-33</posy>
+                    <posy>-48</posy>
                     <width>1000</width>
                     <font>Font-Condensed-S45</font>
                     <align>center</align>
+                    <aligny>top</aligny>
                     <textcolor>eewhite</textcolor>
                 </control>
             <!-- First Row -->
@@ -60,106 +61,124 @@
                     <control type="button" id="307">
                         <description>:IP: button</description>
                         <posx>0</posx>
-                        <onleft>48</onleft>
-                        <onright>49</onright>
+                        <onleft>111</onleft>
+                        <onright>100</onright>
                         <onup>361</onup>
                         <ondown>304</ondown>
                         <label>$LOCALIZE[150]</label>
-                        <include>BigKey</include>
+                        <include>BigKey</include>           
                     </control>
                     <control type="group" id="321">
-                        <control type="button" id="49">
-                            <description>:1: button</description>
+                        <control type="button" id="100">
+                            <description>:0,0: button</description>
                             <posx>190</posx>
-                            <onright>50</onright>
+                            <onright>101</onright>
                             <onup>32</onup>
-                            <ondown>65</ondown>
+                            <ondown>120</ondown>
                             <onleft>307</onleft>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="50">
-                            <description>:2: button</description>
+                        <control type="button" id="101">
+                            <description>:0,1: button</description>
                             <posx>271</posx>
-                            <onleft>49</onleft>
-                            <onright>51</onright>
+                            <onleft>100</onleft>
+                            <onright>102</onright>
                             <onup>32</onup>
-                            <ondown>66</ondown>
+                            <ondown>121</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="51">
-                            <description>:3: button</description>
+                        <control type="button" id="102">
+                            <description>:0,2: button</description>
                             <posx>352</posx>
-                            <onleft>50</onleft>
-                            <onright>52</onright>
+                            <onleft>101</onleft>
+                            <onright>103</onright>
                             <onup>310</onup>
-                            <ondown>67</ondown>
+                            <ondown>122</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="52">
-                            <description>:4: button</description>
+                        <control type="button" id="103">
+                            <description>:0,3: button</description>
                             <posx>433</posx>
-                            <onleft>51</onleft>
-                            <onright>53</onright>
+                            <onleft>102</onleft>
+                            <onright>104</onright>
                             <onup>32</onup>
-                            <ondown>68</ondown>
+                            <ondown>123</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="53">
-                            <description>:5: button</description>
+                        <control type="button" id="104">
+                            <description>:0,4: button</description>
                             <posx>514</posx>
-                            <onleft>52</onleft>
-                            <onright>54</onright>
+                            <onleft>103</onleft>
+                            <onright>105</onright>
                             <onup>32</onup>
-                            <ondown>69</ondown>
+                            <ondown>124</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="54">
-                            <description>:6: button</description>
+                        <control type="button" id="105">
+                            <description>:0,5: button</description>
                             <posx>595</posx>
-                            <onleft>53</onleft>
-                            <onright>55</onright>
+                            <onleft>104</onleft>
+                            <onright>106</onright>
                             <onup>32</onup>
-                            <ondown>70</ondown>
+                            <ondown>125</ondown>
                             <include>SmallKey</include>
                         </control>
                     </control>
                     <control type="group" id="322">
-                        <control type="button" id="55">
-                            <description>:7: button</description>
+                        <control type="button" id="106">
+                            <description>:0,6: button</description>
                             <posx>676</posx>
-                            <onleft>54</onleft>
-                            <onright>56</onright>
+                            <onleft>105</onleft>
+                            <onright>107</onright>
                             <onup>301</onup>
-                            <ondown>71</ondown>
+                            <ondown>126</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="56">
-                            <description>:8: button</description>
+                        <control type="button" id="107">
+                            <description>:0,7: button</description>
                             <posx>757</posx>
-                            <onleft>55</onleft>
-                            <onright>57</onright>
+                            <onleft>106</onleft>
+                            <onright>108</onright>
                             <onup>301</onup>
-                            <ondown>72</ondown>
+                            <ondown>127</ondown>
                             <include>SmallKey</include>
                         </control>
                     </control>
                     <control type="group" id="323">
-                        <control type="button" id="57">
-                            <description>:9: button</description>
+                        <control type="button" id="108">
+                            <description>:0,8: button</description>
                             <posx>838</posx>
-                            <onleft>56</onleft>
-                            <onright>48</onright>
+                            <onleft>107</onleft>
+                            <onright>109</onright>
                             <onup>300</onup>
-                            <ondown>73</ondown>
+                            <ondown>128</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="48">
-                            <description>:0: button</description>
+                        <control type="button" id="109">
+                            <description>:0,9: button</description>
                             <posx>919</posx>
-                            <onleft>57</onleft>
+                            <onleft>108</onleft>
                             <onright>307</onright>
                             <onup>300</onup>
-                            <ondown>74</ondown>
+                            <ondown>129</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="110">
+                            <description>:0,10: button</description>
+                            <posx>1000</posx>
+                            <onleft>109</onleft>
+                            <onright>111</onright>
+                            <onup>300</onup>
+                            <ondown>130</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="111">
+                            <description>:0,11: button</description>
+                            <posx>1081</posx>
+                            <onleft>110</onleft>
+                            <onright>307</onright>
+                            <onup>300</onup>
+                            <ondown>131</ondown>
                             <include>SmallKey</include>
                         </control>
                     </control>
@@ -171,8 +190,8 @@
                     <control type="radiobutton" id="304">
                         <description>Symbols button</description>
                         <posx>0</posx>
-                        <onleft>74</onleft>
-                        <onright>65</onright>
+                        <onleft>131</onleft>
+                        <onright>120</onright>
                         <onup>307</onup>
                         <ondown>303</ondown>
                         <label>$LOCALIZE[20180]</label>
@@ -184,94 +203,112 @@
                         <textureradioon>dialogs/keyboard/radio-on.png</textureradioon>
                         <textureradiooff>dialogs/keyboard/radio-off.png</textureradiooff>
                     </control>
-                    <control type="button" id="65">
-                        <description>:a: button</description>
+                    <control type="button" id="120">
+                        <description>:1,0: button</description>
                         <posx>190</posx>
                         <onleft>304</onleft>
-                        <onright>66</onright>
-                        <onup>49</onup>
-                        <ondown>75</ondown>
+                        <onright>121</onright>
+                        <onup>100</onup>
+                        <ondown>140</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="66">
-                        <description>:b: button</description>
+                    <control type="button" id="121">
+                        <description>:1,1: button</description>
                         <posx>271</posx>
-                        <onleft>65</onleft>
-                        <onright>67</onright>
-                        <onup>50</onup>
-                        <ondown>76</ondown>
+                        <onleft>120</onleft>
+                        <onright>122</onright>
+                        <onup>101</onup>
+                        <ondown>141</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="67">
-                        <description>:c: button</description>
+                    <control type="button" id="122">
+                        <description>:1,2: button</description>
                         <posx>352</posx>
-                        <onleft>66</onleft>
-                        <onright>68</onright>
-                        <onup>51</onup>
-                        <ondown>77</ondown>
+                        <onleft>121</onleft>
+                        <onright>123</onright>
+                        <onup>102</onup>
+                        <ondown>142</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="68">
-                        <description>:d: button</description>
+                    <control type="button" id="123">
+                        <description>:1,3: button</description>
                         <posx>433</posx>
-                        <onleft>67</onleft>
-                        <onright>69</onright>
-                        <onup>52</onup>
-                        <ondown>78</ondown>
+                        <onleft>122</onleft>
+                        <onright>124</onright>
+                        <onup>103</onup>
+                        <ondown>143</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="69">
-                        <description>:e: button</description>
+                    <control type="button" id="124">
+                        <description>:1,4: button</description>
                         <posx>514</posx>
-                        <onleft>68</onleft>
-                        <onright>70</onright>
-                        <onup>53</onup>
-                        <ondown>79</ondown>
+                        <onleft>123</onleft>
+                        <onright>125</onright>
+                        <onup>104</onup>
+                        <ondown>144</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="70">
-                        <description>:f: button</description>
+                    <control type="button" id="125">
+                        <description>:1,5: button</description>
                         <posx>595</posx>
-                        <onleft>69</onleft>
-                        <onright>71</onright>
-                        <onup>54</onup>
-                        <ondown>80</ondown>
+                        <onleft>124</onleft>
+                        <onright>126</onright>
+                        <onup>105</onup>
+                        <ondown>145</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="71">
-                        <description>:g: button</description>
+                    <control type="button" id="126">
+                        <description>:1,6: button</description>
                         <posx>676</posx>
-                        <onleft>70</onleft>
-                        <onright>72</onright>
-                        <onup>55</onup>
-                        <ondown>81</ondown>
+                        <onleft>125</onleft>
+                        <onright>127</onright>
+                        <onup>106</onup>
+                        <ondown>146</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="72">
-                        <description>:h: button</description>
+                    <control type="button" id="127">
+                        <description>:1,7: button</description>
                         <posx>757</posx>
-                        <onleft>71</onleft>
-                        <onright>73</onright>
-                        <onup>56</onup>
-                        <ondown>82</ondown>
+                        <onleft>126</onleft>
+                        <onright>128</onright>
+                        <onup>107</onup>
+                        <ondown>147</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="73">
-                        <description>:i: button</description>
+                    <control type="button" id="128">
+                        <description>:1,8: button</description>
                         <posx>838</posx>
-                        <onleft>72</onleft>
-                        <onright>74</onright>
-                        <onup>57</onup>
-                        <ondown>83</ondown>
+                        <onleft>127</onleft>
+                        <onright>129</onright>
+                        <onup>108</onup>
+                        <ondown>148</ondown>
                         <include>SmallKey</include>
                     </control>
-                    <control type="button" id="74">
-                        <description>:j: button</description>
+                    <control type="button" id="129">
+                        <description>:1,9: button</description>
                         <posx>919</posx>
-                        <onleft>73</onleft>
+                        <onleft>128</onleft>
                         <onright>304</onright>
-                        <onup>48</onup>
-                        <ondown>84</ondown>
+                        <onup>109</onup>
+                        <ondown>149</ondown>
+                        <include>SmallKey</include>
+                    </control>
+                    <control type="button" id="130">
+                        <description>:1,10: button</description>
+                        <posx>1000</posx>
+                        <onleft>129</onleft>
+                        <onright>131</onright>
+                        <onup>110</onup>
+                        <ondown>149</ondown>
+                        <include>SmallKey</include>
+                    </control>
+                    <control type="button" id="131">
+                        <description>:1,11: button</description>
+                        <posx>1081</posx>
+                        <onleft>130</onleft>
+                        <onright>304</onright>
+                        <onup>111</onup>
+                        <ondown>149</ondown>
                         <include>SmallKey</include>
                     </control>
                 </control>
@@ -282,11 +319,11 @@
                     <control type="radiobutton" id="303">
                         <description>Caps lock</description>
                         <posx>0</posx>
-                        <onleft>84</onleft>
-                        <onright>75</onright>
+                        <onleft>151</onleft>
+                        <onright>140</onright>
                         <onup>304</onup>
-                        <ondown>302</ondown>
-                        <include>CapsKey</include>
+                        <ondown>309</ondown>
+                        <include>ShiftKey</include>
                         <radioposx>15</radioposx>
                         <radioposy>15</radioposy>
                         <radiowidth>28</radiowidth>
@@ -294,108 +331,12 @@
                         <textureradioon>dialogs/keyboard/radio-on.png</textureradioon>
                         <textureradiooff>dialogs/keyboard/radio-off.png</textureradiooff>
                     </control>
-                    <control type="button" id="75">
-                        <description>:k: button</description>
-                        <posx>190</posx>
-                        <onleft>303</onleft>
-                        <onright>76</onright>
-                        <onup>65</onup>
-                        <ondown>85</ondown>
-                        <include>SmallKey</include>
-                    </control>
-                    <control type="button" id="76">
-                        <description>:l: button</description>
-                        <posx>271</posx>
-                        <onleft>75</onleft>
-                        <onright>77</onright>
-                        <onup>66</onup>
-                        <ondown>86</ondown>
-                        <include>SmallKey</include>
-                    </control>
-                    <control type="button" id="77">
-                        <description>:m: button</description>
-                        <posx>352</posx>
-                        <onleft>76</onleft>
-                        <onright>78</onright>
-                        <onup>67</onup>
-                        <ondown>87</ondown>
-                        <include>SmallKey</include>
-                    </control>
-                    <control type="button" id="78">
-                        <description>:n: button</description>
-                        <posx>433</posx>
-                        <onleft>77</onleft>
-                        <onright>79</onright>
-                        <onup>68</onup>
-                        <ondown>88</ondown>
-                        <include>SmallKey</include>
-                    </control>
-                    <control type="button" id="79">
-                        <description>:o: button</description>
-                        <posx>514</posx>
-                        <onleft>78</onleft>
-                        <onright>80</onright>
-                        <onup>69</onup>
-                        <ondown>89</ondown>
-                        <include>SmallKey</include>
-                    </control>
-                    <control type="button" id="80">
-                        <description>:p: button</description>
-                        <posx>595</posx>
-                        <onleft>79</onleft>
-                        <onright>81</onright>
-                        <onup>70</onup>
-                        <ondown>90</ondown>
-                        <include>SmallKey</include>
-                    </control>
-                    <control type="group" id="341">
-                        <control type="button" id="81">
-                            <description>:q: button</description>
-                            <posx>676</posx>
-                            <onleft>80</onleft>
-                            <onright>82</onright>
-                            <onup>71</onup>
-                            <ondown>8</ondown>
-                            <include>SmallKey</include>
-                        </control>
-                        <control type="button" id="82">
-                            <description>:r: button</description>
-                            <posx>757</posx>
-                            <onleft>81</onleft>
-                            <onright>83</onright>
-                            <onup>72</onup>
-                            <ondown>8</ondown>
-                            <include>SmallKey</include>
-                        </control>
-                        <control type="button" id="83">
-                            <description>:s: button</description>
-                            <posx>838</posx>
-                            <onleft>82</onleft>
-                            <onright>84</onright>
-                            <onup>73</onup>
-                            <ondown>8</ondown>
-                            <include>SmallKey</include>
-                        </control>
-                        <control type="button" id="84">
-                            <description>:t: button</description>
-                            <posx>919</posx>
-                            <onleft>83</onleft>
-                            <onright>303</onright>
-                            <onup>74</onup>
-                            <ondown>8</ondown>
-                            <include>SmallKey</include>
-                        </control>
-                    </control>
-                </control>
-            <!-- Fourth Row -->
-                <control type="group" id="350">
-                    <posx>32</posx>
-                    <posy>290</posy>
+                    <!-- 
                     <control type="radiobutton" id="302">
                         <description>:Shift: button</description>
                         <posx>0</posx>
                         <onleft>8</onleft>
-                        <onright>85</onright>
+                        <onright>160</onright>
                         <onup>303</onup>
                         <ondown>361</ondown>
                         <include>ShiftKey</include>
@@ -406,68 +347,247 @@
                         <textureradioon>dialogs/keyboard/radio-on.png</textureradioon>
                         <textureradiooff>dialogs/keyboard/radio-off.png</textureradiooff>
                     </control>
+                     -->
+                    <control type="button" id="140">
+                        <description>:2,0: button</description>
+                        <posx>190</posx>
+                        <onleft>303</onleft>
+                        <onright>141</onright>
+                        <onup>120</onup>
+                        <ondown>160</ondown>
+                        <include>SmallKey</include>
+                    </control>
+                    <control type="button" id="141">
+                        <description>:2,1: button</description>
+                        <posx>271</posx>
+                        <onleft>140</onleft>
+                        <onright>142</onright>
+                        <onup>121</onup>
+                        <ondown>161</ondown>
+                        <include>SmallKey</include>
+                    </control>
+                    <control type="button" id="142">
+                        <description>:2,2: button</description>
+                        <posx>352</posx>
+                        <onleft>141</onleft>
+                        <onright>143</onright>
+                        <onup>122</onup>
+                        <ondown>162</ondown>
+                        <include>SmallKey</include>
+                    </control>
+                    <control type="button" id="143">
+                        <description>:2,3: button</description>
+                        <posx>433</posx>
+                        <onleft>142</onleft>
+                        <onright>144</onright>
+                        <onup>123</onup>
+                        <ondown>163</ondown>
+                        <include>SmallKey</include>
+                    </control>
+                    <control type="button" id="144">
+                        <description>:2,4: button</description>
+                        <posx>514</posx>
+                        <onleft>143</onleft>
+                        <onright>145</onright>
+                        <onup>124</onup>
+                        <ondown>164</ondown>
+                        <include>SmallKey</include>
+                    </control>
+                    <control type="button" id="145">
+                        <description>:2,5: button</description>
+                        <posx>595</posx>
+                        <onleft>144</onleft>
+                        <onright>146</onright>
+                        <onup>125</onup>
+                        <ondown>165</ondown>
+                        <include>SmallKey</include>
+                    </control>
+                    <control type="group" id="341">
+                        <control type="button" id="146">
+                            <description>:2,6: button</description>
+                            <posx>676</posx>
+                            <onleft>145</onleft>
+                            <onright>147</onright>
+                            <onup>126</onup>
+                            <ondown>166</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="147">
+                            <description>:2,7: button</description>
+                            <posx>757</posx>
+                            <onleft>146</onleft>
+                            <onright>148</onright>
+                            <onup>127</onup>
+                            <ondown>8</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="148">
+                            <description>:2,8: button</description>
+                            <posx>838</posx>
+                            <onleft>147</onleft>
+                            <onright>149</onright>
+                            <onup>128</onup>
+                            <ondown>8</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="149">
+                            <description>:2,9: button</description>
+                            <posx>919</posx>
+                            <onleft>148</onleft>
+                            <onright>150</onright>
+                            <onup>129</onup>
+                            <ondown>8</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="150">
+                            <description>:2,10: button</description>
+                            <posx>919</posx>
+                            <onleft>149</onleft>
+                            <onright>151</onright>
+                            <onup>130</onup>
+                            <ondown>8</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="151">
+                            <description>:2,11: button</description>
+                            <posx>919</posx>
+                            <onleft>149</onleft>
+                            <onright>303</onright>
+                            <onup>131</onup>
+                            <ondown>8</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                    </control>
+                </control>
+            <!-- Fourth Row -->
+                <control type="group" id="350">
+                    <posx>32</posx>
+                    <posy>290</posy>
+                    <control type="button" id="309">
+                        <description>Layout button</description>
+                        <posx>0</posx>
+                        <onleft>8</onleft>
+                        <onright>160</onright>
+                        <onup>303</onup>
+                        <ondown>361</ondown>
+                        <include>BigKey</include>           
+                    </control>
                     <control type="group" id="351">
-                        <control type="button" id="85">
-                            <description>:u: button</description>
+                        <control type="button" id="160">
+                            <description>:4,0: button</description>
                             <posx>190</posx>
-                            <onleft>302</onleft>
-                            <onright>86</onright>
-                            <onup>75</onup>
+                            <onleft>309</onleft>
+                            <onright>161</onright>
+                            <onup>140</onup>
                             <ondown>32</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="86">
-                            <description>:v: button</description>
+                        <control type="button" id="161">
+                            <description>:4,1: button</description>
                             <posx>271</posx>
-                            <onleft>85</onleft>
-                            <onright>87</onright>
-                            <onup>76</onup>
+                            <onleft>160</onleft>
+                            <onright>162</onright>
+                            <onup>141</onup>
                             <ondown>32</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="87">
-                            <description>:w: button</description>
+                        <control type="button" id="162">
+                            <description>:4,2: button</description>
                             <posx>352</posx>
-                            <onleft>86</onleft>
-                            <onright>88</onright>
-                            <onup>77</onup>
+                            <onleft>161</onleft>
+                            <onright>163</onright>
+                            <onup>142</onup>
                             <ondown>32</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="88">
-                            <description>:x: button</description>
+                        <control type="button" id="163">
+                            <description>:4,3: button</description>
                             <posx>433</posx>
-                            <onleft>87</onleft>
-                            <onright>89</onright>
-                            <onup>78</onup>
+                            <onleft>162</onleft>
+                            <onright>164</onright>
+                            <onup>143</onup>
                             <ondown>32</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="89">
-                            <description>:y: button</description>
+                        <control type="button" id="164">
+                            <description>:4,4: button</description>
                             <posx>514</posx>
-                            <onleft>88</onleft>
-                            <onright>90</onright>
-                            <onup>79</onup>
+                            <onleft>163</onleft>
+                            <onright>165</onright>
+                            <onup>144</onup>
                             <ondown>32</ondown>
                             <include>SmallKey</include>
                         </control>
-                        <control type="button" id="90">
-                            <description>:z: button</description>
+                        <control type="button" id="165">
+                            <description>:4,5: button</description>
                             <posx>595</posx>
-                            <onleft>89</onleft>
+                            <onleft>164</onleft>
+                            <onright>166</onright>
+                            <onup>145</onup>
+                            <ondown>32</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="166">
+                            <description>:4,6: button</description>
+                            <posx>676</posx>
+                            <onleft>165</onleft>
                             <onright>8</onright>
-                            <onup>80</onup>
+                            <onup>146</onup>
+                            <ondown>32</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="167">
+                            <description>:4,7: button</description>
+                            <posx>757</posx>
+                            <onleft>166</onleft>
+                            <onright>168</onright>
+                            <onup>147</onup>
+                            <ondown>32</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="168">
+                            <description>:4,8: button</description>
+                            <posx>838</posx>
+                            <onleft>167</onleft>
+                            <onright>169</onright>
+                            <onup>146</onup>
+                            <ondown>32</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="169">
+                            <description>:4,9: button</description>
+                            <posx>919</posx>
+                            <onleft>178</onleft>
+                            <onright>170</onright>
+                            <onup>146</onup>
+                            <ondown>32</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="170">
+                            <description>:4,10: button</description>
+                            <posx>1000</posx>
+                            <onleft>169</onleft>
+                            <onright>171</onright>
+                            <onup>146</onup>
+                            <ondown>32</ondown>
+                            <include>SmallKey</include>
+                        </control>
+                        <control type="button" id="171">
+                            <description>:4,11: button</description>
+                            <posx>1081</posx>
+                            <onleft>170</onleft>
+                            <onright>8</onright>
+                            <onup>146</onup>
                             <ondown>32</ondown>
                             <include>SmallKey</include>
                         </control>
                     </control>
                     <control type="button" id="8">
                         <description>:DEL: button</description>
-                        <posx>676</posx>
-                        <onleft>90</onleft>
-                        <onright>302</onright>
-                        <onup>341</onup>
+                        <posx>757</posx>
+                        <onleft>166</onleft>
+                        <onright>309</onright>
+                        <onup>149</onup>
                         <ondown>362</ondown>
                         <include>BackSpace</include>
                     </control>
@@ -482,7 +602,7 @@
                             <posx>0</posx>
                             <onleft>300</onleft>
                             <onright>306</onright>
-                            <onup>302</onup>
+                            <onup>309</onup>
                             <ondown>307</ondown>
                             <textoffsety>15</textoffsety>
                             <include>MediumKeyLarr</include>
@@ -492,7 +612,7 @@
                             <posx>95</posx>
                             <onleft>305</onleft>
                             <onright>32</onright>
-                            <onup>302</onup>
+                            <onup>309</onup>
                             <ondown>307</ondown>
                             <textoffsety>15</textoffsety>
                             <include>MediumKeyRarr</include>

@@ -255,6 +255,25 @@
             <font>Font-Condensed-S30-B</font>
             <textoffsetx>35</textoffsetx>
         </control>
+        <control type="sliderex" id="13">
+            <description>Default Slider</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>60</height>
+            <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
+            <texturenofocus>dialogs/default/separator-btn.png</texturenofocus>
+            <sliderwidth>150</sliderwidth>
+            <sliderheight>28</sliderheight>
+            <texturesliderbar>dialogs/mediasource/slider-back.png</texturesliderbar>
+            <textureslidernib>dialogs/mediasource/slider-nib-nf.png</textureslidernib>
+            <textureslidernibfocus>dialogs/mediasource/slider-nib-fo.png</textureslidernibfocus>
+            <textcolor>FF585858</textcolor>
+            <focusedcolor>eewhite</focusedcolor>
+            <disabledcolor>77585858</disabledcolor>
+            <shadowcolor>20FFFFFF</shadowcolor>
+            <textoffsetx>20</textoffsetx>
+            <pulseonselect>false</pulseonselect>
+        </control>
         <control type="button" id="10">
             <description>Default Category Button</description>
             <include>SettingsCategoryButtonVars</include>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">3</defaultcontrol>
+    <defaultcontrol always="true">20</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
@@ -65,7 +65,7 @@
                     	<height>241</height>
                     	<texture border="5">dialogs/default/inner.png</texture>
                     </control>
-                    <control type="spincontrolex" id="3">
+                    <control type="spincontrolex" id="20">
                         <description>Directory Content</description>
                         <posx>0</posx>
                         <posy>0</posy>
@@ -83,7 +83,7 @@
                         <textoffsetx>20</textoffsetx>
                         <spinposx>16</spinposx>
                         <onup>8002</onup>
-                        <ondown>4</ondown>
+                        <ondown>21</ondown>
                         <onleft>8002</onleft>
                         <onright>8002</onright>
                     </control>
@@ -96,12 +96,12 @@
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Icon]</texture>
                     </control>
-                    <control type="list" id="4">
+                    <control type="list" id="21">
                         <posx>0</posx>
                         <posy>74</posy>
                         <width>768</width>
                         <height>180</height>
-                        <onup>3</onup>
+                        <onup>20</onup>
                         <onleft>8002</onleft>
                         <onright>60</onright>
                         <ondown>5</ondown>
@@ -171,7 +171,7 @@
                                 <width>768</width>
                                 <height>60</height>
                                 <texture border="2">dialogs/default/highlight.png</texture>
-                                <visible>Control.HasFocus(4)</visible>
+                                <visible>Control.HasFocus(21)</visible>
                             </control>
                             <control type="image">
                                 <posx>20</posx>
@@ -192,7 +192,7 @@
                                 <textcolor>FF585858</textcolor>
                                 <selectedcolor>FF585858</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>!Control.HasFocus(4) + IsEmpty(ListItem.Thumb)</visible>
+                                <visible>!Control.HasFocus(21) + IsEmpty(ListItem.Thumb)</visible>
                             </control>
                             <control type="label">
                                 <posx>75</posx>
@@ -206,7 +206,7 @@
                                 <textcolor>FF585858</textcolor>
                                 <selectedcolor>FF585858</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>!Control.HasFocus(4) + !IsEmpty(ListItem.Thumb)</visible>
+                                <visible>!Control.HasFocus(21) + !IsEmpty(ListItem.Thumb)</visible>
                             </control>
                             <control type="label">
                                 <posx>20</posx>
@@ -220,8 +220,8 @@
                                 <textcolor>eewhite</textcolor>
                                 <selectedcolor>eewhite</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>Control.HasFocus(4) + IsEmpty(ListItem.Thumb)</visible>
-                            </control>
+                                <visible>Control.HasFocus(21) + IsEmpty(ListItem.Thumb)</visible>
+                            </control>  
                             <control type="label">
                                 <posx>75</posx>
                                 <posy>0</posy>
@@ -234,7 +234,7 @@
                                 <textcolor>eewhite</textcolor>
                                 <selectedcolor>eewhite</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>Control.HasFocus(4) + !IsEmpty(ListItem.Thumb)</visible>
+                                <visible>Control.HasFocus(21) + !IsEmpty(ListItem.Thumb)</visible>
                             </control>
                             <control type="image">
                                 <posx>708</posx>
@@ -257,7 +257,7 @@
                     <control type="image" id="61">
                         <animation effect="fade" start="0" end="100" time="0">Visible</animation>
                         <animation effect="fade" start="100" end="0" time="0" delay="1000">Hidden</animation>
-                        <visible>!Control.HasFocus(60) + [Container(4).Scrolling | Container(4).OnScrollNext | Container(4).OnScrollPrevious]</visible>
+                        <visible>!Control.HasFocus(60) + [Container(21).Scrolling | Container(21).OnScrollNext | Container(21).OnScrollPrevious]</visible>
                     </control>
                     <control type="scrollbar" id="60">
                         <posx>754</posx>
@@ -269,7 +269,7 @@
                         <texturesliderbarfocus border="0,6,0,6">dialogs/default/scrollbar.png</texturesliderbarfocus>
                         <textureslidernib>-</textureslidernib>
                         <textureslidernibfocus>-</textureslidernibfocus>
-                        <onleft>4</onleft>
+                        <onleft>21</onleft>
                         <onright>8002</onright>
                         <showonepage>false</showonepage>
                         <orientation>vertical</orientation>
@@ -281,9 +281,9 @@
                         <posy>268</posy>
                         <width>962</width>
                         <height>300</height>
-                        <orientation>vertical</orientation>
-                        <itemgap>0</itemgap>
-                        <onup>4</onup>
+                        <orientation>vertical</orientation>     
+                        <itemgap>0</itemgap>    
+                        <onup>21</onup>
                         <ondown>8002</ondown>
                         <onleft>8002</onleft>
                         <onright>8002</onright>
@@ -324,10 +324,10 @@
                         <texturefocus>buttons/select-fo.png</texturefocus>
                         <texturenofocus>buttons/select-nf.png</texturenofocus>
                         <include>DialogButtonDimensions</include>
-                        <onleft>6</onleft>
+                        <onleft>22</onleft>
                         <onright>29</onright>
                         <onup>5</onup>
-                        <ondown>3</ondown>
+                        <ondown>20</ondown>
                         <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(28)">Conditional</animation>
                     </control>
                     <control type="button" id="29">
@@ -338,12 +338,12 @@
                         <texturenofocus>buttons/cancel-nf.png</texturenofocus>
                         <include>DialogButtonDimensions</include>
                         <onleft>28</onleft>
-                        <onright>6</onright>
+                        <onright>22</onright>
                         <onup>5</onup>
-                        <ondown>3</ondown>
+                        <ondown>20</ondown>
                         <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(29)">Conditional</animation>
                     </control>
-                    <control type="button" id="6">
+                    <control type="button" id="22">
                         <posx>740</posx>
                         <description>Settings</description>
                         <label>$LOCALIZE[5]</label>
@@ -353,8 +353,8 @@
                         <onleft>29</onleft>
                         <onright>28</onright>
                         <onup>5</onup>
-                        <ondown>3</ondown>
-                        <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(6)">Conditional</animation>
+                        <ondown>20</ondown>
+                        <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(22)">Conditional</animation>
                     </control>
                 </control>
             </control>

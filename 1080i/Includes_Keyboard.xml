@@ -25,7 +25,7 @@
         <include>Key</include>
     </include>
     <include name="BackSpace">
-        <width>333</width>
+        <width>252</width>
         <height>90</height>
         <texturefocus border="81,20,20,20">dialogs/keyboard/backspacefocus.png</texturefocus>
         <texturenofocus border="81,20,20,20">dialogs/keyboard/backspacenofocus.png</texturenofocus>
