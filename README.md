@@ -1,11 +1,6 @@
-Xperience1080 (Kodi v14.x)
+1080XF (Kodi v14.x)
 =============
 
-Piers' version of `Black's Xperience1080 mod of the Xperience skin for Kodi 14.x.
+Piers' 1080XF skin, changes made here are made afterwards to my Xperience1080 repo.
 
-Contributions:
-- Piers
-- xhaggi
-- Black09
-
-See http://forum.kodi.tv/showthread.php?tid=210425 for more infos.
+See http://forum.kodi.tv/showthread.php?tid=197125 for more information.
