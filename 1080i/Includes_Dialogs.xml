@@ -22,7 +22,7 @@
         <width>350</width>
         <height>100</height>
     </include>
-
+    
     <include name="DialogButtonDimensionsRightAlign">
         <textcolor>ddwhite</textcolor>
         <focusedcolor>ddwhite</focusedcolor>
@@ -33,78 +33,83 @@
         <width>350</width>
         <height>100</height>
     </include>
-
+	  
     <include name="PVRGuideInfoZOrder">
         <zorder>3</zorder>
     </include>
-
+    
     <variable name="PVRChannelManagerItemsPageLabel">
         <value condition="IntegerGreaterThan(Container(20).NumItems,0) + !IntegerGreaterThan(Container(20).NumItems,1)">$INFO[Container(20).NumItems,, $LOCALIZE[19029]]$INFO[Container(20).CurrentPage, • $LOCALIZE[41819] ,]$INFO[Container(20).NumPages,/,]</value>
         <value>$INFO[Container(20).NumItems,, $LOCALIZE[19019]]$INFO[Container(20).CurrentPage, • $LOCALIZE[41819] ,]$INFO[Container(20).NumPages,/,]</value>
     </variable>
-
+    
     <variable name="PVRChannelsOSDItemsPageLabel">
         <value condition="IntegerGreaterThan(Container(20).NumItems,0) + !IntegerGreaterThan(Container(11).NumItems,1)">$INFO[Container(11).NumItems,, $LOCALIZE[19029]]$INFO[Container(11).CurrentPage, • $LOCALIZE[41819] ,]$INFO[Container(11).NumPages,/,]</value>
         <value>$INFO[Container(11).NumItems,, $LOCALIZE[19019]]$INFO[Container(11).CurrentPage, • $LOCALIZE[41819] ,]$INFO[Container(11).NumPages,/,]</value>
     </variable>
-
+    
+    <variable name="PVRChannelsOSDTitleLabel">
+        <value condition="PVR.IsPlayingRadio">$LOCALIZE[19024]$INFO[VideoPlayer.ChannelGroup, • ,]</value>
+        <value>$LOCALIZE[19023]$INFO[VideoPlayer.ChannelGroup, • ,]</value>
+    </variable>
+    
     <variable name="FileBrowserArtThumb">
         <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/medium.png]</value>
     </variable>
-
+    
     <variable name="FileBrowserArtThumbLarge">
         <value condition="!IsEmpty(Container(450).ListItem.Thumb)">$INFO[Container(450).ListItem.Thumb]</value>
         <value>$INFO[Container(450).ListItem.ActualIcon,views/fallbacks/,/large.png]</value>
     </variable>
-
+    
     <variable name="FileBrowserArtSquare">
         <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/square-medium.png]</value>
     </variable>
-
+    
     <variable name="FileBrowserArtLandscape">
         <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/landscape.png]</value>
     </variable>
-
+    
     <variable name="FileBrowserArtBanner">
         <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/banner.png]</value>
     </variable>
-
+    
     <include name="ArtDialogPanelWidthPoster">
         <width>992</width>
     </include>
-
+    
     <include name="ArtDialogPanelWidthLandscape">
         <width>1230</width>
     </include>
-
+    
     <include name="ArtDialogPanelWidthSquare">
         <width>1432</width>
     </include>
-
+    
     <include name="ArtDialogPanelWidthBanner">
         <width>1692</width>
     </include>
-
+    
     <include name="ArtDialogShadowWidthPoster">
         <width>1545</width>
     </include>
-
+    
     <include name="ArtDialogShadowWidthLandscape">
         <width>1299</width>
     </include>
-
+    
     <include name="ArtDialogShadowWidthSquare">
         <width>1501</width>
     </include>
-
+    
     <include name="ArtDialogShadowWidthBanner">
         <width>1771</width>
     </include>
-
+    
     <!-- DialogAddonSettings -->
     <include name="DialogAddonSettings">
         <control type="group">
@@ -124,7 +129,7 @@
                 <width>1352</width>
                 <height>541</height>
                 <texture border="39">dialogs/default/bg.png</texture>
-            </control>
+            </control>       
             <control type="label" id="20">
                 <description>Heading</description>
                 <posx>560</posx>
@@ -215,7 +220,7 @@
                 <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
                 <texturenofocus>dialogs/default/separator.png</texturenofocus>
             </control>
-
+            
             <control type="radiobutton" id="4">
                 <description>radioButton</description>
                 <height>60</height>
@@ -232,7 +237,7 @@
                 <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
                 <texturenofocus>dialogs/default/separator.png</texturenofocus>
             </control>
-
+            
             <control type="spincontrolex" id="5">
                 <description>Directory Content</description>
                 <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
@@ -260,7 +265,7 @@
                 <textcolor>AA585858</textcolor>
                 <shadowcolor>20FFFFFF</shadowcolor>
             </control>
-
+            
             <control type="sliderex" id="8">
                 <description>Default Slider</description>
                 <posx>0</posx>
@@ -280,13 +285,13 @@
                 <textoffsetx>20</textoffsetx>
                 <pulseonselect>false</pulseonselect>
             </control>
-
+            
             <control type="image" id="6">
                 <width>300</width>
                 <height>1</height>
                 <visible>false</visible>
             </control>
-
+            
             <control type="image" id="31">
                 <animation effect="fade" start="0" end="100" time="0">Visible</animation>
                 <animation effect="fade" start="100" end="0" time="0">Hidden</animation>
@@ -353,12 +358,12 @@
             </control>
         </control>
     </include>
-
+    
     <include name="DialogAddonSettingsOSD">
         <control type="group">
             <include>NowPlayingFullscreen</include>
             <visible>!Window.IsActive(sliderdialog) + !Window.IsVisible(filebrowser) + !Window.IsVisible(progressdialog) + [Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)]</visible>
-
+            
             <control type="image">
                 <posx>-545</posx>
                 <include>FullscreenDimensions</include>
@@ -401,7 +406,7 @@
                 <textcolor>bbwhite</textcolor>
                 <shadowcolor>66000000</shadowcolor>
             </control>
-
+            
             <control type="group" id="8003">
                 <posx>225</posx>
                 <posy>232</posy>
@@ -431,7 +436,7 @@
                     <disabledcolor>40FFFFFF</disabledcolor>
                     <font>Font-Condensed-S30-B</font>
                     <textoffsetx>35</textoffsetx>
-                </control>
+                </control>                  
                 <control type="grouplist" id="2">
                     <description>Control Area</description>
                     <posx>389</posx>
@@ -448,7 +453,7 @@
                     <scrolltime>0</scrolltime>
                 </control>
             </control>
-
+            
             <control type="scrollbar" id="30">
                 <description>Scrollbar</description>
                 <posx>1671</posx>
@@ -536,7 +541,7 @@
                 <textureslidernib>buttons/OSD/orb_nofo.png</textureslidernib>
                 <textureslidernibfocus>buttons/OSD/orb_fo.png</textureslidernibfocus>
             </control>
-
+           
             <control type="group" id="8004">
                 <posx>622</posx>
                 <posy>751</posy>
@@ -581,12 +586,12 @@
             </control>
         </control>
     </include>
-
+    
     <include name="DialogSelect">
         <control type="group">
             <include>KeyboardAnimations</include>
             <visible>!Window.IsVisible(yesnodialog) + !Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput) + ![Window.IsVisible(script-LibraryEditor-genre.xml) + IsEmpty(Window.Property(ShowDialog))] + !Window.IsVisible(script-LibraryEditor-dialogs.xml)</visible>
-
+            
             <control type="label" id="1">
                 <description>Heading</description>
                 <posx>473</posx>
@@ -597,7 +602,7 @@
                 <textcolor>ddwhite</textcolor>
                 <align>center</align>
             </control>
-
+            
             <control type="image">
                 <posx>920</posx>
                 <posy>246</posy>
@@ -605,7 +610,7 @@
                 <height>60</height>
                 <texture>dialogs/default/arrow.png</texture>
             </control>
-
+    
             <control type="group">
                 <visible>Control.IsVisible(3)</visible>
                 <control type="image">
@@ -623,7 +628,7 @@
                 	<texture border="5">dialogs/default/inner.png</texture>
                 </control>
             </control>
-
+            
             <control type="group">
                 <visible>Control.IsVisible(6)</visible>
                 <control type="image">
@@ -677,9 +682,9 @@
                     <enable>false</enable>
                 </control>
             </control>
-
+            
             <include>SortLetterSelectDialog</include>
-
+                        
             <control type="list" id="3">
                 <posx>638</posx>
                 <posy>300</posy>
@@ -925,7 +930,7 @@
                     </control>
                 </focusedlayout>
             </control>
-
+            
             <control type="list" id="6">
                 <posx>421</posx>
                 <posy>300</posy>
@@ -1066,7 +1071,7 @@
                     </control>
                 </focusedlayout>
             </control>
-
+            
             <control type="image" id="63">
                 <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
             </control>
@@ -1156,7 +1161,7 @@
             </control>
         </control>
     </include>
-
+    
     <include name="DialogSelectOSD">
         <control type="group">
             <include>NowPlayingFullscreen</include>
@@ -1167,13 +1172,13 @@
                 <texture>dialogs/select/background-osd.png</texture>
                 <visible>Control.IsVisible(3)</visible>
             </control>
-
+            
             <control type="image">
                 <include>FullscreenDimensions</include>
                 <texture>dialogs/select/background-addons-osd.png</texture>
                 <visible>Control.IsVisible(6)</visible>
             </control>
-
+            
             <control type="label" id="1">
                 <description>Heading</description>
                 <posx>660</posx>
@@ -1186,7 +1191,7 @@
                 <textcolor>bbwhite</textcolor>
                 <shadowcolor>66000000</shadowcolor>
             </control>
-
+            
             <control type="group">
                 <visible>Control.IsVisible(6)</visible>
                 <control type="image">
@@ -1216,7 +1221,7 @@
                     <visible>!IsEmpty(Container(6).ListItem.Property(Addon.Creator))</visible>
                 </control>
             </control>
-
+                        
             <control type="list" id="3">
                 <posx>635</posx>
                 <posy>304</posy>
@@ -1322,7 +1327,7 @@
                     </control>
                 </focusedlayout>
             </control>
-
+            
             <control type="list" id="6">
                 <posx>420</posx>
                 <posy>304</posy>
@@ -1445,7 +1450,7 @@
                     </control>
                 </focusedlayout>
             </control>
-
+            
             <control type="image" id="63">
                 <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
             </control>
@@ -1539,7 +1544,7 @@
             </control>
         </control>
     </include>
-
+    
     <include name="DialogTextViewerDefault">
         <control type="group">
             <animation type="WindowOpen" condition="Window.IsVisible(addonsettings)" reversible="false">
@@ -1547,7 +1552,7 @@
             </animation>
             <control type="group">
                 <include>KeyboardAnimations</include>
-
+                
                 <control type="label" id="1">
                     <description>Heading</description>
                     <posx>473</posx>
@@ -1558,7 +1563,7 @@
                     <textcolor>ddwhite</textcolor>
                     <align>center</align>
                 </control>
-
+                
                 <control type="image">
                     <posx>920</posx>
                     <posy>211</posy>
@@ -1580,7 +1585,7 @@
                 	<height>548</height>
                 	<texture border="5">dialogs/default/inner.png</texture>
                 </control>
-
+                
                 <control type="textbox" id="5">
                     <description>textarea</description>
                     <posx>495</posx>
@@ -1594,7 +1599,7 @@
                     <selectedcolor>FF585858</selectedcolor>
                     <pagecontrol>61</pagecontrol>
                 </control>
-
+                
                 <control type="image" id="63">
                     <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
                 </control>
@@ -1624,7 +1629,7 @@
                     <orientation>vertical</orientation>
                     <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(62)">Conditional</animation>
                 </control>
-
+    
                 <control type="group" id="8000">
                     <posx>466</posx>
                     <posy>809</posy>
@@ -1646,7 +1651,7 @@
             </control>
         </control>
     </include>
-
+    
     <include name="DialogTextViewerAddonInfo">
         <control type="group">
             <include>FullscreenDimensions</include>
@@ -1688,8 +1693,8 @@
                 <orientation>vertical</orientation>
             </control>
         </control>
-    </include>
-
+    </include>  
+    
     <include name="PVRGuideInfo">
         <control type="group">
             <include>KeyboardAnimations</include>
@@ -1707,7 +1712,7 @@
                 <width>868</width>
                 <height>680</height>
                 <texture border="39">dialogs/default/bg.png</texture>
-            </control>
+            </control>       
             <control type="label">
                 <description>Heading</description>
                 <posx>560</posx>
@@ -1898,187 +1903,22 @@
             </control>
         </control>
     </include>
-
-    <include name="PVRGuideInfoOSD">
-        <control type="group">
-            <animation type="WindowOpen" reversible="false">
-                <effect type="fade" start="0" end="100" time="300" easing="inout" tween="sine" />
-            </animation>
-            <animation type="WindowClose" reversible="false">
-                <effect type="fade" start="100" end="0" time="300" easing="inout" tween="sine" />
-            </animation>
-            <animation type="Visible" reversible="false">
-                <effect type="zoom" start="75" end="100" center="960,540" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="175" />
-            </animation>
-            <animation type="Hidden" reversible="false">
-                <effect type="zoom" start="100" end="75" center="960,540" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" delay="200" time="100" />
-            </animation>
-            <animation effect="slide" end="0,42" time="0" condition="!Window.IsActive(videoosd)">Conditional</animation>
-            <control type="label">
-                <description>Header</description>
-                <posx>100</posx>
-                <posy>73</posy>
-                <width>780</width>
-                <height>38</height>
-                <align>center</align>
-                <textoffsetx>30</textoffsetx>
-                <label>$INFO[ListItem.Title]</label>
-                <font>Font-Condensed-S34-B</font>
-                <textcolor>bbwhite</textcolor>
-                <shadowcolor>66000000</shadowcolor>
-            </control>
-            <control type="group">
-                <posx>100</posx>
-                <posy>124</posy>
-                <control type="button">
-                	<description>Time</description>
-                	<posx>0</posx>
-                	<posy>0</posy>
-                	<width>780</width>
-                	<height>70</height>
-                	<align>left</align>
-                	<textoffsetx>30</textoffsetx>
-                	<textwidth>540</textwidth>
-                	<font>Font-Condensed-S34</font>
-                	<textcolor>99FFFFFF</textcolor>
-                	<disabledcolor>99FFFFFF</disabledcolor>
-                	<texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
-                	<label>[B]$LOCALIZE[142][/B]</label>
-                	<label2>[COLOR=AAFFFFFF]$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.StartDate])[/COLOR]</label2>
-                	<enable>false</enable>
-                </control>
-                <control type="button">
-                	<description>Duration</description>
-                	<posx>0</posx>
-                	<posy>70</posy>
-                	<width>780</width>
-                	<height>70</height>
-                	<align>left</align>
-                	<textoffsetx>30</textoffsetx>
-                	<textwidth>540</textwidth>
-                	<font>Font-Condensed-S34</font>
-                	<textcolor>99FFFFFF</textcolor>
-                	<disabledcolor>99FFFFFF</disabledcolor>
-                	<texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
-                	<label>[B]$LOCALIZE[180]:[/B]</label>
-                	<label2>[COLOR=AAFFFFFF]$INFO[ListItem.Duration][/COLOR]</label2>
-                	<enable>false</enable>
-                </control>
-                <control type="button">
-                	<description>Channel</description>
-                	<posx>0</posx>
-                	<posy>140</posy>
-                	<width>780</width>
-                	<height>70</height>
-                	<align>left</align>
-                	<textoffsetx>30</textoffsetx>
-                	<textwidth>540</textwidth>
-                	<font>Font-Condensed-S34</font>
-                	<textcolor>99FFFFFF</textcolor>
-                	<disabledcolor>99FFFFFF</disabledcolor>
-                	<texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
-                	<label>[B]$LOCALIZE[19148]:[/B]</label>
-                	<label2>[COLOR=AAFFFFFF]$INFO[ListItem.ChannelName][/COLOR]</label2>
-                	<enable>false</enable>
-                </control>
-                <control type="button">
-                	<description>Genre</description>
-                	<posx>0</posx>
-                	<posy>210</posy>
-                	<width>780</width>
-                	<height>70</height>
-                	<align>left</align>
-                	<textoffsetx>30</textoffsetx>
-                	<textwidth>540</textwidth>
-                	<font>Font-Condensed-S34</font>
-                	<textcolor>99FFFFFF</textcolor>
-                	<disabledcolor>99FFFFFF</disabledcolor>
-                	<texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
-                	<label>[B]$LOCALIZE[135]:[/B]</label>
-                	<label2 fallback="161">[COLOR=AAFFFFFF]$INFO[ListItem.Genre][/COLOR]</label2>
-                	<enable>false</enable>
-                </control>
-            </control>
-            <control type="textbox" id="400">
-            	<description>Plot value</description>
-            	<posx>130</posx>
-            	<posy>422</posy>
-            	<width>720</width>
-            	<height>415</height>
-            	<font>Font-Condensed-S38</font>
-            	<align>justify</align>
-            	<textcolor>bbwhite</textcolor>
-            	<pagecontrol>60</pagecontrol>
-            	<autoscroll delay="10000" time="3000" repeat="6000">!Control.HasFocus(60) + !Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-            	<label fallback="161">$INFO[ListItem.Plot]</label>
-            </control>
-            <control type="scrollbar" id="60">
-                <description>Scrollbar</description>
-                <posx>859</posx>
-                <posy>422</posy>
-                <width>11</width>
-                <height>415</height>
-                <onleft>8000</onleft>
-                <onright>8000</onright>
-                <ondown>60</ondown>
-                <onup>60</onup>
-                <texturesliderbar border="0,6,0,6">views/other/scrollbar.png</texturesliderbar>
-                <texturesliderbarfocus border="0,6,0,6">views/other/scrollbar.png</texturesliderbarfocus>
-                <orientation>vertical</orientation>
-                <showonepage>false</showonepage>
-                <animation effect="fade" start="30" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">Conditional</animation>
-            </control>
-            <control type="group" id="8000">
-                <posx>100</posx>
-                <posy>840</posy>
-                <defaultcontrol>5</defaultcontrol>
-                <control type="button" id="7">
-                    <description>Select</description>
-                    <texturefocus>buttons/cancel-fo.png</texturefocus>
-                    <texturenofocus>buttons/cancel-nf.png</texturenofocus>
-                    <textcolor>77white</textcolor>
-                    <selectedcolor>aawhite</selectedcolor>
-                    <include>DialogButtonDimensions</include>
-                    <label>$LOCALIZE[42002]</label>
-                    <onleft>6</onleft>
-                    <onright>5</onright>
-                    <onup>60</onup>
-                    <ondown>60</ondown>
-                </control>
-                <control type="button" id="5">
-                    <posx>200</posx>
-                    <description>Close</description>
-                    <label>$LOCALIZE[19165]</label>
-                    <texturefocus>buttons/switch-fo.png</texturefocus>
-                    <texturenofocus>buttons/switch-nf.png</texturenofocus>
-                    <textcolor>77white</textcolor>
-                    <selectedcolor>aawhite</selectedcolor>
-                    <include>DialogButtonDimensions</include>
-                    <onleft>7</onleft>
-                    <onright>6</onright>
-                    <onup>60</onup>
-                    <ondown>60</ondown>
-                </control>
-                <control type="button" id="6">
-                    <posx>427</posx>
-                    <description>Record</description>
-                    <label>-</label>
-                    <textcolor>77white</textcolor>
-                    <selectedcolor>aawhite</selectedcolor>
-                    <include>DialogButtonDimensionsRightAlign</include>
-                    <texturefocus>buttons/record-fo.png</texturefocus>
-                    <texturenofocus>buttons/record-nf.png</texturenofocus>
-                    <onleft>5</onleft>
-                    <onright>7</onright>
-                    <onup>60</onup>
-                    <ondown>60</ondown>
-                </control>
-            </control>
-        </control>
-    </include>
-
+ 	
+ 	<include name="PVRGuideInfoOSDExtended">
+ 		<control type="group" id="8000">
+            <defaultcontrol>5</defaultcontrol>
+		    <control type="button" id="6">
+			    <description>Record/Add timer button</description>
+			    <onleft>PreviousMenu</onleft>
+			    <onright>PreviousMenu</onright>
+			    <onup>PreviousMenu</onup>
+			    <ondown>PreviousMenu</ondown>
+			    <label>-</label>
+			    <visible allowhiddenfocus="true">false</visible>
+			</control>
+	    </control> 		
+ 	</include>
+  
     <include name="FileBrowserDefault">
         <control type="group">
             <animation type="WindowOpen" condition="Window.IsVisible(ProfileSettings) | Window.IsVisible(MediaSource) | Window.IsVisible(3002) | Window.IsVisible(3003) | Window.IsVisible(3004) | Window.IsVisible(peripheralsettings) | Window.IsVisible(networksetup) | Window.IsVisible(smartplaylistrule) | Window.IsVisible(pvrchannelmanager)" reversible="false">
@@ -2101,7 +1941,7 @@
                 <include>KeyboardAnimations</include>
                 <include>OptionsShutdownAnimation</include>
                 <visible>!Window.IsVisible(virtualkeyboard) + ![Window.IsVisible(networksetup) + IsEmpty(Window.Property(ShowDialog))] + !Window.IsVisible(locksettings)</visible>
-
+                
                 <control type="image">
                     <posx>920</posx>
                     <posy>246</posy>
@@ -2130,7 +1970,7 @@
                 	<height>481</height>
                 	<texture border="5">dialogs/default/inner-dark.png</texture>
                 </control>
-
+                            
                 <control type="label" id="411">
                     <description>Heading</description>
                     <posx>473</posx>
@@ -2141,7 +1981,7 @@
                     <textcolor>ddwhite</textcolor>
                     <align>center</align>
                 </control>
-
+                
                 <control type="image">
                     <posx>1123</posx>
                     <posy>301</posy>
@@ -2151,7 +1991,7 @@
                     <texture>$INFO[ListItem.ActualIcon,dialogs/filebrowser/icons/,]</texture>
                     <visible>IsEmpty(Container(450).ListItem.Thumb)</visible>
                 </control>
-
+                
                 <control type="image">
                     <posx>1123</posx>
                     <posy>301</posy>
@@ -2161,9 +2001,9 @@
                     <texture background="true">$INFO[Container(450).ListItem.Thumb]</texture>
                     <visible>!IsEmpty(Container(450).ListItem.Thumb)</visible>
                 </control>
-
+                
                 <include>SortLetterFileBrowser</include>
-
+                    
                 <control type="list" id="450">
                     <posx>479</posx>
                     <posy>300</posy>
@@ -2241,7 +2081,7 @@
                                 <textcolor>FF585858</textcolor>
                                 <scroll>false</scroll>
                                 <animation effect="slide" end="-50" time="0" condition="IsEmpty(ListItem.Icon)">Conditional</animation>
-                            </control>
+                            </control>  
                         </control>
                         <control type="group">
                             <visible>Control.HasFocus(450)</visible>
@@ -2351,7 +2191,7 @@
                                 <textcolor>FF585858</textcolor>
                                 <scroll>false</scroll>
                                 <animation effect="slide" end="-50" time="0" condition="IsEmpty(ListItem.Icon)">Conditional</animation>
-                            </control>
+                            </control>  
                         </control>
                         <control type="group">
                             <visible>Control.HasFocus(451)</visible>
@@ -2385,7 +2225,7 @@
                         </control>
                     </focusedlayout>
                 </control>
-
+                
                 <control type="image" id="62">
                     <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
                 </control>
@@ -2415,7 +2255,7 @@
                     <orientation>vertical</orientation>
                     <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(61)">Conditional</animation>
                 </control>
-
+                
                 <control type="group" id="8000">
                     <posx>466</posx>
                     <posy>776</posy>
@@ -2463,7 +2303,7 @@
     </include>
 
     <include name="FileBrowserArt">
-        <control type="group">
+        <control type="group">                
             <animation type="WindowOpen">
                 <effect type="fade" start="50" end="100" time="400"  tween="sine" easing="inout" />
                 <effect type="slide" start="-1841" end="0" time="400" tween="sine" easing="inout" />
@@ -2471,12 +2311,12 @@
             <animation type="WindowClose">
                 <effect type="slide" start="0" end="-1841" time="400" tween="sine" easing="inout" />
             </animation>
-
+                                        
             <control type="label" id="411">
                 <description>Heading</description>
                 <visible>false</visible>
             </control>
-
+            
             <control type="label">
                 <description>Heading</description>
                 <posx>88</posx>
@@ -2493,7 +2333,7 @@
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
             </control>
-
+            
             <control type="label">
                 <posx>1118</posx>
                 <posy>144</posy>
@@ -2506,7 +2346,7 @@
                 <scroll>false</scroll>
                 <visible>StringCompare(Window(3004).Property(ChooseArt),poster)</visible>
             </control>
-
+            
             <control type="image">
                 <description>Shadow</description>
                 <posx>57</posx>
@@ -2518,7 +2358,7 @@
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogShadowWidthBanner</include>
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthLandscape</include>
             </control>
-
+            
             <control type="image">
                 <posx>1091</posx>
                 <posy>220</posy>
@@ -2529,7 +2369,7 @@
                 <fadetime>500</fadetime>
                 <visible>StringCompare(Window(3004).Property(ChooseArt),poster)</visible>
             </control>
-
+            
             <control type="panel" id="450">
                 <posx>88</posx>
                 <posy>208</posy>
@@ -2911,9 +2751,9 @@
             </control>
         </control>
     </include>
-
+    
     <include name="DialogSelectArt">
-        <control type="group">
+        <control type="group">                
             <animation type="WindowOpen">
                 <effect type="fade" start="50" end="100" time="400" tween="sine" easing="inout" />
                 <effect type="slide" start="-1781" end="0" time="400" tween="sine" easing="inout" />
@@ -2921,12 +2761,12 @@
             <animation type="WindowClose">
                 <effect type="slide" start="0" end="-1781" time="400" tween="sine" easing="inout" />
             </animation>
-
+                                        
             <control type="label" id="1">
                 <description>Heading</description>
                 <visible>false</visible>
             </control>
-
+            
             <control type="label">
                 <description>Heading</description>
                 <posx>88</posx>
@@ -2943,7 +2783,7 @@
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
             </control>
-
+            
             <control type="label">
                 <posx>1118</posx>
                 <posy>144</posy>
@@ -2956,7 +2796,7 @@
                 <scroll>false</scroll>
                 <visible>StringCompare(Window(3004).Property(ChooseArt),poster)</visible>
             </control>
-
+            
             <control type="image">
                 <description>Shadow</description>
                 <posx>57</posx>
@@ -2968,7 +2808,7 @@
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogShadowWidthBanner</include>
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthLandscape</include>
             </control>
-
+            
             <control type="image">
                 <posx>1091</posx>
                 <posy>220</posy>
@@ -2979,7 +2819,7 @@
                 <fadetime>500</fadetime>
                 <visible>StringCompare(Window(3004).Property(ChooseArt),poster)</visible>
             </control>
-
+            
             <control type="panel" id="3">
                 <itemlayout />
                 <focusedlayout />
@@ -3298,7 +3138,7 @@
                 </control>
             </control>
         </control>
-
+        
         <control type="button" id="5">
             <enable>false</enable>
             <visible>false</visible>
