@@ -71,7 +71,7 @@
                             <texture border="90,3,90,3">views/list/other/separator.png</texture>
                         </control>
                         <control type="label">
-                            <posx>338</posx>
+                            <posx>0</posx>
                             <posy>0</posy>
                             <width>338</width>
                             <height>77</height>
@@ -93,7 +93,7 @@
                             <animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(30)">Conditional</animation>
                         </control>
                         <control type="label">
-                            <posx>338</posx>
+                            <posx>0</posx>
                             <posy>0</posy>
                             <width>338</width>
                             <height>77</height>
