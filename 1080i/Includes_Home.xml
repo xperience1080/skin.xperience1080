@@ -121,7 +121,7 @@
         <width>600</width>
         <height>60</height>
         <font>Font-Condensed-S36</font>
-        <textcolor>C0FFFFFF</textcolor>
+        <textcolor>eewhite</textcolor>
         <scroll>false</scroll>
         <align>left</align>
         <animation type="Visible">
@@ -1881,16 +1881,16 @@
                                         <textoffsetx>20</textoffsetx>
                                     </control>
                                     <control type="label">
-                                        <posx>307</posx>
+                                        <posx>0</posx>
                                         <posy>241</posy>
                                         <width>283</width>
                                         <height>66</height>
                                         <label>$INFO[ListItem.Label2]</label>
-                                        <font>Font-Condensed-S31-B</font>
-                                        <textcolor>77white</textcolor>
+                                        <font>Font-Condensed-S33</font>
+                                        <textcolor>aawhite</textcolor>
                                         <align>right</align>
                                         <aligny>center</aligny>
-                                        <textoffsetx>20</textoffsetx>
+                                        <textoffsetx>0</textoffsetx>
                                         <visible>!IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Property(Path))</visible>
                                     </control>
                                 </control>
@@ -1962,16 +1962,16 @@
                                             <textoffsetx>20</textoffsetx>
                                         </control>
                                         <control type="label">
-                                            <posx>307</posx>
+                                            <posx>0</posx>
                                             <posy>241</posy>
                                             <width>283</width>
                                             <height>66</height>
                                             <label>$INFO[ListItem.Label2]</label>
-                                            <font>Font-Condensed-S31-B</font>
-                                            <textcolor>77white</textcolor>
+                                            <font>Font-Condensed-S33</font>
+                                            <textcolor>aawhite</textcolor>
                                             <align>right</align>
                                             <aligny>center</aligny>
-                                            <textoffsetx>20</textoffsetx>
+                                            <textoffsetx>0</textoffsetx>
                                             <visible>!IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Property(Path))</visible>
                                         </control>
                                     </control>
@@ -2597,16 +2597,16 @@
                                         <textoffsetx>20</textoffsetx>
                                     </control>
                                     <control type="label">
-                                        <posx>307</posx>
+                                        <posx>0</posx>
                                         <posy>241</posy>
                                         <width>283</width>
                                         <height>66</height>
                                         <label>$INFO[ListItem.Label2]</label>
-                                        <font>Font-Condensed-S31-B</font>
-                                        <textcolor>77white</textcolor>
+                                        <font>Font-Condensed-S33</font>
+                                        <textcolor>aawhite</textcolor>
                                         <align>right</align>
                                         <aligny>center</aligny>
-                                        <textoffsetx>20</textoffsetx>
+                                        <textoffsetx>0</textoffsetx>
                                         <visible>!IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Property(Path))</visible>
                                     </control>
                                 </control>
@@ -2678,16 +2678,16 @@
                                             <textoffsetx>20</textoffsetx>
                                         </control>
                                         <control type="label">
-                                            <posx>307</posx>
+                                            <posx>0</posx>
                                             <posy>241</posy>
                                             <width>283</width>
                                             <height>66</height>
                                             <label>$INFO[ListItem.Label2]</label>
-                                            <font>Font-Condensed-S31-B</font>
-                                            <textcolor>77white</textcolor>
+                                            <font>Font-Condensed-S33</font>
+                                            <textcolor>aawhite</textcolor>
                                             <align>right</align>
                                             <aligny>center</aligny>
-                                            <textoffsetx>20</textoffsetx>
+                                            <textoffsetx>0</textoffsetx>
                                             <visible>!IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Property(Path))</visible>
                                         </control>
                                     </control>
@@ -3256,16 +3256,16 @@
                                         <textoffsetx>20</textoffsetx>
                                     </control>
                                     <control type="label">
-                                        <posx>307</posx>
+                                        <posx>0</posx>
                                         <posy>241</posy>
                                         <width>283</width>
                                         <height>66</height>
                                         <label>$INFO[ListItem.Label2]</label>
-                                        <font>Font-Condensed-S31-B</font>
-                                        <textcolor>77white</textcolor>
+                                        <font>Font-Condensed-S33</font>
+                                        <textcolor>aawhite</textcolor>
                                         <align>right</align>
                                         <aligny>center</aligny>
-                                        <textoffsetx>20</textoffsetx>
+                                        <textoffsetx>0</textoffsetx>
                                         <visible>!IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Property(Path))</visible>
                                     </control>
                                 </control>
@@ -3337,16 +3337,16 @@
                                             <textoffsetx>20</textoffsetx>
                                         </control>
                                         <control type="label">
-                                            <posx>307</posx>
+                                            <posx>0</posx>
                                             <posy>241</posy>
                                             <width>283</width>
                                             <height>66</height>
                                             <label>$INFO[ListItem.Label2]</label>
-                                            <font>Font-Condensed-S31-B</font>
-                                            <textcolor>77white</textcolor>
+											<font>Font-Condensed-S33</font>
+											<textcolor>aawhite</textcolor>
                                             <align>right</align>
                                             <aligny>center</aligny>
-                                            <textoffsetx>20</textoffsetx>
+                                            <textoffsetx>0</textoffsetx>
                                             <visible>!IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Property(Path))</visible>
                                         </control>
                                     </control>
@@ -4352,7 +4352,7 @@
                                         <scroll>false</scroll>
                                     </control>
                                     <control type="label">
-                                        <posx>552</posx>
+                                        <posx>10</posx>
                                         <posy>1</posy>
                                         <width>532</width>
                                         <height>57</height>
@@ -4386,7 +4386,7 @@
                                         <scroll>false</scroll>
                                     </control>
                                     <control type="label">
-                                        <posx>552</posx>
+                                        <posx>10</posx>
                                         <posy>1</posy>
                                         <width>532</width>
                                         <height>57</height>
