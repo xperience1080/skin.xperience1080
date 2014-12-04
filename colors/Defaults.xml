@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <colors>
 <!-- All others -->
         <color name="black">FF000000</color>
@@ -33,7 +32,7 @@
         <color name="ddwhite">DDFFFFFF</color>  
         <color name="eewhite">EEFFFFFF</color>
 <!-- Menus -->
-        <color name="MenuBlue">FF55B2FA</color>
+        <color name="MenuBlue">FF45dfff</color>
         <color name="MenuGrey">CC484848</color>
         <color name="KeyboardGrey">99484848</color>
         
@@ -41,7 +40,7 @@
         
         <color name="DialogSelected">FF4ea1e7</color>
         
-        <color name="SelectedRed">FFE10101</color>
-        <color name="SelectedGreen">FF60a0bd</color>
-        <color name="SelectedBlue">FF31D0FF</color>
+        <color name="SelectedRed">FF9a0603</color>
+        <color name="SelectedGreen">FF20ac17</color>
+        <color name="SelectedBlue">FF268bb4</color>
 </colors>
