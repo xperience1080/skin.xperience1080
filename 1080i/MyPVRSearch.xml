@@ -115,7 +115,7 @@
                         <shadowcolor>55000000</shadowcolor>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[ListItem.StartDate]</label>
+                        <label>$VAR[TVNumItemsLabel]</label>
                     </control>
                     <control type="image">
                         <description>Shadow</description>
@@ -147,7 +147,7 @@
                         <viewtype label="535">list</viewtype>
                         <preloaditems>2</preloaditems>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
-                        <itemlayout height="96" condition="![substring(System.Time,AM,right) | substring(System.Time,PM,right)]">
+                        <itemlayout height="96">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
@@ -157,122 +157,7 @@
                             </control>
                             <control type="label">
                                 <description>Label</description>
-                                <posx>10</posx>
-                                <posy>0</posy>
-                                <width>93</width>
-                                <height>58</height>
-                                <font>Font-Condensed-S34-B</font>
-                                <align>left</align>
-                                <label>$INFO[ListItem.StartTime]</label>
-                                <textcolor>99FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
-                                <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <description>Label</description>
-                                <posx>123</posx>
-                                <posy>0</posy>
-                                <width>824</width>
-                                <height>58</height>
-                                <font>Font-Condensed-S34-B</font>
-                                <align>left</align>
-                                <label>$INFO[ListItem.Label]</label>
-                                <textcolor>99FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
-                                <scroll>false</scroll>
-                                <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
-                            </control>
-                            <control type="label">
-                                <description>Duration</description>
-                                <posx>10</posx>
-                                <posy>42</posy>
-                                <width>98</width>
-                                <height>50</height>
-                                <font>Font-Condensed-S28</font>
-                                <align>left</align>
-                                <label>$INFO[ListItem.Duration]</label>
-                                <textcolor>77white</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
-                                <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <description>Channel name</description>
-                                <posx>123</posx>
-                                <posy>42</posy>
-                                <width>824</width>
-                                <height>50</height>
-                                <font>Font-Condensed-S28</font>
-                                <align>left</align>
-                                <label>$INFO[ListItem.ChannelName]</label>
-                                <textcolor>77white</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
-                                <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <description>End time</description>
-                                <posx>997</posx>
-                                <posy>0</posy>
-                                <width>200</width>
-                                <height>56</height>
-                                <font>Font-Condensed-S28</font>
-                                <align>right</align>
-                                <label>$INFO[ListItem.EndTime,→ ,]</label>
-                                <textcolor>77white</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
-                                <scroll>false</scroll>
-                                <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
-                            </control>
-                            <control type="group">
-                                <visible>ListItem.IsRecording</visible>
-                                <control type="image">
-                                    <posx>950</posx>
-                                    <posy>8</posy>
-                                    <width>66</width>
-                                    <height>80</height>
-                                    <texture>windows/pvr/epg-recording.png</texture>
-                                </control>
-                                <control type="image">
-                                    <posx>950</posx>
-                                    <posy>8</posy>
-                                    <width>66</width>
-                                    <height>80</height>
-                                    <texture>windows/pvr/epg-recording-pulse.png</texture>
-                                    <animation effect="fade" start="65" end="100" time="750" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
-                                </control>
-                            </control>
-                            <control type="image">
-                                <posx>950</posx>
-                                <posy>8</posy>
-                                <width>66</width>
-                                <height>80</height>
-                                <texture>windows/pvr/epg-timer.png</texture>
-                                <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-                            </control>
-                        </itemlayout>
-                        <itemlayout height="96" condition="substring(System.Time,AM,right) | substring(System.Time,PM,right)">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>1022</width>
-                                <height>97</height>
-                                <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                            </control>
-                            <control type="label">
-                                <description>Label</description>
-                                <posx>10</posx>
-                                <posy>0</posy>
-                                <width>142</width>
-                                <height>58</height>
-                                <font>Font-Condensed-S34-B</font>
-                                <align>left</align>
-                                <label>$INFO[ListItem.StartTime]</label>
-                                <textcolor>99FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
-                                <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <description>Label</description>
-                                <posx>162</posx>
+                                <posx>20</posx>
                                 <posy>0</posy>
                                 <width>785</width>
                                 <height>58</height>
@@ -283,46 +168,19 @@
                                 <selectedcolor>SelectedGreen</selectedcolor>
                                 <scroll>false</scroll>
                                 <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
-                            </control>
-                            <control type="label">
-                                <description>Duration</description>
-                                <posx>10</posx>
-                                <posy>42</posy>
-                                <width>142</width>
-                                <height>50</height>
-                                <font>Font-Condensed-S28</font>
-                                <align>left</align>
-                                <label>$INFO[ListItem.Duration]</label>
-                                <textcolor>77white</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
-                                <scroll>false</scroll>
                             </control>
                             <control type="label">
                                 <description>Genre</description>
-                                <posx>162</posx>
+                                <posx>20</posx>
                                 <posy>42</posy>
                                 <width>785</width>
                                 <height>50</height>
                                 <font>Font-Condensed-S28</font>
                                 <align>left</align>
-                                <label>$INFO[ListItem.ChannelName]</label>
+                                <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]$INFO[ListItem.ChannelName, ● ,]</label>
                                 <textcolor>77white</textcolor>
                                 <selectedcolor>D4FFFFFF</selectedcolor>
                                 <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <description>End time</description>
-                                <posx>997</posx>
-                                <posy>0</posy>
-                                <width>200</width>
-                                <height>56</height>
-                                <font>Font-Condensed-S28</font>
-                                <align>right</align>
-                                <label>$INFO[ListItem.EndTime,→ ,]</label>
-                                <textcolor>77white</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
-                                <scroll>false</scroll>
-                                <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
                             </control>
                             <control type="group">
                                 <visible>ListItem.IsRecording</visible>
@@ -351,7 +209,7 @@
                                 <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="96" condition="![substring(System.Time,AM,right) | substring(System.Time,PM,right)]">
+                        <focusedlayout height="96">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
@@ -376,191 +234,32 @@
                                 </animation>
                                 <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
                                 <control type="label">
-                                    <description>Label</description>
-                                    <posx>10</posx>
-                                    <posy>0</posy>
-                                    <width>93</width>
-                                    <height>58</height>
-                                    <font>Font-Condensed-S34-B</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.StartTime]</label>
-                                    <textcolor>eewhite</textcolor>
-                                    <selectedcolor>SelectedGreen</selectedcolor>
-                                    <scroll>false</scroll>
-                                </control>
-                                <control type="label">
-                                    <description>Label</description>
-                                    <posx>123</posx>
-                                    <posy>0</posy>
-                                    <width>824</width>
-                                    <height>58</height>
-                                    <font>Font-Condensed-S34-B</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.Label]</label>
-                                    <textcolor>eewhite</textcolor>
-                                    <selectedcolor>SelectedGreen</selectedcolor>
-                                    <scroll>false</scroll>
-                                    <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
-                                </control>
-                                <control type="label">
-                                    <description>Duration</description>
-                                    <posx>10</posx>
-                                    <posy>42</posy>
-                                    <width>98</width>
-                                    <height>50</height>
-                                    <font>Font-Condensed-S28</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.Duration]</label>
-                                    <textcolor>D4FFFFFF</textcolor>
-                                    <selectedcolor>D4FFFFFF</selectedcolor>
-                                    <scroll>false</scroll>
-                                </control>
-                                <control type="label">
-                                    <description>Genre</description>
-                                    <posx>123</posx>
-                                    <posy>42</posy>
-                                    <width>824</width>
-                                    <height>50</height>
-                                    <font>Font-Condensed-S28</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.ChannelName]</label>
-                                    <textcolor>D4FFFFFF</textcolor>
-                                    <selectedcolor>D4FFFFFF</selectedcolor>
-                                    <scroll>false</scroll>
-                                </control>
-                                <control type="label">
-                                    <description>End time</description>
-                                    <posx>997</posx>
-                                    <posy>0</posy>
-                                    <width>200</width>
-                                    <height>56</height>
-                                    <font>Font-Condensed-S28</font>
-                                    <align>right</align>
-                                    <label>$INFO[ListItem.EndTime,→ ,]</label>
-                                    <textcolor>D4FFFFFF</textcolor>
-                                    <selectedcolor>D4FFFFFF</selectedcolor>
-                                    <scroll>false</scroll>
-                                    <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
-                                </control>
-                            </control>
-                            <control type="group">
-                                <visible>ListItem.IsRecording</visible>
-                                <control type="image">
-                                    <posx>950</posx>
-                                    <posy>8</posy>
-                                    <width>66</width>
-                                    <height>80</height>
-                                    <texture>windows/pvr/epg-recording.png</texture>
-                                </control>
-                                <control type="image">
-                                    <posx>950</posx>
-                                    <posy>8</posy>
-                                    <width>66</width>
-                                    <height>80</height>
-                                    <texture>windows/pvr/epg-recording-pulse.png</texture>
-                                    <animation effect="fade" start="65" end="100" time="750" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
-                                </control>
-                            </control>
-                            <control type="image">
-                                <posx>950</posx>
-                                <posy>8</posy>
-                                <width>66</width>
-                                <height>80</height>
-                                <texture>windows/pvr/epg-timer.png</texture>
-                                <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-                            </control>
-                        </focusedlayout>
-                        <focusedlayout height="96" condition="substring(System.Time,AM,right) | substring(System.Time,PM,right)">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>1022</width>
-                                <height>97</height>
-                                <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>1022</width>
-                                <height>95</height>
-                                <texture border="150,1,150,1">views/other/focus.png</texture>
-                                <animation effect="slide" start="0,96" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(50).OnPrevious">focus</animation>
-                                <animation effect="slide" start="0,-96" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(50).OnNext">focus</animation>
-                                <include>visiblehidefadeinfo</include>
-                                <visible>Control.HasFocus(50)</visible>
-                            </control>
-                            <control type="group">
-                                <animation type="Focus" condition="Container(50).OnNext | Container(50).OnPrevious" reversible="false">
-                                    <effect type="fade" start="64" end="100" time="500" tween="sine" easing="inout" />
-                                </animation>
-                                <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
-                                <control type="label">
-                                    <description>Label</description>
-                                    <posx>10</posx>
-                                    <posy>0</posy>
-                                    <width>142</width>
-                                    <height>58</height>
-                                    <font>Font-Condensed-S34-B</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.StartTime]</label>
-                                    <textcolor>eewhite</textcolor>
-                                    <selectedcolor>SelectedGreen</selectedcolor>
-                                    <scroll>false</scroll>
-                                </control>
-                                <control type="label">
-                                    <description>Label</description>
-                                    <posx>162</posx>
-                                    <posy>0</posy>
-                                    <width>785</width>
-                                    <height>58</height>
-                                    <font>Font-Condensed-S34-B</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.Label]</label>
-                                    <textcolor>eewhite</textcolor>
-                                    <selectedcolor>SelectedGreen</selectedcolor>
-                                    <scroll>false</scroll>
-                                    <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
-                                </control>
-                                <control type="label">
-                                    <description>Duration</description>
-                                    <posx>10</posx>
-                                    <posy>42</posy>
-                                    <width>142</width>
-                                    <height>50</height>
-                                    <font>Font-Condensed-S28</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.Duration]</label>
-                                    <textcolor>D4FFFFFF</textcolor>
-                                    <selectedcolor>D4FFFFFF</selectedcolor>
-                                    <scroll>false</scroll>
-                                </control>
-                                <control type="label">
-                                    <description>Genre</description>
-                                    <posx>162</posx>
-                                    <posy>42</posy>
-                                    <width>785</width>
-                                    <height>50</height>
-                                    <font>Font-Condensed-S28</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.ChannelName]</label>
-                                    <textcolor>D4FFFFFF</textcolor>
-                                    <selectedcolor>D4FFFFFF</selectedcolor>
-                                    <scroll>false</scroll>
-                                </control>
-                                <control type="label">
-                                    <description>End time</description>
-                                    <posx>997</posx>
-                                    <posy>0</posy>
-                                    <width>200</width>
-                                    <height>56</height>
-                                    <font>Font-Condensed-S28</font>
-                                    <align>right</align>
-                                    <label>$INFO[ListItem.EndTime,→ ,]</label>
-                                    <textcolor>D4FFFFFF</textcolor>
-                                    <selectedcolor>D4FFFFFF</selectedcolor>
-                                    <scroll>false</scroll>
-                                    <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
-                                </control>
+	                                <description>Label</description>
+	                                <posx>20</posx>
+	                                <posy>0</posy>
+	                                <width>785</width>
+	                                <height>58</height>
+	                                <font>Font-Condensed-S34-B</font>
+	                                <align>left</align>
+	                                <label>$INFO[ListItem.Label]</label>
+	                                <textcolor>99FFFFFF</textcolor>
+	                                <selectedcolor>SelectedGreen</selectedcolor>
+	                                <scroll>false</scroll>
+	                                <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+	                            </control>
+	                            <control type="label">
+	                                <description>Genre</description>
+	                                <posx>20</posx>
+	                                <posy>42</posy>
+	                                <width>785</width>
+	                                <height>50</height>
+	                                <font>Font-Condensed-S28</font>
+	                                <align>left</align>
+	                                <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]$INFO[ListItem.ChannelName, ● ,]</label>
+	                                <textcolor>77white</textcolor>
+	                                <selectedcolor>D4FFFFFF</selectedcolor>
+	                                <scroll>false</scroll>
+	                            </control>
                             </control>
                             <control type="group">
                                 <visible>ListItem.IsRecording</visible>
