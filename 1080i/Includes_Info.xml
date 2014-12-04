@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
     <include name="Common-Clock">
         <control type="group">
             <animation type="WindowOpen" condition="Window.IsActive(loginscreen) | [Window.IsActive(startup) + !Window.Previous(loginscreen)] | Window.Previous(fullscreenvideo) | Window.Previous(visualisation) | Window.Previous(slideshow)" reversible="false">
@@ -12,9 +11,9 @@
             <control type="group">
                 <animation effect="slide" end="-65" time="300" tween="sine" easing="inout" condition="Window.IsActive(mutebug)">Conditional</animation>
                 <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="PVR.IsRecording | PVR.HasTimer">Conditional</animation>
-                <control type="image">
+	                <control type="image">
                     <description>Small weather</description>
-                    <posx>174r</posx>
+                    <posx>162r</posx>
                     <posy>950</posy>
                     <width>100</width>
                     <height>100</height>
@@ -34,22 +33,21 @@
                     <shadowcolor>22000000</shadowcolor>
                     <align>right</align>
                     <scroll>false</scroll>
-                    <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
-                </control>
+                    </control>
             </control>
             <control type="group">
                 <visible>PVR.IsRecording</visible>
                 <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Window.IsActive(mutebug)">Conditional</animation>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
-                    <posx>174r</posx>
+                    <posx>154r</posx>
                     <posy>950</posy>
                     <width>100</width>
                     <height>100</height>
                     <texture>windows/pvr/recording-info.png</texture>
                 </control>
                 <control type="image">
-                    <posx>174r</posx>
+                    <posx>154r</posx>
                     <posy>950</posy>
                     <width>100</width>
                     <height>100</height>
@@ -58,7 +56,7 @@
                 </control>
             </control>
             <control type="image">
-                <posx>174r</posx>
+                <posx>154r</posx>
                 <posy>950</posy>
                 <width>100</width>
                 <height>100</height>
@@ -69,7 +67,7 @@
             </control>
             <control type="image">
                 <description>Mute</description>
-                <posx>174r</posx>
+                <posx>150r</posx>
                 <posy>950</posy>
                 <width>100</width>
                 <height>100</height>
