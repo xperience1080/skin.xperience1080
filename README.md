@@ -1,8 +1,10 @@
 1080XF (Kodi v14.x)
 =============
-[B]Features[/B]
+Features
 • Smooth transitions between screens
+
 • Completely flat textures, taking inspiration from Microsoft Metro
+
 • Clean and simple user interface
 • Supports multiple languages
 • Quick Media Guide to easily access latest stats
