@@ -33,7 +33,7 @@
         <width>350</width>
         <height>100</height>
     </include>
-    
+	  
     <include name="PVRGuideInfoZOrder">
         <zorder>3</zorder>
     </include>
