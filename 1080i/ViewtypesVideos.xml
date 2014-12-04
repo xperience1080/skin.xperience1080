@@ -226,7 +226,7 @@
                         <colordiffuse>$VAR[Colordiffuse.Color]</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>1390</posx>
+                        <posx>250</posx>
                         <posy>0</posy>
                         <width>1144</width>
                         <height>98</height>
@@ -281,7 +281,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <posx>1390</posx>
+                        <posx>494</posx>
                         <posy>0</posy>
                         <width>900</width>
                         <height>98</height>
@@ -304,7 +304,7 @@
                             <colordiffuse>D4FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>32</posx>
+                            <posx>0</posx>
                             <posy>28</posy>
                             <width>64</width>
                             <height>42</height>
@@ -359,7 +359,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <posx>1390</posx>
+                        <posx>216</posx>
                         <posy>0</posy>
                         <width>1176</width>
                         <height>98</height>
@@ -382,7 +382,7 @@
                             <colordiffuse>D4FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>32</posx>
+                            <posx>0</posx>
                             <posy>28</posy>
                             <width>64</width>
                             <height>42</height>
@@ -472,7 +472,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <posx>1390</posx>
+                        <posx>366</posx>
                         <posy>0</posy>
                         <width>1028</width>
                         <height>98</height>
@@ -684,7 +684,7 @@
                             <texture>$VAR[DefaultListOverlay]</texture>
                         </control>
                         <control type="label">
-                            <posx>1390</posx>
+                            <posx>168</posx>
                             <posy>0</posy>
                             <width>1226</width>
                             <height>98</height>
@@ -754,7 +754,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>1390</posx>
+                            <posx>494</posx>
                             <posy>0</posy>
                             <width>900</width>
                             <height>98</height>
@@ -777,7 +777,7 @@
                             <colordiffuse>D4FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>32</posx>
+                            <posx>0</posx>
                             <posy>28</posy>
                             <width>64</width>
                             <height>42</height>
@@ -847,7 +847,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>1390</posx>
+                            <posx>216</posx>
                             <posy>0</posy>
                             <width>1176</width>
                             <height>98</height>
@@ -871,7 +871,7 @@
                             <colordiffuse>D4FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>32</posx>
+                            <posx>0</posx>
                             <posy>28</posy>
                             <width>64</width>
                             <height>42</height>
@@ -975,7 +975,7 @@
                             <texture>$VAR[DefaultListOverlay]</texture>
                         </control>
                         <control type="label">
-                            <posx>1390</posx>
+                            <posx>366</posx>
                             <posy>0</posy>
                             <width>1028</width>
                             <height>98</height>
@@ -1417,7 +1417,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>690</posx>
+                            <posx>130</posx>
                             <posy>0</posy>
                             <height>58</height>
                             <width>560</width>
@@ -1430,7 +1430,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>115</posx>
+                            <posx>12</posx>
                             <width>100</width>
                             <height>58</height>
                             <font>Font-Condensed-S31</font>
@@ -1481,7 +1481,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>154</posx>
+                            <posx>50</posx>
                             <width>100</width>
                             <height>58</height>
                             <font>Font-Condensed-S31</font>
@@ -1494,7 +1494,7 @@
                             <visible>!substring(ListItem.Path,videodb://movies/sets,left) + !IsEmpty(ListItem.Year)</visible>
                         </control>
                         <control type="label">
-                            <posx>690</posx>
+                            <posx>170</posx>
                             <posy>0</posy>
                             <height>58</height>
                             <width>521</width>
@@ -1517,7 +1517,7 @@
                             </control>
                             <control type="label">
                                 <description>Unwatched count label</description>
-                                <posx>49</posx>
+                                <posx>19</posx>
                                 <width>59</width>
                                 <height>60</height>
                                 <font>Font-Condensed-S26</font>
@@ -1548,7 +1548,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>690</posx>
+                            <posx>98</posx>
                             <posy>0</posy>
                             <height>58</height>
                             <width>591</width>
@@ -1572,7 +1572,7 @@
                             </control>
                             <control type="label">
                                 <description>Unwatched count label</description>
-                                <posx>49</posx>
+                                <posx>19</posx>
                                 <width>59</width>
                                 <height>60</height>
                                 <font>Font-Condensed-S26</font>
@@ -1617,7 +1617,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>690</posx>
+                            <posx>145</posx>
                             <posy>0</posy>
                             <height>58</height>
                             <width>545</width>
@@ -1750,7 +1750,7 @@
                                 <visible>!Container.Content(Episodes)</visible>
                             </control>
                             <control type="label">
-                                <posx>690</posx>
+                                <posx>130</posx>
                                 <posy>0</posy>
                                 <height>58</height>
                                 <width>560</width>
@@ -1763,7 +1763,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <posx>115</posx>
+                                <posx>12</posx>
                                 <width>100</width>
                                 <height>58</height>
                                 <font>Font-Condensed-S31</font>
@@ -1818,7 +1818,7 @@
                             </animation>
                             <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(52)">Conditional</animation>
                             <control type="label">
-                                <posx>154</posx>
+                                <posx>50</posx>
                                 <width>100</width>
                                 <height>58</height>
                                 <font>Font-Condensed-S31</font>
@@ -1842,7 +1842,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                             </control>
                             <control type="label">
-                                <posx>690</posx>
+                                <posx>170</posx>
                                 <posy>0</posy>
                                 <height>58</height>
                                 <width>521</width>
@@ -1866,7 +1866,7 @@
                             </control>
                             <control type="label">
                                 <description>Unwatched count label</description>
-                                <posx>49</posx>
+                                <posx>19</posx>
                                 <width>59</width>
                                 <height>60</height>
                                 <font>Font-Condensed-S26</font>
@@ -1911,7 +1911,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                             </control>
                             <control type="label">
-                                <posx>690</posx>
+                                <posx>98</posx>
                                 <posy>0</posy>
                                 <height>58</height>
                                 <width>591</width>
@@ -1936,7 +1936,7 @@
                             </control>
                             <control type="label">
                                 <description>Unwatched count label</description>
-                                <posx>49</posx>
+                                <posx>19</posx>
                                 <width>59</width>
                                 <height>60</height>
                                 <font>Font-Condensed-S26</font>
@@ -1995,7 +1995,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                             </control>
                             <control type="label">
-                                <posx>690</posx>
+                                <posx>145</posx>
                                 <posy>0</posy>
                                 <height>58</height>
                                 <width>545</width>
@@ -4952,7 +4952,7 @@
                                 <colordiffuse>99FFFFFF</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>32</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
                                 <width>64</width>
                                 <height>42</height>
@@ -5065,7 +5065,7 @@
                                     <texture>views/banner/other/unwatched.png</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>32</posx>
+                                    <posx>0</posx>
                                     <posy>0</posy>
                                     <width>64</width>
                                     <height>42</height>
@@ -5210,7 +5210,7 @@
                                     <texture>views/banner/other/unwatched.png</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>32</posx>
+                                    <posx>0</posx>
                                     <posy>0</posy>
                                     <width>64</width>
                                     <height>42</height>
@@ -5328,7 +5328,7 @@
                                 <texture>views/banner/other/unwatched.png</texture>
                             </control>
                             <control type="label">
-                                <posx>32</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
                                 <width>64</width>
                                 <height>42</height>
