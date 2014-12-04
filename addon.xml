@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.Xperience1080" version="3.0.1-RC" name="Xperience1080" provider-name="Piers, `Black, xhaggi">
+<addon id="skin.1080xf" version="3.0.1-RC" name="1080XF" provider-name="Piers">
 	<requires>
 		<import addon="xbmc.gui" version="5.3.0" />
 		<import addon="service.skin.widgets" version="0.0.27" />
@@ -12,12 +12,12 @@
 		<import addon="script.videolanguage" version="0.1.0" />
 		<import addon="script.randomandlastitems" version="2.1.2" />
 	</requires>
-	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1.00" debugging="false">
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="0.70" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-        <summary lang="en">Xperience1080 by Black for Kodi 14.x, updated by Piers and xhaggi.</summary>
-        <description lang="en">Black's 1080p mod of the Xperience skin, updated for Kodi v14.x (Helix). Based on the changes from the 1080XF skin.</description>
+        <summary lang="en">1080XF by Piers, based on the skin by `Black</summary>
+        <description lang="en">1080XF is a Kodi 14.x version of `Black's Xperience1080 skin. With textures and XML files for Kodi 14.x.</description>
         <platform>all</platform>
         <license>Creative Commons Attribution-Noncommercial-Share Alike 3.0</license>
         <forum>http://forum.xbmc.org/showthread.php?tid=146690</forum>
