@@ -1,15 +1,15 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Xperience1080
 # Addon id: skin.xperience1080
 # Addon Provider: `Black
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC Skins\n"
-"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"Project-Id-Version: Kodi Skins\n"
+"Report-Msgid-Bugs-To: alanwww1@Kodi.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
-"Language-Team: English (New Zealand) (http://www.transifex.com/projects/p/xbmc-skins/language/en_NZ/)\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (New Zealand) (http://www.transifex.com/projects/p/Kodi-skins/language/en_NZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -529,8 +529,8 @@ msgid "Skin version"
 msgstr "Skin version"
 
 msgctxt "#41459"
-msgid "XBMC version"
-msgstr "XBMC version"
+msgid "Kodi version"
+msgstr "Kodi version"
 
 msgctxt "#41460"
 msgid "Guide"
@@ -553,8 +553,8 @@ msgid "Home"
 msgstr "Home"
 
 msgctxt "#41525"
-msgid "search XBMC for"
-msgstr "search XBMC for"
+msgid "search Kodi for"
+msgstr "search Kodi for"
 
 msgctxt "#41550"
 msgid "Spotlight"
