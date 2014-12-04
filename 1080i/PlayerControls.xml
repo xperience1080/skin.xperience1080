@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <window type="dialog">
     <defaultcontrol always="true">9100</defaultcontrol>
     <zorder>3</zorder>
@@ -152,7 +153,7 @@
             <control type="list" id="9100">
                 <visible allowhiddenfocus="true">Control.HasFocus(9100)</visible>
                 <onup>9100</onup>
-                <ondown>9100</ondown>
+                <ondown>9100</ondown>   
                 <animation type="Hidden" reversible="false">
                     <effect type="fade" start="100" end="0" time="175" tween="sine" easing="out" />
                 </animation>
@@ -271,7 +272,7 @@
                     <effect type="slide" start="0" end="30" time="175" tween="sine" easing="in" />
                 </animation>
                 <include>GuideSettings</include>
-            </control>
+            </control>          
             <control type="group">
                 <posx>637</posx>
                 <posy>325</posy>
@@ -321,7 +322,7 @@
                         <colordiffuse>eewhite</colordiffuse>
                     </control>
                 </control>
-
+                
                 <control type="group">
                     <posx>668</posx>
                     <posy>77</posy>
@@ -344,7 +345,7 @@
                         <colordiffuse>eewhite</colordiffuse>
                     </control>
                 </control>
-
+                
                 <control type="group">
                     <posx>668</posx>
                     <posy>144</posy>
@@ -368,9 +369,9 @@
                     </control>
                 </control>
             </control>
-
+            
             <!-- Quicknav Icon -->
-
+            
             <control type="image">
                 <posx>538</posx>
                 <posy>274</posy>
@@ -386,9 +387,9 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-
+            
             <!-- Now Playing Icon -->
-
+            
             <control type="image">
                 <posx>538</posx>
                 <posy>274</posy>
@@ -404,9 +405,9 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-
+            
             <!-- Settings Icon -->
-
+            
             <control type="image">
                 <posx>538</posx>
                 <posy>274</posy>
@@ -422,7 +423,7 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-
+            
             <!-- Recently added Icon -->
 
             <control type="image">
@@ -440,9 +441,9 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-
+            
             <!-- System info Icon -->
-
+            
             <control type="image">
                 <posx>538</posx>
                 <posy>274</posy>
@@ -458,9 +459,9 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-
+            
             <!-- System Info -->
-
+            
             <control type="group">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -479,9 +480,9 @@
                 <visible>Control.HasFocus(9103)</visible>
                 <include>GuideSystemInfo</include>
             </control>
-
+            
             <!-- Now playing -->
-
+            
             <control type="group">
                 <posx>637</posx>
                 <posy>325</posy>
