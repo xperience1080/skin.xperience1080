@@ -1,8 +1,6 @@
 ##1080XF (Kodi v14.x)
 
-This is a theme for the default skin confluence for Kodi.
-The idea behind this theme is to update some images to improve the overall "feel" to and fix pixelated images, precision issues (half pixels), color matching, elements alignments/centering and sizing.
-It was originally intended to be a full replacement for the default textures, but as it happens it turned up it was simpler to make it a theme.
+1080XF is a Kodi v14.x flat texture skin based on Xperience1080 by `Black. A few additional changes have been made and both texture sets are available to choose from (flat and original).
 
 #### Features
 
