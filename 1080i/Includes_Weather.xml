@@ -2569,7 +2569,7 @@
                         </control>
                         <control type="image">
                             <description>temp icon</description>
-                            <posx>562</posx>
+                            <posx>665</posx>
                             <posy>23</posy>
                             <height>48</height>
                             <width>24</width>
@@ -2578,7 +2578,7 @@
                         </control>
                         <control type="label">
                             <description>temp value</description>
-                            <posx>575</posx>
+                            <posx>546</posx>
                             <posy>0</posy>
                             <width>110</width>
                             <height>95</height>
@@ -2666,7 +2666,7 @@
                             </control>
                             <control type="image">
                                 <description>temp icon</description>
-                                <posx>562</posx>
+                                <posx>665</posx>
                                 <posy>23</posy>
                                 <height>48</height>
                                 <width>24</width>
@@ -2674,7 +2674,7 @@
                             </control>
                             <control type="label">
                                 <description>temp value</description>
-                                <posx>575</posx>
+                                <posx>546</posx>
                                 <posy>0</posy>
                                 <width>110</width>
                                 <height>95</height>
