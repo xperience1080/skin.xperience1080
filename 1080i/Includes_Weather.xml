@@ -716,43 +716,43 @@
         <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32508))">weather/moon/waning-c.png</value>
     </variable>
     
-    <!-- Direct compare to the $ADDON[...] strings doesn't work -->
-    <include name="MoonPhaseDummyLabels">
-        <control type="label" id="32501">
-            <label>$ADDON[weather.wunderground 32501]</label>
-            <visible>false</visible>
-        </control>
-        <control type="label" id="32502">
-            <label>$ADDON[weather.wunderground 32502]</label>
-            <visible>false</visible>
-        </control>
-        <control type="label" id="32503">
-            <label>$ADDON[weather.wunderground 32503]</label>
-            <visible>false</visible>
-        </control>
-        <control type="label" id="32504">
-            <label>$ADDON[weather.wunderground 32504]</label>
-            <visible>false</visible>
-        </control>
-        <control type="label" id="32505">
-            <label>$ADDON[weather.wunderground 32505]</label>
-            <visible>false</visible>
-        </control>
-        <control type="label" id="32506">
-            <label>$ADDON[weather.wunderground 32506]</label>
-            <visible>false</visible>
-        </control>
-        <control type="label" id="32507">
-            <label>$ADDON[weather.wunderground 32507]</label>
-            <visible>false</visible>
-        </control>
-        <control type="label" id="32508">
-            <label>$ADDON[weather.wunderground 32508]</label>
-            <visible>false</visible>
-        </control>
-    </include>
+  	<!-- Direct compare to the $ADDON[...] strings doesn't work -->
+	<include name="MoonPhaseDummyLabels">
+		<control type="label" id="32501">
+			<label>dummy</label>
+			<visible>false</visible>
+		</control>
+		<control type="label" id="32502">
+			<label>dummy</label>
+			<visible>false</visible>
+		</control>
+		<control type="label" id="32503">
+			<label>dummy</label>
+			<visible>false</visible>
+		</control>
+		<control type="label" id="32504">
+			<label>dummy</label>
+			<visible>false</visible>
+		</control>
+		<control type="label" id="32505">
+			<label>dummy</label>
+			<visible>false</visible>
+		</control>
+		<control type="label" id="32506">
+			<label>dummy</label>
+			<visible>false</visible>
+		</control>
+		<control type="label" id="32507">
+			<label>dummy</label>
+			<visible>false</visible>
+		</control>
+		<control type="label" id="32508">
+			<label>dummy</label>
+			<visible>false</visible>
+		</control>
+	</include>
     
-    <include name="WeatherWunderground">
+    <include name="WeatherFanart">
         <control type="group">
             <posx>1745</posx>
             <posy>26</posy>
@@ -908,7 +908,6 @@
                     <posy>294</posy>
                     <width>60</width>
                     <height>123</height>
-                    <colordiffuse>aawhite</colordiffuse>
                     <texture>weather/temp.png</texture>
                 </control>
                 <control type="label">
@@ -944,7 +943,6 @@
                     <posy>426</posy>
                     <width>56</width>
                     <height>56</height>
-                    <colordiffuse>aawhite</colordiffuse>
                     <texture>weather/humidity.png</texture>
                 </control>
                 <control type="label">
@@ -963,7 +961,6 @@
                     <posy>490</posy>
                     <width>51</width>
                     <height>51</height>
-                    <colordiffuse>aawhite</colordiffuse>
                     <texture fallback="weather/directions-na.png">$INFO[Window.Property(Current.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
                 </control>
                 <control type="label">
@@ -982,7 +979,6 @@
                     <posy>424</posy>
                     <width>56</width>
                     <height>56</height>
-                    <colordiffuse>aawhite</colordiffuse>
                     <texture>weather/sunrise.png</texture>
                     <visible>!IsEmpty(Window.Property(Today.Sunrise))</visible>
                 </control>
@@ -1002,7 +998,6 @@
                     <posy>486</posy>
                     <width>56</width>
                     <height>56</height>
-                    <colordiffuse>aawhite</colordiffuse>
                     <texture>weather/sunset.png</texture>
                     <visible>!IsEmpty(Window.Property(Today.Sunset))</visible>
                 </control>
@@ -1138,7 +1133,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -1158,7 +1152,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -1189,15 +1182,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.1.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -1283,7 +1267,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -1303,7 +1286,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -1334,16 +1316,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.2.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -1429,7 +1401,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -1449,7 +1420,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -1480,16 +1450,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.3.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -1576,7 +1536,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -1596,7 +1555,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -1627,16 +1585,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.4.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -1723,7 +1671,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -1743,7 +1690,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -1774,16 +1720,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.5.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -1870,7 +1806,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -1890,7 +1825,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -1921,16 +1855,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.6.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -2017,7 +1941,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -2037,7 +1960,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -2068,16 +1990,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.7.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -2164,7 +2076,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -2184,7 +2095,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -2215,16 +2125,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.8.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -2311,7 +2211,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -2331,7 +2230,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -2362,16 +2260,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.9.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -2458,7 +2346,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-high.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp high value</description>
@@ -2478,7 +2365,6 @@
                             <height>48</height>
                             <width>24</width>
                             <texture>weather/temp-low.png</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>temp low value</description>
@@ -2509,16 +2395,6 @@
                             <height>51</height>
                             <orientation>horizontal</orientation>
                             <align>center</align>
-                            <control type="image">
-                                <description>wind direction icon</description>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>51</height>
-                                <width>51</width>
-                                <texture>$INFO[Window.Property(Daily.10.WindDegree),special://skin/extras/weather/directions/small/,.png]</texture>
-                                <aspectratio align="center">keep</aspectratio>
-                                <colordiffuse>aawhite</colordiffuse>
-                            </control>
                             <control type="label">
                                 <description>wind speed label</description>
                                 <posx>0</posx>
@@ -2678,7 +2554,6 @@
                             <width>100</width>
                             <height>100</height>
                             <texture>$INFO[ListItem.Icon]</texture>
-                            <colordiffuse>aawhite</colordiffuse>
                         </control>
                         <control type="label">
                             <description>outlook label</description>
@@ -2694,7 +2569,7 @@
                         </control>
                         <control type="image">
                             <description>temp icon</description>
-                            <posx>665</posx>
+                            <posx>562</posx>
                             <posy>23</posy>
                             <height>48</height>
                             <width>24</width>
@@ -2703,7 +2578,7 @@
                         </control>
                         <control type="label">
                             <description>temp value</description>
-                            <posx>650</posx>
+                            <posx>575</posx>
                             <posy>0</posy>
                             <width>110</width>
                             <height>95</height>
@@ -2791,16 +2666,15 @@
                             </control>
                             <control type="image">
                                 <description>temp icon</description>
-                                <posx>665</posx>
+                                <posx>562</posx>
                                 <posy>23</posy>
                                 <height>48</height>
                                 <width>24</width>
-                                <texture>weather/temp-mid.png</texture>
-                                <colordiffuse>aawhite</colordiffuse>
+                                <texture>weather/temp-mid.png</texture> 
                             </control>
                             <control type="label">
                                 <description>temp value</description>
-                                <posx>650</posx>
+                                <posx>575</posx>
                                 <posy>0</posy>
                                 <width>110</width>
                                 <height>95</height>
