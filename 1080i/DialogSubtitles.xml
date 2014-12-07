@@ -24,14 +24,15 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="group">
-                    <control type="label" id="100">
+                    <control type="label">
                         <posx>510</posx>
                         <posy>244</posy>
                         <width>900</width>
                         <height>38</height>
                         <align>center</align>
                         <font>Font-Condensed-S34-B</font>
-                        <textcolor>bbwhite</textcolor>
+						<info>Player.Filename</info>
+                        <textcolor>aawhite</textcolor>
                         <shadowcolor>66000000</shadowcolor>
                     </control>
                     <control type="image" id="110">
