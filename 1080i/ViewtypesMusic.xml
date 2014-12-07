@@ -257,7 +257,7 @@
                         <visible>!IsEmpty(ListItem.Artist)</visible>
                     </control>
                     <control type="label">
-                        <posx>1280</posx>
+                        <posx>160</posx>
                         <posy>0</posy>
                         <width>1140</width>
                         <height>98</height>
@@ -270,7 +270,7 @@
                         <visible>!IsEmpty(ListItem.Year)</visible>
                     </control>
                     <control type="image">
-                        <posx>1261</posx>
+                        <posx>1275</posx>
                         <posy>-3</posy>
                         <width>105</width>
                         <height>105</height>
@@ -278,7 +278,7 @@
                         <visible>!IsEmpty(ListItem.Album)</visible>
                     </control>
                     <control type="label">
-                        <posx>1390</posx>
+                        <posx>1295</posx>
                         <posy>0</posy>
                         <width>100</width>
                         <height>98</height>
@@ -361,7 +361,7 @@
                         <visible>!IsEmpty(ListItem.Artist)</visible>
                     </control>
                     <control type="label">
-                        <posx>1280</posx>
+                        <posx>160</posx>
                         <posy>0</posy>
                         <width>1140</width>
                         <height>98</height>
@@ -373,7 +373,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="image">
-                        <posx>1261</posx>
+                        <posx>1275</posx>
                         <posy>-3</posy>
                         <width>105</width>
                         <height>105</height>
@@ -381,7 +381,7 @@
                         <visible>!IsEmpty(ListItem.Title)</visible>
                     </control>
                     <control type="label">
-                        <posx>1390</posx>
+                        <posx>1295</posx>
                         <posy>0</posy>
                         <width>100</width>
                         <height>98</height>
@@ -649,7 +649,7 @@
                             <visible>!IsEmpty(ListItem.Artist)</visible>
                         </control>
                         <control type="label">
-                            <posx>1280</posx>
+                            <posx>160</posx>
                             <posy>0</posy>
                             <width>1140</width>
                             <height>98</height>
@@ -662,7 +662,7 @@
                             <visible>!IsEmpty(ListItem.Year)</visible>
                         </control>
                         <control type="image">
-                            <posx>1261</posx>
+                            <posx>1275</posx>
                             <posy>-3</posy>
                             <width>105</width>
                             <height>105</height>
@@ -671,7 +671,7 @@
                             <visible>!IsEmpty(ListItem.Album)</visible>
                         </control>
                         <control type="label">
-                            <posx>1390</posx>
+                            <posx>1295</posx>
                             <posy>0</posy>
                             <width>100</width>
                             <height>98</height>
@@ -774,7 +774,7 @@
                                 <visible>!IsEmpty(ListItem.Artist)</visible>
                             </control>
                             <control type="label">
-                                <posx>1280</posx>
+                                <posx>160</posx>
                                 <posy>0</posy>
                                 <width>1140</width>
                                 <height>98</height>
@@ -786,7 +786,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="image">
-                                <posx>1261</posx>
+                                <posx>1275</posx>
                                 <posy>-3</posy>
                                 <width>105</width>
                                 <height>105</height>
@@ -794,7 +794,7 @@
                                 <visible>!IsEmpty(ListItem.Title)</visible>
                             </control>
                             <control type="image">
-                                <posx>1261</posx>
+                                <posx>1275</posx>
                                 <posy>-3</posy>
                                 <width>105</width>
                                 <height>105</height>
@@ -803,7 +803,7 @@
                                 <visible>!IsEmpty(ListItem.Title)</visible>
                             </control>
                             <control type="label">
-                                <posx>1390</posx>
+                                <posx>1295</posx>
                                 <posy>0</posy>
                                 <width>100</width>
                                 <height>98</height>
@@ -1096,7 +1096,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>46</posx>
+                            <posx>0</posx>
                             <width>100</width>
                             <height>58</height>
                             <font>Font-Condensed-S31</font>
@@ -1153,7 +1153,7 @@
                             <include>visiblehidefadeinfo</include>
                         </control>
                         <control type="label">
-                            <posx>610</posx>
+                            <posx>20</posx>
                             <width>590</width>
                             <height>58</height>
                             <font>Font-Condensed-S31</font>
@@ -1238,7 +1238,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <posx>46</posx>
+                                <posx>0</posx>
                                 <width>100</width>
                                 <height>58</height>
                                 <font>Font-Condensed-S31</font>
@@ -1250,7 +1250,7 @@
                                 <visible>!IsEmpty(ListItem.Album)</visible>
                             </control>
                             <control type="label">
-                                <posx>610</posx>
+                                <posx>20</posx>
                                 <width>510</width>
                                 <height>58</height>
                                 <font>Font-Condensed-S31</font>
@@ -1314,7 +1314,7 @@
                             <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(52) + !ListItem.IsPlaying">Conditional</animation>
                         </control>
                         <control type="label">
-                            <posx>610</posx>
+                            <posx>20</posx>
                             <width>590</width>
                             <height>58</height>
                             <font>Font-Condensed-S31</font>
@@ -2581,7 +2581,7 @@
                     <control type="group">
                         <posx>747</posx>
                         <control type="label">
-                            <posx>-40</posx>
+                            <posx>-250</posx>
                             <posy>0</posy>
                             <width>210</width>
                             <height>96</height>
@@ -2641,7 +2641,7 @@
                 </itemlayout>
                 <itemlayout height="96" condition="Container.Content(Songs) | Window.IsVisible(MusicPlaylist)">
                     <control type="label">
-                        <posx>707</posx>
+                        <posx>495</posx>
                         <posy>0</posy>
                         <width>210</width>
                         <height>96</height>
