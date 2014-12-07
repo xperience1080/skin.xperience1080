@@ -1,4 +1,22 @@
-﻿[B]3.1.0-beta[/B]
+﻿[B]3.2.1-RC[/B]
+• Fixed Music list Year
+• Fixed Music list Rating
+• Fixed Music list Track Time
+• Fixed Music list Track Count
+• Fixed Music Infolist Year
+• Fixed Music Infolist Rating
+• Fixed Music Infolist Track Time
+• Fixed Music Infolist Count
+• Fixed Music Infolist Track No.
+• New Music Banner Rating Textures 
+• Fixed Music Banner Year
+• Fixed Music Banner Track No.
+• Non-library items will now scroll when viewing i screen in full screen (YouTube, etc)
+• The filename will now be displayed at the top of the subtitle dialogue
+• Fixed PVR backgrounds not displaying correctly
+• Fixed Weather 10 Hour display texture and text
+
+[B]3.1.0-beta[/B]
 • Removed wunderground requirements for fanart weather (WeatherUnderground)
 • Replaced with OpenWeatherMap Extended (now included as required for the skin)
 • Added requirement to skin xml
