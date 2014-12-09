@@ -6,7 +6,6 @@
     <controls>
         <include>CommonPVRItems</include>
         <include>PVRHeader</include>
-        <include>Common-Info</include>
         
         <control type="group">
             <posx>0</posx>
@@ -234,32 +233,32 @@
                                 </animation>
                                 <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
                                 <control type="label">
-	                                <description>Label</description>
-	                                <posx>20</posx>
-	                                <posy>0</posy>
-	                                <width>785</width>
-	                                <height>58</height>
-	                                <font>Font-Condensed-S34-B</font>
-	                                <align>left</align>
-	                                <label>$INFO[ListItem.Label]</label>
-	                                <textcolor>99FFFFFF</textcolor>
-	                                <selectedcolor>SelectedGreen</selectedcolor>
-	                                <scroll>false</scroll>
-	                                <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
-	                            </control>
-	                            <control type="label">
-	                                <description>Genre</description>
-	                                <posx>20</posx>
-	                                <posy>42</posy>
-	                                <width>785</width>
-	                                <height>50</height>
-	                                <font>Font-Condensed-S28</font>
-	                                <align>left</align>
-	                                <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]$INFO[ListItem.ChannelName, ● ,]</label>
-	                                <textcolor>77white</textcolor>
-	                                <selectedcolor>D4FFFFFF</selectedcolor>
-	                                <scroll>false</scroll>
-	                            </control>
+                                    <description>Label</description>
+                                    <posx>20</posx>
+                                    <posy>0</posy>
+                                    <width>785</width>
+                                    <height>58</height>
+                                    <font>Font-Condensed-S34-B</font>
+                                    <align>left</align>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <textcolor>99FFFFFF</textcolor>
+                                    <selectedcolor>SelectedGreen</selectedcolor>
+                                    <scroll>false</scroll>
+                                    <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+                                </control>
+                                <control type="label">
+                                    <description>Genre</description>
+                                    <posx>20</posx>
+                                    <posy>42</posy>
+                                    <width>785</width>
+                                    <height>50</height>
+                                    <font>Font-Condensed-S28</font>
+                                    <align>left</align>
+                                    <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]$INFO[ListItem.ChannelName, ● ,]</label>
+                                    <textcolor>77white</textcolor>
+                                    <selectedcolor>D4FFFFFF</selectedcolor>
+                                    <scroll>false</scroll>
+                                </control>
                             </control>
                             <control type="group">
                                 <visible>ListItem.IsRecording</visible>
@@ -309,6 +308,7 @@
             <include>PVRMenu</include>
             <include>PVROptionsMenu</include>
         </control>
+        <include>Common-Info</include>
         <include>PVRScrollbarVisiblityControl</include>
     </controls>
 </window>

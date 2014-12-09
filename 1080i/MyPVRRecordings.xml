@@ -6,7 +6,6 @@
     <controls>
         <include>CommonPVRItems</include>
         <include>PVRHeader</include>
-        <include>Common-Info</include>
         
         <control type="group">
             <posx>0</posx>
@@ -242,33 +241,33 @@
                                 </animation>
                                 <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50) + !Container(50).ListItem.IsPlaying">Conditional</animation>
                                 <control type="label">
-	                                <description>Label</description>
-	                                <posx>20</posx>
-	                                <posy>0</posy>
-	                                <width>948</width>
-	                                <height>58</height>
-	                                <font>Font-Condensed-S34-B</font>
-	                                <align>left</align>
-	                                <label>$INFO[ListItem.Label]</label>
-	                                <textcolor>99FFFFFF</textcolor>
-	                                <selectedcolor>SelectedGreen</selectedcolor>
-	                                <scroll>false</scroll>
-	                                <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
-	                            </control>
-	                            <control type="label">
-	                                <description>Date + Start / End Time + Channel</description>
-	                                <posx>20</posx>
-	                                <posy>42</posy>
-	                                <width>948</width>
-	                                <height>50</height>
-	                                <font>Font-Condensed-S28</font>
-	                                <align>left</align>
-	                                <label>$INFO[ListItem.ChannelName]$INFO[ListItem.StartDate, ● ,]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]</label>
-	                                <textcolor>77white</textcolor>
-	                                <selectedcolor>D4FFFFFF</selectedcolor>
-	                                <scroll>false</scroll>
-	                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
-	                            </control>
+                                    <description>Label</description>
+                                    <posx>20</posx>
+                                    <posy>0</posy>
+                                    <width>948</width>
+                                    <height>58</height>
+                                    <font>Font-Condensed-S34-B</font>
+                                    <align>left</align>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <textcolor>99FFFFFF</textcolor>
+                                    <selectedcolor>SelectedGreen</selectedcolor>
+                                    <scroll>false</scroll>
+                                    <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+                                </control>
+                                <control type="label">
+                                    <description>Date + Start / End Time + Channel</description>
+                                    <posx>20</posx>
+                                    <posy>42</posy>
+                                    <width>948</width>
+                                    <height>50</height>
+                                    <font>Font-Condensed-S28</font>
+                                    <align>left</align>
+                                    <label>$INFO[ListItem.ChannelName]$INFO[ListItem.StartDate, ● ,]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]</label>
+                                    <textcolor>77white</textcolor>
+                                    <selectedcolor>D4FFFFFF</selectedcolor>
+                                    <scroll>false</scroll>
+                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                </control>
                                 <control type="image">
                                     <description>Watched/unwatched overlay</description>
                                     <posx>933</posx>
@@ -297,42 +296,43 @@
                         <animation effect="fade" start="35" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(9772) + !Control.HasFocus(70)">Conditional</animation>
                     </control>
                     <control type="group">
-		            	<description>Disk usage</description>
-		            	<posx>160</posx>
-		            	<posy>910</posy>
-						<control type="progress">
-							<description>Disk usage bar</description>
-							<left>0</left>
-							<top>0</top>
-							<width>67</width>
-		                    <height>19</height>
-							<texturebg>windows/pvr/progress-back.png</texturebg>
-		                    <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
-		                    <midtexture>windows/pvr/progress-mid.png</midtexture>
-		                    <righttexture>windows/pvr/progress-leftright.png</righttexture>
-		                    <info>PVR.BackendDiskspaceProgr</info>
-		                    <colordiffuse>aawhite</colordiffuse>
-							<visible>!IntegerGreaterThan(PVR.BackendDiskspaceProgr,100)</visible>
-						</control>
-						<control type="label">
-							<description>Disk usage text</description>
-							<left>80</left>
-							<top>0</top>
-							<width>500</width>
-							<height>20</height>
-							<label>$INFO[PVR.BackendDiskspace]</label>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>D4FFFFFF</textcolor>
-							<font>Font-Condensed-S28</font>
-							<visible>!IntegerGreaterThan(PVR.BackendDiskspaceProgr,100)</visible>
-						</control>
-					</control>
+                        <description>Disk usage</description>
+                        <posx>160</posx>
+                        <posy>910</posy>
+                        <control type="progress">
+                            <description>Disk usage bar</description>
+                            <left>0</left>
+                            <top>0</top>
+                            <width>67</width>
+                            <height>19</height>
+                            <texturebg>windows/pvr/progress-back.png</texturebg>
+                            <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                            <midtexture>windows/pvr/progress-mid.png</midtexture>
+                            <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                            <info>PVR.BackendDiskspaceProgr</info>
+                            <colordiffuse>aawhite</colordiffuse>
+                            <visible>!IntegerGreaterThan(PVR.BackendDiskspaceProgr,100)</visible>
+                        </control>
+                        <control type="label">
+                            <description>Disk usage text</description>
+                            <left>80</left>
+                            <top>0</top>
+                            <width>500</width>
+                            <height>20</height>
+                            <label>$INFO[PVR.BackendDiskspace]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>D4FFFFFF</textcolor>
+                            <font>Font-Condensed-S28</font>
+                            <visible>!IntegerGreaterThan(PVR.BackendDiskspaceProgr,100)</visible>
+                        </control>
+                    </control>
                 </control>
             </control>
             <include>PVRMenu</include>
             <include>PVROptionsMenu</include>
         </control>
+        <include>Common-Info</include>
         <include>PVRScrollbarVisiblityControl</include>
     </controls>
 </window>

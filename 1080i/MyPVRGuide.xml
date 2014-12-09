@@ -7,7 +7,7 @@
         <include>CommonPVRItems</include>
         <include>PVRHeader</include>
         <include>Common-Info</include>
-        
+		
         <control type="group">
             <posx>0</posx>
             <animation type="WindowClose">

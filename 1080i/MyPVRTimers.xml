@@ -6,7 +6,6 @@
     <controls>
         <include>CommonPVRItems</include>
         <include>PVRHeader</include>
-        <include>Common-Info</include>
         
         <control type="group">
             <posx>0</posx>
@@ -250,6 +249,7 @@
             <include>PVRMenu</include>
             <include>PVROptionsMenu</include>
         </control>
+        <include>Common-Info</include>
         <include>PVRScrollbarVisiblityControl</include>
     </controls>
 </window>
