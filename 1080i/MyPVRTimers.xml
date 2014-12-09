@@ -14,6 +14,8 @@
                 <effect type="zoom" start="100" end="85" time="300" center="960,600" tween="sine" easing="out" />
             </animation>
             
+            <include>PVRMenu</include>
+            
             <control type="group" id="110">
                 <include>FullscreenDimensions</include>
                 <include>OptionsShutdownAnimation</include>
@@ -82,23 +84,10 @@
                                 <texture border="90,3,90,3">views/list/other/separator.png</texture>
                             </control>
                             <control type="label">
-                                <description>Start date</description>
+                                <description>Label</description>
                                 <posx>20</posx>
                                 <posy>0</posy>
-                                <width>233</width>
-                                <height>58</height>
-                                <font>Font-Condensed-S34-B</font>
-                                <align>left</align>
-                                <label>$INFO[ListItem.StartDate]</label>
-                                <textcolor>99FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
-                                <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <description>Label</description>
-                                <posx>268</posx>
-                                <posy>0</posy>
-                                <width>945</width>
+                                <width>948</width>
                                 <height>58</height>
                                 <font>Font-Condensed-S34-B</font>
                                 <align>left</align>
@@ -109,30 +98,18 @@
                                 <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
                             </control>
                             <control type="label">
-                                <description>Start time -> End time</description>
+                                <description>Date + Start / End Time + Channel</description>
                                 <posx>20</posx>
                                 <posy>42</posy>
-                                <width>233</width>
+                                <width>948</width>
                                 <height>50</height>
                                 <font>Font-Condensed-S28</font>
                                 <align>left</align>
-                                <label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, → ,]</label>
+                                <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]$INFO[ListItem.ChannelName, ● ,]</label>
                                 <textcolor>77white</textcolor>
                                 <selectedcolor>D4FFFFFF</selectedcolor>
                                 <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <description>Channel name</description>
-                                <posx>268</posx>
-                                <posy>42</posy>
-                                <width>945</width>
-                                <height>50</height>
-                                <font>Font-Condensed-S28</font>
-                                <align>left</align>
-                                <label>$INFO[ListItem.ChannelName]</label>
-                                <textcolor>77white</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
-                                <scroll>false</scroll>
+                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
                             </control>
                             <control type="image">
                                 <posx>1205</posx>
@@ -167,57 +144,32 @@
                                 </animation>
                                 <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
                                 <control type="label">
-                                    <description>Start date</description>
+                                    <description>Label</description>
                                     <posx>20</posx>
                                     <posy>0</posy>
-                                    <width>233</width>
-                                    <height>58</height>
-                                    <font>Font-Condensed-S34-B</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.StartDate]</label>
-                                    <textcolor>eewhite</textcolor>
-                                    <selectedcolor>SelectedGreen</selectedcolor>
-                                    <scroll>false</scroll>
-                                </control>
-                                <control type="label">
-                                    <description>Label</description>
-                                    <posx>268</posx>
-                                    <posy>0</posy>
-                                    <width>945</width>
+                                    <width>948</width>
                                     <height>58</height>
                                     <font>Font-Condensed-S34-B</font>
                                     <align>left</align>
                                     <label>$INFO[ListItem.Label]</label>
-                                    <textcolor>eewhite</textcolor>
+                                    <textcolor>99FFFFFF</textcolor>
                                     <selectedcolor>SelectedGreen</selectedcolor>
                                     <scroll>false</scroll>
                                     <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
                                 </control>
                                 <control type="label">
-                                    <description>Start time -> End time</description>
+                                    <description>Date + Start / End Time + Channel</description>
                                     <posx>20</posx>
                                     <posy>42</posy>
-                                    <width>233</width>
+                                    <width>948</width>
                                     <height>50</height>
                                     <font>Font-Condensed-S28</font>
                                     <align>left</align>
-                                    <label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, → ,]</label>
-                                    <textcolor>D4FFFFFF</textcolor>
+                                    <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]$INFO[ListItem.ChannelName, ● ,]</label>
+                                    <textcolor>77white</textcolor>
                                     <selectedcolor>D4FFFFFF</selectedcolor>
                                     <scroll>false</scroll>
-                                </control>
-                                <control type="label">
-                                    <description>Channel name</description>
-                                    <posx>268</posx>
-                                    <posy>42</posy>
-                                    <width>945</width>
-                                    <height>50</height>
-                                    <font>Font-Condensed-S28</font>
-                                    <align>left</align>
-                                    <label>$INFO[ListItem.ChannelName]</label>
-                                    <textcolor>D4FFFFFF</textcolor>
-                                    <selectedcolor>D4FFFFFF</selectedcolor>
-                                    <scroll>false</scroll>
+                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
                                 </control>
                             </control>
                             <control type="image">
@@ -245,11 +197,9 @@
                     </control>
                 </control>
             </control>
-            
-            <include>PVRMenu</include>
-            <include>PVROptionsMenu</include>
         </control>
         <include>Common-Info</include>
+        <include>PVROptionsMenu</include>
         <include>PVRScrollbarVisiblityControl</include>
     </controls>
 </window>

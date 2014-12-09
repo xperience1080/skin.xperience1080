@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="601">
-    <defaultcontro	l always="true">8000</defaultcontrol>
+    <defaultcontrol always="true">8000</defaultcontrol>
     <include condition="Window.IsActive(fullscreenvideo)">PVRGuideInfoZOrder</include>
     <controls>
+		<include condition="Window.IsActive(fullscreenvideo)">FadeBackground</include>
         <control type="group">
             <include>KeyboardAnimations</include>
             <visible>!Window.IsVisible(yesnodialog)</visible>

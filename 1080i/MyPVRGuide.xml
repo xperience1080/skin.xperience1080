@@ -6,8 +6,7 @@
     <controls>
         <include>CommonPVRItems</include>
         <include>PVRHeader</include>
-        <include>Common-Info</include>
-		
+        
         <control type="group">
             <posx>0</posx>
             <animation type="WindowClose">
@@ -15,16 +14,17 @@
                 <effect type="zoom" start="100" end="85" time="300" center="960,600" tween="sine" easing="out" />
             </animation>
             
+            <include>PVRMenu</include>
+            
             <control type="group" id="50">
                 <include>Viewtype-EPGTimeline</include>
                 <include>Viewtype-TVGuideNow</include>
                 <include>Viewtype-TVGuideNext</include>
                 <include>Viewtype-TVGuideChannelView</include>
             </control>
-            
-            <include>PVRMenu</include>
-            <include>PVROptionsMenu</include>
         </control>
+        <include>Common-Info</include>
+        <include>PVROptionsMenu</include>
         <include>PVRScrollbarVisiblityControl</include>
     </controls>
 </window>
