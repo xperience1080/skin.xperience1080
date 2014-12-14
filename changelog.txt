@@ -1,4 +1,7 @@
-﻿[B]3.4.0[/B]
+﻿[B]3.4.1[/B]
+• Changed alignment of Time & Temperature labels.
+
+[B]3.4.0[/B]
 • [Updated] service.skin.widgets
 • [Updated] script.artwork.downloader
 • [Updated] script.tv.show.next.aired
