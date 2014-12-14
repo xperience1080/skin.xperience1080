@@ -1,5 +1,6 @@
 ﻿[B]3.4.1[/B]
 • Changed alignment of Time & Temperature labels.
+• Additional NextAired textures
 
 [B]3.4.0[/B]
 • [Updated] service.skin.widgets
