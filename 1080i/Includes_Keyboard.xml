@@ -12,6 +12,18 @@
         <focusedcolor>eewhite</focusedcolor>
         <selectedcolor>eewhite</selectedcolor>
     </include>
+    <include name="KeyLang">
+        <height>90</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <textoffsety>0</textoffsety>
+        <font>Font-Condensed-S20-B</font>
+        <texturefocus border="20">dialogs/keyboard/key-fo.png</texturefocus>
+        <texturenofocus border="20">dialogs/keyboard/key-nf.png</texturenofocus>
+        <textcolor>KeyboardGrey</textcolor>
+        <focusedcolor>eewhite</focusedcolor>
+        <selectedcolor>eewhite</selectedcolor>
+    </include>	
     <include name="SmallKey">
         <width>90</width>
         <include>Key</include>
@@ -20,8 +32,12 @@
         <width>199</width>
         <include>Key</include>
     </include>
+    <include name="BigKeyLang">
+        <width>199</width>
+        <include>KeyLang</include>
+    </include>	
     <include name="SpaceBar">
-        <width>495</width>
+        <width>577</width>
         <include>Key</include>
     </include>
     <include name="BackSpace">
@@ -55,7 +71,7 @@
         <texturenofocus>dialogs/keyboard/mediumkeyrarrnofocus.png</texturenofocus>
     </include>
     <include name="DoubleKeyDone">
-        <width>171</width>
+        <width>251</width>
         <height>90</height>
         <align>center</align>
         <font>Font-Condensed-S32</font>
