@@ -1,4 +1,8 @@
-﻿[B]3.4.1[/B]
+﻿[B]3.4.2[/B]
+• Fixed keyboard layout for non-EN languages
+• Proper integration of Kodi v14.x key selection
+
+[B]3.4.1[/B]
 • Changed alignment of Time & Temperature labels.
 • Additional NextAired textures
 
