@@ -128,7 +128,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>624</posx>
+                            <posx>9</posx>
                             <posy>0</posy>
                             <width>604</width>
                             <height>60</height>
@@ -165,7 +165,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <posx>624</posx>
+                                <posx>9</posx>
                                 <posy>0</posy>
                                 <width>604</width>
                                 <height>60</height>
@@ -199,7 +199,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <posx>624</posx>
+                                <posx>9</posx>
                                 <posy>0</posy>
                                 <width>604</width>
                                 <height>60</height>
