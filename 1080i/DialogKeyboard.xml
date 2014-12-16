@@ -531,7 +531,7 @@
                             <description>:4,6: button</description>
                             <posx>676</posx>
                             <onleft>165</onleft>
-                            <onright>170</onright>
+                            <onright>167</onright>
                             <onup>146</onup>
                             <ondown>32</ondown>
                             <include>SmallKey</include>
@@ -557,7 +557,7 @@
                         <control type="button" id="169">
                             <description>:4,9: button</description>
                             <posx>919</posx>
-                            <onleft>178</onleft>
+                            <onleft>168</onleft>
                             <onright>170</onright>
                             <onup>146</onup>
                             <ondown>32</ondown>
@@ -584,8 +584,8 @@
                     </control>
                     <control type="button" id="8">
                         <description>:DEL: button</description>
-                        <posx>757</posx>
-                        <onleft>166</onleft>
+                        <posx>1081</posx>
+                        <onleft>171</onleft>
                         <onright>309</onright>
                         <onup>149</onup>
                         <ondown>362</ondown>

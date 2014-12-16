@@ -41,10 +41,10 @@
         <include>Key</include>
     </include>
     <include name="BackSpace">
-        <width>252</width>
+        <width>90</width>
         <height>90</height>
-        <texturefocus border="81,20,20,20">dialogs/keyboard/backspacefocus.png</texturefocus>
-        <texturenofocus border="81,20,20,20">dialogs/keyboard/backspacenofocus.png</texturenofocus>
+        <texturefocus border="20,20,20,20">dialogs/keyboard/backspacefocus.png</texturefocus>
+        <texturenofocus border="20,20,20,20">dialogs/keyboard/backspacenofocus.png</texturenofocus>
     </include>
     <include name="ShiftKey">
         <width>199</width>
