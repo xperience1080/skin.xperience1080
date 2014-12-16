@@ -1,4 +1,29 @@
-﻿[B]3.4.2[/B]
+﻿[B]3.4.28[/B]
+• Submission to official repo.
+• Further correction to EXIF layout for pictures
+
+[B]3.4.27[/B]
+• Fixed (mostly) ordering for left->right<-left for keyboard
+• Additional changes to addon.xml
+
+[B]3.4.25[/B]
+• Changed XBMC logo to Kodi logo (not included with zip releases, only on git)
+• Renamed xbmc to kodi image for system info page
+
+[B]3.4.23[/B]
+• Further international keyboard fixes
+• Resized delete key so all language characters show correctly
+
+[B]3.4.22[/B]
+• Removed MyPVR.xml from git (has not been included with zip releases since v2.5)
+• Fixed PVR info dialogue for recorded shows
+• Fixed EXIF data not showing on pictures
+
+[B]3.4.21[/B]
+• Changed version numbering
+• Corrected naming in addon, default and lyrics
+
+[B]3.4.2[/B]
 • Fixed keyboard layout for non-EN languages
 • Proper integration of Kodi v14.x key selection
 
