@@ -1,4 +1,9 @@
-﻿[B]3.4.30[/B]
+﻿[B]3.4.34[/B]
+• Removal of duplicate textures
+• Correction of screenshot directory
+• Removal of OS spam
+
+[B]3.4.30[/B]
 • Merge Xperience1080 & 1080XF, now known as 1080XF
 • Default textures are 1080XF with Xperience1080 available as a theme
 • Submission to official repo.
