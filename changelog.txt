@@ -1,4 +1,8 @@
-﻿[B]3.4.34[/B]
+﻿[B]3.4.35[/B]
+• Additional international keyboard layout fixes (xhaggi)
+• Texture correction
+
+[B]3.4.34[/B]
 • Removal of duplicate textures
 • Correction of screenshot directory
 • Removal of OS spam
