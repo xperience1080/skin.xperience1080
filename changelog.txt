@@ -1,4 +1,9 @@
-﻿[B]3.4.28[/B]
+﻿[B]3.4.30[/B]
+• Merge Xperience1080 & 1080XF, now known as 1080XF
+• Default textures are 1080XF with Xperience1080 available as a theme
+• Submission to official repo.
+
+[B]3.4.28[/B]
 • Submission to official repo.
 • Further correction to EXIF layout for pictures
 

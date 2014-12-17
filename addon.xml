@@ -11,7 +11,7 @@
 		<import addon="script.randomandlastitems" version="2.2.2" />
 		<import addon="weather.openweathermap.extended" version="1.0.0" />
 	</requires>
-	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="0.70" debugging="false">
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="0.80" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
