@@ -41,10 +41,10 @@
         <include>Key</include>
     </include>
     <include name="BackSpace">
-        <width>90</width>
+        <width>252</width>
         <height>90</height>
-        <texturefocus border="20,20,20,20">dialogs/keyboard/backspacefocus.png</texturefocus>
-        <texturenofocus border="20,20,20,20">dialogs/keyboard/backspacenofocus.png</texturenofocus>
+        <texturefocus border="81,20,20,20">dialogs/keyboard/backspacefocus.png</texturefocus>
+        <texturenofocus border="81,20,20,20">dialogs/keyboard/backspacenofocus.png</texturenofocus>
     </include>
     <include name="ShiftKey">
         <width>199</width>
@@ -59,13 +59,13 @@
         <texturenofocus>dialogs/keyboard/capsnofocus.png</texturenofocus>
     </include>
     <include name="MediumKeyLarr">
-        <width>104</width>
+        <width>90</width>
         <height>90</height>
         <texturefocus>dialogs/keyboard/mediumkeylarrfocus.png</texturefocus>
         <texturenofocus>dialogs/keyboard/mediumkeylarrnofocus.png</texturenofocus>
     </include>
     <include name="MediumKeyRarr">
-        <width>104</width>
+        <width>90</width>
         <height>90</height>
         <texturefocus>dialogs/keyboard/mediumkeyrarrfocus.png</texturefocus>
         <texturenofocus>dialogs/keyboard/mediumkeyrarrnofocus.png</texturenofocus>
