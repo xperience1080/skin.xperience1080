@@ -1,4 +1,7 @@
-﻿[B]3.4.40[/B]
+﻿[B]3.4.41[/B]
+• Changed focus colouring throughout skin
+
+[B]3.4.40[/B]
 • Added PVR EPG progress indicator
 
 [B]3.4.39[/B]
