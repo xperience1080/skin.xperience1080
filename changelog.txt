@@ -1,4 +1,16 @@
-﻿[B]3.4.35[/B]
+﻿[B]3.4.40[/B]
+• Added PVR EPG progress indicator
+
+[B]3.4.39[/B]
+• Fixed Lyrics not displaying correctly
+
+[B]3.4.37[/B]
+• Fixed subtitle language flags not displaying for default textures
+
+[B]3.4.36[/B]
+• Subtitle provider selection screen visibility fixed
+
+[B]3.4.35[/B]
 • Additional international keyboard layout fixes (xhaggi)
 • Texture correction
 
