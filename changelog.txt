@@ -1,4 +1,7 @@
-﻿[B]3.4.41[/B]
+﻿[B]3.4.42[/B]
+• Removes NextAired images in videonav, now text-based.
+
+[B]3.4.41[/B]
 • Changed focus colouring throughout skin
 
 [B]3.4.40[/B]
