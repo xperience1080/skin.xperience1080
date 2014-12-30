@@ -3,6 +3,9 @@
 • Added simple sound which fits the skin due to multiple requests (can be disabled)
 • Removed forgotten commit of non-required subtitle option
 
+[B]3.40.54[/B]
+• Adds codec display when pressing 'o' in music
+
 [B]3.40.52[/B]
 • Revert clock/weather change
 
