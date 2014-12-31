@@ -1,4 +1,11 @@
-﻿[B]3.40.55[/B]
+﻿[B]3.40.57[/B]
+• Changes volume from db to % values throughout skin
+• Textures changes for default and xperience1080 themes
+
+[B]3.40.56[/B]
+• Removes debugging text from displaying
+
+[B]3.40.55[/B]
 • New layout for clock/time/weather condition/temperature
 • Added simple sound which fits the skin due to multiple requests (can be disabled)
 • Removed forgotten commit of non-required subtitle option
