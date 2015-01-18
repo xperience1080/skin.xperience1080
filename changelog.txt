@@ -1,4 +1,16 @@
-﻿[B]3.40.58[/B]
+﻿[B]3.40.70[/B]
+• Adds Additional viewtype for Films/TV - Fanart, select using standard menu
+
+[B]3.40.68[/B]
+• New OSD LiveTV Record Icons
+• New OSD EPG Icon
+• New OSD Channel Up/Down Icon
+• New OSD Text Icon
+
+[B]3.40.64[/B]
+• Adds Reload Skin option to Skin Settings
+
+[B]3.40.60[/B]
 • Fixes YouTube Trailer not displaying for Upcoming Movies widget
 
 [B]3.40.57[/B]
