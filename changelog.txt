@@ -1,4 +1,7 @@
-﻿[B]3.40.70[/B]
+﻿[B]3.40.71[/B]
+• New default icons for PVR types
+
+[B]3.40.70[/B]
 • Adds Additional viewtype for Films/TV - Fanart, select using standard menu
 
 [B]3.40.68[/B]
