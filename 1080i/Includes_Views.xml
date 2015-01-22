@@ -253,7 +253,7 @@
 		<value condition="!IsEmpty(ListItem.Property(medium_fanartimage))">$INFO[ListItem.Property(medium_fanartimage)]</value>
 		<value condition="!IsEmpty(ListItem.Property(medium_landscape))">$INFO[ListItem.Property(medium_landscape)]</value>
 		<value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="IsEmpty(ListItem.Thumb)">$INFO[ListItem.ActualIcon,views/fallbacks/,/medium.png]</value>
+		<value condition="IsEmpty(ListItem.Thumb)">$INFO[ListItem.ActualIcon,views/fallbacks/,/large.png]</value>
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
      

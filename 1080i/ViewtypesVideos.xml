@@ -4856,38 +4856,38 @@
 			<posx>5</posx>
 			<posy>-</posy>
 			<control type="image">
-				<posx>50</posx>
+				<posx>95</posx>
 				<posy>0</posy>
-				<width>1810</width>
+				<width>1720</width>
+				<height>734</height>
+				<texture>views/fanart/back-tile.png</texture>
+			</control>
+			<control type="image">
+				<posx>664</posx>
+				<posy>0</posy>
+				<width>1151</width>
 				<height>734</height>
 				<texture>windows/common/darkgrey.png</texture>
-			</control>
-			<control type="image">
-				<posx>75</posx>
-				<posy>25</posy>
-				<width>1760</width>
-				<height>684</height>
-				<texture>windows/common/darkgrey.png</texture>
-			</control>
+			</control>		
 			<control type="image">
 				<description>Landscape</description>
-				<posx>619</posx>
-				<posy>25</posy>
-				<width>1216</width>
-				<height>684</height>
+				<posx>664</posx>
+				<posy>-44</posy>
+				<width>1151</width>
+				<height>734</height>
 				<texture background="true">$VAR[FanArtLandscape]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="image">
-				<posx>619</posx>
-				<posy>643</posy>
-				<width>1216</width>
-				<height>66</height>
-				<texture>views/fanart/overlay.png</texture>		 
+				<posx>664</posx>
+				<posy>647</posy>
+				<width>1151</width>
+				<height>87</height>
+				<texture>windows/common/darkgrey.png</texture>		 
 			</control>			
 			<control type="label">
-				<posx>645</posx>
-				<posy>643</posy>
+				<posx>690</posx>
+				<posy>656</posy>
 				<width>1216</width>
 				<height>66</height>
 				<label>$INFO[ListItem.Label]</label>
@@ -4898,9 +4898,9 @@
 				<scroll>false</scroll>
 			</control>
 			<control type="label">
-				<posx>645</posx>
-				<posy>643</posy>
-				<width>1165</width>
+				<posx>690</posx>
+				<posy>656</posy>
+				<width>1098</width>
 				<height>66</height>
 				<label>$INFO[ListItem.Rating,★ ,]$INFO[ListItem.Duration, [COLOR=ffffffff]/[/COLOR] , $LOCALIZE[12391]]</label>
 				<textcolor>aawhite</textcolor>
@@ -4910,8 +4910,8 @@
 				<scroll>false</scroll>
 			</control>		
 			<control type="label">
-				<posx>80</posx>
-				<posy>664</posy>
+				<posx>125</posx>
+				<posy>680</posy>
 				<width>500</width>
 				<font>Font-Condensed-S36</font>
 				<label>$VAR[ListItem.Year]</label>
@@ -4921,8 +4921,8 @@
 				<scroll>false</scroll>
 			</control>			
 			<control type="label">
-				<posx>80</posx>
-				<posy>624</posy>
+				<posx>125</posx>
+				<posy>640</posy>
 				<width>500</width>
 				<font>Font-Condensed-S36</font>
 				<label>$INFO[ListItem.Genre]</label>
@@ -4932,8 +4932,8 @@
 				<scroll>false</scroll>
 			</control>
 			<control type="label">
-				<posx>80</posx>
-				<posy>584</posy>
+				<posx>125</posx>
+				<posy>600</posy>
 				<width>500</width>
 				<font>Font-Condensed-S36</font>
 				<label>$LOCALIZE[16101]: $INFO[ListItem.Property(UnWatchedEpisodes)] / $INFO[ListItem.Property(TotalEpisodes)]</label>
@@ -4944,7 +4944,7 @@
 				<visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
 			</control>		
 			<control type="label">
-				<posx>80</posx>
+				<posx>125</posx>
 				<posy>32</posy>
 				<width>510</width>
 				<font>Font-Condensed-S60</font>
@@ -4955,7 +4955,7 @@
 				<visible>!IsEmpty(ListItem.Plot)</visible>
 			</control>		
 			<control type="textbox">
-				<posx>80</posx>
+				<posx>125</posx>
 				<posy>80</posy>
 				<width>510</width>
 				<height>350</height>
@@ -4967,7 +4967,7 @@
 				<autoscroll delay="8000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
 			</control>
 			<control type="image">
-				<posx>530</posx>
+				<posx>575</posx>
 				<posy>18</posy>
 				<width>60</width>
 				<height>57</height>
@@ -4978,7 +4978,7 @@
 			</control>
 			<control type="image">
 				<description>Flagging</description>
-				<posx>490</posx>
+				<posx>535</posx>
 				<posy>0</posy>
 				<width>140</width>
 				<height>100</height>
@@ -4994,12 +4994,12 @@
 			<include>BannerListAnimations</include>
 			<include>OptionsShutdownAnimation</include>
 			<control type="group">
-				<posy>490</posy>
-				<animation effect="fade" start="0" end="100" delay="400" time="350" reversible="false" condition="![Container(502).OnNext | Container(502).OnPrevious]">Conditional</animation>
+				<posy>535</posy>
+				<animation effect="fade" start="0" end="100" delay="415" time="300" reversible="false" condition="![Container(502).OnNext | Container(502).OnPrevious]">Conditional</animation>
 				<visible>Control.IsVisible(502)</visible>
 				<control type="image">
-					<description>Left</description>
-					<posx>5</posx>
+					<description>Left arrow</description>
+					<posx>42</posx>
 					<width>100</width>
 					<height>100</height>
 					<texture>views/fanart/arrow-left.png</texture>
@@ -5007,8 +5007,8 @@
 					<colordiffuse>aawhite</colordiffuse>
 				</control>
 				<control type="image">
-					<description>Right</description>
-					<posx>1815</posx>
+					<description>Right arrow</description>
+					<posx>1778</posx>
 					<width>100</width>
 					<height>100</height>
 					<texture>views/fanart/arrow-right.png</texture>
@@ -5018,7 +5018,7 @@
 			</control>
 			<control type="wraplist" id="502">
 				<posx>0</posx>
-				<posy>175</posy>
+				<posy>220</posy>
 				<width>1920</width>
 				<height>800</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
