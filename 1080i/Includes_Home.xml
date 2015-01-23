@@ -1553,9 +1553,9 @@
                         </content>
                     </control>
                     <control type="image">
-                        <posx>268</posx>
+                        <posx>269</posx>
                         <posy>-21</posy>
-                        <width>958</width>
+                        <width>959</width>
                         <height>614</height>
                         <texture border="40">windows/home/tile-fo.png</texture>
                         <animation type="Visible">
@@ -2238,9 +2238,9 @@
                         </content>
                     </control>
                     <control type="image">
-                        <posx>268</posx>
+                        <posx>269</posx>
                         <posy>-21</posy>
-                        <width>1058</width>
+                        <width>1059</width>
                         <height>614</height>
                         <texture border="40">windows/home/tile-fo.png</texture>
                         <animation type="Visible">
@@ -2908,9 +2908,9 @@
                         </content>
                     </control>
                     <control type="image">
-                        <posx>268</posx>
+                        <posx>269</posx>
                         <posy>-21</posy>
-                        <width>1058</width>
+                        <width>1059</width>
                         <height>614</height>
                         <texture border="40">windows/home/tile-fo.png</texture>
                         <animation type="Visible">
@@ -3620,7 +3620,7 @@
                         </content>
                     </control>
                     <control type="image">
-                        <posx>318</posx>
+                        <posx>319</posx>
                         <posy>-21</posy>
                         <width>771</width>
                         <height>614</height>
@@ -5329,7 +5329,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>aawhite</textcolor>
-								<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+								<label>$LOCALIZE[140] $INFO[System.CoreUsage(0)]%</label>
 								<scroll>false</scroll>
 								<textoffsetx>110</textoffsetx>
 							</control>	
