@@ -1,4 +1,8 @@
-﻿[B]3.44.10[/B]
+﻿[B]3.44.12[/B]
+• Adds new textures for the themes
+• New 'pause' icon on paused video (file, movie, tv, Live TV)
+
+[B]3.44.10[/B]
 • Fixes CPU information on System for Linux users
 
 [B]3.44.09[/B]
