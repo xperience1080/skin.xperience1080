@@ -1,4 +1,11 @@
-﻿[B]3.44.08[/B]
+﻿[B]3.44.10[/B]
+• Fixes CPU information on System for Linux users
+
+[B]3.44.09[/B]
+• Fixes 2 left offset pixels on Spotlight, Movies Slide, TV Shows Slide, Music Slide
+• Fixes 3 right offset pixels on Spotlight, Movies Slide, TV Shows Slide, Music Slide
+
+[B]3.44.08[/B]
 • Changes to the EPG viewtype
 • Now central on screen
 • Large to allow more channels
