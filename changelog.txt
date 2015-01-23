@@ -1,4 +1,19 @@
-﻿[B]3.44.00[/B]
+﻿[B]3.44.06[/B]
+• Changes order of Power/Menu options to allow 'Exit' to be the first option, with the others being moved down the list.
+
+[B]3.44.05[/B]
+• Changes to tile colours for Movies, TV Shows and Music - will use parent colour.
+
+[B]3.44.04[/B]
+• Change to tile colour for TV and Music sections on Home
+
+[B]3.44.03[/B]
+• Resolved Movie Set icon not displaying in List viewtype
+
+[B]3.44.02[/B]
+• Resolved "YouTube activation code not being displayed" issue.
+
+[B]3.44.00[/B]
 • Redesign of Fanart Viewtype
 
 [B]3.43.10[/B]
