@@ -1,4 +1,10 @@
-﻿[B]3.44.12[/B]
+﻿[B]3.44.14[/B]
+• New paused icon stays central, no matter which dialog is displayed
+
+[B]3.44.13[/B]
+• Fixes tile fade issue in Home
+
+[B]3.44.12[/B]
 • Adds new textures for the themes
 • New 'pause' icon on paused video (file, movie, tv, Live TV)
 
