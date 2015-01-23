@@ -3622,7 +3622,7 @@
                     <control type="image">
                         <posx>319</posx>
                         <posy>-21</posy>
-                        <width>771</width>
+                        <width>769</width>
                         <height>614</height>
                         <texture border="40">windows/home/tile-fo.png</texture>
                         <animation type="Visible">
