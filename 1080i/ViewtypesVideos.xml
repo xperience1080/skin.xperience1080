@@ -217,7 +217,7 @@
                     </control>
                     <control type="image">
                         <description>Set icon</description>
-                        <posx>147</posx>
+                        <posx>1146</posx>
                         <posy>19</posy>
                         <width>90</width>
                         <height>60</height>
@@ -666,7 +666,7 @@
                         </control>
                         <control type="image">
                             <description>Set icon</description>
-                            <posx>147</posx>
+                            <posx>1146</posx>
                             <posy>19</posy>
                             <width>90</width>
                             <height>60</height>
