@@ -1,4 +1,10 @@
-﻿[B]3.44.06[/B]
+﻿[B]3.44.08[/B]
+• Changes to the EPG viewtype
+• Now central on screen
+• Large to allow more channels
+• Large channel logo now aligned with upper panel
+
+[B]3.44.06[/B]
 • Changes order of Power/Menu options to allow 'Exit' to be the first option, with the others being moved down the list.
 
 [B]3.44.05[/B]
