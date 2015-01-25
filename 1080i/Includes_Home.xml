@@ -3016,9 +3016,9 @@
                             <include>visiblehidefadeinfodelayvisible</include>
                             <itemlayout width="729" height="572">
                                 <control type="image">
-                                    <posx>0</posx>
+                                    <posx>64</posx>
                                     <posy>0</posy>
-                                    <width>729</width>
+                                    <width>601</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
                                     <texture background="true" fallback="views/fallbacks/DefaultAlbumCover.png/square-large.png">$INFO[ListItem.Icon]</texture>
@@ -3026,9 +3026,9 @@
                             </itemlayout>
                             <focusedlayout width="729" height="572">
                                 <control type="image">
-                                    <posx>0</posx>
+                                    <posx>64</posx>
                                     <posy>0</posy>
-                                    <width>729</width>
+                                    <width>601</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
                                     <texture background="true" fallback="views/fallbacks/DefaultAlbumCover.png/square-large.png">$INFO[ListItem.Icon]</texture>
