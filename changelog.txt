@@ -1,8 +1,11 @@
-﻿[B]3.44.14[/B]
-• New paused icon stays central, no matter which dialog is displayed
+﻿[B]3.44.20[/B]
+• Changes album artwork size on Home
 
-[B]3.44.13[/B]
-• Fixes tile fade issue in Home
+[B]3.44.16[/B]
+• Resolves some issues with Music playing when lyrics enabled
+
+[B]3.44.15[/B]
+• Fixes Home widget Playlist items
 
 [B]3.44.12[/B]
 • Adds new textures for the themes
