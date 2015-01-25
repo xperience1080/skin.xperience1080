@@ -1,4 +1,7 @@
-﻿[B]3.44.21[/B]
+﻿[B]3.44.22[/B]
+• Removes debugging text (sorry)
+
+[B]3.44.21[/B]
 • Localisation of one ID
 
 [B]3.44.20[/B]
