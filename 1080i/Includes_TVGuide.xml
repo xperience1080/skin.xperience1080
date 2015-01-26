@@ -280,7 +280,7 @@
     <variable name="TVDayLabelTue">
         <value condition="!IntegerGreaterThan(Container(201).NumItems,0)  + !stringcompare(System.Date(ddd),$LOCALIZE[42])">$LOCALIZE[12]</value>
         <value condition="!IntegerGreaterThan(Container(201).NumItems,0)  + stringcompare(System.Date(ddd),$LOCALIZE[42])">[COLOR=SelectedGreen]$LOCALIZE[12][/COLOR]</value>
-        <value condition="stringcompare(System.Date(ddd),$LOCALIZE[41])">[COLOR=SelectedGreen]$LOCALIZE[12]$INFO[Container(201).NumItems, (,)][/COLOR]</value>
+        <value condition="stringcompare(System.Date(ddd),$LOCALIZE[42])">[COLOR=SelectedGreen]$LOCALIZE[12]$INFO[Container(201).NumItems, (,)][/COLOR]</value>
         <value>$LOCALIZE[12]$INFO[Container(201).NumItems, (,)]</value>
     </variable>
 	
