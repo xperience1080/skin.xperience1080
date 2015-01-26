@@ -999,7 +999,7 @@
                         <description>Bottom shadow</description>
                         <posx>-92</posx>
                         <posy>570</posy>
-                        <width>1765</width>
+                        <width>1785</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
@@ -1647,7 +1647,7 @@
                         <description>Bottom shadow</description>
                         <posx>-92</posx>
                         <posy>570</posy>
-                        <width>1765</width>
+                        <width>1785</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
@@ -2308,7 +2308,7 @@
                         <description>Bottom shadow</description>
                         <posx>-92</posx>
                         <posy>570</posy>
-                        <width>1765</width>
+                        <width>1785</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
@@ -2972,7 +2972,7 @@
                         <description>Bottom shadow</description>
                         <posx>-42</posx>
                         <posy>570</posy>
-                        <width>1765</width>
+                        <width>1785</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
@@ -3668,7 +3668,7 @@
                         <description>Bottom shadow</description>
                         <posx>-92</posx>
                         <posy>570</posy>
-                        <width>1765</width>
+                        <width>1635</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
@@ -4136,7 +4136,7 @@
                         <description>Bottom shadow</description>
                         <posx>-92</posx>
                         <posy>570</posy>
-                        <width>1765</width>
+                        <width>1785</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
@@ -5044,7 +5044,7 @@
                         <description>Bottom shadow</description>
                         <posx>-93</posx>
                         <posy>570</posy>
-                        <width>1765</width>
+                        <width>1785</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
