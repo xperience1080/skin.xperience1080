@@ -1,4 +1,7 @@
-﻿[B]3.44.24[/B]
+﻿[B]3.44.25[/B]
+• Corrects shadow on Home panels when using xperience1080 textures
+
+[B]3.44.24[/B]
 • Cosmetic changes to weather screen to reflect new add-on data provided
 
 [B]3.44.23[/B]
