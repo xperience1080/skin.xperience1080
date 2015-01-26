@@ -1,4 +1,10 @@
-﻿[B]3.44.22[/B]
+﻿[B]3.44.24[/B]
+• Cosmetic changes to weather screen to reflect new add-on data provided
+
+[B]3.44.23[/B]
+• Adds cache/progress/buffer graphical indicator to progress bar for all media types (local, network, streaming, video, music, etc)
+
+[B]3.44.22[/B]
 • Removes debugging text (sorry)
 
 [B]3.44.21[/B]
