@@ -1,4 +1,20 @@
-﻿[B]3.44.25[/B]
+﻿[B]3.44.31[/B]
+• Two new textures for default theme
+• Two new textures for xperience1080 theme
+• Additional xml to use above textures
+
+[B]3.44.29[/B]
+• Reduces Music section layout to allow correct aspect ratio Album Art.
+• Fixes panel show on Music
+
+[B]3.44.28[/B]
+• Removes non-required items from Artwork selection screen (ClearArt and Logo)
+
+[B]3.44.25[/B]
+• Adds border to FanArt Viewtype to remove image stretching
+• Adds up/down fuctions to FanArt Viewtype to trigger menu
+
+[B]3.44.25[/B]
 • Corrects shadow on Home panels when using xperience1080 textures
 
 [B]3.44.24[/B]
