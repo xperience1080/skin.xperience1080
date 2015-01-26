@@ -2938,7 +2938,7 @@
                 </control>
                 <control type="group" id="450">
                     <posy>100</posy>
-                    <posx>312</posx>
+                    <posx>390</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
@@ -2972,7 +2972,7 @@
                         <description>Bottom shadow</description>
                         <posx>-42</posx>
                         <posy>570</posy>
-                        <width>1785</width>
+                        <width>1627</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
@@ -2996,14 +2996,14 @@
                         <control type="image">
                             <posx>-5</posx>
                             <posy>-5</posy>
-                            <width>739</width>
+                            <width>582</width>
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
                         <control type="wraplist" id="4022">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>729</width>
+                            <width>572</width>
                             <height>572</height>
                             <onup>425</onup>
                             <ondown>80</ondown>
@@ -3014,21 +3014,21 @@
                             <pagecontrol>4024</pagecontrol>
                             <visible allowhiddenfocus="true">IntegerGreaterThan(Container(4022).NumItems,0)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                            <itemlayout width="729" height="572">
+                            <itemlayout width="572" height="572">
                                 <control type="image">
-                                    <posx>64</posx>
+                                    <posx>0</posx>
                                     <posy>0</posy>
-                                    <width>601</width>
+                                    <width>572</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
                                     <texture background="true" fallback="views/fallbacks/DefaultAlbumCover.png/square-large.png">$INFO[ListItem.Icon]</texture>
                                 </control>
                             </itemlayout>
-                            <focusedlayout width="729" height="572">
+                            <focusedlayout width="572" height="572">
                                 <control type="image">
-                                    <posx>64</posx>
+                                    <posx>0</posx>
                                     <posy>0</posy>
-                                    <width>601</width>
+                                    <width>572</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
                                     <texture background="true" fallback="views/fallbacks/DefaultAlbumCover.png/square-large.png">$INFO[ListItem.Icon]</texture>
@@ -3042,7 +3042,7 @@
                             <description>Title overlay</description>
                             <posx>0</posx>
                             <posy>508</posy>
-                            <width>729</width>
+                            <width>572</width>
                             <height>64</height>
                             <colordiffuse>99000000</colordiffuse>
                             <texture border="1">windows/common/black.png</texture>
@@ -3052,7 +3052,7 @@
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Loading Back</description>
-                                <posx>291</posx>
+                                <posx>212</posx>
                                 <posy>212</posy>
                                 <width>148</width>
                                 <height>148</height>
@@ -3060,7 +3060,7 @@
                             </control>
                             <control type="image">
                                 <description>Loading</description>
-                                <posx>291</posx>
+                                <posx>212</posx>
                                 <posy>212</posy>
                                 <width>148</width>
                                 <height>148</height>
@@ -3085,7 +3085,7 @@
                             <description>Title label</description>
                             <posx>20</posx>
                             <posy>508</posy>
-                            <width>689</width>
+                            <width>534</width>
                             <height>64</height>
                             <label>[B]$INFO[Container(4022).ListItem.Label][/B]</label>
                             <label2>$INFO[Container(4022).ListItem.Label2]</label2>
@@ -3100,7 +3100,7 @@
                         <control type="label">
                             <posx>0</posx>
                             <posy>576</posy>
-                            <width>729</width>
+                            <width>572</width>
                             <height>25</height>
                             <font>Font-Condensed-S20-B</font>
                             <shadowcolor>11000000</shadowcolor>
@@ -3117,7 +3117,7 @@
                             <include>visiblehidefadeinfodelayvisible</include>
                             <control type="image">
                                 <description>Scrollbar background</description>
-                                <posx>628</posx>
+                                <posx>471</posx>
                                 <posy>585</posy>
                                 <width>96</width>
                                 <height>6</height>
@@ -3126,7 +3126,7 @@
                             </control>
                             <control type="scrollbar" id="4024">
                                 <description>Scrollbar</description>
-                                <posx>628</posx>
+                                <posx>471</posx>
                                 <posy>585</posy>
                                 <width>96</width>
                                 <height>6</height>
@@ -3353,7 +3353,7 @@
                         </content>
                     </control>				
                     <control type="panel" id="403">
-                        <posx>1050</posx>
+                        <posx>893</posx>
                         <posy>-24</posy>
                         <width>662</width>
                         <height>620</height>
@@ -3588,7 +3588,7 @@
                     <control type="image">
                         <posx>319</posx>
                         <posy>-21</posy>
-                        <width>769</width>
+                        <width>612</width>
                         <height>614</height>
                         <texture border="40">windows/home/tile-fo.png</texture>
                         <animation type="Visible">
@@ -4168,13 +4168,13 @@
                             <visible>!Weather.IsFetched</visible>
                             <include>visiblehidefadeinfo</include>
 							<control type="image">
+					
 								<description>Loading Underlay</description>
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>920</width>
-								<height>572</height>
-								<colordiffuse>ff626262</colordiffuse>
-								<texture>windows/common/grey.png</texture>
+								<posx>-5</posx>
+								<posy>-5</posy>
+								<width>930</width>
+								<height>582</height>
+								<texture border="7">windows/home/tile.png</texture>
 							</control>
                             <control type="image">
                                 <description>Loading Back</description>
