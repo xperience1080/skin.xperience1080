@@ -1,4 +1,10 @@
-﻿[B]3.44.32[/B]
+﻿[B]3.44.34[/B]
+• Change text on Fanart weather
+
+[B]3.44.34[/B]
+• Resolves item count being displayed for search.
+
+[B]3.44.32[/B]
 • Resolves Plot not being displayed for PVR clients.
 
 [B]3.44.31[/B]
