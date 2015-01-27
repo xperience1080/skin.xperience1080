@@ -1,4 +1,7 @@
-﻿[B]3.44.31[/B]
+﻿[B]3.44.32[/B]
+• Resolves Plot not being displayed for PVR clients.
+
+[B]3.44.31[/B]
 • Two new textures for default theme
 • Two new textures for xperience1080 theme
 • Additional xml to use above textures
