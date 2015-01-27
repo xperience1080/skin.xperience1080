@@ -1,4 +1,7 @@
-﻿[B]3.44.34[/B]
+﻿[B]3.44.35[/B]
+• Adds missing plot to streaming content where Plot is available.
+
+[B]3.44.34[/B]
 • Change text on Fanart weather
 
 [B]3.44.34[/B]
