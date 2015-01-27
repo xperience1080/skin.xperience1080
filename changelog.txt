@@ -1,14 +1,17 @@
-﻿[B]3.44.35[/B]
+﻿[B]3.44.38[/B]
 • Adds missing plot to streaming content where Plot is available.
 
-[B]3.44.34[/B]
+[B]3.44.35[/B]
 • Change text on Fanart weather
 
-[B]3.44.34[/B]
+[B]3.44.32[/B]
 • Resolves item count being displayed for search.
 
-[B]3.44.32[/B]
+[B]3.44.34[/B]
 • Resolves Plot not being displayed for PVR clients.
+
+[B]3.44.33[/B]
+• Moves overlay textures to texture directory.
 
 [B]3.44.31[/B]
 • Two new textures for default theme
