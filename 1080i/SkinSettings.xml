@@ -846,7 +846,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(EPGGenreColors.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(EPGGenreColors.Enabled)</onclick>
-                        <label>$LOCALIZE[41221]</label>
+                        <label>$LOCALIZE[515] $LOCALIZE[14078] $LOCALIZE[1405] $LOCALIZE[19069]</label>
                     </control>
                 </control>
                 
