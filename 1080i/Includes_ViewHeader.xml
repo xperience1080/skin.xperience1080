@@ -123,7 +123,7 @@
         <value condition="Control.HasFocus(110) | Window.IsActive(weathersettings)">$LOCALIZE[8]</value>
         <value condition="Control.HasFocus(109) | Window.IsActive(systemsettings)">$LOCALIZE[13000]</value>
         <value condition="Control.HasFocus(108) | Window.IsActive(pvrsettings)">$LOCALIZE[19020]</value>
-        <value condition="Control.HasFocus(107) | Window.IsActive(skinsettings)">$LOCALIZE[166]</value>
+        <value condition="Control.HasFocus(107) | Window.IsActive(skinsettings)">1080XF</value>
         <value condition="Control.HasFocus(106) | Window.IsActive(picturessettings)">$LOCALIZE[1]</value>
         <value condition="Control.HasFocus(105) | Window.IsActive(addonbrowser)">$LOCALIZE[24001]</value>
         <value condition="Control.HasFocus(104) | Window.IsActive(musicsettings)">$LOCALIZE[2]</value>
