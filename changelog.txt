@@ -1,4 +1,10 @@
-﻿[B]3.44.40[/B]
+﻿[B]3.44.42[/B]
+• Fixed favourites not opening when RSS enabled
+
+[B]3.44.41[/B]
+• Changed a few language strings
+
+[B]3.44.40[/B]
 • Redesigned System Information to be Library Information as it's far more useful. Includes Movie #, Movies Watched #, TV Shows #, Episode #, Episodes Watched #, Album #, Artist #, Songs #.
 
 [B]3.44.39[/B]
