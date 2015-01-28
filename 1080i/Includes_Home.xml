@@ -5216,7 +5216,7 @@
                                 <property name="pos">bottom</property>
                             </item>
                             <item id="9">
-                                <label>$LOCALIZE[166]</label>
+                                <label>1080XF</label>
                                 <icon>windows/home/icons/skin.png</icon>
                                 <onclick>ActivateWindow(skinsettings)</onclick>
                                 <property name="pos">bottom</property>
