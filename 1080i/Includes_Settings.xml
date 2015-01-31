@@ -145,6 +145,19 @@
         <scrolltime tween="cubic" easing="out">500</scrolltime>
         <orientation>vertical</orientation>
     </include>
+	
+    <include name="SettingsCategoryGrouplistProfileVars">
+        <posx>355</posx>
+        <posy>281</posy>
+        <width>1210</width>
+        <height>609</height>
+        <itemgap>-1</itemgap>
+        <onleft>3</onleft>
+        <onright>40</onright>
+        <pagecontrol>40</pagecontrol>
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
+        <orientation>vertical</orientation>
+    </include>	
     
     <include name="SettingsDialogRadioButtonVars">
         <width>644</width>
