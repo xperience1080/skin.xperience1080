@@ -1,4 +1,29 @@
-﻿[B]3.44.42[/B]
+﻿[B]3.44.51[/B]
+• Corrects missing texture for Weather loading
+
+[B]3.44.50[/B]
+• Corrects shadow for new Settings area
+
+[B]3.44.49[/B]
+• Reverts to previous background images used
+
+[B]3.44.48[/B]
+• Tweaks to overlays on default theme
+
+[B]3.44.47[/B]
+• Redesigned Profiles settings area to match other panels (beta)
+
+[B]3.44.46[/B]
+• Adds extra Home settings items
+• Removes onclick to enter settings
+
+[B]3.44.44[/B]
+• Reverts Home settings to original
+
+[B]3.44.43[/B]
+• Bumped due to ronie's bump from .40 to .41
+
+[B]3.44.42[/B]
 • Fixed favourites not opening when RSS enabled
 
 [B]3.44.41[/B]
