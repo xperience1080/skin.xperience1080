@@ -1,4 +1,19 @@
-﻿[B]3.44.51[/B]
+﻿[B]3.44.94[/B]
+• New Skin Settings Option
+• Additional Red tile added for home
+• User-selectable Tile Colours (Home, Movies, TV, Music)
+• Small fixes
+
+[B]3.44.65[/B]
+• Changes to multiple files to resolve some tenses being used in languages
+
+[B]3.44.60[/B]
+• Numerous custom language strings changed (Not available in non-EN langs)
+
+[B]3.44.52[/B]
+• Adds Auto Solo GUI mode for artwork.
+
+[B]3.44.51[/B]
 • Corrects missing texture for Weather loading
 
 [B]3.44.50[/B]
