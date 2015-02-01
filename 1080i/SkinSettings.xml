@@ -395,6 +395,15 @@
                         <onclick>ActivateWindow(3003)</onclick>
                         <label>$LOCALIZE[41140]</label>
                     </control>
+					<control type="button" id="20021">
+						<width>1210</width>
+						<texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
+						<texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
+						<include>SettingsCategoryDefaultButtonVars</include>
+						<onclick>SetProperty(Dialog,$LOCALIZE[42256])</onclick>
+						<onclick>ActivateWindow(3001)</onclick>
+						<label>$LOCALIZE[41144]</label>
+					</control>
                     <control type="radiobutton" id="2003">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -690,10 +699,10 @@
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
                         <include>SettingsCategoryDefaultButtonVars</include>
-                        <label>$LOCALIZE[20343]</label>
+                        <label>$LOCALIZE[41446]</label>
                         <onclick>ClearProperty(CustomDialogType)</onclick>
                         <onclick>ClearProperty(CustomDialog)</onclick>
-                        <onclick>SetProperty(Dialog,$LOCALIZE[20343])</onclick>
+                        <onclick>SetProperty(Dialog,$LOCALIZE[41446])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
                     </control>
                     <control type="button" id="5006">
@@ -846,7 +855,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(EPGGenreColors.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(EPGGenreColors.Enabled)</onclick>
-                        <label>$LOCALIZE[515] $LOCALIZE[14078] $LOCALIZE[1405] $LOCALIZE[19069]</label>
+                        <label>$LOCALIZE[41221]</label>
                     </control>
                 </control>
                 
