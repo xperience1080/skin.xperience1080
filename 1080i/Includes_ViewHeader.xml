@@ -55,7 +55,7 @@
     
     <variable name="VideoHeaderLabel">
         <value condition="substring(Container.FolderPath,library://video/movies/,left) | substring(Container.FolderPath,videodb://movies/,left)">$LOCALIZE[342]</value>
-        <value condition="substring(Container.FolderPath,library://video/tvshows/,left) | substring(Container.FolderPath,videodb://tvshows/,left)">$LOCALIZE[20343]</value>
+        <value condition="substring(Container.FolderPath,library://video/tvshows/,left) | substring(Container.FolderPath,videodb://tvshows/,left)">$LOCALIZE[41446]</value>
         <value condition="substring(Container.FolderPath,library://video/inprogressshows.xml/,left)">$LOCALIZE[626]</value>
         <value condition="substring(Container.FolderPath,library://video/recentlyaddedmovies.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[20386]</value>
         <value condition="substring(Container.FolderPath,library://video/recentlyaddedepisodes.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[20387]</value>

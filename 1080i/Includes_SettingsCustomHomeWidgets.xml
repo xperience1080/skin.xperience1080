@@ -1247,7 +1247,7 @@
                             <onclick>noop</onclick>
                         </item>
                         <item id="4">
-                            <label>$LOCALIZE[41162] 4 ($LOCALIZE[20343])</label>
+                            <label>$LOCALIZE[41162] 4 ($LOCALIZE[41446])</label>
                             <onclick>noop</onclick>
                         </item>
                         <item id="5">
