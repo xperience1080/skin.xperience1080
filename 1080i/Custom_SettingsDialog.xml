@@ -59,7 +59,7 @@
                     <selected>!Skin.HasSetting(HomeTVShows)</selected>
                     <onclick>Skin.ToggleSetting(HomeTVShows)</onclick>
                     <onclick>SetProperty(ReloadSkin,1,Home)</onclick>
-                    <label>$LOCALIZE[20343]</label>
+                    <label>$LOCALIZE[41446]</label>
                 </control>
                 <control type="radiobutton" id="2103">
                     <width>1210</width>
@@ -87,6 +87,46 @@
                 </control>				
             </control>
             
+			  <!-- custom home items colors-->
+            <control type="grouplist" id="3">
+                <include>SettingsDialogGrouplistVars</include>
+                <visible>stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[42256])</visible>
+                <control type="radiobutton" id="2201">
+                    <width>1210</width>
+                    <include>SettingsDialogRadioButtonVars</include>
+                    <selected>Skin.HasSetting(HomeHomeTiles)</selected>
+                    <onclick>Skin.ToggleSetting(HomeHomeTiles)</onclick>
+                    <label>$LOCALIZE[636] $LOCALIZE[41175] ($LOCALIZE[42259])</label>
+                </control>				
+                <control type="radiobutton" id="2202">
+                    <width>1210</width>
+                    <include>SettingsDialogRadioButtonVars</include>
+                    <selected>Skin.HasSetting(HomeMoviesTiles)</selected>
+                    <onclick>Skin.ToggleSetting(HomeMoviesTiles)</onclick>
+                    <label>$LOCALIZE[636] $LOCALIZE[41157] ($LOCALIZE[762])</label>
+                    <enable>!Skin.HasSetting(HomeMovies)</enable>
+                    <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(2201)">Conditional</animation>
+                </control>
+                <control type="radiobutton" id="2203">
+                    <width>1210</width>
+                    <include>SettingsDialogRadioButtonVars</include>
+                    <selected>Skin.HasSetting(HomeTVShowsTiles)</selected>
+                    <onclick>Skin.ToggleSetting(HomeTVShowsTiles)</onclick>
+                    <label>$LOCALIZE[636] $LOCALIZE[41158] ($LOCALIZE[13341])</label>
+                    <enable>!Skin.HasSetting(HomeTVShows)</enable>
+                    <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(2202)">Conditional</animation>
+                </control>
+                <control type="radiobutton" id="2204">
+                    <width>1210</width>
+                    <include>SettingsDialogRadioButtonVars</include>
+                    <selected>Skin.HasSetting(HomeMusicTiles)</selected>
+                    <onclick>Skin.ToggleSetting(HomeMusicTiles)</onclick>
+                    <label>$LOCALIZE[636] $LOCALIZE[41161] ($LOCALIZE[13342])</label>
+                    <enable>!Skin.HasSetting(HomeMusic)</enable>
+                    <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(2203)">Conditional</animation>
+                </control>
+            </control>
+			
             <control type="grouplist" id="3">
                 <include>SettingsDialogGrouplistVars</include>
                 <visible>!IsEmpty(Window(skinsettings).property(Guide.Custom))</visible>

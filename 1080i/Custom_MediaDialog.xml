@@ -231,14 +231,15 @@
                             <onclick condition="Container.Content(Movies)">RunScript(script.artwork.downloader,mode=gui,mediatype=movie,dbid=$INFO[ListItem.DBID],landscape)</onclick>
                             <onclick condition="Container.Content(TVShows)">RunScript(script.artwork.downloader,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID],landscape)</onclick>
                         </item>
-                    <!--<item id="5">
-                            <description>Get Banner</description>
-                            <label>$LOCALIZE[42254]</label>
-                            <onclick>SetProperty(ChooseArt,banner)</onclick>
-                            <onclick condition="Container.Content(Movies)">RunScript(script.artwork.downloader,mode=gui,mediatype=movie,dbid=$INFO[ListItem.DBID],banner)</onclick>
-                            <onclick condition="Container.Content(TVShows)">RunScript(script.artwork.downloader,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID],banner)</onclick>
-                        </item>
-                        <item id="6">
+						<item id="5">
+                            <description>Get auto</description>
+                            <label>$LOCALIZE[14061] $LOCALIZE[456]</label>
+                            <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+                            <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+                            <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
+                            <visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvide​os)]+system.hasaddon(script.artwork.downloader)</visible>
+                        </item>						
+                  <!--  <item id="6">
                             <description>Get clearart</description>
                             <label>$LOCALIZE[42255]</label>
                             <onclick>SetProperty(ChooseArt,clearart)</onclick>
