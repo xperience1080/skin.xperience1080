@@ -217,7 +217,7 @@
                 </control>
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[20343]]</label>
+                    <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[41446]]</label>
                     <visible>Container(30).HasFocus(3)</visible>
                 </control>
                 <control type="label">
@@ -416,7 +416,7 @@
             <control type="label">
                 <description>TV Shows</description>
                 <include>HomeLabel</include>
-                <label>$LOCALIZE[20343]</label>
+                <label>$LOCALIZE[42257]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(4)">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(325)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeTVShows)</visible>
@@ -530,7 +530,7 @@
                     <visible>!Skin.HasSetting(HomeMovies)</visible>
                 </item>
                 <item id="4">
-                    <label>$LOCALIZE[20343]</label>
+                    <label>$LOCALIZE[41446]</label>
                     <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeTVShowsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeTVShowsMultiImage)]</property>
@@ -693,7 +693,7 @@
                                     <scrollout>false</scrollout>
                                     <pauseatend>5000</pauseatend>
                                     <label>$LOCALIZE[342]...</label>
-                                    <label>$LOCALIZE[20343]...</label>
+                                    <label>$LOCALIZE[41446]...</label>
                                     <label>$LOCALIZE[33054]...</label>
                                     <label>$LOCALIZE[20360]...</label>
                                     <label>$LOCALIZE[20389]...</label>
@@ -1393,8 +1393,16 @@
                                     <width>293</width>
                                     <height>293</height>
 									<texture border="7">windows/home/tile.png</texture>
-                                    <!-- <texture border="7">windows/home/tile-red.png</texture> -->
+                                    <visible>!Skin.HasSetting(HomeHomeTiles)</visible>
                                 </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
+									<texture border="7">windows/home/tile-red.png</texture>
+                                    <visible>Skin.HasSetting(HomeHomeTiles)</visible>
+                                </control>								
                                 <control type="image">
                                     <posx>24</posx>
                                     <posy>24</posy>
@@ -1458,7 +1466,16 @@
                                         <width>293</width>
                                         <height>293</height>
                                         <texture border="7">windows/home/tile.png</texture>
+										<visible>!Skin.HasSetting(HomeHomeTiles)</visible>
                                     </control>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
+                                        <texture border="7">windows/home/tile-red.png</texture>
+										<visible>Skin.HasSetting(HomeHomeTiles)</visible>
+                                    </control>									
                                     <control type="image">
                                         <posx>24</posx>
                                         <posy>24</posy>
@@ -2061,8 +2078,17 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
-                                    <texture border="7">windows/home/tile-blue.png</texture>
+                                    <texture border="7">windows/home/tile.png</texture>
+									<visible>!Skin.HasSetting(HomeMoviesTiles)</visible>
                                 </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
+                                    <texture border="7">windows/home/tile-blue.png</texture>
+									<visible>Skin.HasSetting(HomeMoviesTiles)</visible>
+                                </control>								
                                 <control type="image">
                                     <posx>24</posx>
                                     <posy>24</posy>
@@ -2126,8 +2152,17 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
-                                        <texture border="7">windows/home/tile-blue.png</texture>
+                                        <texture border="7">windows/home/tile.png</texture>
+										<visible>!Skin.HasSetting(HomeMoviesTiles)</visible>
                                     </control>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
+                                        <texture border="7">windows/home/tile-blue.png</texture>
+										<visible>Skin.HasSetting(HomeMoviesTiles)</visible>
+                                    </control>									
                                     <control type="image">
                                         <posx>24</posx>
                                         <posy>24</posy>
@@ -2644,7 +2679,7 @@
                         </focusedlayout>
                         <content>
                             <item id="1">
-                                <label fallback="20343">$INFO[Skin.String(HomeTVShowTile3.Label)]</label>
+                                <label fallback="41446">$INFO[Skin.String(HomeTVShowTile3.Label)]</label>
                                 <label2>$INFO[Window.Property(TVShows.Count)]</label2>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeTVShowTile3) + !stringcompare(Skin.String(HomeTVShowTile3.Type),4) + !stringcompare(Skin.String(HomeTVShowTile3.Type),5) + !stringcompare(Skin.String(HomeTVShowTile3.Type),6) + !stringcompare(Skin.String(HomeTVShowTile3.Type),7)">RunAddon($INFO[Skin.String(HomeTVShowTile3.Path)])</onclick>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeTVShowTile3) + stringcompare(Skin.String(HomeTVShowTile3.Type),4)">ActivateWindow(Videos,$INFO[Skin.String(HomeTVShowTile3.Path)],return)</onclick>
@@ -2724,8 +2759,17 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
-                                    <texture border="7">windows/home/tile-green.png</texture>
+                                    <texture border="7">windows/home/tile.png</texture>
+									<visible>!Skin.HasSetting(HomeTVShowsTiles)</visible>
                                 </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
+                                    <texture border="7">windows/home/tile-green.png</texture>
+									<visible>Skin.HasSetting(HomeTVShowsTiles)</visible>
+                                </control>								
                                 <control type="image">
                                     <posx>24</posx>
                                     <posy>24</posy>
@@ -2789,8 +2833,17 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
-                                        <texture border="7">windows/home/tile-green.png</texture>
+                                        <texture border="7">windows/home/tile.png</texture>
+										<visible>!Skin.HasSetting(HomeTVShowsTiles)</visible>
                                     </control>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
+                                        <texture border="7">windows/home/tile-green.png</texture>
+										<visible>Skin.HasSetting(HomeTVShowsTiles)</visible>
+                                    </control>									
                                     <control type="image">
                                         <posx>24</posx>
                                         <posy>24</posy>
@@ -3375,8 +3428,17 @@
                                 <posy>19</posy>
                                 <width>293</width>
                                 <height>293</height>
-                                <texture border="7">windows/home/tile-orange.png</texture>
+                                <texture border="7">windows/home/tile.png</texture>
+								<visible>!Skin.HasSetting(HomeMusicTiles)</visible>
                             </control>
+                            <control type="image">
+                                <posx>19</posx>
+                                <posy>19</posy>
+                                <width>293</width>
+                                <height>293</height>
+                                <texture border="7">windows/home/tile-orange.png</texture>
+								<visible>Skin.HasSetting(HomeMusicTiles)</visible>
+                            </control>							
                             <control type="group">
                                 <control type="image">
                                     <posx>24</posx>
@@ -3440,8 +3502,17 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
-                                    <texture border="7">windows/home/tile-orange.png</texture>
+                                    <texture border="7">windows/home/tile.png</texture>
+									<visible>!Skin.HasSetting(HomeMusicTiles)</visible>
                                 </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
+                                    <texture border="7">windows/home/tile-orange.png</texture>
+									<visible>Skin.HasSetting(HomeMusicTiles)</visible>
+                                </control>								
                                 <control type="group">
                                     <control type="image">
                                         <posx>24</posx>
@@ -4168,13 +4239,12 @@
                             <visible>!Weather.IsFetched</visible>
                             <include>visiblehidefadeinfo</include>
 							<control type="image">
-					
 								<description>Loading Underlay</description>
 								<posx>-5</posx>
 								<posy>-5</posy>
 								<width>930</width>
 								<height>582</height>
-								<texture border="7">windows/home/tile.png</texture>
+								<texture border="7">windows/home/add-tile.png</texture>
 							</control>
                             <control type="image">
                                 <description>Loading Back</description>
