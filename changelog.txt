@@ -1,4 +1,8 @@
-﻿[B]3.44.94[/B]
+﻿[B]3.44.96[/B]
+• Added extra Aspect Ratio flags (default)
+• No xperience1080 texture .psd so unable to make above, uses default
+
+[B]3.44.94[/B]
 • New Skin Settings Option
 • Additional Red tile added for home
 • User-selectable Tile Colours (Home, Movies, TV, Music)
