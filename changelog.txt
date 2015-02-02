@@ -1,4 +1,8 @@
-﻿[B]3.45.06alpha[/B]
+﻿[B]3.45.10-alpha[/B]
+• Completely new Lyrics displays and controls panel
+• 36 new textures for each theme
+
+[B]3.45.06alpha[/B]
 • Reverted 3.44.99b
 • New VARS to handle Music Now Playing Banner Viewtype
 • New VARS to handle Movie Now Playing Banner Viewtype
