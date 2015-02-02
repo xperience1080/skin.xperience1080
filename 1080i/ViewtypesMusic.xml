@@ -2870,6 +2870,14 @@
                             <height>332</height>
                             <texture border="60">views/banner/other/panel.png</texture>
                         </control>
+						<control type="image">
+							<posx>295</posx>
+							<posy>35</posy>
+							<width>732</width>
+							<height>262</height>
+							<texture>views/banner/other/now-playing-back.png</texture>
+							<visible>[Container.Content(Songs) | Window.IsVisible(MusicPlaylist)] + ListItem.IsPlaying</visible>
+						</control>							
                         <control type="image">
                             <posx>33</posx>
                             <posy>35</posy>
@@ -2887,7 +2895,7 @@
                         </control>
                         <control type="group">
                             <posy>55</posy>
-                            <posx>317</posx>
+                            <posx>317</posx>						
                             <control type="image">
                                 <posx>622</posx>
                                 <posy>154</posy>
