@@ -2869,15 +2869,7 @@
                             <width>1062</width>
                             <height>332</height>
                             <texture border="60">views/banner/other/panel.png</texture>
-                        </control>
-						<control type="image">
-							<posx>295</posx>
-							<posy>35</posy>
-							<width>732</width>
-							<height>262</height>
-							<texture>views/banner/other/now-playing-back.png</texture>
-							<visible>[Container.Content(Songs) | Window.IsVisible(MusicPlaylist)] + ListItem.IsPlaying</visible>
-						</control>							
+                        </control>					
                         <control type="image">
                             <posx>33</posx>
                             <posy>35</posy>
@@ -2940,7 +2932,7 @@
                                 <posx>0</posx>
                                 <posy>90</posy>
                                 <width>690</width>
-                                <label>$INFO[ListItem.Artist]</label>
+                                <label>$VAR[MusicInfoListArtist]</label>
                                 <font>Font-Condensed-S28</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
@@ -2950,7 +2942,7 @@
                                 <posx>0</posx>
                                 <posy>145</posy>
                                 <width>690</width>
-                                <label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</label>
+                                <label>$VAR[MusicBannerGenre]</label>
                                 <font>Font-Condensed-S28</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
@@ -2960,7 +2952,7 @@
                                 <posx>0</posx>
                                 <posy>185</posy>
                                 <width>690</width>
-                                <label>$INFO[ListItem.Duration,[B]$LOCALIZE[180]: [/B]]</label>
+                                <label>$VAR[MusicBannerDuration]</label>
                                 <font>Font-Condensed-S28</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
