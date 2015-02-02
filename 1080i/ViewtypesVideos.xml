@@ -5291,7 +5291,7 @@
                                 <posx>0</posx>
                                 <posy>59</posy>
                                 <width>100</width>
-                                <label>$INFO[ListItem.Year]</label>
+                                <label>$VAR[VideoMovieBannerYear]</label>
                                 <font>Font-Condensed-S36</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
@@ -5301,7 +5301,7 @@
                                 <posx>85</posx>
                                 <posy>60</posy>
                                 <width>710</width>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$VAR[VideoMovieBannerTitle]</label>
                                 <font>Font-Condensed-S34-B</font>
                                 <textcolor>FF333333</textcolor>
                                 <scroll>false</scroll>
@@ -5313,7 +5313,7 @@
                                 <posy>103</posy>
                                 <width>815</width>
                                 <font>Font-Condensed-S28</font>
-                                <label>$INFO[ListItem.Rating,★ ,]$INFO[ListItem.Duration, [COLOR=77484848]/[/COLOR] , $LOCALIZE[12391]]</label>
+                                <label>$VAR[VideoMovieBannerRatingDuration]</label>
                                 <textcolor>FF484848</textcolor>
                                 <align>left</align>
                                 <scroll>false</scroll>
@@ -5322,7 +5322,7 @@
                                 <posx>85</posx>
                                 <posy>140</posy>
                                 <width>815</width>
-                                <label>$INFO[ListItem.Genre]</label>
+                                <label>$VAR[VideoMovieBannerGenre]</label>
                                 <font>Font-Condensed-S28</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
@@ -5606,7 +5606,7 @@
                                 <posx>100</posx>
                                 <posy>48</posy>
                                 <width>660</width>
-                                <label>$INFO[ListItem.Rating,★ ,]</label>
+                                <label>$VAR[VideoTVBannerRating]</label>
                                 <font>Font-Condensed-S28</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
@@ -5616,7 +5616,7 @@
                                 <posx>100</posx>
                                 <posy>85</posy>
                                 <width>660</width>
-                                <label>$INFO[ListItem.Date]</label>
+                                <label>$VAR[VideoTVBannerDate]</label>
                                 <font>Font-Condensed-S28</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
