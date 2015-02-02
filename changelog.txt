@@ -1,4 +1,10 @@
-﻿[B]3.44.99beta[/B]
+﻿[B]3.45.06alpha[/B]
+• Reverted 3.44.99b
+• New VARS to handle Music Now Playing Banner Viewtype
+• New VARS to handle Movie Now Playing Banner Viewtype
+• New VARS to handle TV Show Now Playing Banner Viewtype
+
+[B]3.44.99beta[/B]
 • Fixed Now Playing Music banner not displaying correctly
 
 [B]3.44.98beta[/B]
