@@ -1,4 +1,8 @@
-﻿[B]3.44.96[/B]
+﻿[B]3.44.98beta[/B]
+• Added two additional options to Get Artwork option. No items will be set but they will be downloaded to the directory (depending on your settings).
+• Manual Mode = Select each item | Background Mode = Grab all items based on criteria set in the add-on options.
+
+[B]3.44.96[/B]
 • Added extra Aspect Ratio flags (default)
 • No xperience1080 texture .psd so unable to make above, uses default
 
