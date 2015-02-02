@@ -575,6 +575,48 @@
         <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]$VAR[ListItem.E][/COLOR]</value>
         <value>$VAR[ListItem.E]</value>
     </variable>
+
+	<variable name="VideoMovieBannerGenre">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColorSecondary.Open]$INFO[ListItem.Genre]$VAR[BannerSelectedColorSecondary.Close]</value>
+		<value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Genre]</value>
+		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Genre]</value>
+		<value>$INFO[ListItem.Genre]</value>
+	</variable>	
+	
+	<variable name="VideoMovieBannerRatingDuration">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColorSecondary.Open]$INFO[ListItem.Rating,★ ,]$INFO[ListItem.Duration, [COLOR=77484848]/[/COLOR] , $LOCALIZE[12391]]$VAR[BannerSelectedColorSecondary.Close]</value>
+		<value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Rating,★ ,]$INFO[ListItem.Duration, [COLOR=77484848]/[/COLOR] , $LOCALIZE[12391]]</value>
+		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Rating,★ ,]$INFO[ListItem.Duration, [COLOR=77484848]/[/COLOR] , $LOCALIZE[12391]]</value>
+		<value>$INFO[ListItem.Rating,★ ,]$INFO[ListItem.Duration, [COLOR=77484848]/[/COLOR] , $LOCALIZE[12391]]</value>
+	</variable>	
+	
+	<variable name="VideoMovieBannerTitle">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColor.Open]$INFO[ListItem.Label]$VAR[BannerSelectedColor.Close]</value>
+		<value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Label]</value>
+		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Label]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>	
+	
+	<variable name="VideoMovieBannerYear">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColor.Open]$INFO[ListItem.Year]$VAR[BannerSelectedColor.Close]</value>
+		<value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Year]</value>
+		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Year]</value>
+		<value>$INFO[ListItem.Year]</value>
+	</variable>		
+
+	<variable name="VideoTVBannerDate">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColorSecondary.Open]$INFO[ListItem.Date]$VAR[BannerSelectedColorSecondary.Close]</value>
+		<value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Date]</value>
+		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Date]</value>
+		<value>$INFO[ListItem.Date]</value>
+	</variable>	
+	
+	<variable name="VideoTVBannerRating">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColorSecondary.Open]$INFO[ListItem.Rating,★ ,]$VAR[BannerSelectedColorSecondary.Close]</value>
+		<value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Rating,★ ,]</value>
+		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Rating,★ ,]</value>
+		<value>$INFO[ListItem.Rating,★ ,]</value>
+	</variable>	
     
     <variable name="ListItem.E">
         <value condition="!IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Episode,x0,]</value>
@@ -608,7 +650,23 @@
     <variable name="SelectedColor.Close">
         <value condition="ListItem.IsPlaying">[/COLOR]</value>
     </variable>
+
+    <variable name="BannerSelectedColor.Open">
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]</value>
+    </variable>
     
+    <variable name="BannerSelectedColor.Close">
+        <value condition="ListItem.IsPlaying">[/COLOR]</value>
+    </variable>	
+
+    <variable name="BannerSelectedColorSecondary.Open">
+        <value condition="ListItem.IsPlaying">[COLOR=FF484848]</value>
+    </variable>
+	
+    <variable name="BannerSelectedColorSecondary.Close">
+        <value condition="ListItem.IsPlaying">[/COLOR]</value>
+    </variable>		
+	    
     <variable name="CoverViewBottomInfo">
         <value condition="Container.Content(Artists)">$INFO[Container(55).ListItem.Artist]</value>
         <value condition="Container.Content(Songs) | Window.IsVisible(MusicPlaylist)">$INFO[Container(55).ListItem.Title]$INFO[ListItem.Duration, (,)]</value>
@@ -683,8 +741,30 @@
         <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Style)]</value>
         <value>$INFO[ListItem.Genre]</value>
     </variable>
-    
+
+    <variable name="MusicBannerDuration">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColorSecondary.Open]$INFO[ListItem.Duration,[B]$LOCALIZE[180]: [/B]]$VAR[BannerSelectedColorSecondary.Close]</value>
+        <value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Duration,[B]$LOCALIZE[180]: [/B]]</value>
+        <value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Duration,[B]$LOCALIZE[180]: [/B]]</value>
+        <value>$INFO[ListItem.Duration,[B]$LOCALIZE[180]: [/B]]</value>
+    </variable>	
+	
+    <variable name="MusicBannerGenre">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColorSecondary.Open]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]$VAR[BannerSelectedColorSecondary.Close]</value>
+        <value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</value>
+        <value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</value>
+        <value>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</value>
+    </variable>	
+	
+    <variable name="MusicInfoListArtist">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColorSecondary.Open]$INFO[ListItem.Artist]$VAR[BannerSelectedColorSecondary.Close]</value>
+        <value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Artist]</value>
+        <value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Artist]</value>
+        <value>$INFO[ListItem.Artist]</value>
+    </variable>	
+	
     <variable name="MusicInfoListSongLabel">
+		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColor.Open]$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$VAR[BannerSelectedColor.Close]</value>
         <value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.TrackNumber,0,. ]$INFO[ListItem.Title]</value>
         <value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</value>
         <value>$INFO[ListItem.Label]</value>
