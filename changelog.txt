@@ -1,4 +1,7 @@
-﻿[B]3.44.98beta[/B]
+﻿[B]3.44.99beta[/B]
+• Fixed Now Playing Music banner not displaying correctly
+
+[B]3.44.98beta[/B]
 • Added two additional options to Get Artwork option. No items will be set but they will be downloaded to the directory (depending on your settings).
 • Manual Mode = Select each item | Background Mode = Grab all items based on criteria set in the add-on options.
 
