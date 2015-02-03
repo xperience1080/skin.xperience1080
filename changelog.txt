@@ -1,4 +1,4 @@
-﻿[B]3.45.14-beta[/B]
+﻿[B]3.45.15-beta[/B]
 • Alignment adjustments to Fanart Viewtype
 • New overlay for title
 • Overlay texture corrected
