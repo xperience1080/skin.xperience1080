@@ -1,4 +1,9 @@
-﻿[B]3.45.14-alpha[/B]
+﻿[B]3.45.14-beta[/B]
+• Alignment adjustments to Fanart Viewtype
+• New overlay for title
+• Overlay texture corrected
+
+[B]3.45.14-alpha[/B]
 • Corrected missing ClearArt option in Get Artwork
 • Reduced Home, Movies, TV Shows, Weather Home Section size by 66 pixels to match Settings
 • Corrected 1px offset on Spotlight label, 2px on Weather Provider label and 3px on overlays.
