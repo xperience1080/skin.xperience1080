@@ -87,7 +87,7 @@
                 </control>				
             </control>
             
-			  <!-- custom home items colors-->
+			  <!-- Home Tile Colours -->
             <control type="grouplist" id="3">
                 <include>SettingsDialogGrouplistVars</include>
                 <visible>stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[42256])</visible>
@@ -105,7 +105,6 @@
                     <onclick>Skin.ToggleSetting(HomeMoviesTiles)</onclick>
                     <label>$LOCALIZE[636] $LOCALIZE[41157] ($LOCALIZE[762])</label>
                     <enable>!Skin.HasSetting(HomeMovies)</enable>
-                    <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(2201)">Conditional</animation>
                 </control>
                 <control type="radiobutton" id="2203">
                     <width>1210</width>
@@ -114,7 +113,6 @@
                     <onclick>Skin.ToggleSetting(HomeTVShowsTiles)</onclick>
                     <label>$LOCALIZE[636] $LOCALIZE[41158] ($LOCALIZE[13341])</label>
                     <enable>!Skin.HasSetting(HomeTVShows)</enable>
-                    <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(2202)">Conditional</animation>
                 </control>
                 <control type="radiobutton" id="2204">
                     <width>1210</width>
@@ -123,7 +121,6 @@
                     <onclick>Skin.ToggleSetting(HomeMusicTiles)</onclick>
                     <label>$LOCALIZE[636] $LOCALIZE[41161] ($LOCALIZE[13342])</label>
                     <enable>!Skin.HasSetting(HomeMusic)</enable>
-                    <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(2203)">Conditional</animation>
                 </control>
             </control>
 			
