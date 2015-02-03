@@ -4848,9 +4848,10 @@
             </control>
         </control>
     </include>
-	<!-- =============== -->
-	<!-- FanartSlide (502) -->
-	<!-- =============== -->
+
+<!-- ================= -->
+<!-- FanartSlide (502) -->
+<!-- ================= -->
 	<include name="Viewtype-FanartSlide-Content">
 		<control type="group">
 			<posx>5</posx>
@@ -4862,28 +4863,28 @@
 				<height>734</height>
 				<texture>views/fanart/back-tile.png</texture>
 			</control>
-			<control type="image">
+		<!--	<control type="image">
 				<posx>664</posx>
 				<posy>0</posy>
 				<width>1151</width>
 				<height>734</height>
 				<texture border="7">windows/common/darkgrey.png</texture>
-			</control>		
+			</control> -->		
 			<control type="image">
 				<description>Landscape</description>
 				<posx>664</posx>
 				<posy>-44</posy>
 				<width>1151</width>
-				<height>734</height>
+				<height>778</height>
 				<texture background="true">$VAR[FanArtLandscape]</texture>
-				<aspectratio>keep</aspectratio>
+				<aspectratio>scale</aspectratio>
 			</control>
 			<control type="image">
 				<posx>664</posx>
 				<posy>647</posy>
 				<width>1151</width>
 				<height>87</height>
-				<texture border="7">windows/common/darkgrey.png</texture>		 
+				<texture border="7">views/fanart/slide-overlay.png</texture>		 
 			</control>			
 			<control type="label">
 				<posx>690</posx>
@@ -4994,7 +4995,7 @@
 			<include>BannerListAnimations</include>
 			<include>OptionsShutdownAnimation</include>
 			<control type="group">
-				<posy>535</posy>
+				<posy>507</posy>
 				<animation effect="fade" start="0" end="100" delay="415" time="300" reversible="false" condition="![Container(502).OnNext | Container(502).OnPrevious]">Conditional</animation>
 				<visible>Control.IsVisible(502)</visible>
 				<control type="image">
@@ -5018,7 +5019,7 @@
 			</control>
 			<control type="wraplist" id="502">
 				<posx>0</posx>
-				<posy>220</posy>
+				<posy>190</posy>
 				<width>1920</width>
 				<height>800</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
