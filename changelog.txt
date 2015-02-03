@@ -4,6 +4,7 @@
 • Overlay texture corrected
 • Corrects AlbumInfo rating sizing (default)
 • Corrects Custom Tile Colours issue with selecting in Skin Settings
+• Corrects EPG colour issue on one genre
 
 [B]3.45.14-alpha[/B]
 • Corrected missing ClearArt option in Get Artwork
