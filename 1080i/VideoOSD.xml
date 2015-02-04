@@ -254,8 +254,8 @@
                         <onright>9</onright>
                         <onup>Close</onup>
                         <ondown>Close</ondown>
-                        <enable>!Player.ShowInfo</enable>
-                        <animation effect="fade" start="100" end="50" time="150" tween="sine" easing="inout" condition="Player.ShowInfo">Conditional</animation>
+                        <animation effect="fade" start="100" end="50" time="10" tween="sine" easing="inout" condition="Player.ShowInfo">Conditional</animation>
+
                     </control>
                     <control type="button" id="9">
                         <description>Bookmarks</description>
