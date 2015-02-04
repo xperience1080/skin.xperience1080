@@ -219,6 +219,7 @@
                         <alttexturenofocus border="70,2,2,2">dialogs/options/buttons/quit-nf.png</alttexturenofocus>
                         <alttexturefocus border="70,2,2,2">dialogs/options/buttons/quit-fo.png</alttexturefocus>
                         <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(20)">Conditional</animation>
+						<usealttexture>library.isscanningvideo</usealttexture>
                     </control>
                 </control>
                 <control type="grouplist" id="9222">
