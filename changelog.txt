@@ -4,6 +4,7 @@
 • Portuguese flag changed to Brazil (requested)
 • Fixes bug on Info closing when activated from Player Menu
 (Pressing button once opens, pressing Enter/OK closes, Pressing Enter/OK again closes Player Menu)
+• Removal of additional Artwork-Downloader options (Manual and Automatic) due to issues.
 
 [B]3.45.15-beta[/B]
 • Alignment adjustments to Fanart Viewtype
