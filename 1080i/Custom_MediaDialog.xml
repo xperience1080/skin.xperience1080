@@ -232,12 +232,12 @@
                             <onclick condition="Container.Content(TVShows)">RunScript(script.artwork.downloader,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID],landscape)</onclick>
                         </item>
 						<item id="5">
-                            <description>Get clearart</description>
-                            <label>$LOCALIZE[42255]</label>
-                            <onclick>SetProperty(ChooseArt,clearart)</onclick>
-                            <onclick condition="Container.Content(Movies)">RunScript(script.artwork.downloader,mode=gui,mediatype=movie,dbid=$INFO[ListItem.DBID],clearart)</onclick>
-                            <onclick condition="Container.Content(TVShows)">RunScript(script.artwork.downloader,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID],clearart)</onclick>
-                        </item>		
+							<description>Get clearlogo</description>
+							<label>$LOCALIZE[42254]</label>
+							<onclick>SetProperty(ChooseArt,clearlogo)</onclick>
+							<onclick condition="Container.Content(Movies)">RunScript(script.artwork.downloader,mode=gui,mediatype=movie,dbid=$INFO[ListItem.DBID],clearlogo)</onclick>
+							<onclick condition="Container.Content(TVShows)">RunScript(script.artwork.downloader,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID],clearlogo)</onclick>
+						</item>
 						<item id="6">
 							<description>Get clearart</description>
 							<label>$LOCALIZE[42255]</label>
