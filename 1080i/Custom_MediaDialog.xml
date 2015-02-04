@@ -237,8 +237,16 @@
                             <onclick>SetProperty(ChooseArt,clearart)</onclick>
                             <onclick condition="Container.Content(Movies)">RunScript(script.artwork.downloader,mode=gui,mediatype=movie,dbid=$INFO[ListItem.DBID],clearart)</onclick>
                             <onclick condition="Container.Content(TVShows)">RunScript(script.artwork.downloader,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID],clearart)</onclick>
-                        </item>				
+                        </item>		
 						<item id="6">
+							<description>Get clearart</description>
+							<label>$LOCALIZE[42255]</label>
+							<onclick>SetProperty(ChooseArt,clearart)</onclick>
+							<onclick condition="Container.Content(Movies)">RunScript(script.artwork.downloader,mode=gui,mediatype=movie,dbid=$INFO[ListItem.DBID],clearart)</onclick>
+							<onclick condition="Container.Content(TVShows)">RunScript(script.artwork.downloader,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID],clearart)</onclick>
+						</item>
+						<!-- ENABLING THE BELOW WILL MOST LIKELY BREAK THE SKIN -->		
+				<!--	<item id="7">
                             <description>Manual Mode with GUI</description>
                             <label>$LOCALIZE[413] $LOCALIZE[456]</label>
                             <onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID],poster,seasonposter,fanart,extrafanart,extrathumbs,clearlogo,clearart,tvthumb,seasonthumb,banner,seasonbanner,characterart)</onclick>
@@ -246,14 +254,14 @@
                             <onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader,mode=gui,mediatype=musicvideos,dbid=$INFO[ListItem.DBID],poster,fanart,extrafanart,extrathumbs,clearlogo,clearart,discart)</onclick>
                             <visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvide​os)</visible>
                         </item>		
-						<item id="7">
+						<item id="8">
                             <description>Auto without season posters</description>
                             <label>$LOCALIZE[19190] $LOCALIZE[456]</label>
                             <onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,dbid=$INFO[ListItem.DBID],poster,seasonposter,fanart,extrafanart,extrathumbs,clearlogo,clearart,tvthumb,seasonthumb,banner,seasonbanner,characterart)</onclick>
                             <onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],poster,fanart,extrafanart,extrathumbs,clearlogo,clearart,discart,thumb,banner)</onclick>
                             <onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader,mode=custom,mediatype=musicvideos,dbid=$INFO[ListItem.DBID],poster,fanart,extrafanart,extrathumbs,clearlogo,clearart,discart)</onclick>
                             <visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvide​os)</visible>
-                        </item>	 
+                        </item> -->	 
                     </content>
                 </control>
                 
