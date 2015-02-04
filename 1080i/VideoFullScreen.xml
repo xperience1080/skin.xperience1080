@@ -9,38 +9,38 @@
                 <posx>-100</posx>
                 <posy>-30</posy>
                 <width>2120</width>
-                <height>380</height>
+                <height>370</height>
                 <texture border="43,42,43,42">osd/fullscreen/back-codec.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="10">
                 <description>row 1 label</description>
                 <posx>130</posx>
-                <posy>10</posy>
+                <posy>40</posy>
                 <width>1660</width>
-                <height>98</height>
+                <height>80</height>
                 <textcolor>bbwhite</textcolor>
-                <font>Font-Condensed-S34</font>
+                <font>Font-Condensed-S29-B</font>
                 <label>-</label>
             </control>
             <control type="label" id="11">
                 <description>row 2 label</description>
                 <posx>130</posx>
-                <posy>104</posy>
+                <posy>120</posy>
                 <width>1660</width>
-                <height>98</height>
+                <height>80</height>
                 <textcolor>bbwhite</textcolor>
-                <font>Font-Condensed-S34</font>
+                <font>Font-Condensed-S29-B</font>
                 <label>-</label>
             </control>
             <control type="label" id="12">
                 <description>row 3 label</description>
                 <posx>130</posx>
-                <posy>198</posy>
+                <posy>200</posy>
                 <width>1660</width>
-                <height>118</height>
+                <height>80</height>
                 <textcolor>bbwhite</textcolor>
-                <font>Font-Condensed-S34</font>
+                <font>Font-Condensed-S29-B</font>
                 <label>-</label>
             </control>
         </control>
@@ -76,7 +76,7 @@
     			<height>54</height>
     			<label>$LOCALIZE[19012]:</label>
     			<textcolor>77white</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -87,7 +87,7 @@
     			<height>54</height>
     			<label>$INFO[PVR.ActStreamClient]</label>
     			<textcolor>aawhite</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -98,7 +98,7 @@
     			<height>54</height>
     			<label>$LOCALIZE[19006]:</label>
     			<textcolor>77white</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -109,7 +109,7 @@
     			<height>54</height>
     			<label>$INFO[PVR.ActStreamDevice]</label>
     			<textcolor>aawhite</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -120,7 +120,7 @@
     			<height>54</height>
     			<label>$LOCALIZE[19007]:</label>
     			<textcolor>77white</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -131,7 +131,7 @@
     			<height>54</height>
     			<label>$INFO[PVR.ActStreamStatus]</label>
     			<textcolor>aawhite</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -142,7 +142,7 @@
     			<height>54</height>
     			<label>$LOCALIZE[19008]:</label>
     			<textcolor>77white</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="progress">
@@ -166,7 +166,7 @@
     			<height>54</height>
     			<label>$INFO[PVR.ActStreamSignal]</label>
     			<textcolor>aawhite</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -177,7 +177,7 @@
     			<height>54</height>
     			<label>$LOCALIZE[19009]:</label>
     			<textcolor>77white</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="progress">
@@ -201,7 +201,7 @@
     			<height>54</height>
     			<label>$INFO[PVR.ActStreamSNR]</label>
     			<textcolor>aawhite</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -212,7 +212,7 @@
     			<height>54</height>
     			<label>$LOCALIZE[19010]:</label>
     			<textcolor>77white</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -223,7 +223,7 @@
     			<height>54</height>
     			<label>$INFO[PVR.ActStreamBER]</label>
     			<textcolor>aawhite</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -234,7 +234,7 @@
     			<height>54</height>
     			<label>$LOCALIZE[19011]:</label>
     			<textcolor>77white</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -245,7 +245,7 @@
     			<height>54</height>
     			<label>$INFO[PVR.ActStreamUNC]</label>
     			<textcolor>aawhite</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -256,7 +256,7 @@
     			<height>54</height>
     			<label>$LOCALIZE[19015]:</label>
     			<textcolor>77white</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     		<control type="label">
@@ -267,7 +267,7 @@
     			<height>54</height>
     			<label>$INFO[PVR.ActStreamEncryptionName]</label>
     			<textcolor>aawhite</textcolor>
-    			<font>Font-Condensed-S34</font>
+    			<font>Font-Condensed-S29-B</font>
     			<scroll>false</scroll>
     		</control>
     	</control>
