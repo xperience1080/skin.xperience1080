@@ -29,8 +29,10 @@
                 <ondown condition="Container(20).HasFocus(7)">725</ondown>
                 <ondown condition="Container(20).HasFocus(8)">825</ondown>
                 <ondown condition="Container(20).HasFocus(9)">925</ondown>
-                <onleft>22</onleft>
-                <onright>22</onright>
+                <onleft condition="!Skin.HasSetting(KioskMode)">22</onleft>
+				<onleft condition="Skin.HasSetting(KioskMode)">21</onleft>
+				<onright condition="!Skin.HasSetting(KioskMode)">22</onright>
+				<onright condition="Skin.HasSetting(KioskMode)">21</onright>
                 <texturefocus>buttons/shutdown_fo.png</texturefocus>
                 <texturenofocus>buttons/shutdown_nofo.png</texturenofocus>
                 <onclick>ActivateWindow(ShutdownMenu)</onclick>
@@ -85,6 +87,7 @@
                 <onclick>ActivateWindow(Favourites)</onclick>
                 <include>Animation_FavButton</include>
                 <include>homebuttonsanim3</include>
+				<visible>!Skin.HasSetting(KioskMode)</visible>
                 <visible allowhiddenfocus="true">!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch-main.xml) + !Window.IsVisible(script-globalsearch-infodialog.xml) + !Window.IsVisible(script-globalsearch-contextmenu.xml) + !Window.IsVisible(virtualkeyboard) + IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols)</visible>
             </control>
             <control type="label">
@@ -99,6 +102,7 @@
                 <shadowcolor>22000000</shadowcolor>
                 <include>Animation_FavButton</include>
                 <include>homebuttonsanim4</include>
+				<visible>!Skin.HasSetting(KioskMode)</visible>
                 <visible>!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch-main.xml) + !Window.IsVisible(script-globalsearch-infodialog.xml) + !Window.IsVisible(script-globalsearch-contextmenu.xml) + !Window.IsVisible(virtualkeyboard) + IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols)</visible>
             </control>
         </control>
@@ -617,7 +621,8 @@
                     <onright condition="!System.GetBool(pvrmanager.enabled)">525</onright>
                     <onclick>SetProperty(HomeSearch,1)</onclick>
                     <onclick>RunScript(script.globalsearch)</onclick>
-                    <onup>80</onup>
+                    <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+					<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                     <ondown>101</ondown>
                 </control>
                 <control type="group" id="150">
@@ -728,7 +733,8 @@
                             <onright condition="System.GetBool(pvrmanager.enabled)">901</onright>
                             <onright condition="!System.GetBool(pvrmanager.enabled)">501</onright>
                             <onup>125</onup>
-                            <ondown>80</ondown>
+							<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+							<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                            
                             <align>left</align>
                             <aligny>center</aligny>
                             <onclick>SetProperty(HomeSearch,1)</onclick>
@@ -807,7 +813,8 @@
                         <onright>Control.Move(20,1)</onright>
                         <onright>501</onright>
                         <onup>925</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
                         <scrolltime>0</scrolltime>
                         <itemlayout width="289" height="289">
                             <control type="group">
@@ -1053,7 +1060,8 @@
                             <width>829</width>
                             <height>572</height>
                             <onup>525</onup>
-                            <ondown>80</ondown>
+							<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+							<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                            
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <orientation>horizontal</orientation>
@@ -1239,7 +1247,8 @@
                             <width>382</width>
                             <height>572</height>
                             <onup>525</onup>
-                            <ondown>80</ondown>
+							<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+							<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <orientation>horizontal</orientation>
@@ -1394,7 +1403,8 @@
                         <onleft condition="!System.HasAddon(script.globalsearch) + !System.GetBool(pvrmanager.enabled) + !Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
                         <onright>502</onright>
                         <onup>525</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -1716,7 +1726,8 @@
                             <width>928</width>
                             <height>572</height>
                             <onup>225</onup>
-                            <ondown>80</ondown>
+							<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+							<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <orientation>horizontal</orientation>
@@ -1868,7 +1879,8 @@
                         <onleft>503</onleft>
                         <onright>202</onright>
                         <onup>225</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -2081,7 +2093,8 @@
                         <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">701</onright>
 						<onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">801</onright>
                         <onup>225</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -2395,7 +2408,8 @@
                             <width>928</width>
                             <height>572</height>
                             <onup>325</onup>
-                            <ondown>80</ondown>
+							<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+							<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <orientation>horizontal</orientation>
@@ -2549,7 +2563,8 @@
                         <onleft condition="Skin.HasSetting(HomeMovies)">503</onleft>
                         <onright>302</onright>
                         <onup>325</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -2762,7 +2777,8 @@
                         <onright condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">701</onright>
 						<onright condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">801</onright>
                         <onup>325</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -3073,7 +3089,8 @@
                             <width>573</width>
                             <height>573</height>
                             <onup>425</onup>
-                            <ondown>80</ondown>
+							<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+							<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                            
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <orientation>horizontal</orientation>
@@ -3220,7 +3237,8 @@
                         <onleft condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">501</onleft>
                         <onright>402</onright>
                         <onup>425</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -3432,7 +3450,8 @@
 						<onright condition="Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">701</onright>
 						<onright condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">801</onright>						
                         <onup>425</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -3779,7 +3798,8 @@
 						<onright condition="!Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
 						<onright condition="Skin.HasSetting(HomeWeather)">801</onright>
                         <onup>625</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -4806,7 +4826,8 @@
                         <onright>Control.Move(20,1)</onright>
                         <onright>801</onright>
                         <onup>725</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+						<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
                         <scrolltime>0</scrolltime>
                         <itemlayout width="289" height="289">
                             <control type="group">
@@ -5001,7 +5022,8 @@
 						<onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">503</onleft>
                         <onright>801</onright>
                         <onup>825</onup>
-                        <ondown>80</ondown>
+						<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <scrolltime>0</scrolltime>
                         <itemlayout width="252" height="289">
                             <control type="group">
