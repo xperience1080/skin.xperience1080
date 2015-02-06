@@ -1,4 +1,7 @@
-﻿[B]3.45.15-beta4[/B]
+﻿[B]3.45.15-beta5[/B]
+• Adds missing autoscroll setting to Plot if disabled in Skin Options
+
+[B]3.45.15-beta4[/B]
 • Tidy of codec display information
 
 [B]3.45.15-beta3[/B]
