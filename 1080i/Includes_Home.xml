@@ -612,6 +612,33 @@
                 <height>780</height>
                 <description>Search</description>
                 <visible>System.HasAddon(script.globalsearch)</visible>
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Right arrow</description>
+						<posx>1802</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-right.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+							<effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+							<effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>					
                 <control type="button" id="125">
                     <onleft condition="!Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
                     <onright condition="!System.GetBool(pvrmanager.enabled)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onright>
@@ -748,6 +775,44 @@
                 <height>780</height>
                 <description>Live TV</description>
                 <visible>System.GetBool(pvrmanager.enabled)</visible>
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Left arrow</description>
+						<posx>636</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-left.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+					<control type="image">
+						<description>Right arrow</description>
+						<posx>1608</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-right.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
+							<effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
+							<effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(9)" reversible="true">
+							<effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(9)" reversible="true">
+							<effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>					
                 <control type="button" id="925">
                     <onleft condition="System.HasAddon(script.globalsearch)">Control.Move(20,-1)</onleft>
                     <onleft condition="System.HasAddon(script.globalsearch)">125</onleft>
@@ -959,7 +1024,45 @@
                 <description>Home</description>
                 <width>2320</width>
                 <height>780</height>
-                <control type="button" id="525">
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Left arrow</description>
+						<posx>314</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-left.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+					<control type="image">
+						<description>Right arrow</description>
+						<posx>1931</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-right.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+							<effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+							<effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
+							<effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
+							<effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>
+					<control type="button" id="525">
                     <onleft condition="System.HasAddon(script.globalsearch) | System.GetBool(pvrmanager.enabled)">CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft condition="System.HasAddon(script.globalsearch) | System.GetBool(pvrmanager.enabled)">CancelAlarm(HomeTileMoveTwo,true)</onleft>
                     <onleft condition="System.HasAddon(script.globalsearch) | System.GetBool(pvrmanager.enabled)">CancelAlarm(HomeTileMoveThree,true)</onleft>
@@ -1628,6 +1731,44 @@
                 <height>780</height>
                 <description>Movies</description>
                 <visible>!Skin.HasSetting(HomeMovies)</visible>
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Left arrow</description>
+						<posx>314</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-left.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+					<control type="image">
+						<description>Right arrow</description>
+						<posx>1931</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-right.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
+							<effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
+							<effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(3)" reversible="true">
+							<effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(3)" reversible="true">
+							<effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+								<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>
                 <control type="button" id="225">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
@@ -2311,6 +2452,44 @@
                 <height>780</height>
                 <description>TV Shows</description>
                 <visible>!Skin.HasSetting(HomeTVShows)</visible>
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Left arrow</description>
+						<posx>314</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-left.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+					<control type="image">
+						<description>Right arrow</description>
+						<posx>1931</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-right.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
+							<effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
+							<effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(4)" reversible="true">
+							<effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(4)" reversible="true">
+							<effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>				
 				<control type="button" id="325">
 					<onleft>CancelAlarm(HomeTileMove,true)</onleft>
 					<onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
@@ -2993,6 +3172,44 @@
                 <height>780</height>
                 <description>Music</description>
                 <visible>!Skin.HasSetting(HomeMusic)</visible>
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Left arrow</description>
+						<posx>347</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-left.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+					<control type="image">
+						<description>Right arrow</description>
+						<posx>1898</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-right.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+							<effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+							<effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(5)" reversible="true">
+							<effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(5)" reversible="true">
+							<effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>					
                 <control type="button" id="425">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
@@ -3710,6 +3927,44 @@
                 <height>780</height>
                 <description>Apps</description>
                 <visible>!Skin.HasSetting(HomePrograms)</visible>
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Left arrow</description>
+						<posx>347</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-left.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+					<control type="image">
+						<description>Right arrow</description>
+						<posx>1898</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-right.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+							<effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+							<effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(6)" reversible="true">
+							<effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(6)" reversible="true">
+							<effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>				
                 <control type="button" id="625">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
@@ -4182,6 +4437,44 @@
                 <height>780</height>
                 <description>Weather</description>
 				<visible>!Skin.HasSetting(HomeWeather)</visible>
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Left arrow</description>
+						<posx>314</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-left.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+					<control type="image">
+						<description>Right arrow</description>
+						<posx>1931</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-right.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+							<effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+							<effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
+							<effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
+							<effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>					
                 <control type="button" id="725">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
@@ -4953,6 +5246,35 @@
                 <width>2320</width>
                 <height>780</height>
                 <description>Settings</description>
+				<control type="group">
+				<posy>348</posy>				 
+				<visible>Skin.HasSetting(HomeArrows)</visible>
+					<control type="image">
+						<description>Left arrow</description>
+						<posx>314</posx>
+						<width>75</width>
+						<height>75</height>
+						<texture>views/fanart/arrow-left.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>aawhite</colordiffuse>
+					</control>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
+							<effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
+							<effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+						<animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
+							<effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+							<effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+						</animation>
+						<animation type="WindowClose" condition="Container(20).HasFocus(8)" reversible="true">
+							<effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+							<effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+						</animation>
+				</control>					
                 <control type="button" id="825">
 					<onleft>CancelAlarm(HomeTileMove,true)</onleft>
 					<onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
