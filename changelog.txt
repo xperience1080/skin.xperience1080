@@ -1,4 +1,8 @@
-﻿[B]3.45.15-beta5[/B]
+﻿[B]3.45.15-beta6[/B]
+• Adds Date as item next to Profile/Avatar icon on Home.
+• Automatically disabled stats for Movies, TV Shows and Music on above option if disabled in Skin Options.
+
+[B]3.45.15-beta5[/B]
 • Adds missing autoscroll setting to Plot if disabled in Skin Options
 
 [B]3.45.15-beta4[/B]
