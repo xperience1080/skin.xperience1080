@@ -4850,7 +4850,7 @@
     </include>
 
 <!-- ================= -->
-<!-- FanartSlide (502) -->
+<!-- Fanart (502) -->
 <!-- ================= -->
 	<include name="Viewtype-FanartSlide-Content">
 		<control type="group">
@@ -4863,7 +4863,7 @@
 				<height>734</height>
 				<texture>views/fanart/back-tile.png</texture>
 			</control>
-		<!--	<control type="image">
+	<!--	<control type="image">
 				<posx>664</posx>
 				<posy>0</posy>
 				<width>1151</width>
@@ -5025,10 +5025,11 @@
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>horizontal</orientation>
 				<viewtype label="20445">fanart</viewtype>
-				<ondown>100</ondown>
 				<pagecontrol>706</pagecontrol>
 				<onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
 				<onup condition="Skin.HasSetting(KioskMode)">502</onup>
+				<ondown condition="!Skin.HasSetting(KioskMode)">9010</ondown>
+				<ondown condition="Skin.HasSetting(KioskMode)">502</ondown>				
 				<onleft>502</onleft>
 				<onright>502</onright>
 				<preloaditems>0</preloaditems>
