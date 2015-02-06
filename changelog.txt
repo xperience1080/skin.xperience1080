@@ -1,4 +1,7 @@
-﻿[B]3.45.16-alpha[/B]
+﻿[B]3.45.16-alpha2[/B]
+• Smaller and more integrated Pause Icons (on screen) as requested.
+
+[B]3.45.16-alpha[/B]
 • Adds optional (Skin Options) Home Navigation Arrows
 • New Skin Option
 • New Language String
