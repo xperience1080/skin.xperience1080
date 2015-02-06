@@ -404,6 +404,13 @@
 						<onclick>ActivateWindow(3001)</onclick>
 						<label>$LOCALIZE[41144]</label>
 					</control>
+					<control type="radiobutton" id="20022">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(HomeArrows)</selected>
+                        <onclick>Skin.ToggleSetting(HomeArrows)</onclick>
+                        <label>$LOCALIZE[42261]</label>
+                    </control>					
                     <control type="radiobutton" id="2003">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
