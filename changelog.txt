@@ -1,4 +1,7 @@
-﻿[B]3.45.15-beta7[/B]
+﻿[B]3.45.15-beta8[/B]
+• Fixes Favourites (Home) being selectable when Kiosk Mode is enabled.
+
+[B]3.45.15-beta7[/B]
 • Fixes Fanart Viewtype allowing full menu ondown when Kiosk mode enabled.
 
 [B]3.45.15-beta6[/B]
