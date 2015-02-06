@@ -212,19 +212,25 @@
                 </control>
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[Window.Property(Movies.Count),, $LOCALIZE[342]]</label>
+                    <label>$INFO[System.Date]</label>
                     <visible>Container(30).HasFocus(2)</visible>
-                </control>
+                </control>				
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[41446]]</label>
+                    <label>$INFO[Window.Property(Movies.Count),, $LOCALIZE[342]]</label>
                     <visible>Container(30).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[Window.Property(Music.SongsCount),, $LOCALIZE[134]]</label>
+                    <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[41446]]</label>
                     <visible>Container(30).HasFocus(4)</visible>
                 </control>
+                <control type="label">
+                    <include>HomeProfileInfoLabel</include>
+                    <label>$INFO[Window.Property(Music.SongsCount),, $LOCALIZE[134]]</label>
+                    <visible>Container(30).HasFocus(5)</visible>
+                </control>
+				
                 <control type="wraplist" id="30">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -244,15 +250,23 @@
                         <item id="2">
                             <label>-</label>
                             <onclick>noop</onclick>
-                        </item>
+                        </item>							
                         <item id="3">
                             <label>-</label>
                             <onclick>noop</onclick>
+							<visible>!Skin.HasSetting(HomeMovies)</visible>
                         </item>
                         <item id="4">
                             <label>-</label>
                             <onclick>noop</onclick>
+							<visible>!Skin.HasSetting(HomeTVShows)</visible>
                         </item>
+                        <item id="5">
+                            <label>-</label>
+                            <onclick>noop</onclick>
+							<visible>!Skin.HasSetting(HomeMusic)</visible>
+                        </item>
+					
                     </content>
                 </control>
             </control>
