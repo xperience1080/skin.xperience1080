@@ -424,7 +424,7 @@
                         <selected>!Skin.HasSetting(HideHomeSubmenuArrow)</selected>
                         <onclick>Skin.ToggleSetting(HideHomeSubmenuArrow)</onclick>
                         <label>$LOCALIZE[41135]</label>
-                    </control>
+                    </control>								
                     <control type="group" id="2007">
                         <description>Fake spin control</description>
                         <width>1210</width>
@@ -757,10 +757,17 @@
                     <control type="radiobutton" id="6001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(Guide.HideClock)</selected>
+                        <selected>Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
-                        <label>$LOCALIZE[41270]</label>
-                    </control>
+                        <label>$LOCALIZE[131] $LOCALIZE[552] & $LOCALIZE[555]</label>
+                    </control>										
+					<control type="radiobutton" id="60012">
+						<width>1210</width>
+						<include>SettingsCategoryRadioButtonVars</include>
+						<selected>Skin.HasSetting(Guide.HideWeather)</selected>
+						<onclick>Skin.ToggleSetting(Guide.HideWeather)</onclick>
+						<label>$LOCALIZE[131] $LOCALIZE[400]</label>
+					</control>	
                     <control type="radiobutton" id="6002">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
