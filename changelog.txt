@@ -1,4 +1,7 @@
-﻿[B]3.45.16-alpha3[/B]
+﻿[B]3.45.16-alpha4[/B]
+• Removes date from Avatar text
+
+[B]3.45.16-alpha3[/B]
 • Added date before time in Guide (frame)
 • Added Skin Option to disable both Date/Time and Weather display in Guide (frame)
 
