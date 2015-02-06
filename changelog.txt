@@ -1,4 +1,9 @@
-﻿[B]3.45.15-beta8[/B]
+﻿[B]3.45.16-alpha[/B]
+• Adds optional (Skin Options) Home Navigation Arrows
+• New Skin Option
+• New Language String
+
+[B]3.45.15-beta8[/B]
 • Fixes Favourites (Home) being selectable when Kiosk Mode is enabled.
 
 [B]3.45.15-beta7[/B]
