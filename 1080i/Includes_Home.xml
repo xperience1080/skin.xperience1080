@@ -213,12 +213,7 @@
                     <include>HomeProfileInfoLabel</include>
                     <label>[B]$INFO[System.ProfileName][/B]</label>
                     <visible>Container(30).HasFocus(1)</visible>
-                </control>
-                <control type="label">
-                    <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[System.Date]</label>
-                    <visible>Container(30).HasFocus(2)</visible>
-                </control>				
+                </control>	
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
                     <label>$INFO[Window.Property(Movies.Count),, $LOCALIZE[342]]</label>
@@ -250,22 +245,18 @@
                         <item id="1">
                             <label>-</label>
                             <onclick>noop</onclick>
-                        </item>
+                        </item>					
                         <item id="2">
-                            <label>-</label>
-                            <onclick>noop</onclick>
-                        </item>							
-                        <item id="3">
                             <label>-</label>
                             <onclick>noop</onclick>
 							<visible>!Skin.HasSetting(HomeMovies)</visible>
                         </item>
-                        <item id="4">
+                        <item id="3">
                             <label>-</label>
                             <onclick>noop</onclick>
 							<visible>!Skin.HasSetting(HomeTVShows)</visible>
                         </item>
-                        <item id="5">
+                        <item id="4">
                             <label>-</label>
                             <onclick>noop</onclick>
 							<visible>!Skin.HasSetting(HomeMusic)</visible>
