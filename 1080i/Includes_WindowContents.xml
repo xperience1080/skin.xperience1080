@@ -12,7 +12,8 @@
         <height>1080</height>
         <aspectratio>stretch</aspectratio>
     </include>
-
+  
+	
 <!-- ================================================== -->
 <!-- Common Items: Shutdown, Options, Clock etc. -->
 <!-- ================================================== --> 
@@ -22,9 +23,9 @@
             <include>FullscreenDimensions</include>
             <visible>Skin.HasSetting(BackgroundVideo) + Player.HasVideo</visible>
         </control>
-        <control type="image">
+            <control type="image">
             <include>FullscreenDimensions</include>
-            <texture background="true">fade/overlay.png</texture>
+			<texture fallback=".">$INFO[Skin.String(GlobalOverlay)]</texture>
         </control>
     </include>
 

@@ -349,6 +349,30 @@
             <enable>!IsEmpty(Skin.String(GlobalBackdropMulti))</enable>
         </control>
     </include>
+
+	<include name="GlobalOverlay">
+		<control type="image">
+			<include>SettingsBackgroundDialogImageVars</include>
+			<texture background="true">$INFO[Skin.String(GlobalOverlay)]</texture>
+			<visible>!IsEmpty(Skin.String(GlobalOverlay))</visible>
+		</control>
+	
+		<control type="grouplist" id="3">
+			<include>SettingsBackgroundDialogGroupListVars</include>
+			<control type="radiobutton" id="2102">
+				<include>SettingsBackgroundDialogRadioButtonVars</include>
+				<selected>!IsEmpty(Skin.String(GlobalOverlay))</selected>
+				<onclick>Skin.SetString(GlobalOverlay,special://skin/extras/fade/overlay.png)</onclick>
+				<label>$LOCALIZE[41252]</label>
+			</control>
+		</control>
+	
+		<control type="button" id="4">
+			<include>SettingsBackgroundDialogButtonVars</include>
+			<label2>$INFO[Skin.String(GlobalOverlay)]</label2>
+			<onclick>Skin.SetImage(GlobalOverlay)</onclick>
+		</control>
+	</include>
     
     <include name="SettingsBackgroundDialogSettings">
         <control type="image">

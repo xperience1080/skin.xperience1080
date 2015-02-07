@@ -679,17 +679,6 @@
                         <onclick>SetProperty(Dialog,$LOCALIZE[41251])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
                     </control>					
-                    <control type="button" id="50001">
-                        <width>1210</width>
-                        <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
-                        <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
-                        <include>SettingsCategoryDefaultButtonVars</include>
-                        <label>Test</label>
-                        <onclick>ClearProperty(CustomDialogType)</onclick>
-                        <onclick>ClearProperty(CustomDialog)</onclick>
-                        <onclick>SetProperty(Dialog,$LOCALIZE[41251])</onclick>
-                        <onclick>ActivateWindow(3002)</onclick>
-                    </control>
                     <control type="button" id="5001">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
@@ -786,6 +775,17 @@
                         <onclick>Skin.ToggleSetting(Guide.HideUserImage)</onclick>
                         <label>$LOCALIZE[41271]</label>
                     </control>
+                    <control type="button" id="60021">
+                        <width>1210</width>
+                        <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
+                        <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
+                        <include>SettingsCategoryDefaultButtonVars</include>
+                        <label>$LOCALIZE[42262]</label>
+                        <onclick>ClearProperty(CustomDialogType)</onclick>
+                        <onclick>ClearProperty(CustomDialog)</onclick>
+                        <onclick>SetProperty(Dialog,$LOCALIZE[42262])</onclick>
+                        <onclick>ActivateWindow(3002)</onclick>
+                    </control>					
                     <control type="radiobutton" id="6003">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>

@@ -9,7 +9,7 @@
         
         <control type="image">
             <include>FullscreenDimensions</include>
-            <texture background="true">fade/overlay.png</texture>
+            <texture background="true">$INFO[Skin.String(GlobalOverlay)]</texture>
         </control>
         
         <control type="group">

@@ -74,6 +74,7 @@
             <include condition="stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[2])">SettingsBackgroundDialogMusic</include>
             <include condition="stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[41504])">SettingsBackgroundDialogPrograms</include>
             <include condition="stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[12600])">SettingsBackgroundDialogWeather</include>
+			<include condition="stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[42262])">GlobalOverlay</include>
             
             <control type="group">
                 <posx>547</posx>
