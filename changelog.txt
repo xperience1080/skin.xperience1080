@@ -1,4 +1,7 @@
-﻿[B]3.45.16-alpha6[/B]
+﻿[B]3.45.16-alpha7[/B]
+• Adds seek bar progress (skip/jump times) from xhaggi
+
+[B]3.45.16-alpha6[/B]
 • Adds default icons and warning text for first time users when no content is scanned to library.
 • Four additional textures added (two for each theme).
 
