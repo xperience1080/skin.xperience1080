@@ -78,6 +78,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
+
                             <textcolor>96FFFFFF</textcolor>
                             <font>Font-Condensed-S30-B</font>
                             <textoffsetx>35</textoffsetx>
@@ -759,7 +760,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
-                        <label>$LOCALIZE[131] $LOCALIZE[552] & $LOCALIZE[555]</label>
+                        <label>$LOCALIZE[131] $LOCALIZE[552] &amp; $LOCALIZE[555]</label>
                     </control>										
 					<control type="radiobutton" id="60012">
 						<width>1210</width>
@@ -899,6 +900,7 @@
                         <onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                     </control>
                     <control type="radiobutton" id="7005">
+
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(TVTunes.Enabled)</selected>
@@ -906,6 +908,7 @@
                         <label>$LOCALIZE[41283]</label>
                     </control>
                     <control type="button" id="7006">
+
                         <width>1210</width>
                         <include>SettingsCategoryDefaultButtonVars</include>
                         <onclick>XBMC.RunScript(script.tvtunes)</onclick>
@@ -913,6 +916,7 @@
                         <visible>Skin.HasSetting(TVTunes.Enabled)</visible>
                     </control>
                     <control type="radiobutton" id="7007">
+
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(NextAired.Enabled)</selected>
@@ -920,6 +924,7 @@
                         <label>$LOCALIZE[41285]</label>
                     </control>
                     <control type="radiobutton" id="7008">
+
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(NextAired.Update)</selected>
@@ -927,6 +932,7 @@
                         <label>- $LOCALIZE[41293]</label>
                     </control>
                     <control type="button" id="7009">
+
                         <width>1210</width>
                         <include>SettingsCategoryDefaultButtonVars</include>
                         <onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
@@ -934,6 +940,7 @@
                         <visible>Skin.HasSetting(NextAired.Enabled)</visible>
                     </control>
                     <control type="radiobutton" id="7010">
+
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(UpdateArt.Enabled)</selected>
