@@ -1,4 +1,8 @@
-﻿[B]3.45.16-alpha8[/B]
+﻿[B]3.45.16-alpha9[/B]
+• Removes non required textures.
+• Rewritten part of the skin that handles widgets without content - an icon and localised text is now dispayed saying 'No Widget Source Available'.
+
+[B]3.45.16-alpha8[/B]
 • Adds seek bar progress (skip/jump times) from xhaggi
 • Removes unwanted Pause icon
 
