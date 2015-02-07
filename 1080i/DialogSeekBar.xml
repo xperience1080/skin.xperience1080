@@ -4,15 +4,6 @@
     <visible>Window.IsActive(fullscreenvideo) + [Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsVisible(fullscreeninfo)] + !Window.IsVisible(sliderdialog) + ![!Window.IsActive(videoosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrosdguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
     <controls>
         <include>OSDWeatherClock</include>
-		<control type="image">
-			<posx>832</posx>
-			<posy>412</posy>
-			<width>256</width>
-			<height>256</height>
-			<aspectratio>center</aspectratio>
-			<texture>osd/fullscreen/paused.png</texture>
-			<visible>Player.Paused</visible>
-		</control>
         <include>OSDChapterInfo</include>
         <control type="group">
             <animation type="WindowOpen">
@@ -46,7 +37,6 @@
                     <animation effect="slide" start="0,0" end="0,70" time="300" tween="cubic" easing="inout" condition="Window.IsActive(videoosd)">Conditional</animation>
                     <visible>IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd)</visible>
                     <include>visiblehidefadeinfo</include>
-							
                     <control type="group">
                         <posx>358</posx>
                         <posy>1028</posy>
@@ -89,6 +79,20 @@
                             <righttexture>osd/fullscreen/progress/right.png</righttexture>
                             <overlaytexture>-</overlaytexture>
                         </control>
+                        <control type="progress" id="401">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1204</width>
+                            <height>25</height>
+                            <reveal>true</reveal>
+                            <texturebg>osd/fullscreen/progress/back.png</texturebg>
+                            <midtexture>osd/fullscreen/progress/mid.png</midtexture>
+                            <lefttexture>osd/fullscreen/progress/left.png</lefttexture>
+                            <righttexture>osd/fullscreen/progress/right.png</righttexture>
+                            <overlaytexture>-</overlaytexture>
+                            <colordiffuse>AAFFFFFF</colordiffuse>
+                            <visible>Player.Seeking</visible>
+                        </control>
                     </control>
                     <control type="label">
                         <posx>1590</posx>
@@ -99,6 +103,18 @@
                         <textcolor>aawhite</textcolor>
                         <font>Font-Condensed-S34</font>
                         <align>left</align>
+                        <visible>!Player.Seeking</visible>
+                    </control>
+                    <control type="label">
+                        <posx>1590</posx>
+                        <posy>1027</posy>
+                        <width>360</width>
+                        <height>25</height>
+                        <label>$INFO[Player.SeekTime(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+                        <textcolor>aawhite</textcolor>
+                        <font>Font-Condensed-S34</font>
+                        <align>left</align>
+                        <visible>Player.Seeking</visible>
                     </control>
                     <control type="label">
                         <description>Pause / finish time</description>
@@ -487,6 +503,7 @@
                                     <font>Font-Condensed-S36</font>
                                     <align>left</align>
                                     <aligny>center</aligny>
+
                                     <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                 </control>
 								<control type="textbox">
