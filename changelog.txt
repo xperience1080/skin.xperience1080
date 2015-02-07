@@ -1,4 +1,13 @@
-﻿[B]3.45.16-alpha9[/B]
+﻿[B]3.45.16-alpha10[/B]
+• Revert Home Settings changes in order to keep aesthetic consistency.
+• Revert 'Skin Options' to 'Skin', and '1080XF' to 'Skin' in Settings.
+• Correct Left Arrow offset for reverted layout.
+
+[B]3.45.16-alpha8[/B]
+• Adds seek bar progress (skip/jump times) from xhaggi
+• Removes unwanted Pause icon
+
+[B]3.45.16-alpha9[/B]
 • Removes non required textures.
 • Rewritten part of the skin that handles widgets without content - an icon and localised text is now dispayed saying 'No Widget Source Available'.
 
