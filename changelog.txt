@@ -1,5 +1,6 @@
-﻿[B]3.45.16-alpha7[/B]
+﻿[B]3.45.16-alpha8[/B]
 • Adds seek bar progress (skip/jump times) from xhaggi
+• Removes unwanted Pause icon
 
 [B]3.45.16-alpha6[/B]
 • Adds default icons and warning text for first time users when no content is scanned to library.
