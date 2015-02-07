@@ -1,4 +1,9 @@
-﻿[B]3.45.16-alpha10[/B]
+﻿[B]3.45.20-alpha[/B]
+• Several new overlay textures added.
+• Option in Skin Settings -> Guide -> Overlay to select custom overlay (beta).
+• Multiple files edited due to above.
+
+[B]3.45.16-alpha10[/B]
 • Revert Home Settings changes in order to keep aesthetic consistency.
 • Revert 'Skin Options' to 'Skin', and '1080XF' to 'Skin' in Settings.
 • Correct Left Arrow offset for reverted layout.
