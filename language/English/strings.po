@@ -1064,7 +1064,11 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr ""
 
-#empty strings from id 42235 to 42249
+msgctxt "#42235"
+msgid "Available"
+msgstr ""
+
+#empty strings from id 42236 to 42249
 #Media types
 #From 42250 to 42259
 

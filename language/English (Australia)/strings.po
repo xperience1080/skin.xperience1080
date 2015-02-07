@@ -1064,7 +1064,11 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr ""
 
-#empty strings from id 42235 to 42249
+msgctxt "#42235"
+msgid "Available"
+msgstr ""
+
+#empty strings from id 42236 to 42249
 #Media types
 #From 42250 to 42259
 
@@ -1108,10 +1112,14 @@ msgctxt "#42259"
 msgid "Red"
 msgstr ""
 
-#empty strings from id 42260 to 42259
+#empty strings from id 42263 to 42259
 #Profile settings
-#From 42260 to 42264
+#From 42260 to 42261
 
 msgctxt "#42260"
 msgid "Auto Login"
+msgstr ""
+
+msgctxt "#42261"
+msgid "Display Navigation Arrow"
 msgstr ""
