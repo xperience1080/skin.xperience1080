@@ -1,4 +1,8 @@
-﻿[B]3.45.20-alpha[/B]
+﻿[B]3.45.20-alpha2[/B]
+• Corrects default overlay not showing on first startup
+• Corrects use of non valid characters in SkinSettings.xml (thanks freeman212)
+
+[B]3.45.20-alpha[/B]
 • Several new overlay textures added.
 • Option in Skin Settings -> Guide -> Overlay to select custom overlay (beta).
 • Multiple files edited due to above.
