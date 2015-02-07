@@ -235,7 +235,7 @@
                         <include>SettingsButtonBackground</include>
                         <control type="label">
                             <include>SettingsLabelVars</include>
-                            <label>1080XF</label>
+                            <label>$LOCALIZE[166]</label>
                         </control>
                     </control>
                     <control type="button" id="107">

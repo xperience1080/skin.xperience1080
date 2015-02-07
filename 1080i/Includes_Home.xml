@@ -5363,7 +5363,7 @@
 				<visible>Skin.HasSetting(HomeArrows)</visible>
 					<control type="image">
 						<description>Left arrow</description>
-						<posx>314</posx>
+						<posx>441</posx>
 						<width>75</width>
 						<height>75</height>
 						<texture>views/fanart/arrow-left.png</texture>
@@ -5408,12 +5408,13 @@
 					<onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">525</onleft>
 					<onright condition="!Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
 					<onup condition="!System.HasAddon(service.openelec.settings)">80</onup>
+					<onclick>ActivateWindow(4)</onclick>
 					<onup condition="System.HasAddon(service.openelec.settings)">ActivateWindow(3026)</onup>
 					<ondown>801</ondown>
 				</control>
                 <control type="group" id="850">
                     <posy>100</posy>
-                    <posx>407</posx>
+                    <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
@@ -5437,14 +5438,14 @@
                         <description>Bottom shadow</description>
                         <posx>-93</posx>
                         <posy>570</posy>
-                        <width>1685</width>
+                        <width>1440</width>
                         <height>150</height>
                         <texture>windows/home/item-shadow.png</texture>
                     </control>
                     <control type="panel" id="801">
-                        <posx>-24</posx>
+						<posx>-24</posx>
                         <posy>-24</posy>
-                        <width>1602</width>
+                        <width>1302</width>
                         <height>620</height>
                         <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeWeather)">701</onleft>
@@ -5564,78 +5565,66 @@
                             </control>
                         </focusedlayout>
                         <content>
-                            <item id="1">
+							<item id="1">
                                 <label>$LOCALIZE[480]</label>
                                 <icon>windows/home/icons/appearance.png</icon>
                                 <onclick>ActivateWindow(appearancesettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
                             <item id="2">
-								<label>$LOCALIZE[166] $LOCALIZE[33063]</label>
-								<icon>windows/home/icons/skin.png</icon>
-								<onclick>ActivateWindow(skinsettings)</onclick>
-                                <property name="pos">top</property>
-                            </item>							
-                            <item id="3">
                                 <label>$LOCALIZE[157]</label>
                                 <icon>windows/home/icons/video.png</icon>
                                 <onclick>ActivateWindow(videossettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
-                            <item id="4">
+                            <item id="3">
                                 <label>$LOCALIZE[2]</label>
                                 <icon>windows/home/icons/music.png</icon>
                                 <onclick>ActivateWindow(musicsettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
-                            <item id="5">
+                            <item id="4">
                                 <label>$LOCALIZE[1]</label>
                                 <icon>windows/home/icons/pictures.png</icon>
                                 <onclick>ActivateWindow(picturessettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
-                            <item id="6">
+                            <item id="5">
                                 <label>$LOCALIZE[41220]</label>
                                 <icon>windows/home/icons/tvshows.png</icon>
                                 <onclick>ActivateWindow(pvrsettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
-                            <item id="7">
-                                <label>$LOCALIZE[8]</label>
-                                <icon>windows/home/icons/weather.png</icon>
-                                <onclick>ActivateWindow(weathersettings)</onclick>
-                                <property name="pos">bottom</property>
-                            </item>							
-                            <item id="8">
+                            <item id="6">
                                 <label>$LOCALIZE[14036]</label>
                                 <icon>windows/home/icons/network.png</icon>
                                 <onclick>ActivateWindow(servicesettings)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
-                            <item id="9">
+                            <item id="7">
                                 <label>$LOCALIZE[13200]</label>
                                 <icon>windows/home/icons/profiles.png</icon>
                                 <onclick>ActivateWindow(profiles)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
-                            <item id="10">
+                            <item id="8">
                                 <label>$LOCALIZE[24001]</label>
                                 <icon>windows/home/icons/addons.png</icon>
                                 <onclick>ActivateWindow(addonbrowser)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
-                            <item id="11">
+                            <item id="9">
+                                <label>$LOCALIZE[166]</label>
+                                <icon>windows/home/icons/skin.png</icon>
+                                <onclick>ActivateWindow(skinsettings)</onclick>
+                                <property name="pos">bottom</property>
+                            </item>
+                            <item id="10">
                                 <label>$LOCALIZE[13000]</label>
                                 <icon>windows/home/icons/system.png</icon>
                                 <onclick>ActivateWindow(systemsettings)</onclick>
                                 <property name="pos">bottom</property>
-                            </item>
-                            <item id="12">
-                                <label>$LOCALIZE[130]</label>
-                                <icon>windows/home/icons/sysinfo.png</icon>
-                                <onclick>ActivateWindow(systeminfo)</onclick>
-                                <property name="pos">bottom</property>
-                            </item>														
+                            </item>													
                         </content>
                     </control>
                 </control>
