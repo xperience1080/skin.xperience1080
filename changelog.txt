@@ -1,3 +1,6 @@
+﻿[B]3.45.20-alpha3[/B]
+• Corrects TV Guide showing incorrect totals (merged from freeman212)
+
 ﻿[B]3.45.20-alpha2[/B]
 • Corrects default overlay not showing on first startup
 • Corrects use of non valid characters in SkinSettings.xml (thanks freeman212)
