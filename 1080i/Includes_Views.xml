@@ -576,6 +576,12 @@
         <value>$VAR[ListItem.E]</value>
     </variable>
 
+    <variable name="ListItem.E">
+		<value condition="!IntegerGreaterThan(ListItem.Episode,9) + !IntegerGreaterThan(ListItem.Season,0">$INFO[ListItem.Episode]</value>	        
+        <value condition="!IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Episode,x0,]</value>
+		<value>$INFO[ListItem.Episode,x,]</value>
+    </variable>	
+
 	<variable name="VideoMovieBannerGenre">
 		<value condition="!IsEmpty(ListItem.Title) + Player.Playing">$VAR[BannerSelectedColorSecondary.Open]$INFO[ListItem.Genre]$VAR[BannerSelectedColorSecondary.Close]</value>
 		<value condition="!IsEmpty(ListItem.Title) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.Genre]</value>
@@ -617,12 +623,7 @@
 		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Rating,★ ,]</value>
 		<value>$INFO[ListItem.Rating,★ ,]</value>
 	</variable>	
-    
-    <variable name="ListItem.E">
-        <value condition="!IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Episode,x0,]</value>
-        <value>$INFO[ListItem.Episode,x,]</value>
-    </variable>
-    
+       
     <variable name="ListItem.EpgInfo">
         <value condition="ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]">[COLOR=SelectedGreen]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Genre, • ,][/COLOR]</value>
         <value>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Genre, • ,]</value>

@@ -443,7 +443,7 @@
                         <selectedcolor>SelectedGreen</selectedcolor>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
+                         <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
                     </control>
                     <control type="label">
                         <description>Label</description>
@@ -938,7 +938,7 @@
                             <selectedcolor>SelectedGreen</selectedcolor>
                             <textcolor>eewhite</textcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
+                             <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
                         </control>
                         <control type="label">
                             <description>Label</description>
@@ -1602,7 +1602,7 @@
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
+                             <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
                         </control>
                         <control type="label">
                             <posx>145</posx>
@@ -1981,7 +1981,7 @@
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
+                                 <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
                             </control>
                             <control type="label">
                                 <posx>145</posx>
@@ -4862,32 +4862,53 @@
 				<width>1720</width>
 				<height>734</height>
 				<texture>views/fanart/back-tile.png</texture>
-			</control>
-	<!--	<control type="image">
-				<posx>664</posx>
-				<posy>0</posy>
-				<width>1151</width>
-				<height>734</height>
-				<texture border="7">windows/common/darkgrey.png</texture>
-			</control> -->		
+			</control>	
 			<control type="image">
 				<description>Landscape</description>
-				<posx>664</posx>
+				<posx>585</posx>
 				<posy>-44</posy>
-				<width>1151</width>
+				<width>1230</width>
 				<height>778</height>
 				<texture background="true">$VAR[FanArtLandscape]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<control type="image">
-				<posx>664</posx>
+				<posx>585</posx>
 				<posy>647</posy>
-				<width>1151</width>
+				<width>1230</width>
 				<height>87</height>
 				<texture border="7">views/fanart/slide-overlay.png</texture>		 
-			</control>			
+			</control>
+			<control type="image">
+				<posx>1715</posx>
+				<posy>0</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>$VAR[ExtendedOverlay]</texture>
+			</control>
+			<control type="image">
+				<description>Poster</description>
+				<posx>95</posx>
+				<posy>0</posy>
+				<width>490</width>
+				<height>734</height>
+				<texture background="true">$VAR[PosterViewPoster]</texture>
+				<fadetime>500</fadetime>
+				<aspectratio>scale</aspectratio>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) + [!Container.Content(seasons) | IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)]</visible>
+			</control>
+			<control type="image">
+				<posx>95</posx>
+				<posy>0</posy>
+				<width>490</width>
+				<height>734</height>
+				<texture>windows/common/grey.png</texture>
+				<colordiffuse>DF222222</colordiffuse>
+				<include>visiblehidefadeinfo</include>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) + [!Container.Content(seasons) | IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)]</visible>
+			</control>
 			<control type="label">
-				<posx>690</posx>
+				<posx>617</posx>
 				<posy>656</posy>
 				<width>1216</width>
 				<height>66</height>
@@ -4911,42 +4932,59 @@
 				<scroll>false</scroll>
 			</control>		
 			<control type="label">
-				<posx>125</posx>
+				<posx>121</posx>
 				<posy>680</posy>
-				<width>500</width>
-				<font>Font-Condensed-S36</font>
+				<width>430</width>
+				<font>Font-Condensed-S30</font>
 				<label>$VAR[ListItem.Year]</label>
-				<textcolor>aawhite</textcolor>
+				<textcolor>77white</textcolor>
+				<shadowcolor>22000000</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<scroll>false</scroll>
-			</control>			
+				<visible>!Container.Content(episodes)</visible>
+			</control>
 			<control type="label">
-				<posx>125</posx>
+				<posx>121</posx>
+				<posy>680</posy>
+				<width>430</width>
+				<font>Font-Condensed-S30</font>
+				<label>$LOCALIZE[20416]: $INFO[ListItem.Premiered]</label>
+				<textcolor>77white</textcolor>
+				<shadowcolor>22000000</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Premiered)</visible>
+			</control>	
+			<control type="label">
+				<posx>121</posx>
 				<posy>640</posy>
-				<width>500</width>
-				<font>Font-Condensed-S36</font>
+				<width>430</width>
+				<font>Font-Condensed-S30</font>
 				<label>$INFO[ListItem.Genre]</label>
-				<textcolor>aawhite</textcolor>
+				<textcolor>77white</textcolor>
+				<shadowcolor>22000000</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<scroll>false</scroll>
 			</control>
 			<control type="label">
-				<posx>125</posx>
+				<posx>121</posx>
 				<posy>600</posy>
-				<width>500</width>
-				<font>Font-Condensed-S36</font>
+				<width>430</width>
+				<font>Font-Condensed-S30</font>
 				<label>$LOCALIZE[16101]: $INFO[ListItem.Property(UnWatchedEpisodes)] / $INFO[ListItem.Property(TotalEpisodes)]</label>
-				<textcolor>aawhite</textcolor>
+				<textcolor>77white</textcolor>
+				<shadowcolor>22000000</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<scroll>false</scroll>
+				<scroll>true</scroll>
 				<visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
 			</control>		
 			<control type="label">
-				<posx>125</posx>
-				<posy>32</posy>
+				<posx>121</posx>
+				<posy>30</posy>
 				<width>510</width>
 				<font>Font-Condensed-S60</font>
 				<label>$LOCALIZE[207]</label> 
@@ -4956,19 +4994,19 @@
 				<visible>!IsEmpty(ListItem.Plot)</visible>
 			</control>		
 			<control type="textbox">
-				<posx>125</posx>
+				<posx>121</posx>
 				<posy>80</posy>
-				<width>510</width>
-				<height>350</height>
+				<width>430</width>
+				<height>470</height>
 				<label>$INFO[ListItem.Plot]</label>
-				<textcolor>aawhite</textcolor>
-				<font>Font-Condensed-S28</font>
+				<textcolor>CCFFFFFF</textcolor>
+				<font>Font-Condensed-S34</font>
 				<align>justify</align>
 				<scroll>true</scroll>
-				<autoscroll delay="8000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
+				<autoscroll delay="13000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
 			</control>
 			<control type="image">
-				<posx>575</posx>
+				<posx>490</posx>
 				<posy>18</posy>
 				<width>60</width>
 				<height>57</height>
@@ -4979,7 +5017,7 @@
 			</control>
 			<control type="image">
 				<description>Flagging</description>
-				<posx>535</posx>
+				<posx>450</posx>
 				<posy>0</posy>
 				<width>140</width>
 				<height>100</height>
@@ -5192,7 +5230,7 @@
                             <textcolor>77white</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
+                             <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
                         </control>
                         <control type="label">
                             <posx>100</posx>
@@ -5576,7 +5614,7 @@
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                                <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
+                                 <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
                             </control>
                             <control type="label">
                                 <posx>100</posx>
