@@ -1,4 +1,8 @@
-﻿[B]3.45.20-alpha3[/B]
+﻿[B]3.45.20-alpha5[/B]
+• Re-designed Fanart Viewtype (now includes more artwork and skin consistency).
+• Adds SX before Special episodes (requested).
+
+[B]3.45.20-alpha3[/B]
 • Corrects TV Guide showing incorrect totals (merged from freeman212)
 
 ﻿[B]3.45.20-alpha2[/B]
