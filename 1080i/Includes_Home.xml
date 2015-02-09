@@ -4660,6 +4660,7 @@
                             <width>829</width>
                             <height>572</height>
                             <texture border="7">weather/home/weather-no-fanart.png</texture>
+							<visible>Weather.IsFetched</visible>
                         </control>
                         <control type="label">
                             <posx>0</posx>
