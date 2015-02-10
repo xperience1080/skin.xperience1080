@@ -1,6 +1,7 @@
 ﻿[B]3.45.30[/B]
 • Integration of trakt theme files into skin.
 (This only applies if you use the trakt add-on, otherwise you will see no change).
+• Change Skin Settings order for Overlay (now at top) and renamed to 'Set Custom Overlay'.
 
 [B]3.45.29-alpha[/B]
 • Small fix for Home Weather/Time
