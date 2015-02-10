@@ -3,8 +3,7 @@
 (This only applies if you use the trakt add-on, otherwise you will see no change).
 
 [B]3.45.29-alpha[/B]
-• Integration of trakt theme files into skin.
-(This only applies if you use the trakt add-on, otherwise you will see no change).
+• Small fix for Home Weather/Time
 
 [B]3.45.23[/B]
 • Changes to OSD weather - if Weather is enabled (Kodi wide) then standard textures are displayed (no change).
