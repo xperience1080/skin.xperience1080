@@ -125,7 +125,17 @@
                 <height>194</height>
                 <texture>osd/fullscreen/osd-back-weatherclock.png</texture>
                 <aspectratio>stretch</aspectratio>
+				<visible>Weather.IsFetched</visible>
             </control>
+            <control type="image">
+                <posx>1218</posx>
+                <posy>0</posy>
+                <width>702</width>
+                <height>194</height>
+                <texture>osd/fullscreen/osd-back-clock.png</texture>
+                <aspectratio>stretch</aspectratio>
+				<visible>!Weather.IsFetched</visible>
+            </control>			
             <control type="group">
                 <visible>![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
                 <include>visiblehidefadeinfo</include>
