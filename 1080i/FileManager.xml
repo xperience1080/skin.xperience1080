@@ -135,11 +135,11 @@
                                 <texture border="90,3,90,3">views/list/other/separator.png</texture>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>1</posy>
-                                <width>752</width>
-                                <height>60</height>
-                                <texture>selected.png</texture>
+                                <posx>723</posx>
+                                <posy>-10</posy>
+                                <width>39</width>
+                                <height>39</height>
+                                <texture>windows/filemanager/selected.png</texture>
                                 <colordiffuse>08FFFFFF</colordiffuse>
                                 <aspectratio aligny="top">keep</aspectratio>
                                 <visible>ListItem.IsSelected</visible>
@@ -196,11 +196,11 @@
                                 <texture border="90,3,90,3">views/list/other/separator.png</texture>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>1</posy>
-                                <width>752</width>
-                                <height>60</height>
-                                <texture>selected.png</texture>
+                                <posx>723</posx>
+                                <posy>-10</posy>
+                                <width>39</width>
+                                <height>39</height>
+                                <texture>windows/filemanager/selected.png</texture>
                                 <colordiffuse>08FFFFFF</colordiffuse>
                                 <aspectratio aligny="top">keep</aspectratio>
                                 <visible>ListItem.IsSelected</visible>
