@@ -4679,12 +4679,11 @@
                             <visible>!Weather.IsFetched</visible>
                             <include>visiblehidefadeinfo</include>
 							<control type="image">
-								<description>Loading Underlay</description>
 								<posx>-5</posx>
 								<posy>-5</posy>
 								<width>839</width>
 								<height>582</height>
-								<texture border="7">windows/home/add-tile.png</texture>
+								<texture border="7">windows/home/tile.png</texture>
 							</control>
                             <control type="image">
                                 <description>Loading Back</description>
@@ -4826,15 +4825,7 @@
                         <control type="group">
                             <visible>[!Skin.HasSetting(ShowWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))] + Weather.IsFetched</visible>
                             <include>visiblehidefadeinfo</include>		
-							<control type="image">
-								<description>Main overlay</description>
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>829</width>
-								<height>572</height>
-								<colordiffuse>99000000</colordiffuse>
-								<texture border="1">windows/common/black.png</texture>
-							</control>												
+						 											
 							<control type="image">
 								<description>Lower overlay</description>
 								<posx>0</posx>
