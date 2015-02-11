@@ -1,4 +1,7 @@
-﻿[B]3.45.30-alpha2[/B]
+﻿[B]3.45.30-alpha3[/B]
+• Corrects option arrow from Left/Right to Up/Down on Fanart Viewtype.
+
+[B]3.45.30-alpha2[/B]
 • Fixes Date/Time width on Home.
 
 [B]3.45.30[/B]
