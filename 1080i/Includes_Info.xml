@@ -48,10 +48,9 @@
 					<texture>windows/home/clock.png</texture>
 					<include>visiblehidefadeinfo</include>
 					<visible>Skin.HasSetting(Guide.HideClock)</visible>	
-					<animation effect="slide" end="340" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather">Conditional</animation>	
-					<animation effect="slide" end="170" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather + !Control.IsEnabled(weather)">Conditional</animation>	
-					<animation effect="slide" end="170" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather">Conditional</animation>	
-		 			<animation effect="slide" end="-510" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather">Conditional</animation>
+					<animation effect="slide" end="0" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
+					<animation effect="slide" end="170" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
+					<animation effect="slide" end="170" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !Weather.IsFetched">Conditional</animation>
 				</control>	
 				<control type="label">
 					<description>Clock label</description>
@@ -67,10 +66,9 @@
 					<scroll>false</scroll>
 					<include>visiblehidefadeinfo</include>
 					<visible>Skin.HasSetting(Guide.HideClock)</visible>	
-					<animation effect="slide" end="344" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather">Conditional</animation>	
-					<animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather + !Control.IsEnabled(weather)">Conditional</animation>
-					<animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather">Conditional</animation>
-					<animation effect="slide" end="-516" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather">Conditional</animation>
+					<animation effect="slide" end="0" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather)">Conditional</animation>	
+					<animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
+					<animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !Weather.IsFetched">Conditional</animation>	
 				</control>	
             </control>
             <control type="group">
