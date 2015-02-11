@@ -1,3 +1,6 @@
+[B]3.45.30-alpha6[/B]
+• Incorrect string corrected
+
 [B]3.45.30-alpha5[/B]
 • Correction of Date/Time and Weather animations on Home (freeman212 merge)
 
