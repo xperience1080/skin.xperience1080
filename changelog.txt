@@ -1,4 +1,7 @@
-﻿[B]3.45.30-alpha4[/B]
+[B]3.45.30-alpha5[/B]
+• Correction of Date/Time and Weather animations on Home (freeman212 merge)
+
+[B]3.45.30-alpha4[/B]
 • New Rating textures for the trakt add-on theme integration.
 
 [B]3.45.30-alpha3[/B]
