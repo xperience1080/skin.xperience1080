@@ -34,6 +34,7 @@
                     <shadowcolor>22000000</shadowcolor>
                     <align>right</align>
                     <scroll>false</scroll>
+                    <include>visiblehidefadeinfo</include>
                     <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
 					<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
 					<visible>Skin.HasSetting(Guide.HideWeather)</visible>	
@@ -64,6 +65,7 @@
 					<shadowcolor>22000000</shadowcolor>
 					<align>right</align>
 					<scroll>false</scroll>
+					<include>visiblehidefadeinfo</include>
 					<visible>Skin.HasSetting(Guide.HideClock)</visible>	
 					<animation effect="slide" end="344" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather">Conditional</animation>	
 					<animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather + !Control.IsEnabled(weather)">Conditional</animation>
