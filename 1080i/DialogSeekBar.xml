@@ -441,14 +441,23 @@
                             <posy>825</posy>
                             <control type="image">
                                 <posx>80</posx>
-                                <posy>67</posy>
+                                <posy>-35</posy>
                                 <width>276</width>
-                                <height>276</height>
-                                <bordersize>20</bordersize>
+                                <height>394</height>
+								<bordersize>20</bordersize>
                                 <bordertexture border="30">osd/fullscreen/cover-shadow.png</bordertexture>
-                                <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                                <aspectratio aligny="top">keep</aspectratio>
+                                <texture background="true" fallback="views/fallbacks/DefaultVideo.png/medium.png">$INFO[VideoPlayer.Cover]</texture>
+                                <aspectratio align="right">keep</aspectratio>
                             </control>
+							
+							
+							
+							      
+								
+								
+								
+								
+								
                             <control type="label">
                                 <posx>360</posx>
                                 <posy>83</posy>
@@ -503,8 +512,8 @@
                                     <font>Font-Condensed-S36</font>
                                     <align>left</align>
                                     <aligny>center</aligny>
-
                                     <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
+									<visible>Skin.HasSetting(OSD.HideFileStreamPath)</visible>
                                 </control>
 								<control type="textbox">
 +                                    <posx>360</posx>
@@ -515,9 +524,21 @@
 +                                    <textcolor>aawhite</textcolor>
 +                                    <font>Font-Condensed-S32</font>
 +                                    <align>justify</align>
-+                                    <visible>!IsEmpty(VideoPlayer.Plot)</visible>
++                                    <visible>!IsEmpty(VideoPlayer.Plot) + Skin.HasSetting(OSD.HideFileStreamPath)</visible>
 +                                    <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                  </control>
+								<control type="textbox">
++                                    <posx>360</posx>
++                                    <posy>192</posy>
++                                    <width>1460</width>
++                                    <height>135</height>
++                                    <label>$INFO[VideoPlayer.Plot]</label>
++                                    <textcolor>aawhite</textcolor>
++                                    <font>Font-Condensed-S32</font>
++                                    <align>justify</align>
++                                    <visible>!IsEmpty(VideoPlayer.Plot) + !Skin.HasSetting(OSD.HideFileStreamPath)</visible>
++                                    <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
+                                 </control>								 
                             </control>
                         </control>
                     </control>
