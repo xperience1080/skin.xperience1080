@@ -43,8 +43,8 @@
 					<description>Clock image</description>
 					<posx>345r</posx>
 					<posy>950</posy>
-					<width>100</width>
-					<height>100</height>
+					<width>92</width>
+					<height>92</height>
 					<texture>windows/home/clock.png</texture>
 					<include>visiblehidefadeinfo</include>
 					<visible>Skin.HasSetting(Guide.HideClock)</visible>	
