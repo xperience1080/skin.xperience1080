@@ -4,1126 +4,482 @@
 # Addon Provider: Piers
 msgid ""
 msgstr ""
-"Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: alanwww1@Kodi.org\n"
+"Project-Id-Version: XBMC Skins\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/Kodi-skins/language/en/)\n"
+"Language-Team: English (Australia) (http://www.transifex.com/projects/p/xbmc-skins/language/en_AU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: en_AU\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#Custom_Settings.xml
-#From 41100 to 41299
-#General
 
 msgctxt "#41100"
 msgid "General"
-msgstr ""
+msgstr "General"
 
 msgctxt "#41101"
 msgid "Enable Kiosk Mode"
-msgstr ""
-
-msgctxt "#41102"
-msgid "Display Now Playing Video in Background"
-msgstr ""
-
-msgctxt "#41103"
-msgid "Display Artist Slideshow in Music Visualisation"
-msgstr ""
-
-#empty string with id 41104
-
-msgctxt "#41105"
-msgid "Animate Artist Slideshow"
-msgstr ""
-
-msgctxt "#41106"
-msgid "Show Fanart above Visualisation"
-msgstr ""
+msgstr "Enable Kiosk Mode"
 
 msgctxt "#41107"
 msgid "Enable CDArt"
-msgstr ""
-
-msgctxt "#41108"
-msgid "Automatically switch to music visualisation upon Play"
-msgstr ""
-
-msgctxt "#41109"
-msgid "Enable Auto Scrolling for text"
-msgstr ""
-
-#empty strings from id 41110 to 41111
-
-msgctxt "#41112"
-msgid "Invert Spin Control"
-msgstr ""
+msgstr "Enable CDArt"
 
 msgctxt "#41113"
 msgid "Top"
-msgstr ""
+msgstr "Top"
 
 msgctxt "#41114"
 msgid "Bottom"
-msgstr ""
-
-#empty strings from id 41115 to 41129
-#Home
+msgstr "Bottom"
 
 msgctxt "#41130"
 msgid "Home"
-msgstr ""
-
-msgctxt "#41131"
-msgid "Manage Categories"
-msgstr ""
-
-#empty strings from id 41132 to 41133
-#41132/41133
-
-msgctxt "#41134"
-msgid "Display Profile Image"
-msgstr ""
-
-msgctxt "#41135"
-msgid "Display Sub-menu Arrow"
-msgstr ""
-
-msgctxt "#41136"
-msgid "Manage custom Home Items"
-msgstr ""
+msgstr "Home"
 
 msgctxt "#41137"
 msgid "Custom"
-msgstr ""
+msgstr "Custom"
 
 msgctxt "#41138"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "#41139"
 msgid "Icon"
-msgstr ""
-
-msgctxt "#41140"
-msgid "Manage custom Home Widgets"
-msgstr ""
+msgstr "Icon"
 
 msgctxt "#41141"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgctxt "#41142"
 msgid "Path"
-msgstr ""
+msgstr "Path"
 
 msgctxt "#41143"
 msgid "Recommended size 633x437px"
-msgstr ""
-
-msgctxt "#41144"
-msgid "Manage custom Home Tile Colours"
-msgstr ""
+msgstr "Recommended size 633x437px"
 
 msgctxt "#41145"
 msgid "Video add-on"
-msgstr ""
+msgstr "Video add-on"
 
 msgctxt "#41146"
 msgid "Music add-on"
-msgstr ""
+msgstr "Music add-on"
 
 msgctxt "#41147"
 msgid "Picture add-on"
-msgstr ""
+msgstr "Picture add-on"
 
 msgctxt "#41148"
 msgid "Program add-on"
-msgstr ""
+msgstr "Program add-on"
 
 msgctxt "#41149"
 msgid "Video Playlist"
-msgstr ""
+msgstr "Video Playlist"
 
 msgctxt "#41150"
 msgid "Music Playlist"
-msgstr ""
+msgstr "Music Playlist"
 
 msgctxt "#41151"
 msgid "Custom"
-msgstr ""
-
-msgctxt "#41152"
-msgid "Music Panel opens"
-msgstr ""
+msgstr "Custom"
 
 msgctxt "#41153"
 msgid "Favourite"
-msgstr ""
+msgstr "Favourite"
 
 msgctxt "#41154"
 msgid "Recommended size 283x283px"
-msgstr ""
-
-#empty string with id 41155
-
-msgctxt "#41156"
-msgid "Show Name"
-msgstr ""
-
-msgctxt "#41157"
-msgid "Video Tile"
-msgstr ""
-
-msgctxt "#41158"
-msgid "TV Show Tile"
-msgstr ""
-
-msgctxt "#41159"
-msgid "App Tile"
-msgstr ""
-
-msgctxt "#41160"
-msgid "Animate Icon"
-msgstr ""
-
-msgctxt "#41161"
-msgid "Music Tile"
-msgstr ""
+msgstr "Recommended size 283x283px"
 
 msgctxt "#41162"
 msgid "Widget"
-msgstr ""
-
-#empty string with id 41163
+msgstr "Widget"
 
 msgctxt "#41164"
 msgid "Random Items"
-msgstr ""
-
-msgctxt "#41165"
-msgid "Only Unwatched items"
-msgstr ""
-
-msgctxt "#41166"
-msgid "Only Partially Watched items"
-msgstr ""
-
-msgctxt "#41167"
-msgid "Manage custom Home Widgets"
-msgstr ""
-
-msgctxt "#41168"
-msgid "Manage custom Home Widget"
-msgstr ""
-
-msgctxt "#41169"
-msgid "Upcoming Movies"
-msgstr ""
-
-msgctxt "#41170"
-msgid "In Theatres Now"
-msgstr ""
-
-msgctxt "#41171"
-msgid "Popular Movies"
-msgstr ""
-
-msgctxt "#41172"
-msgid "Top Rated Movies"
-msgstr ""
+msgstr "Random Items"
 
 msgctxt "#41173"
 msgid "Trending Movies"
-msgstr ""
-
-msgctxt "#41174"
-msgid "Trending TV Shows"
-msgstr ""
-
-msgctxt "#41175"
-msgid "Home Tile"
-msgstr ""
-
-#empty strings from id 41176 to 41189
-#Views
+msgstr "Trending Movies"
 
 msgctxt "#41190"
 msgid "Views"
-msgstr ""
-
-msgctxt "#41191"
-msgid "Show Fanart"
-msgstr ""
-
-msgctxt "#41192"
-msgid "Motion Picture Rating country"
-msgstr ""
-
-msgctxt "#41193"
-msgid "Select Motion Picture Rating country"
-msgstr ""
-
-#empty strings from id 41194 to 41199
-#General
-
-msgctxt "#41200"
-msgid "Show Power Button (does not affect home screen)"
-msgstr ""
-
-msgctxt "#41201"
-msgid "Show Options Button"
-msgstr ""
-
-msgctxt "#41202"
-msgid "Play Trailer on opening Film Information"
-msgstr ""
-
-msgctxt "#41203"
-msgid "Play Trailer minimized"
-msgstr ""
-
-#empty strings from id 41204 to 41219
-#Live TV
+msgstr "Views"
 
 msgctxt "#41220"
 msgid "TV"
-msgstr ""
-
-msgctxt "#41221"
-msgid "Enable Genre Colours in the EPG"
-msgstr ""
-
-#empty strings from id 41222 to 41239
-#OSD
-
-msgctxt "#41240"
-msgid "Enable Music Visualisation"
-msgstr ""
-
-#empty string with id 41241
-
-msgctxt "#41242"
-msgid "Set Default Focus to Subtitle Button (Video OSD)"
-msgstr ""
-
-#empty strings from id 41243 to 41249
-#Backgrounds
+msgstr "TV"
 
 msgctxt "#41250"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Backgrounds"
 
 msgctxt "#41251"
 msgid "Global"
-msgstr ""
+msgstr "Global"
 
 msgctxt "#41252"
 msgid "Single Image"
-msgstr ""
-
-msgctxt "#41253"
-msgid "Multiple Image"
-msgstr ""
-
-#empty strings from id 41254 to 41269
-#Guide
-
-msgctxt "#41270"
-msgid "Display Clock"
-msgstr ""
-
-msgctxt "#41271"
-msgid "Display Profile Image"
-msgstr ""
-
-msgctxt "#41272"
-msgid "Replace Pictures with Custom Menu Item in QuickNav"
-msgstr ""
-
-msgctxt "#41273"
-msgid "Replace Trailer with Custom Menu Item in QuickNav"
-msgstr ""
-
-msgctxt "#41274"
-msgid "Replace New Movies with Custom Menu Item in QuickNav"
-msgstr ""
-
-msgctxt "#41275"
-msgid "Replace New TV Shows with Custom Menu Item in QuickNav"
-msgstr ""
-
-msgctxt "#41276"
-msgid "Choose Custom Menu Item"
-msgstr ""
-
-#empty strings from id 41277 to 41279
-#Add-Ons
+msgstr "Single Image"
 
 msgctxt "#41280"
 msgid "Add-ons"
-msgstr ""
+msgstr "Add-ons"
 
 msgctxt "#41281"
 msgid "Subtitle add-on"
-msgstr ""
+msgstr "Subtitle add-on"
 
 msgctxt "#41282"
 msgid "Lyrics add-on"
-msgstr ""
+msgstr "Lyrics add-on"
 
 msgctxt "#41283"
 msgid "Enable TVTunes add-on"
-msgstr ""
+msgstr "Enable TVTunes add-on"
 
 msgctxt "#41284"
 msgid "Download theme songs"
-msgstr ""
+msgstr "Download theme songs"
 
 msgctxt "#41285"
 msgid "Enable TV Show Next Aired"
-msgstr ""
-
-#empty strings from id 41286 to 41289
+msgstr "Enable TV Show Next Aired"
 
 msgctxt "#41290"
 msgid "Configure TV Show Next Aired"
-msgstr ""
-
-#empty strings from id 41291 to 41292
-
-msgctxt "#41293"
-msgid "Update Next Aired data on Start"
-msgstr ""
-
-msgctxt "#41294"
-msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
-msgstr ""
-
-#empty strings from id 41295 to 41302
-#DialogAlbumInfo.XML & DialogVideoInfo.XML
-#From 41300 to 41349
+msgstr "Configure TV Show Next Aired"
 
 msgctxt "#41303"
 msgid "Tracks"
-msgstr ""
+msgstr "Tracks"
 
 msgctxt "#41304"
 msgid "Discography"
-msgstr ""
-
-msgctxt "#41305"
-msgid "Get Thumb"
-msgstr ""
-
-msgctxt "#41306"
-msgid "Get Fanart"
-msgstr ""
+msgstr "Discography"
 
 msgctxt "#41307"
 msgid "Refresh"
-msgstr ""
-
-#empty strings from id 41308 to 41309
-
-msgctxt "#41310"
-msgid "Watched Episodes: "
-msgstr ""
-
-msgctxt "#41311"
-msgid "Unwatched Episodes: "
-msgstr ""
-
-#empty strings from id 41312 to 41313
-
-msgctxt "#41314"
-msgid "Premièred: "
-msgstr ""
+msgstr "Refresh"
 
 msgctxt "#41315"
 msgid "Play"
-msgstr ""
+msgstr "Play"
 
 msgctxt "#41316"
 msgid "Cast"
-msgstr ""
-
-#empty strings from id 41317 to 41318
+msgstr "Cast"
 
 msgctxt "#41319"
 msgid "Plot"
-msgstr ""
-
-#empty strings from id 41320 to 41323
+msgstr "Plot"
 
 msgctxt "#41324"
 msgid "Biography"
-msgstr ""
+msgstr "Biography"
 
 msgctxt "#41325"
 msgid "Review"
-msgstr ""
-
-msgctxt "#41326"
-msgid "Get Info"
-msgstr ""
-
-msgctxt "#41327"
-msgid "Year of Release"
-msgstr ""
+msgstr "Review"
 
 msgctxt "#41328"
 msgid "Filmography"
-msgstr ""
-
-msgctxt "#41329"
-msgid "No Biography for this actor"
-msgstr ""
-
-msgctxt "#41330"
-msgid "No Description for this application"
-msgstr ""
+msgstr "Filmography"
 
 msgctxt "#41331"
 msgid "Released"
-msgstr ""
-
-#empty string with id 41332
-
-msgctxt "#41333"
-msgid "Get Theme"
-msgstr ""
-
-#empty strings from id 41334 to 41350
-#DialogButtonMenu.xml
-#From 41350 to 41369
+msgstr "Released"
 
 msgctxt "#41351"
 msgid "Logout"
-msgstr ""
-
-msgctxt "#41352"
-msgid "Reload Skin"
-msgstr ""
-
-#empty strings from id 41353 to 41359
-
-msgctxt "#41360"
-msgid "Master Mode Off"
-msgstr ""
-
-msgctxt "#41361"
-msgid "Master Mode On"
-msgstr ""
-
-#empty strings from id 41362 to 41370
-#DialogSeekBar.xml & VideoOSD.xml
-#From 41370 to 41399
+msgstr "Logout"
 
 msgctxt "#41371"
 msgid "Finish Time:"
-msgstr ""
-
-msgctxt "#41372"
-msgid "Now Playing..."
-msgstr ""
-
-#empty strings from id 41372 to 41404
-#LoginScreen.xml
-#From 41400 to 41419
+msgstr "Finish Time:"
 
 msgctxt "#41405"
 msgid "Login"
-msgstr ""
-
-#empty strings from id 41406 to 41439
-#Include_Guide-Interface.xml
-#From 41440 to 41499
+msgstr "Login"
 
 msgctxt "#41440"
 msgid "System Info"
-msgstr ""
+msgstr "System Info"
 
 msgctxt "#41441"
 msgid "QuickNav"
-msgstr ""
-
-#empty string with id 41442
+msgstr "QuickNav"
 
 msgctxt "#41443"
 msgid "Now Playing"
-msgstr ""
+msgstr "Now Playing"
 
 msgctxt "#41444"
 msgid "Settings"
-msgstr ""
+msgstr "Settings"
 
 msgctxt "#41445"
 msgid "Movies"
-msgstr ""
+msgstr "Movies"
 
 msgctxt "#41446"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV Shows"
 
 msgctxt "#41447"
 msgid "Music"
-msgstr ""
+msgstr "Music"
 
 msgctxt "#41448"
 msgid "Pictures"
-msgstr ""
-
-#empty string with id 41449
+msgstr "Pictures"
 
 msgctxt "#41450"
 msgid "New Movies"
-msgstr ""
+msgstr "New Movies"
 
 msgctxt "#41451"
 msgid "New TV Shows"
-msgstr ""
-
-msgctxt "#41452"
-msgid "No Media Playing"
-msgstr ""
+msgstr "New TV Shows"
 
 msgctxt "#41453"
 msgid "User"
-msgstr ""
+msgstr "User"
 
 msgctxt "#41454"
 msgid "IP Address"
-msgstr ""
-
-msgctxt "#41455"
-msgid "Free Memory"
-msgstr ""
+msgstr "IP Address"
 
 msgctxt "#41456"
 msgid "Resolution"
-msgstr ""
-
-msgctxt "#41457"
-msgid "System Uptime"
-msgstr ""
-
-msgctxt "#41458"
-msgid "Skin Version"
-msgstr ""
-
-msgctxt "#41459"
-msgid "Kodi Version"
-msgstr ""
+msgstr "Resolution"
 
 msgctxt "#41460"
 msgid "Guide"
-msgstr ""
-
-#empty strings from id 41461 to 41503
-#Includes_Home.xml
-#From 41500 to 41599
+msgstr "Guide"
 
 msgctxt "#41504"
 msgid "Applications"
-msgstr ""
-
-msgctxt "#41505"
-msgid "Press \"Up\" to Eject"
-msgstr ""
-
-#empty string with id 41506
+msgstr "Add-ons"
 
 msgctxt "#41507"
 msgid "Power"
-msgstr ""
-
-#empty strings from id 41508 to 41523
+msgstr "Power"
 
 msgctxt "#41524"
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 msgctxt "#41525"
 msgid "Search Kodi for"
-msgstr ""
-
-#empty strings from id 41526 to 41549
+msgstr "Search Kodi for"
 
 msgctxt "#41550"
 msgid "Spotlight"
-msgstr ""
-
-msgctxt "#41551"
-msgid "Ongoing TV Shows"
-msgstr ""
+msgstr "Spotlight"
 
 msgctxt "#41552"
 msgid "New Movies"
-msgstr ""
+msgstr "New Movies"
 
 msgctxt "#41553"
 msgid "New TV Shows"
-msgstr ""
-
-msgctxt "#41554"
-msgid "New Albums"
-msgstr ""
-
-msgctxt "#41555"
-msgid "Most Played Albums"
-msgstr ""
-
-msgctxt "#41556"
-msgid "Featured Albums"
-msgstr ""
-
-#empty strings from id 41557 to 41561
-
-msgctxt "#41562"
-msgid "Loading Weather..."
-msgstr ""
-
-msgctxt "#41563"
-msgid "No Location Available"
-msgstr ""
+msgstr "New TV Shows"
 
 msgctxt "#41564"
 msgid "Loading"
-msgstr ""
-
-#empty strings from id 41565 to 41599
-#Includes_Window-Contents.xml
-#From 41600 to 41619
+msgstr "Loading"
 
 msgctxt "#41600"
 msgid "Options"
-msgstr ""
-
-msgctxt "#41601"
-msgid "Initializing Skin"
-msgstr ""
-
-#empty strings from id 41602 to 41619
-#MyVideoNav.xml, MyMusicNav.xml etc.
-#From 41620 to 41639
+msgstr "Options"
 
 msgctxt "#41620"
 msgid "View Options"
-msgstr ""
-
-msgctxt "#41621"
-msgid "Set Games Path"
-msgstr ""
-
-msgctxt "#41622"
-msgid "Reset Games Path"
-msgstr ""
-
-#empty strings from id 41623 to 41688
-#MyWeather.xml
-#From 41680 to 41699
+msgstr "View Options"
 
 msgctxt "#41689"
 msgid "Location"
-msgstr ""
+msgstr "Location"
 
 msgctxt "#41690"
 msgid "Hide Fanart"
-msgstr ""
+msgstr "Hide Fanart"
 
 msgctxt "#41691"
 msgid "Set Fanart Path"
-msgstr ""
-
-msgctxt "#41692"
-msgid "Hide Daily Fanart"
-msgstr ""
-
-msgctxt "#41693"
-msgid "Moon Phase"
-msgstr ""
-
-msgctxt "#41694"
-msgid "Current Weather"
-msgstr ""
+msgstr "Set Fanart Path"
 
 msgctxt "#41695"
 msgid "10 Day Forecast"
-msgstr ""
+msgstr "10 Day Forecast"
 
 msgctxt "#41696"
 msgid "Hourly Forecast"
-msgstr ""
-
-#empty strings from id 41697 to 41715
-#SmartPlaylistEditor.xml
-#From 41716 to 41719
+msgstr "Hourly Forecast"
 
 msgctxt "#41716"
 msgid "Playlist Options"
-msgstr ""
-
-#empty strings from id 41717 to 41804
-#Views
-#From 41800 to 41899
+msgstr "Playlist Options"
 
 msgctxt "#41805"
 msgid "Aired"
-msgstr ""
-
-#empty strings from id 41806 to 41812
+msgstr "Aired"
 
 msgctxt "#41813"
 msgid "Episodes"
-msgstr ""
-
-#empty strings from id 41814 to 41816
+msgstr "Episodes"
 
 msgctxt "#41817"
 msgid "Items"
-msgstr ""
-
-#empty string with id 41818
+msgstr "Item"
 
 msgctxt "#41819"
 msgid "Page"
-msgstr ""
-
-#empty strings from id 41820 to 41821
+msgstr "Page"
 
 msgctxt "#41822"
 msgid "Item"
-msgstr ""
-
-#empty strings from id 41823 to 41919
+msgstr "Item"
 
 msgctxt "#41920"
 msgid "Recently Added"
-msgstr ""
-
-#empty strings from id 41921 to 41999
-#Dialogs
-#From 42000 to 42009
+msgstr "Recently Added"
 
 msgctxt "#42000"
 msgid "Select"
-msgstr ""
+msgstr "Select"
 
 msgctxt "#42001"
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 msgctxt "#42002"
 msgid "Close"
-msgstr ""
-
-#empty strings from id 42003 to 42009
-#Skin View Options
-#From 42010 to 42099
+msgstr "Close"
 
 msgctxt "#42010"
 msgid "View Options"
-msgstr ""
-
-#empty strings from id 42011 to 42014
-
-msgctxt "#42015"
-msgid "Display Info"
-msgstr ""
-
-#empty string with id 42016
-
-msgctxt "#42017"
-msgid "Main Options"
-msgstr ""
-
-msgctxt "#42018"
-msgid "Display Plot"
-msgstr ""
-
-msgctxt "#42019"
-msgid "Use Posters"
-msgstr ""
-
-msgctxt "#42020"
-msgid "Display Plot on Focus"
-msgstr ""
+msgstr "View Options"
 
 msgctxt "#42021"
 msgid "View"
-msgstr ""
-
-msgctxt "#42022"
-msgid "Use Landscape"
-msgstr ""
-
-msgctxt "#42023"
-msgid "Use Clearart"
-msgstr ""
-
-msgctxt "#42024"
-msgid "Small Thumbs"
-msgstr ""
+msgstr "View"
 
 msgctxt "#42025"
 msgid "Update Art"
-msgstr ""
-
-msgctxt "#42026"
-msgid "Use Logo"
-msgstr ""
-
-#empty strings from id 42027 to 42129
-#Addons
-#From 42130 to 42139
+msgstr "Update Art"
 
 msgctxt "#42130"
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 msgctxt "#42131"
 msgid "Information"
-msgstr ""
-
-msgctxt "#42132"
-msgid "No Description Available"
-msgstr ""
-
-msgctxt "#42133"
-msgid "Update Repositories"
-msgstr ""
-
-msgctxt "#42134"
-msgid "Update Add-ons"
-msgstr ""
-
-msgctxt "#42135"
-msgid "Updating Enabled Add-on Repositories..."
-msgstr ""
+msgstr "Information"
 
 msgctxt "#42136"
 msgid "Updating local add-on directories..."
-msgstr ""
-
-#empty strings from id 42137 to 42159
-#TV Guide
-#From 42160 to 42179
+msgstr "Updating local add-on directories..."
 
 msgctxt "#42160"
 msgid "TV Guide"
-msgstr ""
-
-#empty string with id 42161
-#e.g. "08:00 PM on ABC"
+msgstr "TV Guide"
 
 msgctxt "#42162"
 msgid "on"
-msgstr ""
-
-#empty strings from id 42163 to 42179
-#PVR
-#From 42180 to 42199
+msgstr "on"
 
 msgctxt "#42180"
 msgid "Available Groups"
-msgstr ""
+msgstr "Available Groups"
 
 msgctxt "#42181"
 msgid "Add Group"
-msgstr ""
+msgstr "Add Group"
 
 msgctxt "#42182"
 msgid "Rename Group"
-msgstr ""
+msgstr "Rename Group"
 
 msgctxt "#42183"
 msgid "Delete Group"
-msgstr ""
+msgstr "Delete Group"
 
 msgctxt "#42184"
 msgid "Channel Options"
-msgstr ""
+msgstr "Channel Options"
 
 msgctxt "#42185"
 msgid "Misc Options"
-msgstr ""
-
-#empty strings from id 42186 to 42199
-#Mouse
-#From 42200 to 42204
-
-msgctxt "#42200"
-msgid "Mouse Not Supported"
-msgstr ""
-
-msgctxt "#42201"
-msgid "Please Disable"
-msgstr ""
-
-#empty strings from id 42202 to 42204
-#Context menu
-#From 42205 to 42215
-
-msgctxt "#42205"
-msgid "Edit Film"
-msgstr ""
-
-msgctxt "#42206"
-msgid "Edit Tv Show"
-msgstr ""
-
-msgctxt "#42207"
-msgid "Edit Season"
-msgstr ""
-
-msgctxt "#42208"
-msgid "Edit Episode"
-msgstr ""
-
-msgctxt "#42209"
-msgid "Edit Music Video"
-msgstr ""
-
-msgctxt "#42210"
-msgid "Edit Artist"
-msgstr ""
-
-msgctxt "#42211"
-msgid "Edit Album"
-msgstr ""
-
-msgctxt "#42212"
-msgid "Edit Song"
-msgstr ""
-
-#empty strings from id 42213 to 42219
-#View labels
-#From 42220 to 42249
+msgstr "Misc Options"
 
 msgctxt "#42220"
 msgid "List"
-msgstr ""
-
-#empty string with id 42221
-
-msgctxt "#42222"
-msgid "Info List"
-msgstr ""
-
-msgctxt "#42223"
-msgid "Info List ■"
-msgstr ""
+msgstr "List"
 
 msgctxt "#42224"
 msgid "Panel"
-msgstr ""
-
-msgctxt "#42225"
-msgid "Panel ■"
-msgstr ""
+msgstr "Panel"
 
 msgctxt "#42226"
 msgid "Landscape"
-msgstr ""
+msgstr "Landscape"
 
 msgctxt "#42227"
 msgid "Poster"
-msgstr ""
-
-msgctxt "#42228"
-msgid "Poster ■"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#42229"
 msgid "Thumbnail"
-msgstr ""
-
-msgctxt "#42230"
-msgid "Thumbnail ■"
-msgstr ""
+msgstr "Thumbnail"
 
 msgctxt "#42231"
 msgid "Banner"
-msgstr ""
-
-msgctxt "#42232"
-msgid "Banner ■"
-msgstr ""
-
-msgctxt "#42233"
-msgid "Cover"
-msgstr ""
-
-msgctxt "#42234"
-msgid "Thumbnail List"
-msgstr ""
-
-msgctxt "#42235"
-msgid "Available"
-msgstr ""
-
-#empty strings from id 42236 to 42249
-#Media types
-#From 42250 to 42259
+msgstr "Banner"
 
 msgctxt "#42250"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#42251"
 msgid "Fanart"
-msgstr ""
+msgstr "Fanart"
 
 msgctxt "#42252"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#42253"
 msgid "Landscape"
-msgstr ""
+msgstr "Landscape"
 
 msgctxt "#42254"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 msgctxt "#42255"
 msgid "ClearArt"
-msgstr ""
-
-msgctxt "#42256"
-msgid "Home Tile Colours"
-msgstr ""
+msgstr "ClearArt"
 
 msgctxt "#42257"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV Shows"
 
 msgctxt "#42258"
 msgid "Movies"
-msgstr ""
+msgstr "Movies"
 
 msgctxt "#42259"
 msgid "Red"
-msgstr ""
-
-#empty strings from id 42263 to 42259
-#Profile settings
-#From 42260 to 42261
-
-msgctxt "#42260"
-msgid "Auto Login"
-msgstr ""
-
-msgctxt "#42261"
-msgid "Display Navigation Arrow"
-msgstr ""
-
-msgctxt "#42262"
-msgid "Overlay"
-msgstr ""
+msgstr "Red"

@@ -1,14 +1,14 @@
-# XBMC Media Center language file
-# Addon Name: Xperience1080
-# Addon id: skin.xperience1080
-# Addon Provider: `Black
+# Kodi Media Center language file
+# Addon Name: 1080XF
+# Addon id: skin.1080xf
+# Addon Provider: Piers
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
+"Last-Translator: Kodi Translation Team\n"
 "Language-Team: Persian (http://www.transifex.com/projects/p/xbmc-skins/language/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,12 +21,16 @@ msgid "General"
 msgstr "عمومی"
 
 msgctxt "#41220"
-msgid "Live TV"
+msgid "TV"
 msgstr "تلوزیون"
 
 msgctxt "#41315"
 msgid "Play"
 msgstr "پخش"
+
+msgctxt "#41372"
+msgid "Now Playing..."
+msgstr "در حال پخش..."
 
 msgctxt "#41444"
 msgid "Settings"
@@ -44,6 +48,10 @@ msgctxt "#41600"
 msgid "Options"
 msgstr "تنظیمات"
 
+msgctxt "#41620"
+msgid "View Options"
+msgstr "نمایش تنظیمات"
+
 msgctxt "#41819"
 msgid "Page"
 msgstr "صفحه"
@@ -51,6 +59,10 @@ msgstr "صفحه"
 msgctxt "#42001"
 msgid "Cancel"
 msgstr "لغو"
+
+msgctxt "#42010"
+msgid "View Options"
+msgstr "نمایش تنظیمات"
 
 msgctxt "#42021"
 msgid "View"

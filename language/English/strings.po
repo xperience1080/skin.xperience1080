@@ -4,12 +4,12 @@
 # Addon Provider: Piers
 msgid ""
 msgstr ""
-"Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: alanwww1@Kodi.org\n"
+"Project-Id-Version: XBMC Skins\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/Kodi-skins/language/en/)\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -533,7 +533,7 @@ msgctxt "#41372"
 msgid "Now Playing..."
 msgstr ""
 
-#empty strings from id 41372 to 41404
+#empty strings from id 41373 to 41404
 #LoginScreen.xml
 #From 41400 to 41419
 
@@ -1064,11 +1064,7 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr ""
 
-msgctxt "#42235"
-msgid "Available"
-msgstr ""
-
-#empty strings from id 42236 to 42249
+#empty strings from id 42235 to 42249
 #Media types
 #From 42250 to 42259
 
@@ -1112,7 +1108,6 @@ msgctxt "#42259"
 msgid "Red"
 msgstr ""
 
-#empty strings from id 42263 to 42259
 #Profile settings
 #From 42260 to 42261
 
@@ -1122,8 +1117,4 @@ msgstr ""
 
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
-msgstr ""
-
-msgctxt "#42262"
-msgid "Overlay"
 msgstr ""

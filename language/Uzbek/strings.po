@@ -1,14 +1,14 @@
-# XBMC Media Center language file
-# Addon Name: Xperience1080
-# Addon id: skin.xperience1080
-# Addon Provider: `Black
+# Kodi Media Center language file
+# Addon Name: 1080XF
+# Addon id: skin.1080xf
+# Addon Provider: Piers
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
+"Last-Translator: Kodi Translation Team\n"
 "Language-Team: Uzbek (http://www.transifex.com/projects/p/xbmc-skins/language/uz/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,6 +19,10 @@ msgstr ""
 msgctxt "#41100"
 msgid "General"
 msgstr "Umumiy"
+
+msgctxt "#41130"
+msgid "Home"
+msgstr "Boshlash"
 
 msgctxt "#41138"
 msgid "Name"
@@ -33,7 +37,7 @@ msgid "Path"
 msgstr "Yo'l"
 
 msgctxt "#41220"
-msgid "Live TV"
+msgid "TV"
 msgstr "TV"
 
 msgctxt "#41303"
@@ -80,24 +84,20 @@ msgctxt "#41448"
 msgid "Pictures"
 msgstr "Rasmlar"
 
-msgctxt "#41454"
-msgid "IP address"
-msgstr "IP manzil"
-
-msgctxt "#41455"
-msgid "Free memory"
-msgstr "Erkin xotira"
-
 msgctxt "#41456"
 msgid "Resolution"
 msgstr "Ekran o'lchamlari"
+
+msgctxt "#41524"
+msgid "Home"
+msgstr "Boshlash"
 
 msgctxt "#41600"
 msgid "Options"
 msgstr "Parametrlar"
 
 msgctxt "#41620"
-msgid "View options"
+msgid "View Options"
 msgstr "Ko'rish parametrlari"
 
 msgctxt "#42000"
@@ -109,7 +109,7 @@ msgid "Cancel"
 msgstr "Bekor qilish"
 
 msgctxt "#42010"
-msgid "View options"
+msgid "View Options"
 msgstr "Ko'rish parametrlari"
 
 msgctxt "#42181"
@@ -131,3 +131,11 @@ msgstr "Kanal parametrlari"
 msgctxt "#42220"
 msgid "List"
 msgstr "Ro'yxat"
+
+msgctxt "#42258"
+msgid "Movies"
+msgstr "Filmlar"
+
+msgctxt "#42259"
+msgid "Red"
+msgstr "Qizil"
