@@ -16,9 +16,9 @@
             <control type="label" id="10">
                 <description>row 1 label</description>
                 <posx>130</posx>
-                <posy>40</posy>
-                <width>1660</width>
-                <height>80</height>
+                <posy>20</posy>
+                <width>auto</width>
+                <height>90</height>
                 <textcolor>bbwhite</textcolor>
                 <font>Font-Condensed-S29-B</font>
                 <label>-</label>
@@ -26,9 +26,9 @@
             <control type="label" id="11">
                 <description>row 2 label</description>
                 <posx>130</posx>
-                <posy>120</posy>
-                <width>1660</width>
-                <height>80</height>
+                <posy>100</posy>
+                <width>auto</width>
+                <height>90</height>
                 <textcolor>bbwhite</textcolor>
                 <font>Font-Condensed-S29-B</font>
                 <label>-</label>
@@ -36,9 +36,9 @@
             <control type="label" id="12">
                 <description>row 3 label</description>
                 <posx>130</posx>
-                <posy>200</posy>
-                <width>1660</width>
-                <height>80</height>
+                <posy>190</posy>
+                <width>auto</width>
+                <height>90</height>
                 <textcolor>bbwhite</textcolor>
                 <font>Font-Condensed-S29-B</font>
                 <label>-</label>
