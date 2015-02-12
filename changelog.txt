@@ -1,3 +1,6 @@
+[B]3.45.30-alpha7[/B]
+• Corrected overlap in text when pressing O to see codec information and stats.
+
 [B]3.45.30-alpha6[/B]
 • Incorrect string corrected
 
