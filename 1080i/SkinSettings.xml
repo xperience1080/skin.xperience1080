@@ -654,17 +654,17 @@
                         <label>$LOCALIZE[41108]</label>
                     </control>
                     <control type="radiobutton" id="8007">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(OSDDefaultSubtitleButton.Enabled)</selected>
-                        <onclick>Skin.ToggleSetting(OSDDefaultSubtitleButton.Enabled)</onclick>
-                        <enable>!IsEmpty(Skin.String(SubtitleScript_Path))</enable>
-                        <label>$LOCALIZE[41242]</label>
-                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(8007)">Conditional</animation>
-                    </control>
+						<width>1210</width>
+						<include>SettingsCategoryRadioButtonVars</include>
+						<selected>Skin.HasSetting(OSD.HideFileStreamPath)</selected>
+						<onclick>Skin.ToggleSetting(OSD.HideFileStreamPath)</onclick>
+						<label>$LOCALIZE[131] $LOCALIZE[573] ($LOCALIZE[20331]/$LOCALIZE[33002] $LOCALIZE[456])</label>                        
+                    </control>				
                 </control>
                 
+                <!-- =================== --> 
                 <!-- Background Settings -->
+                <!-- =================== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
