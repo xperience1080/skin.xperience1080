@@ -1,3 +1,7 @@
+[B]3.45.31-alpha[/B]
+• Added option to Enable/Disable path/stream names. This will also 'bump' and enlarge the area for the Plot.
+• Removed outdated Subtitle option in Skin Settings.
+
 [B]3.45.31[/B]
 • Updated language files from Transifex
 • Support now for English, English (US), German, Dutch, French (Canada), Lithuanian, Portuguese (Brazil), Polish and Korean.
