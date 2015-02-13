@@ -1118,3 +1118,7 @@ msgstr ""
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
 msgstr ""
+
+msgctxt "#42262"
+msgid "Overlay"
+msgstr ""
