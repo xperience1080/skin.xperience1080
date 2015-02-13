@@ -138,10 +138,9 @@
                             <onclick>noop</onclick>
                         </item>
                         <item id="37">
-                            <description>Live tv Settings</description>
-                            <label>$LOCALIZE[41220]</label>
+                            <description>Advanced Settings</description>
+                            <label>$LOCALIZE[41222]</label>
                             <onclick>noop</onclick>
-                            <visible>System.GetBool(pvrmanager.enabled)</visible>
                         </item>
                         <item id="38">
                             <description>Add-on Settings</description>
@@ -186,20 +185,13 @@
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
                 </control>
-                <!-- =============== -->    
+                <!-- ================ -->    
                 <!-- General Settings -->
-                <!-- =============== -->
+                <!-- ================ -->
                 <control type="grouplist" id="5">
                     <visible>Container(30).HasFocus(31)</visible>
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
-                    <control type="radiobutton" id="1001">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(KioskMode)</selected>
-                        <onclick>Skin.ToggleSetting(KioskMode)</onclick>
-                        <label>$LOCALIZE[41101]</label>
-                    </control>
                     <control type="radiobutton" id="1002">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -230,28 +222,6 @@
                         <enable>!Skin.HasSetting(KioskMode)</enable>
                         <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1006)">Conditional</animation>
                     </control>
-                    <control type="radiobutton" id="1008">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(StartupPlaylist)</selected>
-                        <onclick>Skin.ToggleSetting(StartupPlaylist)</onclick>
-                        <label>$LOCALIZE[21398]</label>
-                    </control>
-                    <control type="button" id="1009">
-                        <width>1210</width>
-                        <label>- $LOCALIZE[559]:</label>
-                        <label2>[COLOR=SelectedBlue]$INFO[Skin.String(StartupPlaylist.Path)][/COLOR]</label2>
-                        <include>SettingsCategoryDefaultButtonVars</include>
-                        <onclick>Skin.SetFile(StartupPlaylist.Path,.m3u|.xsp,special://profile/playlists/music/)</onclick>
-                        <enable>Skin.HasSetting(StartupPlaylist)</enable>
-                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1009)">Conditional</animation>
-                    </control>
-					<control type="button" id="10091">
-                        <width>1210</width>
-						<include>SettingsCategoryReloadSkin</include>
-                        <onclick>ReloadSkin</onclick>
-                        <label>$LOCALIZE[41352]</label>
-                    </control>	
                     <control type="group" id="1007">
                         <description>Fake spin control</description>
                         <width>1210</width>
@@ -280,8 +250,8 @@
                             <height>60</height>
                             <onleft>10072</onleft>
                             <onright>10072</onright>
-                            <onup>10091</onup>
-                            <ondown>1001</ondown>
+                            <onup>1006</onup>
+                            <ondown>1002</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
                             <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Top)</onclick>
@@ -603,7 +573,15 @@
                         <label2 fallback="US">[COLOR=SelectedBlue]$VAR[MovieMPAALangLabel][/COLOR]</label2>
                         <onclick>ActivateWindow(3006)</onclick>
                     </control>
-                </control>
+				    <control type="radiobutton" id="10001">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(EPGGenreColors.Enabled)</selected>
+                        <onclick>Skin.ToggleSetting(EPGGenreColors.Enabled)</onclick>
+                        <label>$LOCALIZE[41221]</label>
+						<visible>System.GetBool(pvrmanager.enabled)</visible>
+                    </control>
+                 </control>
                 
                 <!-- ============= --> 
                 <!-- OSD Settings  -->
@@ -658,7 +636,7 @@
 						<include>SettingsCategoryRadioButtonVars</include>
 						<selected>Skin.HasSetting(OSD.HideFileStreamPath)</selected>
 						<onclick>Skin.ToggleSetting(OSD.HideFileStreamPath)</onclick>
-						<label>$LOCALIZE[131] $LOCALIZE[573] ($LOCALIZE[20331]/$LOCALIZE[33002] $LOCALIZE[456])</label>                        
+						<label>$LOCALIZE[41104]</label>                        
                     </control>				
                 </control>
                 
@@ -760,7 +738,7 @@
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
                         <include>SettingsCategoryDefaultButtonVars</include>
-                        <label>$LOCALIZE[20141] $LOCALIZE[636] $LOCALIZE[42262]</label>
+                        <label>$LOCALIZE[42262]</label>
                         <onclick>ClearProperty(CustomDialogType)</onclick>
                         <onclick>ClearProperty(CustomDialog)</onclick>
                         <onclick>SetProperty(Dialog,$LOCALIZE[42262])</onclick>
@@ -771,14 +749,14 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
-                        <label>$LOCALIZE[131] $LOCALIZE[552] &amp; $LOCALIZE[555]</label>
+                        <label>$LOCALIZE[42235]</label>
                     </control>										
 					<control type="radiobutton" id="60012">
 						<width>1210</width>
 						<include>SettingsCategoryRadioButtonVars</include>
 						<selected>Skin.HasSetting(Guide.HideWeather)</selected>
 						<onclick>Skin.ToggleSetting(Guide.HideWeather)</onclick>
-						<label>$LOCALIZE[131] $LOCALIZE[400]</label>
+						<label>$LOCALIZE[42236]</label>
 					</control>	
                     <control type="radiobutton" id="6002">
                         <width>1210</width>
@@ -869,22 +847,45 @@
                     </control>
                 </control>
                 
-                <!-- ================ -->    
-                <!-- Live tv Settings -->
-                <!-- ================ -->
-                <control type="grouplist" id="5">
+                <!-- ================= -->    
+                <!-- Advanced Settings -->
+                <!-- ================= -->
+				                <control type="grouplist" id="5">
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
                     <visible>Container(30).HasFocus(37)</visible>
-                    <control type="radiobutton" id="10001">
+                             <control type="radiobutton" id="1001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(EPGGenreColors.Enabled)</selected>
-                        <onclick>Skin.ToggleSetting(EPGGenreColors.Enabled)</onclick>
-                        <label>$LOCALIZE[41221]</label>
+                        <selected>Skin.HasSetting(KioskMode)</selected>
+                        <onclick>Skin.ToggleSetting(KioskMode)</onclick>
+                        <label>$LOCALIZE[41101]</label>
                     </control>
+					<control type="radiobutton" id="1008">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(StartupPlaylist)</selected>
+                        <onclick>Skin.ToggleSetting(StartupPlaylist)</onclick>
+                        <label>$LOCALIZE[21398]</label>
+                    </control>
+                    <control type="button" id="1009">
+                        <width>1210</width>
+                        <label>- $LOCALIZE[559]:</label>
+                        <label2>[COLOR=SelectedBlue]$INFO[Skin.String(StartupPlaylist.Path)][/COLOR]</label2>
+                        <include>SettingsCategoryDefaultButtonVars</include>
+                        <onclick>Skin.SetFile(StartupPlaylist.Path,.m3u|.xsp,special://profile/playlists/music/)</onclick>
+                        <enable>Skin.HasSetting(StartupPlaylist)</enable>
+                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1009)">Conditional</animation>
+                    </control>
+					<control type="button" id="10091">
+                        <width>1210</width>
+						<include>SettingsCategoryReloadSkin</include>
+                        <onclick>ReloadSkin</onclick>
+                        <label>$LOCALIZE[41352]</label>
+                    </control>	
                 </control>
-                
+
+                      
                 <!-- =============== -->    
                 <!-- Add-on Settings -->
                 <!-- =============== -->

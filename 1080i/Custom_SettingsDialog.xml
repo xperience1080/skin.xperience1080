@@ -96,14 +96,14 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>Skin.HasSetting(HomeHomeTiles)</selected>
                     <onclick>Skin.ToggleSetting(HomeHomeTiles)</onclick>
-                    <label>$LOCALIZE[636] $LOCALIZE[41175] ($LOCALIZE[42259])</label>
+                    <label>$LOCALIZE[42238]</label>
                 </control>				
                 <control type="radiobutton" id="2202">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>Skin.HasSetting(HomeMoviesTiles)</selected>
                     <onclick>Skin.ToggleSetting(HomeMoviesTiles)</onclick>
-                    <label>$LOCALIZE[636] $LOCALIZE[41157] ($LOCALIZE[762])</label>
+                    <label>$LOCALIZE[42239]</label>
                     <enable>!Skin.HasSetting(HomeMovies)</enable>
                 </control>
                 <control type="radiobutton" id="2203">
@@ -111,7 +111,7 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>Skin.HasSetting(HomeTVShowsTiles)</selected>
                     <onclick>Skin.ToggleSetting(HomeTVShowsTiles)</onclick>
-                    <label>$LOCALIZE[636] $LOCALIZE[41158] ($LOCALIZE[13341])</label>
+                    <label>$LOCALIZE[42240]</label>
                     <enable>!Skin.HasSetting(HomeTVShows)</enable>
                 </control>
                 <control type="radiobutton" id="2204">
@@ -119,7 +119,7 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>Skin.HasSetting(HomeMusicTiles)</selected>
                     <onclick>Skin.ToggleSetting(HomeMusicTiles)</onclick>
-                    <label>$LOCALIZE[636] $LOCALIZE[41161] ($LOCALIZE[13342])</label>
+                    <label>$LOCALIZE[42241]</label>
                     <enable>!Skin.HasSetting(HomeMusic)</enable>
                 </control>
             </control>

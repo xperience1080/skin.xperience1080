@@ -109,7 +109,7 @@
                     <content>
                         <item id="31">
                             <description>Login Options</description>
-                            <label>$LOCALIZE[593] $LOCALIZE[33063]</label>
+                            <label>$LOCALIZE[42242]</label>
                             <onclick>noop</onclick>
                         </item>
                     </content>
