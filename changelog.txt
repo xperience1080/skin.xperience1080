@@ -1,3 +1,10 @@
+[B]3.45.38-alpha2[/B]
+• Re-ordering of Skin Settings area.
+• Multiple new strings.
+• Changed various files to allow correct ordering for non-EN.
+• Added Advanced area to settings, moved Kiosk, Reload and other options there.
+• If no issues found, bump to beta and then to repository.
+
 [B]3.45.31-alpha[/B]
 • Added option to Enable/Disable path/stream names. This will also 'bump' and enlarge the area for the Plot.
 • Removed outdated Subtitle option in Skin Settings.
