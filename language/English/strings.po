@@ -36,7 +36,9 @@ msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
 msgstr ""
 
-#empty string with id 41104
+msgctxt "#41104"
+msgid "Display Paths for Files and Streams"
+msgstr ""
 
 msgctxt "#41105"
 msgid "Animate Artist Slideshow"
@@ -76,7 +78,7 @@ msgstr ""
 #Home
 
 msgctxt "#41130"
-msgid "Home"
+msgid "Home Screen"
 msgstr ""
 
 msgctxt "#41131"
@@ -250,8 +252,9 @@ msgctxt "#41175"
 msgid "Home Tile"
 msgstr ""
 
-#empty strings from id 41176 to 41189
-#Views
+msgctxt "#41176"
+msgid "Playback"
+msgstr ""
 
 msgctxt "#41190"
 msgid "Views"
@@ -296,10 +299,14 @@ msgid "TV"
 msgstr ""
 
 msgctxt "#41221"
-msgid "Enable Genre Colours in the EPG"
+msgid "Enable Genre Colours in the TV EPG"
 msgstr ""
 
-#empty strings from id 41222 to 41239
+msgctxt "#41222"
+msgid "Advanced"
+msgstr ""
+
+#empty strings from id 41223 to 41239
 #OSD
 
 msgctxt "#41240"
@@ -622,7 +629,7 @@ msgid "Kodi Version"
 msgstr ""
 
 msgctxt "#41460"
-msgid "Guide"
+msgid "Framework"
 msgstr ""
 
 #empty strings from id 41461 to 41503
@@ -758,7 +765,7 @@ msgid "10 Day Forecast"
 msgstr ""
 
 msgctxt "#41696"
-msgid "Hourly Forecast"
+msgid "Today in Detail"
 msgstr ""
 
 #empty strings from id 41697 to 41715
@@ -1064,7 +1071,40 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr ""
 
-#empty strings from id 42235 to 42249
+msgctxt "#42235"
+msgid "Display Date & Time"
+msgstr ""
+
+msgctxt "#42236"
+msgid "Display Weather"
+msgstr ""
+
+msgctxt "#42237"
+msgid "No Media Source available"
+msgstr ""
+
+msgctxt "#42238"
+msgid "Home Tiles (Red)"
+msgstr ""
+
+msgctxt "#42239"
+msgid "Movie Tiles (Blue)"
+msgstr ""
+
+msgctxt "#42240"
+msgid "TV Show Tiles (Green)"
+msgstr ""
+
+msgctxt "#42241"
+msgid "Music Tiles (Orange)"
+msgstr ""
+
+msgctxt "#42242"
+msgid "All Options"
+msgstr ""
+
+
+#empty strings from id 42237 to 42249
 #Media types
 #From 42250 to 42259
 
@@ -1120,5 +1160,5 @@ msgid "Display Navigation Arrow"
 msgstr ""
 
 msgctxt "#42262"
-msgid "Overlay"
+msgid "Set Custom Overlay"
 msgstr ""
