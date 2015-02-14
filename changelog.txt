@@ -1,3 +1,9 @@
+[B]3.45.39[/B]
+• Adds 3D UI support in OSD.
+• New textures for above.
+• Corrects dialogue backgrounds for Select and other areas (default only)
+• Corrects alignment for Music Viz. Prov.
+
 [B]3.45.38-alpha2[/B]
 • Re-ordering of Skin Settings area.
 • Multiple new strings.
