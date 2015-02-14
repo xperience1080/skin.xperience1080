@@ -39,7 +39,7 @@
                 <posy>989</posy>
                 <control type="button" id="11">
                     <description>Audio Settings</description>
-                    <posx>385</posx>
+                    <posx>352</posx>
                     <height>100</height>
                     <width>100</width>
                     <texturefocus>osd/fullscreen/buttons/audio-settings-fo.png</texturefocus>
@@ -52,7 +52,7 @@
                 </control>
                 <control type="button" id="12">
                     <description>Video Settings</description>
-                    <posx>460</posx>
+                    <posx>427</posx>
                     <height>100</height>
                     <width>100</width>
                     <texturefocus>osd/fullscreen/buttons/video-settings-fo.png</texturefocus>
@@ -65,7 +65,7 @@
                 </control>
                 <control type="togglebutton" id="7">
                     <description>Subtitles</description>
-                    <posx>535</posx>
+                    <posx>502</posx>
                     <height>100</height>
                     <width>100</width>
                     <texturefocus>osd/fullscreen/buttons/subtitles-fo.png</texturefocus>
@@ -80,7 +80,7 @@
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
                 </control>
                 <control type="togglebutton" id="7">
-    				<posx>535</posx>
+    				<posx>502</posx>
     				<height>100</height>
     				<width>100</width>
     				<texturefocus>osd/fullscreen/buttons/record-off-fo.png</texturefocus>
@@ -99,7 +99,7 @@
     			</control>
                 <control type="button" id="1">
                     <description>Skip Back</description>
-                    <posx>690</posx>
+                    <posx>652</posx>
                     <height>100</height>
                     <width>100</width>
                     <texturefocus>osd/fullscreen/buttons/previous-fo.png</texturefocus>
@@ -113,7 +113,7 @@
                 </control>
                 <control type="button" id="1">
                     <description>Previous</description>
-                    <posx>690</posx>
+                    <posx>652</posx>
                     <height>100</height>
                     <width>100</width>
                     <texturefocus>osd/fullscreen/buttons/up-fo.png</texturefocus>
@@ -127,7 +127,7 @@
                 </control>
                 <control type="button" id="13">
                     <description>Next</description>
-                    <posx>780</posx>
+                    <posx>742</posx>
                     <height>100</height>
                     <width>100</width>
                     <texturefocus>osd/fullscreen/buttons/down-fo.png</texturefocus>
@@ -143,7 +143,7 @@
                     <animation effect="slide" end="90" time="0" condition="VideoPlayer.Content(LiveTV)">Conditional</animation>
                     <control type="togglebutton" id="2">
                         <description>Rewind</description>
-                        <posx>780</posx>
+                        <posx>742</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/rewind-fo.png</texturefocus>
@@ -162,7 +162,7 @@
                     </control>
                     <control type="togglebutton" id="3">
                         <description>Play / Pause</description>
-                        <posx>870</posx>
+                        <posx>832</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/pause-fo.png</texturefocus>
@@ -180,7 +180,7 @@
                     </control>
                     <control type="button" id="4">
                         <description>stop</description>
-                        <posx>960</posx>
+                        <posx>922</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/stop-fo.png</texturefocus>
@@ -193,7 +193,7 @@
                     </control>
                     <control type="togglebutton" id="5">
                         <description>Forward</description>
-                        <posx>1050</posx>
+                        <posx>1012</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/fast-forward-fo.png</texturefocus>
@@ -211,7 +211,7 @@
                     </control>
                     <control type="button" id="6">
                         <description>Skip Forward</description>
-                        <posx>1140</posx>
+                        <posx>1102</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/next-fo.png</texturefocus>
@@ -220,30 +220,45 @@
                         <onup>Close</onup>
                         <ondown>Close</ondown>
                         <onleft>5</onleft>
-                        <onright>10</onright>
+                        <onright>14</onright>
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!VideoPlayer.Content(LiveTV)</visible>
+                    <control type="button" id="14">
+                        <description>3D Dialog Trigger</description>
+                        <posx>1248</posx>
+                        <height>100</height>
+                        <width>100</width>
+                        <texturefocus>osd/fullscreen/buttons/3d-fo.png</texturefocus>
+                        <texturenofocus>osd/fullscreen/buttons/3d-nofo.png</texturenofocus>
+                        <onclick>StereoMode</onclick>
+                        <enable>VideoPlayer.IsStereoscopic</enable>
+                        <onleft>6</onleft>
+                        <onright>10</onright>
+                        <onup>Close</onup>
+                        <ondown>Close</ondown>
+						<animation effect="fade" start="100" end="50" time="10" tween="sine" easing="inout" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
+                    </control>					
                     <control type="button" id="10">
                         <description>DVD Menu</description>
-                        <posx>1285</posx>
+                        <posx>1323</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/dvd-fo.png</texturefocus>
                         <texturenofocus>osd/fullscreen/buttons/dvd-nofo.png</texturenofocus>
                         <onclick>PlayerControl(ShowVideoMenu)</onclick>
                         <enable>VideoPlayer.HasMenu</enable>
-                        <onleft>6</onleft>
+                        <onleft>14</onleft>
                         <onright>8</onright>
                         <onup>Close</onup>
                         <ondown>Close</ondown>
                         <animation effect="fade" start="100" end="50" time="150" tween="sine" easing="inout" condition="!VideoPlayer.HasMenu">Conditional</animation>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
                     </control>
                     <control type="button" id="8">
                         <description>Info</description>
-                        <posx>1360</posx>
+                        <posx>1398</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/info-fo.png</texturefocus>
@@ -255,11 +270,11 @@
                         <onup>Close</onup>
                         <ondown>Close</ondown>
                         <animation effect="fade" start="100" end="50" time="10" tween="sine" easing="inout" condition="Player.ShowInfo">Conditional</animation>
-
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
                     </control>
                     <control type="button" id="9">
                         <description>Bookmarks</description>
-                        <posx>1435</posx>
+                        <posx>1473</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/bookmarks-fo.png</texturefocus>
@@ -269,26 +284,27 @@
                         <ondown>Close</ondown>
                         <onleft>8</onleft>
                         <onright>11</onright>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
                     </control>
                 </control>
                 <control type="group">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <control type="button" id="10">
                         <description>Channels</description>
-                        <posx>1285</posx>
+                        <posx>1323</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/channel-fo.png</texturefocus>
                         <texturenofocus>osd/fullscreen/buttons/channel-nofo.png</texturenofocus>
                         <onclick>ActivateWindow(PVROSDChannels)</onclick>
-                        <onleft>6</onleft>
+                        <onleft>14</onleft>
                         <onright>8</onright>
                         <onup>Close</onup>
                         <ondown>Close</ondown>
                     </control>
                     <control type="button" id="8">
                         <description>Channel EPG</description>
-                        <posx>1360</posx>
+                        <posx>1398</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/epg-fo.png</texturefocus>
@@ -301,7 +317,7 @@
                     </control>
                     <control type="button" id="9">
                         <description>Teletext</description>
-                        <posx>1435</posx>
+                        <posx>1473</posx>
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/text-fo.png</texturefocus>
