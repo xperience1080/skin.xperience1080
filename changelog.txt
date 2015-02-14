@@ -1,3 +1,6 @@
+[B]3.45.39-alpha2[/B]
+• *Should* correct 3D menu showing on Audio.
+
 [B]3.45.39[/B]
 • Adds 3D UI support in OSD.
 • New textures for above.
