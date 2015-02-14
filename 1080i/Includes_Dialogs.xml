@@ -1205,13 +1205,13 @@
                     <bordersize>10</bordersize>
                 </control>
                 <control type="button">
-                    <posx>1071</posx>
-                    <posy>684</posy>
-                    <width>430</width>
-                    <height>76</height>
+                    <posx>1040</posx>
+                    <posy>640</posy>
+                    <width>400</width>
+                    <height>100</height>
                     <label>[B]$INFO[ListItem.Label][/B]</label>
                     <label2>$INFO[Container(6).ListItem.Property(Addon.Creator)]</label2>
-                    <font>Font-Condensed-S28</font>
+                    <font>Font-Condensed-S30</font>
                     <align>left</align>
                     <aligny>center</aligny>
                     <textcolor>96FFFFFF</textcolor>
