@@ -3,13 +3,13 @@
 
     <!-- Variables -->
     <variable name="TVGuideInfoFanart">
-      <value condition="ControlGroup(9001).HasFocus(200) | stringcompare(Window(home).Property(TVGuide.MondayList),1)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
-      <value condition="ControlGroup(9001).HasFocus(201) | stringcompare(Window(home).Property(TVGuide.TuesdayList),1)">$INFO[Container(201).ListItem.Property(Fanart)]</value>
-      <value condition="ControlGroup(9001).HasFocus(202) | stringcompare(Window(home).Property(TVGuide.WednesdayList),1)">$INFO[Container(202).ListItem.Property(Fanart)]</value>
-      <value condition="ControlGroup(9001).HasFocus(203) | stringcompare(Window(home).Property(TVGuide.ThursdayList),1)">$INFO[Container(203).ListItem.Property(Fanart)]</value>
-      <value condition="ControlGroup(9001).HasFocus(204) | stringcompare(Window(home).Property(TVGuide.FridayList),1)">$INFO[Container(204).ListItem.Property(Fanart)]</value>
-      <value condition="ControlGroup(9001).HasFocus(205) | stringcompare(Window(home).Property(TVGuide.SaturdayList),1)">$INFO[Container(205).ListItem.Property(Fanart)]</value>
-      <value condition="ControlGroup(9001).HasFocus(206) | stringcompare(Window(home).Property(TVGuide.SundayList),1)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="!Skin.HasSetting(HideFanart) + [ControlGroup(9001).HasFocus(200) | stringcompare(Window(home).Property(TVGuide.MondayList),1)]">$INFO[Container(200).ListItem.Property(Fanart)]</value>
+        <value condition="!Skin.HasSetting(HideFanart) + [ControlGroup(9001).HasFocus(201) | stringcompare(Window(home).Property(TVGuide.TuesdayList),1)]">$INFO[Container(201).ListItem.Property(Fanart)]</value>
+        <value condition="!Skin.HasSetting(HideFanart) + [ControlGroup(9001).HasFocus(202) | stringcompare(Window(home).Property(TVGuide.WednesdayList),1)]">$INFO[Container(202).ListItem.Property(Fanart)]</value>
+        <value condition="!Skin.HasSetting(HideFanart) + [ControlGroup(9001).HasFocus(203) | stringcompare(Window(home).Property(TVGuide.ThursdayList),1)]">$INFO[Container(203).ListItem.Property(Fanart)]</value>
+        <value condition="!Skin.HasSetting(HideFanart) + [ControlGroup(9001).HasFocus(204) | stringcompare(Window(home).Property(TVGuide.FridayList),1)]">$INFO[Container(204).ListItem.Property(Fanart)]</value>
+        <value condition="!Skin.HasSetting(HideFanart) + [ControlGroup(9001).HasFocus(205) | stringcompare(Window(home).Property(TVGuide.SaturdayList),1)]">$INFO[Container(205).ListItem.Property(Fanart)]</value>
+        <value condition="!Skin.HasSetting(HideFanart) + [ControlGroup(9001).HasFocus(206) | stringcompare(Window(home).Property(TVGuide.SundayList),1)]">$INFO[Container(206).ListItem.Property(Fanart)]</value>
     </variable>
     
     <variable name="TVGuideNextTitle0">
