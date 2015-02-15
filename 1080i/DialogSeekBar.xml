@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>23</defaultcontrol>
-    <visible>Window.IsActive(fullscreenvideo) + [Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsVisible(fullscreeninfo)] + !Window.IsVisible(sliderdialog) + ![!Window.IsActive(videoosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrosdguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
+    <visible>[Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)] + [Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsVisible(fullscreeninfo)] + !Window.IsVisible(sliderdialog) + ![!Window.IsActive(videoosd) + !Window.IsActive(musicosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrosdguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
     <controls>
         <include>OSDWeatherClock</include>
         <include>OSDChapterInfo</include>
@@ -25,8 +25,8 @@
             <control type="group">
                 <visible>!Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
                 <visible>!Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)</visible>
-                <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + !Window.IsActive(videoosd)" easing="inout" effect="slide" end="0,-275" start="0,0" time="300" tween="cubic">Conditional</animation>
-                <animation condition="Window.IsActive(videoosd) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]" easing="inout" effect="slide" end="0,-70" start="0,0" time="300" tween="cubic">Conditional</animation>
+                <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd)]" easing="inout" effect="slide" end="0,-275" start="0,0" time="300" tween="cubic">Conditional</animation>
+                <animation condition="[Window.IsActive(videoosd) | Window.IsActive(musicosd)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]" easing="inout" effect="slide" end="0,-70" start="0,0" time="300" tween="cubic">Conditional</animation>
                 <control type="image">
                     <posx>0</posx>
                     <posy>600</posy>
@@ -35,9 +35,9 @@
                     <texture border="1,401,1,45">osd/fullscreen/osd-back-info.png</texture>
                 </control>
                 <control type="group">
-                    <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + !Window.IsActive(videoosd)" easing="inout" effect="slide" end="0,213" start="0,0" time="300" tween="cubic">Conditional</animation>
-                    <animation condition="Window.IsActive(videoosd)" easing="inout" effect="slide" end="0,70" start="0,0" time="300" tween="cubic">Conditional</animation>
-                    <visible>IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd)</visible>
+                    <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd)]" easing="inout" effect="slide" end="0,213" start="0,0" time="300" tween="cubic">Conditional</animation>
+                    <animation condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)" easing="inout" effect="slide" end="0,70" start="0,0" time="300" tween="cubic">Conditional</animation>
+                    <visible>IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd)</visible>
                     <include>visiblehidefadeinfo</include>
                     <control type="group">
                         <posx>358</posx>
@@ -154,9 +154,171 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + !Window.IsActive(videoosd)</visible>
+                    <visible>Window.IsActive(visualisation) + [Player.ShowInfo | Player.Paused] + !Window.IsActive(musicosd)</visible>
                     <animation reversible="false" type="Visible">
-                        <effect delay="150" easing="inout" end="100" start="0" time="300" tween="sine" type="fade"/>
+                        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="inout" delay="150" />
+                    </animation>
+                    <animation type="Hidden" reversible="false">
+                        <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
+                    </animation>
+                    <control type="group">
+                        <posy>117</posy>
+                        <control type="image">
+                            <posx>1692</posx>
+                            <posy>885</posy>
+                            <width>140</width>
+                            <height>100</height>
+                            <colordiffuse>bbwhite</colordiffuse>
+                            <texture fallback="flags/audioosd/na.png">$INFO[MusicPlayer.Codec,flags/audioosd/,.png]</texture>
+                        </control>
+                        <control type="label">
+                            <posx>360</posx>
+                            <posy>818</posy>
+                            <width>1360</width>
+                            <height>56</height>
+                            <label>[UPPERCASE]$LOCALIZE[13350][/UPPERCASE]</label>
+                            <textcolor>99FFFFFF</textcolor>
+                            <font>Font-Condensed-S50</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <scroll>false</scroll>
+                            <visible>!Pvr.IsPlayingRadio + !Player.Paused</visible>
+                        </control>
+                        <control type="label">
+                            <posx>360</posx>
+                            <posy>818</posy>
+                            <width>1360</width>
+                            <height>56</height>
+                            <label>[UPPERCASE]$LOCALIZE[112][/UPPERCASE]</label>
+                            <textcolor>99FFFFFF</textcolor>
+                            <font>Font-Condensed-S50</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <scroll>false</scroll>
+                            <visible>!Pvr.IsPlayingRadio + Player.Paused</visible>
+                        </control>
+                        <control type="grouplist">
+                            <posx>360</posx>
+                            <posy>779</posy>
+                            <width>1300</width>
+                            <height>100</height>
+                            <orientation>horizontal</orientation>
+                            <itemgap>0</itemgap>
+                            <visible>Pvr.IsPlayingRadio</visible>
+                            <usecontrolcoords>true</usecontrolcoords>
+                            <control type="label">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width min="0" max="400">auto</width>
+                                <height>100</height>
+                                <label>[B]$INFO[MusicPlayer.ChannelNumberLabel][/B]</label>
+                                <textcolor>99FFFFFF</textcolor>
+                                <font>Font-Condensed-S100</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <scroll>false</scroll>
+                            </control>
+                            <control type="label">
+                                <posx>0</posx>
+                                <posy>17</posy>
+                                <width>900</width>
+                                <height>100</height>
+                                <label>[UPPERCASE]$INFO[MusicPlayer.ChannelName, ,][/UPPERCASE]</label>
+                                <textcolor>99FFFFFF</textcolor>
+                                <font>Font-Condensed-S50</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <scroll>false</scroll>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <posy>825</posy>
+                            <control type="group">
+                                <visible>Skin.HasSetting(CDArt.Enabled)</visible>
+                                <control type="image">
+                                    <posx>100</posx>
+                                    <posy>-10</posy>
+                                    <width>236</width>
+                                    <height>236</height>
+                                    <texture>osd/fullscreen/cd.png</texture>
+                                    <animation effect="rotate" center="auto" start="360" end="0" time="2500" loop="true" condition="!Player.Paused">Conditional</animation>
+                                </control>
+                                <control type="image">
+                                    <posx>108</posx>
+                                    <posy>-2</posy>
+                                    <width>220</width>
+                                    <height>220</height>
+                                    <texture diffuse="osd/fullscreen/cd-diffuse.png" background="true">$INFO[Player.FolderPath,,cdart.png]</texture>
+                                    <animation effect="rotate" center="auto" start="360" end="0" time="2500" loop="true" condition="!Player.Paused">Conditional</animation>
+                                </control>
+                            </control>             
+                            <control type="image">
+                                <posx>80</posx>
+                                <posy>27</posy>
+                                <width>276</width>
+                                <height>276</height>
+                                <texture background="true" fallback="views/fallbacks/DefaultAudio.png/square-small.png">$INFO[Player.Art(thumb)]</texture>
+                                <bordertexture border="30">osd/fullscreen/cover-shadow.png</bordertexture>
+                                <bordersize>20</bordersize>
+                                <aspectratio>scale</aspectratio>
+                            </control>
+                            <control type="button">
+                                <posx>360</posx>
+                                <posy>83</posy>
+                                <width>1320</width>
+                                <height>56</height>
+                                <label>$INFO[MusicPlayer.PlaylistPosition,,. ]$INFO[MusicPlayer.Title]</label>
+                                <label2>$INFO[MusicPlayer.Rating,★ ,.0]</label2>
+                                <disabledcolor>bbwhite</disabledcolor>
+                                <font>Font-Condensed-S50-B</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <enable>false</enable>
+                            </control>
+                            <control type="label">
+                                <posx>360</posx>
+                                <posy>145</posy>
+                                <width>1460</width>
+                                <height>44</height>
+                                <label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, • ,]$INFO[MusicPlayer.Year, • ,]</label>
+                                <textcolor>aawhite</textcolor>
+                                <font>Font-Condensed-S36-B</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <scroll>false</scroll>
+                            </control>
+                            <control type="label">
+                                <posx>360</posx>
+                                <posy>193</posy>
+                                <width>1460</width>
+                                <height>44</height>
+                                <label>$INFO[MusicPlayer.Genre]</label>
+                                <textcolor>88FFFFFF</textcolor>
+                                <font>Font-Condensed-S36</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <scroll>false</scroll>
+                            </control>
+                            <control type="label">
+                                <posx>360</posx>
+                                <posy>241</posy>
+                                <width>1460</width>
+                                <height>44</height>
+                                <label>$INFO[MusicPlayer.Offset(1).Artist,$LOCALIZE[19031]: ,]$INFO[MusicPlayer.Offset(1).Title, - ,]</label>
+                                <textcolor>88FFFFFF</textcolor>
+                                <font>Font-Condensed-S36</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <scroll>false</scroll>
+                                <visible>MusicPlayer.HasNext</visible>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Window.IsActive(fullscreenvideo) + [Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + !Window.IsActive(videoosd)</visible>
+                    <animation type="Visible" reversible="false">
+                        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="inout" delay="150" />
                     </animation>
                     <animation reversible="false" type="Hidden">
                         <effect easing="out" end="0" start="100" time="200" tween="sine" type="fade"/>
