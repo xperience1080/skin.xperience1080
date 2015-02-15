@@ -1,3 +1,6 @@
+[B]3.45.39-alpha3[/B]
+• Corrects fanart option when disabled in Settings on TV Guide (freeman).
+
 [B]3.45.39-alpha2[/B]
 • *Should* correct 3D menu showing on Audio.
 
