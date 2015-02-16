@@ -161,7 +161,7 @@
             
             <!-- Studio / Rating -->
             <control type="group">
-                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)">
+                <animation type="Conditional" condition="[Player.HasMedia + IsEmpty(Window(10025).Property(TvTunesIsAlive))] | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                     <effect type="zoom" start="100" end="50" center="1765,101" tween="sine" easing="inout" time="300" />
                 </animation>
