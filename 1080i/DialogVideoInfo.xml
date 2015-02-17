@@ -863,7 +863,7 @@
                             <height>36</height>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Property(TotalEpisodes), • $LOCALIZE[41311],]</label>
+                            <label>$INFO[ListItem.Property(unWatchedepisodes), • $LOCALIZE[41311],]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                             <visible>IntegerGreaterThan(ListItem.Property(unWatchedepisodes),0)</visible>
