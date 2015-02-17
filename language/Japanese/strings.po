@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "一般"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "ホーム"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "カスタム"
@@ -136,10 +132,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "画面解像度"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "ガイド"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "アドオン"
@@ -175,10 +167,6 @@ msgstr "ファンアートのパスを設定"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10日予報"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "1時間ごとの予報"
 
 msgctxt "#41716"
 msgid "Playlist Options"

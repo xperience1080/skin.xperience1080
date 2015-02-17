@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Alul"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Föképernyö"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Egyéni"
@@ -284,10 +280,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Kodi verziószáma"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "GyorsMenü"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Programok"
@@ -355,10 +347,6 @@ msgstr "Holdfázis"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 napos előrejelzés"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Előrejelzés óránként"
 
 msgctxt "#41716"
 msgid "Playlist Options"

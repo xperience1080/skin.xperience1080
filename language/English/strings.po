@@ -256,6 +256,8 @@ msgctxt "#41176"
 msgid "Playback"
 msgstr ""
 
+#empty strings from id 41177 to 41189
+
 msgctxt "#41190"
 msgid "Views"
 msgstr ""
@@ -449,7 +451,7 @@ msgstr ""
 #empty strings from id 41312 to 41313
 
 msgctxt "#41314"
-msgid "Premiered: "
+msgid "Premièred: "
 msgstr ""
 
 msgctxt "#41315"
@@ -1103,8 +1105,7 @@ msgctxt "#42242"
 msgid "All Options"
 msgstr ""
 
-
-#empty strings from id 42237 to 42249
+#empty strings from id 42243 to 42249
 #Media types
 #From 42250 to 42259
 

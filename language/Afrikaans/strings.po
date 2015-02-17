@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Algemeen"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Tuis"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Verpersoonlikte"
@@ -136,10 +132,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Resolusie"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Gids"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Byvoegsels"
@@ -175,10 +167,6 @@ msgstr "Stel Ondersteunerkuns Pad"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 Dae Voorspelling"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Uurlikse Voorspelling"
 
 msgctxt "#41716"
 msgid "Playlist Options"

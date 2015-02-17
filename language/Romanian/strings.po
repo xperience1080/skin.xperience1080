@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "General"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Acasă"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Particularizat"
@@ -124,10 +120,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Rezoluție"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Ghid"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Suplimente"
@@ -163,10 +155,6 @@ msgstr "Setează cale Fanart"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Previziune pe 10 zile"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Previziune la o oră"
 
 msgctxt "#41716"
 msgid "Playlist Options"

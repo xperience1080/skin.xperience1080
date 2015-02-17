@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "למטה"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "בית"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "מותאם אישית"
@@ -292,10 +288,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "גרסת Kodi"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "מדריך"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "תוכנות"
@@ -363,10 +355,6 @@ msgstr "מופע הירח"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "תחזית ל־10 יום"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "תחזית לפי שעה"
 
 msgctxt "#41716"
 msgid "Playlist Options"

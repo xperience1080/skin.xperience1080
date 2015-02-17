@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Умумӣ"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Асосӣ"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Иловагӣ"
@@ -116,10 +112,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Возеҳӣ"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Барнома"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Барномаҳои иловагӣ"
@@ -155,10 +147,6 @@ msgstr "Интихоби масири маҳорати хӯшӣ"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Пешгӯии обу ҳаво барои 10 рӯз"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Пешгӯии обу ҳаво барои як соат"
 
 msgctxt "#41716"
 msgid "Playlist Options"

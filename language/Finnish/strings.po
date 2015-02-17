@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Alas"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Koti"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Mukautus"
@@ -248,10 +244,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Näytön resoluutio"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Ohjelmaopas"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Ohjelmat"
@@ -295,10 +287,6 @@ msgstr "Aseta fanitaiteen polku"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 paivän ennuste"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Tunnittainen ennuste"
 
 msgctxt "#41716"
 msgid "Playlist Options"

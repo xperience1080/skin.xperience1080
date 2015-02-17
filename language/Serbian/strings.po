@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Опште"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Početna strana"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Prilagođeno"
@@ -43,6 +39,10 @@ msgstr "Putanja"
 msgctxt "#41151"
 msgid "Custom"
 msgstr "Prilagođeno"
+
+msgctxt "#41220"
+msgid "TV"
+msgstr "TV"
 
 msgctxt "#41250"
 msgid "Backgrounds"
@@ -88,6 +88,10 @@ msgctxt "#41325"
 msgid "Review"
 msgstr "Преглед"
 
+msgctxt "#41405"
+msgid "Login"
+msgstr "Prijava"
+
 msgctxt "#41443"
 msgid "Now Playing"
 msgstr "Trenutno se reprodukuje"
@@ -112,10 +116,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Резолуција"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Vodič"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Dodatni prog."
@@ -131,6 +131,10 @@ msgstr "Početna strana"
 msgctxt "#41600"
 msgid "Options"
 msgstr "Opcije"
+
+msgctxt "#41620"
+msgid "View Options"
+msgstr "Opcije prikaza"
 
 msgctxt "#41689"
 msgid "Location"
@@ -176,9 +180,17 @@ msgctxt "#42001"
 msgid "Cancel"
 msgstr "Откажи"
 
+msgctxt "#42010"
+msgid "View Options"
+msgstr "Opcije prikaza"
+
 msgctxt "#42130"
 msgid "Category"
 msgstr "Kategorija"
+
+msgctxt "#42181"
+msgid "Add Group"
+msgstr "Dodaj grupu"
 
 msgctxt "#42182"
 msgid "Rename Group"
@@ -187,6 +199,10 @@ msgstr "Преименуј групу"
 msgctxt "#42183"
 msgid "Delete Group"
 msgstr "Обриши групу"
+
+msgctxt "#42184"
+msgid "Channel Options"
+msgstr "Opcije kanala"
 
 msgctxt "#42185"
 msgid "Misc Options"

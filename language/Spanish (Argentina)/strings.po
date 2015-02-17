@@ -24,10 +24,6 @@ msgctxt "#41107"
 msgid "Enable CDArt"
 msgstr "Habilitar CDArt"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Inicio"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Personalizado"
@@ -216,10 +212,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Resolución"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guía"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Aplicaciones"
@@ -259,10 +251,6 @@ msgstr "Selecciona ruta del fanart"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Pronóstico de 10 días"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Pronóstico por hora"
 
 msgctxt "#41716"
 msgid "Playlist Options"

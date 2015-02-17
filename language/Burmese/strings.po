@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "ယေဘုယျ"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "ပင်မ"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "စိတ်ကြိုက်"
@@ -123,10 +119,6 @@ msgstr "Fanart ကိုဖျောက်ထားမည်"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "၁၀ ရက် ကြိုတင်ခန့်မှန်းခြင်း"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "နာရီနှင့်အမျှ ခန့်မှန်းခြင်း"
 
 msgctxt "#41813"
 msgid "Episodes"

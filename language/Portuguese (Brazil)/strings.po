@@ -22,7 +22,7 @@ msgstr "Geral"
 
 msgctxt "#41101"
 msgid "Enable Kiosk Mode"
-msgstr "Ativar modo quiosque"
+msgstr "Modo quiosque"
 
 msgctxt "#41102"
 msgid "Display Now Playing Video in Background"
@@ -64,10 +64,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Fundo"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Início"
-
 msgctxt "#41131"
 msgid "Manage Categories"
 msgstr "Gerenciar categorias"
@@ -78,7 +74,7 @@ msgstr "Exibir avatar do perfil"
 
 msgctxt "#41135"
 msgid "Display Sub-menu Arrow"
-msgstr "Exibir seta em submenus"
+msgstr "Exibir setas nos submenus"
 
 msgctxt "#41136"
 msgid "Manage custom Home Items"
@@ -230,7 +226,7 @@ msgstr "Séries de TV do Momento"
 
 msgctxt "#41175"
 msgid "Home Tile"
-msgstr "Painel de Ínicio"
+msgstr "Painel de Início"
 
 msgctxt "#41190"
 msgid "Views"
@@ -250,11 +246,11 @@ msgstr "Seleciona o país da classificação indicativa para o filme"
 
 msgctxt "#41200"
 msgid "Show Power Button (does not affect home screen)"
-msgstr "Exibir botão Desligar em todas as telas"
+msgstr "Exibir botão \"Desligar\" em todas as telas"
 
 msgctxt "#41201"
 msgid "Show Options Button"
-msgstr "Exibir botão Configurações"
+msgstr "Exibir botão \"Opções\""
 
 msgctxt "#41202"
 msgid "Play Trailer on opening Film Information"
@@ -267,10 +263,6 @@ msgstr "Reproduzir trailer minimizado"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
-
-msgctxt "#41221"
-msgid "Enable Genre Colours in the EPG"
-msgstr "Usar gêneros coloridos no guia de programação"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -306,19 +298,19 @@ msgstr "Exibir avatar do perfil"
 
 msgctxt "#41272"
 msgid "Replace Pictures with Custom Menu Item in QuickNav"
-msgstr "Substituir Imagens por um item personalizado na Nav. Rápida"
+msgstr "Substituir \"Imagens\" por um item personalizado na Nav. Rápida"
 
 msgctxt "#41273"
 msgid "Replace Trailer with Custom Menu Item in QuickNav"
-msgstr "Substituir Trailer por um item personalizado na Nav. Rápida"
+msgstr "Substituir \"Trailer\" por um item personalizado na Nav. Rápida"
 
 msgctxt "#41274"
 msgid "Replace New Movies with Custom Menu Item in QuickNav"
-msgstr "Substituir Novos Filmes por um item personalizado na Nav. Rápida"
+msgstr "Substituir \"Novos Filmes\" por um item personalizado na Nav. Rápida"
 
 msgctxt "#41275"
 msgid "Replace New TV Shows with Custom Menu Item in QuickNav"
-msgstr "Substituir Novas Séries de TV por um item personalizado na Nav. Rápida"
+msgstr "Substituir \"Novas Séries de TV\" por um item personalizado na Nav. Rápida"
 
 msgctxt "#41276"
 msgid "Choose Custom Menu Item"
@@ -540,10 +532,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Versão do Kodi"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guia"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Aplicativos"
@@ -651,10 +639,6 @@ msgstr "Clima atual"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Previsão de 10 Dias"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Previsão por hora"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -943,3 +927,7 @@ msgstr "Vermelho"
 msgctxt "#42260"
 msgid "Auto Login"
 msgstr "Auto Login"
+
+msgctxt "#42261"
+msgid "Display Navigation Arrow"
+msgstr "Exibir setas de navegação na tela inicial"

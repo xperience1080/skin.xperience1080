@@ -32,10 +32,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Bunn"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Hjem"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Egendefinert"
@@ -232,10 +228,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Oppløsning"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guide"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Utvidelser"
@@ -291,10 +283,6 @@ msgstr "Oppgi søkesti for fanart"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10-dagersvarsel"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Time for time"
 
 msgctxt "#41716"
 msgid "Playlist Options"

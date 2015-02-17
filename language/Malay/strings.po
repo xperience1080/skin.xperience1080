@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Bawah"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Mula"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Suai"
@@ -288,10 +284,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Versi Kodi"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Panduan"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Tambahan"
@@ -359,10 +351,6 @@ msgstr "Fasa Bulan"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Ramalan 10 Hari"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Ramalan Sejam"
 
 msgctxt "#41716"
 msgid "Playlist Options"

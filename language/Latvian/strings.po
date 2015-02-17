@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Vispārīgi"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Sākums"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Pielāgots"
@@ -128,10 +124,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Izšķirtspēja"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Gids"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Pielikumi"
@@ -167,10 +159,6 @@ msgstr "Iestatīt fanumākslas ceļu"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Prognoze 10 dienām"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Prognoze ik stundu"
 
 msgctxt "#41716"
 msgid "Playlist Options"

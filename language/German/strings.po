@@ -26,7 +26,7 @@ msgstr "Kiosk-Modus aktivieren"
 
 msgctxt "#41102"
 msgid "Display Now Playing Video in Background"
-msgstr "Aktuell gespieltes Video im Hintergrund anzeigen"
+msgstr "Aktuell abgespieltes Video im Hintergrund anzeigen"
 
 msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
@@ -46,11 +46,11 @@ msgstr "CDArt aktivieren"
 
 msgctxt "#41108"
 msgid "Automatically switch to music visualisation upon Play"
-msgstr "Verwechsle automatisch zur Musik Visualisation während der Wiedergabe"
+msgstr "Während der Wiedergabe automatisch zur Musik-Visualisierung wechseln"
 
 msgctxt "#41109"
 msgid "Enable Auto Scrolling for text"
-msgstr "Automatischen Textlauf aktivieren"
+msgstr "Auto-Scrolling für Text aktivieren"
 
 msgctxt "#41112"
 msgid "Invert Spin Control"
@@ -63,10 +63,6 @@ msgstr "Oben"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Unten"
-
-msgctxt "#41130"
-msgid "Home"
-msgstr "Hauptmenü"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -86,7 +82,7 @@ msgstr "Eigene Hauptmenü-Elemente verwalten"
 
 msgctxt "#41137"
 msgid "Custom"
-msgstr "Eigen"
+msgstr "Eigene"
 
 msgctxt "#41138"
 msgid "Name"
@@ -106,7 +102,7 @@ msgstr "Typ"
 
 msgctxt "#41142"
 msgid "Path"
-msgstr "Pfad"
+msgstr "Datei-Pfad"
 
 msgctxt "#41143"
 msgid "Recommended size 633x437px"
@@ -142,7 +138,7 @@ msgstr "Musik Playlist"
 
 msgctxt "#41151"
 msgid "Custom"
-msgstr "Eigen"
+msgstr "Eigene"
 
 msgctxt "#41152"
 msgid "Music Panel opens"
@@ -166,7 +162,7 @@ msgstr "Video-Kachel"
 
 msgctxt "#41158"
 msgid "TV Show Tile"
-msgstr "Serien-Kachel"
+msgstr "TV-Serien-Kachel"
 
 msgctxt "#41159"
 msgid "App Tile"
@@ -226,7 +222,7 @@ msgstr "Derzeit aktuelle Filme"
 
 msgctxt "#41174"
 msgid "Trending TV Shows"
-msgstr "Beliebte Fernsehshows"
+msgstr "Beliebte TV-Serien"
 
 msgctxt "#41175"
 msgid "Home Tile"
@@ -268,10 +264,6 @@ msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
 
-msgctxt "#41221"
-msgid "Enable Genre Colours in the EPG"
-msgstr "Genre-Farben im EPG verwenden"
-
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
 msgstr "Musik-Visualisierung aktivieren"
@@ -306,19 +298,19 @@ msgstr "Profilbild anzeigen"
 
 msgctxt "#41272"
 msgid "Replace Pictures with Custom Menu Item in QuickNav"
-msgstr "Ersetze Bilder mit eigenem Menü-Element in der \"Quick Nav\""
+msgstr "Bilder in der \"Quick Nav\" mit eigenem Menü-Element ersetzen"
 
 msgctxt "#41273"
 msgid "Replace Trailer with Custom Menu Item in QuickNav"
-msgstr "Ersetze Bilder mit eigenem Menü-Element in der \"Quick Nav\""
+msgstr "Trailer in der \"Quick Nav\" durch eigenes Menü-Element ersetzen"
 
 msgctxt "#41274"
 msgid "Replace New Movies with Custom Menu Item in QuickNav"
-msgstr "Ersetze Neue Filme mit eigenem Menü-Element in der \"Quick Nav\""
+msgstr "Neue Filme in der \"Quick Nav\" durch eigenes Menü-Element ersetzen"
 
 msgctxt "#41275"
 msgid "Replace New TV Shows with Custom Menu Item in QuickNav"
-msgstr "Ersetze Neue Serien mit eigenem Menü-Element in der \"Quick Nav\""
+msgstr "Neue TV-Serien in der \"Quick Nav\" durch eigenes Menü-Element ersetzen"
 
 msgctxt "#41276"
 msgid "Choose Custom Menu Item"
@@ -370,11 +362,11 @@ msgstr "Diskografie"
 
 msgctxt "#41305"
 msgid "Get Thumb"
-msgstr "Lade Vorschaubild"
+msgstr "Thumbnail laden"
 
 msgctxt "#41306"
 msgid "Get Fanart"
-msgstr "Lade Fanart"
+msgstr "Fanart laden"
 
 msgctxt "#41307"
 msgid "Refresh"
@@ -390,7 +382,7 @@ msgstr "Ungesehene Episoden: "
 
 msgctxt "#41314"
 msgid "Premièred: "
-msgstr "Premiere"
+msgstr "Premiere: "
 
 msgctxt "#41315"
 msgid "Play"
@@ -414,7 +406,7 @@ msgstr "Bewertung"
 
 msgctxt "#41326"
 msgid "Get Info"
-msgstr "Lade Info"
+msgstr "Info laden"
 
 msgctxt "#41327"
 msgid "Year of Release"
@@ -438,7 +430,7 @@ msgstr "Veröffentlicht"
 
 msgctxt "#41333"
 msgid "Get Theme"
-msgstr "Thema holen"
+msgstr "Titelmusik laden"
 
 msgctxt "#41351"
 msgid "Logout"
@@ -446,11 +438,11 @@ msgstr "abmelden ..."
 
 msgctxt "#41352"
 msgid "Reload Skin"
-msgstr "Skin erneut laden"
+msgstr "Skin neu laden"
 
 msgctxt "#41360"
 msgid "Master Mode Off"
-msgstr "Master Modus: Aus"
+msgstr "Master-Modus: Aus"
 
 msgctxt "#41361"
 msgid "Master Mode On"
@@ -462,7 +454,7 @@ msgstr "Endzeit: "
 
 msgctxt "#41372"
 msgid "Now Playing..."
-msgstr "Wiedergabe..."
+msgstr "Läuft gerade..."
 
 msgctxt "#41405"
 msgid "Login"
@@ -470,7 +462,7 @@ msgstr "Anmeldung"
 
 msgctxt "#41440"
 msgid "System Info"
-msgstr "System Info"
+msgstr "System-Info"
 
 msgctxt "#41441"
 msgid "QuickNav"
@@ -478,7 +470,7 @@ msgstr "QuickNav"
 
 msgctxt "#41443"
 msgid "Now Playing"
-msgstr "Aktuelle Wiedergabe"
+msgstr "Läuft gerade"
 
 msgctxt "#41444"
 msgid "Settings"
@@ -490,7 +482,7 @@ msgstr "Filme"
 
 msgctxt "#41446"
 msgid "TV Shows"
-msgstr "Serien"
+msgstr "TV-Serien"
 
 msgctxt "#41447"
 msgid "Music"
@@ -506,7 +498,7 @@ msgstr "Neue Filme"
 
 msgctxt "#41451"
 msgid "New TV Shows"
-msgstr "Neue Fernsehsendung"
+msgstr "Neue TV-Serien"
 
 msgctxt "#41452"
 msgid "No Media Playing"
@@ -534,15 +526,11 @@ msgstr "Betriebszeit"
 
 msgctxt "#41458"
 msgid "Skin Version"
-msgstr "Skin Version:"
+msgstr "Skin Version"
 
 msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Kodi Version"
-
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guide"
 
 msgctxt "#41504"
 msgid "Applications"
@@ -562,7 +550,7 @@ msgstr "Startseite"
 
 msgctxt "#41525"
 msgid "Search Kodi for"
-msgstr "Kodi durchsuchen nach"
+msgstr "Durchsuche Kodi nach"
 
 msgctxt "#41550"
 msgid "Spotlight"
@@ -570,7 +558,7 @@ msgstr "Im Rampenlicht"
 
 msgctxt "#41551"
 msgid "Ongoing TV Shows"
-msgstr "Laufende Serien"
+msgstr "Laufende TV-Serien"
 
 msgctxt "#41552"
 msgid "New Movies"
@@ -578,7 +566,7 @@ msgstr "Neue Filme"
 
 msgctxt "#41553"
 msgid "New TV Shows"
-msgstr "Neue Fernsehsendung"
+msgstr "Neue TV-Serien"
 
 msgctxt "#41554"
 msgid "New Albums"
@@ -630,11 +618,11 @@ msgstr "Ort"
 
 msgctxt "#41690"
 msgid "Hide Fanart"
-msgstr "Fankunst ausblenden"
+msgstr "Fanart ausblenden"
 
 msgctxt "#41691"
 msgid "Set Fanart Path"
-msgstr "Fankunst-Pfad festlegen"
+msgstr "Fanart-Pfad festlegen"
 
 msgctxt "#41692"
 msgid "Hide Daily Fanart"
@@ -651,10 +639,6 @@ msgstr "Aktuelles Wetter"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10-Tage-Vorhersage"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Stündliche Vorhersage"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -706,11 +690,11 @@ msgstr "Info Anzeigen"
 
 msgctxt "#42017"
 msgid "Main Options"
-msgstr "Haupt Optionen"
+msgstr "Haupt-Optionen"
 
 msgctxt "#42018"
 msgid "Display Plot"
-msgstr "Handlung Anzeigen"
+msgstr "Handlung anzeigen"
 
 msgctxt "#42019"
 msgid "Use Posters"
@@ -718,7 +702,7 @@ msgstr "Poster verwenden"
 
 msgctxt "#42020"
 msgid "Display Plot on Focus"
-msgstr "Zeige die Handlung im Fokus"
+msgstr "Handlung beim Fokussieren anzeigen"
 
 msgctxt "#42021"
 msgid "View"
@@ -738,7 +722,7 @@ msgstr "Kleine Vorschaubilder"
 
 msgctxt "#42025"
 msgid "Update Art"
-msgstr "Kunst aktualisieren"
+msgstr "Fanart aktualisieren"
 
 msgctxt "#42026"
 msgid "Use Logo"
@@ -774,7 +758,7 @@ msgstr "Lokale Add-on-Verzeichnisse aktualisieren..."
 
 msgctxt "#42160"
 msgid "TV Guide"
-msgstr "Fernsehprogramm"
+msgstr "TV-Programm"
 
 msgctxt "#42162"
 msgid "on"
@@ -798,11 +782,11 @@ msgstr "Gruppe löschen"
 
 msgctxt "#42184"
 msgid "Channel Options"
-msgstr "Kanal Optionen"
+msgstr "Kanal-Optionen"
 
 msgctxt "#42185"
 msgid "Misc Options"
-msgstr "Allgemeine Optionen"
+msgstr "Sonstige Optionen"
 
 msgctxt "#42200"
 msgid "Mouse Not Supported"
@@ -818,7 +802,7 @@ msgstr "Film bearbeiten"
 
 msgctxt "#42206"
 msgid "Edit Tv Show"
-msgstr "Serie bearbeiten"
+msgstr "TV-Serie bearbeiten"
 
 msgctxt "#42207"
 msgid "Edit Season"
@@ -834,7 +818,7 @@ msgstr "Musikvideo bearbeiten"
 
 msgctxt "#42210"
 msgid "Edit Artist"
-msgstr "Interpret bearbeiten"
+msgstr "Interpreten bearbeiten"
 
 msgctxt "#42211"
 msgid "Edit Album"
@@ -898,7 +882,7 @@ msgstr "Cover"
 
 msgctxt "#42234"
 msgid "Thumbnail List"
-msgstr "Vorschaubilderliste"
+msgstr "Thumbnail-Liste"
 
 msgctxt "#42250"
 msgid "Poster"
@@ -930,7 +914,7 @@ msgstr "Farben für Eigene Hauptmenü-Kachel verwalten"
 
 msgctxt "#42257"
 msgid "TV Shows"
-msgstr "Fernsehsendungen"
+msgstr "TV-Serien"
 
 msgctxt "#42258"
 msgid "Movies"
@@ -943,3 +927,7 @@ msgstr "Rot"
 msgctxt "#42260"
 msgid "Auto Login"
 msgstr "Automatisches Anmelden"
+
+msgctxt "#42261"
+msgid "Display Navigation Arrow"
+msgstr "Navigations-Pfeil anzeigen"

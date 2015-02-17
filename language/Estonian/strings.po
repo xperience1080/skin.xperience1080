@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Üldine"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Peamenüü"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Kohandatud"
@@ -168,10 +164,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Resolutsioon"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Telekava"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Lisad"
@@ -211,10 +203,6 @@ msgstr "Määra fännipiltide asukoht"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Kümne päeva ennustus"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Igatunnine ennustus"
 
 msgctxt "#41716"
 msgid "Playlist Options"

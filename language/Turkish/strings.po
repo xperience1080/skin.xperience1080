@@ -24,10 +24,6 @@ msgctxt "#41101"
 msgid "Enable Kiosk Mode"
 msgstr "Bilgi Noktası Modunu Etkinleştir"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Giriş"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Özel"
@@ -200,10 +196,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Çözünürlük"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Rehber"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Eklentiler"
@@ -219,6 +211,10 @@ msgstr "Giriş"
 msgctxt "#41525"
 msgid "Search Kodi for"
 msgstr "Kodi'yi ara"
+
+msgctxt "#41550"
+msgid "Spotlight"
+msgstr "Spotlight"
 
 msgctxt "#41551"
 msgid "Ongoing TV Shows"
@@ -259,10 +255,6 @@ msgstr "Fanart Yolunu Ayarla"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 Günlük Hava Tahmini"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Saatlik Hava Tahmini"
 
 msgctxt "#41716"
 msgid "Playlist Options"

@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Ġenerali"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Dħul"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Custom"

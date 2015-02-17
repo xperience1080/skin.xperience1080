@@ -24,10 +24,6 @@ msgctxt "#41101"
 msgid "Enable Kiosk Mode"
 msgstr "Omogući Kiosk način"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Doma"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Vlastito"
@@ -172,10 +168,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Razlučljivost"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Vodič"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Dodatci"
@@ -219,10 +211,6 @@ msgstr "Postavite put Fanarta"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Prognoza za 10 dana"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Prognoza za sat"
 
 msgctxt "#41716"
 msgid "Playlist Options"

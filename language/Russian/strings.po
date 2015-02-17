@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Внизу"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Главная"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Пользовательская"
@@ -284,10 +280,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Версия Kodi"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Гид"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Программы"
@@ -355,10 +347,6 @@ msgstr "Фаза Луны"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Прогноз на 10 дней"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Прогноз на каждый час"
 
 msgctxt "#41716"
 msgid "Playlist Options"

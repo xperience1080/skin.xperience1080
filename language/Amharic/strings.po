@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "ባጠቃላይ"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "ቤት "
-
 msgctxt "#41138"
 msgid "Name"
 msgstr "ስም"
@@ -96,10 +92,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Resolution"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "መመሪያ "
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "ተጨማ-ሪዎች"
@@ -127,10 +119,6 @@ msgstr "አካባቢ "
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "የ 10 ቀን ግምት "
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "የሰአት ግምት "
 
 msgctxt "#41716"
 msgid "Playlist Options"

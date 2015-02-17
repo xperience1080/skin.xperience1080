@@ -16,10 +16,6 @@ msgstr ""
 "Language: az\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Əsas menyu"
-
 msgctxt "#41138"
 msgid "Name"
 msgstr "Ad"

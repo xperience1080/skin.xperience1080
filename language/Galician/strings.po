@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Abaixo"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Inicio"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Personalizado"
@@ -284,10 +280,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Versión do Kodi"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guía"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Aplicacións"
@@ -355,10 +347,6 @@ msgstr "Fase da lúa"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Predición de 10 días"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Predición de hora en hora"
 
 msgctxt "#41716"
 msgid "Playlist Options"

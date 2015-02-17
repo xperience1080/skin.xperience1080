@@ -24,9 +24,37 @@ msgctxt "#41101"
 msgid "Enable Kiosk Mode"
 msgstr "Activer le mode kiosque"
 
+msgctxt "#41102"
+msgid "Display Now Playing Video in Background"
+msgstr "Afficher la vidéo en cours de lecture en arrière-plan"
+
+msgctxt "#41103"
+msgid "Display Artist Slideshow in Music Visualisation"
+msgstr "Afficher le diaporama des artistes dans la visualisation de la musique"
+
+msgctxt "#41105"
+msgid "Animate Artist Slideshow"
+msgstr "Animer le diaporama des artistes"
+
+msgctxt "#41106"
+msgid "Show Fanart above Visualisation"
+msgstr "Afficher le fanart au dessus de la visualisation"
+
 msgctxt "#41107"
 msgid "Enable CDArt"
-msgstr "Activer CDArt"
+msgstr "Activer le CDArt"
+
+msgctxt "#41108"
+msgid "Automatically switch to music visualisation upon Play"
+msgstr "Basculer automatiquement vers la visualisation de la musique lors de la lecture"
+
+msgctxt "#41109"
+msgid "Enable Auto Scrolling for text"
+msgstr "Activer le défilement automatique du texte"
+
+msgctxt "#41112"
+msgid "Invert Spin Control"
+msgstr "Inverser le contrôle de rotation"
 
 msgctxt "#41113"
 msgid "Top"
@@ -36,9 +64,21 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Bas"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Accueil"
+msgctxt "#41131"
+msgid "Manage Categories"
+msgstr "Gérer les catégories"
+
+msgctxt "#41134"
+msgid "Display Profile Image"
+msgstr "Afficher l'image de profil"
+
+msgctxt "#41135"
+msgid "Display Sub-menu Arrow"
+msgstr "Afficher la flèche des sous-menus"
+
+msgctxt "#41136"
+msgid "Manage custom Home Items"
+msgstr "Gérer les éléments de l'accueil personnalisé"
 
 msgctxt "#41137"
 msgid "Custom"
@@ -52,6 +92,10 @@ msgctxt "#41139"
 msgid "Icon"
 msgstr "Icône"
 
+msgctxt "#41140"
+msgid "Manage custom Home Widgets"
+msgstr "Gérer les widgets personnalisés de l'accueil"
+
 msgctxt "#41141"
 msgid "Type"
 msgstr "Type"
@@ -63,6 +107,10 @@ msgstr "Chemin"
 msgctxt "#41143"
 msgid "Recommended size 633x437px"
 msgstr "Taille recommandée 633 x 437 px"
+
+msgctxt "#41144"
+msgid "Manage custom Home Tile Colours"
+msgstr "Gérer les couleurs personnalisées des carreaux de l'accueil"
 
 msgctxt "#41145"
 msgid "Video add-on"
@@ -92,6 +140,10 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Personnalisé"
 
+msgctxt "#41152"
+msgid "Music Panel opens"
+msgstr "Le panneau de musique ouvre"
+
 msgctxt "#41153"
 msgid "Favourite"
 msgstr "Favori"
@@ -102,7 +154,27 @@ msgstr "Taille recommandée 283 x 283 px"
 
 msgctxt "#41156"
 msgid "Show Name"
-msgstr "Afficher le nom"
+msgstr "Montrer le nom"
+
+msgctxt "#41157"
+msgid "Video Tile"
+msgstr "Carreau des vidéos"
+
+msgctxt "#41158"
+msgid "TV Show Tile"
+msgstr "Carreau des séries télé"
+
+msgctxt "#41159"
+msgid "App Tile"
+msgstr "Carreau des applis"
+
+msgctxt "#41160"
+msgid "Animate Icon"
+msgstr "Animer l'icône"
+
+msgctxt "#41161"
+msgid "Music Tile"
+msgstr "Carreau de la musique"
 
 msgctxt "#41162"
 msgid "Widget"
@@ -110,11 +182,51 @@ msgstr "Widget"
 
 msgctxt "#41164"
 msgid "Random Items"
-msgstr "Éléments aléatoire"
+msgstr "Éléments aléatoires"
+
+msgctxt "#41165"
+msgid "Only Unwatched items"
+msgstr "Seulement les éléments non regardés"
+
+msgctxt "#41166"
+msgid "Only Partially Watched items"
+msgstr "Seulement les éléments partiellement regardés"
+
+msgctxt "#41167"
+msgid "Manage custom Home Widgets"
+msgstr "Gérer les widgets personnalisés de l'accueil"
+
+msgctxt "#41168"
+msgid "Manage custom Home Widget"
+msgstr "Gérer le widget personnalisé de l'accueil"
+
+msgctxt "#41169"
+msgid "Upcoming Movies"
+msgstr "Films à venir"
+
+msgctxt "#41170"
+msgid "In Theatres Now"
+msgstr "Dans les cinémas présentement"
+
+msgctxt "#41171"
+msgid "Popular Movies"
+msgstr "Films populaires"
+
+msgctxt "#41172"
+msgid "Top Rated Movies"
+msgstr "Films les mieux notés"
 
 msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "Films - les tendances"
+
+msgctxt "#41174"
+msgid "Trending TV Shows"
+msgstr "Séries télé - les tendances"
+
+msgctxt "#41175"
+msgid "Home Tile"
+msgstr "Carreau de l'accueil"
 
 msgctxt "#41190"
 msgid "Views"
@@ -122,11 +234,43 @@ msgstr "Vues"
 
 msgctxt "#41191"
 msgid "Show Fanart"
-msgstr "Afficher le fanart"
+msgstr "Montrer le fanart"
+
+msgctxt "#41192"
+msgid "Motion Picture Rating country"
+msgstr "Pays de classification des films"
+
+msgctxt "#41193"
+msgid "Select Motion Picture Rating country"
+msgstr "Choisir le pays de classification des films"
+
+msgctxt "#41200"
+msgid "Show Power Button (does not affect home screen)"
+msgstr "Afficher le bouton Alimentation (le paramètre n'affecte pas l'écran d'accueil)"
+
+msgctxt "#41201"
+msgid "Show Options Button"
+msgstr "Afficher le bouton des options"
+
+msgctxt "#41202"
+msgid "Play Trailer on opening Film Information"
+msgstr "Lire la bande-annonce lors de l'ouverture des informations du film"
+
+msgctxt "#41203"
+msgid "Play Trailer minimized"
+msgstr "Lire la bande-annonce minimisée"
 
 msgctxt "#41220"
 msgid "TV"
 msgstr "Télé"
+
+msgctxt "#41240"
+msgid "Enable Music Visualisation"
+msgstr "Activer la visualisation de la musique"
+
+msgctxt "#41242"
+msgid "Set Default Focus to Subtitle Button (Video OSD)"
+msgstr "Définir le bouton des sous-titres comme cible par défaut (affichage à l'écran vidéo)"
 
 msgctxt "#41250"
 msgid "Backgrounds"
@@ -140,13 +284,45 @@ msgctxt "#41252"
 msgid "Single Image"
 msgstr "Une seule image"
 
+msgctxt "#41253"
+msgid "Multiple Image"
+msgstr "Plusieurs images"
+
+msgctxt "#41270"
+msgid "Display Clock"
+msgstr "Afficher l'horloge"
+
+msgctxt "#41271"
+msgid "Display Profile Image"
+msgstr "Afficher l'image de profil"
+
+msgctxt "#41272"
+msgid "Replace Pictures with Custom Menu Item in QuickNav"
+msgstr "Remplacer les images par un élément personnalisé du menu dans la navigation rapide"
+
+msgctxt "#41273"
+msgid "Replace Trailer with Custom Menu Item in QuickNav"
+msgstr "Remplacer les bandes-annonces par un élément personnalisé du menu dans la navigation rapide"
+
+msgctxt "#41274"
+msgid "Replace New Movies with Custom Menu Item in QuickNav"
+msgstr "Remplacer les nouveaux films par un élément personnalisé du menu dans la navigation rapide"
+
+msgctxt "#41275"
+msgid "Replace New TV Shows with Custom Menu Item in QuickNav"
+msgstr "Remplacer les nouvelles émissions télé par un élément personnalisé du menu dans la navigation rapide"
+
+msgctxt "#41276"
+msgid "Choose Custom Menu Item"
+msgstr "Choisir l'élément personnalisé du menu"
+
 msgctxt "#41280"
 msgid "Add-ons"
 msgstr "Addiciels"
 
 msgctxt "#41281"
 msgid "Subtitle add-on"
-msgstr "Addiciel des sous-titres"
+msgstr "Addiciel de sous-titres"
 
 msgctxt "#41282"
 msgid "Lyrics add-on"
@@ -154,7 +330,7 @@ msgstr "Addiciel pour les paroles"
 
 msgctxt "#41283"
 msgid "Enable TVTunes add-on"
-msgstr "Activer l'addiciel TVTunes"
+msgstr "Activer l'addiciel TvTunes"
 
 msgctxt "#41284"
 msgid "Download theme songs"
@@ -168,6 +344,14 @@ msgctxt "#41290"
 msgid "Configure TV Show Next Aired"
 msgstr "Configurer Prochaine diffusion de l'émission télé"
 
+msgctxt "#41293"
+msgid "Update Next Aired data on Start"
+msgstr "Mettre à jour les données de prochaine diffusion au démarrage"
+
+msgctxt "#41294"
+msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
+msgstr "Mettre à jour les illustrations (affiches, paysages, fanart, etc.) après la mise à jour de la médiathèque"
+
 msgctxt "#41303"
 msgid "Tracks"
 msgstr "Pistes"
@@ -176,13 +360,33 @@ msgctxt "#41304"
 msgid "Discography"
 msgstr "Discographie"
 
+msgctxt "#41305"
+msgid "Get Thumb"
+msgstr "Obtenir l'imagette"
+
+msgctxt "#41306"
+msgid "Get Fanart"
+msgstr "Obtenir le fanart"
+
 msgctxt "#41307"
 msgid "Refresh"
 msgstr "Rafraîchir"
 
+msgctxt "#41310"
+msgid "Watched Episodes: "
+msgstr "Épisodes regardés :"
+
+msgctxt "#41311"
+msgid "Unwatched Episodes: "
+msgstr "Épisodes non regardés :"
+
+msgctxt "#41314"
+msgid "Premièred: "
+msgstr "En première :"
+
 msgctxt "#41315"
 msgid "Play"
-msgstr "Jouer"
+msgstr "Lire"
 
 msgctxt "#41316"
 msgid "Cast"
@@ -200,9 +404,25 @@ msgctxt "#41325"
 msgid "Review"
 msgstr "Critique"
 
+msgctxt "#41326"
+msgid "Get Info"
+msgstr "Obtenir des infos"
+
+msgctxt "#41327"
+msgid "Year of Release"
+msgstr "Année de sortie"
+
 msgctxt "#41328"
 msgid "Filmography"
 msgstr "Filmographie"
+
+msgctxt "#41329"
+msgid "No Biography for this actor"
+msgstr "Aucune bibliographie pour cet acteur"
+
+msgctxt "#41330"
+msgid "No Description for this application"
+msgstr "Aucune description pour cette application"
 
 msgctxt "#41331"
 msgid "Released"
@@ -219,6 +439,14 @@ msgstr "Se déconnecter"
 msgctxt "#41352"
 msgid "Reload Skin"
 msgstr "Recharger l'habillage"
+
+msgctxt "#41360"
+msgid "Master Mode Off"
+msgstr "Mode maître - arrêt"
+
+msgctxt "#41361"
+msgid "Master Mode On"
+msgstr "Mode maître - marche"
 
 msgctxt "#41371"
 msgid "Finish Time:"
@@ -272,6 +500,10 @@ msgctxt "#41451"
 msgid "New TV Shows"
 msgstr "Nouvelles émissions télé"
 
+msgctxt "#41452"
+msgid "No Media Playing"
+msgstr "Aucun média en cours"
+
 msgctxt "#41453"
 msgid "User"
 msgstr "Utilisateur"
@@ -279,6 +511,10 @@ msgstr "Utilisateur"
 msgctxt "#41454"
 msgid "IP Address"
 msgstr "Adresse IP"
+
+msgctxt "#41455"
+msgid "Free Memory"
+msgstr "Mémoire libre "
 
 msgctxt "#41456"
 msgid "Resolution"
@@ -288,17 +524,21 @@ msgctxt "#41457"
 msgid "System Uptime"
 msgstr "Durée du fonctionnement du système"
 
+msgctxt "#41458"
+msgid "Skin Version"
+msgstr "Version de l'habillage"
+
 msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Version de Kodi"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guide"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Applications"
+
+msgctxt "#41505"
+msgid "Press \"Up\" to Eject"
+msgstr "Peser sur « Haut » pour éjecter"
 
 msgctxt "#41507"
 msgid "Power"
@@ -328,9 +568,25 @@ msgctxt "#41553"
 msgid "New TV Shows"
 msgstr "Nouvelles émissions télé"
 
+msgctxt "#41554"
+msgid "New Albums"
+msgstr "Nouveaux albums"
+
 msgctxt "#41555"
 msgid "Most Played Albums"
 msgstr "Albums les plus écoutés"
+
+msgctxt "#41556"
+msgid "Featured Albums"
+msgstr "Albums à la une"
+
+msgctxt "#41562"
+msgid "Loading Weather..."
+msgstr "Chargement de la météo..."
+
+msgctxt "#41563"
+msgid "No Location Available"
+msgstr "Aucun emplacement proposé"
 
 msgctxt "#41564"
 msgid "Loading"
@@ -340,9 +596,21 @@ msgctxt "#41600"
 msgid "Options"
 msgstr "Options"
 
+msgctxt "#41601"
+msgid "Initializing Skin"
+msgstr "Initialisation de l'habillage"
+
 msgctxt "#41620"
 msgid "View Options"
 msgstr "Options de visualisation"
+
+msgctxt "#41621"
+msgid "Set Games Path"
+msgstr "Définir le chemin des jeux"
+
+msgctxt "#41622"
+msgid "Reset Games Path"
+msgstr "Réinitialiser le chemin des jeux"
 
 msgctxt "#41689"
 msgid "Location"
@@ -356,17 +624,21 @@ msgctxt "#41691"
 msgid "Set Fanart Path"
 msgstr "Définir le chemin du fanart"
 
+msgctxt "#41692"
+msgid "Hide Daily Fanart"
+msgstr "Cacher le fanart quotidien"
+
 msgctxt "#41693"
 msgid "Moon Phase"
 msgstr "Phase de la lune"
 
+msgctxt "#41694"
+msgid "Current Weather"
+msgstr "Météo actuelle"
+
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Prévisions sur 10 jours"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Prévisions horaires"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -412,17 +684,41 @@ msgctxt "#42010"
 msgid "View Options"
 msgstr "Options de visualisation"
 
+msgctxt "#42015"
+msgid "Display Info"
+msgstr "Afficher les infos"
+
+msgctxt "#42017"
+msgid "Main Options"
+msgstr "Options principales"
+
+msgctxt "#42018"
+msgid "Display Plot"
+msgstr "Afficher l'intrigue"
+
 msgctxt "#42019"
 msgid "Use Posters"
 msgstr "Utiliser des affiches"
+
+msgctxt "#42020"
+msgid "Display Plot on Focus"
+msgstr "Afficher l'intrigue lorsque ciblé"
 
 msgctxt "#42021"
 msgid "View"
 msgstr "Vue"
 
+msgctxt "#42022"
+msgid "Use Landscape"
+msgstr "Utiliser le paysage"
+
 msgctxt "#42023"
 msgid "Use Clearart"
 msgstr "Utiliser les Illustrations claires"
+
+msgctxt "#42024"
+msgid "Small Thumbs"
+msgstr "Petites imagettes"
 
 msgctxt "#42025"
 msgid "Update Art"
@@ -439,6 +735,22 @@ msgstr "Catégorie"
 msgctxt "#42131"
 msgid "Information"
 msgstr "Informations"
+
+msgctxt "#42132"
+msgid "No Description Available"
+msgstr "Aucune description proposée"
+
+msgctxt "#42133"
+msgid "Update Repositories"
+msgstr "Mettre les dépôts à jour"
+
+msgctxt "#42134"
+msgid "Update Add-ons"
+msgstr "Mettre les addiciels à jour"
+
+msgctxt "#42135"
+msgid "Updating Enabled Add-on Repositories..."
+msgstr "Mise à jour des dépôts d'addiciels activés..."
 
 msgctxt "#42136"
 msgid "Updating local add-on directories..."
@@ -476,6 +788,46 @@ msgctxt "#42185"
 msgid "Misc Options"
 msgstr "Options diverses"
 
+msgctxt "#42200"
+msgid "Mouse Not Supported"
+msgstr "La souris n'est pas pris en charge"
+
+msgctxt "#42201"
+msgid "Please Disable"
+msgstr "Veuillez désactiver"
+
+msgctxt "#42205"
+msgid "Edit Film"
+msgstr "Modifier Film"
+
+msgctxt "#42206"
+msgid "Edit Tv Show"
+msgstr "Modifier Émission télé"
+
+msgctxt "#42207"
+msgid "Edit Season"
+msgstr "Modifier Saison"
+
+msgctxt "#42208"
+msgid "Edit Episode"
+msgstr "Modifier Épisode"
+
+msgctxt "#42209"
+msgid "Edit Music Video"
+msgstr "Modifier Vidéo musicale"
+
+msgctxt "#42210"
+msgid "Edit Artist"
+msgstr "Modifier Artiste"
+
+msgctxt "#42211"
+msgid "Edit Album"
+msgstr "Modifier Album"
+
+msgctxt "#42212"
+msgid "Edit Song"
+msgstr "Modifier Morceau"
+
 msgctxt "#42220"
 msgid "List"
 msgstr "Liste"
@@ -483,6 +835,10 @@ msgstr "Liste"
 msgctxt "#42222"
 msgid "Info List"
 msgstr "Liste d'infos"
+
+msgctxt "#42223"
+msgid "Info List ■"
+msgstr "Liste des infos ■"
 
 msgctxt "#42224"
 msgid "Panel"
@@ -524,6 +880,10 @@ msgctxt "#42233"
 msgid "Cover"
 msgstr "Couverture"
 
+msgctxt "#42234"
+msgid "Thumbnail List"
+msgstr "Liste d'imagettes"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Affiche"
@@ -548,6 +908,10 @@ msgctxt "#42255"
 msgid "ClearArt"
 msgstr "ClearArt"
 
+msgctxt "#42256"
+msgid "Home Tile Colours"
+msgstr "Couleurs des carreaux de l'accueil"
+
 msgctxt "#42257"
 msgid "TV Shows"
 msgstr "Émissions télé"
@@ -563,3 +927,7 @@ msgstr "Rouge"
 msgctxt "#42260"
 msgid "Auto Login"
 msgstr "Connexion automatique"
+
+msgctxt "#42261"
+msgid "Display Navigation Arrow"
+msgstr "Afficher la flèche de navigation"

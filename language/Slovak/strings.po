@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Všeobecné"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Domov"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Vlastné"
@@ -180,10 +176,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Rozlíšenie"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Návod"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Doplnky"
@@ -227,10 +219,6 @@ msgstr "Nájsť FanArt"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Predpoveď na 10 dní"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Hodinová predpoveď"
 
 msgctxt "#41716"
 msgid "Playlist Options"

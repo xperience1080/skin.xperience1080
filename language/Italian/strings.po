@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Inferiore"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Home"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Personalizzato"
@@ -280,10 +276,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Risoluzione"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guida"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Applicazioni"
@@ -343,10 +335,6 @@ msgstr "Fasi Lunari"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Previsioni a 10 giorni"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Previsioni orarie"
 
 msgctxt "#41716"
 msgid "Playlist Options"

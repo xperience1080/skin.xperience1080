@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Край"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Начало"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Персонализиран"
@@ -256,10 +252,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Резолюция"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Справочник"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Приложения"
@@ -311,10 +303,6 @@ msgstr "Задай път до фанарта"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 дневна прогноза"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Почасова прогноза"
 
 msgctxt "#41716"
 msgid "Playlist Options"

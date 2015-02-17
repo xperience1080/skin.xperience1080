@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "सामान्य"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "प्रारंभ"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "रिवाज"

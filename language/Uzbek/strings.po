@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Umumiy"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Boshlash"
-
 msgctxt "#41138"
 msgid "Name"
 msgstr "Nomi"

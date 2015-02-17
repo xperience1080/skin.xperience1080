@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "General"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Inicio"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Personalizado"
@@ -164,10 +160,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Resolución"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guía"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Complementos"
@@ -207,10 +199,6 @@ msgstr "Establecer ruta de Fanart"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Pronóstico de 10 Días"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Pronóstico por Hora"
 
 msgctxt "#41716"
 msgid "Playlist Options"

@@ -24,10 +24,6 @@ msgctxt "#41101"
 msgid "Enable Kiosk Mode"
 msgstr "Enable Kiosk Mode"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Дадому"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Дапасаваны"
@@ -192,10 +188,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Разрознасьць"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guide"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Дадаткі"
@@ -239,10 +231,6 @@ msgstr "Шлях да ФанАрт'у"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Прагноз на 10 дзён"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Пагадзінны прагноз"
 
 msgctxt "#41716"
 msgid "Playlist Options"

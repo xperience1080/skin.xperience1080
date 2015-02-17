@@ -26,7 +26,7 @@ msgstr "Uruchamiaj w trybie Kiosku"
 
 msgctxt "#41102"
 msgid "Display Now Playing Video in Background"
-msgstr "Pokaż teraz odtwarzane wideo w tle"
+msgstr "Pokazuj odtwarzane wideo w tle interfejsu"
 
 msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
@@ -63,10 +63,6 @@ msgstr "Góra"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Dół"
-
-msgctxt "#41130"
-msgid "Home"
-msgstr "Ekran startowy"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -214,7 +210,7 @@ msgstr "W kinach"
 
 msgctxt "#41171"
 msgid "Popular Movies"
-msgstr "Filmy popularne"
+msgstr "Filmy na topie"
 
 msgctxt "#41172"
 msgid "Top Rated Movies"
@@ -222,11 +218,11 @@ msgstr "Filmy najwyżej oceniane"
 
 msgctxt "#41173"
 msgid "Trending Movies"
-msgstr "Filmy w centrum uwagi"
+msgstr "Filmy na topie"
 
 msgctxt "#41174"
 msgid "Trending TV Shows"
-msgstr "Seriale w centrum uwagi"
+msgstr "Seriale na topie"
 
 msgctxt "#41175"
 msgid "Home Tile"
@@ -267,10 +263,6 @@ msgstr "Odtwarzaj zwiastuny w oknie"
 msgctxt "#41220"
 msgid "TV"
 msgstr "Telewizja"
-
-msgctxt "#41221"
-msgid "Enable Genre Colours in the EPG"
-msgstr "Używaj kolorów gatunku w przewodniku"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -350,11 +342,11 @@ msgstr "Włącz TV Show Next Aired"
 
 msgctxt "#41290"
 msgid "Configure TV Show Next Aired"
-msgstr "Konfiguracja TV Show Next Aired"
+msgstr "Konfiguracja dodatku TV Show Next Aired"
 
 msgctxt "#41293"
 msgid "Update Next Aired data on Start"
-msgstr "Aktualizuj na starcie"
+msgstr "Aktualizuj odcinki wkrótce na antenie po uruchomieniu"
 
 msgctxt "#41294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
@@ -540,10 +532,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Wersja Kodi"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Przewodnik"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Aplikacje"
@@ -590,11 +578,11 @@ msgstr "Albumy najczęściej odtwarzane"
 
 msgctxt "#41556"
 msgid "Featured Albums"
-msgstr "Rekomendowane albumy"
+msgstr "Albumy polecane"
 
 msgctxt "#41562"
 msgid "Loading Weather..."
-msgstr "Wczytywanie pogody..."
+msgstr "Wczytywanie prognozy pogody..."
 
 msgctxt "#41563"
 msgid "No Location Available"
@@ -638,7 +626,7 @@ msgstr "Ustaw ścieżkę do folderu tapet"
 
 msgctxt "#41692"
 msgid "Hide Daily Fanart"
-msgstr "Ukryj aktualny fanart"
+msgstr "Ukrywaj codzienną tapetę"
 
 msgctxt "#41693"
 msgid "Moon Phase"
@@ -652,17 +640,13 @@ msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Prognoza 10 dniowa"
 
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Prognoza godzinowa"
-
 msgctxt "#41716"
 msgid "Playlist Options"
 msgstr "Opcje listy odtwarzania"
 
 msgctxt "#41805"
 msgid "Aired"
-msgstr "Wyemitowano"
+msgstr "Data emisji"
 
 msgctxt "#41813"
 msgid "Episodes"
@@ -722,7 +706,7 @@ msgstr "Pokazuj fabułę po zaznaczeniu"
 
 msgctxt "#42021"
 msgid "View"
-msgstr "Podgląd"
+msgstr "Widok"
 
 msgctxt "#42022"
 msgid "Use Landscape"
@@ -730,7 +714,7 @@ msgstr "Używaj panoramy"
 
 msgctxt "#42023"
 msgid "Use Clearart"
-msgstr "Używaj przezroczy"
+msgstr "Używaj przezrocza"
 
 msgctxt "#42024"
 msgid "Small Thumbs"
@@ -750,7 +734,7 @@ msgstr "Kategoria"
 
 msgctxt "#42131"
 msgid "Information"
-msgstr "Informacja"
+msgstr "Informacje"
 
 msgctxt "#42132"
 msgid "No Description Available"
@@ -766,7 +750,7 @@ msgstr "Aktualizuj dodatki"
 
 msgctxt "#42135"
 msgid "Updating Enabled Add-on Repositories..."
-msgstr "Aktualizacja repozytoriów"
+msgstr "Aktualizacja uruchomionych repozytoriów dodatków..."
 
 msgctxt "#42136"
 msgid "Updating local add-on directories..."
@@ -790,7 +774,7 @@ msgstr "Dodaj grupę"
 
 msgctxt "#42182"
 msgid "Rename Group"
-msgstr "Zmień nazwę grupy"
+msgstr "Przemianuj grupę"
 
 msgctxt "#42183"
 msgid "Delete Group"
@@ -810,7 +794,7 @@ msgstr "Brak obsługi myszy"
 
 msgctxt "#42201"
 msgid "Please Disable"
-msgstr "Wyłącz Proszę "
+msgstr "Wymagane wyłączenie"
 
 msgctxt "#42205"
 msgid "Edit Film"
@@ -943,3 +927,7 @@ msgstr "Czerwony"
 msgctxt "#42260"
 msgid "Auto Login"
 msgstr "Logowanie automatyczne"
+
+msgctxt "#42261"
+msgid "Display Navigation Arrow"
+msgstr "Pokazuj strzałkę nawigacyjną"

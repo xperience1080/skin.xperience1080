@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "பொதுவானது"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "முகப்பு"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "தனிப்பயன்"
@@ -120,10 +116,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "திரைத்திறன்"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "வழிகாட்டி"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "துணை-பயன்கள்"
@@ -159,10 +151,6 @@ msgstr "விசிறிபட பாதையை தேர்வுசெய�
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 நாட்கள் முன் அறிவிப்பு"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "மணி நேர முன் அறிவிப்பு"
 
 msgctxt "#41716"
 msgid "Playlist Options"

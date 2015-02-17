@@ -36,10 +36,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Nederst"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Hem"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Anpassad"
@@ -288,10 +284,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Kodi-version"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guide"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Applikationer"
@@ -359,10 +351,6 @@ msgstr "Månfas"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10-dagarsprognos"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Timprognos"
 
 msgctxt "#41716"
 msgid "Playlist Options"

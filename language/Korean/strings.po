@@ -60,10 +60,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "하단"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "홈"
-
 msgctxt "#41131"
 msgid "Manage Categories"
 msgstr "카테고리 관리"
@@ -259,10 +255,6 @@ msgstr "최소화 상태로 예고편 재생"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
-
-msgctxt "#41221"
-msgid "Enable Genre Colours in the EPG"
-msgstr "EPG에서 장르 색상 사용"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -532,10 +524,6 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Kodi 버전"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "가이드"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "애플리케이션"
@@ -643,10 +631,6 @@ msgstr "현재 날씨"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10일 예보"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "시간별 예보"
 
 msgctxt "#41716"
 msgid "Playlist Options"

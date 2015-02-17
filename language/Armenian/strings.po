@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Գլխավոր"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Սկիզբ"
-
 msgctxt "#41138"
 msgid "Name"
 msgstr "Անվանում"
@@ -107,10 +103,6 @@ msgstr "Տեղը"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10-օրյա տեսություն"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Ժամային տեսություն"
 
 msgctxt "#41716"
 msgid "Playlist Options"

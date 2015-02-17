@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "عمومی"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "خانه"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "سفارشی"
@@ -152,10 +148,6 @@ msgctxt "#41691"
 msgid "Set Fanart Path"
 msgstr "انتخاب مسیر Fanart"
 
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "پیش بینی یک ساعته"
-
 msgctxt "#41716"
 msgid "Playlist Options"
 msgstr "گزینه های لیست پخش"
@@ -199,6 +191,10 @@ msgstr "نمایش انتخاب ها"
 msgctxt "#42130"
 msgid "Category"
 msgstr "دسته بندی"
+
+msgctxt "#42131"
+msgid "Information"
+msgstr "اطلاعات"
 
 msgctxt "#42181"
 msgid "Add Group"

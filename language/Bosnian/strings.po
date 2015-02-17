@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Opšte"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Početna strana"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Prilagođeno"
@@ -107,10 +103,6 @@ msgstr "Slike"
 msgctxt "#41456"
 msgid "Resolution"
 msgstr "Rezolucija"
-
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Vodič"
 
 msgctxt "#41504"
 msgid "Applications"

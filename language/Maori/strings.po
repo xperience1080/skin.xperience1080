@@ -20,10 +20,6 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Āhuawhānui"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Kāinga"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Ritenga"
@@ -107,10 +103,6 @@ msgstr "Pikitia"
 msgctxt "#41456"
 msgid "Resolution"
 msgstr "Taumira"
-
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guide"
 
 msgctxt "#41504"
 msgid "Applications"

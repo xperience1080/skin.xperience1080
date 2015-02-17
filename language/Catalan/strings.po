@@ -24,10 +24,6 @@ msgctxt "#41101"
 msgid "Enable Kiosk Mode"
 msgstr "Activa el mode quiosc"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Inici"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Personalitzat"
@@ -192,10 +188,6 @@ msgctxt "#41457"
 msgid "System Uptime"
 msgstr "Temps de funcionament del sistema"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guia"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Complements"
@@ -235,10 +227,6 @@ msgstr "Estableix el camí del fanart"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Predicció a 10 dies"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Predicció per hores"
 
 msgctxt "#41716"
 msgid "Playlist Options"

@@ -24,10 +24,6 @@ msgctxt "#41101"
 msgid "Enable Kiosk Mode"
 msgstr "เปิดใช้งานโหมด Kiosk"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "หน้าหลัก"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "กำหนดเอง"
@@ -180,10 +176,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "ความละเอียดจอ"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "ไกด์"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "ส่วนเสริม"
@@ -231,10 +223,6 @@ msgstr "ตั้งค่าเส้นทางของแฟนอาร์
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "พยากรณ์ ใน 10 วัน"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "พยากรณ์รายชั่วโมง"
 
 msgctxt "#41716"
 msgid "Playlist Options"

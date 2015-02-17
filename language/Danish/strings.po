@@ -24,10 +24,6 @@ msgctxt "#41101"
 msgid "Enable Kiosk Mode"
 msgstr "Aktiver Kiosk-tilstand"
 
-msgctxt "#41130"
-msgid "Home"
-msgstr "Hjem"
-
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Brugerdefineret"
@@ -192,10 +188,6 @@ msgctxt "#41456"
 msgid "Resolution"
 msgstr "Opløsning"
 
-msgctxt "#41460"
-msgid "Guide"
-msgstr "Guide"
-
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Addons"
@@ -251,10 +243,6 @@ msgstr "Månefase"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 døgns vejrudsigt"
-
-msgctxt "#41696"
-msgid "Hourly Forecast"
-msgstr "Vejrudsigt de næste timer"
 
 msgctxt "#41716"
 msgid "Playlist Options"
