@@ -1,3 +1,7 @@
+[B]3.45.40[/B]
+• Corrected Unwatched total episodes from TV Show information screen.
+• Extended width of Next Episode for TV Shows (top right display)
+
 [B]3.45.39-alpha4[/B]
 • merged from pull request (freeman)
 
