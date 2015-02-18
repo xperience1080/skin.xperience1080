@@ -1,3 +1,7 @@
+[B]3.45.44[/B]
+• Happy Birthday to me.
+• Corrects TV Next Aired options being displayed when Kiosk Mode is enabled.
+
 [B]3.45.43[/B]
 • Corrects Weather options being displayed when Kiosk Mode is enabled.
 
