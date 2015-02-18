@@ -16,8 +16,10 @@
         <include>Common-Info</include>       
         <control type="button" id="101">
             <description>open options</description>
-            <onup>9111</onup>
-            <ondown>9111</ondown>
+            <onup condition="!Skin.HasSetting(KioskMode)">9111</onup>
+			<onup condition="Skin.HasSetting(KioskMode)">-</onup>
+            <ondown condition="!Skin.HasSetting(KioskMode)">9111</ondown>
+			<ondown condition="Skin.HasSetting(KioskMode)">-</ondown>
             <visible>![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]</visible>
         </control>        
         <control type="group" id="9000">

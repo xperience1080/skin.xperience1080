@@ -804,8 +804,10 @@
             <itemgap>0</itemgap>
             <onleft>40</onleft>
             <onright>40</onright>
-            <onup>9111</onup>
-            <ondown>9111</ondown>
+            <onup condition="!Skin.HasSetting(KioskMode)">9111</onup>
+			<onup condition="Skin.HasSetting(KioskMode)">-</onup>
+            <ondown condition="!Skin.HasSetting(KioskMode)">9111</ondown>
+			<ondown condition="Skin.HasSetting(KioskMode)">-</ondown>
             <usecontrolcoords>true</usecontrolcoords>
             <orientation>horizontal</orientation>
             <include>OptionsShutdownAnimation</include>
@@ -853,8 +855,10 @@
                     <font>Font-Condensed-S36</font>
                     <onright>201</onright>
                     <onleft>301</onleft>
-                    <onup>9111</onup>
-                    <ondown>9111</ondown>
+                    <onup condition="!Skin.HasSetting(KioskMode)">9111</onup>
+					<onup condition="Skin.HasSetting(KioskMode)">-</onup>
+                    <ondown condition="!Skin.HasSetting(KioskMode)">9111</ondown>
+					<ondown condition="Skin.HasSetting(KioskMode)">-</ondown>
                     <align>left</align>
                     <animation effect="fade" start="100" end="60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(101)">Conditional</animation>
                 </control>
@@ -1044,7 +1048,8 @@
                     <font>Font-Condensed-S36</font>
                     <onleft>101</onleft>
                     <onright>301</onright>
-                    <onup>9111</onup>
+                    <onup condition="!Skin.HasSetting(KioskMode)">9111</onup>
+					<onup condition="Skin.HasSetting(KioskMode)">-</onup>
                     <ondown>210</ondown>
                     <align>left</align>
                     <animation effect="fade" start="100" end="60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(201)">Conditional</animation>
@@ -2432,7 +2437,8 @@
                     <width>1096</width>
                     <height>6</height>
                     <onup>210</onup>
-                    <ondown>9111</ondown>
+                    <ondown condition="!Skin.HasSetting(KioskMode)">9111</ondown>
+					<ondown condition="Skin.HasSetting(KioskMode)">-</ondown>
                     <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                     <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                     <orientation>horizontal</orientation>
@@ -2480,7 +2486,8 @@
                     <font>Font-Condensed-S36</font>
                     <onleft>201</onleft>
                     <onright>101</onright>
-                    <onup>9111</onup>
+                    <onup condition="!Skin.HasSetting(KioskMode)">9111</onup>
+					<onup condition="Skin.HasSetting(KioskMode)">-</onup>
                     <ondown>310</ondown>
                     <align>left</align>
                     <animation effect="fade" start="100" end="60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(301)">Conditional</animation>
@@ -2805,7 +2812,8 @@
                     <height>570</height>
                     <onleft>310</onleft>
                     <onright>101</onright>
-                    <ondown>9111</ondown>
+                    <ondown condition="!Skin.HasSetting(KioskMode)">9111</ondown>
+					<ondown condition="Skin.HasSetting(KioskMode)">-</ondown>
                     <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                     <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                     <orientation>vertical</orientation>
