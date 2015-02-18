@@ -33,7 +33,7 @@
             
             <!-- Title Label -->
             <control type="group">
-                <visible>!Player.HasMedia + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
+                <visible>[!Player.HasMedia | !IsEmpty(Window(10025).Property(TvTunesIsAlive))] + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="grouplist">
                     <posx>87</posx>
@@ -97,7 +97,7 @@
             
             <!-- Title Label -->
             <control type="group">
-                <visible>Player.HasMedia | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)</visible>
+                <visible>[Player.HasMedia + IsEmpty(Window(10025).Property(TvTunesIsAlive))] | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="grouplist">
                     <posx>87</posx>
