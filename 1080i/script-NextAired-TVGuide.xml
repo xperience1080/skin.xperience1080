@@ -356,7 +356,8 @@
                     <height>600</height>
                     <orientation>horizontal</orientation>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <onleft>9000</onleft>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
+					<onleft condition="Skin.HasSetting(KioskMode)">-</onleft>
                     <onright>200</onright>
                     <onup>SetProperty(Movement,1)</onup>
                     <onup>206</onup>
@@ -384,7 +385,8 @@
                     <height>600</height>
                     <orientation>horizontal</orientation>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <onleft>9000</onleft>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
+					<onleft condition="Skin.HasSetting(KioskMode)">-</onleft>
                     <onright>201</onright>
                     <onup>SetProperty(Movement,1)</onup>
                     <onup>200</onup>
@@ -412,7 +414,8 @@
                     <height>600</height>
                     <orientation>horizontal</orientation>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <onleft>9000</onleft>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
+					<onleft condition="Skin.HasSetting(KioskMode)">-</onleft>
                     <onright>202</onright>
                     <onup>SetProperty(Movement,1)</onup>
                     <onup>201</onup>
@@ -440,7 +443,8 @@
                     <height>600</height>
                     <orientation>horizontal</orientation>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <onleft>9000</onleft>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
+					<onleft condition="Skin.HasSetting(KioskMode)">-</onleft>
                     <onright>203</onright>
                     <onup>SetProperty(Movement,1)</onup>
                     <onup>202</onup>
@@ -468,7 +472,8 @@
                     <height>600</height>
                     <orientation>horizontal</orientation>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <onleft>9000</onleft>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
+					<onleft condition="Skin.HasSetting(KioskMode)">-</onleft>
                     <onright>204</onright>
                     <onup>SetProperty(Movement,1)</onup>
                     <onup>203</onup>
@@ -496,7 +501,8 @@
                     <height>600</height>
                     <orientation>horizontal</orientation>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <onleft>9000</onleft>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
+					<onleft condition="Skin.HasSetting(KioskMode)">-</onleft>
                     <onright>205</onright>
                     <onup>SetProperty(Movement,1)</onup>
                     <onup>204</onup>
@@ -524,7 +530,8 @@
                     <height>600</height>
                     <orientation>horizontal</orientation>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <onleft>9000</onleft>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
+					<onleft condition="Skin.HasSetting(KioskMode)">-</onleft>
                     <onright>206</onright>
                     <onup>SetProperty(Movement,1)</onup>
                     <onup>205</onup>
