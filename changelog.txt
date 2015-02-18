@@ -1,3 +1,6 @@
+[B]3.45.42[/B]
+• Corrects title label not displaying properly when TV Tunes is playing (freeman)
+
 [B]3.45.40[/B]
 • Corrected Unwatched total episodes from TV Show information screen.
 • Extended width of Next Episode for TV Shows (top right display)
