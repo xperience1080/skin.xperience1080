@@ -1,3 +1,7 @@
+[B]3.45.48[/B]
+• Reverts 3D button: Problem appears to be Kodi related and not skin-specific (see forum post for details)
+• As soon as a work around is found, it will be re-added.
+
 [B]3.45.46[/B]
 • Corrects TV Next Aired options being displayed when Kiosk Mode is enabled.
 
