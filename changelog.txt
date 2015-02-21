@@ -1,3 +1,8 @@
+[B]3.45.496[/B]
+• File Manager now corrected.
+- Sizes are displayed (includes calcuated size and file size)
+- Selected items now display a texture already included with the skin.
+
 [B]3.45.491[/B]
 • Home Theatre add-on support has returned (beta)
 • If you have it set up correctly then you just need to press 'Play' - it's a multi-use button. If you have it installed then it will do what you've set. If you don't then it will play the items as it normally does. The text does not change and there is no dedicated button - Play is multi-purpose. Access by pressing 'I' to view the information screen.
