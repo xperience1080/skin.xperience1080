@@ -500,7 +500,7 @@
                         <item id="1">
                             <description>Cinema Experience</description>
                             <label>$LOCALIZE[41315]</label>
-                            <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
+                            <onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
                             <onclick>Dialog.Close(MovieInformation)</onclick>
                             <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies) + !SubString(Container.FolderPath,plugin)</visible>
                         </item>
