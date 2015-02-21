@@ -1,3 +1,6 @@
+[B]3.49.000[/B]
+• New Helix branch based on 1080XF
+
 [B]3.45.496[/B]
 • File Manager now corrected.
 - Sizes are displayed (includes calcuated size and file size)
