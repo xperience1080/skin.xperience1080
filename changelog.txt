@@ -1,3 +1,7 @@
+[B]3.45.49[/B]
+• All widgets are now working, without exception.
+• The extendedinfo script has been added to requirements since I've been asked over 30 times how to enable this feature.
+
 [B]3.45.48[/B]
 • Reverts 3D button: Problem appears to be Kodi related and not skin-specific (see forum post for details)
 • As soon as a work around is found, it will be re-added.
