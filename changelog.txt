@@ -1,3 +1,7 @@
+[B]3.45.491[/B]
+• Home Theatre add-on support has returned (beta)
+• If you have it set up correctly then you just need to press 'Play' - it's a multi-use button. If you have it installed then it will do what you've set. If you don't then it will play the items as it normally does. The text does not change and there is no dedicated button - Play is multi-purpose. Access by pressing 'I' to view the information screen.
+
 [B]3.45.49[/B]
 • All widgets are now working, without exception.
 • The extendedinfo script has been added to requirements since I've been asked over 30 times how to enable this feature.
