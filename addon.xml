@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.xperience1080" version="3.49.000" name="Xperience1080" provider-name="Piers">
+<addon id="skin.xperience1080" version="3.49.10" name="Xperience1080" provider-name="Piers">
 	<requires>
 		<import addon="xbmc.gui" version="5.3.0" />
 		<import addon="service.skin.widgets" version="0.0.29" />
@@ -24,13 +24,13 @@
         <summary lang="nl">Een schoon, modern, 1920x1080-panel op basis huid</summary>
         <summary lang="pl">Czysty, nowoczesny, 1920x1080 skóry na bazie panelu</summary>
         <summary lang="ru">Чистый, современный, 1920x1080 Панель на основе кожи</summary>
-		<description lang="en">1080XF provides a clean, full-width, panel-based interface.[CR]Thanks to: xhaggi, Black</description>
-        <description lang="de">1080XF bietet eine saubere, in voller Breite, Panel-basierte Schnittstelle.[CR]Dank an: xhaggi, Black</description>
-        <description lang="es">1080XF proporciona un ancho completo, interfaz limpia, basado en paneles.[CR]Gracias a: xhaggi, Black</description>
-        <description lang="it">1080XF fornisce, a tutta larghezza, interfaccia del pannello a base di pulito.[CR]Grazie a: xhaggi, Black</description>
-        <description lang="nl">1080XF biedt een schone, over de volledige breedte, panel-based interface.[CR]Dankzij: xhaggi, Black</description>
-        <description lang="pl">1080XF zapewnia czysty, pełny szerokość, interfejs oparty na w panelu.[CR]Podziękowania dla: xhaggi, Black</description>
-        <description lang="ru">1080XF обеспечивает чистый, полной ширины, интерфейс панели на основе.[CR]Благодаря: xhaggi, Black</description>
+		<description lang="en">Xperience1080 provides a clean, full-width, panel-based interface.[CR]Thanks to: xhaggi, Black</description>
+        <description lang="de">Xperience1080 bietet eine saubere, in voller Breite, Panel-basierte Schnittstelle.[CR]Dank an: xhaggi, Black</description>
+        <description lang="es">Xperience1080 proporciona un ancho completo, interfaz limpia, basado en paneles.[CR]Gracias a: xhaggi, Black</description>
+        <description lang="it">Xperience1080 fornisce, a tutta larghezza, interfaccia del pannello a base di pulito.[CR]Grazie a: xhaggi, Black</description>
+        <description lang="nl">Xperience1080 biedt een schone, over de volledige breedte, panel-based interface.[CR]Dankzij: xhaggi, Black</description>
+        <description lang="pl">Xperience1080 zapewnia czysty, pełny szerokość, interfejs oparty na w panelu.[CR]Podziękowania dla: xhaggi, Black</description>
+        <description lang="ru">Xperience1080 обеспечивает чистый, полной ширины, интерфейс панели на основе.[CR]Благодаря: xhaggi, Black</description>
         <disclaimer lang="en">Mouse and Touch devices are not supported</disclaimer>
         <disclaimer lang="de">Maus und Touch-Geräte werden nicht unterstützt</disclaimer>
         <disclaimer lang="es">Mouse y dispositivos táctiles no son compatibles</disclaimer>
@@ -42,6 +42,6 @@
         <platform>all</platform>
         <license>CCACC BY-NC-SA 3.0</license>
         <forum>http://forum.kodi.tv/forumdisplay.php?fid=197</forum>
-        <source>https://github.com/vonH/1080XF/tree/Helix</source>
+        <source>https://github.com/vonH/Xperience1080/tree/Helix</source>
 	</extension>
 </addon>
