@@ -37,6 +37,19 @@
                 <!-- control buttons -->
                 <posx>0</posx>
                 <posy>989</posy>
+                <control type="progress" id="1">
+					<description>Mini Progress</description>
+					<left>0</left>
+					<top>-1</top>
+					<width>1920</width>
+					<height>8</height>
+					<info>Player.Progress</info>
+					<texturebg>osd/fullscreen/progress/back-mini.png</texturebg>
+					<lefttexture>-</lefttexture>
+					<midtexture>osd/fullscreen/progress/mid-mini.png</midtexture>
+					<righttexture>osd/fullscreen/progress/right-mini.png</righttexture>
+					<animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation>
+				</control>
                 <control type="button" id="11">
                     <description>Audio Settings</description>
                     <posx>385</posx>
