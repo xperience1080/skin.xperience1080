@@ -83,7 +83,7 @@ msgstr "Inicio"
 
 msgctxt "#41131"
 msgid "Manage Categories"
-msgstr "Administrar categorías"
+msgstr "Administrar categorias"
 
 #empty strings from id 41132 to 41133
 #41132/41133
@@ -114,7 +114,7 @@ msgstr "Icono"
 
 msgctxt "#41140"
 msgid "Manage custom Home Widgets"
-msgstr "Administrar widgets personalizados del menú principal"
+msgstr "Administrar widgets personalizados del menu principal"
 
 msgctxt "#41141"
 msgid "Type"
@@ -130,7 +130,7 @@ msgstr "Resolución recomendada 633x437px"
 
 msgctxt "#41144"
 msgid "Manage custom Home Tile Colours"
-msgstr "Personalizar colores del menú principal"
+msgstr "Personalizar colores del menu principal"
 
 msgctxt "#41145"
 msgid "Video add-on"
@@ -180,15 +180,15 @@ msgstr "Mostrar nombre"
 
 msgctxt "#41157"
 msgid "Video Tile"
-msgstr "Cuadrícula de vídeo"
+msgstr "Baldosa de vídeo"
 
 msgctxt "#41158"
 msgid "TV Show Tile"
-msgstr "Cuadrícula de Series"
+msgstr "Baldosa de Series"
 
 msgctxt "#41159"
 msgid "App Tile"
-msgstr "Cuadrícula de App"
+msgstr "Baldosa de App"
 
 msgctxt "#41160"
 msgid "Animate Icon"
@@ -196,7 +196,7 @@ msgstr "Animar icono"
 
 msgctxt "#41161"
 msgid "Music Tile"
-msgstr "Cuadrícula de música"
+msgstr "Baldosa de música"
 
 msgctxt "#41162"
 msgid "Widget"
@@ -250,7 +250,7 @@ msgstr "Tendencias en series"
 
 msgctxt "#41175"
 msgid "Home Tile"
-msgstr "Cuadrícula de Inicio"
+msgstr "Baldosa de Inicio"
 
 msgctxt "#41176"
 msgid "Playback"
@@ -814,7 +814,7 @@ msgstr "Item"
 
 msgctxt "#41920"
 msgid "Recently Added"
-msgstr "Nuevo"
+msgstr "Nuevos"
 
 #empty strings from id 41921 to 41999
 #Dialogs
@@ -1087,19 +1087,19 @@ msgstr "Fuente de medios no disponible"
 
 msgctxt "#42238"
 msgid "Home Tiles (Red)"
-msgstr "Cuadrículas de inicio (Rojas)"
+msgstr "Baldosas de inicio (Rojas)"
 
 msgctxt "#42239"
 msgid "Movie Tiles (Blue)"
-msgstr "Cuadrículas de películas (Azules)"
+msgstr "Baldosas de películas (Azules)"
 
 msgctxt "#42240"
 msgid "TV Show Tiles (Green)"
-msgstr "Cuadrículas de series (Verdes)"
+msgstr "Baldosas de series (Verdes)"
 
 msgctxt "#42241"
 msgid "Music Tiles (Orange)"
-msgstr "Cuadrículas de música (Naranjas)"
+msgstr "Baldosas de música (Naranjas)"
 
 msgctxt "#42242"
 msgid "All Options"
@@ -1135,7 +1135,7 @@ msgstr "ClearArt"
 
 msgctxt "#42256"
 msgid "Home Tile Colours"
-msgstr "Colorear cuadrículas del menú principal"
+msgstr "Colorear baldosas del menu principal"
 
 msgctxt "#42257"
 msgid "TV Shows"
@@ -1162,4 +1162,4 @@ msgstr "Mostrar indicadores de navegación"
 
 msgctxt "#42262"
 msgid "Set Custom Overlay"
-msgstr "Establecer plantilla personalizada"
+msgstr "Establecer claridad en fondo"
