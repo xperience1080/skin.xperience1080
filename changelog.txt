@@ -1,3 +1,7 @@
+[B]3.49.21[/B]
+• Changes to small progress indicator to Video and Audio when pressing 'M'.
+• Includes current position/end time in same area, in keeping with the skin.
+
 [B]3.49.20[/B]
 • Adds small progress indicator to Video and Audio when pressing 'M'.
 
