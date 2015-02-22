@@ -35,9 +35,9 @@
                 <control type="progress" id="1">
 					<description>Mini Progress</description>
 					<left>90</left>
-					<top>-1</top>
+					<top>7</top>
 					<width>2010</width>
-					<height>8</height>
+					<height>4</height>
 					<info>Player.Progress</info>
 					<texturebg>osd/fullscreen/progress/back-mini.png</texturebg>
 					<lefttexture>-</lefttexture>
@@ -45,6 +45,18 @@
 					<righttexture>osd/fullscreen/progress/right-mini.png</righttexture>
 					<animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation>
 				</control>
+				<control type="label">				
+					<description>Mini Progress Time</description>
+					<posx>1680</posx>
+					<posy>38</posy>
+					<width>360</width>
+					<height>25</height>
+					<label>$INFO[Player.Time(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+					<textcolor>aawhite</textcolor>
+					<font>Font-Condensed-S34</font>
+					<align>left</align>
+					<animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation> 
+                </control>				
                 <control type="button" id="7">
                     <description>Playlist</description>
                     <posx>460</posx>
