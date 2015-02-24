@@ -882,7 +882,15 @@
 						<include>SettingsCategoryReloadSkin</include>
                         <onclick>ReloadSkin</onclick>
                         <label>$LOCALIZE[41352]</label>
-                    </control>	
+                    </control>
+				
+					<control type="button" id="10092">
+                        <width>1210</width>
+						<include>SettingsCategoryReloadSkin</include>
+                        <onclick>Skin.ResetSettings</onclick>
+                        <label>$LOCALIZE[10035] $LOCALIZE[166] *$LOCALIZE[19098]*</label>
+                    </control>
+										
                 </control>
 
                       
