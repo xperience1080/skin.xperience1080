@@ -1,3 +1,6 @@
+[B]3.49.22[/B]
+• Adds an option to reset the skin to default settings, use with caution.
+
 [B]3.49.21[/B]
 • Changes to small progress indicator to Video and Audio when pressing 'M'.
 • Includes current position/end time in same area, in keeping with the skin.
