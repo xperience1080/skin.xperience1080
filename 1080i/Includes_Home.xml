@@ -226,7 +226,7 @@
                 </control>
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[Window.Property(Music.SongsCount),, $LOCALIZE[134]]</label>
+                    <label>$INFO[Window.Property(Music.AlbumsCount),, $LOCALIZE[134]]</label>
                     <visible>Container(30).HasFocus(5)</visible>
                 </control>
 				
@@ -639,7 +639,7 @@
                     <onright condition="!System.GetBool(pvrmanager.enabled)">525</onright>
                     <onclick>SetProperty(HomeSearch,1)</onclick>
                     <onclick>RunScript(script.globalsearch)</onclick>
-                    <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
+                    <ondown condition="!Skin.HasSetting(KioskMode)">101</ondown>
 					<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                     <ondown>101</ondown>
                 </control>
@@ -3712,7 +3712,7 @@
                         <content>
                             <item id="1">
                                 <label fallback="2">$INFO[Skin.String(HomeMusicTile3.Label)]</label>
-                                <label2>$INFO[Window.Property(Music.SongsCount)]</label2>
+                                <label2>$INFO[Window.Property(Music.AlbumsCount)]</label2>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeMusicTile3) + !stringcompare(Skin.String(HomeMusicTile3.Type),4) + !stringcompare(Skin.String(HomeMusicTile3.Type),5) + !stringcompare(Skin.String(HomeMusicTile3.Type),6) + !stringcompare(Skin.String(HomeMusicTile3.Type),7)">RunAddon($INFO[Skin.String(HomeMusicTile3.Path)])</onclick>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeMusicTile3) + stringcompare(Skin.String(HomeMusicTile3.Type),4)">ActivateWindow(Videos,$INFO[Skin.String(HomeMusicTile3.Path)],return)</onclick>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeMusicTile3) + stringcompare(Skin.String(HomeMusicTile3.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(HomeMusicTile3.Path)],return)</onclick>
@@ -4301,7 +4301,7 @@
                         <content>
                             <item id="1">
                                 <label fallback="41504">$INFO[Skin.String(HomeProgramTile5.Label)]</label>
-                                <label2>$INFO[Window.Property(Music.SongsCount)]</label2>
+                                <label2>$INFO[Window.Property(Music.AlbumsCount)]</label2>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeProgramTile5) + !stringcompare(Skin.String(HomeProgramTile5.Type),4) + !stringcompare(Skin.String(HomeProgramTile5.Type),5) + !stringcompare(Skin.String(HomeProgramTile5.Type),6) + !stringcompare(Skin.String(HomeProgramTile5.Type),7)">RunAddon($INFO[Skin.String(HomeProgramTile5.Path)])</onclick>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeProgramTile5) + stringcompare(Skin.String(HomeProgramTile5.Type),4)">ActivateWindow(Videos,$INFO[Skin.String(HomeProgramTile5.Path)],return)</onclick>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeProgramTile5) + stringcompare(Skin.String(HomeProgramTile5.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(HomeProgramTile5.Path)],return)</onclick>
@@ -4447,7 +4447,7 @@
                             </item>
                             <item id="7">
                                  <label fallback="1043">$INFO[Skin.String(HomeProgramTile6.Label)]</label>
-                                <label2>$INFO[Window.Property(Music.SongsCount)]</label2>
+                                <label2>$INFO[Window.Property(Music.AlbumsCount)]</label2>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeProgramTile6) + !stringcompare(Skin.String(HomeProgramTile6.Type),4) + !stringcompare(Skin.String(HomeProgramTile6.Type),5) + !stringcompare(Skin.String(HomeProgramTile6.Type),6) + !stringcompare(Skin.String(HomeProgramTile6.Type),7)">RunAddon($INFO[Skin.String(HomeProgramTile6.Path)])</onclick>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeProgramTile6) + stringcompare(Skin.String(HomeProgramTile6.Type),4)">ActivateWindow(Videos,$INFO[Skin.String(HomeProgramTile6.Path)],return)</onclick>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeProgramTile6) + stringcompare(Skin.String(HomeProgramTile6.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(HomeProgramTile6.Path)],return)</onclick>
