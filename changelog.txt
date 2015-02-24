@@ -1,3 +1,7 @@
+[B]3.49.24[/B]
+• Changes Song Count to Album count (requested more than once).
+• Corrects Search going to Power button instead of Search 'bar'.
+
 [B]3.49.22[/B]
 • Adds an option to reset the skin to default settings, use with caution.
 
