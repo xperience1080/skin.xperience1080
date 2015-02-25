@@ -64,6 +64,10 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "Naizmjenične stavke"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Reprodukcija"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Prikazi"
@@ -71,6 +75,10 @@ msgstr "Prikazi"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TELEVIZIJA"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Napredno"
 
 msgctxt "#41250"
 msgid "Backgrounds"

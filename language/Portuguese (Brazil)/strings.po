@@ -32,6 +32,10 @@ msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
 msgstr "Mostrar apresentação de slides de artista na visualização musical"
 
+msgctxt "#41104"
+msgid "Display Paths for Files and Streams"
+msgstr "Exibir caminho para arquivos e transmissões"
+
 msgctxt "#41105"
 msgid "Animate Artist Slideshow"
 msgstr "Animar apresentação de slides de artista"
@@ -63,6 +67,10 @@ msgstr "Topo"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Fundo"
+
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Tela Inicial"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -228,6 +236,10 @@ msgctxt "#41175"
 msgid "Home Tile"
 msgstr "Painel de Início"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Reprodução"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Visualizações"
@@ -246,11 +258,11 @@ msgstr "Seleciona o país da classificação indicativa para o filme"
 
 msgctxt "#41200"
 msgid "Show Power Button (does not affect home screen)"
-msgstr "Exibir botão \"Desligar\" em todas as telas"
+msgstr "Exibir botão Desligar em todas as telas"
 
 msgctxt "#41201"
 msgid "Show Options Button"
-msgstr "Exibir botão \"Opções\""
+msgstr "Exibir botão Opções"
 
 msgctxt "#41202"
 msgid "Play Trailer on opening Film Information"
@@ -264,6 +276,14 @@ msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
 
+msgctxt "#41221"
+msgid "Enable Genre Colours in the TV EPG"
+msgstr "Usar gêneros coloridos no guia de programação de TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avançado"
+
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
 msgstr "Habilitar visualização de música"
@@ -274,7 +294,7 @@ msgstr "Focar por padrão no botão de legendas (no OSD de vídeo)"
 
 msgctxt "#41250"
 msgid "Backgrounds"
-msgstr "Imagens de fundo"
+msgstr "Imagens de Fundo"
 
 msgctxt "#41251"
 msgid "Global"
@@ -298,19 +318,19 @@ msgstr "Exibir avatar do perfil"
 
 msgctxt "#41272"
 msgid "Replace Pictures with Custom Menu Item in QuickNav"
-msgstr "Substituir \"Imagens\" por um item personalizado na Nav. Rápida"
+msgstr "Substituir Imagens por um item personalizado na Nav. Rápida"
 
 msgctxt "#41273"
 msgid "Replace Trailer with Custom Menu Item in QuickNav"
-msgstr "Substituir \"Trailer\" por um item personalizado na Nav. Rápida"
+msgstr "Substituir Trailer por um item personalizado na Nav. Rápida"
 
 msgctxt "#41274"
 msgid "Replace New Movies with Custom Menu Item in QuickNav"
-msgstr "Substituir \"Novos Filmes\" por um item personalizado na Nav. Rápida"
+msgstr "Substituir Novos Filmes por um item personalizado na Nav. Rápida"
 
 msgctxt "#41275"
 msgid "Replace New TV Shows with Custom Menu Item in QuickNav"
-msgstr "Substituir \"Novas Séries de TV\" por um item personalizado na Nav. Rápida"
+msgstr "Substituir Novas Séries de TV por um item personalizado na Nav. Rápida"
 
 msgctxt "#41276"
 msgid "Choose Custom Menu Item"
@@ -498,7 +518,7 @@ msgstr "Novos Filmes"
 
 msgctxt "#41451"
 msgid "New TV Shows"
-msgstr "Novas Séries de TV"
+msgstr "Novos Episódios de Séries de TV"
 
 msgctxt "#41452"
 msgid "No Media Playing"
@@ -531,6 +551,10 @@ msgstr "Versão da Skin"
 msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Versão do Kodi"
+
+msgctxt "#41460"
+msgid "Framework"
+msgstr "Estrutura"
 
 msgctxt "#41504"
 msgid "Applications"
@@ -566,7 +590,7 @@ msgstr "Novos Filmes"
 
 msgctxt "#41553"
 msgid "New TV Shows"
-msgstr "Novas Séries de TV"
+msgstr "Novos Episódios de Séries de TV"
 
 msgctxt "#41554"
 msgid "New Albums"
@@ -639,6 +663,10 @@ msgstr "Clima atual"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Previsão de 10 Dias"
+
+msgctxt "#41696"
+msgid "Today in Detail"
+msgstr "Hoje em detalhes"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -884,6 +912,38 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr "Miniatura em Lista"
 
+msgctxt "#42235"
+msgid "Display Date & Time"
+msgstr "Exibir data e hora"
+
+msgctxt "#42236"
+msgid "Display Weather"
+msgstr "Exibir clima"
+
+msgctxt "#42237"
+msgid "No Media Source available"
+msgstr "Nenhuma fonte de mídia disponível"
+
+msgctxt "#42238"
+msgid "Home Tiles (Red)"
+msgstr "Paíneis de Início (Vermelho)"
+
+msgctxt "#42239"
+msgid "Movie Tiles (Blue)"
+msgstr "Paíneis de Filme (Azul)"
+
+msgctxt "#42240"
+msgid "TV Show Tiles (Green)"
+msgstr "Paíneis de Séries de TV (Verde)"
+
+msgctxt "#42241"
+msgid "Music Tiles (Orange)"
+msgstr "Paíneis de Música (Laranja)"
+
+msgctxt "#42242"
+msgid "All Options"
+msgstr "Todas as opções"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Poster"
@@ -926,8 +986,12 @@ msgstr "Vermelho"
 
 msgctxt "#42260"
 msgid "Auto Login"
-msgstr "Auto Login"
+msgstr "Login Automático"
 
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
 msgstr "Exibir setas de navegação na tela inicial"
+
+msgctxt "#42262"
+msgid "Set Custom Overlay"
+msgstr "Selecionar sobreposição de fundo personalizada"

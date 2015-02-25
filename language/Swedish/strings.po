@@ -36,6 +36,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Nederst"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Hemskärm"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Anpassad"
@@ -112,6 +116,14 @@ msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "Aktuella Filmer"
 
+msgctxt "#41174"
+msgid "Trending TV Shows"
+msgstr "Populära TV-Serier"
+
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Uppspelning"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Vyer"
@@ -123,6 +135,10 @@ msgstr "Visa fanart"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avancerad"
 
 msgctxt "#41250"
 msgid "Backgrounds"

@@ -36,6 +36,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "底部"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "主屏幕"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "自定义"
@@ -112,6 +116,10 @@ msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "流行电影"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "播放"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "视图"
@@ -123,6 +131,10 @@ msgstr "显示同人画"
 msgctxt "#41220"
 msgid "TV"
 msgstr "电视"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "高级"
 
 msgctxt "#41250"
 msgid "Backgrounds"

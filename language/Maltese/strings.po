@@ -36,6 +36,10 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Custom"
 
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avvanzat"
+
 msgctxt "#41280"
 msgid "Add-ons"
 msgstr "Estensjonijiet"

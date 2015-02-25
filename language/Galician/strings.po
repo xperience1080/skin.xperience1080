@@ -36,6 +36,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Abaixo"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Pantalla Principal"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Personalizado"
@@ -112,6 +116,10 @@ msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "Filmes de moda"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Reprodución"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Vistas"
@@ -123,6 +131,10 @@ msgstr "Amosar Fanart"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avanzado"
 
 msgctxt "#41250"
 msgid "Backgrounds"

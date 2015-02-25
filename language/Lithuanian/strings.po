@@ -32,6 +32,10 @@ msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
 msgstr "Rodyti atlikėjo skaidrių peržiūrą muzikos vizualizacijoje"
 
+msgctxt "#41104"
+msgid "Display Paths for Files and Streams"
+msgstr "Rodyti failų ir srautų kelius"
+
 msgctxt "#41105"
 msgid "Animate Artist Slideshow"
 msgstr "Animuoti atlikėjo skaidrių peržiūrą"
@@ -63,6 +67,10 @@ msgstr "Viršuje"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Apačioje"
+
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Pradinis ekranas"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -228,6 +236,10 @@ msgctxt "#41175"
 msgid "Home Tile"
 msgstr "Pradinio ekrano plytelė"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Atkurimas"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Rodiniai"
@@ -263,6 +275,14 @@ msgstr "Atkurti anonsą sumažinus"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41221"
+msgid "Enable Genre Colours in the TV EPG"
+msgstr "Įjungti žanrų spalvas TV EPG lange"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Pažangus"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -532,6 +552,10 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Kodi versija"
 
+msgctxt "#41460"
+msgid "Framework"
+msgstr "Struktūra"
+
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Programos"
@@ -639,6 +663,10 @@ msgstr "Dabartiniai orai"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10-ties dienų prognozė"
+
+msgctxt "#41696"
+msgid "Today in Detail"
+msgstr "Šiandien išsamiai"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -884,6 +912,38 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr "Miniatiūrų sąrašas"
 
+msgctxt "#42235"
+msgid "Display Date & Time"
+msgstr "Rodyti datą ir laiką"
+
+msgctxt "#42236"
+msgid "Display Weather"
+msgstr "Rodyti orus"
+
+msgctxt "#42237"
+msgid "No Media Source available"
+msgstr "Nėra prieinamų media šaltinių"
+
+msgctxt "#42238"
+msgid "Home Tiles (Red)"
+msgstr "Pradinio ekrano plytelės (raudona)"
+
+msgctxt "#42239"
+msgid "Movie Tiles (Blue)"
+msgstr "Filmų plytelės (mėlyna)"
+
+msgctxt "#42240"
+msgid "TV Show Tiles (Green)"
+msgstr "TV laidų plytelės (žalia)"
+
+msgctxt "#42241"
+msgid "Music Tiles (Orange)"
+msgstr "Muzikos plytelės (oranžinė)"
+
+msgctxt "#42242"
+msgid "All Options"
+msgstr "Visos parinktys"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Plakatas"
@@ -931,3 +991,7 @@ msgstr "Automatinis prisijungimas"
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
 msgstr "Rodyti navigacijos rodyklę"
+
+msgctxt "#42262"
+msgid "Set Custom Overlay"
+msgstr "Nustatyti savą perdangą"

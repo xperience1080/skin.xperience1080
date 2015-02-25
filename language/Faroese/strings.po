@@ -40,6 +40,10 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Serligt"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Avspæling"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "Sjónvarp"

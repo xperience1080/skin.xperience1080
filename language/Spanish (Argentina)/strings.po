@@ -88,6 +88,10 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "Elementos aleatorios"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Reproducción"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Vistas"
@@ -95,6 +99,10 @@ msgstr "Vistas"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avanzado"
 
 msgctxt "#41250"
 msgid "Backgrounds"

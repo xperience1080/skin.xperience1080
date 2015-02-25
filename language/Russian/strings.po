@@ -36,6 +36,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Внизу"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Домашняя страница"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Пользовательская"
@@ -108,6 +112,10 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "Случайные"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Воспроизведение"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Режим просмотра"
@@ -119,6 +127,10 @@ msgstr "Показать фанарт"
 msgctxt "#41220"
 msgid "TV"
 msgstr "ТВ"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Дополнительно"
 
 msgctxt "#41250"
 msgid "Backgrounds"

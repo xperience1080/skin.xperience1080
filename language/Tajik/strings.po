@@ -40,9 +40,17 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Иловагӣ"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Пахш"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "ТВ"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Иловагӣ"
 
 msgctxt "#41250"
 msgid "Backgrounds"

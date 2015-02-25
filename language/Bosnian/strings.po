@@ -40,6 +40,10 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Prilagođeno"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Reprodukcija"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"

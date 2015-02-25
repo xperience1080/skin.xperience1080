@@ -108,6 +108,10 @@ msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "Trending Movies"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Playback"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Views"
@@ -115,6 +119,10 @@ msgstr "Views"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Advanced"
 
 msgctxt "#41250"
 msgid "Backgrounds"

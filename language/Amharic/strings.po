@@ -36,6 +36,10 @@ msgctxt "#41220"
 msgid "TV"
 msgstr "ቲቪ "
 
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "የረቀቀ"
+
 msgctxt "#41250"
 msgid "Backgrounds"
 msgstr "መደቦች "

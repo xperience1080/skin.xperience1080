@@ -24,6 +24,10 @@ msgctxt "#41101"
 msgid "Enable Kiosk Mode"
 msgstr "Bilgi Noktası Modunu Etkinleştir"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Ana Ekran"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Özel"
@@ -72,6 +76,10 @@ msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "Film Eğilimleri"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Oynatım"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Görünümler"
@@ -83,6 +91,10 @@ msgstr "Fanart Göster"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Gelişmiş"
 
 msgctxt "#41250"
 msgid "Backgrounds"
@@ -315,6 +327,10 @@ msgstr "Bilgi"
 msgctxt "#42160"
 msgid "TV Guide"
 msgstr "TV Rehberi"
+
+msgctxt "#42162"
+msgid "on"
+msgstr "Açık"
 
 msgctxt "#42180"
 msgid "Available Groups"

@@ -40,6 +40,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Fundo"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Ecrã inicial"
+
 msgctxt "#41131"
 msgid "Manage Categories"
 msgstr "Gerir Categorias"
@@ -172,6 +176,10 @@ msgctxt "#41174"
 msgid "Trending TV Shows"
 msgstr "Séries TV em voga"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Reprodução"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Vistas"
@@ -195,6 +203,10 @@ msgstr "Reproduzir trailer minimizado"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avançado"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"

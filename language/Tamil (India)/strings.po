@@ -40,9 +40,17 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "தனிப்பயன்"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "பின்னணி"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "தொலைக்காட்சி"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "மேம்பட்ட"
 
 msgctxt "#41250"
 msgid "Backgrounds"

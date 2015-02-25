@@ -48,9 +48,17 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "آیتم های تصادفی"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "پخش"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "تلویزیون"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "پیشرفته"
 
 msgctxt "#41250"
 msgid "Backgrounds"

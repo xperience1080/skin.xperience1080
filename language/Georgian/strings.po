@@ -20,6 +20,14 @@ msgctxt "#41100"
 msgid "General"
 msgstr "მთავარი"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "დაკვრა"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "დამატებით"
+
 msgctxt "#41443"
 msgid "Now Playing"
 msgstr "ახლა უკრავს"

@@ -68,9 +68,17 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "รายการ แบบสุ่ม"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "เล่นเพลง"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "ทีวี"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "ขั้นสูง"
 
 msgctxt "#41250"
 msgid "Backgrounds"

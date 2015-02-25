@@ -32,6 +32,10 @@ msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
 msgstr "Afficher le diaporama des artistes dans la visualisation de la musique"
 
+msgctxt "#41104"
+msgid "Display Paths for Files and Streams"
+msgstr "Afficher les chemins des fichiers et des flux"
+
 msgctxt "#41105"
 msgid "Animate Artist Slideshow"
 msgstr "Animer le diaporama des artistes"
@@ -63,6 +67,10 @@ msgstr "Haut"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Bas"
+
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Écran d'accueil"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -228,6 +236,10 @@ msgctxt "#41175"
 msgid "Home Tile"
 msgstr "Carreau de l'accueil"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Lecture"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Vues"
@@ -263,6 +275,14 @@ msgstr "Lire la bande-annonce minimisée"
 msgctxt "#41220"
 msgid "TV"
 msgstr "Télé"
+
+msgctxt "#41221"
+msgid "Enable Genre Colours in the TV EPG"
+msgstr "Activer les couleurs de genre dans le GÉP"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avancé"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -532,6 +552,10 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Version de Kodi"
 
+msgctxt "#41460"
+msgid "Framework"
+msgstr "Cadre applicatif"
+
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Applications"
@@ -639,6 +663,10 @@ msgstr "Météo actuelle"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Prévisions sur 10 jours"
+
+msgctxt "#41696"
+msgid "Today in Detail"
+msgstr "Aujourd'hui en détail"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -884,6 +912,38 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr "Liste d'imagettes"
 
+msgctxt "#42235"
+msgid "Display Date & Time"
+msgstr "Afficher la date & l'heure"
+
+msgctxt "#42236"
+msgid "Display Weather"
+msgstr "Afficher la météo"
+
+msgctxt "#42237"
+msgid "No Media Source available"
+msgstr "Aucune source de média n'est proposée"
+
+msgctxt "#42238"
+msgid "Home Tiles (Red)"
+msgstr "Carreaux de l'accueil (rouge)"
+
+msgctxt "#42239"
+msgid "Movie Tiles (Blue)"
+msgstr "Carreaux des films (bleu)"
+
+msgctxt "#42240"
+msgid "TV Show Tiles (Green)"
+msgstr "Carreaux des émissions télé (vert)"
+
+msgctxt "#42241"
+msgid "Music Tiles (Orange)"
+msgstr "Carreaux de la musique (orange)"
+
+msgctxt "#42242"
+msgid "All Options"
+msgstr "Toutes les options"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Affiche"
@@ -931,3 +991,7 @@ msgstr "Connexion automatique"
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
 msgstr "Afficher la flèche de navigation"
+
+msgctxt "#42262"
+msgid "Set Custom Overlay"
+msgstr "Définir une surcouche personnalisée"

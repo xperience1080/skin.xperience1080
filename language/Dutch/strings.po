@@ -32,6 +32,10 @@ msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
 msgstr "Toon artiest diavoorstelling in muziekvisualisatie"
 
+msgctxt "#41104"
+msgid "Display Paths for Files and Streams"
+msgstr "Toon locatie`s voor bestanden en streams"
+
 msgctxt "#41105"
 msgid "Animate Artist Slideshow"
 msgstr "Animeer artiesten diavoorstelling"
@@ -63,6 +67,10 @@ msgstr "Boven"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Onder"
+
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Beginscherm"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -228,6 +236,10 @@ msgctxt "#41175"
 msgid "Home Tile"
 msgstr "start Tegele"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Afspelen"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Weergaves"
@@ -263,6 +275,14 @@ msgstr "Speel trailer geminimaliseerd"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41221"
+msgid "Enable Genre Colours in the TV EPG"
+msgstr "Activeer genre kleuren in de TV EPG"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Geavanceerd"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -532,6 +552,10 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Kodi versie"
 
+msgctxt "#41460"
+msgid "Framework"
+msgstr "Framework"
+
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Add-ons"
@@ -639,6 +663,10 @@ msgstr "Huidig weer"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 dagen"
+
+msgctxt "#41696"
+msgid "Today in Detail"
+msgstr "Vandaag in detail"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -884,6 +912,38 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr "Miniaturenlijst"
 
+msgctxt "#42235"
+msgid "Display Date & Time"
+msgstr "Toon Datum & Tijd"
+
+msgctxt "#42236"
+msgid "Display Weather"
+msgstr "Toon Weer"
+
+msgctxt "#42237"
+msgid "No Media Source available"
+msgstr "Geen media bron beschikbaar"
+
+msgctxt "#42238"
+msgid "Home Tiles (Red)"
+msgstr "Start Tegels (Rood)"
+
+msgctxt "#42239"
+msgid "Movie Tiles (Blue)"
+msgstr "Film tegels (Blauw)"
+
+msgctxt "#42240"
+msgid "TV Show Tiles (Green)"
+msgstr "TV serie Tegels (Groen)"
+
+msgctxt "#42241"
+msgid "Music Tiles (Orange)"
+msgstr "Muziek Tegels (Oranje)"
+
+msgctxt "#42242"
+msgid "All Options"
+msgstr "Alle Opties"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Poster"
@@ -931,3 +991,7 @@ msgstr "Automatisch inloggen"
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
 msgstr "Toon navigatie pijl"
+
+msgctxt "#42262"
+msgid "Set Custom Overlay"
+msgstr "Gebruik aangepast overlay"

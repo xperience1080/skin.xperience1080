@@ -40,9 +40,17 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Tuỳ chỉnh"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Xem lại"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Nâng cao"
 
 msgctxt "#41250"
 msgid "Backgrounds"

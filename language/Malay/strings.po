@@ -36,6 +36,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Bawah"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Skrin Rumah"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Suai"
@@ -112,6 +116,10 @@ msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "Cereka Popular"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Main Balik"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Papar"
@@ -123,6 +131,10 @@ msgstr "Tunjuk Seni Peminat"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Lanjutan"
 
 msgctxt "#41250"
 msgid "Backgrounds"

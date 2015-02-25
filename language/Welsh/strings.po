@@ -20,6 +20,10 @@ msgctxt "#41100"
 msgid "General"
 msgstr "Cyffredinol"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Sgrin Cartref"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Cyfaddasu"
@@ -40,9 +44,17 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Cyfaddasu"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Chwarae"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "Teledu"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Uwch"
 
 msgctxt "#41250"
 msgid "Backgrounds"

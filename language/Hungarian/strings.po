@@ -36,6 +36,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Alul"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Főképernyő"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Egyéni"
@@ -108,6 +112,10 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "Véletlenszerű elemek"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Lejátszás"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Nézet"
@@ -119,6 +127,10 @@ msgstr "Fanart mutatása"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Haladó"
 
 msgctxt "#41250"
 msgid "Backgrounds"

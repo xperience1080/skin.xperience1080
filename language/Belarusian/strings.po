@@ -68,6 +68,10 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "Выпадковыя складнікі"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Playback"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Views"
@@ -79,6 +83,10 @@ msgstr "Show Fanart"
 msgctxt "#41220"
 msgid "TV"
 msgstr "ТВ"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Advanced"
 
 msgctxt "#41250"
 msgid "Backgrounds"

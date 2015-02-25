@@ -32,6 +32,10 @@ msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
 msgstr "Display Artist Slideshow in Music Visualization"
 
+msgctxt "#41104"
+msgid "Display Paths for Files and Streams"
+msgstr "Display Paths for Files and Streams"
+
 msgctxt "#41105"
 msgid "Animate Artist Slideshow"
 msgstr "Animate Artist Slideshow"
@@ -63,6 +67,10 @@ msgstr "Top"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Bottom"
+
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Home Screen"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -228,6 +236,10 @@ msgctxt "#41175"
 msgid "Home Tile"
 msgstr "Home Tile"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Playback"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Views"
@@ -263,6 +275,14 @@ msgstr "Play Trailer minimized"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41221"
+msgid "Enable Genre Colours in the TV EPG"
+msgstr "Enable Genre Colors in the TV EPG"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Advanced"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -532,6 +552,10 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Kodi Version"
 
+msgctxt "#41460"
+msgid "Framework"
+msgstr "Framework"
+
 msgctxt "#41504"
 msgid "Applications"
 msgstr "Add-ons"
@@ -639,6 +663,10 @@ msgstr "Current Weather"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10 Day Forecast"
+
+msgctxt "#41696"
+msgid "Today in Detail"
+msgstr "Today in Detail"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -884,6 +912,38 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr "Thumbnail List"
 
+msgctxt "#42235"
+msgid "Display Date & Time"
+msgstr "Display Date & Time"
+
+msgctxt "#42236"
+msgid "Display Weather"
+msgstr "Display Weather"
+
+msgctxt "#42237"
+msgid "No Media Source available"
+msgstr "No Media Source available"
+
+msgctxt "#42238"
+msgid "Home Tiles (Red)"
+msgstr "Home Tiles (Red)"
+
+msgctxt "#42239"
+msgid "Movie Tiles (Blue)"
+msgstr "Movie Tiles (Blue)"
+
+msgctxt "#42240"
+msgid "TV Show Tiles (Green)"
+msgstr "TV Show Tiles (Green)"
+
+msgctxt "#42241"
+msgid "Music Tiles (Orange)"
+msgstr "Music Tiles (Orange)"
+
+msgctxt "#42242"
+msgid "All Options"
+msgstr "All Options"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Poster"
@@ -931,3 +991,7 @@ msgstr "Auto Login"
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
 msgstr "Display Navigation Arrow"
+
+msgctxt "#42262"
+msgid "Set Custom Overlay"
+msgstr "Set Custom Overlay"

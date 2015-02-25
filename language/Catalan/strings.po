@@ -68,6 +68,10 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "Elements a l'atzar"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Reproducció"
+
 msgctxt "#41191"
 msgid "Show Fanart"
 msgstr "Mostra fanart"
@@ -75,6 +79,10 @@ msgstr "Mostra fanart"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avançat"
 
 msgctxt "#41250"
 msgid "Backgrounds"
@@ -203,6 +211,10 @@ msgstr "Inici"
 msgctxt "#41525"
 msgid "Search Kodi for"
 msgstr "Buscar a l'Kodi"
+
+msgctxt "#41550"
+msgid "Spotlight"
+msgstr "Spotlight"
 
 msgctxt "#41600"
 msgid "Options"

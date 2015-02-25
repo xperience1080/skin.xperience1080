@@ -64,9 +64,17 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "Náhodné položky"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Prehrávanie"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Pokročilé"
 
 msgctxt "#41250"
 msgid "Backgrounds"

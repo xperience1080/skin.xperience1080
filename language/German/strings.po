@@ -32,6 +32,10 @@ msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
 msgstr "Interpreten-Slideshow in Musikvisualisierung anzeigen"
 
+msgctxt "#41104"
+msgid "Display Paths for Files and Streams"
+msgstr "Pfad für Dateien und Streams anzeigen"
+
 msgctxt "#41105"
 msgid "Animate Artist Slideshow"
 msgstr "Interpreten-Slideshow animieren"
@@ -63,6 +67,10 @@ msgstr "Oben"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Unten"
+
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Hauptbildschirm"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -228,6 +236,10 @@ msgctxt "#41175"
 msgid "Home Tile"
 msgstr "Home-Kachel"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Wiedergabe"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Ansichten"
@@ -263,6 +275,14 @@ msgstr "Trailer minimiert starten"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41221"
+msgid "Enable Genre Colours in the TV EPG"
+msgstr "Genre-Farben im EPG aktivieren"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Erweitert"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -382,7 +402,7 @@ msgstr "Ungesehene Episoden: "
 
 msgctxt "#41314"
 msgid "Premièred: "
-msgstr "Premiere: "
+msgstr "Erstausstrahlung: "
 
 msgctxt "#41315"
 msgid "Play"
@@ -422,7 +442,7 @@ msgstr "Keine Biografie für diesen Schauspieler"
 
 msgctxt "#41330"
 msgid "No Description for this application"
-msgstr "Keine Beschreibung für diese Anwendung"
+msgstr "Keine Beschreibung für diese App"
 
 msgctxt "#41331"
 msgid "Released"
@@ -532,9 +552,13 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Kodi Version"
 
+msgctxt "#41460"
+msgid "Framework"
+msgstr "Framework"
+
 msgctxt "#41504"
 msgid "Applications"
-msgstr "Anwendungen"
+msgstr "Apps"
 
 msgctxt "#41505"
 msgid "Press \"Up\" to Eject"
@@ -542,7 +566,7 @@ msgstr "\"Nach oben\" drücken zum Auswerfen"
 
 msgctxt "#41507"
 msgid "Power"
-msgstr "Energie"
+msgstr "Power"
 
 msgctxt "#41524"
 msgid "Home"
@@ -639,6 +663,10 @@ msgstr "Aktuelles Wetter"
 msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "10-Tage-Vorhersage"
+
+msgctxt "#41696"
+msgid "Today in Detail"
+msgstr "Heute im Detail"
 
 msgctxt "#41716"
 msgid "Playlist Options"
@@ -834,7 +862,7 @@ msgstr "Liste"
 
 msgctxt "#42222"
 msgid "Info List"
-msgstr "Infoliste"
+msgstr "Info-Liste"
 
 msgctxt "#42223"
 msgid "Info List ■"
@@ -884,6 +912,38 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr "Thumbnail-Liste"
 
+msgctxt "#42235"
+msgid "Display Date & Time"
+msgstr "Datum & Uhrzeit anzeigen"
+
+msgctxt "#42236"
+msgid "Display Weather"
+msgstr "Wetter anzeigen"
+
+msgctxt "#42237"
+msgid "No Media Source available"
+msgstr "Keine Medienquelle verfügbar"
+
+msgctxt "#42238"
+msgid "Home Tiles (Red)"
+msgstr "Home-Kacheln (rot)"
+
+msgctxt "#42239"
+msgid "Movie Tiles (Blue)"
+msgstr "Film-Kacheln (Blau)"
+
+msgctxt "#42240"
+msgid "TV Show Tiles (Green)"
+msgstr "TV-Serien-Kacheln (Grün)"
+
+msgctxt "#42241"
+msgid "Music Tiles (Orange)"
+msgstr "Musik-Kacheln (Orange)"
+
+msgctxt "#42242"
+msgid "All Options"
+msgstr "Alle Optionen"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Poster"
@@ -931,3 +991,7 @@ msgstr "Automatisches Anmelden"
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
 msgstr "Navigations-Pfeil anzeigen"
+
+msgctxt "#42262"
+msgid "Set Custom Overlay"
+msgstr "Benutzerdefiniertes Overlay festlegen"

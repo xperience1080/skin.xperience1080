@@ -40,9 +40,17 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Mendeteksi Informasi Harddisk"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Playback"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Tingkat Lanjut"
 
 msgctxt "#41250"
 msgid "Backgrounds"

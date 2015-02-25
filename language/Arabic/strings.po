@@ -40,9 +40,17 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "مخصص"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "توليف"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "تلفزيون"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "مُتقدم"
 
 msgctxt "#41250"
 msgid "Backgrounds"

@@ -64,9 +64,17 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "Hlutir af handahófi"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Afspilun"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "SJÓNVARP"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Ítarlegt"
 
 msgctxt "#41250"
 msgid "Backgrounds"

@@ -60,6 +60,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "하단"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "홈 화면"
+
 msgctxt "#41131"
 msgid "Manage Categories"
 msgstr "카테고리 관리"
@@ -220,6 +224,10 @@ msgctxt "#41175"
 msgid "Home Tile"
 msgstr "홈 타일"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "재생"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "보기"
@@ -255,6 +263,10 @@ msgstr "최소화 상태로 예고편 재생"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "고급"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"

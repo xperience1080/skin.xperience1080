@@ -32,6 +32,10 @@ msgctxt "#41103"
 msgid "Display Artist Slideshow in Music Visualisation"
 msgstr "Wyświetl slajdy artystów w wizualizacji"
 
+msgctxt "#41104"
+msgid "Display Paths for Files and Streams"
+msgstr "Wyświetlaj ścieżki plików i strumieni"
+
 msgctxt "#41105"
 msgid "Animate Artist Slideshow"
 msgstr "Animuj pokaz slajdów obrazów wykonawcy"
@@ -63,6 +67,10 @@ msgstr "Góra"
 msgctxt "#41114"
 msgid "Bottom"
 msgstr "Dół"
+
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Ekran startowy"
 
 msgctxt "#41131"
 msgid "Manage Categories"
@@ -110,7 +118,7 @@ msgstr "Zalecany rozmiar 633x437px"
 
 msgctxt "#41144"
 msgid "Manage custom Home Tile Colours"
-msgstr "Zarządzaj kolorami niestandardowych kafelków"
+msgstr "Zarządzaj niestandardowymi kolorami kafelka"
 
 msgctxt "#41145"
 msgid "Video add-on"
@@ -226,7 +234,11 @@ msgstr "Seriale na topie"
 
 msgctxt "#41175"
 msgid "Home Tile"
-msgstr "Kafelek startowy"
+msgstr "Kafelek ekranu startowego"
+
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Odtwarzanie"
 
 msgctxt "#41190"
 msgid "Views"
@@ -263,6 +275,14 @@ msgstr "Odtwarzaj zwiastuny w oknie"
 msgctxt "#41220"
 msgid "TV"
 msgstr "Telewizja"
+
+msgctxt "#41221"
+msgid "Enable Genre Colours in the TV EPG"
+msgstr "Pokazuj ikony gatunków w przewodniku"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Zaawansowane"
 
 msgctxt "#41240"
 msgid "Enable Music Visualisation"
@@ -326,19 +346,19 @@ msgstr "Dodatek napisów"
 
 msgctxt "#41282"
 msgid "Lyrics add-on"
-msgstr "Dodatek Tekst utworu"
+msgstr "Dodatek tekstu utworów"
 
 msgctxt "#41283"
 msgid "Enable TVTunes add-on"
-msgstr "Włącz dodatek TVTunes"
+msgstr "Odtwarzaj motywy muzyczne w bibliotece wideo"
 
 msgctxt "#41284"
 msgid "Download theme songs"
-msgstr "Pobierz utwór motywu"
+msgstr "Pobierz motyw muzyczny"
 
 msgctxt "#41285"
 msgid "Enable TV Show Next Aired"
-msgstr "Włącz TV Show Next Aired"
+msgstr "Używaj dodatku TV Show Next Aired"
 
 msgctxt "#41290"
 msgid "Configure TV Show Next Aired"
@@ -390,11 +410,11 @@ msgstr "Odtwarzaj"
 
 msgctxt "#41316"
 msgid "Cast"
-msgstr "Występują"
+msgstr "Obsada"
 
 msgctxt "#41319"
 msgid "Plot"
-msgstr "Info"
+msgstr "Fabuła"
 
 msgctxt "#41324"
 msgid "Biography"
@@ -402,7 +422,7 @@ msgstr "Biografia"
 
 msgctxt "#41325"
 msgid "Review"
-msgstr "Podgląd"
+msgstr "Recenzja"
 
 msgctxt "#41326"
 msgid "Get Info"
@@ -462,11 +482,11 @@ msgstr "Zaloguj"
 
 msgctxt "#41440"
 msgid "System Info"
-msgstr "Informacje systemowe"
+msgstr "O systemie"
 
 msgctxt "#41441"
 msgid "QuickNav"
-msgstr "QuickNav"
+msgstr "Szybka nawigacja"
 
 msgctxt "#41443"
 msgid "Now Playing"
@@ -494,15 +514,15 @@ msgstr "Obrazy"
 
 msgctxt "#41450"
 msgid "New Movies"
-msgstr "Nowe Filmy"
+msgstr "Filmy ostatnio dodane"
 
 msgctxt "#41451"
 msgid "New TV Shows"
-msgstr "Nowe seriale"
+msgstr "Seriale ostatnio dodane"
 
 msgctxt "#41452"
 msgid "No Media Playing"
-msgstr "Brak pliku do odtworzania"
+msgstr "Brak pliku do odtwarzania"
 
 msgctxt "#41453"
 msgid "User"
@@ -532,9 +552,13 @@ msgctxt "#41459"
 msgid "Kodi Version"
 msgstr "Wersja Kodi"
 
+msgctxt "#41460"
+msgid "Framework"
+msgstr "Podstawa"
+
 msgctxt "#41504"
 msgid "Applications"
-msgstr "Aplikacje"
+msgstr "Programy"
 
 msgctxt "#41505"
 msgid "Press \"Up\" to Eject"
@@ -542,11 +566,11 @@ msgstr "Naciśnij \"Góra\", aby wysunąć dysk"
 
 msgctxt "#41507"
 msgid "Power"
-msgstr "Wyłącz"
+msgstr "Koniec"
 
 msgctxt "#41524"
 msgid "Home"
-msgstr "Ekran główny"
+msgstr "Ekran startowy"
 
 msgctxt "#41525"
 msgid "Search Kodi for"
@@ -562,11 +586,11 @@ msgstr "Seriale w trakcie emisji"
 
 msgctxt "#41552"
 msgid "New Movies"
-msgstr "Nowe Filmy"
+msgstr "Filmy ostatnio dodane"
 
 msgctxt "#41553"
 msgid "New TV Shows"
-msgstr "Nowe Seriale"
+msgstr "Seriale ostatnio dodane"
 
 msgctxt "#41554"
 msgid "New Albums"
@@ -640,6 +664,10 @@ msgctxt "#41695"
 msgid "10 Day Forecast"
 msgstr "Prognoza 10 dniowa"
 
+msgctxt "#41696"
+msgid "Today in Detail"
+msgstr "Dziś szczegółowo"
+
 msgctxt "#41716"
 msgid "Playlist Options"
 msgstr "Opcje listy odtwarzania"
@@ -650,7 +678,7 @@ msgstr "Data emisji"
 
 msgctxt "#41813"
 msgid "Episodes"
-msgstr "Epizodów"
+msgstr "Odcinków"
 
 msgctxt "#41817"
 msgid "Items"
@@ -754,7 +782,7 @@ msgstr "Aktualizacja uruchomionych repozytoriów dodatków..."
 
 msgctxt "#42136"
 msgid "Updating local add-on directories..."
-msgstr "Aktualizacja dodatków z lokalnych katalogów ..."
+msgstr "Aktualizacja dodatków z lokalnych folderów ..."
 
 msgctxt "#42160"
 msgid "TV Guide"
@@ -884,6 +912,38 @@ msgctxt "#42234"
 msgid "Thumbnail List"
 msgstr "Lista miniatur"
 
+msgctxt "#42235"
+msgid "Display Date & Time"
+msgstr "Wyświetlaj datę i czas"
+
+msgctxt "#42236"
+msgid "Display Weather"
+msgstr "Wyświetlaj pogodę"
+
+msgctxt "#42237"
+msgid "No Media Source available"
+msgstr "Brak dostępnego źródła mediów"
+
+msgctxt "#42238"
+msgid "Home Tiles (Red)"
+msgstr "Kafelki (Czerwone)"
+
+msgctxt "#42239"
+msgid "Movie Tiles (Blue)"
+msgstr "Kafelki filmu (Niebieskie)"
+
+msgctxt "#42240"
+msgid "TV Show Tiles (Green)"
+msgstr "Kafelki serialu (Zielone)"
+
+msgctxt "#42241"
+msgid "Music Tiles (Orange)"
+msgstr "Kafelki muzyki (Pomarańczowe)"
+
+msgctxt "#42242"
+msgid "All Options"
+msgstr "Wszystkie opcje"
+
 msgctxt "#42250"
 msgid "Poster"
 msgstr "Plakat"
@@ -910,7 +970,7 @@ msgstr "Przezrocze"
 
 msgctxt "#42256"
 msgid "Home Tile Colours"
-msgstr "Kolory kafelków ekranu startowego"
+msgstr "Kolory kafelków"
 
 msgctxt "#42257"
 msgid "TV Shows"
@@ -931,3 +991,7 @@ msgstr "Logowanie automatyczne"
 msgctxt "#42261"
 msgid "Display Navigation Arrow"
 msgstr "Pokazuj strzałkę nawigacyjną"
+
+msgctxt "#42262"
+msgid "Set Custom Overlay"
+msgstr "Ustaw niestandardową nakładkę"

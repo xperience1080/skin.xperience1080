@@ -40,6 +40,10 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Прилагођено"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Репродукција"
+
 msgctxt "#41250"
 msgid "Backgrounds"
 msgstr "Позадине"

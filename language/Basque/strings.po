@@ -40,6 +40,10 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Pertsonalizatua"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Erreprodukzioa"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "TB"

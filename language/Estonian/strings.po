@@ -60,9 +60,17 @@ msgctxt "#41162"
 msgid "Widget"
 msgstr "Vidin"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Taasesitus"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Põhjalikumad seaded"
 
 msgctxt "#41250"
 msgid "Backgrounds"

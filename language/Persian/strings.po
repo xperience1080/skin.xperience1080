@@ -20,9 +20,17 @@ msgctxt "#41100"
 msgid "General"
 msgstr "عمومی"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "باز پخش"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "تلوزیون"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "پیشرفته"
 
 msgctxt "#41315"
 msgid "Play"

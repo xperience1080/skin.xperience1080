@@ -36,6 +36,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Bas"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Écran d'accueil"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Personnaliser"
@@ -112,6 +116,14 @@ msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "Films du moment"
 
+msgctxt "#41174"
+msgid "Trending TV Shows"
+msgstr "Séries TV du moment"
+
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Lecture"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Vues"
@@ -123,6 +135,10 @@ msgstr "Afficher les Fanart"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avancé"
 
 msgctxt "#41250"
 msgid "Backgrounds"

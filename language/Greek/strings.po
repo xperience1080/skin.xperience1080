@@ -36,6 +36,10 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Κάτω"
 
+msgctxt "#41130"
+msgid "Home Screen"
+msgstr "Αρχ. Οθόνη"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Προσαρμογή"
@@ -112,6 +116,10 @@ msgctxt "#41173"
 msgid "Trending Movies"
 msgstr "Ταινίες με Ανοδική Πορεία"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Αναπαραγωγή"
+
 msgctxt "#41190"
 msgid "Views"
 msgstr "Προβολές"
@@ -123,6 +131,10 @@ msgstr "Εμφάνιση Fanart"
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Για προχωρημένους"
 
 msgctxt "#41250"
 msgid "Backgrounds"

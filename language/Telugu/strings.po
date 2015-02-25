@@ -24,6 +24,30 @@ msgctxt "#41141"
 msgid "Type"
 msgstr "రకం"
 
+msgctxt "#41303"
+msgid "Tracks"
+msgstr "ట్రాక్స్"
+
+msgctxt "#41307"
+msgid "Refresh"
+msgstr "రిఫ్రెష్"
+
+msgctxt "#41315"
+msgid "Play"
+msgstr "ప్లే"
+
+msgctxt "#41316"
+msgid "Cast"
+msgstr "తారాగణం"
+
+msgctxt "#41319"
+msgid "Plot"
+msgstr "కథాంశం"
+
+msgctxt "#41325"
+msgid "Review"
+msgstr "సమీక్ష"
+
 msgctxt "#41444"
 msgid "Settings"
 msgstr "అమరికలు"
@@ -35,6 +59,10 @@ msgstr "సంగీతం"
 msgctxt "#41448"
 msgid "Pictures"
 msgstr "చిత్రాలు"
+
+msgctxt "#41456"
+msgid "Resolution"
+msgstr "రిజల్యూషన్"
 
 msgctxt "#41524"
 msgid "Home"

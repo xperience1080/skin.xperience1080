@@ -40,6 +40,14 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "रिवाज"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "प्लेबैक"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "उन्नत"
+
 msgctxt "#41280"
 msgid "Add-ons"
 msgstr "ऐड - ऑन"

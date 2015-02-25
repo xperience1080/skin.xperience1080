@@ -20,6 +20,10 @@ msgctxt "#41100"
 msgid "General"
 msgstr "General"
 
+msgctxt "#41101"
+msgid "Enable Kiosk Mode"
+msgstr "Activează mod chioșc"
+
 msgctxt "#41137"
 msgid "Custom"
 msgstr "Particularizat"
@@ -40,9 +44,17 @@ msgctxt "#41151"
 msgid "Custom"
 msgstr "Particularizat"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "Redare"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "TV"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "Avansat"
 
 msgctxt "#41250"
 msgid "Backgrounds"

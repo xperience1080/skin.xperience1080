@@ -56,9 +56,17 @@ msgctxt "#41164"
 msgid "Random Items"
 msgstr "隨機項目"
 
+msgctxt "#41176"
+msgid "Playback"
+msgstr "播放"
+
 msgctxt "#41220"
 msgid "TV"
 msgstr "電視"
+
+msgctxt "#41222"
+msgid "Advanced"
+msgstr "進階"
 
 msgctxt "#41250"
 msgid "Backgrounds"
