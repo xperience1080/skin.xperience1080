@@ -25,7 +25,7 @@
         </control>
             <control type="image">
             <include>FullscreenDimensions</include>
-			<texture fallback=".">$INFO[Skin.String(GlobalOverlay)]</texture>
+			<texture fallback="special://skin/extras/fade/overlay.png">$INFO[Skin.String(GlobalOverlay)]</texture>
         </control>
     </include>
 
