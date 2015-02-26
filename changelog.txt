@@ -1,7 +1,10 @@
-[B]3.50[/B]
-• Version bump
-• Languages from Transifex
-• Submission to repo.
+[B]3.50.01[/B]
+• Corrects - instead of noop value
+• Corrects incorrectly defined variable
+• Corrects unmatched parenthesis for episodes
+• Corrects incorrect ID being used for 'No Media Content Available' in Movies on Home
+• Removes reference to 1080XF in Skin Header
+• Removes unrequired animation from codecinfo on Music, adds matching styling to text
 
 [B]3.49.24[/B]
 • Changes Song Count to Album count (requested more than once).
