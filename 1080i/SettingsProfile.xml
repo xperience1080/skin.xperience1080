@@ -60,8 +60,8 @@
                     <height>609</height>
                     <onleft>4</onleft>
                     <onright>4</onright>
-                    <onup>-</onup>
-                    <ondown>-</ondown>
+                    <onup>noop</onup>
+                    <ondown>noop</ondown>
                     <scrolltime>0</scrolltime>
                     <itemlayout height="76">
                         <control type="image">

@@ -577,8 +577,8 @@
     </variable>
 
     <variable name="ListItem.E">
-		<value condition="!IntegerGreaterThan(ListItem.Episode,9) + !IntegerGreaterThan(ListItem.Season,0">$INFO[ListItem.Episode]</value>	        
-        <value condition="!IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Episode,x0,]</value>
+		<value condition="!IntegerGreaterThan(ListItem.Episode,9) + !IntegerGreaterThan(ListItem.Season,0">$INFO[ListItem.Episode]</value>      
+        <value condition="!IntegerGreaterThan(ListItem.Episode,9) + IntegerGreaterThan(ListItem.Season,0">$INFO[ListItem.Episode,x0,]</value>
 		<value>$INFO[ListItem.Episode,x,]</value>
     </variable>	
 

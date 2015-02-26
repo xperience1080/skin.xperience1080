@@ -1380,7 +1380,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <enable>false</enable>
-                            <visible>!Library.HasContent(Video) + !Control.IsVisible(5053)</visible>
+                            <visible>!Library.HasContent(Video) + !Control.IsVisible(5033)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
                         </control>					
                         <control type="wraplist" id="5032">

@@ -16,8 +16,7 @@
         </control>	
 		<control type="group">
 			<posx>0</posx>
-			<posy>0</posy>
-			<animation effect="fade" time="200">-</animation>
+			<posy>0</posy>			
 			<visible>Player.ShowCodec</visible>
 				<control type="image">
 					<posx>-100</posx>
@@ -29,11 +28,11 @@
 				</control>
 				<control type="label">
 					<posx>130</posx>
-					<posy>35</posy>
-					<width>1660</width>
-					<height>40</height>
+					<posy>12</posy>
+					<width>auto</width>
+					<height>90</height>
 					<textcolor>bbwhite</textcolor>
-					<font>Font-Condensed-S34</font>
+					<font>Font-Condensed-S29-B</font>
 					<label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, · $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, · $LOCALIZE[612]: ,]$INFO[musicplayer.Samplerate, · $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, · $LOCALIZE[21444]: ]</label>
 				</control>
 		</control>	

@@ -393,7 +393,7 @@
                                 <height>58</height>
                                 <font>Font-Condensed-S34-B</font>
                                 <align>right</align>
-                                <label>$VAR[ListItem.ChannelNumber]</label>
+                                <label>$INFO[ListItem.ChannelNumber]</label>
                                 <textcolor>eewhite</textcolor>
                                 <selectedcolor>SelectedGreen</selectedcolor>
                                 <scroll>false</scroll>
@@ -407,7 +407,7 @@
                                 <height>96</height>
                                 <font>Font-Condensed-S34-B</font>
                                 <align>right</align>
-                                <label>$VAR[ListItem.ChannelNumber]</label>
+                                <label>$INFO[ListItem.ChannelNumber]</label>
                                 <textcolor>eewhite</textcolor>
                                 <selectedcolor>SelectedGreen</selectedcolor>
                                 <scroll>false</scroll>
@@ -925,7 +925,7 @@
 	                            <height>58</height>
 	                            <font>Font-Condensed-S34-B</font>
 	                            <align>right</align>
-	                            <label>$VAR[ListItem.ChannelNumber]</label>
+	                            <label>$INFO[ListItem.ChannelNumber]</label>
 	                            <textcolor>eewhite</textcolor>
 	                            <selectedcolor>SelectedGreen</selectedcolor>
 	                            <scroll>false</scroll>
@@ -939,7 +939,7 @@
 	                            <height>96</height>
 	                            <font>Font-Condensed-S34-B</font>
 	                            <align>right</align>
-	                            <label>$VAR[ListItem.ChannelNumber]</label>
+	                            <label>$INFO[ListItem.ChannelNumber]</label>
 	                            <textcolor>eewhite</textcolor>
 	                            <selectedcolor>SelectedGreen</selectedcolor>
 	                            <scroll>false</scroll>
