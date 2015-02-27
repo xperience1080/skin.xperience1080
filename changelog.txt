@@ -1,3 +1,6 @@
+[B]3.50.03[/B]
+• Corrects parenthesis error.
+
 [B]3.50.02[/B]
 • Corrects overlay not displaying on startup for new installs
 • Replaces overlay.png with Xperience1080 overlay (14 options are available)
