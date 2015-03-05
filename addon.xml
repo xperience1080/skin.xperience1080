@@ -17,7 +17,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
         <summary lang="en">A clean, modern, 1920x1080 panel-based skin</summary>
-        <summary lang="de">Ein aufgeräumtes & modernes, Kachel-basiertes Skin in 1920x1080p</summary>
+        <summary lang="de">Ein aufgeräumtes &amp; modernes, Kachel-basiertes Skin in 1920x1080p</summary>
         <summary lang="es">Un 1920x1080 piel limpia, moderna, basada en panel</summary>
         <summary lang="fr">Un habillage net, moderne, en panneaux et 1920 x 1080</summary>
         <summary lang="it">1920x1080 pelle pannello a base di moderno pulito</summary>
