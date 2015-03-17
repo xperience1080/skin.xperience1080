@@ -249,17 +249,17 @@
                         <item id="2">
                             <label>-</label>
                             <onclick>noop</onclick>
-							<visible>!Skin.HasSetting(HomeMovies)</visible>
+							<!--<visible>!Skin.HasSetting(HomeMovies)</visible>-->
                         </item>
                         <item id="3">
                             <label>-</label>
                             <onclick>noop</onclick>
-							<visible>!Skin.HasSetting(HomeTVShows)</visible>
+							<!--<visible>!Skin.HasSetting(HomeTVShows)</visible>-->
                         </item>
                         <item id="4">
                             <label>-</label>
                             <onclick>noop</onclick>
-							<visible>!Skin.HasSetting(HomeMusic)</visible>
+							<!--<visible>!Skin.HasSetting(HomeMusic)</visible>-->
                         </item>
 					
                     </content>
