@@ -1,3 +1,8 @@
+[B]4.00.00-a[/B]
+• Bumps xbmc gui
+• Removes non-required options from addon.xml
+• I just swallowed a filling
+
 [B]3.50.05[/B]
 • Corrects conditional dialog issue when playing music.
 • Updated strings from Transifex: Bulgarian, Catalan, Danish, Dutch, French, German, Korean, Polish, Romanian, Serbian (Cyrillic), Spanish (User submission).
