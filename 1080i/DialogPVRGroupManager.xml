@@ -11,7 +11,7 @@
                 <visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(yesnodialog) + !Window.IsVisible(okdialog)</visible>
                 
                 <control type="image">
-                    <posx>920</posx>
+                    <posx>820</posx>
                     <posy>166</posy>
                     <width>80</width>
                     <height>60</height>
@@ -19,7 +19,7 @@
                 </control>
                 
                 <control type="image">
-                    <posx>307</posx>
+                    <posx>207</posx>
                     <posy>186</posy>
                     <width>1296</width>
                     <height>708</height>
@@ -28,7 +28,7 @@
                             
                 <control type="label">
                     <description>Heading</description>
-                    <posx>473</posx>
+                    <posx>373</posx>
                     <posy>138</posy>
                     <width>974</width>
                     <font>Font-Condensed-S34</font>
@@ -39,7 +39,7 @@
                 
                 <control type="group">
                     <description>Group list</description>
-                    <posx>341</posx>
+                    <posx>241</posx>
                     <posy>220</posy>
                     <control type="label">
                         <description>Name label</description>
@@ -66,7 +66,7 @@
                         <posy>40</posy>
                         <width>400</width>
                         <height>600</height>
-                        <onleft>29</onleft>
+                        <onleft>9000</onleft>
                         <onright>60</onright>
                         <onup>13</onup>
                         <ondown>13</ondown>
@@ -176,7 +176,7 @@
                 </control>
                 <control type="group">
                     <description>Channels list</description>
-                    <posx>755</posx>
+                    <posx>655</posx>
                     <posy>220</posy>
                     <control type="label" id="21">
                         <description>Name label</description>
@@ -328,7 +328,7 @@
                 </control>
                 <control type="group">
                     <description>Grouped channels list</description>
-                    <posx>1169</posx>
+                    <posx>1069</posx>
                     <posy>220</posy>
                     <control type="label" id="22">
                         <description>Name label</description>
@@ -479,14 +479,14 @@
                     </control>
                 </control>
                 <control type="grouplist" id="9000">
-                    <posx>302</posx>
-                    <posy>856</posy>
-                    <width>1316</width>
-                    <height>100</height>
-                    <itemgap>-40</itemgap>
+                    <posx>1475</posx>
+                    <posy>-20</posy>
+                    <width>600</width>
+                    <height>800</height>
+                    <itemgap>-35</itemgap>
                     <align>center</align>
-                    <orientation>horizontal</orientation>
-                    <onleft>72</onleft>
+                    <orientation>vertical</orientation>
+                    <onleft>80</onleft>
                     <onright>13</onright>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
@@ -495,6 +495,7 @@
                         <label>$LOCALIZE[42181]</label>
                         <texturefocus>buttons/folder-fo.png</texturefocus>
                         <texturenofocus>buttons/folder-nf.png</texturenofocus>
+                        <textwidth>400</textwidth>
                         <include>DialogButtonDimensions</include>
                         <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(26)">Conditional</animation>
                     </control>
@@ -503,14 +504,28 @@
                         <label>$LOCALIZE[42182]</label>
                         <texturefocus>buttons/edit-fo.png</texturefocus>
                         <texturenofocus>buttons/edit-nf.png</texturenofocus>
+                        <textwidth>400</textwidth>
                         <include>DialogButtonDimensions</include>
                         <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(27)">Conditional</animation>
+                    </control>
+                    <control type="radiobutton" id="25">
+                        <description>Hide group</description>
+                        <label>$LOCALIZE[19289]</label>
+                        <font>Font-Condensed-S26-B</font>
+                        <texturefocus>buttons/albuminfo-fo.png</texturefocus>
+                        <texturenofocus>buttons/albuminfo-nf.png</texturenofocus>
+                        <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
+                        <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
+                        <textwidth>400</textwidth>
+                        <include>DialogButtonDimensions</include>
+                        <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(25)">Conditional</animation>
                     </control>
                     <control type="button" id="28">
                         <description>Delete group</description>
                         <label>$LOCALIZE[42183]</label>
                         <texturefocus>buttons/cancel-fo.png</texturefocus>
                         <texturenofocus>buttons/cancel-nf.png</texturenofocus>
+                        <textwidth>400</textwidth>
                         <include>DialogButtonDimensions</include>
                         <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(28)">Conditional</animation>
                     </control>
@@ -519,6 +534,7 @@
                         <label>$LOCALIZE[42000]</label>
                         <texturefocus>buttons/select-fo.png</texturefocus>
                         <texturenofocus>buttons/select-nf.png</texturenofocus>
+                        <textwidth>400</textwidth>
                         <include>DialogButtonDimensions</include>
                         <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(29)">Conditional</animation>
                     </control>
