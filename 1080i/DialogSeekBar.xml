@@ -137,7 +137,7 @@
                         <posy>1027</posy>
                         <width>360</width>
                         <height>25</height>
-                        <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ,]</label>
+                        <label>$VAR[SeekLabel]</label>
                         <scroll>false</scroll>
                         <textcolor>aawhite</textcolor>
                         <font>Font-Condensed-S34</font>

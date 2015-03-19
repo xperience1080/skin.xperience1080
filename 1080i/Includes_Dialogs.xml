@@ -78,6 +78,12 @@
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/banner.png]</value>
     </variable>
     
+	<variable name="SeekLabel">
+		<value condition="!IsEmpty(Player.SeekStepSize)">$INFO[Player.SeekStepSize,$LOCALIZE[773] ,]</value>
+        <value condition="Player.DisplayAfterSeek">$INFO[Player.SeekOffset,$LOCALIZE[773] ,]</value>
+	    <value condition="Player.Seeking">$LOCALIZE[773]</value>
+    </variable>
+
     <include name="ArtDialogPanelWidthPoster">
         <width>992</width>
     </include>
