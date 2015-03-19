@@ -983,7 +983,7 @@
                                 <posy>0</posy>
                                 <width>1190</width>
                                 <height>60</height>
-                                <label>$INFO[ListItem.label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
                                 <font>Font-Condensed-S40</font>
                                 <textcolor>aawhite</textcolor>
                                 <selectedcolor>white</selectedcolor>
@@ -998,7 +998,7 @@
                                 <posy>0</posy>
                                 <width>1190</width>
                                 <height>60</height>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
                                 <textcolor>eewhite</textcolor>
                                 <font>Font-Condensed-S40</font>
                                 <align>left</align>
