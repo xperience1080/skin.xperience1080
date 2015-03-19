@@ -1,3 +1,12 @@
+[B]4.00.08[/B]
+• Removes unrequired buttons from PVR Channel Manager
+• Separates name and role of actors in videoinfo
+• Adjusts control IDs & Label for Visualisations
+• Visual progress seek for Isengard
+• Adds new info label Player.SeekStepSize
+• Temporary fix for Home profile image information
+• Merges of xhaggi's PVR updates
+
 [B]4.00.00-a[/B]
 • Bumps xbmc gui
 • Removes non-required options from addon.xml
