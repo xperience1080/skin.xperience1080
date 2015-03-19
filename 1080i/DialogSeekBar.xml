@@ -79,6 +79,7 @@
                             <righttexture>osd/fullscreen/progress/right.png</righttexture>
                             <overlaytexture>-</overlaytexture>
                         </control>
+						<!-- Already included with Helix -->
                         <control type="progress" id="401">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -93,6 +94,7 @@
                             <colordiffuse>AAFFFFFF</colordiffuse>
                             <visible>Player.Seeking</visible>
                         </control>
+						<!-- END - Already included with Helix -->
                     </control>
                     <control type="label">
                         <posx>1590</posx>
@@ -103,6 +105,7 @@
                         <textcolor>aawhite</textcolor>
                         <font>Font-Condensed-S34</font>
                         <align>left</align>
+						<!-- Already included with Helix -->
                         <visible>!Player.Seeking</visible>
                     </control>
                     <control type="label">
@@ -115,6 +118,7 @@
                         <font>Font-Condensed-S34</font>
                         <align>left</align>
                         <visible>Player.Seeking</visible>
+						<!-- END - Already included with Helix -->
                     </control>
                     <control type="label">
                         <description>Pause / finish time</description>
