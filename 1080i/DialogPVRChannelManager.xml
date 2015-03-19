@@ -576,69 +576,6 @@
                             <ondown>31</ondown>
                             <visible>!IsEmpty(Window.Property(IsRadio))</visible>
                         </control>
-                        <control type="button" id="31">
-                            <description>Edit channel Button</description>
-                            <posx>0</posx>
-                            <posy>104</posy>
-                            <width>600</width>
-                            <height>50</height>
-                            <align>left</align>
-                            <textoffsetx>20</textoffsetx>
-                            <textwidth>540</textwidth>
-                            <textcolor>FF585858</textcolor>
-                            <focusedcolor>eewhite</focusedcolor>
-                            <disabledcolor>77585858</disabledcolor>
-                            <shadowcolor>20FFFFFF</shadowcolor>
-                            <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
-                            <texturenofocus>dialogs/default/separator.png</texturenofocus>
-                            <label>19203</label>
-                            <onleft>20</onleft>
-                            <onright>8003</onright>
-                            <onup>30</onup>
-                            <ondown>32</ondown>
-                        </control>
-                        <control type="button" id="32">
-                            <description>Delete channel Button</description>
-                            <posx>0</posx>
-                            <posy>153</posy>
-                            <width>600</width>
-                            <height>50</height>
-                            <align>left</align>
-                            <textoffsetx>20</textoffsetx>
-                            <textwidth>540</textwidth>
-                            <textcolor>FF585858</textcolor>
-                            <focusedcolor>eewhite</focusedcolor>
-                            <disabledcolor>77585858</disabledcolor>
-                            <shadowcolor>20FFFFFF</shadowcolor>
-                            <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
-                            <texturenofocus>dialogs/default/separator.png</texturenofocus>
-                            <label>19211</label>
-                            <onleft>20</onleft>
-                            <onright>8003</onright>
-                            <onup>31</onup>
-                            <ondown>33</ondown>
-                        </control>
-                        <control type="button" id="33">
-                            <description>New channel Button</description>
-                            <posx>0</posx>
-                            <posy>202</posy>
-                            <width>600</width>
-                            <height>50</height>
-                            <align>left</align>
-                            <textoffsetx>20</textoffsetx>
-                            <textwidth>540</textwidth>
-                            <textcolor>FF585858</textcolor>
-                            <focusedcolor>eewhite</focusedcolor>
-                            <disabledcolor>77585858</disabledcolor>
-                            <shadowcolor>20FFFFFF</shadowcolor>
-                            <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
-                            <label>19204</label>
-                            <onleft>20</onleft>
-                            <onright>8003</onright>
-                            <onup>32</onup>
-                            <ondown>SetProperty(Focus,1)</ondown>
-                            <ondown>8003</ondown>
-                        </control>
                     </control>
                 </control>
             </control>
