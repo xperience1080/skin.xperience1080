@@ -72,6 +72,21 @@
                             <include>visiblehidefadeinfo</include>
                         </control>
                         <control type="label">
+                            <description>Empty Plot</description>
+                            <visible>IsEmpty(Container(50).ListItem.Plot)</visible>
+                            <posx>30</posx>
+                            <posy>300</posy>
+                            <width>516</width>
+                            <height>72</height>
+                            <font>Font-Condensed-S40</font>
+                            <label>$LOCALIZE[19055]</label>
+                            <textcolor>77white</textcolor>
+                            <shadowcolor>22000000</shadowcolor>
+                            <scroll>false</scroll>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                        </control>
+                        <control type="label">
                             <posx>30</posx>
                             <posy>618</posy>
                             <width>516</width>
@@ -86,7 +101,7 @@
                             <posx>572</posx>
                             <posy>78</posy>
                             <width>6</width>
-                            <height>505</height>                    
+                            <height>505</height>
                             <onleft>70</onleft>
                             <onright>16</onright>
                             <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
