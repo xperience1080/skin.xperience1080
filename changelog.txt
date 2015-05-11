@@ -1,3 +1,14 @@
+[B]4.02.10[/B]
+• Beta extendedinfo integration *ONLY FOR TESTING*
+
+[B]4.02.00[/B]
+• Merges xhaggi's bookmark changes
+• New texture, removal of texture
+
+[B]4.01.00[/B]
+• Adds Premiered date to episodes on certain viewtypes
+• Adds Premiered date to episode info
+
 [B]4.00.08[/B]
 • Removes unrequired buttons from PVR Channel Manager
 • Separates name and role of actors in videoinfo
