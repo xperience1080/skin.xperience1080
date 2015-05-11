@@ -230,6 +230,40 @@
             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
         </control>
     </include>
+
+    <include name="ContextMenuVideoBookmarks">
+        <control type="image" id="999">
+            <description>background image</description>
+            <visible>false</visible>
+        </control>
+        <control type="grouplist" id="996">
+            <description>grouplist for context buttons</description>
+            <visible>false</visible>
+        </control>
+        <control type="button" id="1000">
+            <description>button template</description>
+            <visible>false</visible>
+        </control>
+        <control type="grouplist" id="2000">
+            <description>Custom group list</description>
+            <posx>95</posx>
+            <posy>90</posy>
+            <width>1000</width>
+            <height>100</height>
+            <itemgap>-275</itemgap>
+            <orientation>horizontal</orientation>
+            <scrolltime>0</scrolltime>
+            <onup>Close</onup>
+            <ondown>Close</ondown>
+            <onleft>Close</onleft>
+            <onright>Close</onright>
+            <control type="button" id="2003">
+                <description>Delete</description>
+                <label>-</label>
+                <onclick>SendClick(1001)</onclick>
+            </control>
+        </control>
+    </include>
     
     <include name="ContextMenuFavourites">
         <control type="image" id="999">
