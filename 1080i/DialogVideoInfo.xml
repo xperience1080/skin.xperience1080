@@ -29,7 +29,7 @@
                 <effect type="slide" start="0" end="-2320" time="500" delay="0" tween="sine" easing="inout" />
             </animation>
 
-            <visible>!Window.IsActive(script-Actors-DialogInfo.xml) + !Window.IsActive(script-Actors-DialogInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
+            <visible>!Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
             
             <!-- Title Label -->
             <control type="group">
@@ -233,7 +233,7 @@
                     <textcolor>eewhite</textcolor>
                     <align>left</align>
                     <scroll>false</scroll>
-                    <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Control.HasFocus(9334) | Control.HasFocus(50) | Control.HasFocus(1110) | Window.IsActive(script-Actors-DialogInfo.xml) | Window.IsActive(3004) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]">Conditional</animation>
+                    <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Control.HasFocus(9334) | Control.HasFocus(50) | Control.HasFocus(1110) | Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsActive(3004) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]">Conditional</animation>
                 </control>
                 <!-- Cast Label -->
                 <control type="label">
@@ -246,7 +246,7 @@
                     <textcolor>eewhite</textcolor>
                     <align>left</align>
                     <scroll>false</scroll>  
-                    <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Control.HasFocus(9333) | Control.HasFocus(9335) | Control.HasFocus(1101) | Control.HasFocus(1104) | Control.HasFocus(1105) | Control.HasFocus(1110) | Control.HasFocus(70) | Control.HasFocus(71) | Window.IsActive(script-Actors-DialogInfo.xml) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]">Conditional</animation>
+                    <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Control.HasFocus(9333) | Control.HasFocus(9335) | Control.HasFocus(1101) | Control.HasFocus(1104) | Control.HasFocus(1105) | Control.HasFocus(1110) | Control.HasFocus(70) | Control.HasFocus(71) | Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]">Conditional</animation>
                      <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
                 </control>
                 <!-- Right Arrow Label -->
@@ -262,7 +262,7 @@
                     <scroll>false</scroll>
                     <include>visiblehidefadeinfo</include>
                     <animation effect="fade" start="100" end="0" tween="sine" easing="inout" time="300" condition="!Control.HasFocus(50)">Conditional</animation>
-                    <visible>System.HasAddon(script.metadata.actors) + !Container.Content(musicvideos)</visible>
+                    <visible>System.HasAddon(script.extendedinfo) + !Container.Content(musicvideos)</visible>
                 </control>
             </control>
             
@@ -632,6 +632,19 @@
                         <visible>!Container.Content(TVShows)</visible>
                         <!-- Year | Runtime -->
                         <control type="label">
+							<visible>Container.Content(episodes)</visible>	
+                            <posx>8</posx>
+                            <posy>0</posy>
+                            <width>1044</width>
+                            <height>36</height>
+                            <font>Font-Condensed-S34</font>
+                            <align>left</align>
+                            <label>$INFO[ListItem.Premiered,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ★ ,]</label>
+                            <textcolor>aawhite</textcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="label">
+							<visible>!Container.Content(episodes)</visible>	
                             <posx>8</posx>
                             <posy>0</posy>
                             <width>1044</width>
@@ -641,7 +654,7 @@
                             <label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ★ ,]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
-                        </control>
+                        </control>						
                     </control>
                     <control type="group">
                         <width>1044</width>
@@ -858,6 +871,7 @@
                         </control>
                         <control type="label">
                             <posx>0</posx>
+
                             <posy>0</posy>
                             <width min="0" max="544">auto</width>
                             <height>36</height>
@@ -967,9 +981,16 @@
                         <width>1180</width>
                         <height>660</height>
                         <onleft>SetFocus(9335)</onleft>
-                        <onright condition="[!System.HasAddon(script.metadata.actors) | !IsEmpty(Window(Home).Property(script.metadata.actors.isactive)) | Container.Content(musicvideos)] + !Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
-                        <onright condition="System.HasAddon(script.metadata.actors) + IsEmpty(Window(Home).Property(script.metadata.actors.isactive)) + !Container.Content(musicvideos)">SetProperty(script.metadata.actors.push,1,home)</onright>
-                        <onright condition="System.HasAddon(script.metadata.actors) + IsEmpty(Window(Home).Property(script.metadata.actors.isactive)) + !Container.Content(musicvideos)">RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onright>
+                        <onright condition="[!System.HasAddon(script.extendedinfo) | Container.Content(musicvideos)] + !Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
+	
+						
+    
+	<onright condition="System.HasAddon(script.extendedinfo) + !Container.Content(musicvideos)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onright>
+	
+	                   <!-- <onright condition="System.HasAddon(script.extendedinfo) + !Container.Content(musicvideos)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onright> -->
+                        
+                       <!-- <onright condition="System.HasAddon(script.extendedinfo) + IsEmpty(Window(Home).Property(script.metadata.actors.isactive)) + !Container.Content(musicvideos)">SetProperty(script.metadata.actors.push,1,home)</onright>
+                        <onright condition="System.HasAddon(script.extendedinfo) + IsEmpty(Window(Home).Property(script.metadata.actors.isactive)) + !Container.Content(musicvideos)">RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onright> --->
                         <onup>50</onup>
                         <ondown>50</ondown>
                         <pagecontrol>151</pagecontrol>
@@ -983,7 +1004,7 @@
                                 <posy>0</posy>
                                 <width>1190</width>
                                 <height>60</height>
-                                <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
+                                <label>$INFO[ListItem.label]</label>
                                 <font>Font-Condensed-S40</font>
                                 <textcolor>aawhite</textcolor>
                                 <selectedcolor>white</selectedcolor>
@@ -998,7 +1019,7 @@
                                 <posy>0</posy>
                                 <width>1190</width>
                                 <height>60</height>
-                                <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
+                                <label>$INFO[ListItem.Label]</label>
                                 <textcolor>eewhite</textcolor>
                                 <font>Font-Condensed-S40</font>
                                 <align>left</align>
