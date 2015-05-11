@@ -3118,6 +3118,19 @@
                                 <align>left</align>
                             </control>
                             <control type="label">
+								<visible>Container.Content(episodes)</visible>							 
+                                <posx>20</posx>
+                                <posy>329</posy>
+                                <width>440</width>
+                                <label>$INFO[ListItem.Rating,★ , [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Premiered]$INFO[ListItem.Duration, [COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]$VAR[LandscapeHDSD3DLabel]</label>
+                                <font>Font-Condensed-S32</font>
+                                <textcolor>aawhite</textcolor>
+                                <shadowcolor>22000000</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>left</align>
+                            </control>
+                            <control type="label">
+								<visible>!Container.Content(episodes)</visible>
                                 <posx>20</posx>
                                 <posy>329</posy>
                                 <width>440</width>
@@ -3127,7 +3140,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>
+                            </control>							
                             <control type="textbox">
                                 <description>Plot</description>
                                 <posx>20</posx>
@@ -3236,18 +3249,31 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>
+                            </control>					
                             <control type="label">
+								<visible>Container.Content(episodes)</visible>							 
                                 <posx>20</posx>
                                 <posy>329</posy>
                                 <width>440</width>
-                                <label>$INFO[ListItem.Rating,★ , [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration, [COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]$VAR[LandscapeHDSD3DLabel]</label>
+                                <label>$INFO[ListItem.Rating,★ , [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Premiered]$INFO[ListItem.Duration,[COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]$VAR[LandscapeHDSD3DLabel]</label>
                                 <font>Font-Condensed-S32</font>
                                 <textcolor>aawhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
                             </control>
+                            <control type="label">
+								<visible>!Container.Content(episodes)</visible>							 
+                                <posx>20</posx>
+                                <posy>329</posy>
+                                <width>440</width>
+                                <label>$INFO[ListItem.Rating,★ , [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]$VAR[LandscapeHDSD3DLabel]</label>
+                                <font>Font-Condensed-S32</font>
+                                <textcolor>aawhite</textcolor>
+                                <shadowcolor>22000000</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>left</align>
+                            </control>							
                             <control type="textbox">
                                 <description>Plot</description>
                                 <posx>20</posx>
