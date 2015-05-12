@@ -1,3 +1,11 @@
+[B]4.02.31[/B]
+• GUI Version: Bump to 5.9.0
+
+[B]4.02.30[/B]
+• PVR: Display timer epg info if available
+• PVR: Display no info available if recording info is missing
+• VideoInfo: Separates name and role of actors
+
 [B]4.02.10[/B]
 • Beta extendedinfo integration *ONLY FOR TESTING*
 
