@@ -71,7 +71,7 @@
                             <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
                             <include>visiblehidefadeinfo</include>
                         </control>
-                        <control type="label">
+						<control type="label">
                             <description>Empty Plot</description>
                             <visible>IsEmpty(Container(50).ListItem.Plot)</visible>
                             <posx>30</posx>
@@ -102,7 +102,7 @@
                             <posy>78</posy>
                             <width>6</width>
                             <height>505</height>
-                            <onleft>70</onleft>
+							<onleft>70</onleft>
                             <onright>16</onright>
                             <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                             <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
