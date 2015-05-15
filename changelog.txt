@@ -1,3 +1,6 @@
+[B]4.02.38[/B]
+• Trakt: QR Dialog integration
+
 [B]4.02.31[/B]
 • GUI Version: Bump to 5.9.0
 
