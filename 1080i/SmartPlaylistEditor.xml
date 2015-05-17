@@ -27,7 +27,7 @@
                 <posy>93</posy>
                 <width>974</width>
                 <font>Font-Condensed-S34</font>
-                <label>$LOCALIZE[21432]</label>
+                <label>-</label>
                 <textcolor>ddwhite</textcolor>
                 <align>center</align>
             </control>
