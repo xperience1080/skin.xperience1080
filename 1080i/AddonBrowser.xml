@@ -129,21 +129,12 @@
                     <radioposx>-19</radioposx>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(8)">Conditional</animation>
                 </control>
-                <control type="button" id="98">
-                    <description>Update enabled repositories</description>
-                    <include>optionsbuttonsdimensions</include>
-                    <label>$LOCALIZE[42133]</label>
-                    <onclick>UpdateAddonRepos</onclick>
-                    <onclick>Notification($LOCALIZE[42135],)</onclick>
-                    <texturefocus border="70,2,2,2">dialogs/options/buttons/refresh-fo.png</texturefocus>
-                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/refresh-nf.png</texturenofocus>
-                </control>
-                <control type="button" id="99">
+                <control type="button" id="9">
                     <description>Update local add-on directories</description>
                     <include>optionsbuttonsdimensions</include>
-                    <label>$LOCALIZE[42134]</label>
+                    <label>$LOCALIZE[24034]</label>
                     <onclick>UpdateLocalAddons</onclick>
-                    <onclick>Notification($LOCALIZE[42136],)</onclick>
+                    <onclick>Notification($LOCALIZE[31003],)</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/refresh-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/refresh-nf.png</texturenofocus>
                 </control>
