@@ -33,13 +33,13 @@
                 	<texture border="5">dialogs/default/inner.png</texture>
                 </control>
                 
-                <control type="label">
+                <control type="label" id="2">
                     <description>Heading</description>
                     <posx>473</posx>
                     <posy>218</posy>
                     <width>974</width>
                     <font>Font-Condensed-S34</font>
-                    <label>$LOCALIZE[5]</label>
+                    <label>-</label>
                     <textcolor>ddwhite</textcolor>
                     <align>center</align>
                 </control>
