@@ -38,6 +38,7 @@
                 <width>80</width>
                 <height>80</height>
                 <align>center</align>
+                <texture>unknown-user.png</texture>
                 <aspectratio>scale</aspectratio>                
                 <texture diffuse="windows/logon/profile_mask.png" />
             </control>
@@ -101,32 +102,7 @@
                 <width>40</width>
                 <height>40</height>
                 <texture>$INFO[Control.GetLabel(101)]</texture>
-            </control>
-            
-            <control type="label" id="103">
-                <description>profile location</description>
-                <posx>1322</posx>
-                <posy>480</posy>
-                <width>352</width>
-                <height>60</height>
-                <align>right</align>
-                <font>Font-Condensed-S32</font>
-                <textcolor>FF585858</textcolor>
-                <visible>[!ControlGroup(5).HasFocus() | !ControlGroup(5).HasFocus(32)] + !IsEmpty(Control.GetLabel(33))</visible>
-            </control>
-            
-            <control type="label">
-                <description>profile location</description>
-                <posx>1322</posx>
-                <posy>480</posy>
-                <width>352</width>
-                <height>60</height>
-                <align>right</align>
-                <label>$INFO[Control.GetLabel(103)]</label>
-                <font>Font-Condensed-S32</font>
-                <textcolor>eewhite</textcolor>
-                <visible>ControlGroup(5).HasFocus() + ControlGroup(5).HasFocus(32) + !IsEmpty(Control.GetLabel(33))</visible>
-            </control>
+            </control>        
             
             <control type="button" id="7">
                 <description>-</description>
@@ -178,23 +154,7 @@
                 <textoffsetx>20</textoffsetx>
                 <spinposx>16</spinposx>
             </control>
-            
-            <control type="sliderex" id="10">
-                <description>Slider</description>
-                <textcolor>FF585858</textcolor>
-                <focusedcolor>eewhite</focusedcolor>
-                <disabledcolor>77585858</disabledcolor>
-                <shadowcolor>20FFFFFF</shadowcolor>
-                <font>Font-Condensed-S32</font>
-                <textwidth>352</textwidth>
-                <textoffsetx>20</textoffsetx>
-                <sliderwidth>140</sliderwidth>
-                <sliderheight>20</sliderheight>
-                <texturesliderbar>buttons/OSD/slider_back.png</texturesliderbar>
-                <textureslidernib>buttons/OSD/orb_nofo.png</textureslidernib>
-                <textureslidernibfocus>buttons/OSD/orb_fo.png</textureslidernibfocus>
-            </control>
-            
+                       
             <control type="group" id="1004">
                 <posx>565</posx>
                 <posy>716</posy>
