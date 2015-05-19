@@ -1,3 +1,30 @@
+﻿[B]4.05.00[/B]
+• Weather: New design for standard weather view when fanart is not being used
+
+[B]4.04.11[/B]
+• Language: Additional strings
+
+[B]4.04.10[/B]
+• Add-ons: Updates for 15
+• Additional language strings
+
+[B]4.04.00[/B]
+• Profiles: Fixes outstanding issues for Profile Management
+• Profiles: Updates for 15
+
+[B]4.03.00[/B]
+• Video OSD Settings: Updates for 15
+• Audio OSD Settings: Updates for 15
+
+[B]4.02.70[/B]
+• Playlist Editor: Updates for 15
+
+[B]4.02.65[/B]
+• Peripheral Settings: Updates for 15
+
+[B]4.02.61[/B]
+• Visualisation: Updates for 15
+
 [B]4.02.38[/B]
 • Trakt: QR Dialog integration
 
