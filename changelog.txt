@@ -1,4 +1,7 @@
-﻿[B]4.05.00[/B]
+﻿[B]4.05.14[/B]
+• Home: Corrects Profile item count ordering and visibility
+
+[B]4.05.00[/B]
 • Weather: New design for standard weather view when fanart is not being used
 
 [B]4.04.11[/B]
