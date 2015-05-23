@@ -2106,7 +2106,8 @@
                         </control>
                     </focusedlayout>
                 </control>
-                <control type="list" id="451">
+                <control type="list" id="450">
+                <!-- corrects thumbs not displaying in Isengard, commit noted <control type="list" id="451"> -->    
                     <posx>479</posx>
                     <posy>300</posy>
                     <width>644</width>
