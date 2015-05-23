@@ -1,4 +1,18 @@
-﻿[B]4.05.14[/B]
+﻿[B]4.05.40[/B]
+• Requirements updated
+• script.globalsearch from 3.0.4 to 4.0.1
+• script.artistslideshow from 1.7.0 to 1.8.2
+
+[B]4.05.30[/B]
+• Full Screen Information: Restores 52 and 53 buttons for information dialog when in full screen, to be fixed in core [xhaggi]
+
+[B]4.05.20[/B]
+• Colours: Restores original colours for select, playing, active item
+
+[B]4.05.18[/B]
+• Thumbnails: Corrects image previews not displaying in Isengard when using the FileBrowser in container 451
+
+[B]4.05.14[/B]
 • Home: Corrects Profile item count ordering and visibility
 
 [B]4.05.00[/B]
