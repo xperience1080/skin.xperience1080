@@ -1,4 +1,7 @@
-﻿[B]4.05.56[/B]
+﻿[B]4.05.57[/B]
+• TV Next Aired: corrects mistake in 4.05.56
+
+[B]4.05.56[/B]
 • TV Next Aired: adds episode number in 00x00 format to TV Show Next Aired at the top right TV Shows viewtypes when enabled
 
 [B]4.05.50[/B]
