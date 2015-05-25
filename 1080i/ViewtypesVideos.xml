@@ -193,17 +193,18 @@
                         <visible>!IsEmpty(ListItem.Genre)</visible>
                     </control>
                     <control type="label">
-                        <description>Year / Genre</description>
+                        <description>Year / Genre / Runtime</description>
                         <posx>170</posx>
                         <posy>43</posy>
                         <width>1220</width>
                         <height>54</height>
                         <font>Font-Condensed-S28</font>
                         <align>left</align>
-                        <label>$INFO[ListItem.Genre]</label>
+                        <label>$INFO[ListItem.Genre,, • ]$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                         <selectedcolor>D4FFFFFF</selectedcolor>
                         <textcolor>99FFFFFF</textcolor>
                         <scroll>false</scroll>
+                        <visible>!IsEmpty(ListItem.Genre)</visible>
                     </control>
                     <control type="image">
                         <description>HD/SD flag</description>
@@ -459,17 +460,18 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <description>Year / Genre</description>
+                        <description>Year / Genre / Duration</description>
                         <posx>362</posx>
                         <posy>43</posy>
                         <width>1028</width>
                         <height>54</height>
                         <font>Font-Condensed-S28</font>
                         <align>left</align>
-                        <label>$INFO[ListItem.Premiered]</label>
+                        <label>$INFO[ListItem.Premiered,, • ]$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                         <selectedcolor>D4FFFFFF</selectedcolor>
                         <textcolor>99FFFFFF</textcolor>
                         <scroll>false</scroll>
+                        <visible>!IsEmpty(ListItem.Premiered)</visible>
                     </control>
                     <control type="label">
                         <posx>366</posx>
@@ -649,10 +651,11 @@
                             <height>54</height>
                             <font>Font-Condensed-S28</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Genre]</label>
+                            <label>$INFO[ListItem.Genre,, • ]$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                             <selectedcolor>D4FFFFFF</selectedcolor>
                             <textcolor>D4FFFFFF</textcolor>
                             <scroll>false</scroll>
+                            <visible>!IsEmpty(ListItem.Genre)</visible>
                         </control>
                         <control type="image">
                             <description>HD/SD flag</description>
@@ -960,10 +963,11 @@
                             <height>54</height>
                             <font>Font-Condensed-S28</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Premiered]</label>
+                            <label>$INFO[ListItem.Premiered,, • ]$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                             <selectedcolor>D4FFFFFF</selectedcolor>
                             <textcolor>D4FFFFFF</textcolor>
                             <scroll>false</scroll>
+                            <visible>!IsEmpty(ListItem.Premiered)</visible>
                         </control>
                         <control type="image">
                             <description>Watched/unwatched overlay</description>
@@ -2376,7 +2380,7 @@
                             <posy>543</posy>
                             <width>678</width>
                             <font>Font-Condensed-S30</font>
-                            <label>$VAR[VideoPanelThumbInfo]</label>
+                            <label>$VAR[VideoPanelThumbInfo]A</label>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
@@ -5028,7 +5032,7 @@
 				<textcolor>CCFFFFFF</textcolor>
 				<font>Font-Condensed-S34</font>
 				<align>justify</align>
-				<scroll>true</scroll>
+<!--				<scroll>true</scroll>-->
 				<autoscroll delay="13000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
 			</control>
 			<control type="image">

@@ -811,7 +811,7 @@
     </variable>
     
     <variable name="InfoListSubInfo">
-        <value condition="Container.Content(Episodes)">$INFO[Container(52).ListItem.Date,$LOCALIZE[41805]: ,]</value>
+        <value condition="Container.Content(Episodes)">$INFO[Container(52).ListItem.Duration,, $LOCALIZE[12391] • ]$INFO[Container(52).ListItem.Date,$LOCALIZE[41805]: ,]</value>
         <value>$INFO[Container(52).ListItem.Genre]</value>
     </variable>
     
