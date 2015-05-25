@@ -9,6 +9,9 @@
     <controls>
         <!-- Movies, TVShows, Seasons, Episodes -->
         <control type="group">
+            <visible>!Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
+            <visible>!Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)</visible>
+            <visible>!Window.IsVisible(fullscreenvideo)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
