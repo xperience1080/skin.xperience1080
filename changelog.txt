@@ -1,4 +1,7 @@
-﻿[B]4.05.50[/B]
+﻿[B]4.05.56[/B]
+• TV Next Aired: adds episode number in 00x00 format to TV Show Next Aired at the top right TV Shows viewtypes when enabled
+
+[B]4.05.50[/B]
 • Framework: changes the date displayed to the regional format selected
 
 [B]4.05.40[/B]
