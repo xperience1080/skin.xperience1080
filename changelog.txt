@@ -1,4 +1,12 @@
-﻿[B]4.07.01[/B]
+﻿[B]4.07.06[/B]
+• Home: corrects incorrect label for album count on profile
+• Home: adds episode count in addition to tv show count
+• Home: adds song count in addition to album count
+
+[B]4.07.02[/B]
+• Extendedinfo: additional textures added
+
+[B]4.07.01[/B]
 • Extendedinfo: first public release of working alpha for Xperience1080
 
 [B]4.06.00[/B]
