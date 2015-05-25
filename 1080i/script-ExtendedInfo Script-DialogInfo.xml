@@ -10,8 +10,9 @@
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width> 
-            <height>800</height>            
-            <!--<animation type="WindowOpen" condition="!Window.IsActive(movieinformation) + IsEmpty(Window(home).Property(TotalMovies))">
+            <height>800</height>
+            <!-- Animations neeed integrating             
+            <animation type="WindowOpen" condition="!Window.IsActive(movieinformation) + IsEmpty(Window(home).Property(TotalMovies))">
                 <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
                 <effect type="zoom" start="335,125,1440,810" end="0,0,1920,1080" time="400" delay="300" tween="cubic" easing="out" />
             </animation>
@@ -32,7 +33,7 @@
             <animation type="WindowClose" condition="[Window.IsActive(movieinformation) | !IsEmpty(Window(Home).Property(script.metadata.actors.hasparent))] + !IsEmpty(Window(Home).Property(script.metadata.actors.push))">
                 <effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
                 <effect type="slide" start="0" end="-2320" time="500" delay="0" tween="sine" easing="inout" />
-            </animation>-->
+            </animation> -->
             <control type="button" id="168">
                 <visible allowhiddenfocus="true">false</visible>
                 <onleft>Action(back)</onleft>
@@ -350,13 +351,6 @@
                             </animation>
                             <itemlayout height="400" width="244">
                                 <control type="group">
-                                    <!-- <control type="image">
-                                        <posy>0</posy>
-                                        <posx>50</posx>
-                                        <width>280</width>
-                                        <height>380</height>
-                                        <texture border="40" colordiffuse="$INFO[Window(home).Property(actor.ImageColor)]">dialogs/extendedinfo/buttons/roundedbutton-nofocus.png</texture>
-                                    </control> -->
                                     <control type="group">
                                         <posx>77</posx>
                                         <posy>18</posy>
@@ -496,8 +490,6 @@
                                             <texture>dialogs/extendedinfo/flags/local.png</texture>
                                             <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                                         </control>
-                                            
-                                        
                                     </control>
                                 </control>
                             </itemlayout>
@@ -788,7 +780,7 @@
                             </animation>
                             <itemlayout height="400" width="244">
                                 <control type="group">
-                                                                            <posx>77</posx>
+                                        <posx>77</posx>
                                         <posy>18</posy>
                                     <control type="image">
                                         <posy>10</posy>
