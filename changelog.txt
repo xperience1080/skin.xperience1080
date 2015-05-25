@@ -1,4 +1,13 @@
-﻿[B]4.05.64[/B]
+﻿[B]4.07.01[/B]
+• Extendedinfo: first public release of working alpha for Xperience1080
+
+[B]4.06.00[/B]
+• Extendedinfo: reverts alignment
+
+[B]4.05.70[/B]
+• Extendedinfo: next public release of integration of dialog 1/2
+
+[B]4.05.64[/B]
 • Weather: corrects overlap in string for languages like German
 
 [B]4.05.61[/B]
