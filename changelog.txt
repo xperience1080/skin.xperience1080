@@ -1,4 +1,7 @@
-﻿[B]4.05.60[/B]
+﻿[B]4.05.61[/B]
+• Runtime: swaps ordering for 4.05.60
+
+[B]4.05.60[/B]
 • Runtime: adds runtime to List and InfoList viewtypes for Movies and Episodes
 
 [B]4.05.57[/B]
