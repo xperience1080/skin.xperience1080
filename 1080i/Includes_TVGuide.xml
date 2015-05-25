@@ -580,7 +580,7 @@
                         <posy>33</posy>
                         <width>700</width>
                         <height>120</height>
-                        <label>$INFO[Window(Home).Property(NextAired.Status),, • ]$INFO[Window(Home).Property(NextAired.LatestDate)]</label>
+                        <label>$INFO[Window(Home).Property(NextAired.Status),, • ]$INFO[Window(Home).Property(NextAired.LatestDate),, • ]$INFO[Window(Home).Property(NextAired.LatestNumber)]</label>
                         <font>Font-Condensed-S28</font>
                         <textcolor>80FFFFFF</textcolor>
                         <scroll>false</scroll>
