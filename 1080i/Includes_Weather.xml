@@ -60,7 +60,7 @@
             </control> 
             <control type="image">
                 <description>Medium weather</description>
-                <posx>133</posx>
+                <posx>0</posx>
                 <posy>123</posy>
                 <width>138</width>
                 <height>138</height>
@@ -92,13 +92,13 @@
                 <textcolor>aawhite</textcolor>
             </control>           
             <control type="label">
-                <description>current feels like label</description>
+                <description>current humidity label</description>
                 <posx>0</posx>
                 <posy>265</posy>
                 <width>462</width>
                 <height>34</height>
                 <font>Font-Condensed-S34</font>
-                <label>$LOCALIZE[402]: $INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
+                <label>$LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]</label>
                 <align>left</align>
                 <aligny>center</aligny>                
                 <textcolor>aawhite</textcolor>
@@ -116,13 +116,13 @@
                 <textcolor>aawhite</textcolor>
             </control>
             <control type="label">
-                <description>current humidity label</description>
-                <posx>395</posx>
-                <posy>265</posy>
+                <description>current temperature</description>
+                <posx>360</posx>
+                <posy>175</posy>
                 <width>462</width>
                 <height>34</height>
-                <font>Font-Condensed-S34</font>
-                <label>$LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]</label>
+                <font>Font-Condensed-S45</font>
+                <label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]$INFO[Window.Property(Day0.HighTemp), / ,]$INFO[System.TemperatureUnits]</label>
                 <align>right</align>
                 <aligny>center</aligny>                 
                 <textcolor>aawhite</textcolor>
