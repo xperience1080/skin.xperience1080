@@ -3,6 +3,7 @@
     <defaultcontrol always="true">10000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
+        <include>FadeBackgroundButtonMenu</include>
         <control type="list" id="10000">
             <left>-125</left>
             <top>0</top>
