@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <!--<defaultcontrol always="true">4000</defaultcontrol>-->
-    <defaultcontrol always="true">168</defaultcontrol>
+    <defaultcontrol always="true">4000</defaultcontrol>
 	<onunload>ClearProperty(fanart_image,home)</onunload>
 	<allowoverlay>no</allowoverlay>
     <controls>
@@ -376,6 +376,15 @@
                                             <texture>dialogs/extendedinfo/flags/local.png</texture>
                                             <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                                         </control>
+                                        <control type="image">
+                                            <posy>10</posy>
+                                            <width>224</width>
+                                            <height>325</height>
+                                            <texture>dialogs/extendedinfo/common/black.png</texture>
+                                            <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(250)">Conditional</animation>
+                                            <animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
+                                            <aspectratio aligny="center">scale</aspectratio>
+                                        </control>                                        
                                     </control>
                                 </control>
                             </itemlayout>
@@ -496,6 +505,15 @@
                                             <texture>dialogs/extendedinfo/flags/local.png</texture>
                                             <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                                         </control>
+                                        <control type="image">
+                                            <posy>10</posy>
+                                            <width>224</width>
+                                            <height>325</height>
+                                            <texture>dialogs/extendedinfo/common/black.png</texture>
+                                            <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(550)">Conditional</animation>
+                                            <animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
+                                            <aspectratio aligny="center">scale</aspectratio>
+                                        </control>                                        
                                     </control>
                                 </control>
                             </itemlayout>
@@ -616,6 +634,15 @@
                                             <texture>dialogs/extendedinfo/flags/local.png</texture>
                                             <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                                         </control>
+                                        <control type="image">
+                                            <posy>10</posy>
+                                            <width>224</width>
+                                            <height>325</height>
+                                            <texture>dialogs/extendedinfo/common/black.png</texture>
+                                            <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(650)">Conditional</animation>
+                                            <animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
+                                            <aspectratio aligny="center">scale</aspectratio>
+                                        </control>                                        
                                     </control>
                                 </control>
                             </itemlayout>
@@ -710,9 +737,9 @@
                             <onright>350</onright>
                             <onup>650</onup>
                             <ondown>450</ondown>
-                            <!-- <pagecontrol>60</pagecontrol> -->
+                            <pagecontrol>60</pagecontrol>
                             <scrolltime>200</scrolltime>
-                            <!-- <focusposition>0</focusposition>a -->
+                            <focusposition>0</focusposition>
                             <orientation>horizontal</orientation>
                             <animation type="WindowOpen" reversible="false">
                                 <effect type="slide" start="0,1080" end="0,0" delay="0" tween="sine" time="1300" />
@@ -752,6 +779,15 @@
                                         <aspectratio aligny="center">scale</aspectratio>
                                         <fadetime>0</fadetime>
                                     </control>
+                                    <control type="image">
+                                        <posy>10</posy>
+                                        <width>408</width>
+                                        <height>325</height>
+                                        <texture>dialogs/extendedinfo/common/black.png</texture>
+                                        <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(350)">Conditional</animation>
+                                        <animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
+                                        <aspectratio aligny="center">scale</aspectratio>
+                                    </control>                                    
                                 </control>
                             </focusedlayout>
                         </control>
@@ -796,6 +832,15 @@
                                         <aspectratio aligny="center">scale</aspectratio>
                                         <fadetime>0</fadetime>
                                     </control>
+                                    <control type="image">
+                                        <posy>10</posy>
+                                        <width>224</width>
+                                        <height>325</height>
+                                        <texture>dialogs/extendedinfo/common/black.png</texture>
+                                        <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(450)">Conditional</animation>
+                                        <animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
+                                        <aspectratio aligny="center">scale</aspectratio>
+                                        </control>                                    
                                 </control>
                             </itemlayout>
                             <focusedlayout height="400" width="244">
@@ -879,6 +924,15 @@
                                         <aspectratio aligny="center">scale</aspectratio>
                                         <fadetime>0</fadetime>
                                     </control>
+                                    <control type="image">
+                                        <posy>10</posy>
+                                        <width>408</width>
+                                        <height>325</height>
+                                        <texture>dialogs/extendedinfo/common/black.png</texture>
+                                        <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(750)">Conditional</animation>
+                                        <animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
+                                        <aspectratio aligny="center">scale</aspectratio>
+                                    </control>                                     
                                 </control>
                             </itemlayout>
                             <focusedlayout height="400" width="424">
