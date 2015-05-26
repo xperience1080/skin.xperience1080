@@ -1,4 +1,8 @@
-﻿[B]4.07.06[/B]
+﻿[B]4.07.10[/B]
+• Extendedinfo: adds fade behind slide images
+• Extendedinfo: adds fade when container item is selected
+
+[B]4.07.06[/B]
 • Home: corrects incorrect label for album count on profile
 • Home: adds episode count in addition to tv show count
 • Home: adds song count in addition to album count
