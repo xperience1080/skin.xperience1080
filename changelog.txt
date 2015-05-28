@@ -1,4 +1,7 @@
-﻿[B]4.07.10[/B]
+﻿[B]4.07.20[/B]
+• Extendedinfo: Changes layout, leaving only Known Movie and Known TV roles
+
+[B]4.07.10[/B]
 • Extendedinfo: adds fade behind slide images
 • Extendedinfo: adds fade when container item is selected
 
