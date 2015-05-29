@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.xperience1080" version="4.07.20" name="Xperience1080" provider-name="Piers">
+<addon id="skin.xperience1080" version="4.08.00" name="Xperience1080" provider-name="Piers">
 	<requires>
 		<import addon="xbmc.gui" version="5.9.0" />
 		<import addon="service.skin.widgets" version="0.0.29" />
@@ -12,7 +12,7 @@
 		<import addon="script.randomandlastitems" version="2.2.2" />
 		<import addon="script.extendedinfo" version="2.0.3" />
 	</requires>
-	<extension point="xbmc.gui.skin" effectslowdown="0.86" debugging="false">
+	<extension point="xbmc.gui.skin" effectslowdown="0.76" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">

@@ -1,4 +1,10 @@
-﻿[B]4.07.20[/B]
+﻿[B]4.08.00[/B]
+• Extendedinfo: Integration start for Extendedinfo DialogVideoInfo
+
+[B]4.07.40[/B]
+• Extendedinfo: Changes focus for cast
+
+[B]4.07.20[/B]
 • Extendedinfo: Changes layout, leaving only Known Movie and Known TV roles
 
 [B]4.07.10[/B]
