@@ -74,7 +74,14 @@
         <value condition="substring(Container.FolderPath,musicvideos,right)">DefaultAddonMusicVideoInfo.png</value>
         <value condition="substring(Container.FolderPath,image,right)">DefaultAddonPicture.png</value>
         <value condition="substring(Container.FolderPath,executable,right)">DefaultAddonProgram.png</value>
-        <value condition="substring(Container.FolderPath,pvrclient,right)">DefaultFolder.png</value>
+        <value condition="substring(Container.FolderPath,language,right)">DefaultAddonLanguage.png</value>
+        <value condition="substring(Container.FolderPath,uisounds,right)">DefaultAddonUISounds.png</value>
+        <value condition="substring(Container.FolderPath,infoproviders,right)">DefaultAddonInfoProvider.png</value>
+        <value condition="substring(Container.FolderPath,repository,right)">DefaultAddonRepository.png</value>
+        <value condition="substring(Container.FolderPath,audiodecoder,right)">DefaultAddonAudioDecoder.png</value>
+        <value condition="substring(Container.FolderPath,audioencoder,right)">DefaultAddonAudioEncoder.png</value>
+        <value condition="substring(Container.FolderPath,item,right)">DefaultAddonContextItem.png</value>
+        <value condition="substring(Container.FolderPath,pvrclient,right)">DefaultAddonPVRClient.png</value>
         <value condition="substring(Container.FolderPath,screensaver,right)">DefaultAddonScreensaver.png</value>
         <value condition="substring(Container.FolderPath,service,right)">DefaultAddonService.png</value>
         <value condition="substring(Container.FolderPath,skin,right)">DefaultAddonSkin.png</value>
@@ -255,7 +262,7 @@
         <control type="group">
             <posx>75</posx>
             <posy>26</posy>
-            <visible>!Window.IsActive(movieinformation) + !Window.IsActive(script-Actors-DialogInfo.xml) + !Window.IsActive(script-Actors-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(1122) + !Window.IsActive(addoninformation) + !Window.IsActive(favourites)</visible>
+            <visible>!Window.IsActive(movieinformation) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(1122) + !Window.IsActive(addoninformation) + !Window.IsActive(favourites)</visible>
             <include>BannerListInfoAnimation</include>
             <control type="group">
                 <control type="image">
@@ -357,7 +364,7 @@
         <control type="group">
             <posx>75</posx>
             <posy>26</posy>
-            <visible>!Window.IsActive(addoninformation) + !Window.IsActive(1122) + !Window.IsActive(script-Actors-DialogInfo.xml) + !Window.IsActive(script-Actors-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favourites)</visible>
+            <visible>!Window.IsActive(addoninformation) + !Window.IsActive(1122) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favourites)</visible>
             <include>BannerListInfoAnimation</include>
             <control type="group">
                 <control type="image">
@@ -457,7 +464,7 @@
                     <control type="label">
                         <width min="0" max="5000">auto</width>
                         <height>120</height>
-                        <label>$VAR[AddonHeaderLabel]</label>
+                        <label>$VAR[AddonHeaderLabel]$INFO[Container.Folderpath]</label>
                         <font>Font-Condensed-S36-B</font>
                         <textcolor>C0FFFFFF</textcolor>
                         <scroll>false</scroll>
