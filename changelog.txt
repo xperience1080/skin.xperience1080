@@ -1,4 +1,8 @@
-﻿[B]4.08.10[/B]
+﻿[B]4.08.11[/B]
+• Sounds: Removes Sounds directory and moves sounds to add-on: resource.uisounds.xperience1080
+• Sounds: Adds two additional sounds, one for 'back' and 'screenshot'
+
+[B]4.08.10[/B]
 • Textures: Adds new header texture items for Add-ons (default and alternative themes)
 • Textures: Adds new items to variable
 
