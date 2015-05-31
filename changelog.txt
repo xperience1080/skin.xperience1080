@@ -1,4 +1,8 @@
-﻿[B]4.08.20[/B]
+﻿[B]4.08.30[/B]
+• Icons: Adds additional icons, Blu-ray, DVD, Amazon, hulu, 4od, Steam, TVTunes, PseudoTV
+• Backgrounds: Adds attitional backgrounds
+
+[B]4.08.20[/B]
 • Tiles: Adds autopath when selecting icon for Home Tiles (extras/icons/home)
 • Tile Textures: Adds 65 new icons to choose from
 
