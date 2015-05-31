@@ -16,6 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "Known Movies"
+msgstr ""
+
 msgctxt "#31001"
 msgid "Cinema Experience"
 msgstr ""
@@ -26,6 +30,42 @@ msgstr ""
 
 msgctxt "#31003"
 msgid "Checking for updates"
+msgstr ""
+
+msgctxt "#31004"
+msgid "Known TV Shows"
+msgstr ""
+
+msgctxt "#31005"
+msgid "Known Film Roles"
+msgstr ""
+
+msgctxt "#31006"
+msgid "Known TV Roles"
+msgstr ""
+
+msgctxt "#31007"
+msgid "Age"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Born"
+msgstr ""
+
+msgctxt "#31009"
+msgid "Died"
+msgstr ""
+
+msgctxt "#31010"
+msgid "TV Roles"
+msgstr ""
+
+msgctxt "#31011"
+msgid "Movie Roles"
+msgstr ""
+
+msgctxt "#31012"
+msgid "Artwork"
 msgstr ""
 
 msgctxt "#41100"
