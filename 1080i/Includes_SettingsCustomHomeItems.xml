@@ -141,7 +141,7 @@
                 <include>SettingsCustomDialogButtonVars</include>
                 <label>$LOCALIZE[41139]</label>
                 <label2>$VAR[HomeTileEditIcon]</label2>
-                <onclick>Skin.SetImage($INFO[Window.Property(HomeTileEdit)].Icon)</onclick>
+                <onclick>Skin.SetImage($INFO[Window.Property(HomeTileEdit)].Icon,,special://skin/extras/icons/home)</onclick>
             </control>
             <control type="radiobutton" id="2403">
                 <include>SettingsCustomDialogRadioButtonVars</include>
