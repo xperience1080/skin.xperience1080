@@ -464,7 +464,7 @@
                     <control type="label">
                         <width min="0" max="5000">auto</width>
                         <height>120</height>
-                        <label>$VAR[AddonHeaderLabel]$INFO[Container.Folderpath]</label>
+                        <label>$VAR[AddonHeaderLabel]</label>
                         <font>Font-Condensed-S36-B</font>
                         <textcolor>C0FFFFFF</textcolor>
                         <scroll>false</scroll>
