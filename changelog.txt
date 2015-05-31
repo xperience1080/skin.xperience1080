@@ -1,4 +1,8 @@
-﻿[B]4.08.13[/B]
+﻿[B]4.08.20[/B]
+• Tiles: Adds autopath when selecting icon for Home Tiles (extras/icons/home)
+• Tile Textures: Adds 65 new icons to choose from
+
+[B]4.08.13[/B]
 • Fix: Corrects label showing where it should not be
 • Language: EN strings updated
 
