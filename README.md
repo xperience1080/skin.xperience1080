@@ -1,6 +1,6 @@
-##Xperience1080 (Kodi v14.x)
+##Xperience1080 (Kodi v14.x and v15.x)
 
-Xperience1080 is a Kodi v14.x skin with two texture sets, based on Xperience1080 by `Black. Additional changes and fixes have been made.
+Xperience1080 is a Kodi v14/v15 skin with two texture sets, based on Xperience1080 by `Black. Additional changes and fixes have been made.
 
 #### Features
 
@@ -16,7 +16,8 @@ Xperience1080 is a Kodi v14.x skin with two texture sets, based on Xperience1080
 1. Download the zip file from the link at the top of this post.
 2. IMPORTANT: Install from the zip, this will trigger the installation of skin dependencies.
 3. Allow the skin to install, dependencies to be downloaded (where required) and load.
-4. Xperience1080 textures are the default, but you can choose to new texture set by going to Settings -> Appearance -> Theme -> 1080XF.
+4. Xperience1080 textures are the default, but you can choose to new texture set by going to Settings -> Appearance -> Theme -> Alternative.
+5. Sounds are optional from Kodi 15 onwards, you can install the default sounds for this skin from the Add-ons area.
 
 #### Further information
 See http://forum.kodi.tv/showthread.php?tid=197125 for more information.
