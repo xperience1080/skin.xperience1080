@@ -1,4 +1,8 @@
-﻿[B]4.08.11[/B]
+﻿[B]4.08.13[/B]
+• Fix: Corrects label showing where it should not be
+• Language: EN strings updated
+
+[B]4.08.11[/B]
 • Sounds: Removes Sounds directory and moves sounds to add-on: resource.uisounds.xperience1080
 • Sounds: Adds two additional sounds, one for 'back' and 'screenshot'
 
