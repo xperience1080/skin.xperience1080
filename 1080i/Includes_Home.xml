@@ -868,7 +868,7 @@
                 <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
                 <onfocus>CancelAlarm(HomeTileMoveTwo,true)</onfocus>
                 <onup>AlarmClock(HomeTileMoveTwo,Control.Move(9022,1),00:07,silent,loop)</onup>
-                <onup>925</onup>
+                <onup>Control.Move(9022,-1)</onup>
                 <ondown>Control.Move(9022,1)</ondown>
                 <onleft>AlarmClock(HomeTileMoveTwo,Control.Move(9022,1),00:07,silent,loop)</onleft>
                 <onleft>901</onleft>
