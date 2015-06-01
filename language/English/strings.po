@@ -68,6 +68,14 @@ msgctxt "#31012"
 msgid "Artwork"
 msgstr ""
 
+msgctxt "#31013"
+msgid "Loading PVR Channels..."
+msgstr ""
+
+msgctxt "#31014"
+msgid "Radio Stations"
+msgstr ""
+
 msgctxt "#41100"
 msgid "General"
 msgstr ""
@@ -325,7 +333,7 @@ msgid "Play Trailer minimized"
 msgstr ""
 
 msgctxt "#41220"
-msgid "TV"
+msgid "Live TV"
 msgstr ""
 
 msgctxt "#41221"
