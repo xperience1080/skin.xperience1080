@@ -1,4 +1,9 @@
-﻿[B]4.08.30[/B]
+﻿[B]4.09.00[/B]
+• Home: Complete redesign of the Home PVR section
+• Home: Adds PVR Widget
+• Home: Additional EN strings added
+
+[B]4.08.30[/B]
 • Icons: Adds additional icons, Blu-ray, DVD, Amazon, hulu, 4od, Steam, TVTunes, PseudoTV
 • Backgrounds: Adds attitional backgrounds
 
