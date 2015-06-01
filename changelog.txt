@@ -1,4 +1,7 @@
-﻿[B]4.09.00[/B]
+﻿[B]4.09.01[/B]
+• Home PVR Widget: Adds 'up' control to widget, in addition to existing 'down' control
+
+[B]4.09.00[/B]
 • Home: Complete redesign of the Home PVR section
 • Home: Adds PVR Widget
 • Home: Additional EN strings added
