@@ -1,4 +1,9 @@
-﻿[B]4.09.01[/B]
+﻿[B]4.09.03[/B]
+• Home PVR Widget: Adds missing texture from Loading string
+• Home PVR Widget: Changes texture diffuse for selected
+• Home PVR Widget: Corrects 1px offset
+
+[B]4.09.01[/B]
 • Home PVR Widget: Adds 'up' control to widget, in addition to existing 'down' control
 
 [B]4.09.00[/B]
