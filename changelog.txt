@@ -1,4 +1,7 @@
-﻿[B]4.09.03[/B]
+﻿[B]4.09.04[/B]
+• Home PVR Widget: Text scrolling only on item focus
+
+[B]4.09.03[/B]
 • Home PVR Widget: Adds missing texture from Loading string
 • Home PVR Widget: Changes texture diffuse for selected
 • Home PVR Widget: Corrects 1px offset
