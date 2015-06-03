@@ -938,6 +938,7 @@
                             <font>Font-Condensed-S29</font>
                             <textcolor>aawhite</textcolor>
                             <visible>!IsEmpty(ListItem.Title)</visible>
+                            <scroll>false</scroll>
                             <align></align>
                         </control>
                         <control type="label">
@@ -949,6 +950,7 @@
                             <font>Font-Condensed-S29</font>
                             <textcolor>aawhite</textcolor>
                             <visible>!IsEmpty(ListItem.NextTitle)</visible>
+                            <scroll>false</scroll>
                             <align></align>
                         </control>
                     </itemlayout>
