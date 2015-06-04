@@ -1,4 +1,7 @@
-﻿[B]4.10.10[/B]
+﻿[B]4.10.12[/B]
+• Trakt QR: Resdesigned QRCode dialog
+
+[B]4.10.10[/B]
 • NextEpisode Add-on: Full skin integration
 • NextEpisode Add-on: Additional textures for both themes
 
