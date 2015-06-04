@@ -1,4 +1,14 @@
-﻿[B]4.09.04[/B]
+﻿[B]4.10.10[/B]
+• NextEpisode Add-on: Full skin integration
+• NextEpisode Add-on: Additional textures for both themes
+
+[B]4.09.20[/B]
+• NextEpisode Add-on: Initial skin integration
+
+[B]4.09.10[/B]
+• Home Profile Stats: Reverted change (label is still there, uncomment to use)
+
+[B]4.09.04[/B]
 • Home PVR Widget: Text scrolling only on item focus
 
 [B]4.09.03[/B]
