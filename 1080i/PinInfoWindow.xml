@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol>10</defaultcontrol>
+    <defaultcontrol always="true">10</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <zorder>2</zorder>
     <controls>
         <control type="group">
             <animation type="WindowOpen" reversible="false">
@@ -22,16 +24,16 @@
             <include>FadeBackgroundButtonMenu</include>
             <control type="image" id="2">
                 <description>Background</description>
-                <posx>552</posx>
-                <posy>295</posy>
-                <width>816</width>
-                <height>490</height>
+                <posx>652</posx>
+                <posy>162</posy>
+                <width>616</width>
+                <height>736</height>
                 <texture border="39">dialogs/default/bg.png</texture>
             </control>
             <control type="button" id="10">
                 <description>Done</description>
-                <posx>573</posx>
-                <posy>749</posy>
+                <posx>682</posx>
+                <posy>864</posy>
                 <label>$LOCALIZE[20177]</label>
                 <onclick>Close</onclick>
                 <texturefocus>buttons/select-fo.png</texturefocus>
@@ -45,20 +47,20 @@
             </control>
             <control type="image">
                 <description>Trakt Logo</description>
-                <posx>1248</posx>
-                <posy>665</posy>
+                <posx>1130</posx>
+                <posy>775</posy>
                 <width>90</width>
                 <height>90</height>
                 <texture border="39">dialogs/trakt/trakt-logo.png</texture>
             </control>
             <control type="label">
                 <description>Trakt QR String</description>
-                <posx>1018</posx>
-                <posy>340</posy>
-                <width>300</width>
+                <posx>705</posx>
+                <posy>738</posy>
+                <width>500</width>
                 <height>800</height>
-                <label>$ADDON[script.trakt 32148]</label>
-                <font>Font-Condensed-S30-B</font>
+                <label>$ADDON[script.trakt 32148].</label>
+                <font>Font-Condensed-S30</font>
                 <textcolor>FF585858</textcolor>
                 <shadowcolor>20FFFFFF</shadowcolor>
                 <align>left</align>
@@ -67,11 +69,11 @@
                 <autoscroll>false</autoscroll>
             </control>
             <control type="image">
-                <posx>596</posx>
-                <posy>340</posy>
-                <width>400</width>
-                <height>400</height>
-                <texture border="5">qrCode.png</texture>
+                <posx>704</posx>
+                <posy>214</posy>
+                <width>512</width>
+                <height>512</height>
+                <texture>dialogs/trakt/qrCode.png</texture>
             </control>
         </control>
     </controls>
