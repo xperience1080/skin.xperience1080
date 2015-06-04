@@ -225,12 +225,16 @@
                 </control>
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[41446]] • $INFO[Window.Property(Episodes.Count),, $LOCALIZE[20360]]</label>
+                    <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[41446]]</label>
+                    <!-- Delete the above line and replace it with the line below, if you want to add an episode count -->
+                    <!-- <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[41446]] • $INFO[Window.Property(Episodes.Count),, $LOCALIZE[20360]]</label> -->
                     <visible>Container(30).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[Window.Property(Music.AlbumsCount),, $LOCALIZE[132]] • $INFO[Window.Property(Music.SongsCount),, $LOCALIZE[134]]</label>
+                    <label>$INFO[Window.Property(Music.AlbumsCount),, $LOCALIZE[132]]</label>
+                    <!-- Delete the above line and replace it with the line below, if you want to add a song count -->
+                    <!-- <label>$INFO[Window.Property(Music.AlbumsCount),, $LOCALIZE[132]] • $INFO[Window.Property(Music.SongsCount),, $LOCALIZE[134]]</label> -->
                     <visible>Container(30).HasFocus(4)</visible>
                 </control>
                 
