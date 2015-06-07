@@ -1,4 +1,10 @@
-﻿[B]4.10.12[/B]
+﻿[B]4.14.00[/B]
+• Sort By location: Moved sort by label to header for all items. May cause some issues
+
+[B]4.11.00[/B]
+• Textures: Created missing textures for Systeminfo and System header
+
+[B]4.10.12[/B]
 • Trakt QR: Resdesigned QRCode dialog
 
 [B]4.10.10[/B]
