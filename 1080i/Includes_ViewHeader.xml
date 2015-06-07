@@ -111,9 +111,9 @@
     </variable>
     
     <variable name="SettingsIcon">
-        <value condition="Window.IsActive(systeminfo)"></value>
+        <value condition="Window.IsActive(systeminfo)">DefaultSystemInfo.png</value>
         <value condition="Window.IsActive(weathersettings)">DefaultAddonWeather.png</value>
-        <value condition="Window.IsActive(systemsettings)"></value>
+        <value condition="Window.IsActive(systemsettings)">DefaultSettings.png</value>
         <value condition="Window.IsActive(pvrsettings)">DefaultTVShows.png</value>
         <value condition="Window.IsActive(skinsettings)">DefaultAddonSkin.png</value>
         <value condition="Window.IsActive(picturessettings)">DefaultAddonPicture.png</value>
@@ -203,8 +203,18 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>IntegerGreaterThan(Container.NumPages,1)</visible>
+                <visible>![Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1)</visible>
             </control>
+            <control type="label">
+                <width min="50" max="400">auto</width>
+                <height>120</height>
+                <label>$INFO[Container.CurrentPage, [COLOR=44FFFFFF]•[/COLOR] $LOCALIZE[41819] ,]$INFO[Container.NumPages,/, [COLOR=44FFFFFF]•[/COLOR]]$INFO[Control.GetLabel(3), ]</label>
+                <font>Font-Condensed-S28</font>
+                <textcolor>80FFFFFF</textcolor>
+                <scroll>false</scroll>
+                <align>left</align>
+                <visible>[Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1) + !IsEmpty(Container.NumItems) + !Window.IsVisible(home)</visible>
+            </control>            
         </control>
     </include>
     
