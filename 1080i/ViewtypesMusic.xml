@@ -9,7 +9,7 @@
             <include>CommonViewAnimations</include>
             <include>OptionsShutdownAnimation</include>
             
-            <control type="label">
+            <!--<control type="label">
             	<posx>390</posx>
             	<posy>152</posy>
             	<width>560</width>
@@ -18,7 +18,7 @@
             	<textcolor>77white</textcolor>
             	<shadowcolor>22000000</shadowcolor>
             	<label>$INFO[Control.GetLabel(3)]</label>
-            </control>
+            </control>-->
         
             <control type="image">
                 <posx>248</posx>
