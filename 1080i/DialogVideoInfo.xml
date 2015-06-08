@@ -498,42 +498,42 @@
                         <item id="1">
                             <label>$LOCALIZE[41315]</label>
                             <onclick>SendClick(2003,8)</onclick>
-                            <visible>!Container.Content(movies) | [Container.Content(movies) + !System.HasAddon(script.cinema.experience)] | [Container.Content(movies) + SubString(Container.FolderPath,plugin)]</visible>
+                            <visible>Container.Content(movies)</visible>
                         </item>
-                        <item id="1">
+                        <item id="2">
                             <description>Cinema Experience</description>
                             <label>$LOCALIZE[31001]</label>
                             <onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
                             <onclick>Dialog.Close(MovieInformation)</onclick>
-                            <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies) + !SubString(Container.FolderPath,plugin)</visible>
+                            <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
                         </item>
-                        <item id="2">
+                        <item id="3">
                             <label>$LOCALIZE[20410]</label>
                             <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">PreviousMenu</onclick>
                             <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">PlayMedia($INFO[ListItem.Trailer])</onclick>
                             <onclick condition="Skin.HasSetting(PlayTrailer.Minimized)">PlayMedia($INFO[ListItem.Trailer],false,1)</onclick>
                             <visible>!IsEmpty(ListItem.Trailer)</visible>
                         </item>
-                        <item id="3">
+                        <item id="4">
                             <description>Get Artwork</description>
                             <label>$LOCALIZE[13511]</label>
                             <onclick>ActivateWindow(3004)</onclick>
                             <visible>[Container.Content(movies) | Container.Content(tvshows)] + !Container.Content(musicvideos)</visible>
                         </item>
-                        <item id="3">
+                        <item id="5">
                             <description>Get Artwork</description>
                             <label>$LOCALIZE[13511]</label>
                             <onclick>SetProperty(ChooseArt,1,3004)</onclick>
                             <onclick>SendClick(2003,10)</onclick>
                             <visible>Container.Content(musicvideos)</visible>
                         </item>
-                        <item id="4">
+                        <item id="6">
                             <description>Get theme</description>
                             <label>$LOCALIZE[41333]</label>
                             <onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
                             <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + System.HasAddon(script.tvtunes)</visible>
                         </item>
-                        <item id="5">
+                        <item id="7">
                             <label>$LOCALIZE[41307]</label>
                             <onclick>SendClick(2003,6)</onclick>
                         </item>
