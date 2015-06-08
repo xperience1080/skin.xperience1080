@@ -1,6 +1,6 @@
 ##Xperience1080 (Kodi v14.x and v15.x)
 
-Xperience1080 is a Kodi v14/v15 skin with two texture sets, based on Xperience1080 by `Black. Additional changes and fixes have been made.
+Xperience1080 is a Kodi v14/v15 skin with two texture sets. Additional changes and fixes have been made.
 
 #### Features
 
