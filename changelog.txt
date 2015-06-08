@@ -1,4 +1,7 @@
-﻿[B]4.14.01[/B]
+﻿[B]4.202.01[/B]
+• Extendedinfo: Further additions to extendedinfo layout
+
+[B]4.14.01[/B]
 • Special labels: Resolves issue with special episodes displaying incorrect label
 
 [B]4.14.00[/B]
