@@ -1,4 +1,7 @@
-﻿[B]4.14.00[/B]
+﻿[B]4.14.01[/B]
+• Special labels: Resolves issue with special episodes displaying incorrect label
+
+[B]4.14.00[/B]
 • Sort By location: Moved sort by label to header for all items. May cause some issues
 
 [B]4.11.00[/B]
