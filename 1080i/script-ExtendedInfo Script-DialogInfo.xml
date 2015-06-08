@@ -11,28 +11,13 @@
 		    <posy>0</posy>
 		    <width>1920</width>
 		    <height>1080</height>
-		    <!--<animation type="WindowOpen" condition="!Window.IsActive(movieinformation) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent))">
-		        <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-		        <effect type="zoom" start="335,125,1440,810" end="0,0,1920,1080" time="400" delay="300" tween="cubic" easing="out" />
-		    </animation>
-		    <animation type="WindowClose" condition="!Window.IsActive(movieinformation) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent))">
-		        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-		        <effect type="zoom" start="0,0,1920,1080" end="335,125,1440,810" time="300" tween="cubic" easing="out" />
-		    </animation>
-		    <animation type="WindowOpen" condition="[Window.IsActive(movieinformation) | !IsEmpty(Window(Home).Property(script.metadata.actors.hasparent))] + !IsEmpty(Window(Home).Property(script.metadata.actors.push))">
+		    <animation type="WindowOpen" condition="Window.IsActive(movieinformation)">
 		        <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
 		    </animation>
-		    <animation type="WindowOpen" condition="[Window.IsActive(movieinformation) | !IsEmpty(Window(Home).Property(script.metadata.actors.hasparent))] + IsEmpty(Window(Home).Property(script.metadata.actors.push))">
-		        <effect type="slide" start="-1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
-		    </animation>
-		    <animation type="WindowClose" condition="[Window.IsActive(movieinformation) | !IsEmpty(Window(Home).Property(script.metadata.actors.hasparent))] + IsEmpty(Window(Home).Property(script.metadata.actors.push))">
+		    <animation type="WindowClose" condition="Window.IsActive(movieinformation)">
 		        <effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
 		        <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
-		    </animation>
-		    <animation type="WindowClose" condition="[Window.IsActive(movieinformation) | !IsEmpty(Window(Home).Property(script.metadata.actors.hasparent))] + !IsEmpty(Window(Home).Property(script.metadata.actors.push))">
-		        <effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
-		        <effect type="slide" start="0" end="-2320" time="500" delay="0" tween="sine" easing="inout" />
-		    </animation>-->
+		    </animation>		    
 			<control type="list" id="50">
 				<description>container actor properties</description>
 				<posx>0</posx>
@@ -167,7 +152,8 @@
 			    </control>
 			    
 			    <!-- Panel for possible future use in script.extendedinfo -->
-			    <!-- 
+			    
+			    <!--
 			    <control type="image">
 			        <posx>98</posx>
 			        <posy>217</posy>
@@ -177,16 +163,16 @@
 			    </control>
 			    -->
 			    
-			    <!-- Actor Thumb -->
+			    <!-- Actor Thumb --> 
 			    <control type="image">
 			        <posx>100</posx>
 			        <posy>220</posy>
 			        <width>440</width>
 			        <height>686</height>
-			        <aspectratio>scale</aspectratio>
+			        <aspectratio aligny="top">scale</aspectratio>
 			        <texture fallback="views/fallbacks/DefaultActor.png/medium.png">$INFO[Window.Property(actor.thumb)]</texture>
 			    </control>
-			    
+		    
 			    <control type="list" id="9000">
 			        <posx>100</posx>
 			        <posy>742</posy>
@@ -203,16 +189,15 @@
 			        <scrolltime>0</scrolltime>
 			        <orientation>vertical</orientation>
 			         
-			        
 			        <!-- Buttons for possible future use in script.extendedinfo -->
 			        <content>
 			            <item id="1">
-			                <description>Browse</description>
+			                <description>From metadata.actors</description>
 			                <label>-</label>
 			                <onclick>SetFocus(8)</onclick>
 			            </item>
 			            <item id="2">
-			                <description>Refresh</description>
+			                <description>From metadata.actors</description>
 			                <label>-</label>
 			                <onclick>SendClick(6)</onclick>
 			            </item>
@@ -237,8 +222,8 @@
 				            <height>70</height>
 				            <font>Font-Condensed-S45</font>
 				            <align>left</align>
-				            <label>$LOCALIZE[42131]</label>
-				            <textcolor>eewhite</textcolor>
+				            <label>$INFO[Window.Property(actor.title)]</label>
+				            <textcolor>aawhite</textcolor>
 				            <scroll>false</scroll>
 				        </control>
 
@@ -384,7 +369,7 @@
 				            <align>justify</align>
 				            <textcolor>bbwhite</textcolor>
 				            <pagecontrol>70</pagecontrol>
-				            <autoscroll time="2000" delay="10000" repeat="10000">!Control.HasFocus(70) + !Skin.HasSetting(AutoScroll.Disable)</autoscroll>
+				            <autoscroll time="2000" delay="15000" repeat="10000">!Control.HasFocus(70) + !Skin.HasSetting(AutoScroll.Disable)</autoscroll>
 				            <label>$INFO[Window.Property(actor.Biography)]</label>
 				            <visible>!IsEmpty(Window.Property(actor.Biography))</visible>
 				        </control>
@@ -414,56 +399,30 @@
 				            <posx>1260</posx>
 				            <posy>65</posy>
 				            <width>6</width>
-				            <height>244</height>                    
+				            <height>244</height>
 				            <onleft>9000</onleft>
 				            <onright condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onright>
 				            <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
 				            <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
 				            <orientation>vertical</orientation>
 				            <showonepage>false</showonepage>
-				            <visible>!IsEmpty(ListItem.Property(Biography))</visible>
+				            <visible>!IsEmpty(Window.Property(actor.Biography))</visible>
 				            <animation effect="fade" start="80" end="35" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(70)">Conditional</animation>
 				        </control>
 				    </control>			    
 				</control>			
-
-				<control type="button" id="8">
-				    <onfocus>Action(select)</onfocus>
-					<visible allowhiddenfocus="true">false</visible>
-				</control>
-				<control type="togglebutton" id="105">
-					<visible>false</visible>
-				</control>
-				<control type="button" id="6">
-					<visible>false</visible>
-				</control>
-				<control type="button" id="10">
-					<visible>false</visible>
-				</control>
-				<control type="button" id="20">
-					<visible>false</visible>
-				</control>
-				<control type="button" id="11">
-					<visible>false</visible>
-				</control>
-				<control type="button" id="25">
-					<visible>false</visible>
-				</control>
-				<control type="wraplist" id="250">
-					<visible>false</visible>
-				</control>
 			</control>
 			
 			<!-- Known Film Roles -->
 			<control type="group" id="1500">
-			    <animation type="Visible" condition="IsEmpty(Container(150))">
+			    <animation type="Visible">
 			        <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
 			    </animation>
 			    <animation type="Hidden">
 			        <effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
 			        <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
 			    </animation>
-			    <include>listEndAnimation</include>
+			    <!--<include>listEndAnimation</include>-->
 			    <visible allowhiddenfocus="true">ControlGroup(1500).HasFocus</visible>
 			    		
 				<control type="list" id="150">
@@ -471,7 +430,7 @@
 				    <posy>234</posy>
 				    <width>1215</width>
 				    <height>660</height>
-				    <onclick>Action(select)</onclick>
+				    <!--<onclick>Action(select)</onclick>-->
 				    <onleft>SetFocus(9000)</onleft>
 				    <onright>SetFocus(2500)</onright>
 				    <onup>150</onup>
@@ -586,7 +545,7 @@
 			        <effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
 			        <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
 			    </animation>
-			    <include>listEndAnimation</include>
+			    <include>listEndAnimation</include>-->
 			    <visible allowhiddenfocus="true">ControlGroup(2500).HasFocus</visible>
 			    		
 				<control type="list" id="250">
@@ -594,7 +553,7 @@
 				    <posy>234</posy>
 				    <width>1215</width>
 				    <height>660</height>
-				    <onclick>Action(select)</onclick>
+				    <!--<onclick>Action(select)</onclick>-->
 				    <onleft>SetFocus(1500)</onleft>
 				    <onright>noop</onright>
 				    <onup>250</onup>

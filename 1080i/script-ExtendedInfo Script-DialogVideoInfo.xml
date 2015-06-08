@@ -422,20 +422,20 @@
                             <onclick>SetFocus(8)</onclick>
                             <visible>Control.IsEnabled(8)</visible>
                         </item>
-                        <item id="2">
+                        <!--<item id="2">
                             <label>$LOCALIZE[20410] WIP</label>
                             <onclick>RunScript(script.extendedinfo,info=youtubevideo,id=$INFO[Container(1150).ListItem.Property(youtube_id)])</onclick>
-                            <!-- RunScript(script.extendedinfo,info=youtubevideo,id=$INFO[Container(1150).ListItem.Property(youtube_id)]) -->
+                            <!-- RunScript(script.extendedinfo,info=youtubevideo,id=$INFO[Container(1150).ListItem.Property(youtube_id)]) 
                             <onclick condition="Window.IsActive(movieinformation)">Dialog.Close(movieinformation)</onclick>
                             <onclick>PreviousMenu</onclick>
                             <onclick>AlarmClock(ActorsPlay,PlayMedia($INFO[Window(Home).Property(script.metadata.actors.path)]),00:01,silent)</onclick>
                             <onclick>AlarmClock(ActorsClear,ClearProperty(script.metadata.actors.path,home),00:01,silent)</onclick>
-                            <!--<visible>!IsEmpty(ListItem.Trailer)</visible>-->
-                        </item>
-                        <item id="3">
+                            <visible>!IsEmpty(ListItem.Trailer)</visible>
+                        </item>-->
+                        <!--<item id="3">
                             <label>$LOCALIZE[41307]</label>
                             <onclick>SendClick(6)</onclick>
-                        </item>
+                        </item>-->
                     </content>
                 </control>
                 
