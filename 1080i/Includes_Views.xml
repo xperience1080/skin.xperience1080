@@ -567,10 +567,8 @@
     </variable>
   
     <variable name="ListItem.S">
-        <value condition="!IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,0)"></value>         
-        <value condition="!IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,0)">$INFO[ListItem.Season]</value>   
-        <!--<value condition="!IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Season]</value>
-        <value>$INFO[ListItem.Season]</value>-->
+        <value condition="!IntegerGreaterThan(ListItem.Season,,) + !IntegerGreaterThan(ListItem.Episode,0)"></value>         
+        <value condition="!IntegerGreaterThan(ListItem.Season,,) + IntegerGreaterThan(ListItem.Episode,0)">$INFO[ListItem.Season]</value>
     </variable>
     
     <variable name="ListItem.Episode">
@@ -722,7 +720,7 @@
     <variable name="MusicListSongLabel2">
         <value condition="stringcompare(Container.SortMethod,$LOCALIZE[567]) | stringcompare(Container.SortMethod,$LOCALIZE[576])">$INFO[ListItem.PlayCount, »,«   ]$INFO[ListItem.Duration]</value>
         <value condition="stringcompare(Container.SortMethod,$LOCALIZE[562])">$INFO[ListItem.Year, »,«   ]$INFO[ListItem.Duration]</value>
-        <value condiiton="!IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration, ,]</value>
+        <!--<value condiiton="!IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration, ,]</value>-->
     </variable>
 
     <variable name="MusicInfoListDescriptionHeader">
@@ -777,7 +775,7 @@
         <value condition="stringcompare(Container.SortMethod,$LOCALIZE[567]) | stringcompare(Container.SortMethod,$LOCALIZE[576])">$INFO[ListItem.PlayCount, [,] ]$INFO[ListItem.Duration]</value>
         <value condition="stringcompare(Container.SortMethod,$LOCALIZE[562])">$INFO[ListItem.Year, [,] ]$INFO[ListItem.Duration]</value>
         <value condition="stringcompare(Container.SortMethod,$LOCALIZE[563])">$INFO[ListItem.Rating, [,★] ]$INFO[ListItem.Duration]</value>
-        <value condiiton="!IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration, ,]</value>
+        <!--<value condiiton="!IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration, ,]</value>-->
     </variable>
     
     <variable name="MusicPanelInfo">
