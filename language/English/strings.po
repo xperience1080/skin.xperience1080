@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#31000"
-msgid "Known Movies"
+msgid "Known Films"
 msgstr ""
 
 msgctxt "#31001"
@@ -61,7 +61,7 @@ msgid "TV Roles"
 msgstr ""
 
 msgctxt "#31011"
-msgid "Movie Roles"
+msgid "Film Roles"
 msgstr ""
 
 msgctxt "#31012"
@@ -269,7 +269,7 @@ msgid "Manage custom Home Widget"
 msgstr ""
 
 msgctxt "#41169"
-msgid "Upcoming Movies"
+msgid "Upcoming Films"
 msgstr ""
 
 msgctxt "#41170"
@@ -277,15 +277,15 @@ msgid "In Theatres Now"
 msgstr ""
 
 msgctxt "#41171"
-msgid "Popular Movies"
+msgid "Popular Films"
 msgstr ""
 
 msgctxt "#41172"
-msgid "Top Rated Movies"
+msgid "Top Rated Films"
 msgstr ""
 
 msgctxt "#41173"
-msgid "Trending Movies"
+msgid "Trending Films"
 msgstr ""
 
 msgctxt "#41174"
@@ -385,7 +385,7 @@ msgid "Replace Trailer with Custom Menu Item in QuickNav"
 msgstr ""
 
 msgctxt "#41274"
-msgid "Replace New Movies with Custom Menu Item in QuickNav"
+msgid "Replace New Films with Custom Menu Item in QuickNav"
 msgstr ""
 
 msgctxt "#41275"
@@ -557,7 +557,7 @@ msgid "Settings"
 msgstr ""
 
 msgctxt "#41445"
-msgid "Movies"
+msgid "Films"
 msgstr ""
 
 msgctxt "#41446"
@@ -573,7 +573,7 @@ msgid "Pictures"
 msgstr ""
 
 msgctxt "#41450"
-msgid "New Movies"
+msgid "New Films"
 msgstr ""
 
 msgctxt "#41451"
@@ -645,7 +645,7 @@ msgid "Ongoing TV Shows"
 msgstr ""
 
 msgctxt "#41552"
-msgid "New Movies"
+msgid "New Films"
 msgstr ""
 
 msgctxt "#41553"
@@ -989,7 +989,7 @@ msgid "Home Tiles (Red)"
 msgstr ""
 
 msgctxt "#42239"
-msgid "Movie Tiles (Blue)"
+msgid "Film Tiles (Blue)"
 msgstr ""
 
 msgctxt "#42240"
@@ -1037,7 +1037,7 @@ msgid "TV Shows"
 msgstr ""
 
 msgctxt "#42258"
-msgid "Movies"
+msgid "Films"
 msgstr ""
 
 msgctxt "#42259"
