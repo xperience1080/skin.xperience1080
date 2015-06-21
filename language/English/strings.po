@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#31000"
-msgid "Known Films"
+msgid "Known Movies"
 msgstr ""
 
 msgctxt "#31001"
@@ -37,7 +37,7 @@ msgid "Known TV Shows"
 msgstr ""
 
 msgctxt "#31005"
-msgid "Known Film Roles"
+msgid "Known Movie Roles"
 msgstr ""
 
 msgctxt "#31006"
@@ -61,7 +61,7 @@ msgid "TV Roles"
 msgstr ""
 
 msgctxt "#31011"
-msgid "Film Roles"
+msgid "Movie Roles"
 msgstr ""
 
 msgctxt "#31012"
@@ -74,6 +74,22 @@ msgstr ""
 
 msgctxt "#31014"
 msgid "Radio Stations"
+msgstr ""
+
+msgctxt "#31015"
+msgid "Movie Crew"
+msgstr ""
+
+msgctxt "#31016"
+msgid "TV Crew"
+msgstr ""
+
+msgctxt "#31017"
+msgid "TV Show Roles"
+msgstr ""
+
+msgctxt "#31018"
+msgid "TV Show Crew"
 msgstr ""
 
 msgctxt "#41100"
@@ -269,7 +285,7 @@ msgid "Manage custom Home Widget"
 msgstr ""
 
 msgctxt "#41169"
-msgid "Upcoming Films"
+msgid "Upcoming Movies"
 msgstr ""
 
 msgctxt "#41170"
@@ -277,15 +293,15 @@ msgid "In Theatres Now"
 msgstr ""
 
 msgctxt "#41171"
-msgid "Popular Films"
+msgid "Popular Movies"
 msgstr ""
 
 msgctxt "#41172"
-msgid "Top Rated Films"
+msgid "Top Rated Movies"
 msgstr ""
 
 msgctxt "#41173"
-msgid "Trending Films"
+msgid "Trending Movies"
 msgstr ""
 
 msgctxt "#41174"
@@ -325,7 +341,7 @@ msgid "Show Options Button"
 msgstr ""
 
 msgctxt "#41202"
-msgid "Play Trailer on opening Film Information"
+msgid "Play Trailer on opening Movie Information"
 msgstr ""
 
 msgctxt "#41203"
@@ -385,7 +401,7 @@ msgid "Replace Trailer with Custom Menu Item in QuickNav"
 msgstr ""
 
 msgctxt "#41274"
-msgid "Replace New Films with Custom Menu Item in QuickNav"
+msgid "Replace New Movies with Custom Menu Item in QuickNav"
 msgstr ""
 
 msgctxt "#41275"
@@ -557,7 +573,7 @@ msgid "Settings"
 msgstr ""
 
 msgctxt "#41445"
-msgid "Films"
+msgid "Movies"
 msgstr ""
 
 msgctxt "#41446"
@@ -573,7 +589,7 @@ msgid "Pictures"
 msgstr ""
 
 msgctxt "#41450"
-msgid "New Films"
+msgid "New Movies"
 msgstr ""
 
 msgctxt "#41451"
@@ -645,7 +661,7 @@ msgid "Ongoing TV Shows"
 msgstr ""
 
 msgctxt "#41552"
-msgid "New Films"
+msgid "New Movies"
 msgstr ""
 
 msgctxt "#41553"
@@ -885,7 +901,7 @@ msgid "Please Disable"
 msgstr ""
 
 msgctxt "#42205"
-msgid "Edit Film"
+msgid "Edit Movie"
 msgstr ""
 
 msgctxt "#42206"
@@ -989,7 +1005,7 @@ msgid "Home Tiles (Red)"
 msgstr ""
 
 msgctxt "#42239"
-msgid "Film Tiles (Blue)"
+msgid "Movie Tiles (Blue)"
 msgstr ""
 
 msgctxt "#42240"
@@ -1037,7 +1053,7 @@ msgid "TV Shows"
 msgstr ""
 
 msgctxt "#42258"
-msgid "Films"
+msgid "Movies"
 msgstr ""
 
 msgctxt "#42259"
