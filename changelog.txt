@@ -1,4 +1,10 @@
-﻿[B]4.202.01[/B]
+﻿[B]4.091[/B]
+• Version: corrected previous version number
+• Extendedinfo: entirely re-written the extendedinfo dialoginfo 
+• - now includes all options apart from YouTube
+(repo skin version will be 4.1 or higher)
+
+[B]4.202.01[/B]
 • Extendedinfo: Further additions to extendedinfo layout
 
 [B]4.14.01[/B]
