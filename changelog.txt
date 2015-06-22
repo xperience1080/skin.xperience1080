@@ -1,4 +1,10 @@
-﻿[B]4.091[/B]
+﻿[B]4.0920[/B]
+• Corrected: missing parentheses
+• Extendedinfo: a few further updates to animations
+• Trakt: completed context integration, removed due to upcoming context add-ons
+And a few more items
+
+[B]4.091[/B]
 • Version: corrected previous version number
 • Extendedinfo: entirely re-written the extendedinfo dialoginfo 
 • - now includes all options apart from YouTube
