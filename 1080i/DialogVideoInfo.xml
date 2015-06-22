@@ -537,6 +537,11 @@
                             <label>$LOCALIZE[41307]</label>
                             <onclick>SendClick(2003,6)</onclick>
                         </item>
+                        <item id="8">
+                            <label>$LOCALIZE[31019]</label>
+                            <onclick>RunScript(script.trakt,action=contextmenu)</onclick>
+                            <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + System.HasAddon(script.trakt)</visible>
+                        </item>
                     </content>
                 </control>
                 
