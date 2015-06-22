@@ -2202,7 +2202,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.1.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.1.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.1.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.1.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.1.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.1.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.1.Art(poster)))</visible>
         </item>
         <item id="2">
@@ -2210,7 +2210,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.2.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.2.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.2.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.2.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.2.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.2.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.2.Art(poster)))</visible>
         </item>
         <item id="3">
@@ -2218,7 +2218,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.3.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.3.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.3.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.3.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.3.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.3.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.3.Art(poster)))</visible>
         </item>
         <item id="4">
@@ -2226,7 +2226,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.4.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.4.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.4.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.4.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.4.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.4.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.4.Art(poster)))</visible>
         </item>
         <item id="5">
@@ -2234,7 +2234,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.5.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.5.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.5.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.5.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.5.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.5.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.5.Art(poster)))</visible>
         </item>
         <item id="6">
@@ -2242,7 +2242,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.6.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.6.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.6.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.6.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.6.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.6.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.6.Art(poster)))</visible>
         </item>
         <item id="7">
@@ -2250,7 +2250,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.7.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.7.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.7.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.7.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.7.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.7.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.7.Art(poster)))</visible>
         </item>
         <item id="8">
@@ -2258,7 +2258,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.8.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.8.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.8.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.8.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.8.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.8.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.8.Art(poster)))</visible>
         </item>
         <item id="9">
@@ -2266,7 +2266,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.9.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.9.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.9.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.9.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.9.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.9.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.9.Art(poster)))</visible>
         </item>
         <item id="10">
@@ -2274,7 +2274,7 @@
             <icon>$INFO[Window.Property(HomeWidget3.TrendingMovies.10.Art(fanart))]</icon>
             <label>$INFO[Window.Property(HomeWidget3.TrendingMovies.10.Title)]</label>
             <label2>$INFO[Window.Property(HomeWidget3.TrendingMovies.10.Rating)]$INFO[Window.Property(HomeWidget3.TrendingMovies.10.Year), • ,]</label2>
-            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.10.Trailer])</property>
+            <property name="Play">PlayMedia($INFO[Window.Property(HomeWidget3.TrendingMovies.10.Trailer)])</property>
             <visible>!IsEmpty(Window.Property(HomeWidget3.TrendingMovies.10.Art(poster)))</visible>
         </item>
     </include>
