@@ -196,14 +196,23 @@
                 
                 <!-- Default control list -->
                 <control type="grouplist" id="4000">
-
+                    <orientation>horizontal</orientation>
+     
                     <!-- Biography -->
                     <control type="group" id="4001">
+                        <animation type="Focus" condition="!Control.IsVisible(70) | Control.HasFocus(150)">
+                            <effect type="slide" start="2320" end="0" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
+                        </animation>
+                        <animation type="UnFocus">
+                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
+                        </animation>                          
                         <onright condition="!Control.IsVisible(70) + IntegerGreaterThan(Container(150).NumItems,0)">150</onright>
                         <onleft>Back</onleft>
                         <height>1080</height>
                         <pagecontrol>70</pagecontrol>
-                        <visible>!ControlGroup(1500).HasFocus | !ControlGroup(2500).HasFocus | !ControlGroup(5500).HasFocus | !ControlGroup(6500).HasFocus | !ControlGroup(4500).HasFocus | !ControlGroup(7500).HasFocus</visible>
+                   <visible>!ControlGroup(1500).HasFocus | !Control.HasFocus(150) | !ControlGroup(2500).HasFocus | !ControlGroup(5500).HasFocus | !ControlGroup(6500).HasFocus | !ControlGroup(4500).HasFocus | !ControlGroup(7500).HasFocus</visible>
 
                         <!-- Actor Image --> 
                         <control type="image">
@@ -437,12 +446,14 @@
                     <!-- 1500 - Known Film Roles -->
                     <control type="group" id="1500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="500" delay="0" tween="sine" easing="inout" />
+                            <effect type="slide" start="2320" end="0" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1" delay="0" tween="sine" easing="inout" />
-                        </animation>   
-                        <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
+                        </animation>
+                        <visible>IntegerGreaterThan(Container(150).NumItems,0) | !ControlGroup(4001).HasFocus</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>1920</width>
@@ -565,10 +576,12 @@
                     <!-- 2500 - Known TV Roles -->
                     <control type="group" id="2500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="500" delay="0" tween="sine" easing="inout" />
+                            <effect type="slide" start="2320" end="0" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1" delay="0" tween="sine" easing="inout" />
+                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
                         </animation>   
                         <posx>0</posx>
                         <posy>0</posy>
@@ -693,11 +706,13 @@
                     <!-- 5500 - Known Movie Crew -->
                     <control type="group" id="5500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="500" delay="0" tween="sine" easing="inout" />
+                            <effect type="slide" start="2320" end="0" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1" delay="0" tween="sine" easing="inout" />
-                        </animation>   
+                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
+                        </animation>    
                         <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
@@ -821,10 +836,12 @@
                     <!-- 6500 - Known TV Crew -->
                     <control type="group" id="6500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="500" delay="0" tween="sine" easing="inout" />
+                            <effect type="slide" start="2320" end="0" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1" delay="0" tween="sine" easing="inout" />
+                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
                         </animation>                         
                         <posx>0</posx>
                         <posy>0</posy>
@@ -1070,11 +1087,13 @@
                     <!-- 4500 - Actor Artwork -->
                     <control type="group" id="4500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="500" delay="0" tween="sine" easing="inout" />
+                            <effect type="slide" start="2320" end="0" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1" delay="0" tween="sine" easing="inout" />
-                        </animation>                       
+                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
+                        </animation>                        
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>1920</width>
@@ -1198,11 +1217,13 @@
                     <!-- 7500 - Actor-related Fanart -->
                     <control type="group" id="7500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="500" delay="0" tween="sine" easing="inout" />
+                            <effect type="slide" start="2320" end="0" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1" delay="0" tween="sine" easing="inout" />
-                        </animation>                   
+                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
+                            <effect type="fade" time="1100" delay="200" />
+                        </animation>                 
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>1920</width>
