@@ -27,6 +27,7 @@
 
     <variable name="GlobalSearchMainSortLetter">
         <value condition="Control.HasFocus(111)">$INFO[Container(111).ListItem.SortLetter]</value>
+        <value condition="Control.HasFocus(211)">$INFO[Container(211).ListItem.SortLetter]</value>
         <value condition="Control.HasFocus(121)">$INFO[Container(121).ListItem.SortLetter]</value>
         <value condition="Control.HasFocus(131)">$INFO[Container(131).ListItem.SortLetter]</value>
         <value condition="Control.HasFocus(141)">$INFO[Container(141).ListItem.SortLetter]</value>
