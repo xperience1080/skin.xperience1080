@@ -11,6 +11,15 @@
 				<control type="image" id="3008">
 					<visible>false</visible>
 				</control>
+				<control type="image" id="3006">
+					<visible>false</visible>
+				</control>
+				<control type="image" id="3009">
+					<visible>false</visible>
+				</control>	
+				<control type="image" id="3010">
+					<visible>false</visible>
+				</control>								
 				<width>100%</width>			
 				<!-- Background -->
 				<control type="image">
@@ -22,8 +31,8 @@
 				</control>				
 			</control>
 			<control type="group">
-				<animation effect="fade" start="0" end="100" delay="150" time="150">Visible</animation>
-				<animation effect="fade" start="0" end="100" delay="150" time="150">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" delay="150" time="300">Visible</animation>
+				<animation effect="fade" start="0" end="100" delay="150" time="300">WindowOpen</animation>
 				<control type="group">
 					<include>visiblehidefadeinfo</include>
 					<!-- Watch Now - Cancel Buttons -->
@@ -64,7 +73,6 @@
 						</control>
 					</control>
 					<!-- Cover Image -->
-					<control type="image" id="3009"><visible>false</visible></control>
 					<control type="image">
 						<posx>80</posx>
 						<posy>632</posy>
