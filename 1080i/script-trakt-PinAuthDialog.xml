@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="9999">
+    <defaultcontrol always="false">200</defaultcontrol>
+    <zorder>5</zorder>
+    <include>KeyboardAnimations</include>
+    <controls>
+        <include>FadeBackgroundButtonMenu</include>
+        <include>OptionsShutdownAnimation</include>
+        <animation type="WindowOpen" reversible="false">
+            <effect type="zoom" start="75" end="100" center="960,540" easing="out" tween="back" time="300" />
+            <effect type="fade" start="0" end="100" time="175" />
+        </animation>
+        <animation type="WindowClose" reversible="false">
+            <effect type="zoom" start="100" end="75" center="960,540" easing="in" tween="back" time="300" />
+            <effect type="fade" start="100" end="0" delay="200" time="100" />
+        </animation>
+        <animation type="Visible" reversible="false">
+            <effect type="zoom" start="75" end="100" center="960,540" easing="out" tween="back" time="300" />
+            <effect type="fade" start="0" end="100" time="175" />
+        </animation>
+        <animation type="Hidden" reversible="false">
+            <effect type="zoom" start="100" end="75" center="960,540" easing="in" tween="back" time="300" />
+            <effect type="fade" start="100" end="0" delay="200" time="100" />
+        </animation>
+        <control type="group">
+            <control type="image">
+                <posx>920</posx>
+                <posy>292</posy>
+                <width>80</width>
+                <height>60</height>
+                <texture>dialogs/default/arrow.png</texture>
+            </control>			
+            <control type="image">
+                <posx>534</posx>
+                <posy>312</posy>
+                <width>852</width>
+                <height>474</height>
+                <texture border="39">dialogs/default/bg.png</texture>
+            </control>
+            <control type="label" id="100">
+                <description>Heading</description>
+                <posx>560</posx>
+                <posy>264</posy>
+                <width>800</width>
+                <label>$ADDON[script.trakt 32153]</label>
+                <font>Font-Condensed-S34</font>
+                <textcolor>ddwhite</textcolor>
+                <align>center</align>
+            </control>
+        </control>
+        <control type="group">
+            <control type="label" id="203">
+                <description>Instructions Label</description>
+                <posx>990</posx>
+                <posy>346</posy>
+                <width>360</width>
+                <height>200</height>
+                <font>font12</font>
+                <wrapmultiline>true</wrapmultiline>
+                <textcolor>AA000000</textcolor>
+                <align>left</align>
+                <aligny>top</aligny>
+            </control>
+        </control>
+        <control type="edit" id="3001">
+            <posx>1012</posx>
+            <posy>586</posy>
+            <height>40</height>
+            <width>300</width>
+            <aligny>center</aligny>
+            <font>Font-Condensed-S40</font>
+            <textcolor>FFed1c24</textcolor>
+            <texturefocus>noop</texturefocus>
+            <texturenofocus>noop</texturenofocus>
+        </control>
+        <control type="image">
+            <description>trakt logo</description>
+            <posx>1266</posx>
+            <posy>667</posy>
+            <width>90</width>
+            <height>90</height>
+            <texture border="39">dialogs/trakt/trakt-logo.png</texture>
+        </control>
+        <control type="image">
+            <posx>568</posx>
+            <posy>346</posy>
+            <width>400</width>
+            <height>407</height>
+            <texture border="5">dialogs/default/inner-dark.png</texture>
+        </control>				
+        <control type="image">
+            <description>QR Code</description>
+            <posx>568</posx>
+            <posy>349</posy>
+            <width>400</width>
+            <height>400</height>
+            <texture>dialogs/trakt/qr_code.png</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+        <control type="group" id="9001">
+            <control type="button" id="200">
+                <description>Authorize Button</description>
+                <posx>564</posx>
+                <posy>753</posy>
+                <label>$ADDON[script.trakt 32154]</label>
+                <texturefocus>buttons/select-fo.png</texturefocus>
+                <texturenofocus>buttons/select-nf.png</texturenofocus>
+                <include>DialogButtonDimensions</include>
+                <onleft>202</onleft>
+                <onright>201</onright>
+                <onup>201</onup>
+                <ondown>202</ondown>
+                <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(200)">Conditional</animation>
+            </control>
+            <control type="button" id="201">
+                <description>Later Button</description>
+                <posx>764</posx>
+                <posy>753</posy>
+                <label>$ADDON[script.trakt 32155]</label>
+                <texturefocus>buttons/get-fo.png</texturefocus>
+                <texturenofocus>buttons/get-nf.png</texturenofocus>
+                <include>DialogButtonDimensions</include>
+                <onleft>200</onleft>
+                <onright>202</onright>
+                <onup>202</onup>
+                <ondown>200</ondown>
+                <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(201)">Conditional</animation>
+            </control>
+            <control type="button" id="202">
+                <description>Later Button</description>
+                <posx>1005</posx>
+                <posy>753</posy>
+                <label>$ADDON[script.trakt 32156]</label>
+                <texturefocus>buttons/cancel-right-fo.png</texturefocus>
+                <texturenofocus>buttons/cancel-right-nf.png</texturenofocus>
+                <include>DialogButtonDimensionsRightAlign</include>
+                <onleft>201</onleft>
+                <onright>200</onright>
+                <onup>200</onup>
+                <ondown>201</ondown>
+                <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(202)">Conditional</animation>
+            </control>	              	            			
+        </control>
+    </controls>
+</window>
