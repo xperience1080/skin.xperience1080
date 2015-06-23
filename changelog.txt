@@ -1,4 +1,9 @@
-﻿[B]4.0920[/B]
+﻿[B]4.0973[/B]
+• Search: actors added to global search
+• Trakt: integrated window
+• A few other fixes
+
+[B]4.0920[/B]
 • Corrected: missing parentheses
 • Extendedinfo: a few further updates to animations
 • Trakt: completed context integration, removed due to upcoming context add-ons
