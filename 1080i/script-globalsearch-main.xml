@@ -57,9 +57,9 @@
                         <align>right</align>
                     </control>
                     <control type="progress" id="32">
-        				<description>progress control</description>
-        				<visible>false</visible>
-        			</control>
+                        <description>progress control</description>
+                        <visible>false</visible>
+                    </control>
                 </control>
                 <control type="group">
                     <visible>Control.IsVisible(198)</visible>
@@ -87,14 +87,14 @@
                     <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" delay="0" />
                     <effect type="slide" start="0,0" end="0,-75" time="300" tween="sine" easing="out" delay="0" />
                 </animation>
-                <visible>!Window.IsVisible(script-globalsearch-infodialog.xml) + [ControlGroup(119).HasFocus | ControlGroup(129).HasFocus | ControlGroup(139).HasFocus | ControlGroup(149).HasFocus | ControlGroup(159).HasFocus | ControlGroup(169).HasFocus | ControlGroup(179).HasFocus | ControlGroup(189).HasFocus]</visible>
+                <visible>!Window.IsVisible(script-globalsearch-infodialog.xml) + [ControlGroup(119).HasFocus | ControlGroup(219).HasFocus | ControlGroup(129).HasFocus | ControlGroup(139).HasFocus | ControlGroup(149).HasFocus | ControlGroup(159).HasFocus | ControlGroup(169).HasFocus | ControlGroup(179).HasFocus | ControlGroup(189).HasFocus]</visible>
                 <control type="image">
                     <posx>20</posx>
                     <posy>35</posy>
                     <width>85</width>
                     <height>85</height>
                     <texture>DefaultMusicSearch.png</texture>
-                    <visible>!Container(111).Scrolling + !Container(121).Scrolling + !Container(131).Scrolling + !Container(141).Scrolling + !Container(151).Scrolling + !Container(161).Scrolling + !Container(171).Scrolling + !Container(181).Scrolling</visible>
+                    <visible>!Container(111).Scrolling + !Container(211).Scrolling + !Container(121).Scrolling + !Container(131).Scrolling + !Container(141).Scrolling + !Container(151).Scrolling + !Container(161).Scrolling + !Container(171).Scrolling + !Container(181).Scrolling</visible>
                     <animation type="Hidden">
                         <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                         <effect type="zoom" start="100" end="50" center="60,75" tween="sine" easing="inout" time="300" />
@@ -107,7 +107,7 @@
                 <control type="group">
                     <posx>17</posx>
                     <posy>32</posy>
-                    <visible>Container(111).Scrolling | Container(121).Scrolling | Container(131).Scrolling | Container(141).Scrolling | Container(151).Scrolling | Container(161).Scrolling | Container(171).Scrolling | Container(181).Scrolling</visible>
+                    <visible>Container(111).Scrolling | Container(211).Scrolling | Container(121).Scrolling | Container(131).Scrolling | Container(141).Scrolling | Container(151).Scrolling | Container(161).Scrolling | Container(171).Scrolling | Container(181).Scrolling</visible>
                     <animation type="Visible">
                         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
                         <effect type="slide" start="0,-75" end="0,0" time="350" tween="sine" easing="out" />
@@ -182,6 +182,56 @@
                             <scroll>false</scroll>
                             <align>left</align>
                             <visible>IntegerGreaterThan(Container(111).NumItems,1)</visible>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.HasFocus(211)</visible>
+                    <animation type="Visible" reversible="false">
+                        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
+                        <effect type="slide" start="0,-75" end="0,0" time="350" tween="cubic" easing="out" />
+                    </animation>
+                    <animation type="Hidden" reversible="false">
+                        <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" />
+                        <effect type="slide" start="0,0" end="0,-75" time="300" tween="sine" easing="out" />
+                    </animation>
+                    <control type="grouplist">
+                        <posx>110</posx>
+                        <posy>0</posy>
+                        <orientation>horizontal</orientation>
+                        <control type="label">
+                            <width min="50" max="750">auto</width>
+                            <height>120</height>
+                            <label>$LOCALIZE[283]: [B]$ADDON[script.globalsearch 32211] $INFO[Window.Property(GlobalSearch.SearchString)][/B]</label>
+                            <font>Font-Condensed-S36</font>
+                            <textcolor>C0FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                        </control>
+                    </control>
+                    <control type="grouplist">
+                        <posx>110</posx>
+                        <posy>33</posy>
+                        <orientation>horizontal</orientation>
+                        <control type="label">
+                            <width min="50" max="400">auto</width>
+                            <height>120</height>
+                            <label>$INFO[Container(211).NumItems] $LOCALIZE[20338]</label>
+                            <font>Font-Condensed-S28</font>
+                            <textcolor>80FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                            <visible>!IntegerGreaterThan(Container(211).NumItems,1)</visible>
+                        </control>
+                        <control type="label">
+                            <width min="50" max="400">auto</width>
+                            <height>120</height>
+                            <label>$INFO[Container(211).NumItems] $LOCALIZE[342]</label>
+                            <font>Font-Condensed-S28</font>
+                            <textcolor>80FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                            <visible>IntegerGreaterThan(Container(211).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -556,7 +606,7 @@
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="110">
                         <description>Number of found movies</description>
-						<visible>false</visible>
+                        <visible>false</visible>
                     </control>
                     <control type="fixedlist" id="111">
                         <description>Movie list</description>
@@ -567,7 +617,7 @@
                         <onup>SetProperty(Movement,1)</onup>
                         <onup>181</onup>
                         <ondown>ClearProperty(Movement)</ondown>
-                        <ondown>121</ondown>
+                        <ondown>211</ondown>
                         <viewtype label="List">List</viewtype>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
                         <orientation>horizontal</orientation>
@@ -734,6 +784,203 @@
                         <animation effect="fade" time="300" start="90" end="0" tween="sine" easing="in">Hidden</animation>
                     </control>
                 </control>
+                <control type="group">
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" delay="100" />
+                        <effect type="slide" start="0,0" end="0,-75" time="300" tween="sine" easing="out" delay="100" />
+                    </animation>
+                    <control type="group" id="219">
+                        <description>ActorsPiers</description>
+                        <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(211)</visible>
+                        <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
+                        <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
+                        <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(211) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                        <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(211) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                        <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                        <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                        <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
+                        <control type="label" id="210">
+                            <description>Number of found movies containing actor</description>
+                            <visible>false</visible>
+                        </control>
+                        <control type="fixedlist" id="211">
+                            <description>Movie list</description>
+                            <posx>-227</posx>
+                            <posy>300</posy>
+                            <width>2282</width>
+                            <height>750</height>
+                            <onup>SetProperty(Movement,1)</onup>
+                            <onup>111</onup>
+                            <ondown>ClearProperty(Movement)</ondown>
+                            <ondown>121</ondown>
+                            <viewtype label="List">List</viewtype>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <orientation>horizontal</orientation>
+                            <preloaditems>2</preloaditems>
+                            <focusposition>1</focusposition>
+                            <itemlayout width="332" height="750">
+                                <control type="group">
+                                    <animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
+                                    <control type="image">
+                                        <description>Bottom shadow</description>
+                                        <posx>-10</posx>
+                                        <posy>585</posy>
+                                        <width>340</width>
+                                        <height>50</height>
+                                        <texture>dialogs/shutdown/shadow.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <posx>-5</posx>
+                                        <posy>475</posy>
+                                        <width>330</width>
+                                        <height>110</height>
+                                        <texture border="7">windows/home/tile.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <posx>20</posx>
+                                        <posy>493</posy>
+                                        <width>280</width>
+                                        <height>40</height>
+                                        <font>Font-Condensed-S29-B</font>
+                                        <label>$INFO[ListItem.Label]</label>
+                                        <textcolor>ddwhite</textcolor>
+                                        <shadowcolor>22000000</shadowcolor>
+                                        <aligny>center</aligny>
+                                        <scroll>no</scroll>
+                                    </control>
+                                    <control type="label">
+                                        <posx>20</posx>
+                                        <posy>529</posy>
+                                        <width>280</width>
+                                        <height>40</height>
+                                        <font>Font-Condensed-S27</font>
+                                        <label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]$INFO[ListItem.Property(Rating), • ,]</label>
+                                        <textcolor>99FFFFFF</textcolor>
+                                        <shadowcolor>22000000</shadowcolor>
+                                        <aligny>center</aligny>
+                                        <scroll>false</scroll>
+                                    </control>
+                                </control>
+                                <control type="group">
+                                    <animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
+                                    <control type="image">
+                                        <posx>0</posx>
+                                        <posy>0</posy>
+                                        <width>320</width>
+                                        <height>480</height>
+                                        <aspectratio>scale</aspectratio>
+                                        <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$INFO[ListItem.Icon]</texture>
+                                    </control>
+                                    <control type="image">
+                                        <posx>0</posx>
+                                        <posy>479</posy>
+                                        <width>320</width>
+                                        <height>1</height>
+                                        <colordiffuse>99000000</colordiffuse>
+                                        <texture>windows/common/black.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <posx>220</posx>
+                                    <posy>0</posy>
+                                    <width>100</width>
+                                    <height>100</height>
+                                    <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
+                                    <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout width="332" height="750">
+                                <control type="button">
+                                    <onfocus>SetProperty(search_list,211,home)</onfocus>
+                                    <onfocus>SetProperty(fanart_image,$INFO[Container(211).ListItem.Property(Fanart)],home)</onfocus>
+                                </control>
+                                <control type="group">
+                                    <animation effect="fade" start="50" end="100" time="300" tween="sine" easing="inout">Focus</animation>
+                                    <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout">UnFocus</animation>
+                                    <control type="image">
+                                        <description>Bottom shadow</description>
+                                        <posx>-10</posx>
+                                        <posy>585</posy>
+                                        <width>340</width>
+                                        <height>50</height>
+                                        <texture>dialogs/shutdown/shadow.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <posx>-5</posx>
+                                        <posy>475</posy>
+                                        <width>330</width>
+                                        <height>110</height>
+                                        <texture border="7">windows/home/tile.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <posx>20</posx>
+                                        <posy>493</posy>
+                                        <width>280</width>
+                                        <height>40</height>
+                                        <font>Font-Condensed-S29-B</font>
+                                        <label>$INFO[ListItem.Label]</label>
+                                        <textcolor>ddwhite</textcolor>
+                                        <shadowcolor>22000000</shadowcolor>
+                                        <aligny>center</aligny>
+                                        <scroll>no</scroll>
+                                    </control>
+                                    <control type="label">
+                                        <posx>20</posx>
+                                        <posy>529</posy>
+                                        <width>280</width>
+                                        <height>40</height>
+                                        <font>Font-Condensed-S27</font>
+                                        <label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]$INFO[ListItem.Property(Rating), • ,]</label>
+                                        <textcolor>99FFFFFF</textcolor>
+                                        <shadowcolor>22000000</shadowcolor>
+                                        <aligny>center</aligny>
+                                        <scroll>false</scroll>
+                                    </control>
+                                </control>
+                                <control type="group">
+                                    <animation effect="fade" start="75" end="100" time="300" tween="sine" easing="inout">Focus</animation>
+                                    <animation effect="fade" start="100" end="75" time="300" tween="sine" easing="inout">UnFocus</animation>
+                                    <control type="image">
+                                        <posx>0</posx>
+                                        <posy>0</posy>
+                                        <width>320</width>
+                                        <height>480</height>
+                                        <aspectratio>scale</aspectratio>
+                                        <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$INFO[ListItem.Thumb]</texture>
+                                    </control>
+                                    <control type="image">
+                                        <posx>0</posx>
+                                        <posy>479</posy>
+                                        <width>320</width>
+                                        <height>1</height>
+                                        <colordiffuse>99000000</colordiffuse>
+                                        <texture>windows/common/black.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <posx>220</posx>
+                                    <posy>0</posy>
+                                    <width>100</width>
+                                    <height>100</height>
+                                    <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
+                                    <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                        <control type="image">
+                            <posx>105</posx>
+                            <posy>300</posy>
+                            <width>320</width>
+                            <height>480</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>windows/common/black.png</texture>
+                            <visible>Window.IsActive(script-globalsearch-contextmenu.xml)</visible>
+                            <animation effect="fade" time="300" start="0" end="90" tween="sine" easing="out">Visible</animation>
+                            <animation effect="fade" time="300" start="90" end="0" tween="sine" easing="in">Hidden</animation>
+                        </control>
+                    </control>
+                </control>
+
                 <control type="group" id="129">
                     <description>Tv shows</description>
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(121)</visible>
@@ -746,7 +993,7 @@
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="120">
                         <description>Number of found tv shows</description>
-						<visible>false</visible>
+                        <visible>false</visible>
                     </control>
                     <control type="fixedlist" id="121">
                         <description>Tv shows list</description>
@@ -755,7 +1002,7 @@
                         <width>2282</width>
                         <height>750</height>
                         <onup>SetProperty(Movement,1)</onup>
-                        <onup>111</onup>
+                        <onup>211</onup>
                         <ondown>ClearProperty(Movement)</ondown>
                         <ondown>131</ondown>
                         <viewtype label="List">List</viewtype>
@@ -936,7 +1183,7 @@
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="130">
                         <description>Number of found seasons</description>
-						<visible>false</visible>
+                        <visible>false</visible>
                     </control>
                     <control type="fixedlist" id="131">
                         <description>Seasons list</description>
@@ -1112,7 +1359,7 @@
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="140">
                         <description>Number of found episodes</description>
-						<visible>false</visible>
+                        <visible>false</visible>
                     </control>
                     <control type="fixedlist" id="141">
                         <description>Episodes list</description>
@@ -1326,7 +1573,7 @@
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="150">
                         <description>Number of found music videos</description>
-						<visible>false</visible>
+                        <visible>false</visible>
                     </control>
                     <control type="fixedlist" id="151">
                         <description>Music videos list</description>
@@ -1516,7 +1763,7 @@
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="160">
                         <description>Number of found artists</description>
-						<visible>false</visible>
+                        <visible>false</visible>
                     </control>
                     <control type="fixedlist" id="161">
                         <description>Artists list</description>
@@ -1690,7 +1937,7 @@
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="170">
                         <description>Number of found albums</description>
-						<visible>false</visible>
+                        <visible>false</visible>
                     </control>
                     <control type="fixedlist" id="171">
                         <description>Albums list</description>
@@ -1864,7 +2111,7 @@
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="180">
                         <description>Number of found songs</description>
-						<visible>false</visible>
+                        <visible>false</visible>
                     </control>
                     <control type="fixedlist" id="181">
                         <description>Songs list</description>
