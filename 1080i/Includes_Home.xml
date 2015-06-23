@@ -738,6 +738,7 @@
                                 <scrollout>false</scrollout>
                                 <pauseatend>5000</pauseatend>
                                 <label>$LOCALIZE[342]...</label>
+                                <label>$LOCALIZE[344]...</label>
                                 <label>$LOCALIZE[41446]...</label>
                                 <label>$LOCALIZE[33054]...</label>
                                 <label>$LOCALIZE[20360]...</label>
