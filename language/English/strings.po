@@ -92,6 +92,10 @@ msgctxt "#31018"
 msgid "TV Show Crew"
 msgstr ""
 
+msgctxt "#31019"
+msgid "Trakt Options"
+msgstr ""
+
 msgctxt "#41100"
 msgid "General"
 msgstr ""
