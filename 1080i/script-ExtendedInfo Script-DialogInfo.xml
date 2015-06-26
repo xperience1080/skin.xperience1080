@@ -212,7 +212,7 @@
                         <onleft>Back</onleft>
                         <height>1080</height>
                         <pagecontrol>70</pagecontrol>
-                        <visible>!ControlGroup(1500).HasFocus | !Control.HasFocus(151) | !ControlGroup(2500).HasFocus | !ControlGroup(5500).HasFocus | !ControlGroup(6500).HasFocus | !ControlGroup(4500).HasFocus | !ControlGroup(7500).HasFocus</visible>
+                        <visible>!ControlGroup(1500).HasFocus | !ControlGroup(2500).HasFocus | !ControlGroup(5500).HasFocus | !ControlGroup(6500).HasFocus | !ControlGroup(4500).HasFocus | !ControlGroup(7500).HasFocus</visible>
 
                         <!-- Actor Image --> 
                         <control type="image">
@@ -534,7 +534,7 @@
                             <width>6</width>
                             <height>687</height>
                             <texture border="1">views/other/scrollbar-sq.png</texture>
-                            <visible>Control.IsVisible(151)</visible>
+                            <visible>Control.IsVisible(151) + !ControlGroup(4001).HasFocus</visible>
                             <animation effect="fade" start="25" end="10" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151)">Conditional</animation>
                         </control>
                         <control type="scrollbar" id="151">
@@ -550,6 +550,7 @@
                             <orientation>vertical</orientation>
                             <showonepage>false</showonepage>
                             <animation effect="fade" start="80" end="35" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151)">Conditional</animation>
+                            <visible>!ControlGroup(4001).HasFocus</visible>
                         </control>
 
                         <!-- Item Image -->
