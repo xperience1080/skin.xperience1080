@@ -1,4 +1,13 @@
-﻿[B]4.0973[/B]
+﻿[B]4.0985[/B]
+• Alternative Theme: Opacity added to multiple textures
+• Both themes: mini-progress colour changed to blue
+• Extendedinfo: animations changed, DialogVideoInfo removed until completed
+• Language: EN strings updated
+• Trakt: dialogues integrated, context menu supported
+• Metadata Actors: No longer supported, removed.
+• Other changes: see git commits.
+
+[B]4.0973[/B]
 • Search: actors added to global search
 • Trakt: integrated window
 • A few other fixes
