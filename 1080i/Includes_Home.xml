@@ -5322,7 +5322,7 @@
                     <posy>25</posy>
                     <height>138</height>
                     <width>138</width>
-                    <texture>$INFO[Window(Weather).Property(Daily.2.FanartCode),weather/medium/,.png]</texture>
+                    <texture>$INFO[Window(Weather).Property(Day1.FanartCode),weather/medium/,.png]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="label">
@@ -5334,7 +5334,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <textcolor>eewhite</textcolor>
-                    <label>$INFO[Window(Weather).Property(Daily.2.LongDay)]</label>
+                    <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
@@ -5345,7 +5345,7 @@
                     <font>Font-Condensed-S25-B</font>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$INFO[Window(Weather).Property(Daily.2.Outlook)]</label>
+                    <label>$INFO[Window(Weather).Property(Day1.Outlook)]</label>
                     <scroll>false</scroll>
                     <textcolor>ddC6C6C8</textcolor>
                 </control>
@@ -5374,7 +5374,7 @@
                         <font>Font-Condensed-S31-B</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window(Weather).Property(Daily.2.HighTemperature)]</label>
+                        <label>$INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
                         <textcolor>ddC6C6C8</textcolor>
                     </control>
                     <control type="image">
@@ -5394,7 +5394,7 @@
                         <font>Font-Condensed-S31-B</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window(Weather).Property(Daily.2.LowTemperature)]</label>
+                        <label>$INFO[Window(Weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
                         <textcolor>ddC6C6C8</textcolor>
                     </control>
                 </control>
@@ -5419,7 +5419,7 @@
                     <posy>25</posy>
                     <height>138</height>
                     <width>138</width>
-                    <texture>$INFO[Window(Weather).Property(Daily.3.FanartCode),weather/medium/,.png]</texture>
+                    <texture>$INFO[Window(Weather).Property(Day2.FanartCode),weather/medium/,.png]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="label">
@@ -5431,7 +5431,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <textcolor>eewhite</textcolor>
-                    <label>$INFO[Window(Weather).Property(Daily.3.LongDay)]</label>
+                    <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
@@ -5442,7 +5442,7 @@
                     <font>Font-Condensed-S25-B</font>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$INFO[Window(Weather).Property(Daily.3.Outlook)]</label>
+                    <label>$INFO[Window(Weather).Property(Day2.Outlook)]</label>
                     <scroll>false</scroll>
                     <textcolor>ddC6C6C8</textcolor>
                 </control>
@@ -5471,7 +5471,7 @@
                         <font>Font-Condensed-S31-B</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window(Weather).Property(Daily.3.HighTemperature)]</label>
+                        <label>$INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
                         <textcolor>ddC6C6C8</textcolor>
                     </control>
                     <control type="image">
@@ -5491,7 +5491,7 @@
                         <font>Font-Condensed-S31-B</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window(Weather).Property(Daily.3.LowTemperature)]</label>
+                        <label>$INFO[Window(Weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
                         <textcolor>ddC6C6C8</textcolor>
                     </control>
                 </control>
@@ -5516,7 +5516,7 @@
                     <posy>25</posy>
                     <height>138</height>
                     <width>138</width>
-                    <texture>$INFO[Window(Weather).Property(Daily.4.FanartCode),weather/medium/,.png]</texture>
+                    <texture>$INFO[Window(Weather).Property(Day3.FanartCode),weather/medium/,.png]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="label">
@@ -5528,7 +5528,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <textcolor>eewhite</textcolor>
-                    <label>$INFO[Window(Weather).Property(Daily.4.LongDay)]</label>
+                    <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
@@ -5539,7 +5539,7 @@
                     <font>Font-Condensed-S25-B</font>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$INFO[Window(Weather).Property(Daily.4.Outlook)]</label>
+                    <label>$INFO[Window(Weather).Property(Day3.Outlook)]</label>
                     <scroll>false</scroll>
                     <textcolor>ddC6C6C8</textcolor>
                 </control>
@@ -5568,7 +5568,7 @@
                         <font>Font-Condensed-S31-B</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window(Weather).Property(Daily.4.HighTemperature)]</label>
+                        <label>$INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
                         <textcolor>ddC6C6C8</textcolor>
                     </control>
                     <control type="image">
@@ -5588,7 +5588,7 @@
                         <font>Font-Condensed-S31-B</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window(Weather).Property(Daily.4.LowTemperature)]</label>
+                        <label>$INFO[Window(Weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
                         <textcolor>ddC6C6C8</textcolor>
                     </control>
                 </control>
