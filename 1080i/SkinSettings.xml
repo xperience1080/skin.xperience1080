@@ -920,7 +920,7 @@
 
                         <width>1210</width>
                         <include>SettingsCategoryDefaultButtonVars</include>
-                        <onclick>XBMC.RunScript(script.tvtunes)</onclick>
+                        <onclick>RunScript(script.tvtunes)</onclick>
                         <label>- $LOCALIZE[41284]</label>
                         <visible>Skin.HasSetting(TVTunes.Enabled)</visible>
                     </control>
