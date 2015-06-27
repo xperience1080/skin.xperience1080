@@ -166,7 +166,6 @@
                         <textcolor>FF484848</textcolor>
                         <focusedcolor>DDFFFFFF</focusedcolor>
                         <textoffsetx>75</textoffsetx>
-                        <scroll>false</scroll>
                         <label>587</label>
                         <pulseonselect>false</pulseonselect>
                         <texturefocus border="62,2,62,2">dialogs/options/buttons/filter-fo.png</texturefocus>
