@@ -6,7 +6,7 @@
 		<control type="group">
 			<include>OpenButtonMenuAnimation</include>
 			<posx>267</posx>
-			<posy>517</posy>
+			<posy>477</posy>
 			<control type="image">
 				<description>shadow image</description>
 				<posx>5</posx>
