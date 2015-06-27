@@ -1,4 +1,12 @@
-﻿[B]4.0990.1[/B]
+﻿[B]4.0991.2[/B]
+• Trakt: context menu alignment
+• Textures: created xbt for beta testers. THESE WILL BE REMOVED FROM THE FINAL VERSION (they are created automatically)
+• Theme: renamed 'alterantive' to 'flat'
+• TvTunes: removed skin settings, now disabled via add-on
+• removed extendedinfo as a requirement
+• cleaned up old controls
+
+[B]4.0990.1[/B]
 • Fixed 140 parentheses errors
 
 [B]4.0990[/B]
