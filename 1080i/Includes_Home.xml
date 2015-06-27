@@ -1054,7 +1054,6 @@
                         <label>$LOCALIZE[31013]</label>
                         <scroll>false</scroll>
                     </control>
-
                 </control>
                 <control type="label">
                     <posx>0</posx>
@@ -1067,28 +1066,8 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <textoffsetx>5</textoffsetx>
-                    <label>[UPPERCASE]Airing Now &amp; Next[/UPPERCASE]</label>
+                    <label>[UPPERCASE]$LOCALIZE[31020][/UPPERCASE]</label>
                     <animation effect="slide" end="0,6" time="100" tween="sine" easing="out" condition="ControlGroup(902).HasFocus">Conditional</animation>
-                </control>
-                <control type="group">
-                    <animation effect="slide" end="0,6" time="100" tween="sine" easing="out" condition="ControlGroup(902).HasFocus">Conditional</animation>
-                    <visible>!ControlGroup(902).HasFocus</visible>
-                    <control type="textbox">
-                        <posx>10</posx>
-                        <posy>490</posy>
-                        <width>800</width>
-                        <height>42</height>
-                        <label>$VAR[LiveTVLabel]</label>
-                        <font>Font-Condensed-S32</font>
-                        <textcolor>PrimaryOSD</textcolor>
-                        <align>left</align>
-                        <aligny>top</aligny>
-                        <scroll>false</scroll>
-                        <autoscroll>false</autoscroll>
-                        <visible>Control.IsVisible(9022)</visible>
-                        <animation effect="fade" time="800" start="0" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
-                        <animation effect="fade" time="100" start="100" end="0" tween="quadratic" easing="in" reversible="false">unfocus</animation>
-                    </control>
                 </control>
                 <control type="group">
                     <animation effect="slide" end="0,6" time="100" tween="sine" easing="out" condition="ControlGroup(902).HasFocus">Conditional</animation>

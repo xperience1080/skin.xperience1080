@@ -96,6 +96,11 @@ msgctxt "#31019"
 msgid "Trakt Options"
 msgstr ""
 
+#: \1080i\Includes_Home.xml:1070
+msgctxt "#31020"
+msgid "Airing Now & Next"
+msgstr ""
+
 msgctxt "#41100"
 msgid "General"
 msgstr ""
