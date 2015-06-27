@@ -1,4 +1,9 @@
-﻿[B]4.1[/B]
+﻿[B]4.0998[/B]
+• Fixes control not allow button focus for add-on settings with only one option
+• version should not have been 4.1
+• Submit to repo
+
+[B]4.0997[/B]
 • Cleanup and submit to repository.
 
 [B]4.0991.2[/B]
