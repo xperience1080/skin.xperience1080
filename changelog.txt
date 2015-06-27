@@ -1,4 +1,7 @@
-﻿[B]4.0991.2[/B]
+﻿[B]4.1[/B]
+• Cleanup and submit to repository.
+
+[B]4.0991.2[/B]
 • Trakt: context menu alignment
 • Textures: created xbt for beta testers. THESE WILL BE REMOVED FROM THE FINAL VERSION (they are created automatically)
 • Theme: renamed 'alterantive' to 'flat'
