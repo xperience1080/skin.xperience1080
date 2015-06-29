@@ -178,7 +178,7 @@
             <control type="label">
                 <width min="50" max="400">auto</width>
                 <height>120</height>
-                <label>$INFO[Container.NumItems,, $LOCALIZE[41822]]</label>
+                <label>$INFO[Container.NumItems,, $LOCALIZE[41822]]  [COLOR=44FFFFFF]•[/COLOR]$INFO[Control.GetLabel(3), ]</label>
                 <font>Font-Condensed-S28</font>
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
@@ -188,7 +188,7 @@
             <control type="label">
                 <width min="50" max="400">auto</width>
                 <height>120</height>
-                <label>$INFO[Container.NumItems,, $LOCALIZE[41817]]</label>
+                <label>$INFO[Container.NumItems,, $LOCALIZE[41817]]  [COLOR=44FFFFFF]•[/COLOR]$INFO[Control.GetLabel(3), ]</label>
                 <font>Font-Condensed-S28</font>
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
@@ -198,7 +198,7 @@
             <control type="label">
                 <width min="50" max="400">auto</width>
                 <height>120</height>
-                <label>$INFO[Container.CurrentPage, [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[41819] ,]$INFO[Container.NumPages,/,]</label>
+                <label>$INFO[Container.CurrentPage, [COLOR=44FFFFFF]•[/COLOR] $LOCALIZE[41819] ,]$INFO[Container.NumPages,/,]</label>
                 <font>Font-Condensed-S28</font>
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
@@ -208,7 +208,7 @@
             <control type="label">
                 <width min="50" max="400">auto</width>
                 <height>120</height>
-                <label>$INFO[Container.CurrentPage, [COLOR=44FFFFFF]•[/COLOR] $LOCALIZE[41819] ,]$INFO[Container.NumPages,/, [COLOR=44FFFFFF]•[/COLOR]]$INFO[Control.GetLabel(3), ]</label>
+                <label>$INFO[Container.CurrentPage, [COLOR=44FFFFFF]•[/COLOR] $LOCALIZE[41819] ,]$INFO[Container.NumPages,/,]</label>
                 <font>Font-Condensed-S28</font>
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
