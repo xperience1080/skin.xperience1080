@@ -33,6 +33,17 @@
         <width>350</width>
         <height>100</height>
     </include>
+
+    <include name="DialogButtonDimensionsRightAlignSmall">
+        <textcolor>ddwhite</textcolor>
+        <focusedcolor>ddwhite</focusedcolor>
+        <disabledcolor>99FFFFFF</disabledcolor>
+        <align>right</align>
+        <textoffsetx>85</textoffsetx>
+        <textwidth>200</textwidth>
+        <width>250</width>
+        <height>100</height>
+    </include>    
 	  
     <include name="PVRGuideInfoZOrder">
         <zorder>3</zorder>
