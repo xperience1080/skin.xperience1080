@@ -1,4 +1,11 @@
-﻿[B]4.09.99[/B]
+﻿[B]4.1.002[/B]
+• Fixes 'Sort By:' location and adds missing item for container with less than 1 page
+• VideoOSD: Adds close and more control to Info when Info enabled via menu
+
+[B]4.1.00[/B]
+• Available from repository
+
+[B]4.09.99[/B]
 • Fixes a few issues
 • Submit to repo
 
