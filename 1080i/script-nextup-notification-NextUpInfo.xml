@@ -37,39 +37,30 @@
 					<include>visiblehidefadeinfo</include>
 					<!-- Watch Now - Cancel Buttons -->
 					<control type="grouplist">
-						<posx>1343</posx>
-						<posy>750</posy>
+						<posx>1346</posx>
+						<posy>637</posy>
 						<orientation>horizontal</orientation>
 						<control type="button" id="3012">
-							<description>Watch Now</description>
-							<right>20</right> 
-							<width>300</width>
+							<description>Watch Now</description> 
 							<onright>3013</onright>
 							<onleft>3013</onleft>
 							<font>Font-Condensed-S33-B</font>
 							<label>$ADDON[service.nextup.notification 30006]</label>
-							<focusedcolor>FFededed</focusedcolor>
-							<disabledcolor>B3dddddd</disabledcolor>
-							<selectedcolor>FF000000</selectedcolor>
-							<height>60</height>
 							<textcolor>ff333333</textcolor>
-							<texturefocus border="45,2,45,2">dialogs/other/nextepisode-next-fo.png</texturefocus>
-							<texturenofocus border="45,2,45,2">dialogs/other/nextepisode-nofo.png</texturenofocus>
+							<texturefocus>buttons/select-right-fo.png</texturefocus>
+							<texturenofocus>buttons/select-right-nf.png</texturenofocus>
+							<include>DialogButtonDimensionsRightAlignSmall</include>
 						</control>
 						<control type="button" id="3013">
-							<description>Cancel</description>
-							<width>180</width>
+							<description>Cancel</description> 
 							<onleft>3012</onleft>
 							<onright>3012</onright>			
 							<font>Font-Condensed-S33-B</font>
 							<label>$LOCALIZE[222]</label>
-							<focusedcolor>bbwhite</focusedcolor>
-							<disabledcolor>B3dddddd</disabledcolor>
-							<selectedcolor>FF000000</selectedcolor>
-							<height>60</height>
 							<textcolor>ff333333</textcolor>
-							<texturefocus border="45,2,45,2">dialogs/other/nextepisode-cancel-fo.png</texturefocus>
-							<texturenofocus border="45,2,45,2">dialogs/other/nextepisode-nofo.png</texturenofocus>
+							<texturefocus>buttons/cancel-right-small-fo.png</texturefocus>
+							<texturenofocus>buttons/cancel-right-small-nf.png</texturenofocus>
+							<include>DialogButtonDimensionsRightAlignSmall</include>
 						</control>
 					</control>
 					<!-- Cover Image -->
@@ -116,17 +107,28 @@
 						</control>
 						<control type="label" description="episode/season info" id="3002"><visible>false</visible></control>
 						<control type="label" description="Title" id="3000"><visible>false</visible></control>
-						<!-- Rating - Does not work -->
+						<!-- Rating -->
 						<control type="label" id="3003" description="rating">
-							<posx>420</posx>
+							<posx>1820</posx>
 							<posy>809</posy>
-							<width>1460</width>
+							<width>100</width>
 							<height>44</height>
 							<textcolor>88FFFFFF</textcolor>
 							<font>Font-Condensed-S36</font>
-							<align>left</align>
+							<align>right</align>
 							<aligny>center</aligny>
 						</control>
+						<control type="label">
+							<posx>1773</posx>
+							<posy>809</posy>
+							<width>44</width>
+							<height>44</height>
+							<textcolor>88FFFFFF</textcolor>
+							<font>Font-Condensed-S36</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>★</label>
+						</control>						
 						<!-- Air Date/Runtime -->
 						<control type="label" id="3004" description="year/runtime">
 							<posx>360</posx>
@@ -165,7 +167,7 @@
 						<!-- Service cancel information -->
 						<control type="label" description="Next up">
 							<posx>1820</posx>
-							<posy>809</posy>
+							<posy>750</posy>
 							<width>700</width>
 							<height>44</height>
 							<textcolor>88FFFFFF</textcolor>
