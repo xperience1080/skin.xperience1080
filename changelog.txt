@@ -1,4 +1,8 @@
-﻿[B]4.09.99[/B]
+﻿[B]4.01.003[/B]
+• Header: corrects Sort By not being displayed in containers with less than 1 page
+• Adds close/more buttons to info when enabled via menu
+
+[B]4.09.99[/B]
 • Fixes a few issues
 • Submit to repo
 
