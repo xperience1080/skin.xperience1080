@@ -494,15 +494,19 @@
                     </focusedlayout>
                     <content>
                         <item id="1">
+                            <description>Play</description>
                             <label>$LOCALIZE[41315]</label>
                             <onclick>SendClick(2003,8)</onclick>
-                            <visible>Container.Content(movies)</visible>
+                            <visible>!System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
                         </item>
                         <item id="2">
-                            <description>Cinema Experience</description>
-                            <label>$LOCALIZE[31001]</label>
-                            <onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
-                            <onclick>Dialog.Close(MovieInformation)</onclick>
+                            <description>Playback Options</description>
+                            <label>$LOCALIZE[14086]</label>
+                            <onclick>SetProperty(Dialog.1.Label,$LOCALIZE[41315])</onclick>
+                            <onclick>SetProperty(Dialog.1.BuiltIn,SendClick(2003,8))</onclick>
+                            <onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31001])</onclick>
+                            <onclick>SetProperty(Dialog.2.BuiltIn,RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])||Dialog.Close(MovieInformation))</onclick>
+                            <onclick>RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[14086])</onclick>                       
                             <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
                         </item>
                         <item id="3">
