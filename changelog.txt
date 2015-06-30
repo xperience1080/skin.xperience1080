@@ -1,4 +1,7 @@
-﻿[B]4.01.010[/B]
+﻿[B]4.01.011[/B]
+• Cinema Experience: added select dialog for playback option.
+
+[B]4.01.010[/B]
 • Next Up Notifications (NextUp): Rating added, re-designed button layout, missing IDs added.
 • Next Up Notifications (ContinueWatching): Rating added, re-designed button layout, moved title, missing IDs added.
 
