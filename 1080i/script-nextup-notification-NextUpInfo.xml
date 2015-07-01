@@ -5,21 +5,21 @@
 	<controls>
 		<control type="group">
 			<control type="group">
-				<animation effect="slide" start="0" end="0,-190" time="1000" condition="Window.IsVisible(script-nextup-notification-NextUpInfo.xml)">Conditional</animation>
+				<animation effect="slide" start="0" end="0,-190" time="300" condition="Window.IsVisible(script-nextup-notification-NextUpInfo.xml)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,-275" time="300" tween="cubic" easing="inout">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,-275" time="300" tween="cubic" easing="inout">Visible</animation>
-				<control type="image" id="3008">
-					<visible>false</visible>
-				</control>
-				<control type="image" id="3006">
-					<visible>false</visible>
-				</control>
-				<control type="image" id="3009">
-					<visible>false</visible>
-				</control>	
-				<control type="image" id="3010">
-					<visible>false</visible>
-				</control>								
+
+				<control type="label" id="3000"><visible>false</visible></control>
+				<control type="label" id="3002"><visible>false</visible></control>
+				<control type="label" id="3005"><visible>false</visible></control>
+				<control type="image" id="3006"><visible>false</visible></control>
+				<control type="image" id="3007"><visible>false</visible></control>
+				<control type="image" id="3008"><visible>false</visible></control>
+				<control type="image" id="3009"><visible>false</visible></control>
+				<control type="image" id="3010"><visible>false</visible></control>
+				<control type="label" id="3015"><visible>false</visible></control>
+				<control type="label" id="3016"><visible>false</visible></control>
+
 				<width>100%</width>			
 				<!-- Background -->
 				<control type="image">
@@ -37,30 +37,27 @@
 					<include>visiblehidefadeinfo</include>
 					<!-- Watch Now - Cancel Buttons -->
 					<control type="grouplist">
-						<posx>1346</posx>
+						<posx>1690</posx>
 						<posy>637</posy>
 						<orientation>horizontal</orientation>
+						<itemgap>-40</itemgap>
 						<control type="button" id="3012">
 							<description>Watch Now</description> 
 							<onright>3013</onright>
 							<onleft>3013</onleft>
-							<font>Font-Condensed-S33-B</font>
-							<label>$ADDON[service.nextup.notification 30006]</label>
-							<textcolor>ff333333</textcolor>
-							<texturefocus>buttons/select-right-fo.png</texturefocus>
-							<texturenofocus>buttons/select-right-nf.png</texturenofocus>
-							<include>DialogButtonDimensionsRightAlignSmall</include>
+							<width>100</width>
+							<height>100</height>
+							<texturenofocus border="100,0,0,0">buttons/select-nf.png</texturenofocus>
+							<texturefocus border="100,0,0,0">buttons/select-fo.png</texturefocus>
 						</control>
 						<control type="button" id="3013">
 							<description>Cancel</description> 
 							<onleft>3012</onleft>
 							<onright>3012</onright>			
-							<font>Font-Condensed-S33-B</font>
-							<label>$LOCALIZE[222]</label>
-							<textcolor>ff333333</textcolor>
-							<texturefocus>buttons/cancel-right-small-fo.png</texturefocus>
-							<texturenofocus>buttons/cancel-right-small-nf.png</texturenofocus>
-							<include>DialogButtonDimensionsRightAlignSmall</include>
+							<width>100</width>
+							<height>100</height>
+							<texturenofocus border="100,0,0,0">buttons/cancel-nf.png</texturenofocus>
+							<texturefocus border="100,0,0,0">buttons/cancel-fo.png</texturefocus>
 						</control>
 					</control>
 					<!-- Cover Image -->
@@ -85,7 +82,7 @@
 							<posy>660</posy>
 							<width>1300</width>
 							<height>56</height>							
-							<label>[UPPERCASE]$ADDON[service.nextup.notification 30008]...[/UPPERCASE] $INFO[Player.TimeRemaining(ss)]</label>
+							<label>[UPPERCASE]$ADDON[service.nextup.notification 30008]...[/UPPERCASE] $INFO[Player.TimeRemaining(ss)] - $ADDON[service.nextup.notification 30006]?</label>
 							<font>Font-Condensed-S50</font>
 							<textcolor>99FFFFFF</textcolor>
 							<align>left</align>
@@ -105,8 +102,6 @@
 							<aligny>center</aligny>
 							<scroll>false</scroll>
 						</control>
-						<control type="label" description="episode/season info" id="3002"><visible>false</visible></control>
-						<control type="label" description="Title" id="3000"><visible>false</visible></control>
 						<!-- Rating -->
 						<control type="label" id="3003" description="rating">
 							<posx>1820</posx>
@@ -130,18 +125,6 @@
 							<label>★</label>
 						</control>						
 						<!-- Air Date/Runtime -->
-						<control type="label" id="3004" description="year/runtime">
-							<posx>360</posx>
-							<posy>809</posy>
-							<width>1460</width>
-							<height>44</height>
-							<textcolor>88FFFFFF</textcolor>
-							<font>Font-Condensed-S36</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<visible>!Control.IsVisible(3003)</visible>
-						</control>
-						<!-- Air Date/Runtime -->
 						<control type="label" id="3004">
 							<posx>360</posx>
 							<posy>809</posy>
@@ -151,7 +134,6 @@
 							<font>Font-Condensed-S36</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<visible>Control.IsVisible(3003)</visible>
 						</control>
 						<!-- Plot -->
 						<control type="textbox" description="Plot" id="3001">

@@ -37,30 +37,27 @@
 					<include>visiblehidefadeinfo</include>
 					<!-- Watch Now - Cancel Buttons -->
 					<control type="grouplist">
-						<posx>1346</posx>
+						<posx>1690</posx>
 						<posy>637</posy>
 						<orientation>horizontal</orientation>
+						<itemgap>-40</itemgap>
 						<control type="button" id="4012">
-							<description>Continue Watching</description>
+							<description>Watch Now</description> 
 							<onright>4013</onright>
 							<onleft>4013</onleft>
-							<font>Font-Condensed-S33-B</font>
-							<label>$LOCALIZE[107]</label>
-							<textcolor>ff333333</textcolor>
-							<texturefocus>buttons/select-right-fo.png</texturefocus>
-							<texturenofocus>buttons/select-right-nf.png</texturenofocus>
-							<include>DialogButtonDimensionsRightAlignSmall</include>
+							<width>100</width>
+							<height>100</height>
+							<texturenofocus border="100,0,0,0">buttons/select-nf.png</texturenofocus>
+							<texturefocus border="100,0,0,0">buttons/select-fo.png</texturefocus>
 						</control>
 						<control type="button" id="4013">
-							<description>Cancel</description>
+							<description>Cancel</description> 
 							<onleft>4012</onleft>
 							<onright>4012</onright>			
-							<font>Font-Condensed-S33-B</font>
-							<label>$LOCALIZE[222]</label>
-							<textcolor>ff333333</textcolor>
-							<texturefocus>buttons/cancel-right-small-fo.png</texturefocus>
-							<texturenofocus>buttons/cancel-right-small-nf.png</texturenofocus>
-							<include>DialogButtonDimensionsRightAlignSmall</include>
+							<width>100</width>
+							<height>100</height>
+							<texturenofocus border="100,0,0,0">buttons/cancel-nf.png</texturenofocus>
+							<texturefocus border="100,0,0,0">buttons/cancel-fo.png</texturefocus>
 						</control>
 					</control>
 					<!-- Cover Image -->
@@ -96,17 +93,14 @@
 						<control type="label" id="4000">
 							<posx>360</posx>
 							<posy>750</posy>
-							<width>1240</width>
+							<width>900</width>
 							<height>56</height>
-
-
 							<textcolor>bbwhite</textcolor>
 							<font>Font-Condensed-S50-B</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<scroll>false</scroll>
+							<scroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</scroll>
 						</control>	
-
 						<control type="label" description="episode/season info" id="3002"><visible>false</visible></control>
 						<control type="label" description="Title" id="3000"><visible>false</visible></control>
 						<!-- Rating -->
