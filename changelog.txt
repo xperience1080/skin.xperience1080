@@ -1,4 +1,7 @@
-﻿[B]4.1.011[/B]
+﻿[B]4.1.012[/B]
+• Next Up Notifications: Change of textures and (small) layout correction
+
+[B]4.1.011[/B]
 • Cinema Experience: added select dialog for playback option.
 
 [B]4.1.010[/B]
