@@ -497,7 +497,7 @@
                             <description>Play</description>
                             <label>$LOCALIZE[41315]</label>
                             <onclick>SendClick(2003,8)</onclick>
-                            <visible>!System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
+                            <visible>!Container.Content(movies) | [Container.Content(movies) + !System.HasAddon(script.cinema.experience)] | [Container.Content(movies) + SubString(Container.FolderPath,plugin)]</visible>
                         </item>
                         <item id="2">
                             <description>Playback Options</description>
