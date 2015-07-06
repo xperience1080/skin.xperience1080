@@ -183,8 +183,8 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>IntegerGreaterThan(Container.NumItems,0) + !IntegerGreaterThan(Container.NumItems,1)</visible>
-            </control>
+                <visible>IntegerGreaterThan(Container.NumItems,0) + !IntegerGreaterThan(Container.NumItems,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
+            </control>          
             <control type="label">
                 <width min="50" max="400">auto</width>
                 <height>120</height>
@@ -193,7 +193,7 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>!IntegerGreaterThan(Container.NumItems,0) | IntegerGreaterThan(Container.NumItems,1)</visible>
+                <visible>!IntegerGreaterThan(Container.NumItems,0) | IntegerGreaterThan(Container.NumItems,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
             </control>
             <control type="label">
                 <width min="50" max="400">auto</width>
@@ -203,7 +203,7 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>![Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1)</visible>
+                <visible>![Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
             </control>
             <control type="label">
                 <width min="50" max="400">auto</width>
@@ -213,8 +213,18 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>[Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1) + !IsEmpty(Container.NumItems) + !Window.IsVisible(home)</visible>
-            </control>            
+                <visible>[Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1) + !IsEmpty(Container.NumItems) + !Window.IsVisible(home) + !Window.IsVisible(script-videoextras-main.xml)</visible>
+            </control>
+            <control type="label">
+                <width min="50" max="400">auto</width>
+                <height>120</height>
+                <label>$INFO[Container.NumItems,, $LOCALIZE[41817]]</label>
+                <font>Font-Condensed-S28</font>
+                <textcolor>80FFFFFF</textcolor>
+                <scroll>false</scroll>
+                <align>left</align>
+                <visible>Window.IsVisible(script-videoextras-main.xml)</visible>
+            </control>                          
         </control>
     </include>
     
@@ -313,6 +323,38 @@
                         <scroll>false</scroll>
                         <align>left</align>
                         <visible>Container.Content(episodes)</visible>
+                    </control>
+                </control>
+            </control>
+            <include>ViewHeaderItemPageInfo</include>
+        </control>
+    </include>
+
+    <include name="VideoExtrasHeader">
+        <control type="group">
+            <posx>75</posx>
+            <posy>26</posy>
+            <visible>!Window.IsActive(movieinformation) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml) + !Window.IsActive(addoninformation) + !Window.IsActive(favourites)</visible>
+            <include>BannerListInfoAnimation</include>
+            <control type="group">
+                <control type="image">
+                    <include>ViewHeaderIconVars</include>
+                    <texture>$VAR[VideoHeaderIcon]</texture>
+                </control>
+                <control type="grouplist">
+                    <posx>110</posx>
+                    <posy>0</posy>
+                    <orientation>horizontal</orientation>
+                    <itemgap>0</itemgap>
+                    <control type="label" id="321">
+                        <width min="0" max="500">auto</width>
+                        <height>120</height>
+                        <label>$ADDON[script.videoextras 32001]: $INFO[ListItem.Title]</label>
+                        <font>Font-Condensed-S36-B</font>
+                        <textcolor>C0FFFFFF</textcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <visible>!IsEmpty(ListItem.Title)</visible>
                     </control>
                 </control>
             </control>
