@@ -1,4 +1,8 @@
-﻿[B]4.1.022[/B]
+﻿[B]4.1.023[/B]
+• Video Extras: animation tweak
+• Extendedinfo: animation tweak
+
+[B]4.1.022[/B]
 • Video Extras: Integrates add-on into skin (context and main)
 • Button added for Video Extras to Movie Information
 
