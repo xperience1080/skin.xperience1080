@@ -101,6 +101,21 @@ msgctxt "#31020"
 msgid "Airing Now & Next"
 msgstr ""
 
+#: \1080i\SkinSettings.xml:137
+msgctxt "#31021"
+msgid "Frame"
+msgstr ""
+
+#: \1080i\DialogVideoInfo.xml:544
+msgctxt "#31022"
+msgid "Video Extras"
+msgstr ""
+
+#: \1080i\DialogVideoInfo.xml:545 \1080i\DialogVideoInfo.xml:550
+msgctxt "#31023"
+msgid "Extras"
+msgstr ""
+
 msgctxt "#41100"
 msgid "General"
 msgstr ""
