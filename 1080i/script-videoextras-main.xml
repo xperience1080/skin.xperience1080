@@ -10,21 +10,6 @@
 			<aspectratio>scale</aspectratio>
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
-			<animation type="WindowOpen">
-				<effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-				<effect type="zoom" start="335,125,1440,810" end="0,0,1920,1080" time="400" delay="300" tween="cubic" easing="out" />
-			</animation>
-			<animation type="WindowClose">
-				<effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-				<effect type="zoom" start="0,0,1920,1080" end="335,125,1440,810" time="300" tween="cubic" easing="out" />
-			</animation>
-			<animation type="Visible">
-				<effect type="slide" start="-1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
-			</animation>
-			<animation type="Hidden">
-				<effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
-				<effect type="slide" start="0" end="-2320" time="500" delay="0" tween="sine" easing="inout" />
-			</animation>
 		</control>
 		<control type="image">
 			<aspectratio align="center">scale</aspectratio>
@@ -35,11 +20,21 @@
 		<include>VideoExtrasHeader</include>
 		<include>Common-Info</include>        
 		<control type="group">
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
+			<animation type="Visible">
+				<effect type="slide" start="-1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
+			</animation>
+			<animation type="Hidden">
+				<effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
+				<effect type="slide" start="0" end="-2320" time="500" delay="0" tween="sine" easing="inout" />
+			</animation>
 			<control type="group">
-				<animation effect="fade" time="300">Visible</animation>
-				<animation effect="fade" time="300">Hidden</animation>
+			<animation type="Visible">
+				<effect type="slide" start="-1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
+			</animation>
+			<animation type="Hidden">
+				<effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
+				<effect type="slide" start="0" end="-2320" time="500" delay="0" tween="sine" easing="inout" />
+			</animation>
 				<control type="image">
 					<posx>248</posx>
 					<posy>187</posy>
@@ -59,8 +54,13 @@
 		</control>
 		<control type="group">
 			<!-- include: VisibleFadeEffect -->
-			<animation effect="fade" time="300">Visible</animation>
-			<animation effect="fade" time="300">Hidden</animation>
+			<animation type="Visible">
+				<effect type="slide" start="-1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
+			</animation>
+			<animation type="Hidden">
+				<effect type="zoom" start="100" end="75" center="640,540" time="250" tween="sine" easing="inout" />
+				<effect type="slide" start="0" end="-2320" time="500" delay="0" tween="sine" easing="inout" />
+			</animation>
 			<control type="list" id="51">
 				<posx>250</posx>
 				<posy>190</posy>
