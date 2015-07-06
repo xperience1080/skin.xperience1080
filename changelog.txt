@@ -1,4 +1,8 @@
-﻿[B]4.1.013[/B]
+﻿[B]4.1.022[/B]
+• Video Extras: Integrates add-on into skin (context and main)
+• Button added for Video Extras to Movie Information
+
+[B]4.1.013[/B]
 • Episode/Show Play: re-adds Play buttons to episodes and show (displays all seasons)
 
 [B]4.1.012[/B]
