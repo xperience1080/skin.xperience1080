@@ -1,4 +1,13 @@
-﻿[B]4.1.023[/B]
+﻿[B]4.1.050[/B]
+• Studio Flags: Adds additional 370+ studio logos
+• Studio Flags: 1,600+ higher resolution flags
+• Language: English strings updated
+
+[B]4.1.040[/B]
+• Language: All strings now # compliant
+• Language: English strings updated
+
+[B]4.1.023[/B]
 • Video Extras: animation tweak
 • Extendedinfo: animation tweak
 
