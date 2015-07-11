@@ -159,7 +159,7 @@
                 <posy>0</posy>
                 <width>180</width>
                 <height>100</height>
-                <label>$LOCALIZE[41600]</label>
+                <label>$LOCALIZE[31600]</label>
                 <font>Font-Condensed-S34-B</font>
                 <textcolor>eewhite</textcolor>
                 <shadowcolor>22000000</shadowcolor>
@@ -187,7 +187,7 @@
                 <posy>950</posy>
                 <width>180</width>
                 <height>100</height>
-                <label>$LOCALIZE[41507]</label>
+                <label>$LOCALIZE[31507]</label>
                 <font>Font-Condensed-S34-B</font>
                 <textcolor>eewhite</textcolor>
                 <shadowcolor>22000000</shadowcolor>
@@ -205,7 +205,7 @@
     </variable>
     
     <variable name="NowPlayingSubTitle">
-        <value condition="Player.HasVideo + !Pvr.IsPlayingTv">$INFO[Player.FinishTime,$LOCALIZE[41371] ,]</value>
+        <value condition="Player.HasVideo + !Pvr.IsPlayingTv">$INFO[Player.FinishTime,$LOCALIZE[31371] ,]</value>
         <value condition="Player.HasVideo + Pvr.IsPlayingTv">$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ,]$INFO[VideoPlayer.NextStartTime, (,)]</value>
         <value condition="Player.HasAudio + !Pvr.IsPlayingRadio">$INFO[MusicPlayer.Artist]</value>
         <value condition="Player.HasAudio + Pvr.IsPlayingRadio">$INFO[MusicPlayer.ChannelName]</value>

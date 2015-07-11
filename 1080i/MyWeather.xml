@@ -17,9 +17,9 @@
         <control type="button" id="101">
             <description>open options</description>
             <onup condition="!Skin.HasSetting(KioskMode)">9111</onup>
-			<onup condition="Skin.HasSetting(KioskMode)">-</onup>
+			<onup condition="Skin.HasSetting(KioskMode)">noop</onup>
             <ondown condition="!Skin.HasSetting(KioskMode)">9111</ondown>
-			<ondown condition="Skin.HasSetting(KioskMode)">-</ondown>
+			<ondown condition="Skin.HasSetting(KioskMode)">noop</ondown>
             <visible>![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]</visible>
         </control>        
         <control type="group" id="9000">
@@ -87,7 +87,7 @@
                     <font>Font-Condensed-S34</font>
                     <align>left</align>
                     <textcolor>FF484848</textcolor>
-                    <label>$LOCALIZE[41689]</label>
+                    <label>$LOCALIZE[31689]</label>
                     <visible>!Control.HasFocus(3)</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(3)">Conditional</animation>
                 </control>
@@ -100,7 +100,7 @@
                     <font>Font-Condensed-S34</font>
                     <align>left</align>
                     <textcolor>DDFFFFFF</textcolor>
-                    <label>$LOCALIZE[41689]</label>
+                    <label>$LOCALIZE[31689]</label>
                     <visible>Control.HasFocus(3)</visible>
                 </control>
                 <control type="button" id="2">
@@ -141,7 +141,7 @@
                     <description>Hide fanart</description>
                     <posy>171</posy>
                     <include>optionsbuttonsdimensions</include>
-                    <label>$LOCALIZE[41690]</label>
+                    <label>$LOCALIZE[31690]</label>
                     <texturefocus border="2">dialogs/options/buttons/default-fo.png</texturefocus>
                     <onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
                     <onclick condition="Skin.HasSetting(ShowWeatherFanart)">Skin.SetBool(ShowDailyWeatherFanart)</onclick>
@@ -165,7 +165,7 @@
                     <description>Hide daily fanart</description>
                     <posy>228</posy>
                     <include>optionsbuttonsdimensions</include>
-                    <label>$LOCALIZE[41692]</label>
+                    <label>$LOCALIZE[31692]</label>
                     <texturefocus border="2">dialogs/options/buttons/default-fo.png</texturefocus>
                     <onclick>Skin.ToggleSetting(ShowDailyWeatherFanart)</onclick>
                     <selected>!Skin.HasSetting(ShowDailyWeatherFanart)</selected>
@@ -188,7 +188,7 @@
                     <description>Set fanart path</description>
                     <posy>285</posy>
                     <include>optionsbuttonsdimensions</include>
-                    <label>$LOCALIZE[41691]</label>
+                    <label>$LOCALIZE[31691]</label>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/bullet-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/bullet-nf.png</texturenofocus>
                     <onclick>Skin.SetPath(WeatherFanartDir)</onclick>
@@ -220,7 +220,7 @@
                     <posy>433</posy>
                     <width>300</width>
                     <height>100</height>
-                    <label>$LOCALIZE[41600]</label>
+                    <label>$LOCALIZE[31600]</label>
                     <font>Font-Condensed-S34-B</font>
                     <textcolor>eewhite</textcolor>
                     <shadowcolor>22000000</shadowcolor>

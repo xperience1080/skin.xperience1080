@@ -384,7 +384,7 @@
                                     <width>1240</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label>[B]$LOCALIZE[41324][/B]</label>
+                                    <label>[B]$LOCALIZE[31324][/B]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -408,7 +408,7 @@
                                     <width>1240</width>
                                     <font>Font-Condensed-S40</font>
                                     <align>left</align>
-                                    <label>$LOCALIZE[41329]</label>
+                                    <label>$LOCALIZE[31329]</label>
                                     <textcolor>bbwhite</textcolor>
                                     <scroll>false</scroll>
                                     <visible>IsEmpty(Window.Property(actor.Biography))</visible>

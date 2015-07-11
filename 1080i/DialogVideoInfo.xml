@@ -232,7 +232,7 @@
                     <posy>0</posy>
                     <width min="50" max="400">auto</width>
                     <height>60</height>
-                    <label>$LOCALIZE[41319]</label>
+                    <label>$LOCALIZE[31319]</label>
                     <font>Font-Condensed-S45</font>
                     <textcolor>eewhite</textcolor>
                     <align>left</align>
@@ -496,14 +496,14 @@
                     <content>
                         <item id="1">
                             <description>Play</description>
-                            <label>$LOCALIZE[41315]</label>
+                            <label>$LOCALIZE[31315]</label>
                             <onclick>SendClick(2003,8)</onclick>
                             <visible>!Container.Content(movies) | [Container.Content(movies) + !System.HasAddon(script.cinema.experience)] | [Container.Content(movies) + SubString(Container.FolderPath,plugin)]</visible>
                         </item>
                         <item id="2">
                             <description>Playback Options</description>
                             <label>$LOCALIZE[14086]</label>
-                            <onclick>SetProperty(Dialog.1.Label,$LOCALIZE[41315])</onclick>
+                            <onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31315])</onclick>
                             <onclick>SetProperty(Dialog.1.BuiltIn,SendClick(2003,8))</onclick>
                             <onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31001])</onclick>
                             <onclick>SetProperty(Dialog.2.BuiltIn,RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])||Dialog.Close(MovieInformation))</onclick>
@@ -532,13 +532,13 @@
                         </item>
                         <item id="6">
                             <description>Get theme</description>
-                            <label>$LOCALIZE[41333]</label>
+                            <label>$LOCALIZE[31333]</label>
                             <onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
                             <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + System.HasAddon(script.tvtunes)</visible>
                         </item>                        
                         <item id="7">
                             <description>Refresh</description>
-                            <label>$LOCALIZE[41307]</label>
+                            <label>$LOCALIZE[31307]</label>
                             <onclick>SendClick(2003,6)</onclick>
                         </item>
                         <item id="8">
@@ -681,7 +681,7 @@
                             <height>36</height>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Premiered,$LOCALIZE[41314],]</label>
+                            <label>$INFO[ListItem.Premiered,$LOCALIZE[31314],]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
@@ -878,7 +878,7 @@
                             <height>36</height>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[41813]: ,]</label>
+                            <label>$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[31813]: ,]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
@@ -890,7 +890,7 @@
                             <height>36</height>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Property(unWatchedepisodes), • $LOCALIZE[41311],]</label>
+                            <label>$INFO[ListItem.Property(unWatchedepisodes), • $LOCALIZE[31311],]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                             <visible>IntegerGreaterThan(ListItem.Property(unWatchedepisodes),0)</visible>

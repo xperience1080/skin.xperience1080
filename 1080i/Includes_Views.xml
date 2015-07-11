@@ -795,7 +795,7 @@
     
     <variable name="VideoPanelThumbInfo">
         <value condition="Container.Content(movies)">$INFO[ListItem.Rating,★ , [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration, [COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]$VAR[LandscapeHDSD3DLabel]</value>
-        <value>$INFO[ListItem.Property(UnWatchedEpisodes),$LOCALIZE[41311],]</value>
+        <value>$INFO[ListItem.Property(UnWatchedEpisodes),$LOCALIZE[31311],]</value>
     </variable>
     
     <variable name="ThumbnailViewDetailInfo">
@@ -811,13 +811,13 @@
     </variable>
     
     <variable name="InfoListSubInfo">
-        <value condition="Container.Content(Episodes)">$INFO[Container(52).ListItem.Date,$LOCALIZE[41805]: , • ]$INFO[Container(52).ListItem.Duration,, $LOCALIZE[12391]]</value>
+        <value condition="Container.Content(Episodes)">$INFO[Container(52).ListItem.Date,$LOCALIZE[31805]: , • ]$INFO[Container(52).ListItem.Duration,, $LOCALIZE[12391]]</value>
         <value>$INFO[Container(52).ListItem.Genre]</value>
     </variable>
     
     <variable name="CastLabel">
         <value condition="Container.Content(musicvideos)">$LOCALIZE[133]</value>
-        <value>$LOCALIZE[41316]</value>
+        <value>$LOCALIZE[31316]</value>
     </variable>
     
     <variable name="VideoInfoTitleLabel">
@@ -832,8 +832,8 @@
     </variable>
     
     <variable name="TVNumItemsLabel">
-        <value condition="IntegerGreaterThan(Container.NumItems,0) + !IntegerGreaterThan(Container.NumItems,1)">$INFO[Container.NumItems,, $LOCALIZE[41822]]</value>
-        <value condition="IntegerGreaterThan(Container.NumItems,0)">$INFO[Container.NumItems,, $LOCALIZE[41817]]</value>
+        <value condition="IntegerGreaterThan(Container.NumItems,0) + !IntegerGreaterThan(Container.NumItems,1)">$INFO[Container.NumItems,, $LOCALIZE[31822]]</value>
+        <value condition="IntegerGreaterThan(Container.NumItems,0)">$INFO[Container.NumItems,, $LOCALIZE[31817]]</value>
     </variable>
     
 </includes>

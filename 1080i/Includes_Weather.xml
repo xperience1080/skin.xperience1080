@@ -73,7 +73,7 @@
                 <posy>15</posy>
                 <width>462</width>
                 <height>56</height>
-                <label>41694</label>
+                <label>31694</label>
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>Font-Condensed-S42</font>
@@ -719,7 +719,7 @@
                     <posy>0</posy>
                     <width>500</width>
                     <height>120</height>
-                    <label>$LOCALIZE[41693]</label>
+                    <label>$LOCALIZE[31693]</label>
                     <font>Font-Condensed-S36-B</font>
                     <textcolor>C0FFFFFF</textcolor>
                     <scroll>false</scroll>
@@ -791,7 +791,7 @@
                     <posy>-50</posy>
                     <width>300</width>
                     <height>40</height>
-                    <label>$LOCALIZE[41694]</label>
+                    <label>$LOCALIZE[31694]</label>
                     <textcolor>eewhite</textcolor>
                     <focusedcolor>eewhite</focusedcolor>
                     <font>Font-Condensed-S36</font>
@@ -984,7 +984,7 @@
                     <posy>-50</posy>
                     <width>300</width>
                     <height>40</height>
-                    <label>$LOCALIZE[41695]</label>
+                    <label>$LOCALIZE[31695]</label>
                     <textcolor>eewhite</textcolor>
                     <focusedcolor>eewhite</focusedcolor>
                     <font>Font-Condensed-S36</font>
@@ -2422,7 +2422,7 @@
                     <posy>-50</posy>
                     <width>300</width>
                     <height>40</height>
-                    <label>$LOCALIZE[41696]</label>
+                    <label>$LOCALIZE[31696]</label>
                     <textcolor>eewhite</textcolor>
                     <focusedcolor>eewhite</focusedcolor>
                     <font>Font-Condensed-S36</font>

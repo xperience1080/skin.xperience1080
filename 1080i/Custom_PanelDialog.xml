@@ -35,8 +35,8 @@
     <onunload condition="!IsEmpty(Window(3003).Property(CustomDialog))">ClearProperty(CustomDialog,3003)</onunload>
     <controls>
         <include condition="!IsEmpty(Window.Property(CustomDialog))">PanelDialogGuide</include>
-        <include condition="IsEmpty(Window.Property(SingleDialog)) + IsEmpty(Window.Property(CustomDialog)) + !stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[41140])">PanelDialogHome</include>
-        <include condition="IsEmpty(Window.Property(SingleDialog)) + IsEmpty(Window.Property(CustomDialog)) + stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[41140])">PanelDialogHomeWidgets</include>
+        <include condition="IsEmpty(Window.Property(SingleDialog)) + IsEmpty(Window.Property(CustomDialog)) + !stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[31140])">PanelDialogHome</include>
+        <include condition="IsEmpty(Window.Property(SingleDialog)) + IsEmpty(Window.Property(CustomDialog)) + stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[31140])">PanelDialogHomeWidgets</include>
         <include condition="!IsEmpty(Window.Property(SingleDialog)) + IsEmpty(Window.Property(CustomDialog))">PanelDialogHomeSingle</include>
     </controls>
 </window>

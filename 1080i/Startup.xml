@@ -64,7 +64,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <textcolor>99FFFFFF</textcolor>
-                <label>$LOCALIZE[41601]...</label>
+                <label>$LOCALIZE[31601]...</label>
                 <scroll>false</scroll>
             </control>
         </control>

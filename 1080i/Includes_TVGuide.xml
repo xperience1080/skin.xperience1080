@@ -73,33 +73,33 @@
     </variable>
     
     <variable name="TVGuideDateShort0">
-        <value condition="ControlGroup(9001).HasFocus(206)">$INFO[Container(206).ListItem(0).Property(ShortTime)]$INFO[Container(206).ListItem(0).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(205)">$INFO[Container(205).ListItem(0).Property(ShortTime)]$INFO[Container(205).ListItem(0).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(204)">$INFO[Container(204).ListItem(0).Property(ShortTime)]$INFO[Container(204).ListItem(0).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(203)">$INFO[Container(203).ListItem(0).Property(ShortTime)]$INFO[Container(203).ListItem(0).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(202)">$INFO[Container(202).ListItem(0).Property(ShortTime)]$INFO[Container(202).ListItem(0).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(201)">$INFO[Container(201).ListItem(0).Property(ShortTime)]$INFO[Container(201).ListItem(0).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value>$INFO[Container(200).ListItem(0).Property(ShortTime)]$INFO[Container(200).ListItem(0).Property(Network), $LOCALIZE[42162] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(206)">$INFO[Container(206).ListItem(0).Property(ShortTime)]$INFO[Container(206).ListItem(0).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(205)">$INFO[Container(205).ListItem(0).Property(ShortTime)]$INFO[Container(205).ListItem(0).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(204)">$INFO[Container(204).ListItem(0).Property(ShortTime)]$INFO[Container(204).ListItem(0).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(203)">$INFO[Container(203).ListItem(0).Property(ShortTime)]$INFO[Container(203).ListItem(0).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(202)">$INFO[Container(202).ListItem(0).Property(ShortTime)]$INFO[Container(202).ListItem(0).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(201)">$INFO[Container(201).ListItem(0).Property(ShortTime)]$INFO[Container(201).ListItem(0).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value>$INFO[Container(200).ListItem(0).Property(ShortTime)]$INFO[Container(200).ListItem(0).Property(Network), $LOCALIZE[31944] ,]</value>
     </variable>
     
     <variable name="TVGuideDateShort1">
-        <value condition="ControlGroup(9001).HasFocus(206)">$INFO[Container(206).ListItem(1).Property(ShortTime)]$INFO[Container(206).ListItem(1).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(205)">$INFO[Container(205).ListItem(1).Property(ShortTime)]$INFO[Container(205).ListItem(1).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(204)">$INFO[Container(204).ListItem(1).Property(ShortTime)]$INFO[Container(204).ListItem(1).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(203)">$INFO[Container(203).ListItem(1).Property(ShortTime)]$INFO[Container(203).ListItem(1).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(202)">$INFO[Container(202).ListItem(1).Property(ShortTime)]$INFO[Container(202).ListItem(1).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(201)">$INFO[Container(201).ListItem(1).Property(ShortTime)]$INFO[Container(201).ListItem(1).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value>$INFO[Container(200).ListItem(1).Property(ShortTime)]$INFO[Container(200).ListItem(1).Property(Network), $LOCALIZE[42162] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(206)">$INFO[Container(206).ListItem(1).Property(ShortTime)]$INFO[Container(206).ListItem(1).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(205)">$INFO[Container(205).ListItem(1).Property(ShortTime)]$INFO[Container(205).ListItem(1).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(204)">$INFO[Container(204).ListItem(1).Property(ShortTime)]$INFO[Container(204).ListItem(1).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(203)">$INFO[Container(203).ListItem(1).Property(ShortTime)]$INFO[Container(203).ListItem(1).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(202)">$INFO[Container(202).ListItem(1).Property(ShortTime)]$INFO[Container(202).ListItem(1).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(201)">$INFO[Container(201).ListItem(1).Property(ShortTime)]$INFO[Container(201).ListItem(1).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value>$INFO[Container(200).ListItem(1).Property(ShortTime)]$INFO[Container(200).ListItem(1).Property(Network), $LOCALIZE[31944] ,]</value>
     </variable>
     
     <variable name="TVGuideDateShort2">
-        <value condition="ControlGroup(9001).HasFocus(206)">$INFO[Container(206).ListItem(2).Property(ShortTime)]$INFO[Container(206).ListItem(2).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(205)">$INFO[Container(205).ListItem(2).Property(ShortTime)]$INFO[Container(205).ListItem(2).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(204)">$INFO[Container(204).ListItem(2).Property(ShortTime)]$INFO[Container(204).ListItem(2).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(203)">$INFO[Container(203).ListItem(2).Property(ShortTime)]$INFO[Container(203).ListItem(2).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(202)">$INFO[Container(202).ListItem(2).Property(ShortTime)]$INFO[Container(202).ListItem(2).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value condition="ControlGroup(9001).HasFocus(201)">$INFO[Container(201).ListItem(2).Property(ShortTime)]$INFO[Container(201).ListItem(2).Property(Network), $LOCALIZE[42162] ,]</value>
-        <value>$INFO[Container(200).ListItem(2).Property(ShortTime)]$INFO[Container(200).ListItem(2).Property(Network), $LOCALIZE[42162] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(206)">$INFO[Container(206).ListItem(2).Property(ShortTime)]$INFO[Container(206).ListItem(2).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(205)">$INFO[Container(205).ListItem(2).Property(ShortTime)]$INFO[Container(205).ListItem(2).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(204)">$INFO[Container(204).ListItem(2).Property(ShortTime)]$INFO[Container(204).ListItem(2).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(203)">$INFO[Container(203).ListItem(2).Property(ShortTime)]$INFO[Container(203).ListItem(2).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(202)">$INFO[Container(202).ListItem(2).Property(ShortTime)]$INFO[Container(202).ListItem(2).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value condition="ControlGroup(9001).HasFocus(201)">$INFO[Container(201).ListItem(2).Property(ShortTime)]$INFO[Container(201).ListItem(2).Property(Network), $LOCALIZE[31944] ,]</value>
+        <value>$INFO[Container(200).ListItem(2).Property(ShortTime)]$INFO[Container(200).ListItem(2).Property(Network), $LOCALIZE[31944] ,]</value>
     </variable>
     
     <variable name="TVGuideThumbLandscape0">
@@ -402,7 +402,7 @@
                 <posx>77</posx>
                 <posy>401</posy>
                 <width>383</width>
-                <label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), $LOCALIZE[42162] ,]</label>
+                <label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), $LOCALIZE[31944] ,]</label>
                 <font>Font-Condensed-S40</font>
                 <textcolor>eewhite</textcolor>
                 <shadowcolor>22000000</shadowcolor>
@@ -497,7 +497,7 @@
                 <posx>77</posx>
                 <posy>401</posy>
                 <width>383</width>
-                <label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), $LOCALIZE[42162] ,]</label>
+                <label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), $LOCALIZE[31944] ,]</label>
                 <font>Font-Condensed-S40</font>
                 <textcolor>eewhite</textcolor>
                 <shadowcolor>22000000</shadowcolor>
