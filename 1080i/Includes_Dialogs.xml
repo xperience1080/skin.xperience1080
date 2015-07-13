@@ -2776,11 +2776,11 @@
                 <posy>144</posy>
                 <height>60</height>
                 <label>$INFO[Control.GetLabel(1),,: ]$INFO[Container(6).ListItem.Label,[COLOR=99FFFFFF],[/COLOR]]</label>
-                <font>Font-Condensed-S45</font>
+                <font>Font-Condensed-S33</font>
                 <textcolor>eewhite</textcolor>
                 <align>left</align>
-                <scroll>false</scroll>
-                <textoffsetx>30</textoffsetx>
+                <scroll>true</scroll>
+                <textoffsetx>16</textoffsetx>
                 <include condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
                 <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
