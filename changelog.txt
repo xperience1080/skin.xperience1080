@@ -1,4 +1,12 @@
-﻿[B]4.1.050[/B]
+﻿[B]4.1.054[/B]
+• Audio Channels: Audio channel textures created
+• Audio Channels: Added to movieinformation
+
+[B]4.1.052[/B]
+• Artwork Downloader: Smaller text so more info is visible
+• Language: English strings updated
+
+[B]4.1.050[/B]
 • Studio Flags: Adds additional 370+ studio logos
 • Studio Flags: 1,600+ higher resolution flags
 • Language: English strings updated
