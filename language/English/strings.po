@@ -171,7 +171,7 @@ msgid "Animate Artist Slideshow"
 msgstr ""
 
 msgctxt "#31106"
-msgid "Show Fanart above Visualisation"
+msgid "Display Fanart above Visualisation"
 msgstr ""
 
 msgctxt "#31108"
@@ -375,11 +375,11 @@ msgid "Select Motion Picture Rating country"
 msgstr ""
 
 msgctxt "#31200"
-msgid "Show Power Button (does not affect home screen)"
+msgid "Display Power Button (does not affect home screen)"
 msgstr ""
 
 msgctxt "#31201"
-msgid "Show Options Button"
+msgid "Display Options Button"
 msgstr ""
 
 msgctxt "#31202"
