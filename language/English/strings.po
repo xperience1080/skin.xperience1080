@@ -146,6 +146,16 @@ msgctxt "#31029"
 msgid "United States"
 msgstr ""
 
+#: \1080i\SkinSettings.xml:632
+msgctxt "#31030"
+msgid "Hide Clock & Weather"
+msgstr ""
+
+#: \1080i\SkinSettings.xml:639
+msgctxt "#31031"
+msgid "Hide Chapter Information"
+msgstr ""
+
 msgctxt "#31100"
 msgid "General"
 msgstr ""
