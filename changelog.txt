@@ -1,4 +1,8 @@
-﻿[B]4.1.054[/B]
+﻿[B]4.1.055[/B]
+• OSD: Adds option to hide Clock & Weather in OSD
+• OSD: Adds option to hide Chapter Information in OSD
+
+[B]4.1.054[/B]
 • Audio Channels: Audio channel textures created
 • Audio Channels: Added to movieinformation
 
