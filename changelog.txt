@@ -1,4 +1,8 @@
-﻿[B]4.1.055[/B]
+﻿[B]4.1.056[/B]
+• TV Rating: Adds rating to TV Show information when network logo is found
+• Play: Changes 'Play' to 'Open' when looking at TV Show overview
+
+[B]4.1.055[/B]
 • OSD: Adds option to hide Clock & Weather in OSD
 • OSD: Adds option to hide Chapter Information in OSD
 
