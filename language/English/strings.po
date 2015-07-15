@@ -156,6 +156,11 @@ msgctxt "#31031"
 msgid "Hide Chapter Information"
 msgstr ""
 
+#: \1080i\Includes_SettingsCustomHomeItems.xml:622
+msgctxt "#31032"
+msgid "Pictures Tile"
+msgstr ""
+
 msgctxt "#31100"
 msgid "General"
 msgstr ""

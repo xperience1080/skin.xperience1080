@@ -498,9 +498,15 @@
                             <description>Play</description>
                             <label>$LOCALIZE[31315]</label>
                             <onclick>SendClick(2003,8)</onclick>
-                            <visible>!Container.Content(movies) | [Container.Content(movies) + !System.HasAddon(script.cinema.experience)] | [Container.Content(movies) + SubString(Container.FolderPath,plugin)]</visible>
+                            <visible>Container.Content(files) | Container.Content(songs) | Container.Content(episodes) | [Container.Content(movies) + !System.HasAddon(script.cinema.experience)]</visible>
                         </item>
                         <item id="2">
+                            <description>Play</description>
+                            <label>$LOCALIZE[502]</label>
+                            <onclick>SendClick(2003,8)</onclick>
+                            <visible>Container.Content(seasons) | Container.Content(tvshows)</visible>
+                        </item>
+                        <item id="3">
                             <description>Playback Options</description>
                             <label>$LOCALIZE[14086]</label>
                             <onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31315])</onclick>
@@ -510,38 +516,38 @@
                             <onclick>RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[14086])</onclick>                       
                             <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
                         </item>
-                        <item id="3">
+                        <item id="4">
                             <label>$LOCALIZE[20410]</label>
                             <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">PreviousMenu</onclick>
                             <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">PlayMedia($INFO[ListItem.Trailer])</onclick>
                             <onclick condition="Skin.HasSetting(PlayTrailer.Minimized)">PlayMedia($INFO[ListItem.Trailer],false,1)</onclick>
                             <visible>!IsEmpty(ListItem.Trailer)</visible>
                         </item>
-                        <item id="4">
+                        <item id="5">
                             <description>Get Artwork</description>
                             <label>$LOCALIZE[13511]</label>
                             <onclick>ActivateWindow(3004)</onclick>
                             <visible>[Container.Content(movies) | Container.Content(tvshows)] + !Container.Content(musicvideos)</visible>
                         </item>
-                        <item id="5">
+                        <item id="6">
                             <description>Get Artwork</description>
                             <label>$LOCALIZE[13511]</label>
                             <onclick>SetProperty(ChooseArt,1,3004)</onclick>
                             <onclick>SendClick(2003,10)</onclick>
                             <visible>Container.Content(musicvideos)</visible>
                         </item>
-                        <item id="6">
+                        <item id="7">
                             <description>Get theme</description>
                             <label>$LOCALIZE[31333]</label>
                             <onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
                             <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + System.HasAddon(script.tvtunes)</visible>
                         </item>                        
-                        <item id="7">
+                        <item id="8">
                             <description>Refresh</description>
                             <label>$LOCALIZE[31307]</label>
                             <onclick>SendClick(2003,6)</onclick>
                         </item>
-                        <item id="8">
+                        <item id="9">
                             <description>Video Extras</description>
                             <label>$LOCALIZE[31022]</label>
                             <onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
@@ -681,7 +687,7 @@
                             <height>36</height>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Premiered,$LOCALIZE[31314],]</label>
+                            <label>$INFO[ListItem.Premiered,$LOCALIZE[31314],]$INFO[ListItem.RatingAndVotes, • ★ ,]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
