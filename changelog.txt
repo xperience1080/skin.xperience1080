@@ -1,4 +1,10 @@
-﻿[B]4.1.056[/B]
+﻿[B]4.1.100-beta[/B]
+• Tidy: General tidy up
+• Language: EN updated
+• Home Pictures: Adds a new Pictures section to Home, makes use of extendedinfo
+(partly based on im85288)
+
+[B]4.1.056[/B]
 • TV Rating: Adds rating to TV Show information when network logo is found
 • Play: Changes 'Play' to 'Open' when looking at TV Show overview
 
