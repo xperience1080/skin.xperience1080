@@ -161,6 +161,46 @@ msgctxt "#31032"
 msgid "Pictures Tile"
 msgstr ""
 
+#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1193
+msgctxt "#31033"
+msgid "XKCD.com"
+msgstr ""
+
+#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1195
+msgctxt "#31034"
+msgid "Cyanide & Happiness"
+msgstr ""
+
+#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1197
+msgctxt "#31035"
+msgid "Daily Babes"
+msgstr ""
+
+#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1199
+msgctxt "#31036"
+msgid "MyPicsDB"
+msgstr ""
+
+#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1201
+msgctxt "#31037"
+msgid "Photos"
+msgstr ""
+
+#: \1080i\SkinSettings.xml:382
+msgctxt "#31038"
+msgid "Path to Pictures"
+msgstr ""
+
+#: \1080i\Custom_SettingsDialog.xml:130
+msgctxt "#31039"
+msgid "Pictures Tiles (Purple)"
+msgstr ""
+
+#: \1080i\SkinSettings.xml:391
+msgctxt "#31040"
+msgid "Reset Pictures Path"
+msgstr ""
+
 msgctxt "#31100"
 msgid "General"
 msgstr ""
