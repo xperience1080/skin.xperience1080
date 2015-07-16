@@ -41,6 +41,13 @@
         <onload condition="IsEmpty(Skin.String(HomeWidget.5.Method))">Skin.SetString(HomeWidget.5.Method,Playlist)</onload>
         <onload condition="IsEmpty(Skin.String(HomeWidget.5.UnWatched))">Skin.SetString(HomeWidget.5.UnWatched,False)</onload>
         <onload condition="IsEmpty(Skin.String(HomeWidget.5.Resume))">Skin.SetString(HomeWidget.5.Resume,False)</onload>
+        <onload condition="IsEmpty(Skin.String(HomeWidget.6.Type))">Skin.SetString(HomeWidget.6.Type,service.skin.widgets)</onload>
+        <onload condition="IsEmpty(Skin.String(HomeWidget.6.TypeName))">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[1])</onload>
+        <onload condition="IsEmpty(Skin.String(HomeWidget.6.SubType))">Skin.SetString(HomeWidget.6.SubType,Photo)</onload>
+        <onload condition="IsEmpty(Skin.String(HomeWidget.6.SubTypeName))">Skin.SetString(HomeWidget.6.SubTypeName,Photo)</onload>
+        <onload condition="IsEmpty(Skin.String(HomeWidget.6.Method))">Skin.SetString(HomeWidget.6.Method,Playlist)</onload>
+        <onload condition="IsEmpty(Skin.String(HomeWidget.6.UnWatched))">Skin.SetString(HomeWidget.6.UnWatched,False)</onload>
+        <onload condition="IsEmpty(Skin.String(HomeWidget.6.Resume))">Skin.SetString(HomeWidget.6.Resume,False)</onload>
     </include>
 
 
@@ -94,6 +101,10 @@
         <include condition="stringcompare(Skin.String(HomeWidget.5.Type),service.skin.widgets.recent)">HomeWidget.5.Widgets.Recent</include>
         <include condition="stringcompare(Skin.String(HomeWidget.5.Type),service.skin.widgets.recommended)">HomeWidget.5.Widgets.Recommended</include>
         <include condition="stringcompare(Skin.String(HomeWidget.5.Type),script.randomandlastitems) + stringcompare(Skin.String(HomeWidget.5.SubType),Music)">HomeWidget.5.Playlist.Music</include>
+    </include>
+
+    <include name="HomeWidget.7">
+        <include>HomeWidget.7.Photos</include>
     </include>
 
 
@@ -2899,4 +2910,12 @@
             <visible>!IsEmpty(Window.Property(HomeWidget5.10.Title))</visible>
         </item>
     </include>
+    <variable name="HomeWidget.6.Pictures"> 
+        <value condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.xkcd)">plugin://script.extendedinfo?info=xkcd</value>
+        <value condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.cyanidehappiness)">plugin://script.extendedinfo?info=cyanide</value>
+        <value condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.dailybabes)">plugin://script.extendedinfo?info=dailybabes</value>
+        <value condition="stringcompare(Skin.String(HomeWidget.6.Type),mypicsdb.pics)">plugin://plugin.image.mypicsdb?action='showpics'&amp;method='lastpicsshooted'&amp;name='The%2050%20latest%20pics'&amp;page='1'&amp;viewmode='view'</value>
+        <value condition="stringcompare(Skin.String(HomeWidget.6.Type),pictures.addons)">addons://sources/image/</value>
+        <value>$INFO[Skin.String(PicturesPath)]</value>
+    </variable>
 </includes>

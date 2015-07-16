@@ -262,7 +262,7 @@
             </control>
         </control>
     </include>
-    
+
     <include name="PanelDialogHomeWidget2">
         <control type="grouplist" id="4">
             <posx>0</posx>
@@ -518,7 +518,7 @@
             </control>
         </control>
     </include>
-    
+
     <include name="PanelDialogHomeWidget3">
         <control type="grouplist" id="4">
             <posx>0</posx>
@@ -728,7 +728,7 @@
             </control>
         </control>
     </include>
-    
+
     <include name="PanelDialogHomeWidget4">
         <control type="grouplist" id="4">
             <posx>0</posx>
@@ -922,7 +922,7 @@
             </control>
         </control>
     </include>
-    
+
     <include name="PanelDialogHomeWidget5">
         <control type="grouplist" id="4">
             <posx>0</posx>
@@ -1116,7 +1116,192 @@
             </control>
         </control>
     </include>
-    
+
+    <include name="PanelDialogHomeWidget6">
+        <control type="grouplist" id="4">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>532</width>
+            <height>360</height>
+            <itemgap>0</itemgap>
+            <onup>4</onup>
+            <ondown>4</ondown>
+            <onleft>5</onleft>
+            <onright condition="Control.IsVisible(3)">3</onright>
+            <onright condition="!Control.IsVisible(3)">5</onright>
+            <scrolltime>0</scrolltime>
+            <orientation>vertical</orientation>
+            <control type="group" id="2141">
+                <description>Fake spin control</description>
+                <width>1210</width>
+                <height>60</height>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>532</width>
+                    <height>60</height>
+                    <texture>dialogs/default/separator-btn.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                    <visible>!ControlGroup(2141).HasFocus</visible>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>532</width>
+                    <height>60</height>
+                    <texture border="2">dialogs/default/highlight.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                    <visible>ControlGroup(2141).HasFocus</visible>
+                </control>
+                <control type="button" id="21411">
+                    <posx>450</posx>
+                    <posy>0</posy>
+                    <width>32</width>
+                    <height>60</height>
+                    <onleft>5</onleft>
+                    <onright>21412</onright>
+                    <onup>2405</onup>
+                    <ondown>2143</ondown>
+                    <texturefocus>buttons/spinctrl/arrow-light-down-fo.png</texturefocus>
+                    <texturenofocus>buttons/spinctrl/arrow-light-down-nf.png</texturenofocus>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)">Skin.SetString(HomeWidget.6.Type,extendedinfo.xkcd)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31033])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.xkcd)">Skin.SetString(HomeWidget.6.Type,extendedinfo.cyanidehappiness)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.xkcd)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31034])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.cyanidehappiness)">Skin.SetString(HomeWidget.6.Type,extendedinfo.dailybabes)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.cyanidehappiness)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31035])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.dailybabes)">Skin.SetString(HomeWidget.6.Type,mypicsdb.pics)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.dailybabes)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31036])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),mypicsdb.pics)">Skin.SetString(HomeWidget.6.Type,service.skin.widgets)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),mypicsdb.pics)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[1])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)">Skin.SetString(HomeWidget.6.Type,extendedinfo.xkcd)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31033])</onclick>
+                </control>
+                <control type="button" id="21412">
+                    <posx>482</posx>
+                    <posy>0</posy>
+                    <width>32</width>
+                    <height>60</height>
+                    <onleft>21411</onleft>
+                    <onright condition="Control.IsVisible(3)">3</onright>
+                    <onright condition="!Control.IsVisible(3)">5</onright>
+                    <onup>2405</onup>
+                    <ondown>2143</ondown>
+                    <texturefocus>buttons/spinctrl/arrow-light-up-fo.png</texturefocus>
+                    <texturenofocus>buttons/spinctrl/arrow-light-up-nf.png</texturenofocus>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),mypicsdb.pics)">Skin.SetString(HomeWidget.6.Type,extendedinfo.dailybabes)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),mypicsdb.pics)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31033])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.dailybabes)">Skin.SetString(HomeWidget.6.Type,extendedinfo.cyanidehappiness)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.dailybabes)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31034])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.cyanidehappiness)">Skin.SetString(HomeWidget.6.Type,extendedinfo.xkcd)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.cyanidehappiness)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31035])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.xkcd)">Skin.SetString(HomeWidget.6.Type,service.skin.widgets)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.xkcd)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31036])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)">Skin.SetString(HomeWidget.6.Type,mypicsdb.pics)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[1])</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),mypicsdb.pics)">Skin.SetString(HomeWidget.6.Type,extendedinfo.dailybabes)</onclick>
+                    <onclick condition="stringcompare(Skin.String(HomeWidget.6.Type),mypicsdb.pics)">Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[31033])</onclick>
+                </control>
+                <control type="button">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>455</width>
+                    <height>60</height>
+                    <align>left</align>
+                    <textoffsetx>20</textoffsetx>
+                    <font>Font-Condensed-S30</font>
+                    <textcolor>FF585858</textcolor>
+                    <label>$LOCALIZE[31162]</label>
+                    <label2>$INFO[Skin.String(HomeWidget.6.TypeName)]</label2>
+                    <visible>!ControlGroup(2141).HasFocus</visible>
+                </control>
+                <control type="button">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>455</width>
+                    <height>60</height>
+                    <align>left</align>
+                    <textoffsetx>20</textoffsetx>
+                    <font>Font-Condensed-S30</font>
+                    <textcolor>eewhite</textcolor>
+                    <label>$LOCALIZE[31162]</label>
+                    <label2>$INFO[Skin.String(HomeWidget.6.TypeName)]</label2>
+                    <visible>ControlGroup(2141).HasFocus</visible>
+                </control>
+            </control>
+            <control type="group" id="2142">
+                <description>Fake spin control</description>
+                <visible>false</visible>
+                <width>1210</width>
+                <height>60</height>
+                <animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>532</width>
+                    <height>60</height>
+                    <texture>dialogs/default/separator-btn.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="button" id="21421">
+                    <posx>450</posx>
+                    <posy>0</posy>
+                    <width>32</width>
+                    <height>60</height>
+                    <texturefocus>buttons/spinctrl/arrow-light-down-fo.png</texturefocus>
+                    <texturenofocus>buttons/spinctrl/arrow-light-down-nf.png</texturenofocus>
+                    <onclick>noop</onclick>
+                    <enable>false</enable>
+                </control>
+                <control type="button" id="21422">
+                    <posx>482</posx>
+                    <posy>0</posy>
+                    <width>32</width>
+                    <height>60</height>
+                    <texturefocus>buttons/spinctrl/arrow-light-up-fo.png</texturefocus>
+                    <texturenofocus>buttons/spinctrl/arrow-light-up-nf.png</texturenofocus>
+                    <onclick>noop</onclick>
+                    <enable>false</enable>
+                </control>
+                <control type="button">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>455</width>
+                    <height>60</height>
+                    <align>left</align>
+                    <textoffsetx>20</textoffsetx>
+                    <font>Font-Condensed-S30</font>
+                    <textcolor>FF585858</textcolor>
+                    <disabledcolor>77585858</disabledcolor>
+                    <label>$LOCALIZE[31141]</label>
+                    <label2>$INFO[Skin.String(HomeWidget.6.SubTypeName)]</label2>
+                    <enable>false</enable>
+                </control>
+            </control>
+            <control type="button" id="2143">
+                <include>SettingsCustomDialogButtonVars</include>   
+                <label>$LOCALIZE[573]</label>
+                <label2>$INFO[Skin.String(PicturesPath)]</label2>
+                <onclick>Skin.SetPath(PicturesPath)</onclick>
+                <enable>stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)</enable>
+                <animation effect="fade" start="100" end="50" time="0" condition="!stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)">Conditional</animation>
+            </control>
+            <control type="button" id="2403">
+                <include>SettingsCustomDialogButtonVars</include>
+                <onclick>Skin.Reset(PicturesPath)</onclick>
+                <label2>$LOCALIZE[31040]</label2>
+                <enable>stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)</enable>
+                <animation effect="fade" start="100" end="50" time="0" condition="!stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)">Conditional</animation>
+            </control>
+            <control type="radiobutton" id="2404">
+                <visible>false</visible>
+            </control>
+            <control type="radiobutton" id="2405">
+                <visible>false</visible>
+            </control>
+        </control>
+    </include>    
+
     <include name="PanelDialogHomeWidgets">
         <control type="group">
             <visible>!Window.IsVisible(yesnodialog)</visible>
@@ -1130,7 +1315,7 @@
             <control type="group">
                 <include>KeyboardAnimations</include>
                 <visible>!Window.IsVisible(virtualkeyboard)</visible>
-                
+
                 <control type="label">
                     <description>Heading</description>
                     <posx>473</posx>
@@ -1141,7 +1326,7 @@
                     <textcolor>ddwhite</textcolor>
                     <align>center</align>
                 </control>
-                
+
                 <control type="image">
                     <posx>920</posx>
                     <posy>306</posy>
@@ -1157,20 +1342,20 @@
                     <texture border="39">dialogs/default/bg.png</texture>
                 </control>
                 <control type="image">
-                	<posx>558</posx>
-                	<posy>360</posy>
-                	<width>532</width>
-                	<height>361</height>
-                	<texture border="5">dialogs/default/inner.png</texture>
+                    <posx>558</posx>
+                    <posy>360</posy>
+                    <width>532</width>
+                    <height>361</height>
+                    <texture border="5">dialogs/default/inner.png</texture>
                 </control>
                 <control type="image">
-                	<posx>1104</posx>
-                	<posy>360</posy>
-                	<width>258</width>
-                	<height>361</height>
-                	<texture border="5">dialogs/default/inner.png</texture>
+                    <posx>1104</posx>
+                    <posy>360</posy>
+                    <width>258</width>
+                    <height>361</height>
+                    <texture border="5">dialogs/default/inner.png</texture>
                 </control>
-                
+
                 <control type="list" id="3">
                     <posx>1104</posx>
                     <posy>360</posy>
@@ -1247,16 +1432,20 @@
                             <onclick>noop</onclick>
                         </item>
                         <item id="4">
-                            <label>$LOCALIZE[31162] 4 ($LOCALIZE[31446])</label>
+                            <label>$LOCALIZE[31162] 4 ($LOCALIZE[20364])</label>
                             <onclick>noop</onclick>
                         </item>
                         <item id="5">
                             <label>$LOCALIZE[31162] 5 ($LOCALIZE[2])</label>
                             <onclick>noop</onclick>
                         </item>
+                        <item id="6">
+                            <label>$LOCALIZE[31162] 6 ($LOCALIZE[1])</label>
+                            <onclick>noop</onclick>
+                        </item>                        
                     </content>
                 </control>
-                
+
                 <control type="group">
                     <posx>558</posx>
                     <posy>360</posy>
@@ -1287,7 +1476,13 @@
                     <visible>Container(3).HasFocus(5)</visible>
                     <include>PanelDialogHomeWidget5</include>
                 </control>
-                               
+                <control type="group">
+                    <posx>558</posx>
+                    <posy>360</posy>
+                    <visible>Container(3).HasFocus(6)</visible>
+                    <include>PanelDialogHomeWidget6</include>
+                </control>                
+
                 <control type="group">
                     <posx>546</posx>
                     <posy>716</posy>
@@ -1320,6 +1515,7 @@
                         <onclick condition="Container(3).HasFocus(3)">SetFocus(13)</onclick>
                         <onclick condition="Container(3).HasFocus(4)">SetFocus(14)</onclick>
                         <onclick condition="Container(3).HasFocus(5)">SetFocus(15)</onclick>
+                        <onclick condition="Container(3).HasFocus(6)">SetFocus(16)</onclick>
                         <visible>!Control.HasFocus(2142)</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>
@@ -1378,9 +1574,20 @@
                         <onfocus>SetFocus(6)</onfocus>
                         <visible allowhiddenfocus="true">false</visible>
                     </control>
+                    <control type="button" id="16">
+                        <onfocus>Skin.SetString(HomeWidget.6.Type,service.skin.widgets)</onfocus>
+                        <onfocus>Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[1])</onfocus>
+                        <onfocus>Skin.SetString(HomeWidget.6.SubType,Photo)</onfocus>
+                        <onfocus>Skin.SetString(HomeWidget.6.SubTypeName,Photo)</onfocus>
+                        <onfocus>Skin.SetString(HomeWidget.6.Method,Playlist)</onfocus>
+                        <onfocus>Skin.SetString(HomeWidget.6.UnWatched,False)</onfocus>
+                        <onfocus>Skin.SetString(HomeWidget.6.Resume,False)</onfocus>
+                        <onfocus>SetFocus(6)</onfocus>
+                        <visible allowhiddenfocus="true">false</visible>
+                    </control>                    
                 </control>              
             </control>
         </control>
     </include>
-    
+
 </includes>

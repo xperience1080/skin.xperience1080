@@ -366,7 +366,7 @@
                         <onclick>ActivateWindow(3003)</onclick>
                         <label>$LOCALIZE[31140]</label>
                     </control>
-                    <control type="button" id="20021">
+                    <control type="button" id="2003">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
@@ -375,28 +375,28 @@
                         <onclick>ActivateWindow(3001)</onclick>
                         <label>$LOCALIZE[31144]</label>
                     </control>
-                    <control type="radiobutton" id="20022">
+                    <control type="radiobutton" id="2005">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(HomeArrows)</selected>
                         <onclick>Skin.ToggleSetting(HomeArrows)</onclick>
                         <label>$LOCALIZE[31994]</label>
                     </control>					
-                    <control type="radiobutton" id="2003">
+                    <control type="radiobutton" id="2006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(HideHomeProfileInfo)</selected>
                         <onclick>Skin.ToggleSetting(HideHomeProfileInfo)</onclick>
                         <label>$LOCALIZE[31134]</label>
                     </control>
-                    <control type="radiobutton" id="2004">
+                    <control type="radiobutton" id="2007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(HideHomeSubmenuArrow)</selected>
                         <onclick>Skin.ToggleSetting(HideHomeSubmenuArrow)</onclick>
                         <label>$LOCALIZE[31135]</label>
                     </control>								
-                    <control type="group" id="2007">
+                    <control type="group" id="2008">
                         <description>Fake spin control</description>
                         <width>1210</width>
                         <height>77</height>
@@ -406,7 +406,7 @@
                             <width>1210</width>
                             <height>77</height>
                             <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                            <visible>!ControlGroup(2007).HasFocus</visible>
+                            <visible>!ControlGroup(2008).HasFocus</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -414,16 +414,16 @@
                             <width>1210</width>
                             <height>77</height>
                             <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
-                            <visible>ControlGroup(2007).HasFocus</visible>
+                            <visible>ControlGroup(2008).HasFocus</visible>
                         </control>
-                        <control type="button" id="20071">
+                        <control type="button" id="20081">
                             <posx>1111</posx>
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
                             <onleft>20072</onleft>
                             <onright>20072</onright>
-                            <onup>2004</onup>
+                            <onup>2007</onup>
                             <ondown>4001</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
@@ -458,14 +458,14 @@
                             <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
                             <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.Reset(music.path)</onclick>
                         </control>
-                        <control type="button" id="20072">
+                        <control type="button" id="20082">
                             <posx>1145</posx>
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
                             <onleft>20071</onleft>
                             <onright>20071</onright>
-                            <onup>2004</onup>
+                            <onup>2007</onup>
                             <ondown>4001</ondown>
                             <texturefocus>buttons/spinctrl/arrow-up-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-up-nf.png</texturenofocus>
@@ -512,7 +512,7 @@
                             <textcolor>96FFFFFF</textcolor>
                             <label>$LOCALIZE[31152]</label>
                             <label2>$INFO[Skin.String(music.name)]</label2>
-                            <visible>!ControlGroup(2007).HasFocus</visible>
+                            <visible>!ControlGroup(2008).HasFocus</visible>
                         </control>
                         <control type="button">
                             <posx>0</posx>
@@ -526,7 +526,7 @@
                             <textcolor>white</textcolor>
                             <label>$LOCALIZE[31152]</label>
                             <label2>$INFO[Skin.String(music.name)]</label2>
-                            <visible>ControlGroup(2007).HasFocus</visible>
+                            <visible>ControlGroup(2008).HasFocus</visible>
                         </control>
                     </control>
                 </control>              
@@ -924,7 +924,6 @@
                         <onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                     </control>
                     <control type="radiobutton" id="7007">
-
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(NextAired.Enabled)</selected>
@@ -932,7 +931,6 @@
                         <label>$LOCALIZE[31285]</label>
                     </control>
                     <control type="radiobutton" id="7008">
-
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(NextAired.Update)</selected>
@@ -940,7 +938,6 @@
                         <label>- $LOCALIZE[31293]</label>
                     </control>
                     <control type="button" id="7009">
-
                         <width>1210</width>
                         <include>SettingsCategoryDefaultButtonVars</include>
                         <onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
@@ -948,7 +945,6 @@
                         <visible>Skin.HasSetting(NextAired.Enabled)</visible>
                     </control>
                     <control type="radiobutton" id="7010">
-
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(UpdateArt.Enabled)</selected>
