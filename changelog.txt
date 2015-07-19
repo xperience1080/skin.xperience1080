@@ -1,4 +1,8 @@
-﻿[B]4.1.100-beta[/B]
+﻿[B]4.1.110[/B]
+• OSD: Adds audio channel icon
+• Home Pictures: Fixes onright condition
+
+[B]4.1.100-beta[/B]
 • Tidy: General tidy up
 • Language: EN updated
 • Home Pictures: Adds a new Pictures section to Home, makes use of extendedinfo
