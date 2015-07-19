@@ -1,6 +1,6 @@
 ﻿[B]4.1.110[/B]
 • OSD: Adds audio channel icon
-• Home Pictures: Fixes onright condition
+• Home Pictures: Fixes onright condition (ty mkortstiege)
 
 [B]4.1.100-beta[/B]
 • Tidy: General tidy up
