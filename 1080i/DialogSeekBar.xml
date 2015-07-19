@@ -203,6 +203,16 @@
                                     <include>visiblehidefadeflags</include>
                                     <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
                                 </control>
+                                <control type="image">
+                                    <posx>0</posx>
+                                    <posy>0</posy>
+                                    <width>88</width>
+                                    <height>38</height>
+                                    <colordiffuse>bbwhite</colordiffuse>
+                                    <texture>$INFO[VideoPlayer.AudioChannels,flags/audio/osd/channels/,.png]</texture>
+                                    <include>visiblehidefadeflags</include>
+                                    <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+                                </control>                                
                             </control>
                             <control type="label">
                                 <posx>360</posx>
