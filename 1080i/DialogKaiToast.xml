@@ -19,7 +19,7 @@
             <visible>!Window.IsActive(fullscreenvideo) + !Window.IsActive(visualisation) + !Window.IsVisible(startup)</visible>
             <animation effect="slide" end="-76" time="300" tween="sine" easing="inout" condition="Window.IsActive(busydialog)">Conditional</animation>
             <animation type="Conditional" condition="Window.IsActive(volumebar)">
-                <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
+                <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
                 <effect type="zoom" start="100" end="50" center="1745,100" tween="sine" easing="inout" time="300" />
             </animation>
             <control type="group">
@@ -58,7 +58,7 @@
                     <texture>dialogs/kaitoast/info.png</texture>
                     <animation effect="fade" start="65" end="100" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
                 </control>
-                <control type="image" id="403">
+                <control type="image" id="400">
                     <description>Info</description>
                     <posx>20</posx>
                     <posy>46</posy>
@@ -68,7 +68,7 @@
                     <visible>false</visible>
                     <texture>dialogs/kaitoast/info.png</texture>
                 </control>
-                <control type="image" id="404">
+                <control type="image" id="400">
                     <description>Warning</description>
                     <posx>20</posx>
                     <posy>46</posy>
@@ -78,7 +78,7 @@
                     <visible>false</visible>
                     <texture>dialogs/kaitoast/warning.png</texture>
                 </control>
-                <control type="image" id="405">
+                <control type="image" id="400">
                     <description>Error</description>
                     <posx>20</posx>
                     <posy>46</posy>
@@ -137,7 +137,7 @@
 				<texture>overlays/notification/info-vf.png</texture>
 				<animation effect="fade" start="65" end="100" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
 			</control>
-			<control type="image" id="403">
+			<control type="image" id="400">
 				<description>Info</description>
 				<posx>1748</posx>
 				<posy>89</posy>
@@ -147,7 +147,7 @@
 				<visible>false</visible>
 				<texture>overlays/notification/info-vf.png</texture>
 			</control>
-			<control type="image" id="404">
+			<control type="image" id="400">
 				<description>Warning</description>
 				<posx>1748</posx>
 				<posy>89</posy>
@@ -157,7 +157,7 @@
 				<visible>false</visible>
 				<texture>overlays/notification/warning-vf.png</texture>
 			</control>
-			<control type="image" id="405">
+			<control type="image" id="400">
 				<description>Error</description>
 				<posx>1748</posx>
 				<posy>89</posy>
