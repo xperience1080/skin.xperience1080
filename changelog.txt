@@ -1,4 +1,7 @@
-﻿[B]4.1.110[/B]
+﻿[B]4.1.111[/B]
+• 15.1 changes
+
+[B]4.1.110[/B]
 • OSD: Adds audio channel icon
 • Home Pictures: Fixes onright condition (ty mkortstiege)
 
