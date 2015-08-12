@@ -19,5 +19,7 @@ Xperience1080 is a Kodi v14/v15 skin with two texture sets. Additional changes a
 4. Xperience1080 textures are the default, but you can choose to new texture set by going to Settings -> Appearance -> Theme -> Alternative.
 5. Sounds are optional from Kodi 15 onwards, you can install the default sounds for this skin from the Add-ons area.
 
+#### Credit to `Black and his work, of which this is a continuation.
+
 #### Further information
 See http://forum.kodi.tv/showthread.php?tid=197125 for more information.
