@@ -1,4 +1,7 @@
-﻿[B]4.1.112[/B]
+﻿[B]4.1.113[/B]
+• 15.1: Fixes crash on startup
+
+[B]4.1.112[/B]
 • 15.1 changes
 
 [B]4.1.110[/B]
