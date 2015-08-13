@@ -188,7 +188,7 @@
     </variable>
 
     <variable name="CurrentAiringPVR">
-        <value condition="ControlGroup(900).HasFocus() | ControlGroup(500).HasFocus() | ControlGroup(100).HasFocus() | ControlGroup(80).HasFocus()">pvr://channels/tv/All&amp;channels/</value>  
+        <value condition="ControlGroup(900).HasFocus() | ControlGroup(500).HasFocus() | ControlGroup(100).HasFocus() | ControlGroup(80).HasFocus()">pvr://channels/tv/All&amp;channels/</value>
     </variable>
 
     <variable name="FeaturedAlbumsLabelVAR">
@@ -206,7 +206,7 @@
             <control type="group">
                 <visible>!Skin.HasSetting(HideHomeProfileInfo)</visible>
                 <animation type="Conditional" condition="System.HasMediaDVD">
-                    <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
+                    <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
                     <effect type="zoom" start="100" end="50" center="125,80" tween="sine" easing="inout" time="300" />
                 </animation>
                 <control type="image">
@@ -227,7 +227,7 @@
                     <include>HomeProfileInfoLabel</include>
                     <label>[B]$INFO[System.ProfileName][/B]</label>
                     <visible>Container(30).HasFocus(1)</visible>
-                </control>	
+                </control>
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
                     <label>$INFO[Window.Property(Movies.Count),, $LOCALIZE[342]]</label>
@@ -263,7 +263,7 @@
                         <item id="1">
                             <label>-</label>
                             <onclick>noop</onclick>
-                        </item>					
+                        </item>
                         <item id="2">
                             <label>-</label>
                             <onclick>noop</onclick>
@@ -591,14 +591,14 @@
                     <property name="single">$INFO[Skin.String(HomePicturesSingleImage)]</property>
                     <property name="multi">$VAR[HomePicturesMultiPath]</property>
                     <visible>!Skin.HasSetting(HomePictures)</visible>
-                </item>                                 
+                </item>
                 <item id="6">
                     <label>$LOCALIZE[31504]</label>
                     <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeProgramsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeProgramsMultiImage)]</property>
                     <visible>!Skin.HasSetting(HomePrograms)</visible>
-                </item>         
+                </item>
                 <item id="7">
                     <label>$LOCALIZE[8]</label>
                     <onclick>noop</onclick>
@@ -612,7 +612,7 @@
                     <property name="single">$INFO[Skin.String(HomeSettingsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeSettingsMultiImage)]</property>
                     <property name="settings">1</property>
-                </item> 
+                </item>
             </content>
         </control>
     </include>
@@ -644,7 +644,7 @@
                 <description>Search</description>
                 <visible>System.HasAddon(script.globalsearch)</visible>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Right arrow</description>
@@ -662,14 +662,14 @@
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                </control>					
+                </control>
                 <control type="button" id="125">
                     <onleft condition="!Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
                     <onright condition="!System.GetBool(pvrmanager.enabled)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onright>
@@ -693,11 +693,11 @@
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(1) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -793,7 +793,7 @@
                             <onright condition="!System.GetBool(pvrmanager.enabled)">501</onright>
                             <onup>125</onup>
                             <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                            <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                            
+                            <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <align>left</align>
                             <aligny>center</aligny>
                             <onclick>SetProperty(HomeSearch,1)</onclick>
@@ -810,7 +810,7 @@
                 <description>Live TV</description>
                 <visible>System.GetBool(pvrmanager.enabled)</visible>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -831,22 +831,22 @@
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(9)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(9)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                </control>					
+                </control>
                 <control type="button" id="925">
                     <onleft condition="System.HasAddon(script.globalsearch)">Control.Move(20,-1)</onleft>
                     <onleft condition="System.HasAddon(script.globalsearch)">125</onleft>
@@ -863,27 +863,27 @@
                     <posy>100</posy>
                     <posx>390</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(9)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(9)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation effect="slide" end="-156" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(1)">Conditional</animation>
@@ -901,7 +901,7 @@
                     </control>
                     <control type="group" id="902">
                         <description>Currently Airing</description>
-                        <posx>339</posx>                       
+                        <posx>339</posx>
                         <control type="button" id="9021">
                             <include>visiblehidefadeinfo</include>
                             <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
@@ -939,7 +939,7 @@
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <orientation>vertical</orientation>
                             <visible allowhiddenfocus="true">IntegerGreaterThan(Container(9022).NumItems,0)</visible>
-                            <include>visiblehidefadeinfodelayvisible</include> 
+                            <include>visiblehidefadeinfodelayvisible</include>
                             <itemlayout width="573" height="115">
                                 <control type="image">
                                     <description>Channel underlay</description>
@@ -949,7 +949,7 @@
                                     <height>113</height>
                                     <texture>windows/common/black.png</texture>
                                     <colordiffuse>22FFFFFF</colordiffuse>
-                                </control>                            
+                                </control>
                                 <control type="image">
                                     <posx>0</posx>
                                     <posy>0</posy>
@@ -1140,7 +1140,7 @@
                         <onright>902</onright>
                         <onup>925</onup>
                         <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
+                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <scrolltime>0</scrolltime>
                         <itemlayout width="289" height="289">
                             <control type="group">
@@ -1258,7 +1258,7 @@
                                 <onclick>ActivateWindow(radiochannels)</onclick>
                             </item>
                         </content>
-                    </control> 
+                    </control>
                     <control type="panel" id="903">
                         <posx>894</posx>
                         <posy>-24</posy>
@@ -1422,7 +1422,7 @@
                 <width>2320</width>
                 <height>780</height>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -1443,19 +1443,19 @@
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
                     <animation type="WindowOpen" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                 </control>
@@ -1477,7 +1477,7 @@
                     <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">425</onright>
                     <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onright>
-                    <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1025</onright>        
+                    <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1025</onright>
                     <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">625</onright>
                     <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
@@ -1492,27 +1492,27 @@
                     <posy>100</posy>
                     <posx>407</posx>
                     <animation type="WindowOpen" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMovies)] | [Container(20).HasFocus(5) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMovies)] | [Container(20).HasFocus(5) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(2) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -1563,7 +1563,7 @@
                             <aspectratio>scale</aspectratio>
                             <texture>windows/home/nocontent/nocontent.png</texture>
                             <visible>!Library.HasContent(Video) + !Control.IsVisible(5023)</visible>
-                        </control>						
+                        </control>
                         <control type="button">
                             <description>Title label</description>
                             <posx>0</posx>
@@ -1578,7 +1578,7 @@
                             <enable>false</enable>
                             <visible>!Library.HasContent(Video) + !Control.IsVisible(5023)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>					
+                        </control>
                         <control type="wraplist" id="5022">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1586,7 +1586,7 @@
                             <height>572</height>
                             <onup>525</onup>
                             <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                            <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                            
+                            <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <orientation>horizontal</orientation>
@@ -1676,7 +1676,7 @@
                             <enable>false</enable>
                             <visible>Control.IsVisible(5022)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>						
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>576</posy>
@@ -1776,7 +1776,7 @@
                             <aspectratio>scale</aspectratio>
                             <texture>windows/home/nocontent/nocontent.png</texture>
                             <visible>!Library.HasContent(Video) + !Control.IsVisible(5033)</visible>
-                        </control>						
+                        </control>
                         <control type="button">
                             <description>Title label</description>
                             <posx>0</posx>
@@ -1791,7 +1791,7 @@
                             <enable>false</enable>
                             <visible>!Library.HasContent(Video) + !Control.IsVisible(5033)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>					
+                        </control>
                         <control type="wraplist" id="5032">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1889,7 +1889,7 @@
                             <enable>false</enable>
                             <visible>Control.IsVisible(5032)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>					
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>576</posy>
@@ -1955,7 +1955,7 @@
                         <onright>502</onright>
                         <onup>525</onup>
                         <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
+                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -1977,7 +1977,7 @@
                                     <height>293</height>
                                     <texture border="7">windows/home/tile-red.png</texture>
                                     <visible>Skin.HasSetting(HomeHomeTiles)</visible>
-                                </control>								
+                                </control>
                                 <control type="image">
                                     <posx>24</posx>
                                     <posy>24</posy>
@@ -2050,7 +2050,7 @@
                                         <height>293</height>
                                         <texture border="7">windows/home/tile-red.png</texture>
                                         <visible>Skin.HasSetting(HomeHomeTiles)</visible>
-                                    </control>									
+                                    </control>
                                     <control type="image">
                                         <posx>24</posx>
                                         <posy>24</posy>
@@ -2182,7 +2182,7 @@
                 <description>Movies</description>
                 <visible>!Skin.HasSetting(HomeMovies)</visible>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -2203,19 +2203,19 @@
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(3)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                 </control>
@@ -2241,7 +2241,7 @@
                     <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePrograms)">625</onright>
-                    <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">825</onright>					
+                    <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">825</onright>
                     <onclick condition="!Library.HasContent(movies)">ActivateWindow(videos,files,return)</onclick>
                     <onclick condition="Library.HasContent(movies)">ActivateWindow(videos,movietitles,return)</onclick>
                     <onup>ActivateWindow(3020)</onup>
@@ -2251,27 +2251,27 @@
                     <posy>100</posy>
                     <posx>407</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(3)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(5) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(8) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(5) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(8) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(3) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -2321,7 +2321,7 @@
                             <aspectratio>scale</aspectratio>
                             <texture>windows/home/nocontent/nocontent.png</texture>
                             <visible>!Library.HasContent(Movies) + !Control.IsVisible(2023)</visible>
-                        </control>						
+                        </control>
                         <control type="button">
                             <description>Title label</description>
                             <posx>0</posx>
@@ -2336,7 +2336,7 @@
                             <enable>false</enable>
                             <visible>!Library.HasContent(Movies) + !Control.IsVisible(2023)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>					
+                        </control>
                         <control type="wraplist" id="2022">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -2434,7 +2434,7 @@
                             <enable>false</enable>
                             <visible>Control.IsVisible(2022)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>				
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>576</posy>
@@ -2706,14 +2706,14 @@
                         <onright condition="Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onright>
                         <onright condition="Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">401</onright>
                         <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onright>
-                        <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1001</onright>    
+                        <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1001</onright>
                         <onright>Control.Move(20,1)</onright>
                         <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) +!Skin.HasSetting(HomePrograms)">601</onright>
                         <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">701</onright>
                         <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">801</onright>
                         <onup>225</onup>
                         <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
+                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -2734,7 +2734,7 @@
                                     <height>293</height>
                                     <texture border="7">windows/home/tile-blue.png</texture>
                                     <visible>Skin.HasSetting(HomeMoviesTiles)</visible>
-                                </control>								
+                                </control>
                                 <control type="image">
                                     <posx>24</posx>
                                     <posy>24</posy>
@@ -2808,7 +2808,7 @@
                                         <height>293</height>
                                         <texture border="7">windows/home/tile-blue.png</texture>
                                         <visible>Skin.HasSetting(HomeMoviesTiles)</visible>
-                                    </control>									
+                                    </control>
                                     <control type="image">
                                         <posx>24</posx>
                                         <posy>24</posy>
@@ -2875,7 +2875,7 @@
                                 <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit,HomeVideoTile1,3003)</onclick>
                                 <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit.Type,$INFO[Skin.String(HomeVideoTile1.Type)],3003)</onclick>
                                 <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit.ShowLabel,$INFO[Skin.String(HomeVideoTile1.ShowLabel)],3003)</onclick>
-                                <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeVideoTile1.Animate)],3003)</onclick>                                
+                                <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeVideoTile1.Animate)],3003)</onclick>
                                 <onclick condition="IsEmpty(Skin.String(HomeVideoTile1.Path)) | !IsEmpty(Window.Property(EditTile))">ActivateWindow(3003)</onclick>
                                 <onclick condition="!IsEmpty(Window.Property(EditTile))">ClearProperty(EditTile)</onclick>
                                 <icon>$INFO[Skin.String(HomeVideoTile1.Icon)]</icon>
@@ -2933,7 +2933,7 @@
                 <description>TV Shows</description>
                 <visible>!Skin.HasSetting(HomeTVShows)</visible>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -2954,26 +2954,26 @@
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(4)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                </control>				
+                </control>
                 <control type="button" id="325">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>  
+                    <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onleft>
                     <onleft condition="Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
                     <onleft condition="Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
@@ -2997,27 +2997,27 @@
                     <posy>100</posy>
                     <posx>407</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(4)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(8) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(8) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(4) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -3067,7 +3067,7 @@
                             <aspectratio>scale</aspectratio>
                             <texture>windows/home/nocontent/nocontent.png</texture>
                             <visible>!Library.HasContent(TVShows) + !Control.IsVisible(3023)</visible>
-                        </control>						
+                        </control>
                         <control type="button">
                             <description>Title label</description>
                             <posx>0</posx>
@@ -3180,7 +3180,7 @@
                             <enable>false</enable>
                             <visible>Control.IsVisible(3022)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control> 
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>576</posy>
@@ -3245,7 +3245,7 @@
                         <onright>302</onright>
                         <onup>325</onup>
                         <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
+                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -3449,11 +3449,11 @@
                         <width>331</width>
                         <height>620</height>
                         <onleft>302</onleft>
-                        <onright>CancelAlarm(HomeTileMove,true)</onright>  
+                        <onright>CancelAlarm(HomeTileMove,true)</onright>
                         <onright condition="!Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onright>
                         <onright condition="!Skin.HasSetting(HomeMusic)">401</onright>
                         <onright condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onright>
-                        <onright condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1001</onright>    
+                        <onright condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1001</onright>
                         <onright condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
                         <onright condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">701</onright>
                         <onright>Control.Move(20,1)</onright>
@@ -3482,7 +3482,7 @@
                                     <height>293</height>
                                     <texture border="7">windows/home/tile-green.png</texture>
                                     <visible>Skin.HasSetting(HomeTVShowsTiles)</visible>
-                                </control>								
+                                </control>
                                 <control type="image">
                                     <posx>24</posx>
                                     <posy>24</posy>
@@ -3556,7 +3556,7 @@
                                         <height>293</height>
                                         <texture border="7">windows/home/tile-green.png</texture>
                                         <visible>Skin.HasSetting(HomeTVShowsTiles)</visible>
-                                    </control>									
+                                    </control>
                                     <control type="image">
                                         <posx>24</posx>
                                         <posy>24</posy>
@@ -3679,7 +3679,7 @@
                 <description>Music</description>
                 <visible>!Skin.HasSetting(HomeMusic)</visible>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -3700,22 +3700,22 @@
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(5)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                </control>					
+                </control>
                 <control type="button" id="425">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
@@ -3727,7 +3727,7 @@
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">225</onleft>
-                    <onleft condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">525</onleft> 
+                    <onleft condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">525</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveThree,true)</onright>
@@ -3749,27 +3749,27 @@
                     <posy>100</posy>
                     <posx>390</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(5)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(7) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(8) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(7) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(8) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation effect="slide" end="-39" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(2) | Container(20).HasFocus(3) | Container(20).HasFocus(4)">Conditional</animation>
@@ -3817,7 +3817,7 @@
                             <aspectratio>scale</aspectratio>
                             <texture>windows/home/nocontent/nocontent.png</texture>
                             <visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
-                        </control>						
+                        </control>
                         <control type="button">
                             <description>Title label</description>
                             <posx>0</posx>
@@ -3832,7 +3832,7 @@
                             <enable>false</enable>
                             <visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>			
+                        </control>
                         <control type="wraplist" id="4022">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -3840,7 +3840,7 @@
                             <height>573</height>
                             <onup>425</onup>
                             <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                            <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                            
+                            <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <orientation>horizontal</orientation>
@@ -3930,7 +3930,7 @@
                             <enable>false</enable>
                             <visible>Control.IsVisible(4022)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>					
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>576</posy>
@@ -4186,7 +4186,7 @@
                                 <property name="animate">$INFO[Skin.String(HomeMusicTile4.Animate)]</property>
                             </item>
                         </content>
-                    </control>				
+                    </control>
                     <control type="panel" id="403">
                         <posx>894</posx>
                         <posy>-24</posy>
@@ -4200,7 +4200,7 @@
                         <onright condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">601</onright>
                         <onright condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
                         <onright condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">701</onright>
-                        <onright condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">801</onright>						
+                        <onright condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">801</onright>
                         <onup>425</onup>
                         <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
                         <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
@@ -4223,7 +4223,7 @@
                                 <height>293</height>
                                 <texture border="7">windows/home/tile-orange.png</texture>
                                 <visible>Skin.HasSetting(HomeMusicTiles)</visible>
-                            </control>							
+                            </control>
                             <control type="group">
                                 <control type="image">
                                     <posx>24</posx>
@@ -4297,7 +4297,7 @@
                                     <height>293</height>
                                     <texture border="7">windows/home/tile-orange.png</texture>
                                     <visible>Skin.HasSetting(HomeMusicTiles)</visible>
-                                </control>								
+                                </control>
                                 <control type="group">
                                     <control type="image">
                                         <posx>24</posx>
@@ -4416,7 +4416,7 @@
                                 <property name="showlabel">$INFO[Skin.String(HomeMusicTile5.ShowLabel)]</property>
                                 <property name="path">$INFO[Skin.String(HomeMusicTile5.Path)]</property>
                                 <property name="animate">$INFO[Skin.String(HomeMusicTile5.Animate)]</property>
-                            </item>		
+                            </item>
                             <item id="4">
                                 <label>$INFO[Skin.String(HomeMusicTile6.Label)]</label>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + !stringcompare(Skin.String(HomeMusicTile6.Type),4) + !stringcompare(Skin.String(HomeMusicTile6.Type),5) + !stringcompare(Skin.String(HomeMusicTile6.Type),6) + !stringcompare(Skin.String(HomeMusicTile6.Type),7)">RunAddon($INFO[Skin.String(HomeMusicTile6.Path)])</onclick>
@@ -4438,7 +4438,7 @@
                                 <property name="showlabel">$INFO[Skin.String(HomeMusicTile6.ShowLabel)]</property>
                                 <property name="path">$INFO[Skin.String(HomeMusicTile6.Path)]</property>
                                 <property name="animate">$INFO[Skin.String(HomeMusicTile6.Animate)]</property>
-                            </item>			
+                            </item>
                         </content>
                     </control>
                     <control type="image">
@@ -4465,7 +4465,7 @@
                 <description>Pictures</description>
                 <visible>!Skin.HasSetting(HomePictures)</visible>
                 <control type="group">
-                    <posy>348</posy>                 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -4485,13 +4485,13 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                </control> 
+                </control>
                 <animation type="WindowOpen" condition="Container(20).HasFocus(10)" reversible="true">
-                    <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                    <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                     <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                 </animation>
                 <animation type="WindowClose" condition="Container(20).HasFocus(10)" reversible="true">
-                    <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                    <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                 </animation>
                 <control type="button" id="1025">
@@ -4502,13 +4502,13 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveThree,Control.Move(3032,1),00:04,silent,loop)</onleft>
                     <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveTwo,Control.Move(3022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">325</onleft>  
+                    <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(2032,1),00:04,silent,loop)</onleft>
                     <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(2022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">225</onleft> 
+                    <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">225</onleft>
                     <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
                     <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)">525</onleft>  
+                    <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)">525</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
@@ -4526,7 +4526,7 @@
                     <posy>100</posy>
                     <posx>407</posx>
                     <animation type="Conditional" condition="!Container(20).HasFocus(10) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
-                        <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />  
+                        <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                     </animation>
                     <control type="image">
                         <description>Bottom shadow</description>
@@ -4560,6 +4560,30 @@
                             <width>938</width>
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>336</posx>
+                            <posy>100</posy>
+                            <width>256</width>
+                            <height>256</height>
+                            <aspectratio>scale</aspectratio>
+                            <texture>windows/home/nocontent/nocontent.png</texture>
+                            <visible>!IntegerGreaterThan(Container(10022).NumItems,0)</visible>
+                        </control>
+                        <control type="button">
+                            <description>Title label</description>
+                            <posx>0</posx>
+                            <posy>360</posy>
+                            <width>928</width>
+                            <height>64</height>
+                            <label>$LOCALIZE[31977]</label>
+                            <font>Font-Condensed-S34</font>
+                            <disabledcolor>aawhite</disabledcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <enable>false</enable>
+                            <visible>!IntegerGreaterThan(Container(10022).NumItems,0)</visible>
+                            <include>visiblehidefadeinfodelayvisible</include>
                         </control>
                         <control type="wraplist" id="10022">
                             <posx>0</posx>
@@ -4635,6 +4659,7 @@
                                 <width>148</width>
                                 <height>148</height>
                                 <texture>windows/home/loading-back.png</texture>
+                                <visible>Skin.String(PicturesPath)</visible>
                             </control>
                             <control type="image">
                                 <description>Loading</description>
@@ -4644,6 +4669,7 @@
                                 <height>148</height>
                                 <texture>windows/home/loading.png</texture>
                                 <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="Control.IsVisible(10023)">Conditional</animation>
+                                <visible>Skin.String(PicturesPath)</visible>
                             </control>
                             <control type="label">
                                 <description>Loading label</description>
@@ -4657,6 +4683,7 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <scroll>false</scroll>
+                                <visible>!IntegerGreaterThan(Container(10022).NumItems,0)</visible>
                             </control>
                         </control>
                         <control type="button">
@@ -4973,7 +5000,7 @@
                                     <height>293</height>
                                     <texture border="7">windows/home/tile-purple.png</texture>
                                     <visible>Skin.HasSetting(HomePicturesTiles)</visible>
-                                </control>              
+                                </control>
                                 <control type="image">
                                     <posx>24</posx>
                                     <posy>24</posy>
@@ -5047,7 +5074,7 @@
                                         <height>293</height>
                                         <texture border="7">windows/home/tile-purple.png</texture>
                                         <visible>Skin.HasSetting(HomePicturesTiles)</visible>
-                                    </control>  
+                                    </control>
                                     <control type="image">
                                         <posx>24</posx>
                                         <posy>24</posy>
@@ -5170,7 +5197,7 @@
                 <description>Apps</description>
                 <visible>!Skin.HasSetting(HomePrograms)</visible>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -5191,22 +5218,22 @@
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(6)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                </control>				
+                </control>
                 <control type="button" id="625">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
@@ -5229,7 +5256,7 @@
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="!Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
                     <onright condition="!Skin.HasSetting(HomeWeather)">725</onright>
-                    <onright condition="Skin.HasSetting(HomeWeather)">825</onright>					
+                    <onright condition="Skin.HasSetting(HomeWeather)">825</onright>
                     <onright>725</onright>
                     <onclick>ActivateWindow(programs)</onclick>
                     <onup>80</onup>
@@ -5239,27 +5266,27 @@
                     <posy>100</posy>
                     <posx>440</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(6)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7) | [Container(20).HasFocus(8) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(7) | [Container(20).HasFocus(8) + Skin.HasSetting(HomeWeather)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation effect="slide" end="-50" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]">Conditional</animation>
@@ -5282,7 +5309,7 @@
                         <height>620</height>
                         <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                         <onleft condition="!Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="!Skin.HasSetting(HomePictures)">1003</onleft>        
+                        <onleft condition="!Skin.HasSetting(HomePictures)">1003</onleft>
                         <onleft condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
                         <onleft condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onleft>
@@ -5300,7 +5327,7 @@
                         <onright condition="Skin.HasSetting(HomeWeather)">801</onright>
                         <onup>625</onup>
                         <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
+                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
                         <onback condition="!Skin.HasSetting(KioskMode)">Select</onback>
                         <scrolltime>0</scrolltime>
@@ -5673,7 +5700,7 @@
                                 <property name="path">$INFO[Skin.String(HomeProgramTile10.Path)]</property>
                                 <property name="animate">$INFO[Skin.String(HomeProgramTile10.Animate)]</property>
                                 <property name="custom">1</property>
-                            </item>													
+                            </item>
                         </content>
                     </control>
                 </control>
@@ -5686,7 +5713,7 @@
                 <description>Weather</description>
                 <visible>!Skin.HasSetting(HomeWeather)</visible>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -5707,22 +5734,22 @@
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                </control>					
+                </control>
                 <control type="button" id="725">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
@@ -5756,27 +5783,27 @@
                     <posy>100</posy>
                     <posx>407</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(7) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -5964,7 +5991,7 @@
                         </control>
                         <control type="group">
                             <visible>[!Skin.HasSetting(ShowWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))] + Weather.IsFetched</visible>
-                            <include>visiblehidefadeinfo</include>		
+                            <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Lower overlay</description>
                                 <posx>0</posx>
@@ -6365,7 +6392,7 @@
                         <onright>801</onright>
                         <onup>725</onup>
                         <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
-                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                        
+                        <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                         <scrolltime>0</scrolltime>
                         <itemlayout width="289" height="289">
                             <control type="group">
@@ -6494,7 +6521,7 @@
                 <height>780</height>
                 <description>Settings</description>
                 <control type="group">
-                    <posy>348</posy>				 
+                    <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
                     <control type="image">
                         <description>Left arrow</description>
@@ -6506,27 +6533,27 @@
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                </control>					
+                </control>
                 <control type="button" id="825">
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
-                    <onleft>Control.Move(20,-1)</onleft>  
+                    <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeWeather)">725</onleft>
                     <onleft condition="Skin.HasSetting(HomeWeather) + !Skin.HasSetting(HomePrograms)">625</onleft>
@@ -6551,19 +6578,19 @@
                     <posy>100</posy>
                     <posx>535</posx>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
                     <animation type="WindowClose" condition="Container(20).HasFocus(8)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
                     <animation type="Conditional" condition="!Container(20).HasFocus(8) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
@@ -6587,7 +6614,7 @@
                         <onleft condition="!Skin.HasSetting(HomeWeather)">701</onleft>
                         <onleft condition="Skin.HasSetting(HomeWeather) + !Skin.HasSetting(HomePrograms)">601</onleft>
                         <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomePictures)">1003</onleft>           
+                        <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomePictures)">1003</onleft>
                         <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
                         <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">303</onleft>
@@ -6762,7 +6789,7 @@
                                 <icon>windows/home/icons/system.png</icon>
                                 <onclick>ActivateWindow(systemsettings)</onclick>
                                 <property name="pos">bottom</property>
-                            </item>													
+                            </item>
                         </content>
                     </control>
                 </control>
