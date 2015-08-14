@@ -151,11 +151,11 @@
                 </control>
             </control>
             <control type="group">
-                <posx>175</posx> 
+                <posx>175</posx>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="75" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="75" />
-                    <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="75" /> 
+                    <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="75" />
                 </animation>
                 <control type="label">
                     <description>Category</description>
@@ -185,7 +185,7 @@
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
                 </control>
-                <!-- ================ -->    
+                <!-- ================ -->
                 <!-- General Settings -->
                 <!-- ================ -->
                 <control type="grouplist" id="5">
@@ -326,25 +326,25 @@
                             <label>$LOCALIZE[20304]</label>
                             <label2>$INFO[Skin.String(rss.setting)]</label2>
                             <visible>ControlGroup(1007).HasFocus</visible>
-                        </control>             
+                        </control>
                     </control>
                 </control>
 
-                <!-- ============= -->  
+                <!-- ============= -->
                 <!-- Home Settings -->
                 <!-- ============= -->
                 <control type="grouplist" id="5">
                     <visible>Container(30).HasFocus(32)</visible>
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
-                    <control type="radiobutton" id="2003">
+                    <control type="radiobutton" id="2000">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(HomeClassicMode)</selected>
                         <onclick>Skin.ToggleSetting(HomeClassicMode)</onclick>
                         <label>$LOCALIZE[31129]</label>
                     </control>
-                    <control type="button" id="2000">
+                    <control type="button" id="2001">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
@@ -355,7 +355,7 @@
                         <onfocus condition="!IsEmpty(Window(Home).Property(ReloadSkin))">ClearProperty(ReloadSkin,Home)</onfocus>
                         <label>$LOCALIZE[31131]</label>
                     </control>
-                    <control type="button" id="2001">
+                    <control type="button" id="2002">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
@@ -364,7 +364,7 @@
                         <onclick>ActivateWindow(3003)</onclick>
                         <label>$LOCALIZE[31136]</label>
                     </control>
-                    <control type="button" id="2002">
+                    <control type="button" id="2003">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
@@ -373,7 +373,7 @@
                         <onclick>ActivateWindow(3003)</onclick>
                         <label>$LOCALIZE[31140]</label>
                     </control>
-                    <control type="button" id="2003">
+                    <control type="button" id="2004">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
@@ -388,7 +388,7 @@
                         <selected>Skin.HasSetting(HomeArrows)</selected>
                         <onclick>Skin.ToggleSetting(HomeArrows)</onclick>
                         <label>$LOCALIZE[31994]</label>
-                    </control>					
+                    </control>
                     <control type="radiobutton" id="2006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -402,7 +402,7 @@
                         <selected>!Skin.HasSetting(HideHomeSubmenuArrow)</selected>
                         <onclick>Skin.ToggleSetting(HideHomeSubmenuArrow)</onclick>
                         <label>$LOCALIZE[31135]</label>
-                    </control>								
+                    </control>
                     <control type="group" id="2008">
                         <description>Fake spin control</description>
                         <width>1210</width>
@@ -428,10 +428,10 @@
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
-                            <onleft>20072</onleft>
-                            <onright>20072</onright>
+                            <onleft>20082</onleft>
+                            <onright>20082</onright>
                             <onup>2007</onup>
-                            <ondown>4001</ondown>
+                            <ondown>2000</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
                             <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
@@ -470,10 +470,10 @@
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
-                            <onleft>20071</onleft>
-                            <onright>20071</onright>
+                            <onleft>20081</onleft>
+                            <onright>20081</onright>
                             <onup>2007</onup>
-                            <ondown>4001</ondown>
+                            <ondown>2000</ondown>
                             <texturefocus>buttons/spinctrl/arrow-up-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-up-nf.png</texturenofocus>
                             <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.name,$LOCALIZE[1038])</onclick>
@@ -536,9 +536,9 @@
                             <visible>ControlGroup(2008).HasFocus</visible>
                         </control>
                     </control>
-                </control>              
+                </control>
 
-                <!-- ============== --> 
+                <!-- ============== -->
                 <!-- View Settings  -->
                 <!-- ============== -->
                 <control type="grouplist" id="5">
@@ -590,7 +590,7 @@
                     </control>
                 </control>
 
-                <!-- ============= --> 
+                <!-- ============= -->
                 <!-- OSD Settings  -->
                 <!-- ============= -->
                 <control type="grouplist" id="5">
@@ -636,7 +636,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(OSD.HideWeatherClock)</selected>
                         <onclick>Skin.ToggleSetting(OSD.HideWeatherClock)</onclick>
-                        <label>$LOCALIZE[31030]</label>                       
+                        <label>$LOCALIZE[31030]</label>
                     </control>
                     <control type="radiobutton" id="8006">
                         <width>1210</width>
@@ -644,7 +644,7 @@
                         <selected>Skin.HasSetting(OSD.HideChapterInfo)</selected>
                         <onclick>Skin.ToggleSetting(OSD.HideChapterInfo)</onclick>
                         <label>$LOCALIZE[31031]</label>
-                    </control>                      
+                    </control>
                     <control type="radiobutton" id="8007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -657,11 +657,11 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(OSD.HideFileStreamPath)</selected>
                         <onclick>Skin.ToggleSetting(OSD.HideFileStreamPath)</onclick>
-                        <label>$LOCALIZE[31104]</label>                        
-                    </control>				
+                        <label>$LOCALIZE[31104]</label>
+                    </control>
                 </control>
 
-                <!-- =================== --> 
+                <!-- =================== -->
                 <!-- Background Settings -->
                 <!-- =================== -->
                 <control type="grouplist" id="5">
@@ -678,7 +678,7 @@
                         <onclick>ClearProperty(CustomDialog)</onclick>
                         <onclick>SetProperty(Dialog,$LOCALIZE[31251])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
-                    </control>					
+                    </control>
                     <control type="button" id="5001">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
@@ -747,7 +747,7 @@
                     </control>
                 </control>
 
-                <!-- =================== -->    
+                <!-- =================== -->
                 <!-- Guide menu Settings -->
                 <!-- =================== -->
                 <control type="grouplist" id="5">
@@ -764,28 +764,28 @@
                         <onclick>ClearProperty(CustomDialog)</onclick>
                         <onclick>SetProperty(Dialog,$LOCALIZE[31995])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
-                    </control>					
+                    </control>
                     <control type="radiobutton" id="6001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
                         <label>$LOCALIZE[31975]</label>
-                    </control>										
+                    </control>
                     <control type="radiobutton" id="60012">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(Guide.HideWeather)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideWeather)</onclick>
                         <label>$LOCALIZE[31976]</label>
-                    </control>	
+                    </control>
                     <control type="radiobutton" id="6002">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(Guide.HideUserImage)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideUserImage)</onclick>
                         <label>$LOCALIZE[31271]</label>
-                    </control>					
+                    </control>
                     <control type="radiobutton" id="6003">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -868,7 +868,7 @@
                     </control>
                 </control>
 
-                <!-- ================= -->    
+                <!-- ================= -->
                 <!-- Advanced Settings -->
                 <!-- ================= -->
                 <control type="grouplist" id="5">
@@ -916,7 +916,7 @@
                 </control>
 
 
-                <!-- =============== -->    
+                <!-- =============== -->
                 <!-- Add-on Settings -->
                 <!-- =============== -->
                 <control type="grouplist" id="5">
