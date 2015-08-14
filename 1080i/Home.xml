@@ -19,9 +19,11 @@
         <!-- Backgrounds -->
         <include>CommonItemsHome</include>
         <!-- Home screen -->
-        <include>HomeControlList</include>
+        <include condition="!Skin.HasSetting(HomeClassicMode)">HomeControlList</include>
+        <include condition="Skin.HasSetting(HomeClassicMode)">HomeControlListClassic</include>
         <include>HomeControlListLabels</include>
-        <include>HomeItems</include>
+        <include condition="!Skin.HasSetting(HomeClassicMode)">HomeItems</include>
+        <include condition="Skin.HasSetting(HomeClassicMode)">HomeItemsClassic</include>
         <include>HomeProfileInfo</include>
         <!-- Bottom buttons -->
         <include condition="!Skin.HasSetting(HideHomeButtons)">shutdown-favs</include>

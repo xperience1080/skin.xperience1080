@@ -337,6 +337,13 @@
                     <visible>Container(30).HasFocus(32)</visible>
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
+                    <control type="radiobutton" id="2003">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(HomeClassicMode)</selected>
+                        <onclick>Skin.ToggleSetting(HomeClassicMode)</onclick>
+                        <label>$LOCALIZE[31129]</label>
+                    </control>
                     <control type="button" id="2000">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
