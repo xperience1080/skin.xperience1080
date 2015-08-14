@@ -1,4 +1,10 @@
-﻿[B]4.1.120[/B]
+﻿[B]4.1.201[/B]
+• Skin Settings: Fixes up/down for Home Settings.
+
+[B]4.1.200[/B]
+• Home: Class Home is now available as an option [xhaggi].
+
+[B]4.1.120[/B]
 • Home Pictures: Adds visual indicator if the pictures path has not been set.
 
 [B]4.1.113[/B]
