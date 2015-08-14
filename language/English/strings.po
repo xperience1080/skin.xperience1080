@@ -249,6 +249,10 @@ msgctxt "#31114"
 msgid "Bottom"
 msgstr ""
 
+msgctxt "#31129"
+msgid "Use classic mode"
+msgstr ""
+
 msgctxt "#31130"
 msgid "Home"
 msgstr ""
