@@ -51,7 +51,6 @@
                     <onright>101</onright>
                     <onup>10</onup>
                     <ondown>10</ondown>
-                    <onback>101</onback>
                     <rulerlayout height="40" width="40">
                         <control type="label" id="2">
                             <posx>10</posx>
@@ -533,7 +532,6 @@
                     <onright>70</onright>
                     <onup>11</onup>
                     <ondown>11</ondown>
-                    <onback>101</onback>
                     <viewtype label="535">list</viewtype>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -1055,7 +1053,6 @@
                     <onright>70</onright>
                     <onup>12</onup>
                     <ondown>12</ondown>
-                    <onback>101</onback>
                     <viewtype label="535">list</viewtype>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -1590,7 +1587,6 @@
                     <onright>70</onright>
                     <onup>13</onup>
                     <ondown>13</ondown>
-                    <onback>101</onback>
                     <viewtype label="535">list</viewtype>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
