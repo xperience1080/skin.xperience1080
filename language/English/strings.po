@@ -250,7 +250,7 @@ msgid "Bottom"
 msgstr ""
 
 msgctxt "#31129"
-msgid "Use classic mode"
+msgid "Use Classic Home"
 msgstr ""
 
 msgctxt "#31130"
