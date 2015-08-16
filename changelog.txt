@@ -1,3 +1,11 @@
+﻿[B]5.0.010[/B]
+• Weather: Reverts weather when not using Fanart to original layout.
+• Weather: Moves Weather Fanart settings to Skin Settings -> Views.
+• Language: EN strings updated.
+
+[B]4.1.201[/B]
+• Skin Settings: Fixes up/down for Home Settings.
+
 [B]4.1.201[/B]
 • Skin Settings: Fixes up/down for Home Settings.
 
