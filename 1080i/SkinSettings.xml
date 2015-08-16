@@ -539,7 +539,7 @@
                 </control>
 
                 <!-- ============== -->
-                <!-- View Settings  -->
+                <!-- Views Settings  -->
                 <!-- ============== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
@@ -580,13 +580,53 @@
                         <label2 fallback="US">[COLOR=SelectedBlue]$VAR[MovieMPAALangLabel][/COLOR]</label2>
                         <onclick>ActivateWindow(3006)</onclick>
                     </control>
-                    <control type="radiobutton" id="10001">
+                    <control type="radiobutton" id="3006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(EPGGenreColors.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(EPGGenreColors.Enabled)</onclick>
                         <label>$LOCALIZE[31221]</label>
                         <visible>System.GetBool(pvrmanager.enabled)</visible>
+                    </control>
+                    <control type="button" id="3007">
+                        <description>Set weather fanart path</description>
+                        <width>1210</width>
+                        <include>SettingsCategoryDefaultButtonVars</include>
+                        <label>$LOCALIZE[31043]</label>
+                        <onclick>Skin.SetPath(WeatherFanartDir)</onclick>
+                    </control>
+                    <control type="button" id="3008">
+                        <description>Reset weather fanart path</description>
+                        <width>1210</width>
+                        <include>SettingsCategoryDefaultButtonVars</include>
+                        <label>- $LOCALIZE[31044]</label>
+                        <onclick>Skin.Reset(WeatherFanartDir)</onclick>
+                        <onclick>ReloadSkin</onclick>
+                        <enable>!Skin.SetPath(WeatherFanartDir)</enable>
+                        <visible>!IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                    </control>
+                    <control type="radiobutton" id="3009">
+                        <description>Hide weather fanart</description>
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <label>$LOCALIZE[31041]</label>
+                        <onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
+                        <onclick condition="Skin.HasSetting(ShowWeatherFanart)">Skin.SetBool(ShowDailyWeatherFanart)</onclick>
+                        <onclick condition="!Skin.HasSetting(ShowWeatherFanart)">Skin.Reset(ShowDailyWeatherFanart)</onclick>
+                        <onclick>ReloadSkin</onclick>
+                        <selected>!Skin.HasSetting(ShowWeatherFanart)</selected>
+                        <visible>!IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                    </control>
+                    <control type="radiobutton" id="3010">
+                        <description>Hide daily weather fanart</description>
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <label>$LOCALIZE[31042]</label>
+                        <onclick>Skin.ToggleSetting(ShowDailyWeatherFanart)</onclick>
+                        <selected>!Skin.HasSetting(ShowDailyWeatherFanart)</selected>
+                        <enable>Skin.HasSetting(ShowWeatherFanart)</enable>
+                        <visible>!IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                        <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(3010)">Conditional</animation>
                     </control>
                 </control>
 
@@ -662,7 +702,7 @@
                 </control>
 
                 <!-- =================== -->
-                <!-- Background Settings -->
+                <!-- Backgrounds Settings -->
                 <!-- =================== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
@@ -748,7 +788,7 @@
                 </control>
 
                 <!-- =================== -->
-                <!-- Guide menu Settings -->
+                <!-- Skin Frame Settings -->
                 <!-- =================== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
@@ -904,7 +944,6 @@
                         <onclick>ReloadSkin</onclick>
                         <label>$LOCALIZE[31352]</label>
                     </control>
-
                     <control type="button" id="10092">
                         <width>1210</width>
                         <include>SettingsCategoryReloadSkin</include>
@@ -960,7 +999,6 @@
                         <visible>System.HasAddon(script.artwork.downloader)</visible>
                     </control>
                 </control>
-
                 <control type="image" id="42">
                     <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
                 </control>
