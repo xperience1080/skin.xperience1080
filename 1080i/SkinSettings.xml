@@ -185,6 +185,7 @@
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
                 </control>
+
                 <!-- ================ -->
                 <!-- General Settings -->
                 <!-- ================ -->
@@ -199,7 +200,7 @@
                         <onclick>Skin.ToggleSetting(BackgroundVideo)</onclick>
                         <label>$LOCALIZE[31102]</label>
                     </control>
-                    <control type="radiobutton" id="1012">
+                    <control type="radiobutton" id="1003">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(SpinControl.Default)</selected>
@@ -216,13 +217,20 @@
                     <control type="radiobutton" id="1006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(UsedBVolume)</selected>
+                        <onclick>Skin.ToggleSetting(UsedBVolume)</onclick>
+                        <label>$LOCALIZE[31045]</label>
+                    </control>
+                    <control type="radiobutton" id="1007">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(HideOptionsButton)</selected>
                         <onclick>Skin.ToggleSetting(HideOptionsButton)</onclick>
                         <label>$LOCALIZE[31201]</label>
                         <enable>!Skin.HasSetting(KioskMode)</enable>
                         <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1006)">Conditional</animation>
                     </control>
-                    <control type="group" id="1007">
+                    <control type="group" id="1008">
                         <description>Fake spin control</description>
                         <width>1210</width>
                         <height>77</height>
@@ -232,7 +240,7 @@
                             <width>1210</width>
                             <height>77</height>
                             <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                            <visible>!ControlGroup(1007).HasFocus</visible>
+                            <visible>!ControlGroup(1008).HasFocus</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -241,16 +249,16 @@
                             <height>77</height>
                             <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
                             <aspectratio>stretch</aspectratio>
-                            <visible>ControlGroup(1007).HasFocus</visible>
+                            <visible>ControlGroup(1008).HasFocus</visible>
                         </control>
-                        <control type="button" id="10071">
+                        <control type="button" id="10081">
                             <posx>1111</posx>
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
-                            <onleft>10072</onleft>
-                            <onright>10072</onright>
-                            <onup>1006</onup>
+                            <onleft>10082</onleft>
+                            <onright>10082</onright>
+                            <onup>1007</onup>
                             <ondown>1002</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
@@ -271,15 +279,15 @@
                             <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting,$LOCALIZE[1223])</onclick>
                             <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(rss.setting.pos)</onclick>
                         </control>
-                        <control type="button" id="10072">
+                        <control type="button" id="10082">
                             <posx>1145</posx>
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
-                            <onleft>10071</onleft>
-                            <onright>10071</onright>
-                            <onup>1009</onup>
-                            <ondown>1001</ondown>
+                            <onleft>10081</onleft>
+                            <onright>10081</onright>
+                            <onup>1007</onup>
+                            <ondown>1002</ondown>
                             <texturefocus>buttons/spinctrl/arrow-up-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-up-nf.png</texturenofocus>
                             <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.Reset(GlobalRSS.Top)</onclick>
