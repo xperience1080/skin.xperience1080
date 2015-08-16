@@ -221,6 +221,11 @@ msgctxt "#31044"
 msgid "Reset Weather Fanart Path"
 msgstr ""
 
+#: \1080i\SkinSettings.xml:222
+msgctxt "#31045"
+msgid "Display dB Volume"
+msgstr ""
+
 msgctxt "#31100"
 msgid "General"
 msgstr ""
