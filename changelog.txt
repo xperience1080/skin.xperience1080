@@ -1,4 +1,8 @@
-﻿[B]5.0.010[/B]
+﻿[B]5.0.014[/B]
+• Volume: Adds option to use dB volume indicator instead of percentages.
+• Language: EN strings updated.
+
+[B]5.0.010[/B]
 • Weather: Reverts weather when not using Fanart to original layout.
 • Weather: Moves Weather Fanart settings to Skin Settings -> Views.
 • Language: EN strings updated.
