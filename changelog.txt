@@ -1,4 +1,8 @@
-﻿[B]5.0.014[/B]
+﻿[B]5.0.020[/B]
+• Classic Home: Removes Tile Colour Settings and Navigation Arrow Skin Options if Classic Home is enabled.
+• Classic Home: Fixes focus issue when using toggle to enable/disable Classic Home.
+
+[B]5.0.014[/B]
 • Volume: Adds option to use dB volume indicator instead of percentages.
 • Language: EN strings updated.
 
