@@ -213,7 +213,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.ChannelNumber]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                             <visible>ListItem.HasEpg</visible>
                         </control>
@@ -227,7 +227,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.ChannelNumber]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                             <visible>!ListItem.HasEpg</visible>
                         </control>
@@ -269,7 +269,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>ListItem.HasEpg</visible>
 	                    </control>
@@ -312,7 +312,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                             <visible>!ListItem.HasEpg</visible>
                         </control>
@@ -395,7 +395,7 @@
                                 <align>right</align>
                                 <label>$INFO[ListItem.ChannelNumber]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>ListItem.HasEpg</visible>
                             </control>
@@ -409,7 +409,7 @@
                                 <align>right</align>
                                 <label>$INFO[ListItem.ChannelNumber]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>!ListItem.HasEpg</visible>
                             </control>
@@ -423,7 +423,7 @@
                                 <align>left</align>
                                 <label>$VAR[ListItem.Label]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>ListItem.HasEpg</visible>
                             </control>
@@ -437,7 +437,7 @@
                                 <align>right</align>
                                 <label>$INFO[ListItem.EndTime,→ ,]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>ListItem.HasEpg</visible>
                                 <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
@@ -452,7 +452,7 @@
                                 <align>left</align>
                                 <label>$VAR[ListItem.Label]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>!ListItem.HasEpg</visible>
                             </control>
@@ -745,7 +745,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.ChannelNumber]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>ListItem.HasEpg</visible>
 	                    </control>
@@ -759,7 +759,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.ChannelNumber]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>!ListItem.HasEpg</visible>
 	                    </control>
@@ -801,7 +801,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>ListItem.HasEpg</visible>
 	                    </control>
@@ -844,7 +844,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>!ListItem.HasEpg</visible>
 	                    </control>
@@ -927,7 +927,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.ChannelNumber]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <visible>ListItem.HasEpg</visible>
 	                        </control>
@@ -941,7 +941,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.ChannelNumber]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <visible>!ListItem.HasEpg</visible>
 	                        </control>
@@ -955,7 +955,7 @@
 	                            <align>left</align>
 	                            <label>$VAR[ListItem.Label]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <visible>ListItem.HasEpg</visible>
 	                        </control>
@@ -969,7 +969,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.EndTime,→ ,]</label>
 	                            <textcolor>D4FFFFFF</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <visible>ListItem.HasEpg</visible>
 	                            <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
@@ -984,7 +984,7 @@
 	                            <align>left</align>
 	                            <label>$VAR[ListItem.Label]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <visible>!ListItem.HasEpg</visible>
 	                        </control>
@@ -1163,7 +1163,7 @@
     				        <align>left</align>
     				        <label>$INFO[ListItem.ChannelName]</label>
     				        <textcolor>99FFFFFF</textcolor>
-    				        <selectedcolor>SelectedGreen</selectedcolor>
+    				        <selectedcolor>SelectedColor</selectedcolor>
     				        <scroll>false</scroll>
     				    </control>
     				    <control type="label">
@@ -1176,7 +1176,7 @@
     				        <align>right</align>
     				        <label>$INFO[ListItem.ChannelNumber]</label>
     				        <textcolor>99FFFFFF</textcolor>
-    				        <selectedcolor>SelectedGreen</selectedcolor>
+    				        <selectedcolor>SelectedColor</selectedcolor>
     				        <scroll>false</scroll>
     				    </control>
     				</channellayout>
@@ -1225,7 +1225,7 @@
     					    <align>left</align>
     					    <label>$INFO[ListItem.ChannelName]</label>
     					    <textcolor>eewhite</textcolor>
-    					    <selectedcolor>SelectedGreen</selectedcolor>
+    					    <selectedcolor>SelectedColor</selectedcolor>
     					    <scroll>false</scroll>
     					    <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(10) + ![ListItem.IsSelected | ListItem.IsPlaying]">Conditional</animation>
     					</control>
@@ -1239,7 +1239,7 @@
     					    <align>right</align>
     					    <label>$INFO[ListItem.ChannelNumber]</label>
     					    <textcolor>eewhite</textcolor>
-    					    <selectedcolor>SelectedGreen</selectedcolor>
+    					    <selectedcolor>SelectedColor</selectedcolor>
     					    <scroll>false</scroll>
     					    <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(10) + ![ListItem.IsSelected | ListItem.IsPlaying]">Conditional</animation>
     					</control>
@@ -1623,7 +1623,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.StartTime]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="label">
@@ -1636,7 +1636,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="label">
@@ -1684,7 +1684,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.StartTime]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="label">
@@ -1697,7 +1697,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="label">
@@ -1761,7 +1761,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.StartTime]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -1774,7 +1774,7 @@
 	                            <align>left</align>
 	                            <label>$INFO[ListItem.Label]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -1839,7 +1839,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.StartTime]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -1852,7 +1852,7 @@
 	                            <align>left</align>
 	                            <label>$INFO[ListItem.Label]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -2066,7 +2066,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.StartTime]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="progress">
@@ -2094,7 +2094,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.ChannelName]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="label">
@@ -2165,7 +2165,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.StartTime]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="progress">
@@ -2193,7 +2193,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.ChannelName]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="label">
@@ -2280,7 +2280,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.StartTime]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -2293,7 +2293,7 @@
 	                            <align>left</align>
 	                            <label>$INFO[ListItem.ChannelName]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -2306,7 +2306,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.EndTime,→ ,]</label>
 	                            <textcolor>D4FFFFFF</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="progress">
@@ -2396,7 +2396,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.StartTime]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -2409,7 +2409,7 @@
 	                            <align>left</align>
 	                            <label>$INFO[ListItem.ChannelName]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -2422,7 +2422,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.EndTime,→ ,]</label>
 	                            <textcolor>D4FFFFFF</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="progress">
@@ -2655,7 +2655,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.StartDate]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>!IsEmpty(ListItem.Overlay)</visible>
 	                    </control>
@@ -2683,7 +2683,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>!IsEmpty(ListItem.Overlay)</visible>
 	                    </control>
@@ -2711,7 +2711,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>IsEmpty(ListItem.Overlay)</visible>
 	                    </control>
@@ -2770,7 +2770,7 @@
 	                            <align>right</align>
 	                            <label>$VAR[ListItem.StartDate]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <visible>!IsEmpty(ListItem.Overlay)</visible>
 	                        </control>
@@ -2784,7 +2784,7 @@
 	                            <align>left</align>
 	                            <label>$VAR[ListItem.Label]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <visible>!IsEmpty(ListItem.Overlay)</visible>
 	                        </control>
@@ -2798,7 +2798,7 @@
 	                            <align>left</align>
 	                            <label>$VAR[ListItem.Label]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <visible>IsEmpty(ListItem.Overlay)</visible>
 	                        </control>
@@ -2940,7 +2940,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.StartDate]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -2953,7 +2953,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                             <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
                         </control>
@@ -3025,7 +3025,7 @@
                                 <align>right</align>
                                 <label>$INFO[ListItem.StartDate]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -3038,7 +3038,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
                             </control>
@@ -3250,7 +3250,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.StartTime]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="label">
@@ -3263,7 +3263,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
 	                    </control>
@@ -3352,7 +3352,7 @@
 	                        <align>right</align>
 	                        <label>$INFO[ListItem.StartTime]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                    </control>
 	                    <control type="label">
@@ -3365,7 +3365,7 @@
 	                        <align>left</align>
 	                        <label>$INFO[ListItem.Label]</label>
 	                        <textcolor>99FFFFFF</textcolor>
-	                        <selectedcolor>SelectedGreen</selectedcolor>
+	                        <selectedcolor>SelectedColor</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
 	                    </control>
@@ -3470,7 +3470,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.StartTime]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -3483,7 +3483,7 @@
 	                            <align>left</align>
 	                            <label>$INFO[ListItem.Label]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
 	                        </control>
@@ -3589,7 +3589,7 @@
 	                            <align>right</align>
 	                            <label>$INFO[ListItem.StartTime]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                        </control>
 	                        <control type="label">
@@ -3602,7 +3602,7 @@
 	                            <align>left</align>
 	                            <label>$INFO[ListItem.Label]</label>
 	                            <textcolor>eewhite</textcolor>
-	                            <selectedcolor>SelectedGreen</selectedcolor>
+	                            <selectedcolor>SelectedColor</selectedcolor>
 	                            <scroll>false</scroll>
 	                            <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
 	                        </control>

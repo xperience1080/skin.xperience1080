@@ -102,7 +102,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.ChannelName]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -164,7 +164,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.ChannelName]</label>
                             <textcolor>eewhite</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                             <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(10) + ![ListItem.IsSelected | ListItem.IsPlaying]">Conditional</animation>
                         </control>
@@ -561,7 +561,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.StartTime]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="progress">
@@ -587,7 +587,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.ChannelName]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -643,7 +643,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.StartTime]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="progress">
@@ -669,7 +669,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.ChannelName]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -741,7 +741,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.StartTime]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -754,7 +754,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.ChannelName]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -767,7 +767,7 @@
                                 <align>right</align>
                                 <label>$INFO[ListItem.EndTime,→ ,]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="progress">
@@ -840,7 +840,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.StartTime]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -853,7 +853,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.ChannelName]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -866,7 +866,7 @@
                                 <align>right</align>
                                 <label>$INFO[ListItem.EndTime,→ ,]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="progress">
@@ -1082,7 +1082,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.StartTime]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="progress">
@@ -1108,7 +1108,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.ChannelName]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1164,7 +1164,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.StartTime]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="progress">
@@ -1190,7 +1190,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.ChannelName]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1262,7 +1262,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.StartTime]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1275,7 +1275,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.ChannelName]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1288,7 +1288,7 @@
                                 <align>right</align>
                                 <label>$INFO[ListItem.EndTime,→ ,]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="progress">
@@ -1361,7 +1361,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.StartTime]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1374,7 +1374,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.ChannelName]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1387,7 +1387,7 @@
                                 <align>right</align>
                                 <label>$INFO[ListItem.EndTime,→ ,]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="progress">
@@ -1608,7 +1608,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.StartTime]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1621,7 +1621,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1669,7 +1669,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.StartTime]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1682,7 +1682,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1746,7 +1746,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.StartTime]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1759,7 +1759,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1824,7 +1824,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.StartTime]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1837,7 +1837,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">

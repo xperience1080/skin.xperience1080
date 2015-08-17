@@ -194,7 +194,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>99FFFFFF</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
                             </control>
@@ -267,7 +267,7 @@
                                     <align>left</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>99FFFFFF</textcolor>
-                                    <selectedcolor>SelectedGreen</selectedcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
                                     <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
                                 </control>
