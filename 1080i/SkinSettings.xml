@@ -350,6 +350,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(HomeClassicMode)</selected>
                         <onclick>Skin.ToggleSetting(HomeClassicMode)</onclick>
+                        <onclick>ReloadSkin</onclick>
                         <label>$LOCALIZE[31129]</label>
                     </control>
                     <control type="button" id="2001">
@@ -389,6 +390,7 @@
                         <onclick>SetProperty(Dialog,$LOCALIZE[31989])</onclick>
                         <onclick>ActivateWindow(3001)</onclick>
                         <label>$LOCALIZE[31144]</label>
+                        <visible>!Skin.HasSetting(HomeClassicMode)</visible>
                     </control>
                     <control type="radiobutton" id="2005">
                         <width>1210</width>
@@ -396,6 +398,7 @@
                         <selected>Skin.HasSetting(HomeArrows)</selected>
                         <onclick>Skin.ToggleSetting(HomeArrows)</onclick>
                         <label>$LOCALIZE[31994]</label>
+                        <visible>!Skin.HasSetting(HomeClassicMode)</visible>
                     </control>
                     <control type="radiobutton" id="2006">
                         <width>1210</width>
@@ -812,6 +815,7 @@
                         <onclick>ClearProperty(CustomDialog)</onclick>
                         <onclick>SetProperty(Dialog,$LOCALIZE[31995])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
+                        <visible>!Skin.HasSetting(HomeClassicMode)</visible>
                     </control>
                     <control type="radiobutton" id="6001">
                         <width>1210</width>
