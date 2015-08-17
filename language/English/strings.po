@@ -223,7 +223,7 @@ msgstr ""
 
 #: \1080i\SkinSettings.xml:222
 msgctxt "#31045"
-msgid "Display dB Volume"
+msgid "Display Volume in dB"
 msgstr ""
 
 msgctxt "#31100"
