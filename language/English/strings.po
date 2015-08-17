@@ -118,7 +118,7 @@ msgstr ""
 
 #: \1080i\SkinSettings.xml:891
 msgctxt "#31024"
-msgid "Reset Xperience1080"
+msgid "Reset Skin Settings"
 msgstr ""
 
 #: \1080i\SkinSettings.xml:892
