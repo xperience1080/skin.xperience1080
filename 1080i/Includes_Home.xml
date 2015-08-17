@@ -1847,7 +1847,9 @@
                                 </control>
                             </focusedlayout>
                             <content>
-                                <include>HomeWidget.3</include>
+                                <include name="HomeWidget.3">
+                                    <param name="IconType">fanart</param>
+                                </include>
                             </content>
                         </control>
                         <control type="image">
