@@ -95,7 +95,7 @@
                         <align>left</align>
                         <label>$VAR[MusicListLabel]</label>
                         <textcolor>aawhite</textcolor>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <scroll>false</scroll>
                         <visible>!IsEmpty(ListItem.Artist) + !ListItem.IsFolder</visible>
                     </control>
@@ -109,7 +109,7 @@
                         <align>left</align>
                         <label>$VAR[MusicListLabel]</label>
                         <textcolor>aawhite</textcolor>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <scroll>false</scroll>
                         <visible>IsEmpty(ListItem.Artist) | ListItem.IsFolder</visible>
                     </control>
@@ -328,7 +328,7 @@
                         <align>left</align>
                         <label>$VAR[MusicListSongLabel]</label>
                         <textcolor>aawhite</textcolor>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <scroll>false</scroll>
                         <visible>!IsEmpty(ListItem.Artist)</visible>
                     </control>
@@ -342,7 +342,7 @@
                         <align>left</align>
                         <label>$VAR[MusicListSongLabel]</label>
                         <textcolor>aawhite</textcolor>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <scroll>false</scroll>
                         <visible>IsEmpty(ListItem.Artist)</visible>
                     </control>
@@ -455,7 +455,7 @@
                             <align>left</align>
                             <label>$VAR[MusicListLabel]</label>
                             <textcolor>eewhite</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                             <visible>!IsEmpty(ListItem.Artist) + !ListItem.IsFolder</visible>
                         </control>
@@ -469,7 +469,7 @@
                             <align>left</align>
                             <label>$VAR[MusicListLabel]</label>
                             <textcolor>eewhite</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                             <visible>IsEmpty(ListItem.Artist) | ListItem.IsFolder</visible>
                         </control>
@@ -741,7 +741,7 @@
                                 <align>left</align>
                                 <label>$VAR[MusicListSongLabel]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>!IsEmpty(ListItem.Artist)</visible>
                             </control>
@@ -755,7 +755,7 @@
                                 <align>left</align>
                                 <label>$VAR[MusicListSongLabel]</label>
                                 <textcolor>eewhite</textcolor>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>IsEmpty(ListItem.Artist)</visible>
                             </control>
@@ -1146,7 +1146,7 @@
                             <font>Font-Condensed-S29-B</font>
                             <label>$VAR[MusicInfoListSongLabel]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
                             <visible>!Window.IsActive(songinformation)</visible>
@@ -1159,7 +1159,7 @@
                             <font>Font-Condensed-S31</font>
                             <label>$VAR[MusicInfoListSongLabel2]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
                             <align>right</align>
@@ -1303,7 +1303,7 @@
                             <font>Font-Condensed-S29-B</font>
                             <label>$VAR[MusicInfoListSongLabel]</label>
                             <textcolor>eewhite</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
                             <visible>!Window.IsActive(songinformation)</visible>
@@ -1320,7 +1320,7 @@
                             <font>Font-Condensed-S31</font>
                             <label>$VAR[MusicInfoListSongLabel2]</label>
                             <textcolor>eewhite</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
                             <align>right</align>
@@ -2673,7 +2673,7 @@
                         <label>$INFO[ListItem.Title]</label>
                         <font>Font-Condensed-S34-B</font>
                         <textcolor>C0FFFFFF</textcolor>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                     </control>
@@ -2696,7 +2696,7 @@
                         <label>$INFO[ListItem.Label]</label>
                         <font>Font-Condensed-S34-B</font>
                         <textcolor>C0FFFFFF</textcolor>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <visible>IsEmpty(ListItem.Title) + IsEmpty(ListItem.Artist)</visible>

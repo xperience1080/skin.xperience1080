@@ -494,13 +494,13 @@
     <!-- Info -->
     <variable name="AddonLabel2">
         <value condition="stringcompare(ListItem.Label2,$LOCALIZE[24098])">[COLOR=SelectedRed]$INFO[ListItem.Label2, ,][/COLOR]</value>
-        <value condition="stringcompare(ListItem.Label2,$LOCALIZE[305])">[COLOR=SelectedGreen]$INFO[ListItem.Label2, ,][/COLOR]</value>
+        <value condition="stringcompare(ListItem.Label2,$LOCALIZE[305])">[COLOR=SelectedColor]$INFO[ListItem.Label2, ,][/COLOR]</value>
         <value condition="stringcompare(ListItem.Label2,$LOCALIZE[24068])">[COLOR=SelectedBlue]$INFO[ListItem.Label2, ,][/COLOR]</value>
         <value>$INFO[ListItem.Label2, ,]</value>
     </variable>
     
     <variable name="ListItem.Label">
-        <value condition="ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]">[COLOR=SelectedGreen]$INFO[ListItem.Label][/COLOR]</value>
+        <value condition="ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]">[COLOR=SelectedColor]$INFO[ListItem.Label][/COLOR]</value>
         <value>$INFO[ListItem.Label]</value>
     </variable>
     
@@ -526,23 +526,23 @@
     </variable>
     
     <variable name="ListItem.Label2.Focus">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]$VAR[ListItem.Label2][/COLOR]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]$VAR[ListItem.Label2][/COLOR]</value>
         <value>$VAR[ListItem.Label2]</value>
     </variable>
     
     <variable name="ListItem.Year">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]$INFO[ListItem.Year][/COLOR]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]$INFO[ListItem.Year][/COLOR]</value>
         <value>$INFO[ListItem.Year]</value>
     </variable>
     
     <variable name="ListItem.Title">
-        <value condition="!IsEmpty(ListItem.Title) + [ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]]">[COLOR=SelectedGreen]$INFO[ListItem.Title][/COLOR]</value>
+        <value condition="!IsEmpty(ListItem.Title) + [ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]]">[COLOR=SelectedColor]$INFO[ListItem.Title][/COLOR]</value>
         <value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <value>$INFO[ListItem.Label]</value>
     </variable>
     
     <variable name="ListItem.Title.Focus">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]$VAR[ListItem.Title][/COLOR]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]$VAR[ListItem.Title][/COLOR]</value>
         <value>$VAR[ListItem.Title]</value>
     </variable>
     
@@ -552,17 +552,17 @@
     </variable>
     
     <variable name="ListItem.ChannelNumberLabel">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]$INFO[ListItem.ChannelNumberLabel][/COLOR]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]$INFO[ListItem.ChannelNumberLabel][/COLOR]</value>
         <value>$INFO[ListItem.ChannelNumberLabel]</value>
     </variable>
     
     <variable name="ListItem.StartDate">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]$INFO[ListItem.StartDate][/COLOR]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]$INFO[ListItem.StartDate][/COLOR]</value>
         <value>$INFO[ListItem.StartDate]</value>
     </variable>
     
     <variable name="ListItem.Season">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]$VAR[ListItem.S][/COLOR]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]$VAR[ListItem.S][/COLOR]</value>
         <value>$VAR[ListItem.S]</value>
     </variable>
   
@@ -572,7 +572,7 @@
     </variable>
     
     <variable name="ListItem.Episode">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]$VAR[ListItem.E][/COLOR]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]$VAR[ListItem.E][/COLOR]</value>
         <value>$VAR[ListItem.E]</value>
     </variable>
 
@@ -625,7 +625,7 @@
 	</variable>	
        
     <variable name="ListItem.EpgInfo">
-        <value condition="ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]">[COLOR=SelectedGreen]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Genre, • ,][/COLOR]</value>
+        <value condition="ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]">[COLOR=SelectedColor]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Genre, • ,][/COLOR]</value>
         <value>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Genre, • ,]</value>
     </variable>
     
@@ -645,7 +645,7 @@
     </variable>
     
     <variable name="SelectedColor.Open">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]</value>
     </variable>
     
     <variable name="SelectedColor.Close">
@@ -653,7 +653,7 @@
     </variable>
 
     <variable name="BannerSelectedColor.Open">
-        <value condition="ListItem.IsPlaying">[COLOR=SelectedGreen]</value>
+        <value condition="ListItem.IsPlaying">[COLOR=SelectedColor]</value>
     </variable>
     
     <variable name="BannerSelectedColor.Close">
