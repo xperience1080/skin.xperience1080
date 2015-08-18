@@ -1,4 +1,22 @@
-﻿[B]4.1.201[/B]
+﻿[B]4.1.320[/B]
+• Home: Fixes focus issue when only Home, Movies, TV, Settings enabled.
+• Skin Frame: Changes layout and options of lower right Time and Weather.
+
+[B]4.1.310[/B]
+• Volume Display: Adds option to display volume in either a percentage or decibels.
+• Language: EN updated
+• Language: DE added
+
+[B]4.1.310[/B]
+• Volume Display: Adds option to display volume in either a percentage or decibels.
+
+[B]4.1.310[/B]
+• Weather: Reverted to oringal layout when fanart not displayed.
+
+[B]4.1.300[/B]
+• Flags (default theme): Updates to all flags, missing ones added.
+
+[B]4.1.201[/B]
 • Skin Settings: Fixes up/down for Home Settings.
 
 [B]4.1.200[/B]
