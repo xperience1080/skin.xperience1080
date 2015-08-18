@@ -1170,3 +1170,7 @@ msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Setze eigene Überlagerung"
 
+msgctxt "#31996"
+msgid "Hide Date"
+msgstr "Verstecke das Datum"
+
