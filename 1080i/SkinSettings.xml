@@ -820,14 +820,23 @@
                     <control type="radiobutton" id="6001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(Guide.HideClock)</selected>
+                        <selected>!Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
                         <label>$LOCALIZE[31975]</label>
+                    </control>
+                    <control type="radiobutton" id="60011">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(Guide.HideClockDate)</selected>
+                        <onclick>Skin.ToggleSetting(Guide.HideClockDate)</onclick>
+                        <label>$LOCALIZE[31996]</label>
+                        <enable>!Skin.HasSetting(Guide.HideClock)</enable>
+                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(60011)">Conditional</animation>
                     </control>
                     <control type="radiobutton" id="60012">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(Guide.HideWeather)</selected>
+                        <selected>!Skin.HasSetting(Guide.HideWeather)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideWeather)</onclick>
                         <label>$LOCALIZE[31976]</label>
                     </control>

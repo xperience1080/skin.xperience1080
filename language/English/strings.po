@@ -1177,3 +1177,7 @@ msgstr ""
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr ""
+
+msgctxt "#31996"
+msgid "Hide Date"
+msgstr ""
