@@ -6,11 +6,7 @@
 • Volume Display: Adds option to display volume in either a percentage or decibels.
 • Language: EN updated
 • Language: DE added
-
-[B]4.1.310[/B]
 • Volume Display: Adds option to display volume in either a percentage or decibels.
-
-[B]4.1.310[/B]
 • Weather: Reverted to oringal layout when fanart not displayed.
 
 [B]4.1.300[/B]
