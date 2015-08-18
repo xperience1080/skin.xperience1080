@@ -1,4 +1,9 @@
-﻿[B]4.1.320[/B]
+﻿[B]4.1.400[/B]
+• PVR: playing channel name is not marked blue
+• Home: fix wrong type of icon/art for Movies widget in Classic Home
+• VolumeBar: adjustments after introduce dB value in volume bar
+
+[B]4.1.320[/B]
 • Home: Fixes focus issue when only Home, Movies, TV, Settings enabled.
 • Skin Frame: Changes layout and options of lower right Time and Weather.
 
