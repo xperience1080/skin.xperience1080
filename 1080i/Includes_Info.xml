@@ -19,7 +19,7 @@
                 <control type="image">
                     <description>Small weather</description>
                     <posx>174r</posx>
-                    <posy>950</posy>
+                    <posy>970</posy>
                     <width>100</width>
                     <height>100</height>
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
@@ -30,7 +30,7 @@
                 <control type="label">
                     <description>Weather label</description>
                     <posx>164r</posx>
-                    <posy>950</posy>
+                    <posy>970</posy>
                     <width>250</width>
                     <height>100</height>
 					<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
@@ -47,7 +47,7 @@
 				<control type="image">
 					<description>Clock image</description>
 					<posx>345r</posx>
-					<posy>950</posy>
+					<posy>970</posy>
 					<width>92</width>
 					<height>92</height>
 					<texture>windows/home/clock.png</texture>
@@ -60,7 +60,7 @@
 				<control type="label">
 					<description>Clock label</description>
 					<posx>335r</posx>
-					<posy>950</posy>
+					<posy>970</posy>
 					<width>600</width>
 					<height>100</height>
 					<label>$VAR[ClockDateTimeValue]</label>
@@ -82,14 +82,14 @@
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <posx>154r</posx>
-                    <posy>950</posy>
+                    <posy>970</posy>
                     <width>100</width>
                     <height>100</height>
                     <texture>windows/pvr/recording-info.png</texture>
                 </control>
                 <control type="image">
                     <posx>154r</posx>
-                    <posy>950</posy>
+                    <posy>970</posy>
                     <width>100</width>
                     <height>100</height>
                     <texture>windows/pvr/recording-info-pulse.png</texture>
@@ -98,7 +98,7 @@
             </control>
             <control type="image">
                 <posx>154r</posx>
-                <posy>950</posy>
+                <posy>970</posy>
                 <width>100</width>
                 <height>100</height>
                 <texture>windows/pvr/timer.png</texture>
@@ -109,7 +109,7 @@
             <control type="image">
                 <description>Mute</description>
                 <posx>150r</posx>
-                <posy>950</posy>
+                <posy>970</posy>
                 <width>100</width>
                 <height>100</height>
                 <texture>overlays/volume/muted.png</texture>
@@ -135,7 +135,7 @@
             <description>Options Buttons</description>
             <include>Animation_OptionsButton</include>
             <posx>276</posx>
-            <posy>950</posy>
+            <posy>970</posy>
             <animation effect="slide" start="0" end="-204" time="0" condition="Skin.HasSetting(HideShutdownButton)">Conditional</animation>
             <control type="button" id="9010">
                 <description>Options Button</description>
@@ -180,7 +180,7 @@
             <include>Animation_ShutdownButton</include>
             <control type="image">
                 <posx>72</posx>
-                <posy>950</posy>
+                <posy>970</posy>
                 <width>100</width>
                 <height>100</height>
                 <texture>buttons/shutdown_nofo.png</texture>
@@ -189,7 +189,7 @@
             </control>
             <control type="label">
                 <posx>157</posx>
-                <posy>950</posy>
+                <posy>970</posy>
                 <width>180</width>
                 <height>100</height>
                 <label>$LOCALIZE[31507]</label>
