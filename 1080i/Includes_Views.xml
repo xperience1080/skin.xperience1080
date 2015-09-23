@@ -74,19 +74,6 @@
         <include>Viewtype-CoverView</include>
     </include>
 
-    <include name="PVRViews">
-        <control type="group" id="50">
-        	<include>Viewtype-TVChannelView</include>
-        	<include>Viewtype-RadioChannelView</include>
-        	<include>Viewtype-EPGTimeline</include>
-        	<include>Viewtype-TVGuideChannelView</include>
-        	<include>Viewtype-TVGuideNowNext</include>
-        	<include>Viewtype-TVRecordingsView</include>
-        	<include>Viewtype-TVTimersView</include>
-        	<include>Viewtype-TVSearch</include>
-        </control>
-    </include>
-
 <!-- ========= -->
 <!-- Variables -->
 <!-- ========= -->
