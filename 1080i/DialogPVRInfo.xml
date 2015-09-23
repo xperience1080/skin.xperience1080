@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="602">
+<window id="601">
     <defaultcontrol always="true">8000</defaultcontrol>
     <include condition="Window.IsActive(fullscreenvideo)">PVRGuideInfoZOrder</include>
     <controls>
-		<include condition="Window.IsActive(fullscreenvideo)">FadeBackground</include>
+        <include condition="Window.IsActive(fullscreenvideo)">FadeBackground</include>
         <control type="group">
             <include>KeyboardAnimations</include>
             <visible>!Window.IsVisible(yesnodialog)</visible>
@@ -153,7 +153,6 @@
                 <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">Conditional</animation>
             </control>
             <control type="group" id="8000">
-                <visible>Window.IsActive(pvrguideinfo)</visible>
                 <posx>549</posx>
                 <posy>843</posy>
                 <defaultcontrol>5</defaultcontrol>
@@ -169,6 +168,7 @@
                     <ondown>60</ondown>
                 </control>
                 <control type="button" id="5">
+                    <visible>Window.IsActive(pvrguideinfo)</visible>
                     <posx>200</posx>
                     <description>Switch</description>
                     <label>$LOCALIZE[19165]</label>
@@ -181,6 +181,7 @@
                     <ondown>60</ondown>
                 </control>
                 <control type="button" id="6">
+                    <visible>Window.IsActive(pvrguideinfo)</visible>
                     <posx>469</posx>
                     <description>Record</description>
                     <label>-</label>
@@ -189,22 +190,6 @@
                     <texturenofocus>buttons/record-nf.png</texturenofocus>
                     <onleft>5</onleft>
                     <onright>7</onright>
-                    <onup>60</onup>
-                    <ondown>60</ondown>
-                </control>
-            </control>
-            <control type="group" id="8000">
-                <visible>Window.IsActive(pvrrecordinginfo)</visible>
-                <posx>549</posx>
-                <posy>843</posy>
-                <control type="button" id="10">
-                    <description>Select</description>
-                    <texturefocus>buttons/cancel-fo.png</texturefocus>
-                    <texturenofocus>buttons/cancel-nf.png</texturenofocus>
-                    <include>DialogButtonDimensions</include>
-                    <label>$LOCALIZE[31923]</label>
-                    <onleft>6</onleft>
-                    <onright>5</onright>
                     <onup>60</onup>
                     <ondown>60</ondown>
                 </control>
