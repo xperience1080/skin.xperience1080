@@ -6,7 +6,6 @@
     <onload condition="Skin.HasSetting(MovieInformation.PlayTrailer)">AlarmClock(PlayTrailer,PlayMedia($INFO[ListItem.Trailer],false,1),00:01,silent)</onload>
     <onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <onunload>ClearProperty(fanart_image,home)</onunload>
-    <allowoverlay>no</allowoverlay>
     <controls>
         <!-- Movies, TVShows, Seasons, Episodes -->
         <control type="group">

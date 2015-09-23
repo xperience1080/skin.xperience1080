@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="3003">
     <defaultcontrol always="true">3</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onunload condition="Skin.HasSetting(HomeHomeTile1) + IsEmpty(Skin.String(HomeHomeTile1.Path))">Skin.Reset(HomeHomeTile1)</onunload>
     <onunload condition="Skin.HasSetting(HomeHomeTile2) + IsEmpty(Skin.String(HomeHomeTile2.Path))">Skin.Reset(HomeHomeTile2)</onunload>
     <onunload condition="Skin.HasSetting(HomeVideoTile1) + IsEmpty(Skin.String(HomeVideoTile1.Path))">Skin.Reset(HomeVideoTile1)</onunload>

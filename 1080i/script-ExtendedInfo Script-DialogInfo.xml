@@ -2,7 +2,6 @@
 <window>
     <defaultcontrol always="true">4000</defaultcontrol>
     <onload>SetFocus(4001)</onload>
-    <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
             <posx>0</posx>

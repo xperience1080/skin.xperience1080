@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="3005">
     <zorder>3</zorder>
-    <allowoverlay>no</allowoverlay>
     <visible>!Window.IsVisible(startup) + [Skin.HasSetting(GlobalRSS.Top) | Skin.HasSetting(GlobalRSS.Bottom)]</visible>
     <controls>
         <control type="rss">

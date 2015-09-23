@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <allowoverlay>no</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <onunload>ClearProperty(fanart_image,home)</onunload>
     <onunload>ClearProperty(HomeSearch,home)</onunload>

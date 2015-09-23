@@ -4,7 +4,6 @@
 	<animation effect="fade" time="250">WindowOpen</animation>
 	<animation effect="fade" time="250">WindowClose</animation>
 	<zorder>2</zorder>
-	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>FadeBackgroundButtonMenu</include>
 		<control type="button" id="9001">

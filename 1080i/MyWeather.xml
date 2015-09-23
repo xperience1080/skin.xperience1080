@@ -2,7 +2,6 @@
 <window>
     <defaultcontrol always="true">101</defaultcontrol>
     <menucontrol>9000</menucontrol>
-    <allowoverlay>no</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <controls>
 

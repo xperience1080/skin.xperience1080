@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="3001">
     <defaultcontrol always="true">3</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onunload condition="!IsEmpty(Window(skinsettings).property(Guide.Custom))">ClearProperty(Guide.Custom,skinsettings)</onunload>
     <onunload condition="!IsEmpty(Window(Home).Property(ReloadSkin))">SetFocus(2000)</onunload>
     <controls>

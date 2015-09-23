@@ -3,7 +3,6 @@
     <include condition="!Skin.HasSetting(OSDDefaultSubtitleButton.Enabled) + !VideoPlayer.Content(LiveTV)">OSDDefaultControlPlay</include>
     <include condition="Skin.HasSetting(OSDDefaultSubtitleButton.Enabled) + !VideoPlayer.Content(LiveTV)">OSDDefaultControlSubtitles</include>
     <include condition="VideoPlayer.Content(LiveTV)">OSDDefaultControlLiveTV</include>
-    <allowoverlay>yes</allowoverlay>
     <zorder>2</zorder>
     <controls>
         <control type="group">

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
             <animation type="WindowOpen" condition="Window.IsVisible(FileBrowser)" reversible="false">

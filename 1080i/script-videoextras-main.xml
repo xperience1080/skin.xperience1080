@@ -3,7 +3,6 @@
 	<onload condition="!IsEmpty(ListItem.TvShowTitle)">SetProperty("TvTunesSupported", "TvShows")</onload>
 	<onload condition="IsEmpty(ListItem.TvShowTitle)">SetProperty("TvTunesSupported", "Movies")</onload>
 	<defaultcontrol always="true">51</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<control type="image">
 			<include>FullScreenDimensions</include>

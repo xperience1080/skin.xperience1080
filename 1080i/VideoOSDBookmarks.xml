@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">1</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
 	<onload condition="IntegerGreaterThan(Container(11).NumItems,0)">SetFocus(11)</onload>
     <controls>
         <control type="group">
