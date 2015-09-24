@@ -120,7 +120,6 @@
     </include>
     
     <variable name="OptionsButtonTexture">
-        <value condition="Window.IsActive(pvr)">buttons/options_nofo.png</value>
         <value condition="Window.IsActive(programs) + [Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(60) | Control.IsVisible(61) | [Control.IsVisible(50) + substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)]]">buttons/options-right.png</value>
         <value condition="Window.IsActive(programs) + [Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58)]">buttons/options-down.png</value>
         <value condition="Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(60) | Control.IsVisible(500) | Control.IsVisible(501)">buttons/options-leftright.png</value>
