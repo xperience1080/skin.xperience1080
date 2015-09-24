@@ -176,7 +176,7 @@
             <orientation>horizontal</orientation>
             <itemgap>0</itemgap>
             <control type="label">
-                <width min="50" max="400">auto</width>
+                <width min="50" max="600">auto</width>
                 <height>120</height>
                 <label>$INFO[Container.NumItems,, $LOCALIZE[31822]]  [COLOR=44FFFFFF]•[/COLOR]$INFO[Control.GetLabel(3), ]</label>
                 <font>Font-Condensed-S28</font>
@@ -186,7 +186,7 @@
                 <visible>IntegerGreaterThan(Container.NumItems,0) + !IntegerGreaterThan(Container.NumItems,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
             </control>          
             <control type="label">
-                <width min="50" max="400">auto</width>
+                <width min="50" max="600">auto</width>
                 <height>120</height>
                 <label>$INFO[Container.NumItems,, $LOCALIZE[31817]]  [COLOR=44FFFFFF]•[/COLOR]$INFO[Control.GetLabel(3), ]</label>
                 <font>Font-Condensed-S28</font>
