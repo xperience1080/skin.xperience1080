@@ -9,1269 +9,933 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"Language-Team: Croatian (http://www.transifex.com/projects/p/xbmc-skins/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgctxt "#31000"
-msgid "Known Movies"
-msgstr ""
-
-msgctxt "#31001"
-msgid "Cinema Experience"
-msgstr ""
-
-msgctxt "#31002"
-msgid "Checking for"
-msgstr ""
-
-msgctxt "#31003"
-msgid "Checking for updates"
-msgstr ""
-
-msgctxt "#31004"
-msgid "Known TV Shows"
-msgstr ""
-
-msgctxt "#31005"
-msgid "Known Movie Roles"
-msgstr ""
-
-msgctxt "#31006"
-msgid "Known TV Roles"
-msgstr ""
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 msgctxt "#31007"
 msgid "Age"
-msgstr ""
+msgstr "Dob"
 
 msgctxt "#31008"
 msgid "Born"
-msgstr ""
+msgstr "Rođen/a"
 
 msgctxt "#31009"
 msgid "Died"
-msgstr ""
-
-msgctxt "#31010"
-msgid "TV Roles"
-msgstr ""
-
-msgctxt "#31011"
-msgid "Movie Roles"
-msgstr ""
+msgstr "Preminuo/la"
 
 msgctxt "#31012"
 msgid "Artwork"
-msgstr ""
+msgstr "Slika omota"
 
-msgctxt "#31013"
-msgid "Loading PVR Channels..."
-msgstr ""
-
-msgctxt "#31014"
-msgid "Radio Stations"
-msgstr ""
-
-msgctxt "#31015"
-msgid "Movie Crew"
-msgstr ""
-
-msgctxt "#31016"
-msgid "TV Crew"
-msgstr ""
-
-msgctxt "#31017"
-msgid "TV Show Roles"
-msgstr ""
-
-msgctxt "#31018"
-msgid "TV Show Crew"
-msgstr ""
-
-msgctxt "#31019"
-msgid "Trakt Options"
-msgstr ""
-
-#: \1080i\Includes_Home.xml:1070
-msgctxt "#31020"
-msgid "Airing Now & Next"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:137
-msgctxt "#31021"
-msgid "Frame"
-msgstr ""
-
-#: \1080i\DialogVideoInfo.xml:544
-msgctxt "#31022"
-msgid "Video Extras"
-msgstr ""
-
-#: \1080i\DialogVideoInfo.xml:545 \1080i\DialogVideoInfo.xml:550
 msgctxt "#31023"
 msgid "Extras"
-msgstr ""
+msgstr "Dodatno"
 
-#: \1080i\SkinSettings.xml:891
-msgctxt "#31024"
-msgid "Reset Skin Settings"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:892
-msgctxt "#31025"
-msgid "WARNING: This will reset ALL skin settings"
-msgstr ""
-
-#: \1080i\Custom_LanguageDialog.xml:140
 msgctxt "#31026"
 msgid "Germany"
-msgstr ""
+msgstr "Njemačka"
 
-#: \1080i\Custom_LanguageDialog.xml:147
 msgctxt "#31027"
 msgid "Italy"
-msgstr ""
+msgstr "Italija"
 
-#: \1080i\Custom_LanguageDialog.xml:154
-msgctxt "#31028"
-msgid "United Kingdom"
-msgstr ""
-
-#: \1080i\Custom_LanguageDialog.xml:161
 msgctxt "#31029"
 msgid "United States"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:632
-msgctxt "#31030"
-msgid "Hide Clock & Weather"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:639
-msgctxt "#31031"
-msgid "Hide Chapter Information"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeItems.xml:622
-msgctxt "#31032"
-msgid "Pictures Tile"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1193
-msgctxt "#31033"
-msgid "XKCD.com"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1195
-msgctxt "#31034"
-msgid "Cyanide & Happiness"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1197
-msgctxt "#31035"
-msgid "Daily Babes"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1199
-msgctxt "#31036"
-msgid "MyPicsDB"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1201
-msgctxt "#31037"
-msgid "Photos"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:382
-msgctxt "#31038"
-msgid "Path to Pictures"
-msgstr ""
-
-#: \1080i\Custom_SettingsDialog.xml:130
-msgctxt "#31039"
-msgid "Pictures Tiles (Purple)"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:391
-msgctxt "#31040"
-msgid "Reset Pictures Path"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:595
-msgctxt "#31041"
-msgid "Hide Weather Fanart"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:606
-msgctxt "#31042"
-msgid "Hide Weather Daily Fanart"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:617
-msgctxt "#31043"
-msgid "Set Weather Fanart Path"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:625
-msgctxt "#31044"
-msgid "Reset Weather Fanart Path"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:222
-msgctxt "#31045"
-msgid "Display Volume in dB"
-msgstr ""
-
-#empty strings from id 31046 to 31099
+msgstr "Sjedinjene Države"
 
 msgctxt "#31100"
 msgid "General"
-msgstr ""
+msgstr "Općenito"
 
 msgctxt "#31101"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Omogući Kiosk način"
 
 msgctxt "#31102"
 msgid "Display Now Playing Video in Background"
-msgstr ""
+msgstr "Prikazuj trenutno reproduciran video u pozadini"
 
 msgctxt "#31103"
 msgid "Display Artist Slideshow in Music Visualisation"
-msgstr ""
+msgstr "Prikazuj Artist Slideshow u glazbenoj vizualizaciji"
 
 msgctxt "#31104"
 msgid "Display Paths for Files and Streams"
-msgstr ""
+msgstr "Prikazuj putanje datoteka i streamova"
 
 msgctxt "#31105"
 msgid "Animate Artist Slideshow"
-msgstr ""
-
-msgctxt "#31106"
-msgid "Display Fanart above Visualisation"
-msgstr ""
-
-#empty string with id 31107
+msgstr "Animiraj Artist Slideshow"
 
 msgctxt "#31108"
 msgid "Automatically switch to music visualisation upon Play"
-msgstr ""
+msgstr "Prilikom početka sviranja automatski pokreni glazbenu vizualizaciju"
 
 msgctxt "#31109"
 msgid "Enable Auto Scrolling for text"
-msgstr ""
-
-#empty strings from id 31110 to 31111
+msgstr "Omogući automatsko pomicanje teksta"
 
 msgctxt "#31112"
 msgid "Invert Spin Control"
-msgstr ""
+msgstr "Izokreni spin kontrolu"
 
 msgctxt "#31113"
 msgid "Top"
-msgstr ""
+msgstr "Gore"
 
 msgctxt "#31114"
 msgid "Bottom"
-msgstr ""
-
-#empty strings from id 31115 to 31128
-
-msgctxt "#31129"
-msgid "Use Classic Home"
-msgstr ""
+msgstr "Dolje"
 
 msgctxt "#31130"
 msgid "Home"
-msgstr ""
-
-msgctxt "#31131"
-msgid "Manage Home Categories"
-msgstr ""
-
-#empty strings from id 31132 to 31133
+msgstr "Doma"
 
 msgctxt "#31134"
 msgid "Display Profile Image"
-msgstr ""
+msgstr "Prikazuj sliku profiila"
 
 msgctxt "#31135"
 msgid "Display Sub-menu Arrow"
-msgstr ""
+msgstr "Prikazuj strelicu podizbornika"
 
 msgctxt "#31136"
 msgid "Manage custom Home Items"
-msgstr ""
+msgstr "Uredi vlastite stavke početnog zaslona"
 
 msgctxt "#31137"
 msgid "Custom"
-msgstr ""
+msgstr "Vlastito"
 
 msgctxt "#31138"
 msgid "Name"
-msgstr ""
+msgstr "Ime"
 
 msgctxt "#31139"
 msgid "Icon"
-msgstr ""
+msgstr "Ikona"
 
 msgctxt "#31140"
 msgid "Manage custom Home Widgets"
-msgstr ""
+msgstr "Uredi vlastite widgete početnog zaslona"
 
 msgctxt "#31141"
 msgid "Type"
-msgstr ""
+msgstr "Vrsta"
 
 msgctxt "#31142"
 msgid "Path"
-msgstr ""
+msgstr "Putanja"
 
 msgctxt "#31143"
 msgid "Recommended size 633x437px"
-msgstr ""
+msgstr "Preporučene dimenzije 633x437px"
 
 msgctxt "#31144"
 msgid "Manage custom Home Tile Colours"
-msgstr ""
+msgstr "Uredi vlastite boje pločica na početnom zaslonu"
 
 msgctxt "#31145"
 msgid "Video add-on"
-msgstr ""
+msgstr "Video dodatak"
 
 msgctxt "#31146"
 msgid "Music add-on"
-msgstr ""
+msgstr "Glazbeni dodatak"
 
 msgctxt "#31147"
 msgid "Picture add-on"
-msgstr ""
+msgstr "Slikovni dodatak"
 
 msgctxt "#31148"
 msgid "Program add-on"
-msgstr ""
+msgstr "Programski dodatak"
 
 msgctxt "#31149"
 msgid "Video Playlist"
-msgstr ""
+msgstr "Video popis izvođenja"
 
 msgctxt "#31150"
 msgid "Music Playlist"
-msgstr ""
+msgstr "Glazbeni popis izvođenja"
 
 msgctxt "#31151"
 msgid "Custom"
-msgstr ""
+msgstr "Vlastito"
 
 msgctxt "#31152"
 msgid "Music Panel opens"
-msgstr ""
+msgstr "Glazbeni panel otvara"
 
 msgctxt "#31153"
 msgid "Favourite"
-msgstr ""
+msgstr "Favorit"
 
 msgctxt "#31154"
 msgid "Recommended size 283x283px"
-msgstr ""
-
-#empty string with id 31155
+msgstr "Preporučene dimenzije 283x283px"
 
 msgctxt "#31156"
 msgid "Show Name"
-msgstr ""
+msgstr "Naziv pločice"
 
 msgctxt "#31157"
 msgid "Video Tile"
-msgstr ""
+msgstr "Video pločica"
 
 msgctxt "#31158"
 msgid "TV Show Tile"
-msgstr ""
+msgstr "Pločica serije"
 
 msgctxt "#31159"
 msgid "App Tile"
-msgstr ""
+msgstr "Pločica aplikacije"
 
 msgctxt "#31160"
 msgid "Animate Icon"
-msgstr ""
+msgstr "Animiraj ikonu"
 
 msgctxt "#31161"
 msgid "Music Tile"
-msgstr ""
+msgstr "Glazbena pločica"
 
 msgctxt "#31162"
 msgid "Widget"
-msgstr ""
-
-#empty string with id 31163
+msgstr "Widget"
 
 msgctxt "#31164"
 msgid "Random Items"
-msgstr ""
+msgstr "Naizmjenične stavke"
 
 msgctxt "#31165"
 msgid "Only Unwatched items"
-msgstr ""
+msgstr "Samo nepogledano"
 
 msgctxt "#31166"
 msgid "Only Partially Watched items"
-msgstr ""
-
-#empty string with id 31167
+msgstr "Samo djelomično pogledano"
 
 msgctxt "#31168"
 msgid "Manage custom Home Widget"
-msgstr ""
+msgstr "Uredi vlastite widgete početnog zaslona"
 
 msgctxt "#31169"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "Nadolazeći filmovi"
 
 msgctxt "#31170"
 msgid "In Theatres Now"
-msgstr ""
+msgstr "U kinima"
 
 msgctxt "#31171"
 msgid "Popular Movies"
-msgstr ""
+msgstr "Popularni filmovi"
 
 msgctxt "#31172"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Najbolje ocjenjeni filmovi"
 
 msgctxt "#31173"
 msgid "Trending Movies"
-msgstr ""
+msgstr "Filmovi u trendu"
 
 msgctxt "#31174"
 msgid "Trending TV Shows"
-msgstr ""
+msgstr "Serije u trendu"
 
 msgctxt "#31175"
 msgid "Home Tile"
-msgstr ""
-
-#empty strings from id 31176 to 31189
+msgstr "Pločica početnog zaslona"
 
 msgctxt "#31190"
 msgid "Views"
-msgstr ""
+msgstr "Prikazi"
 
 msgctxt "#31191"
 msgid "Enable Fanart"
-msgstr ""
+msgstr "Omogući omote"
 
 msgctxt "#31192"
 msgid "Motion Picture Rating country"
-msgstr ""
+msgstr "Zemlja ocjenjivanja filmova"
 
 msgctxt "#31193"
 msgid "Select Motion Picture Rating country"
-msgstr ""
-
-#empty strings from id 31194 to 31199
-
-msgctxt "#31200"
-msgid "Display Power Button (does not affect home screen)"
-msgstr ""
-
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr ""
-
-msgctxt "#31202"
-msgid "Play Trailer on opening Movie Information"
-msgstr ""
+msgstr "Odaberi zemlju ocjenjivanja filmova"
 
 msgctxt "#31203"
 msgid "Play Trailer minimized"
-msgstr ""
-
-#empty strings from id 31204 to 31219
+msgstr "Pokreni trailer minimiziran"
 
 msgctxt "#31220"
 msgid "Live TV"
-msgstr ""
+msgstr "TV uživo"
 
 msgctxt "#31221"
 msgid "Enable Genre Colours in the TV EPG"
-msgstr ""
+msgstr "Omogući boje žanrova u TV EPG-u"
 
 msgctxt "#31222"
 msgid "Advanced"
-msgstr ""
-
-#empty strings from id 31223 to 31239
+msgstr "Napredno"
 
 msgctxt "#31240"
 msgid "Enable Music Visualisation"
-msgstr ""
-
-#empty strings from id 31241 to 31249
+msgstr "Omogući glazbenu vizualizaciju"
 
 msgctxt "#31250"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Pozadine"
 
 msgctxt "#31251"
 msgid "Global"
-msgstr ""
+msgstr "Globalno"
 
 msgctxt "#31252"
 msgid "Single Image"
-msgstr ""
+msgstr "Jedna slika"
 
 msgctxt "#31253"
 msgid "Multiple Image"
-msgstr ""
-
-#empty strings from id 31254 to 31270
+msgstr "Više slika"
 
 msgctxt "#31271"
 msgid "Display Profile Image"
-msgstr ""
-
-msgctxt "#31272"
-msgid "Replace Pictures with Custom Menu Item in Quick Navigation"
-msgstr ""
-
-msgctxt "#31273"
-msgid "Replace Trailer with Custom Menu Item in Quick Navigation"
-msgstr ""
-
-msgctxt "#31274"
-msgid "Replace New Movies with Custom Menu Item in Quick Navigation"
-msgstr ""
-
-msgctxt "#31275"
-msgid "Replace New TV Shows with Custom Menu Item in Quick Navigation"
-msgstr ""
+msgstr "Prikazuj sliku profiila"
 
 msgctxt "#31276"
 msgid "Choose Custom Menu Item"
-msgstr ""
-
-#empty strings from id 31277 to 31279
+msgstr "Odaberi vlastitu stavku početnog zaslona"
 
 msgctxt "#31280"
 msgid "Add-ons"
-msgstr ""
-
-#empty string with id 31281
+msgstr "Dodaci"
 
 msgctxt "#31282"
 msgid "Lyrics add-on"
-msgstr ""
+msgstr "Dodatak riječi pjesama"
 
 msgctxt "#31283"
 msgid "Enable TVTunes add-on"
-msgstr ""
+msgstr "Omogući TVTunes dodatak"
 
 msgctxt "#31284"
 msgid "Download theme songs"
-msgstr ""
+msgstr "Preuzmi glazbenu temu"
 
 msgctxt "#31285"
 msgid "Enable TV Show Next Aired"
-msgstr ""
-
-#empty strings from id 31286 to 31289
+msgstr "Omogući prikaz sljedećeg emitiranja serija"
 
 msgctxt "#31290"
 msgid "Configure TV Show Next Aired"
-msgstr ""
-
-#empty strings from id 31291 to 31292
+msgstr "Uredi opcije sljedećeg emitiranja serija"
 
 msgctxt "#31293"
 msgid "Update Next Aired data on Start"
-msgstr ""
+msgstr "Ažuriraj sljedeće emitiranje serija prilikom pokretanja"
 
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
-msgstr ""
-
-#empty strings from id 31295 to 31302
+msgstr "Ažuriraj slike (Poster, Landscape, Fanart itd.) nakon ažuriranja zbirke"
 
 msgctxt "#31303"
 msgid "Tracks"
-msgstr ""
+msgstr "Pjesme"
 
 msgctxt "#31304"
 msgid "Discography"
-msgstr ""
+msgstr "Diskografija"
 
 msgctxt "#31305"
 msgid "Get Thumb"
-msgstr ""
+msgstr "Preuzmi sličicu"
 
 msgctxt "#31306"
 msgid "Get Fanart"
-msgstr ""
+msgstr "Preuzmi fanart"
 
 msgctxt "#31307"
 msgid "Refresh"
-msgstr ""
-
-#empty strings from id 31308 to 31310
+msgstr "Osvježi"
 
 msgctxt "#31311"
 msgid "Unwatched Episodes: "
-msgstr ""
-
-#empty strings from id 31312 to 31313
-
-msgctxt "#31314"
-msgid "First Aired: "
-msgstr ""
+msgstr "Nepogledane epizode:"
 
 msgctxt "#31315"
 msgid "Play"
-msgstr ""
+msgstr "Reproduciraj"
 
 msgctxt "#31316"
 msgid "Cast"
-msgstr ""
-
-#empty strings from id 31317 to 31318
+msgstr "Uloge"
 
 msgctxt "#31319"
 msgid "Plot"
-msgstr ""
-
-#empty strings from id 31320 to 31323
+msgstr "Zaplet"
 
 msgctxt "#31324"
 msgid "Biography"
-msgstr ""
+msgstr "Biografija"
 
 msgctxt "#31325"
 msgid "Review"
-msgstr ""
+msgstr "Recenzije"
 
 msgctxt "#31326"
 msgid "Get Info"
-msgstr ""
+msgstr "Preuzmi informacije"
 
 msgctxt "#31327"
 msgid "Year of Release"
-msgstr ""
-
-#empty string with id 31328
+msgstr "Godina izdavanja"
 
 msgctxt "#31329"
 msgid "No Biography for this actor"
-msgstr ""
+msgstr "Nema biografije ovog glumca"
 
 msgctxt "#31330"
 msgid "No Description for this application"
-msgstr ""
+msgstr "Nema opisa ove aplikacije"
 
 msgctxt "#31331"
 msgid "Released"
-msgstr ""
-
-#empty string with id 31332
+msgstr "Izdano"
 
 msgctxt "#31333"
 msgid "Get Theme"
-msgstr ""
-
-#empty strings from id 31334 to 31350
+msgstr "Preuzmi temu"
 
 msgctxt "#31351"
 msgid "Logout"
-msgstr ""
+msgstr "Odjava"
 
 msgctxt "#31352"
 msgid "Reload Skin"
-msgstr ""
-
-#empty strings from id 31353 to 31359
+msgstr "Ponovno učitaj presvlaku"
 
 msgctxt "#31360"
 msgid "Master Mode Off"
-msgstr ""
+msgstr "Master mode isključen"
 
 msgctxt "#31361"
 msgid "Master Mode On"
-msgstr ""
-
-#empty strings from id 31362 to 31370
+msgstr "Master mode uključen"
 
 msgctxt "#31371"
 msgid "Finish Time:"
-msgstr ""
+msgstr "Vrijeme završetka:"
 
 msgctxt "#31372"
 msgid "Now Playing..."
-msgstr ""
-
-#empty strings from id 31373 to 31404
+msgstr "Trenutno se reproducira..."
 
 msgctxt "#31405"
 msgid "Login"
-msgstr ""
-
-#empty strings from id 31406 to 31439
+msgstr "Prijava"
 
 msgctxt "#31440"
 msgid "System Info"
-msgstr ""
-
-msgctxt "#31441"
-msgid "Quick Navigation"
-msgstr ""
-
-#empty string with id 31442
+msgstr "Informacije sustava"
 
 msgctxt "#31443"
 msgid "Now Playing"
-msgstr ""
+msgstr "Trenutno se reproducira"
 
 msgctxt "#31444"
 msgid "Settings"
-msgstr ""
+msgstr "Postavke"
 
 msgctxt "#31445"
 msgid "Movies"
-msgstr ""
+msgstr "Filmovi"
 
 msgctxt "#31446"
 msgid "TV Shows"
-msgstr ""
+msgstr "Serije"
 
 msgctxt "#31447"
 msgid "Music"
-msgstr ""
+msgstr "Glazba"
 
 msgctxt "#31448"
 msgid "Pictures"
-msgstr ""
-
-#empty string with id 31449
+msgstr "Slike"
 
 msgctxt "#31450"
 msgid "New Movies"
-msgstr ""
+msgstr "Novi filmovi"
 
 msgctxt "#31451"
 msgid "New TV Shows"
-msgstr ""
+msgstr "Nove serije"
 
 msgctxt "#31452"
 msgid "No Media Playing"
-msgstr ""
+msgstr "Ništa se ne reproducira"
 
 msgctxt "#31453"
 msgid "User"
-msgstr ""
+msgstr "Korisnik"
 
 msgctxt "#31454"
 msgid "IP Address"
-msgstr ""
+msgstr "IP adresa"
 
 msgctxt "#31455"
 msgid "Free Memory"
-msgstr ""
+msgstr "Slobodna memorija"
 
 msgctxt "#31456"
 msgid "Resolution"
-msgstr ""
+msgstr "Razlučivost"
 
 msgctxt "#31457"
 msgid "System Uptime"
-msgstr ""
+msgstr "Sustav pokrenut"
 
 msgctxt "#31458"
 msgid "Skin Version"
-msgstr ""
+msgstr "Verzija presvlake"
 
 msgctxt "#31459"
 msgid "Kodi Version"
-msgstr ""
-
-msgctxt "#31460"
-msgid "Skin Frame"
-msgstr ""
-
-#empty strings from id 31461 to 31503
+msgstr "Kodi verzija"
 
 msgctxt "#31504"
 msgid "Applications"
-msgstr ""
+msgstr "Dodaci"
 
 msgctxt "#31505"
 msgid "Press \"Up\" to Eject"
-msgstr ""
-
-#empty string with id 31506
+msgstr "Pritisni \"Gore\" za izbacivanje"
 
 msgctxt "#31507"
 msgid "Power"
-msgstr ""
-
-#empty strings from id 31508 to 31523
+msgstr "Pokreni"
 
 msgctxt "#31524"
 msgid "Home"
-msgstr ""
+msgstr "Doma"
 
 msgctxt "#31525"
 msgid "Search Kodi for"
-msgstr ""
-
-#empty strings from id 31526 to 31549
+msgstr "Pretraži Kodi za"
 
 msgctxt "#31550"
 msgid "Spotlight"
-msgstr ""
+msgstr "Spotlight"
 
 msgctxt "#31551"
 msgid "Ongoing TV Shows"
-msgstr ""
+msgstr "Serije u tijeku"
 
 msgctxt "#31552"
 msgid "New Movies"
-msgstr ""
+msgstr "Novi filmovi"
 
 msgctxt "#31553"
 msgid "New TV Shows"
-msgstr ""
+msgstr "Nove serije"
 
 msgctxt "#31554"
 msgid "New Albums"
-msgstr ""
+msgstr "Novi albumi"
 
 msgctxt "#31555"
 msgid "Most Played Albums"
-msgstr ""
+msgstr "Najčešće reproducirani albumi"
 
 msgctxt "#31556"
 msgid "Featured Albums"
-msgstr ""
-
-#empty strings from id 31557 to 31561
+msgstr "Istaknuti albumi"
 
 msgctxt "#31562"
 msgid "Loading Weather..."
-msgstr ""
+msgstr "Učitavam prognozu..."
 
 msgctxt "#31563"
 msgid "No Location Available"
-msgstr ""
+msgstr "Lokacija nije dostupna"
 
 msgctxt "#31564"
 msgid "Loading"
-msgstr ""
-
-#empty strings from id 31565 to 31599
+msgstr "Učitavam"
 
 msgctxt "#31600"
 msgid "Options"
-msgstr ""
+msgstr "Mogućnosti"
 
 msgctxt "#31601"
 msgid "Initializing Skin"
-msgstr ""
-
-#empty strings from id 31602 to 31619
+msgstr "Inicijalizacija presvlake"
 
 msgctxt "#31620"
 msgid "View Options"
-msgstr ""
+msgstr "Opcije prikaza"
 
 msgctxt "#31621"
 msgid "Set Games Path"
-msgstr ""
+msgstr "Postavi putanju igara"
 
 msgctxt "#31622"
 msgid "Reset Games Path"
-msgstr ""
-
-#empty strings from id 31623 to 31688
+msgstr "Resetiraj putanju igara"
 
 msgctxt "#31689"
 msgid "Location"
-msgstr ""
+msgstr "Mjesto"
 
 msgctxt "#31690"
 msgid "Hide Fanart"
-msgstr ""
+msgstr "Sakrij fanart"
 
 msgctxt "#31691"
 msgid "Set Fanart Path"
-msgstr ""
+msgstr "Postavite putanju fanarta"
 
 msgctxt "#31692"
 msgid "Hide Daily Fanart"
-msgstr ""
+msgstr "Sakrij dnevni fanart"
 
 msgctxt "#31693"
 msgid "Moon Phase"
-msgstr ""
+msgstr "Mjesečeve mijene"
 
 msgctxt "#31694"
 msgid "Current Weather"
-msgstr ""
+msgstr "Aktualno vrijeme"
 
 msgctxt "#31695"
 msgid "10 Day Forecast"
-msgstr ""
-
-msgctxt "#31696"
-msgid "24 Hours in Detail"
-msgstr ""
-
-#empty strings from id 31697 to 31715
+msgstr "Prognoza za 10 dana"
 
 msgctxt "#31716"
 msgid "Playlist Options"
-msgstr ""
-
-#empty strings from id 31717 to 31804
+msgstr "Mogućnosti liste izvedbi"
 
 msgctxt "#31805"
 msgid "Aired"
-msgstr ""
-
-#empty strings from id 31806 to 31812
+msgstr "Emitirano"
 
 msgctxt "#31813"
 msgid "Episodes"
-msgstr ""
-
-#empty strings from id 31814 to 31816
+msgstr "Epizoda"
 
 msgctxt "#31817"
 msgid "Items"
-msgstr ""
-
-#empty string with id 31818
+msgstr "Stavke"
 
 msgctxt "#31819"
 msgid "Page"
-msgstr ""
-
-#empty strings from id 31820 to 31821
+msgstr "Stranica"
 
 msgctxt "#31822"
 msgid "Item"
-msgstr ""
-
-#empty strings from id 31823 to 31919
+msgstr "Stavka"
 
 msgctxt "#31920"
 msgid "Recently Added"
-msgstr ""
+msgstr "Nedavno dodano"
 
 msgctxt "#31921"
 msgid "Select"
-msgstr ""
+msgstr "Odaberi"
 
 msgctxt "#31922"
 msgid "Cancel"
-msgstr ""
+msgstr "Poništi"
 
 msgctxt "#31923"
 msgid "Close"
-msgstr ""
+msgstr "Zatvori"
 
 msgctxt "#31924"
 msgid "View Options"
-msgstr ""
+msgstr "Opcije prikaza"
 
 msgctxt "#31925"
 msgid "Display Info"
-msgstr ""
+msgstr "Prikaži informacije"
 
 msgctxt "#31926"
 msgid "Main Options"
-msgstr ""
+msgstr "Glavne opcije"
 
 msgctxt "#31927"
 msgid "Display Plot"
-msgstr ""
+msgstr "Prikaži zaplet"
 
 msgctxt "#31928"
 msgid "Use Posters"
-msgstr ""
+msgstr "Koristi postere"
 
 msgctxt "#31929"
 msgid "Display Plot on Focus"
-msgstr ""
+msgstr "Prikaži zaplet u fokusu"
 
 msgctxt "#31930"
 msgid "View"
-msgstr ""
+msgstr "Pogled"
 
 msgctxt "#31931"
 msgid "Use Landscape"
-msgstr ""
+msgstr "Koristi landscape"
 
 msgctxt "#31932"
 msgid "Use Clearart"
-msgstr ""
+msgstr "Koristi clearart"
 
 msgctxt "#31933"
 msgid "Small Thumbs"
-msgstr ""
+msgstr "Male ikone"
 
 msgctxt "#31934"
 msgid "Update Art"
-msgstr ""
+msgstr "Ažuriraj sliku"
 
 msgctxt "#31935"
 msgid "Use Logo"
-msgstr ""
+msgstr "Koristi logo"
 
 msgctxt "#31936"
 msgid "Category"
-msgstr ""
+msgstr "Kategorija"
 
 msgctxt "#31937"
 msgid "Information"
-msgstr ""
+msgstr "Obavijesti"
 
 msgctxt "#31938"
 msgid "No Description Available"
-msgstr ""
+msgstr "Opis nije dostupan"
 
 msgctxt "#31939"
 msgid "Update Repositories"
-msgstr ""
+msgstr "Ažuriraj repositorie"
 
 msgctxt "#31940"
 msgid "Update Add-ons"
-msgstr ""
+msgstr "Ažuriraj dodatke"
 
 msgctxt "#31941"
 msgid "Updating Enabled Add-on Repositories..."
-msgstr ""
+msgstr "Ažuriram omogućene repositorie dodataka"
 
 msgctxt "#31942"
 msgid "Updating local add-on directories..."
-msgstr ""
+msgstr "Ažuriram direktorije lokalnih dodataka"
 
 msgctxt "#31943"
 msgid "TV Guide"
-msgstr ""
+msgstr "TV vodič"
 
 msgctxt "#31944"
 msgid "on"
-msgstr ""
+msgstr "uključeno"
 
 msgctxt "#31945"
 msgid "Available Groups"
-msgstr ""
+msgstr "Dostupne grupe"
 
 msgctxt "#31946"
 msgid "Add Group"
-msgstr ""
+msgstr "Dodaj grupu"
 
 msgctxt "#31947"
 msgid "Rename Group"
-msgstr ""
+msgstr "Preimenuj grupu"
 
 msgctxt "#31948"
 msgid "Delete Group"
-msgstr ""
+msgstr "Obriši grupu"
 
 msgctxt "#31949"
 msgid "Channel Options"
-msgstr ""
+msgstr "Mogućnosti programa"
 
 msgctxt "#31950"
 msgid "Misc Options"
-msgstr ""
+msgstr "Razne mogućnosti"
 
 msgctxt "#31951"
 msgid "Mouse Not Supported"
-msgstr ""
+msgstr "Miš nije podržan"
 
 msgctxt "#31952"
 msgid "Please Disable"
-msgstr ""
-
-msgctxt "#31953"
-msgid "Edit Movie"
-msgstr ""
+msgstr "Onemogući"
 
 msgctxt "#31954"
 msgid "Edit Tv Show"
-msgstr ""
+msgstr "Uredi seriju"
 
 msgctxt "#31955"
 msgid "Edit Season"
-msgstr ""
+msgstr "Uredi sezonu"
 
 msgctxt "#31956"
 msgid "Edit Episode"
-msgstr ""
+msgstr "Uredi epizodu"
 
 msgctxt "#31957"
 msgid "Edit Music Video"
-msgstr ""
+msgstr "Uredi glazbeni video"
 
 msgctxt "#31958"
 msgid "Edit Artist"
-msgstr ""
+msgstr "Uredi izvođača"
 
 msgctxt "#31959"
 msgid "Edit Album"
-msgstr ""
+msgstr "Uredi album"
 
 msgctxt "#31960"
 msgid "Edit Song"
-msgstr ""
+msgstr "Uredi pjesmu"
 
 msgctxt "#31961"
 msgid "List"
-msgstr ""
+msgstr "Popis"
 
 msgctxt "#31962"
 msgid "Info List"
-msgstr ""
+msgstr "Info popis"
 
 msgctxt "#31963"
 msgid "Info List ■"
-msgstr ""
+msgstr "Info popis ■"
 
 msgctxt "#31964"
 msgid "Panel"
-msgstr ""
+msgstr "Pločica"
 
 msgctxt "#31965"
 msgid "Panel ■"
-msgstr ""
+msgstr "Pločica ■"
 
 msgctxt "#31966"
 msgid "Landscape"
-msgstr ""
+msgstr "Landscape"
 
 msgctxt "#31967"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#31968"
 msgid "Poster ■"
-msgstr ""
+msgstr "Poster ■"
 
 msgctxt "#31969"
 msgid "Thumbnail"
-msgstr ""
+msgstr "Minijatura"
 
 msgctxt "#31970"
 msgid "Thumbnail ■"
-msgstr ""
+msgstr "Minijatura ■"
 
 msgctxt "#31971"
 msgid "Banner"
-msgstr ""
+msgstr "Transparent"
 
 msgctxt "#31972"
 msgid "Banner ■"
-msgstr ""
+msgstr "Banner ■"
 
 msgctxt "#31973"
 msgid "Cover"
-msgstr ""
+msgstr "Omot"
 
 msgctxt "#31974"
 msgid "Thumbnail List"
-msgstr ""
+msgstr "Lista s minijaturama"
 
 msgctxt "#31975"
 msgid "Display Date & Time"
-msgstr ""
+msgstr "Prikazuj datum i vrijeme"
 
 msgctxt "#31976"
 msgid "Display Weather"
-msgstr ""
+msgstr "Prikazuj prognozu"
 
 msgctxt "#31977"
 msgid "No Media Source available"
-msgstr ""
+msgstr "Izvor medija nije dostupan"
 
 msgctxt "#31978"
 msgid "Home Tiles (Red)"
-msgstr ""
+msgstr "Pločice početnog zaslona (crvene)"
 
 msgctxt "#31979"
 msgid "Movie Tiles (Blue)"
-msgstr ""
+msgstr "Pločice filmova (plave)"
 
 msgctxt "#31980"
 msgid "TV Show Tiles (Green)"
-msgstr ""
+msgstr "Pločice serija (zelene)"
 
 msgctxt "#31981"
 msgid "Music Tiles (Orange)"
-msgstr ""
+msgstr "Pločice glazbe (narančaste)"
 
 msgctxt "#31982"
 msgid "All Options"
-msgstr ""
+msgstr "Sve mogućnosti"
 
 msgctxt "#31983"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#31984"
 msgid "Fanart"
-msgstr ""
+msgstr "Fanart"
 
 msgctxt "#31985"
 msgid "Banner"
-msgstr ""
+msgstr "Transparent"
 
 msgctxt "#31986"
 msgid "Landscape"
-msgstr ""
+msgstr "Landscape"
 
 msgctxt "#31987"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 msgctxt "#31988"
 msgid "ClearArt"
-msgstr ""
+msgstr "ClearArt"
 
 msgctxt "#31989"
 msgid "Home Tile Colours"
-msgstr ""
+msgstr "Boje početnog zaslona"
 
 msgctxt "#31990"
 msgid "TV Shows"
-msgstr ""
+msgstr "Serije"
 
 msgctxt "#31991"
 msgid "Movies"
-msgstr ""
+msgstr "Filmovi"
 
 msgctxt "#31992"
 msgid "Red"
-msgstr ""
+msgstr "Crveno"
 
 msgctxt "#31993"
 msgid "Auto Login"
-msgstr ""
+msgstr "Automatska prijava"
 
 msgctxt "#31994"
 msgid "Display Navigation Arrow"
-msgstr ""
+msgstr "Prikazuj strelicu navigacije"
 
 msgctxt "#31995"
 msgid "Set Custom Overlay"
-msgstr ""
-
-msgctxt "#31996"
-msgid "Hide Date"
-msgstr ""
+msgstr "Postavi vlastiti overlay"
