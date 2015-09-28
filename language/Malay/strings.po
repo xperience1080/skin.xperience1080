@@ -9,1269 +9,949 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"Language-Team: Malay (http://www.transifex.com/projects/p/xbmc-skins/language/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgctxt "#31000"
-msgid "Known Movies"
-msgstr ""
+"Language: ms\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgctxt "#31001"
 msgid "Cinema Experience"
-msgstr ""
-
-msgctxt "#31002"
-msgid "Checking for"
-msgstr ""
-
-msgctxt "#31003"
-msgid "Checking for updates"
-msgstr ""
-
-msgctxt "#31004"
-msgid "Known TV Shows"
-msgstr ""
-
-msgctxt "#31005"
-msgid "Known Movie Roles"
-msgstr ""
-
-msgctxt "#31006"
-msgid "Known TV Roles"
-msgstr ""
-
-msgctxt "#31007"
-msgid "Age"
-msgstr ""
-
-msgctxt "#31008"
-msgid "Born"
-msgstr ""
-
-msgctxt "#31009"
-msgid "Died"
-msgstr ""
-
-msgctxt "#31010"
-msgid "TV Roles"
-msgstr ""
-
-msgctxt "#31011"
-msgid "Movie Roles"
-msgstr ""
+msgstr "Pengalaman Wayang"
 
 msgctxt "#31012"
 msgid "Artwork"
-msgstr ""
-
-msgctxt "#31013"
-msgid "Loading PVR Channels..."
-msgstr ""
-
-msgctxt "#31014"
-msgid "Radio Stations"
-msgstr ""
+msgstr "Kerja Seni"
 
 msgctxt "#31015"
 msgid "Movie Crew"
-msgstr ""
+msgstr "Pasukan Cereka"
 
-msgctxt "#31016"
-msgid "TV Crew"
-msgstr ""
-
-msgctxt "#31017"
-msgid "TV Show Roles"
-msgstr ""
-
-msgctxt "#31018"
-msgid "TV Show Crew"
-msgstr ""
-
-msgctxt "#31019"
-msgid "Trakt Options"
-msgstr ""
-
-#: \1080i\Includes_Home.xml:1070
-msgctxt "#31020"
-msgid "Airing Now & Next"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:137
-msgctxt "#31021"
-msgid "Frame"
-msgstr ""
-
-#: \1080i\DialogVideoInfo.xml:544
 msgctxt "#31022"
 msgid "Video Extras"
-msgstr ""
+msgstr "Video Ekstra"
 
-#: \1080i\DialogVideoInfo.xml:545 \1080i\DialogVideoInfo.xml:550
 msgctxt "#31023"
 msgid "Extras"
-msgstr ""
+msgstr "Ekstra"
 
-#: \1080i\SkinSettings.xml:891
 msgctxt "#31024"
 msgid "Reset Skin Settings"
-msgstr ""
+msgstr "Tetap Semula Tetapan Kulit"
 
-#: \1080i\SkinSettings.xml:892
-msgctxt "#31025"
-msgid "WARNING: This will reset ALL skin settings"
-msgstr ""
-
-#: \1080i\Custom_LanguageDialog.xml:140
 msgctxt "#31026"
 msgid "Germany"
-msgstr ""
+msgstr "Jerman"
 
-#: \1080i\Custom_LanguageDialog.xml:147
 msgctxt "#31027"
 msgid "Italy"
-msgstr ""
+msgstr "Itali"
 
-#: \1080i\Custom_LanguageDialog.xml:154
-msgctxt "#31028"
-msgid "United Kingdom"
-msgstr ""
-
-#: \1080i\Custom_LanguageDialog.xml:161
 msgctxt "#31029"
 msgid "United States"
-msgstr ""
+msgstr "Amerika Syarikat"
 
-#: \1080i\SkinSettings.xml:632
-msgctxt "#31030"
-msgid "Hide Clock & Weather"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:639
-msgctxt "#31031"
-msgid "Hide Chapter Information"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeItems.xml:622
-msgctxt "#31032"
-msgid "Pictures Tile"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1193
-msgctxt "#31033"
-msgid "XKCD.com"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1195
-msgctxt "#31034"
-msgid "Cyanide & Happiness"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1197
 msgctxt "#31035"
 msgid "Daily Babes"
-msgstr ""
+msgstr "Daily Babes"
 
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1199
-msgctxt "#31036"
-msgid "MyPicsDB"
-msgstr ""
-
-#: \1080i\Includes_SettingsCustomHomeWidgets.xml:1201
 msgctxt "#31037"
 msgid "Photos"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:382
-msgctxt "#31038"
-msgid "Path to Pictures"
-msgstr ""
-
-#: \1080i\Custom_SettingsDialog.xml:130
-msgctxt "#31039"
-msgid "Pictures Tiles (Purple)"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:391
-msgctxt "#31040"
-msgid "Reset Pictures Path"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:595
-msgctxt "#31041"
-msgid "Hide Weather Fanart"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:606
-msgctxt "#31042"
-msgid "Hide Weather Daily Fanart"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:617
-msgctxt "#31043"
-msgid "Set Weather Fanart Path"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:625
-msgctxt "#31044"
-msgid "Reset Weather Fanart Path"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:222
-msgctxt "#31045"
-msgid "Display Volume in dB"
-msgstr ""
-
-#empty strings from id 31046 to 31099
+msgstr "Foto"
 
 msgctxt "#31100"
 msgid "General"
-msgstr ""
+msgstr "Am"
 
 msgctxt "#31101"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Benarkan Mod Kiosk"
 
 msgctxt "#31102"
 msgid "Display Now Playing Video in Background"
-msgstr ""
+msgstr "Paparan Video Kini Dimainkan berada Dibelakang"
 
 msgctxt "#31103"
 msgid "Display Artist Slideshow in Music Visualisation"
-msgstr ""
+msgstr "Papar Paparan Slaid Artis dalam Pengvisualan Muzik"
 
 msgctxt "#31104"
 msgid "Display Paths for Files and Streams"
-msgstr ""
+msgstr "Papar Laluan untuk Fail dan Strim"
 
 msgctxt "#31105"
 msgid "Animate Artist Slideshow"
-msgstr ""
-
-msgctxt "#31106"
-msgid "Display Fanart above Visualisation"
-msgstr ""
-
-#empty string with id 31107
+msgstr "Animasikan Paparan Slaid Artis"
 
 msgctxt "#31108"
 msgid "Automatically switch to music visualisation upon Play"
-msgstr ""
+msgstr "Tukar ke pengvisualan muzik secara automatik bila Main"
 
 msgctxt "#31109"
 msgid "Enable Auto Scrolling for text"
-msgstr ""
-
-#empty strings from id 31110 to 31111
+msgstr "Benarkan Penatalan Automatik bagi teks"
 
 msgctxt "#31112"
 msgid "Invert Spin Control"
-msgstr ""
+msgstr "Sonsangkan Kawalan Pusing"
 
 msgctxt "#31113"
 msgid "Top"
-msgstr ""
+msgstr "Atas"
 
 msgctxt "#31114"
 msgid "Bottom"
-msgstr ""
-
-#empty strings from id 31115 to 31128
-
-msgctxt "#31129"
-msgid "Use Classic Home"
-msgstr ""
+msgstr "Bawah"
 
 msgctxt "#31130"
 msgid "Home"
-msgstr ""
-
-msgctxt "#31131"
-msgid "Manage Home Categories"
-msgstr ""
-
-#empty strings from id 31132 to 31133
+msgstr "Mula"
 
 msgctxt "#31134"
 msgid "Display Profile Image"
-msgstr ""
+msgstr "Papar Imej Profil"
 
 msgctxt "#31135"
 msgid "Display Sub-menu Arrow"
-msgstr ""
+msgstr "Papar Anak Panah Sub-menu"
 
 msgctxt "#31136"
 msgid "Manage custom Home Items"
-msgstr ""
+msgstr "Urus Item Rumah suai"
 
 msgctxt "#31137"
 msgid "Custom"
-msgstr ""
+msgstr "Suai"
 
 msgctxt "#31138"
 msgid "Name"
-msgstr ""
+msgstr "Nama"
 
 msgctxt "#31139"
 msgid "Icon"
-msgstr ""
+msgstr "Ikon"
 
 msgctxt "#31140"
 msgid "Manage custom Home Widgets"
-msgstr ""
+msgstr "Urus Widjet Rumah suai"
 
 msgctxt "#31141"
 msgid "Type"
-msgstr ""
+msgstr "Jenis"
 
 msgctxt "#31142"
 msgid "Path"
-msgstr ""
+msgstr "Laluan"
 
 msgctxt "#31143"
 msgid "Recommended size 633x437px"
-msgstr ""
+msgstr "Saiz disaran 633x437px"
 
 msgctxt "#31144"
 msgid "Manage custom Home Tile Colours"
-msgstr ""
+msgstr "Urus Warna Jubin Rumah suai"
 
 msgctxt "#31145"
 msgid "Video add-on"
-msgstr ""
+msgstr "Tambahan video"
 
 msgctxt "#31146"
 msgid "Music add-on"
-msgstr ""
+msgstr "Tambahan muzik"
 
 msgctxt "#31147"
 msgid "Picture add-on"
-msgstr ""
+msgstr "Tambahan gambar"
 
 msgctxt "#31148"
 msgid "Program add-on"
-msgstr ""
+msgstr "Tambahan program"
 
 msgctxt "#31149"
 msgid "Video Playlist"
-msgstr ""
+msgstr "Senarai Main Video"
 
 msgctxt "#31150"
 msgid "Music Playlist"
-msgstr ""
+msgstr "Senarai Main Muzik"
 
 msgctxt "#31151"
 msgid "Custom"
-msgstr ""
+msgstr "Suai"
 
 msgctxt "#31152"
 msgid "Music Panel opens"
-msgstr ""
+msgstr "Panel Muzik dibuka"
 
 msgctxt "#31153"
 msgid "Favourite"
-msgstr ""
+msgstr "Kegemaran"
 
 msgctxt "#31154"
 msgid "Recommended size 283x283px"
-msgstr ""
-
-#empty string with id 31155
+msgstr "Saiz disaran 283x283px"
 
 msgctxt "#31156"
 msgid "Show Name"
-msgstr ""
+msgstr "Tunjuk Nama"
 
 msgctxt "#31157"
 msgid "Video Tile"
-msgstr ""
+msgstr "Jubin Video"
 
 msgctxt "#31158"
 msgid "TV Show Tile"
-msgstr ""
+msgstr "Jubin Rancangan TV"
 
 msgctxt "#31159"
 msgid "App Tile"
-msgstr ""
+msgstr "Jubin Apl"
 
 msgctxt "#31160"
 msgid "Animate Icon"
-msgstr ""
+msgstr "Ikon Animasi"
 
 msgctxt "#31161"
 msgid "Music Tile"
-msgstr ""
+msgstr "Jubin Muzik"
 
 msgctxt "#31162"
 msgid "Widget"
-msgstr ""
-
-#empty string with id 31163
+msgstr "Widjet"
 
 msgctxt "#31164"
 msgid "Random Items"
-msgstr ""
+msgstr "Item Rawak"
 
 msgctxt "#31165"
 msgid "Only Unwatched items"
-msgstr ""
+msgstr "Hanya item Belum Ditonton"
 
 msgctxt "#31166"
 msgid "Only Partially Watched items"
-msgstr ""
-
-#empty string with id 31167
+msgstr "Hanya item Ditonton Sebahagian"
 
 msgctxt "#31168"
 msgid "Manage custom Home Widget"
-msgstr ""
+msgstr "Urus Widjet Rumah suai"
 
 msgctxt "#31169"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "Cereka Akan Datang"
 
 msgctxt "#31170"
 msgid "In Theatres Now"
-msgstr ""
+msgstr "Kini Dalam Pawagam"
 
 msgctxt "#31171"
 msgid "Popular Movies"
-msgstr ""
+msgstr "Cereka Popular"
 
 msgctxt "#31172"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Cereka Penarafan Tertinggi"
 
 msgctxt "#31173"
 msgid "Trending Movies"
-msgstr ""
+msgstr "Cereka Popular"
 
 msgctxt "#31174"
 msgid "Trending TV Shows"
-msgstr ""
+msgstr "Rancangan TV Trending"
 
 msgctxt "#31175"
 msgid "Home Tile"
-msgstr ""
-
-#empty strings from id 31176 to 31189
+msgstr "Jubin Rumah"
 
 msgctxt "#31190"
 msgid "Views"
-msgstr ""
+msgstr "Papar"
 
 msgctxt "#31191"
 msgid "Enable Fanart"
-msgstr ""
+msgstr "Benarkan Seni Peminat"
 
 msgctxt "#31192"
 msgid "Motion Picture Rating country"
-msgstr ""
+msgstr "Negara Penarafan Cereka"
 
 msgctxt "#31193"
 msgid "Select Motion Picture Rating country"
-msgstr ""
-
-#empty strings from id 31194 to 31199
-
-msgctxt "#31200"
-msgid "Display Power Button (does not affect home screen)"
-msgstr ""
-
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr ""
-
-msgctxt "#31202"
-msgid "Play Trailer on opening Movie Information"
-msgstr ""
+msgstr "Pilih negara Penarafan Cereka"
 
 msgctxt "#31203"
 msgid "Play Trailer minimized"
-msgstr ""
-
-#empty strings from id 31204 to 31219
+msgstr "Main Treler diminimumkan"
 
 msgctxt "#31220"
 msgid "Live TV"
-msgstr ""
+msgstr "TV Langsung"
 
 msgctxt "#31221"
 msgid "Enable Genre Colours in the TV EPG"
-msgstr ""
+msgstr "Guna Warna Genre dalam EPG TV"
 
 msgctxt "#31222"
 msgid "Advanced"
-msgstr ""
-
-#empty strings from id 31223 to 31239
+msgstr "Lanjutan"
 
 msgctxt "#31240"
 msgid "Enable Music Visualisation"
-msgstr ""
-
-#empty strings from id 31241 to 31249
+msgstr "Benarkan Pengvisualan Muzik"
 
 msgctxt "#31250"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Latar belakang"
 
 msgctxt "#31251"
 msgid "Global"
-msgstr ""
+msgstr "Sejagat"
 
 msgctxt "#31252"
 msgid "Single Image"
-msgstr ""
+msgstr "Imej Tunggal"
 
 msgctxt "#31253"
 msgid "Multiple Image"
-msgstr ""
-
-#empty strings from id 31254 to 31270
+msgstr "Imej Berbilang"
 
 msgctxt "#31271"
 msgid "Display Profile Image"
-msgstr ""
-
-msgctxt "#31272"
-msgid "Replace Pictures with Custom Menu Item in Quick Navigation"
-msgstr ""
-
-msgctxt "#31273"
-msgid "Replace Trailer with Custom Menu Item in Quick Navigation"
-msgstr ""
-
-msgctxt "#31274"
-msgid "Replace New Movies with Custom Menu Item in Quick Navigation"
-msgstr ""
-
-msgctxt "#31275"
-msgid "Replace New TV Shows with Custom Menu Item in Quick Navigation"
-msgstr ""
+msgstr "Papar Imej Profil"
 
 msgctxt "#31276"
 msgid "Choose Custom Menu Item"
-msgstr ""
-
-#empty strings from id 31277 to 31279
+msgstr "Pilih Item Menu Suai"
 
 msgctxt "#31280"
 msgid "Add-ons"
-msgstr ""
-
-#empty string with id 31281
+msgstr "Tambahan"
 
 msgctxt "#31282"
 msgid "Lyrics add-on"
-msgstr ""
+msgstr "Tambahan lirik"
 
 msgctxt "#31283"
 msgid "Enable TVTunes add-on"
-msgstr ""
+msgstr "Benarkan tambahan TalaTV"
 
 msgctxt "#31284"
 msgid "Download theme songs"
-msgstr ""
+msgstr "Muat turun lagu tema"
 
 msgctxt "#31285"
 msgid "Enable TV Show Next Aired"
-msgstr ""
-
-#empty strings from id 31286 to 31289
+msgstr "Benarkan Rancangan TV Keudara Berikutnya"
 
 msgctxt "#31290"
 msgid "Configure TV Show Next Aired"
-msgstr ""
-
-#empty strings from id 31291 to 31292
+msgstr "Konfigur Rancangan TV Keudara Berikutnya"
 
 msgctxt "#31293"
 msgid "Update Next Aired data on Start"
-msgstr ""
+msgstr "Kemaskini data Keudara Berikutnya semasa Permulaan"
 
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
-msgstr ""
-
-#empty strings from id 31295 to 31302
+msgstr "Kemaskini Seni (Poster, Lanskap, Seni Peminat dan lain-lain) selepas Kemaskini Pustaka"
 
 msgctxt "#31303"
 msgid "Tracks"
-msgstr ""
+msgstr "Trek"
 
 msgctxt "#31304"
 msgid "Discography"
-msgstr ""
+msgstr "Discografi"
 
 msgctxt "#31305"
 msgid "Get Thumb"
-msgstr ""
+msgstr "Dapatkan Lakaran Kenit"
 
 msgctxt "#31306"
 msgid "Get Fanart"
-msgstr ""
+msgstr "Dapatkan Seni Peminat"
 
 msgctxt "#31307"
 msgid "Refresh"
-msgstr ""
-
-#empty strings from id 31308 to 31310
+msgstr "Penyegaran"
 
 msgctxt "#31311"
 msgid "Unwatched Episodes: "
-msgstr ""
-
-#empty strings from id 31312 to 31313
-
-msgctxt "#31314"
-msgid "First Aired: "
-msgstr ""
+msgstr "Episod Belum Ditonton:"
 
 msgctxt "#31315"
 msgid "Play"
-msgstr ""
+msgstr "Main"
 
 msgctxt "#31316"
 msgid "Cast"
-msgstr ""
-
-#empty strings from id 31317 to 31318
+msgstr "Barisan Pelakon"
 
 msgctxt "#31319"
 msgid "Plot"
-msgstr ""
-
-#empty strings from id 31320 to 31323
+msgstr "Plot"
 
 msgctxt "#31324"
 msgid "Biography"
-msgstr ""
+msgstr "Biografi"
 
 msgctxt "#31325"
 msgid "Review"
-msgstr ""
+msgstr "Ulasan"
 
 msgctxt "#31326"
 msgid "Get Info"
-msgstr ""
+msgstr "Dapatkan Maklumat"
 
 msgctxt "#31327"
 msgid "Year of Release"
-msgstr ""
-
-#empty string with id 31328
+msgstr "Tahun Dikeluarkan"
 
 msgctxt "#31329"
 msgid "No Biography for this actor"
-msgstr ""
+msgstr "Tiada Biografi untuk pelakon ini"
 
 msgctxt "#31330"
 msgid "No Description for this application"
-msgstr ""
+msgstr "Tiada Keterangan untuk aplikasi ini"
 
 msgctxt "#31331"
 msgid "Released"
-msgstr ""
-
-#empty string with id 31332
+msgstr "Dikeluarkan"
 
 msgctxt "#31333"
 msgid "Get Theme"
-msgstr ""
-
-#empty strings from id 31334 to 31350
+msgstr "Dapatkan Tema"
 
 msgctxt "#31351"
 msgid "Logout"
-msgstr ""
+msgstr "Daftar keluar"
 
 msgctxt "#31352"
 msgid "Reload Skin"
-msgstr ""
-
-#empty strings from id 31353 to 31359
+msgstr "Muat Semula Kulit"
 
 msgctxt "#31360"
 msgid "Master Mode Off"
-msgstr ""
+msgstr "Mod Master Mati"
 
 msgctxt "#31361"
 msgid "Master Mode On"
-msgstr ""
-
-#empty strings from id 31362 to 31370
+msgstr "Mod Master Hidup"
 
 msgctxt "#31371"
 msgid "Finish Time:"
-msgstr ""
+msgstr "Masa Tamat:"
 
 msgctxt "#31372"
 msgid "Now Playing..."
-msgstr ""
-
-#empty strings from id 31373 to 31404
+msgstr "Kini Dimainkan..."
 
 msgctxt "#31405"
 msgid "Login"
-msgstr ""
-
-#empty strings from id 31406 to 31439
+msgstr "Daftar Masuk"
 
 msgctxt "#31440"
 msgid "System Info"
-msgstr ""
+msgstr "Maklumat Sistem"
 
 msgctxt "#31441"
 msgid "Quick Navigation"
-msgstr ""
-
-#empty string with id 31442
+msgstr "Navigasi Pantas"
 
 msgctxt "#31443"
 msgid "Now Playing"
-msgstr ""
+msgstr "Kini Dimainkan"
 
 msgctxt "#31444"
 msgid "Settings"
-msgstr ""
+msgstr "Seting"
 
 msgctxt "#31445"
 msgid "Movies"
-msgstr ""
+msgstr "Cereka"
 
 msgctxt "#31446"
 msgid "TV Shows"
-msgstr ""
+msgstr "Rancangan TV"
 
 msgctxt "#31447"
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 msgctxt "#31448"
 msgid "Pictures"
-msgstr ""
-
-#empty string with id 31449
+msgstr "Gambar"
 
 msgctxt "#31450"
 msgid "New Movies"
-msgstr ""
+msgstr "Cereka Baharu"
 
 msgctxt "#31451"
 msgid "New TV Shows"
-msgstr ""
+msgstr "Rancangan TV Baharu"
 
 msgctxt "#31452"
 msgid "No Media Playing"
-msgstr ""
+msgstr "Tiada Media Dimainkan"
 
 msgctxt "#31453"
 msgid "User"
-msgstr ""
+msgstr "Pengguna"
 
 msgctxt "#31454"
 msgid "IP Address"
-msgstr ""
+msgstr "Alamat IP"
 
 msgctxt "#31455"
 msgid "Free Memory"
-msgstr ""
+msgstr "Ingatan Bebas"
 
 msgctxt "#31456"
 msgid "Resolution"
-msgstr ""
+msgstr "Resolusi"
 
 msgctxt "#31457"
 msgid "System Uptime"
-msgstr ""
+msgstr "Masa Hidup Sistem"
 
 msgctxt "#31458"
 msgid "Skin Version"
-msgstr ""
+msgstr "Versi Kulit"
 
 msgctxt "#31459"
 msgid "Kodi Version"
-msgstr ""
-
-msgctxt "#31460"
-msgid "Skin Frame"
-msgstr ""
-
-#empty strings from id 31461 to 31503
+msgstr "Versi Kodi"
 
 msgctxt "#31504"
 msgid "Applications"
-msgstr ""
+msgstr "Tambahan"
 
 msgctxt "#31505"
 msgid "Press \"Up\" to Eject"
-msgstr ""
-
-#empty string with id 31506
+msgstr "Tekan \"Naik\" untuk Lenting"
 
 msgctxt "#31507"
 msgid "Power"
-msgstr ""
-
-#empty strings from id 31508 to 31523
+msgstr "Kuasa"
 
 msgctxt "#31524"
 msgid "Home"
-msgstr ""
+msgstr "Mula"
 
 msgctxt "#31525"
 msgid "Search Kodi for"
-msgstr ""
-
-#empty strings from id 31526 to 31549
+msgstr "Gelintar Kodi untuk"
 
 msgctxt "#31550"
 msgid "Spotlight"
-msgstr ""
+msgstr "Sorotan"
 
 msgctxt "#31551"
 msgid "Ongoing TV Shows"
-msgstr ""
+msgstr "Rancangan TV Masih Berjalan"
 
 msgctxt "#31552"
 msgid "New Movies"
-msgstr ""
+msgstr "Cereka Baharu"
 
 msgctxt "#31553"
 msgid "New TV Shows"
-msgstr ""
+msgstr "Rancangan TV Baharu"
 
 msgctxt "#31554"
 msgid "New Albums"
-msgstr ""
+msgstr "Album Baharu"
 
 msgctxt "#31555"
 msgid "Most Played Albums"
-msgstr ""
+msgstr "Album Terbaik Dimain"
 
 msgctxt "#31556"
 msgid "Featured Albums"
-msgstr ""
-
-#empty strings from id 31557 to 31561
+msgstr "Album Terfitur"
 
 msgctxt "#31562"
 msgid "Loading Weather..."
-msgstr ""
+msgstr "Memuatkan Cuaca..."
 
 msgctxt "#31563"
 msgid "No Location Available"
-msgstr ""
+msgstr "Tiada Lokasi Tersedia"
 
 msgctxt "#31564"
 msgid "Loading"
-msgstr ""
-
-#empty strings from id 31565 to 31599
+msgstr "Memuatkan"
 
 msgctxt "#31600"
 msgid "Options"
-msgstr ""
+msgstr "Opsyen"
 
 msgctxt "#31601"
 msgid "Initializing Skin"
-msgstr ""
-
-#empty strings from id 31602 to 31619
+msgstr "Mengawalkan Kulit"
 
 msgctxt "#31620"
 msgid "View Options"
-msgstr ""
+msgstr "Lihat Pilihan"
 
 msgctxt "#31621"
 msgid "Set Games Path"
-msgstr ""
+msgstr "Tetapkan Laluan Permainan"
 
 msgctxt "#31622"
 msgid "Reset Games Path"
-msgstr ""
-
-#empty strings from id 31623 to 31688
+msgstr "Tetap Semula Laluan Permainan"
 
 msgctxt "#31689"
 msgid "Location"
-msgstr ""
+msgstr "Lokasi"
 
 msgctxt "#31690"
 msgid "Hide Fanart"
-msgstr ""
+msgstr "Sembunyi Seni Peminat"
 
 msgctxt "#31691"
 msgid "Set Fanart Path"
-msgstr ""
+msgstr "Tetapkan Laluan Seni Peminat"
 
 msgctxt "#31692"
 msgid "Hide Daily Fanart"
-msgstr ""
+msgstr "Sembunyi Seni Peminat Harian"
 
 msgctxt "#31693"
 msgid "Moon Phase"
-msgstr ""
+msgstr "Fasa Bulan"
 
 msgctxt "#31694"
 msgid "Current Weather"
-msgstr ""
+msgstr "Cuaca Semasa"
 
 msgctxt "#31695"
 msgid "10 Day Forecast"
-msgstr ""
-
-msgctxt "#31696"
-msgid "24 Hours in Detail"
-msgstr ""
-
-#empty strings from id 31697 to 31715
+msgstr "Ramalan 10 Hari"
 
 msgctxt "#31716"
 msgid "Playlist Options"
-msgstr ""
-
-#empty strings from id 31717 to 31804
+msgstr "Pilihan Senarai Main"
 
 msgctxt "#31805"
 msgid "Aired"
-msgstr ""
-
-#empty strings from id 31806 to 31812
+msgstr "Diudara"
 
 msgctxt "#31813"
 msgid "Episodes"
-msgstr ""
-
-#empty strings from id 31814 to 31816
+msgstr "Episod"
 
 msgctxt "#31817"
 msgid "Items"
-msgstr ""
-
-#empty string with id 31818
+msgstr "Item"
 
 msgctxt "#31819"
 msgid "Page"
-msgstr ""
-
-#empty strings from id 31820 to 31821
+msgstr "Halaman"
 
 msgctxt "#31822"
 msgid "Item"
-msgstr ""
-
-#empty strings from id 31823 to 31919
+msgstr "Item"
 
 msgctxt "#31920"
 msgid "Recently Added"
-msgstr ""
+msgstr "Ditambah Baru-baru Ini"
 
 msgctxt "#31921"
 msgid "Select"
-msgstr ""
+msgstr "Pilih"
 
 msgctxt "#31922"
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 msgctxt "#31923"
 msgid "Close"
-msgstr ""
+msgstr "Tutup"
 
 msgctxt "#31924"
 msgid "View Options"
-msgstr ""
+msgstr "Lihat Pilihan"
 
 msgctxt "#31925"
 msgid "Display Info"
-msgstr ""
+msgstr "Papar Maklumat"
 
 msgctxt "#31926"
 msgid "Main Options"
-msgstr ""
+msgstr "Pilihan Utama"
 
 msgctxt "#31927"
 msgid "Display Plot"
-msgstr ""
+msgstr "Papar Plot"
 
 msgctxt "#31928"
 msgid "Use Posters"
-msgstr ""
+msgstr "Guna Poster"
 
 msgctxt "#31929"
 msgid "Display Plot on Focus"
-msgstr ""
+msgstr "Papar Plot bila Difokus"
 
 msgctxt "#31930"
 msgid "View"
-msgstr ""
+msgstr "Lihat"
 
 msgctxt "#31931"
 msgid "Use Landscape"
-msgstr ""
+msgstr "Guna Lanskap"
 
 msgctxt "#31932"
 msgid "Use Clearart"
-msgstr ""
+msgstr "Guna Senikosong"
 
 msgctxt "#31933"
 msgid "Small Thumbs"
-msgstr ""
+msgstr "Lakaran Kenit Kecil"
 
 msgctxt "#31934"
 msgid "Update Art"
-msgstr ""
+msgstr "Kemaskini Seni"
 
 msgctxt "#31935"
 msgid "Use Logo"
-msgstr ""
+msgstr "Guna Logo"
 
 msgctxt "#31936"
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 msgctxt "#31937"
 msgid "Information"
-msgstr ""
+msgstr "Maklumat"
 
 msgctxt "#31938"
 msgid "No Description Available"
-msgstr ""
+msgstr "Tiada Keterangan Tersedia"
 
 msgctxt "#31939"
 msgid "Update Repositories"
-msgstr ""
+msgstr "Kemaskini Repositori"
 
 msgctxt "#31940"
 msgid "Update Add-ons"
-msgstr ""
+msgstr "Kemaskini Tambahan"
 
 msgctxt "#31941"
 msgid "Updating Enabled Add-on Repositories..."
-msgstr ""
+msgstr "Mengemaskini Repositori Tambahan yang Dibenarkan..."
 
 msgctxt "#31942"
 msgid "Updating local add-on directories..."
-msgstr ""
+msgstr "Mengemaskini direktori tambahan setempat..."
 
 msgctxt "#31943"
 msgid "TV Guide"
-msgstr ""
+msgstr "Panduan TV"
 
 msgctxt "#31944"
 msgid "on"
-msgstr ""
+msgstr "hidup"
 
 msgctxt "#31945"
 msgid "Available Groups"
-msgstr ""
+msgstr "Kumpulan Tersedia"
 
 msgctxt "#31946"
 msgid "Add Group"
-msgstr ""
+msgstr "Tambah Kumpulan"
 
 msgctxt "#31947"
 msgid "Rename Group"
-msgstr ""
+msgstr "Namakan Semula Kumpulan"
 
 msgctxt "#31948"
 msgid "Delete Group"
-msgstr ""
+msgstr "Padam Kumpulan"
 
 msgctxt "#31949"
 msgid "Channel Options"
-msgstr ""
+msgstr "Pilihan Saluran"
 
 msgctxt "#31950"
 msgid "Misc Options"
-msgstr ""
+msgstr "Pilihan Pelbagai"
 
 msgctxt "#31951"
 msgid "Mouse Not Supported"
-msgstr ""
+msgstr "Tetikus Tidak Disokong"
 
 msgctxt "#31952"
 msgid "Please Disable"
-msgstr ""
-
-msgctxt "#31953"
-msgid "Edit Movie"
-msgstr ""
+msgstr "Sila Lumpuhkan"
 
 msgctxt "#31954"
 msgid "Edit Tv Show"
-msgstr ""
+msgstr "Sunting Rancangan Tv"
 
 msgctxt "#31955"
 msgid "Edit Season"
-msgstr ""
+msgstr "Sunting Musim"
 
 msgctxt "#31956"
 msgid "Edit Episode"
-msgstr ""
+msgstr "Sunting Episod"
 
 msgctxt "#31957"
 msgid "Edit Music Video"
-msgstr ""
+msgstr "Sunting Video Muzik"
 
 msgctxt "#31958"
 msgid "Edit Artist"
-msgstr ""
+msgstr "Sunting Artis"
 
 msgctxt "#31959"
 msgid "Edit Album"
-msgstr ""
+msgstr "Sunting Album"
 
 msgctxt "#31960"
 msgid "Edit Song"
-msgstr ""
+msgstr "Sunting Lagu"
 
 msgctxt "#31961"
 msgid "List"
-msgstr ""
+msgstr "Senarai"
 
 msgctxt "#31962"
 msgid "Info List"
-msgstr ""
+msgstr "Senarai Maklumat"
 
 msgctxt "#31963"
 msgid "Info List ■"
-msgstr ""
+msgstr "Senarai Maklumat ■"
 
 msgctxt "#31964"
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 msgctxt "#31965"
 msgid "Panel ■"
-msgstr ""
+msgstr "Panel ■"
 
 msgctxt "#31966"
 msgid "Landscape"
-msgstr ""
+msgstr "Lanskap"
 
 msgctxt "#31967"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#31968"
 msgid "Poster ■"
-msgstr ""
+msgstr "Poster ■"
 
 msgctxt "#31969"
 msgid "Thumbnail"
-msgstr ""
+msgstr "Lakaran Kenit"
 
 msgctxt "#31970"
 msgid "Thumbnail ■"
-msgstr ""
+msgstr "Lakaran Kenit ■"
 
 msgctxt "#31971"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#31972"
 msgid "Banner ■"
-msgstr ""
+msgstr "Banner ■"
 
 msgctxt "#31973"
 msgid "Cover"
-msgstr ""
+msgstr "Kulit Hadapan"
 
 msgctxt "#31974"
 msgid "Thumbnail List"
-msgstr ""
+msgstr "Senarai Lakaran Kenit"
 
 msgctxt "#31975"
 msgid "Display Date & Time"
-msgstr ""
+msgstr "Papar Tarikh & masa"
 
 msgctxt "#31976"
 msgid "Display Weather"
-msgstr ""
+msgstr "Papar Cuaca"
 
 msgctxt "#31977"
 msgid "No Media Source available"
-msgstr ""
+msgstr "Tiada Sumber Media tersedia"
 
 msgctxt "#31978"
 msgid "Home Tiles (Red)"
-msgstr ""
+msgstr "Jubin Rumah (Merah)"
 
 msgctxt "#31979"
 msgid "Movie Tiles (Blue)"
-msgstr ""
+msgstr "Jubin Cereka (Biru)"
 
 msgctxt "#31980"
 msgid "TV Show Tiles (Green)"
-msgstr ""
+msgstr "Jubin Rancangan TV (Hijau)"
 
 msgctxt "#31981"
 msgid "Music Tiles (Orange)"
-msgstr ""
+msgstr "Jubin Muzik (Jingga)"
 
 msgctxt "#31982"
 msgid "All Options"
-msgstr ""
+msgstr "Semua Pilihan"
 
 msgctxt "#31983"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#31984"
 msgid "Fanart"
-msgstr ""
+msgstr "Seni Peminat"
 
 msgctxt "#31985"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#31986"
 msgid "Landscape"
-msgstr ""
+msgstr "Lanskap"
 
 msgctxt "#31987"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 msgctxt "#31988"
 msgid "ClearArt"
-msgstr ""
+msgstr "SeniKosong"
 
 msgctxt "#31989"
 msgid "Home Tile Colours"
-msgstr ""
+msgstr "Warna Jubin Rumah"
 
 msgctxt "#31990"
 msgid "TV Shows"
-msgstr ""
+msgstr "Rancangan TV"
 
 msgctxt "#31991"
 msgid "Movies"
-msgstr ""
+msgstr "Cereka"
 
 msgctxt "#31992"
 msgid "Red"
-msgstr ""
+msgstr "Merah"
 
 msgctxt "#31993"
 msgid "Auto Login"
-msgstr ""
+msgstr "Daftar Masuk Auto"
 
 msgctxt "#31994"
 msgid "Display Navigation Arrow"
-msgstr ""
+msgstr "Papar Anak Panah Navigasi"
 
 msgctxt "#31995"
 msgid "Set Custom Overlay"
-msgstr ""
-
-msgctxt "#31996"
-msgid "Hide Date"
-msgstr ""
+msgstr "Tetapkan Tindihan Atas Suai"

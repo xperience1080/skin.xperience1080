@@ -9,272 +9,116 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: German (http://www.transifex.com/projects/p/xbmc-skins/language/de/)\n"
+"Language-Team: English (Australia) (http://www.transifex.com/projects/p/xbmc-skins/language/en_AU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
+"Language: en_AU\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgctxt "#31000"
-msgid "Known Movies"
-msgstr "Bekannte Filme"
 
 msgctxt "#31001"
 msgid "Cinema Experience"
 msgstr "Cinema Experience"
 
-msgctxt "#31002"
-msgid "Checking for"
-msgstr "Überprüfe auf"
-
-msgctxt "#31003"
-msgid "Checking for updates"
-msgstr "Auf Updates überprüfen"
-
-msgctxt "#31004"
-msgid "Known TV Shows"
-msgstr "Bekannte Serien"
-
-msgctxt "#31005"
-msgid "Known Movie Roles"
-msgstr "Bekannte Film-Rollen"
-
-msgctxt "#31006"
-msgid "Known TV Roles"
-msgstr "Bekannte TV Rollen"
-
 msgctxt "#31007"
 msgid "Age"
-msgstr "Alter"
+msgstr "Age"
 
 msgctxt "#31008"
 msgid "Born"
-msgstr "Geboren"
+msgstr "Born"
 
 msgctxt "#31009"
 msgid "Died"
-msgstr "Verstorben am"
-
-msgctxt "#31010"
-msgid "TV Roles"
-msgstr "TV Rollen"
-
-msgctxt "#31011"
-msgid "Movie Roles"
-msgstr "Film Rollen"
+msgstr "Died"
 
 msgctxt "#31012"
 msgid "Artwork"
-msgstr "Grafiken"
-
-msgctxt "#31013"
-msgid "Loading PVR Channels..."
-msgstr "Lade PVR-Kanäle..."
-
-msgctxt "#31014"
-msgid "Radio Stations"
-msgstr "Radiosender"
-
-msgctxt "#31015"
-msgid "Movie Crew"
-msgstr "Film-Crew"
-
-msgctxt "#31016"
-msgid "TV Crew"
-msgstr "TV-Crew"
-
-msgctxt "#31017"
-msgid "TV Show Roles"
-msgstr "Serien Rollen"
-
-msgctxt "#31018"
-msgid "TV Show Crew"
-msgstr "Serien-Crew"
-
-msgctxt "#31019"
-msgid "Trakt Options"
-msgstr "Trakt Optionen"
-
-msgctxt "#31020"
-msgid "Airing Now & Next"
-msgstr "Läuft gerade und als nächstes"
-
-msgctxt "#31021"
-msgid "Frame"
-msgstr "Rahmen"
+msgstr "Artwork"
 
 msgctxt "#31022"
 msgid "Video Extras"
-msgstr "Film-Extras"
+msgstr "Video Extras"
 
 msgctxt "#31023"
 msgid "Extras"
 msgstr "Extras"
 
-msgctxt "#31024"
-msgid "Reset Skin Settings"
-msgstr "Skin-Einstellungen zurücksetzen"
-
-msgctxt "#31025"
-msgid "WARNING: This will reset ALL skin settings"
-msgstr "WARNING: Dies setzt ALLE Skin-Einstellungen zurück"
-
 msgctxt "#31026"
 msgid "Germany"
-msgstr "Deutschland"
-
-msgctxt "#31027"
-msgid "Italy"
-msgstr "Italien"
-
-msgctxt "#31028"
-msgid "United Kingdom"
-msgstr "Vereinigtes Königreich"
+msgstr "Germany"
 
 msgctxt "#31029"
 msgid "United States"
-msgstr "Vereinigte Staaten"
-
-msgctxt "#31030"
-msgid "Hide Clock & Weather"
-msgstr "Verstecke Uhrzeit und Wetter"
-
-msgctxt "#31031"
-msgid "Hide Chapter Information"
-msgstr "Verstecke Kapitel-Information"
-
-msgctxt "#31032"
-msgid "Pictures Tile"
-msgstr "Bilder-Element"
-
-msgctxt "#31033"
-msgid "XKCD.com"
-msgstr "XKCD.com"
-
-msgctxt "#31034"
-msgid "Cyanide & Happiness"
-msgstr "Cyanide & Happiness"
+msgstr "United States"
 
 msgctxt "#31035"
 msgid "Daily Babes"
 msgstr "Daily Babes"
 
-msgctxt "#31036"
-msgid "MyPicsDB"
-msgstr "MyPicsDB"
-
-msgctxt "#31037"
-msgid "Photos"
-msgstr "Fotos"
-
-msgctxt "#31038"
-msgid "Path to Pictures"
-msgstr "Bilder-Pfad"
-
-msgctxt "#31039"
-msgid "Pictures Tiles (Purple)"
-msgstr "Bilder-Element (lila)"
-
-msgctxt "#31040"
-msgid "Reset Pictures Path"
-msgstr "Bilder-Pfad zurücksetzen"
-
-msgctxt "#31041"
-msgid "Hide Weather Fanart"
-msgstr "Verstecke Wetter Fanart-Grafiken"
-
-msgctxt "#31042"
-msgid "Hide Weather Daily Fanart"
-msgstr "Verstecke Wetter Tages Fanart-Grafiken"
-
-msgctxt "#31043"
-msgid "Set Weather Fanart Path"
-msgstr "Pfad für Wetter Fanart-Grafiken"
-
-msgctxt "#31044"
-msgid "Reset Weather Fanart Path"
-msgstr "Pfad für Wetter Fanart-Grafiken zurücksetzen"
-
-msgctxt "#31045"
-msgid "Display Volume in dB"
-msgstr "Zeige Lautstärke in dB"
-
 msgctxt "#31100"
 msgid "General"
-msgstr "Allgemein"
+msgstr "General"
 
 msgctxt "#31101"
 msgid "Enable Kiosk Mode"
-msgstr "Kiosk-Modus aktivieren"
+msgstr "Enable Kiosk Mode"
 
 msgctxt "#31102"
 msgid "Display Now Playing Video in Background"
-msgstr "Aktuell gespieltes Video im Hintergrund anzeigen"
+msgstr "Display Now Playing Video in Background"
 
 msgctxt "#31103"
 msgid "Display Artist Slideshow in Music Visualisation"
-msgstr "Interpreten-Slideshow in Musikvisualisierung anzeigen"
+msgstr "Display Artist Slideshow in Music Visualisation"
 
 msgctxt "#31104"
 msgid "Display Paths for Files and Streams"
-msgstr "Zeige Pfadangabe für Dateien und Streams"
+msgstr "Display Paths for Files and Streams"
 
 msgctxt "#31105"
 msgid "Animate Artist Slideshow"
-msgstr "Interpreten-Slideshow animieren"
-
-msgctxt "#31106"
-msgid "Display Fanart above Visualisation"
-msgstr "Fanart über der Visualisierung anzeigen"
+msgstr "Animate Artist Slideshow"
 
 msgctxt "#31108"
 msgid "Automatically switch to music visualisation upon Play"
-msgstr "Bei Wiedergabe automatische zur Musik-Visualisation wechseln"
+msgstr "Automatically switch to music visualisation upon Play"
 
 msgctxt "#31109"
 msgid "Enable Auto Scrolling for text"
-msgstr "Aktiviere Auto-Scrolling für Textboxen"
+msgstr "Enable Auto Scrolling for text"
 
 msgctxt "#31112"
 msgid "Invert Spin Control"
-msgstr "\"Spin Control\" invertieren"
+msgstr "Invert Spin Control"
 
 msgctxt "#31113"
 msgid "Top"
-msgstr "Oben"
+msgstr "Top"
 
 msgctxt "#31114"
 msgid "Bottom"
-msgstr "Unten"
-
-msgctxt "#31129"
-msgid "Use Classic Home"
-msgstr "Aktiviere klassisches Hauptmenü"
+msgstr "Bottom"
 
 msgctxt "#31130"
 msgid "Home"
-msgstr "Hauptmenü"
-
-msgctxt "#31131"
-msgid "Manage Home Categories"
-msgstr "Kategorien verwalten"
+msgstr "Home"
 
 msgctxt "#31134"
 msgid "Display Profile Image"
-msgstr "Profilbild anzeigen"
+msgstr "Display Profile Image"
 
 msgctxt "#31135"
 msgid "Display Sub-menu Arrow"
-msgstr "Untermenü-Pfeil anzeigen"
+msgstr "Display Sub-menu Arrow"
 
 msgctxt "#31136"
 msgid "Manage custom Home Items"
-msgstr "Benutzerdefinierte Hauptmenüeinträge verwalten"
+msgstr "Manage custom Home Items"
 
 msgctxt "#31137"
 msgid "Custom"
-msgstr "Benutzerdefiniert"
+msgstr "Custom"
 
 msgctxt "#31138"
 msgid "Name"
@@ -282,91 +126,91 @@ msgstr "Name"
 
 msgctxt "#31139"
 msgid "Icon"
-msgstr "Symbol"
+msgstr "Icon"
 
 msgctxt "#31140"
 msgid "Manage custom Home Widgets"
-msgstr "Eigene Hauptmenü-Widgets verwalten"
+msgstr "Manage custom Home Widgets"
 
 msgctxt "#31141"
 msgid "Type"
-msgstr "Typ"
+msgstr "Type"
 
 msgctxt "#31142"
 msgid "Path"
-msgstr "Pfad"
+msgstr "Path"
 
 msgctxt "#31143"
 msgid "Recommended size 633x437px"
-msgstr "Empfohlene Größe 633x437px"
+msgstr "Recommended size 633x437px"
 
 msgctxt "#31144"
 msgid "Manage custom Home Tile Colours"
-msgstr "Verwalte Farben eigener Hauptmenü-Elemente"
+msgstr "Manage custom Home Tile Colours"
 
 msgctxt "#31145"
 msgid "Video add-on"
-msgstr "Video Add-on"
+msgstr "Video add-on"
 
 msgctxt "#31146"
 msgid "Music add-on"
-msgstr "Musik Add-on"
+msgstr "Music add-on"
 
 msgctxt "#31147"
 msgid "Picture add-on"
-msgstr "Bild Add-on"
+msgstr "Picture add-on"
 
 msgctxt "#31148"
 msgid "Program add-on"
-msgstr "Programm Add-on"
+msgstr "Program add-on"
 
 msgctxt "#31149"
 msgid "Video Playlist"
-msgstr "Videowiedergabeliste"
+msgstr "Video Playlist"
 
 msgctxt "#31150"
 msgid "Music Playlist"
-msgstr "Musikwiedergabeliste"
+msgstr "Music Playlist"
 
 msgctxt "#31151"
 msgid "Custom"
-msgstr "Benutzerdefiniert"
+msgstr "Custom"
 
 msgctxt "#31152"
 msgid "Music Panel opens"
-msgstr "Musik-Panel öffnet"
+msgstr "Music Panel opens"
 
 msgctxt "#31153"
 msgid "Favourite"
-msgstr "Favorit"
+msgstr "Favourite"
 
 msgctxt "#31154"
 msgid "Recommended size 283x283px"
-msgstr "Empfohlene Größe 283x283px"
+msgstr "Recommended size 283x283px"
 
 msgctxt "#31156"
 msgid "Show Name"
-msgstr "Namen anzeigen"
+msgstr "Show Name"
 
 msgctxt "#31157"
 msgid "Video Tile"
-msgstr "Video-Kachel"
+msgstr "Video Tile"
 
 msgctxt "#31158"
 msgid "TV Show Tile"
-msgstr "Serien-Kachel"
+msgstr "TV Show Tile"
 
 msgctxt "#31159"
 msgid "App Tile"
-msgstr "App-Kachel"
+msgstr "App Tile"
 
 msgctxt "#31160"
 msgid "Animate Icon"
-msgstr "Symbol animieren"
+msgstr "Animate Icon"
 
 msgctxt "#31161"
 msgid "Music Tile"
-msgstr "Musik-Kachel"
+msgstr "Music Tile"
 
 msgctxt "#31162"
 msgid "Widget"
@@ -374,79 +218,63 @@ msgstr "Widget"
 
 msgctxt "#31164"
 msgid "Random Items"
-msgstr "Zufällige Elemente"
+msgstr "Random Items"
 
 msgctxt "#31165"
 msgid "Only Unwatched items"
-msgstr "Nur ungesehene Elemente"
+msgstr "Only Unwatched items"
 
 msgctxt "#31166"
 msgid "Only Partially Watched items"
-msgstr "Nur teilweise gesehene Elemente"
+msgstr "Only Partially Watched items"
 
 msgctxt "#31168"
 msgid "Manage custom Home Widget"
-msgstr "Eigenes Hauptmenü-Widget verwalten"
+msgstr "Manage custom Home Widget"
 
 msgctxt "#31169"
 msgid "Upcoming Movies"
-msgstr "Demnächst im Kino"
+msgstr "Upcoming Movies"
 
 msgctxt "#31170"
 msgid "In Theatres Now"
-msgstr "Aktuell im Kino"
+msgstr "In Theatres Now"
 
 msgctxt "#31171"
 msgid "Popular Movies"
-msgstr "Beliebte Filme"
+msgstr "Popular Movies"
 
 msgctxt "#31172"
 msgid "Top Rated Movies"
-msgstr "Am besten bewertete Filme"
+msgstr "Top Rated Movies"
 
 msgctxt "#31173"
 msgid "Trending Movies"
-msgstr "Angesagte Filme"
+msgstr "Trending Movies"
 
 msgctxt "#31174"
 msgid "Trending TV Shows"
-msgstr "Angesagte Serien"
+msgstr "Trending TV Shows"
 
 msgctxt "#31175"
 msgid "Home Tile"
-msgstr "Home-Kachel"
+msgstr "Home Tile"
 
 msgctxt "#31190"
 msgid "Views"
-msgstr "Ansichten"
-
-msgctxt "#31191"
-msgid "Enable Fanart"
-msgstr "Fanart anzeigen"
+msgstr "Views"
 
 msgctxt "#31192"
 msgid "Motion Picture Rating country"
-msgstr "Land für Film-Bewertungen"
+msgstr "Motion Picture Rating country"
 
 msgctxt "#31193"
 msgid "Select Motion Picture Rating country"
-msgstr "Land für Film-Bewertungen auswählen"
-
-msgctxt "#31200"
-msgid "Display Power Button (does not affect home screen)"
-msgstr "Energie-Schaltfläche anzeigen (Einstellung hat keinen Einfluss auf das Hauptmenü)"
-
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr "Optionen-Schaltfläche anzeigen"
-
-msgctxt "#31202"
-msgid "Play Trailer on opening Movie Information"
-msgstr "Trailer beim Öffnen der Filminformationen abspielen"
+msgstr "Select Motion Picture Rating country"
 
 msgctxt "#31203"
 msgid "Play Trailer minimized"
-msgstr "Trailer minimiert starten"
+msgstr "Play Trailer minimised"
 
 msgctxt "#31220"
 msgid "Live TV"
@@ -454,19 +282,19 @@ msgstr "Live TV"
 
 msgctxt "#31221"
 msgid "Enable Genre Colours in the TV EPG"
-msgstr "Genre-Farben im EPG verwenden"
+msgstr "Enable Genre Colours in the TV EPG"
 
 msgctxt "#31222"
 msgid "Advanced"
-msgstr "Erweitert"
+msgstr "Advanced"
 
 msgctxt "#31240"
 msgid "Enable Music Visualisation"
-msgstr "Musik-Visualisierung aktivieren"
+msgstr "Enable Music Visualisation"
 
 msgctxt "#31250"
 msgid "Backgrounds"
-msgstr "Hintergründe"
+msgstr "Backgrounds"
 
 msgctxt "#31251"
 msgid "Global"
@@ -474,35 +302,19 @@ msgstr "Global"
 
 msgctxt "#31252"
 msgid "Single Image"
-msgstr "Einzel Bild"
+msgstr "Single Image"
 
 msgctxt "#31253"
 msgid "Multiple Image"
-msgstr "Mehrfach Bild"
+msgstr "Multiple Image"
 
 msgctxt "#31271"
 msgid "Display Profile Image"
-msgstr "Profilbild anzeigen"
-
-msgctxt "#31272"
-msgid "Replace Pictures with Custom Menu Item in Quick Navigation"
-msgstr "Ersetze Bilder mit eigenem Menüpunkt in der Quick Navigation"
-
-msgctxt "#31273"
-msgid "Replace Trailer with Custom Menu Item in Quick Navigation"
-msgstr "Ersetze Trailer mit eigenem Menüpunkt in der Quick Navigation"
-
-msgctxt "#31274"
-msgid "Replace New Movies with Custom Menu Item in Quick Navigation"
-msgstr "Ersetze Neue Filme mit eigenem Menüpunkt in der Quick Navigation"
-
-msgctxt "#31275"
-msgid "Replace New TV Shows with Custom Menu Item in Quick Navigation"
-msgstr "Ersetze Neue Serien mit eigenem Menüpunkt in der Quick Navigation"
+msgstr "Display Profile Image"
 
 msgctxt "#31276"
 msgid "Choose Custom Menu Item"
-msgstr "Benutzerdefinierten Menüpunkt auswählen"
+msgstr "Choose Custom Menu Item"
 
 msgctxt "#31280"
 msgid "Add-ons"
@@ -510,411 +322,399 @@ msgstr "Add-ons"
 
 msgctxt "#31282"
 msgid "Lyrics add-on"
-msgstr "Songtext Add-on"
+msgstr "Lyrics add-on"
 
 msgctxt "#31283"
 msgid "Enable TVTunes add-on"
-msgstr "TVTunes Add-on aktivieren"
+msgstr "Enable TVTunes add-on"
 
 msgctxt "#31284"
 msgid "Download theme songs"
-msgstr "Theme Songs herunterladen"
+msgstr "Download theme songs"
 
 msgctxt "#31285"
 msgid "Enable TV Show Next Aired"
-msgstr "TV Show Next Aired aktivieren"
+msgstr "Enable TV Show Next Aired"
 
 msgctxt "#31290"
 msgid "Configure TV Show Next Aired"
-msgstr "TV Show Next Aired konfigurieren"
+msgstr "Configure TV Show Next Aired"
 
 msgctxt "#31293"
 msgid "Update Next Aired data on Start"
-msgstr "Next-Aired Daten beim Starten aktualisieren"
+msgstr "Update Next Aired data on Start"
 
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
-msgstr "Grafiken (Landscape, Logo, Clearart) nach Datenbankupdate aktualisieren"
+msgstr "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 
 msgctxt "#31303"
 msgid "Tracks"
-msgstr "Titel"
+msgstr "Tracks"
 
 msgctxt "#31304"
 msgid "Discography"
-msgstr "Diskografie"
+msgstr "Discography"
 
 msgctxt "#31305"
 msgid "Get Thumb"
-msgstr "Lade Cover"
+msgstr "Get Thumb"
 
 msgctxt "#31306"
 msgid "Get Fanart"
-msgstr "Lade Fanart"
+msgstr "Get Fanart"
 
 msgctxt "#31307"
 msgid "Refresh"
-msgstr "Aktualisieren"
+msgstr "Refresh"
 
 msgctxt "#31311"
 msgid "Unwatched Episodes: "
-msgstr "Ungesehene Episoden: "
-
-msgctxt "#31314"
-msgid "First Aired: "
-msgstr "Erstausstrahlung: "
+msgstr "Unwatched Episodes: "
 
 msgctxt "#31315"
 msgid "Play"
-msgstr "Abspielen"
+msgstr "Play"
 
 msgctxt "#31316"
 msgid "Cast"
-msgstr "Besetzung"
+msgstr "Cast"
 
 msgctxt "#31319"
 msgid "Plot"
-msgstr "Handlung"
+msgstr "Plot"
 
 msgctxt "#31324"
 msgid "Biography"
-msgstr "Biografie"
+msgstr "Biography"
 
 msgctxt "#31325"
 msgid "Review"
-msgstr "Bewertung"
+msgstr "Review"
 
 msgctxt "#31326"
 msgid "Get Info"
-msgstr "Lade Info"
+msgstr "Get Info"
 
 msgctxt "#31327"
 msgid "Year of Release"
-msgstr "Erscheinungsjahr"
+msgstr "Year of Release"
 
 msgctxt "#31329"
 msgid "No Biography for this actor"
-msgstr "Keine Biografie für diesen Schauspieler"
+msgstr "No Biography for this actor"
 
 msgctxt "#31330"
 msgid "No Description for this application"
-msgstr "Keine Beschreibung für diese Anwendung"
+msgstr "No Description for this application"
 
 msgctxt "#31331"
 msgid "Released"
-msgstr "Veröffentlicht"
+msgstr "Released"
 
 msgctxt "#31333"
 msgid "Get Theme"
-msgstr "Lade Theme"
+msgstr "Get Theme"
 
 msgctxt "#31351"
 msgid "Logout"
-msgstr "Abmelden"
+msgstr "Logout"
 
 msgctxt "#31352"
 msgid "Reload Skin"
-msgstr "Skin neu laden"
+msgstr "Reload Skin"
 
 msgctxt "#31360"
 msgid "Master Mode Off"
-msgstr "Master-Modus aus"
+msgstr "Master Mode Off"
 
 msgctxt "#31361"
 msgid "Master Mode On"
-msgstr "Master-Modus ein"
+msgstr "Master Mode On"
 
 msgctxt "#31371"
 msgid "Finish Time:"
-msgstr "Endzeit:"
+msgstr "Finish Time:"
 
 msgctxt "#31372"
 msgid "Now Playing..."
-msgstr "Läuft gerade..."
+msgstr "Now Playing..."
 
 msgctxt "#31405"
 msgid "Login"
-msgstr "Anmeldung"
+msgstr "Login"
 
 msgctxt "#31440"
 msgid "System Info"
-msgstr "Systeminfo"
+msgstr "System Info"
 
 msgctxt "#31441"
 msgid "Quick Navigation"
-msgstr "Quick Nav"
+msgstr "Quick Navigation"
 
 msgctxt "#31443"
 msgid "Now Playing"
-msgstr "Aktuelle Wiedergabe"
+msgstr "Now Playing"
 
 msgctxt "#31444"
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Settings"
 
 msgctxt "#31445"
 msgid "Movies"
-msgstr "Filme"
+msgstr "Movies"
 
 msgctxt "#31446"
 msgid "TV Shows"
-msgstr "Serien"
+msgstr "TV Shows"
 
 msgctxt "#31447"
 msgid "Music"
-msgstr "Musik"
+msgstr "Music"
 
 msgctxt "#31448"
 msgid "Pictures"
-msgstr "Bilder"
+msgstr "Pictures"
 
 msgctxt "#31450"
 msgid "New Movies"
-msgstr "Neue Filme"
+msgstr "New Movies"
 
 msgctxt "#31451"
 msgid "New TV Shows"
-msgstr "Neue Serien"
+msgstr "New TV Shows"
 
 msgctxt "#31452"
 msgid "No Media Playing"
-msgstr "Keine Medienwiedergabe"
+msgstr "No Media Playing"
 
 msgctxt "#31453"
 msgid "User"
-msgstr "Benutzer"
+msgstr "User"
 
 msgctxt "#31454"
 msgid "IP Address"
-msgstr "IP-Adresse"
+msgstr "IP Address"
 
 msgctxt "#31455"
 msgid "Free Memory"
-msgstr "Freier Hauptspeicher"
+msgstr "Free Memory"
 
 msgctxt "#31456"
 msgid "Resolution"
-msgstr "Auflösung"
+msgstr "Resolution"
 
 msgctxt "#31457"
 msgid "System Uptime"
-msgstr "Betriebszeit"
+msgstr "System Uptime"
 
 msgctxt "#31458"
 msgid "Skin Version"
-msgstr "Skin-Version"
+msgstr "Skin Version"
 
 msgctxt "#31459"
 msgid "Kodi Version"
-msgstr "Kodi-Version"
-
-msgctxt "#31460"
-msgid "Skin Frame"
-msgstr "Guide"
+msgstr "Kodi Version"
 
 msgctxt "#31504"
 msgid "Applications"
-msgstr "Anwendungen"
+msgstr "Add-ons"
 
 msgctxt "#31505"
 msgid "Press \"Up\" to Eject"
-msgstr "\"Nach oben\" drücken zum Auswerfen"
+msgstr "Press \"Up\" to Eject"
 
 msgctxt "#31507"
 msgid "Power"
-msgstr "Energie"
+msgstr "Power"
 
 msgctxt "#31524"
 msgid "Home"
-msgstr "Startseite"
+msgstr "Home"
 
 msgctxt "#31525"
 msgid "Search Kodi for"
-msgstr "durchsuche Kodi nach"
+msgstr "Search Kodi for"
 
 msgctxt "#31550"
 msgid "Spotlight"
-msgstr "Im Rampenlicht"
+msgstr "Spotlight"
 
 msgctxt "#31551"
 msgid "Ongoing TV Shows"
-msgstr "Laufende Serien"
+msgstr "Ongoing TV Shows"
 
 msgctxt "#31552"
 msgid "New Movies"
-msgstr "Neue Filme"
+msgstr "New Movies"
 
 msgctxt "#31553"
 msgid "New TV Shows"
-msgstr "Neue Fernsehshows"
+msgstr "New TV Shows"
 
 msgctxt "#31554"
 msgid "New Albums"
-msgstr "Neue Alben"
+msgstr "New Albums"
 
 msgctxt "#31555"
 msgid "Most Played Albums"
-msgstr "Am meisten gespielte Alben"
+msgstr "Most Played Albums"
 
 msgctxt "#31556"
 msgid "Featured Albums"
-msgstr "Empfohlene Alben"
+msgstr "Featured Albums"
 
 msgctxt "#31562"
 msgid "Loading Weather..."
-msgstr "Lade Wetter..."
+msgstr "Loading Weather..."
 
 msgctxt "#31563"
 msgid "No Location Available"
-msgstr "Kein Ort vorhanden"
+msgstr "No Location Available"
 
 msgctxt "#31564"
 msgid "Loading"
-msgstr "Laden"
+msgstr "Loading"
 
 msgctxt "#31600"
 msgid "Options"
-msgstr "Optionen"
+msgstr "Options"
 
 msgctxt "#31601"
 msgid "Initializing Skin"
-msgstr "Initialisiere Skin"
+msgstr "Initialising Skin"
 
 msgctxt "#31620"
 msgid "View Options"
-msgstr "Ansichtsoptionen"
+msgstr "View Options"
 
 msgctxt "#31621"
 msgid "Set Games Path"
-msgstr "Spielepfad festlegen"
+msgstr "Set Games Path"
 
 msgctxt "#31622"
 msgid "Reset Games Path"
-msgstr "Spielepfad zurücksetzen"
+msgstr "Reset Games Path"
 
 msgctxt "#31689"
 msgid "Location"
-msgstr "Ort"
+msgstr "Location"
 
 msgctxt "#31690"
 msgid "Hide Fanart"
-msgstr "Fanart ausblenden"
+msgstr "Hide Fanart"
 
 msgctxt "#31691"
 msgid "Set Fanart Path"
-msgstr "Fanartpfad festlegen"
+msgstr "Set Fanart Path"
 
 msgctxt "#31692"
 msgid "Hide Daily Fanart"
-msgstr "Tages-Fanart ausblenden"
+msgstr "Hide Daily Fanart"
 
 msgctxt "#31693"
 msgid "Moon Phase"
-msgstr "Mondphase"
+msgstr "Moon Phase"
 
 msgctxt "#31694"
 msgid "Current Weather"
-msgstr "Aktuelles Wetter"
+msgstr "Current Weather"
 
 msgctxt "#31695"
 msgid "10 Day Forecast"
-msgstr "10-Tage-Prognose"
-
-msgctxt "#31696"
-msgid "24 Hours in Detail"
-msgstr "Stündliche Prognose"
+msgstr "10 Day Forecast"
 
 msgctxt "#31716"
 msgid "Playlist Options"
-msgstr "Wiedergabelistenoptionen"
+msgstr "Playlist Options"
 
 msgctxt "#31805"
 msgid "Aired"
-msgstr "Ausgestrahlt"
+msgstr "Aired"
 
 msgctxt "#31813"
 msgid "Episodes"
-msgstr "Episoden"
+msgstr "Episodes"
 
 msgctxt "#31817"
 msgid "Items"
-msgstr "Elemente"
+msgstr "Item"
 
 msgctxt "#31819"
 msgid "Page"
-msgstr "Seite"
+msgstr "Page"
 
 msgctxt "#31822"
 msgid "Item"
-msgstr "Element"
+msgstr "Item"
 
 msgctxt "#31920"
 msgid "Recently Added"
-msgstr "Zuletzt hinzugefügt"
+msgstr "Recently Added"
 
 msgctxt "#31921"
 msgid "Select"
-msgstr "Auswählen"
+msgstr "Select"
 
 msgctxt "#31922"
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr "Cancel"
 
 msgctxt "#31923"
 msgid "Close"
-msgstr "Schließen"
+msgstr "Close"
 
 msgctxt "#31924"
 msgid "View Options"
-msgstr "Ansichtsoptionen"
+msgstr "View Options"
 
 msgctxt "#31925"
 msgid "Display Info"
-msgstr "Info anzeigen"
+msgstr "Display Info"
 
 msgctxt "#31926"
 msgid "Main Options"
-msgstr "Hauptoptionen"
+msgstr "Main Options"
 
 msgctxt "#31927"
 msgid "Display Plot"
-msgstr "Handlung anzeigen"
+msgstr "Display Plot"
 
 msgctxt "#31928"
 msgid "Use Posters"
-msgstr "Poster verwenden"
+msgstr "Use Posters"
 
 msgctxt "#31929"
 msgid "Display Plot on Focus"
-msgstr "Handlung im Fokus anzeigen"
+msgstr "Display Plot on Focus"
 
 msgctxt "#31930"
 msgid "View"
-msgstr "Ansicht"
+msgstr "View"
 
 msgctxt "#31931"
 msgid "Use Landscape"
-msgstr "Landscape verwenden"
+msgstr "Use Landscape"
 
 msgctxt "#31932"
 msgid "Use Clearart"
-msgstr "Clearart verwenden"
+msgstr "Use Clearart"
 
 msgctxt "#31933"
 msgid "Small Thumbs"
-msgstr "Kleine Vorschaubilder"
+msgstr "Small Thumbs"
 
 msgctxt "#31934"
 msgid "Update Art"
-msgstr "Grafiken aktualisieren"
+msgstr "Update Art"
 
 msgctxt "#31935"
 msgid "Use Logo"
-msgstr "Logo verwenden"
+msgstr "Use Logo"
 
 msgctxt "#31936"
 msgid "Category"
-msgstr "Kategorie"
+msgstr "Category"
 
 msgctxt "#31937"
 msgid "Information"
@@ -922,107 +722,103 @@ msgstr "Information"
 
 msgctxt "#31938"
 msgid "No Description Available"
-msgstr "Keine Beschreibung vorhanden"
+msgstr "No Description Available"
 
 msgctxt "#31939"
 msgid "Update Repositories"
-msgstr "Repositorien aktualisieren"
+msgstr "Update Repositories"
 
 msgctxt "#31940"
 msgid "Update Add-ons"
-msgstr "Add-ons aktualisieren"
+msgstr "Update Add-ons"
 
 msgctxt "#31941"
 msgid "Updating Enabled Add-on Repositories..."
-msgstr "Aktivierte Add-on-Repositorien aktualisieren..."
+msgstr "Updating Enabled Add-on Repositories..."
 
 msgctxt "#31942"
 msgid "Updating local add-on directories..."
-msgstr "Lokale Add-on-Verzeichnisse aktualisieren..."
+msgstr "Updating local add-on directories..."
 
 msgctxt "#31943"
 msgid "TV Guide"
-msgstr "TV Programm"
+msgstr "TV Guide"
 
 msgctxt "#31944"
 msgid "on"
-msgstr "auf"
+msgstr "on"
 
 msgctxt "#31945"
 msgid "Available Groups"
-msgstr "Verfügbare Gruppen"
+msgstr "Available Groups"
 
 msgctxt "#31946"
 msgid "Add Group"
-msgstr "Gruppe hinzufügen"
+msgstr "Add Group"
 
 msgctxt "#31947"
 msgid "Rename Group"
-msgstr "Gruppe umbenennen"
+msgstr "Rename Group"
 
 msgctxt "#31948"
 msgid "Delete Group"
-msgstr "Gruppe löschen"
+msgstr "Delete Group"
 
 msgctxt "#31949"
 msgid "Channel Options"
-msgstr "Kanaloptionen"
+msgstr "Channel Options"
 
 msgctxt "#31950"
 msgid "Misc Options"
-msgstr "Allgemeine Optionen"
+msgstr "Misc Options"
 
 msgctxt "#31951"
 msgid "Mouse Not Supported"
-msgstr "Maus nicht unterstützt"
+msgstr "Mouse Not Supported"
 
 msgctxt "#31952"
 msgid "Please Disable"
-msgstr "Bitte deaktivieren"
-
-msgctxt "#31953"
-msgid "Edit Movie"
-msgstr "Film bearbeiten"
+msgstr "Please Disable"
 
 msgctxt "#31954"
 msgid "Edit Tv Show"
-msgstr "Serie bearbeiten"
+msgstr "Edit Tv Show"
 
 msgctxt "#31955"
 msgid "Edit Season"
-msgstr "Staffel bearbeiten"
+msgstr "Edit Season"
 
 msgctxt "#31956"
 msgid "Edit Episode"
-msgstr "Folge bearbeiten"
+msgstr "Edit Episode"
 
 msgctxt "#31957"
 msgid "Edit Music Video"
-msgstr "Musikvideo bearbeiten"
+msgstr "Edit Music Video"
 
 msgctxt "#31958"
 msgid "Edit Artist"
-msgstr "Interpret bearbeiten"
+msgstr "Edit Artist"
 
 msgctxt "#31959"
 msgid "Edit Album"
-msgstr "Album bearbeiten"
+msgstr "Edit Album"
 
 msgctxt "#31960"
 msgid "Edit Song"
-msgstr "Titel bearbeiten"
+msgstr "Edit Song"
 
 msgctxt "#31961"
 msgid "List"
-msgstr "Liste"
+msgstr "List"
 
 msgctxt "#31962"
 msgid "Info List"
-msgstr "Infoliste"
+msgstr "Info List"
 
 msgctxt "#31963"
 msgid "Info List ■"
-msgstr "Infoliste ■"
+msgstr "Info List ■"
 
 msgctxt "#31964"
 msgid "Panel"
@@ -1046,11 +842,11 @@ msgstr "Poster ■"
 
 msgctxt "#31969"
 msgid "Thumbnail"
-msgstr "Vorschaubild"
+msgstr "Thumbnail"
 
 msgctxt "#31970"
 msgid "Thumbnail ■"
-msgstr "Vorschaubild ■"
+msgstr "Thumbnail ■"
 
 msgctxt "#31971"
 msgid "Banner"
@@ -1066,39 +862,39 @@ msgstr "Cover"
 
 msgctxt "#31974"
 msgid "Thumbnail List"
-msgstr "Vorschaubildliste"
+msgstr "Thumbnail List"
 
 msgctxt "#31975"
 msgid "Display Date & Time"
-msgstr "Zeige Datum & Uhrzeit"
+msgstr "Display Date & Time"
 
 msgctxt "#31976"
 msgid "Display Weather"
-msgstr "Zeige Wetter"
+msgstr "Display Weather"
 
 msgctxt "#31977"
 msgid "No Media Source available"
-msgstr "Keine Medien-Quelle verfügbar"
+msgstr "No Media Source available"
 
 msgctxt "#31978"
 msgid "Home Tiles (Red)"
-msgstr "Hauptmenü Elemente (rot)"
+msgstr "Home Tiles (Red)"
 
 msgctxt "#31979"
 msgid "Movie Tiles (Blue)"
-msgstr "Filme Elemente (blau)"
+msgstr "Movie Tiles (Blue)"
 
 msgctxt "#31980"
 msgid "TV Show Tiles (Green)"
-msgstr "Serien Elemente (grün)"
+msgstr "TV Show Tiles (Green)"
 
 msgctxt "#31981"
 msgid "Music Tiles (Orange)"
-msgstr "Musik Elemente (orange)"
+msgstr "Music Tiles (Orange)"
 
 msgctxt "#31982"
 msgid "All Options"
-msgstr "Alle Optionen"
+msgstr "All Options"
 
 msgctxt "#31983"
 msgid "Poster"
@@ -1126,32 +922,28 @@ msgstr "ClearArt"
 
 msgctxt "#31989"
 msgid "Home Tile Colours"
-msgstr "Farben der Hauptmenü-Elemente"
+msgstr "Home Tile Colours"
 
 msgctxt "#31990"
 msgid "TV Shows"
-msgstr "Serien"
+msgstr "TV Shows"
 
 msgctxt "#31991"
 msgid "Movies"
-msgstr "Filme"
+msgstr "Movies"
 
 msgctxt "#31992"
 msgid "Red"
-msgstr "Rot"
+msgstr "Red"
 
 msgctxt "#31993"
 msgid "Auto Login"
-msgstr "Automatische Anmeldung"
+msgstr "Auto Login"
 
 msgctxt "#31994"
 msgid "Display Navigation Arrow"
-msgstr "Zeige Navigationspfeil"
+msgstr "Display Navigation Arrow"
 
 msgctxt "#31995"
 msgid "Set Custom Overlay"
-msgstr "Setze eigene Überlagerung"
-
-msgctxt "#31996"
-msgid "Hide Date"
-msgstr "Verstecke das Datum"
+msgstr "Set Custom Overlay"
