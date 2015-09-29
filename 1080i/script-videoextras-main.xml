@@ -6,8 +6,11 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<control type="image">
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
+	        <posx>0</posx>
+	        <posy>0</posy>
+	        <width>1920</width>
+	        <height>1080</height>
+	    	<aspectratio>scale</aspectratio>
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
@@ -18,7 +21,7 @@
 		</control>
 		<include>CommonItems</include>
 		<include>VideoExtrasHeader</include>
-		<include>Common-Info</include>        
+		<include>Common-Info</include>
 		<control type="group">
 			<animation type="Visible">
 				<effect type="slide" start="-1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
