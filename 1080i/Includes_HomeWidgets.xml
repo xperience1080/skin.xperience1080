@@ -117,11 +117,6 @@
         <include condition="stringcompare(Skin.String(HomeWidget.5.Type),script.randomandlastitems) + stringcompare(Skin.String(HomeWidget.5.SubType),Music)">HomeWidget.5.Playlist.Music</include>
     </include>
 
-    <include name="HomeWidget.7">
-        <include>HomeWidget.7.Photos</include>
-    </include>
-
-
     <!-- =============== -->
     <!-- Widget 1 (Home) -->
     <!-- =============== -->
@@ -2924,7 +2919,7 @@
             <visible>!IsEmpty(Window.Property(HomeWidget5.10.Title))</visible>
         </item>
     </include>
-    <variable name="HomeWidget.6.Pictures"> 
+    <variable name="HomeWidget.6.Pictures">
         <value condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.xkcd)">plugin://script.extendedinfo?info=xkcd</value>
         <value condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.cyanidehappiness)">plugin://script.extendedinfo?info=cyanide</value>
         <value condition="stringcompare(Skin.String(HomeWidget.6.Type),extendedinfo.dailybabes)">plugin://script.extendedinfo?info=dailybabes</value>
