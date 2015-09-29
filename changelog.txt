@@ -1,4 +1,8 @@
-﻿[B]4.1.400[/B]
+﻿[B]4.2.0[/B]
+• Languages: merged from Transifex
+• Various other fixes, submission to repo.
+
+[B]4.1.400[/B]
 • PVR: playing channel name is not marked blue
 • Home: fix wrong type of icon/art for Movies widget in Classic Home
 • VolumeBar: adjustments after introduce dB value in volume bar
