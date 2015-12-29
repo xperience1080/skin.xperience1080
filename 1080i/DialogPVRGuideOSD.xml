@@ -164,6 +164,7 @@
                             <align>left</align>
                             <label>$VAR[ListItem.Label]</label>
                             <textcolor>aawhite</textcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -176,6 +177,7 @@
                             <align>left</align>
                             <label>$VAR[ListItem.EpgInfo]</label>
                             <textcolor>77white</textcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="group">
@@ -249,6 +251,7 @@
                                 <align>left</align>
                                 <label>$VAR[ListItem.Label]</label>
                                 <textcolor>bbwhite</textcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -261,6 +264,7 @@
                                 <align>left</align>
                                 <label>$VAR[ListItem.EpgInfo]</label>
                                 <textcolor>aawhite</textcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
