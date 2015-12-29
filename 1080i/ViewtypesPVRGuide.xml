@@ -59,7 +59,7 @@
                             <height>30</height>
                             <font>Font-Condensed-S30-B</font>
                             <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>99FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <shadowcolor>55000000</shadowcolor>
                             <align>left</align>
                             <aligny>center</aligny>
@@ -115,7 +115,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.ChannelNumberLabel]</label>
                             <textcolor>22FFFFFF</textcolor>
-                            <selectedcolor>22FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                     </channellayout>
@@ -178,7 +178,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.ChannelNumberLabel]</label>
                             <textcolor>22FFFFFF</textcolor>
-                            <selectedcolor>22FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                             <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(10) + ![ListItem.IsSelected | ListItem.IsPlaying]">Conditional</animation>
                         </control>
@@ -565,7 +565,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="progress">
-                            <posx>128</posx>
+                            <posx>118</posx>
                             <posy>58</posy>
                             <width>67</width>
                             <height>19</height>
@@ -575,7 +575,22 @@
                             <midtexture>windows/pvr/progress-mid.png</midtexture>
                             <righttexture>windows/pvr/progress-leftright.png</righttexture>
                             <info>ListItem.Progress</info>
-                            <colordiffuse>77white</colordiffuse>
+                            <colordiffuse>aawhite</colordiffuse>
+                            <visible>!ListItem.IsPlaying</visible>
+                        </control>
+                        <control type="progress">
+                            <posx>118</posx>
+                            <posy>58</posy>
+                            <width>67</width>
+                            <height>19</height>
+                            <reveal>true</reveal>
+                            <texturebg>windows/pvr/progress-back.png</texturebg>
+                            <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                            <midtexture>windows/pvr/progress-mid.png</midtexture>
+                            <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                            <info>ListItem.Progress</info>
+                            <colordiffuse>SelectedColor</colordiffuse>
+                            <visible>ListItem.IsPlaying</visible>
                         </control>
                         <control type="label">
                             <description>Label</description>
@@ -600,7 +615,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.EndTime,→ ,]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -613,7 +628,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
@@ -647,7 +662,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="progress">
-                            <posx>173</posx>
+                            <posx>118</posx>
                             <posy>58</posy>
                             <width>67</width>
                             <height>19</height>
@@ -657,7 +672,22 @@
                             <midtexture>windows/pvr/progress-mid.png</midtexture>
                             <righttexture>windows/pvr/progress-leftright.png</righttexture>
                             <info>ListItem.Progress</info>
-                            <colordiffuse>77white</colordiffuse>
+                            <colordiffuse>aawhite</colordiffuse>
+                            <visible>!ListItem.IsPlaying</visible>
+                        </control>
+                        <control type="progress">
+                            <posx>118</posx>
+                            <posy>58</posy>
+                            <width>67</width>
+                            <height>19</height>
+                            <reveal>true</reveal>
+                            <texturebg>windows/pvr/progress-back.png</texturebg>
+                            <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                            <midtexture>windows/pvr/progress-mid.png</midtexture>
+                            <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                            <info>ListItem.Progress</info>
+                            <colordiffuse>SelectedColor</colordiffuse>
+                            <visible>ListItem.IsPlaying</visible>
                         </control>
                         <control type="label">
                             <description>Label</description>
@@ -682,7 +712,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.EndTime,→ ,]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -695,7 +725,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
@@ -771,7 +801,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="progress">
-                                <posx>128</posx>
+                                <posx>118</posx>
                                 <posy>58</posy>
                                 <width>67</width>
                                 <height>19</height>
@@ -781,7 +811,22 @@
                                 <midtexture>windows/pvr/progress-mid.png</midtexture>
                                 <righttexture>windows/pvr/progress-leftright.png</righttexture>
                                 <info>ListItem.Progress</info>
-                                <colordiffuse>D4FFFFFF</colordiffuse>
+                                <colordiffuse>aawhite</colordiffuse>
+                                <visible>!ListItem.IsPlaying</visible>
+                            </control>
+                            <control type="progress">
+                                <posx>118</posx>
+                                <posy>58</posy>
+                                <width>67</width>
+                                <height>19</height>
+                                <reveal>true</reveal>
+                                <texturebg>windows/pvr/progress-back.png</texturebg>
+                                <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                                <midtexture>windows/pvr/progress-mid.png</midtexture>
+                                <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                                <info>ListItem.Progress</info>
+                                <colordiffuse>SelectedColor</colordiffuse>
+                                <visible>ListItem.IsPlaying</visible>
                             </control>
                             <control type="label">
                                 <description>Title</description>
@@ -793,7 +838,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -870,7 +915,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="progress">
-                                <posx>173</posx>
+                                <posx>118</posx>
                                 <posy>58</posy>
                                 <width>67</width>
                                 <height>19</height>
@@ -880,7 +925,22 @@
                                 <midtexture>windows/pvr/progress-mid.png</midtexture>
                                 <righttexture>windows/pvr/progress-leftright.png</righttexture>
                                 <info>ListItem.Progress</info>
-                                <colordiffuse>D4FFFFFF</colordiffuse>
+                                <colordiffuse>aawhite</colordiffuse>
+                                <visible>!ListItem.IsPlaying</visible>
+                            </control>
+                            <control type="progress">
+                                <posx>118</posx>
+                                <posy>58</posy>
+                                <width>67</width>
+                                <height>19</height>
+                                <reveal>true</reveal>
+                                <texturebg>windows/pvr/progress-back.png</texturebg>
+                                <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                                <midtexture>windows/pvr/progress-mid.png</midtexture>
+                                <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                                <info>ListItem.Progress</info>
+                                <colordiffuse>SelectedColor</colordiffuse>
+                                <visible>ListItem.IsPlaying</visible>
                             </control>
                             <control type="label">
                                 <description>Title</description>
@@ -892,7 +952,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -1086,7 +1146,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="progress">
-                            <posx>128</posx>
+                            <posx>118</posx>
                             <posy>58</posy>
                             <width>67</width>
                             <height>19</height>
@@ -1096,7 +1156,22 @@
                             <midtexture>windows/pvr/progress-mid.png</midtexture>
                             <righttexture>windows/pvr/progress-leftright.png</righttexture>
                             <info>ListItem.Progress</info>
-                            <colordiffuse>77white</colordiffuse>
+                            <colordiffuse>aawhite</colordiffuse>
+                            <visible>!ListItem.IsPlaying</visible>
+                        </control>
+                        <control type="progress">
+                            <posx>118</posx>
+                            <posy>58</posy>
+                            <width>67</width>
+                            <height>19</height>
+                            <reveal>true</reveal>
+                            <texturebg>windows/pvr/progress-back.png</texturebg>
+                            <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                            <midtexture>windows/pvr/progress-mid.png</midtexture>
+                            <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                            <info>ListItem.Progress</info>
+                            <colordiffuse>SelectedColor</colordiffuse>
+                            <visible>ListItem.IsPlaying</visible>
                         </control>
                         <control type="label">
                             <description>Label</description>
@@ -1121,7 +1196,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.EndTime,→ ,]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1134,7 +1209,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
@@ -1168,7 +1243,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="progress">
-                            <posx>173</posx>
+                            <posx>118</posx>
                             <posy>58</posy>
                             <width>67</width>
                             <height>19</height>
@@ -1178,7 +1253,22 @@
                             <midtexture>windows/pvr/progress-mid.png</midtexture>
                             <righttexture>windows/pvr/progress-leftright.png</righttexture>
                             <info>ListItem.Progress</info>
-                            <colordiffuse>77white</colordiffuse>
+                            <colordiffuse>aawhite</colordiffuse>
+                            <visible>!ListItem.IsPlaying</visible>
+                        </control>
+                        <control type="progress">
+                            <posx>118</posx>
+                            <posy>58</posy>
+                            <width>67</width>
+                            <height>19</height>
+                            <reveal>true</reveal>
+                            <texturebg>windows/pvr/progress-back.png</texturebg>
+                            <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                            <midtexture>windows/pvr/progress-mid.png</midtexture>
+                            <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                            <info>ListItem.Progress</info>
+                            <colordiffuse>SelectedColor</colordiffuse>
+                            <visible>ListItem.IsPlaying</visible>
                         </control>
                         <control type="label">
                             <description>Label</description>
@@ -1203,7 +1293,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.EndTime,→ ,]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1216,7 +1306,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
@@ -1292,7 +1382,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="progress">
-                                <posx>128</posx>
+                                <posx>118</posx>
                                 <posy>58</posy>
                                 <width>67</width>
                                 <height>19</height>
@@ -1302,7 +1392,22 @@
                                 <midtexture>windows/pvr/progress-mid.png</midtexture>
                                 <righttexture>windows/pvr/progress-leftright.png</righttexture>
                                 <info>ListItem.Progress</info>
-                                <colordiffuse>D4FFFFFF</colordiffuse>
+                                <colordiffuse>aawhite</colordiffuse>
+                                <visible>!ListItem.IsPlaying</visible>
+                            </control>
+                            <control type="progress">
+                                <posx>118</posx>
+                                <posy>58</posy>
+                                <width>67</width>
+                                <height>19</height>
+                                <reveal>true</reveal>
+                                <texturebg>windows/pvr/progress-back.png</texturebg>
+                                <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                                <midtexture>windows/pvr/progress-mid.png</midtexture>
+                                <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                                <info>ListItem.Progress</info>
+                                <colordiffuse>SelectedColor</colordiffuse>
+                                <visible>ListItem.IsPlaying</visible>
                             </control>
                             <control type="label">
                                 <description>Title</description>
@@ -1314,7 +1419,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -1391,7 +1496,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="progress">
-                                <posx>173</posx>
+                                <posx>118</posx>
                                 <posy>58</posy>
                                 <width>67</width>
                                 <height>19</height>
@@ -1401,7 +1506,22 @@
                                 <midtexture>windows/pvr/progress-mid.png</midtexture>
                                 <righttexture>windows/pvr/progress-leftright.png</righttexture>
                                 <info>ListItem.Progress</info>
-                                <colordiffuse>D4FFFFFF</colordiffuse>
+                                <colordiffuse>aawhite</colordiffuse>
+                                <visible>!ListItem.IsPlaying</visible>
+                            </control>
+                            <control type="progress">
+                                <posx>118</posx>
+                                <posy>58</posy>
+                                <width>67</width>
+                                <height>19</height>
+                                <reveal>true</reveal>
+                                <texturebg>windows/pvr/progress-back.png</texturebg>
+                                <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+                                <midtexture>windows/pvr/progress-mid.png</midtexture>
+                                <righttexture>windows/pvr/progress-leftright.png</righttexture>
+                                <info>ListItem.Progress</info>
+                                <colordiffuse>SelectedColor</colordiffuse>
+                                <visible>ListItem.IsPlaying</visible>
                             </control>
                             <control type="label">
                                 <description>Title</description>
@@ -1413,7 +1533,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -1634,7 +1754,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Duration]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1647,7 +1767,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Genre]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
@@ -1695,7 +1815,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Duration]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
@@ -1708,7 +1828,7 @@
                             <align>left</align>
                             <label>$INFO[ListItem.Genre]</label>
                             <textcolor>77white</textcolor>
-                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
@@ -1772,7 +1892,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Duration]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1785,7 +1905,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Genre]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -1850,7 +1970,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Duration]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -1863,7 +1983,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Genre]</label>
                                 <textcolor>D4FFFFFF</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
