@@ -1,3 +1,8 @@
+[B]4.2.1[/B]
+• PVR: close option menu on right and before group selection
+• PVR: fix highlighting of playing item
+• FIX: unknow color variable SelectedGreen replaced with SelectedColor
+
 [B]4.2.0[/B]
 • Languages: merged from Transifex
 • Various other fixes, submission to repo.
