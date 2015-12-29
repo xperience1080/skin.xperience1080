@@ -421,7 +421,7 @@
                         <texture border="150,1,150,1">views/other/focus.png</texture>
                         <include>defaultfocusanim</include>
                         <include>visiblehidefadeinfo</include>
-                        <visible>Control.HasFocus(50) + !Window.IsVisible(songinformation)</visible>
+                        <visible>Control.HasFocus(50)</visible>
                     </control>
                     <control type="image">
                         <posx>30</posx>
@@ -444,7 +444,6 @@
                             <effect type="fade" start="71.5" end="100" time="500" tween="sine" easing="inout" />
                         </animation>
                         <animation effect="fade" start="100" end="71.5" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50) + !Container(50).ListItem.IsPlaying">Conditional</animation>
-                        <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="Window.IsVisible(songinformation)">Conditional</animation>
                         <control type="label">
                             <description>Label</description>
                             <posx>140</posx>
@@ -703,7 +702,6 @@
                         <colordiffuse>07FFFFFF</colordiffuse>
                         <aspectratio aligny="top">center</aspectratio>
                         <visible>ListItem.IsPlaying</visible>
-                        <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="Window.IsVisible(songinformation)">Conditional</animation>>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -713,7 +711,7 @@
                         <texture border="150,1,150,1">views/other/focus.png</texture>
                         <include>defaultfocusanim</include>
                         <include>visiblehidefadeinfo</include>
-                        <visible>Control.HasFocus(50) + !Window.IsVisible(songinformation)</visible>
+                        <visible>Control.HasFocus(50)</visible>
                     </control>
                     <control type="image">
                         <posx>30</posx>
@@ -730,7 +728,6 @@
                         <animation effect="fade" start="100" end="71.5" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50) + !Container(50).ListItem.IsPlaying">Conditional</animation>
                         <control type="group">
                             <include>visiblehidefadeinfo</include>
-                            <visible>!Window.IsVisible(songinformation)</visible>
                             <control type="label">
                                 <description>Label</description>
                                 <posx>140</posx>
@@ -1149,7 +1146,6 @@
                             <selectedcolor>SelectedColor</selectedcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
-                            <visible>!Window.IsActive(songinformation)</visible>
                             <include>visiblehidefadeinfo</include>
                         </control>
                         <control type="label">
@@ -1163,7 +1159,6 @@
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
                             <align>right</align>
-                            <visible>!Window.IsActive(songinformation)</visible>
                             <include>visiblehidefadeinfo</include>
                         </control>
                     </itemlayout>
@@ -1272,7 +1267,6 @@
                             <texture border="90,3,90,3">views/list/other/separator.png</texture>
                         </control>
                         <control type="group">
-                            <visible>!Window.IsActive(songinformation)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <posx>0</posx>
@@ -1306,7 +1300,6 @@
                             <selectedcolor>SelectedColor</selectedcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
-                            <visible>!Window.IsActive(songinformation)</visible>
                             <include>visiblehidefadeinfo</include>
                             <animation type="Focus" condition="[Container(52).OnNext | Container(52).OnPrevious] + !ListItem.IsPlaying" reversible="false">
                                 <effect type="fade" start="50" end="100" time="500" tween="sine" easing="inout" />
@@ -1324,7 +1317,6 @@
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
                             <align>right</align>
-                            <visible>!Window.IsActive(songinformation)</visible>
                             <include>visiblehidefadeinfo</include>
                             <animation type="Focus" condition="[Container(52).OnNext | Container(52).OnPrevious] + !ListItem.IsPlaying" reversible="false">
                                 <effect type="fade" start="50" end="100" time="500" tween="sine" easing="inout" />
@@ -2862,7 +2854,6 @@
                         <posx>430</posx>
                         <animation effect="slide" start="0,96" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnPrevious">Focus</animation>
                         <animation effect="slide" start="0,-96" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnNext">Focus</animation>
-                        <animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(songinformation)">Conditional</animation>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
