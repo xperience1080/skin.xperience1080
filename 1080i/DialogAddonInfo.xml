@@ -219,14 +219,15 @@
                             <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
                             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
                         </control>
-                        <control type="button" id="11">
-                            <description>Rollback button</description>
-                            <label>$LOCALIZE[24048]</label>
+                        <control type="radiobutton" id="13">
+                            <description>Auto Update button</description>
+                            <label>$LOCALIZE[21340]</label>
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>440</width>
+                            <width>500</width>
                             <height>83</height>
-                            <textoffsetx>25</textoffsetx>
+                            <textoffsetx>90</textoffsetx>
+                            <radioposx>-12</radioposx>
                             <align>left</align>
                             <font>Font-Condensed-S40</font>
                             <textcolor>99FFFFFF</textcolor>
