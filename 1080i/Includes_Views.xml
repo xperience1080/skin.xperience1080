@@ -630,7 +630,7 @@
 	</variable>
 
     <variable name="ListItem.EpgInfo">
-        <value condition="ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]">[COLOR=SelectedGreen]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Genre, • ,][/COLOR]</value>
+        <value condition="ListItem.IsPlaying | [StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)]">[COLOR=SelectedColor]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Genre, • ,][/COLOR]</value>
         <value>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Genre, • ,]</value>
     </variable>
 
