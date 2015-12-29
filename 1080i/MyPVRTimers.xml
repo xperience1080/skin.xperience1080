@@ -205,7 +205,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.ChannelName]$INFO[ListItem.StartDate, ● ,]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]</label>
                                 <textcolor>77white</textcolor>
-                                <selectedcolor>D4FFFFFF</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>!IsEmpty(ListItem.ChannelName)</visible>
                             </control>
@@ -275,7 +275,7 @@
                                     <align>left</align>
                                     <label>$INFO[ListItem.ChannelName]$INFO[ListItem.StartDate, ● ,]$INFO[ListItem.StartTime, ● ,]$INFO[ListItem.EndTime, → ,]</label>
                                     <textcolor>77white</textcolor>
-                                    <selectedcolor>D4FFFFFF</selectedcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
                                     <visible>!IsEmpty(ListItem.ChannelName)</visible>
                                 </control>

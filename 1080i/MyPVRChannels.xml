@@ -234,6 +234,7 @@
                                 <align>right</align>
                                 <label>$VAR[ListItem.ChannelNumberLabel]</label>
                                 <textcolor>44FFFFFF</textcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -246,6 +247,7 @@
                                 <align>left</align>
                                 <label>$VAR[ListItem.Label]</label>
                                 <textcolor>aawhite</textcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>!ListItem.HasEpg</visible>
                             </control>
@@ -301,6 +303,7 @@
                                     <align>left</align>
                                     <label>$VAR[ListItem.Title]</label>
                                     <textcolor>77white</textcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
                                 </control>
                             </control>
@@ -383,6 +386,7 @@
                                     <align>right</align>
                                     <label>$VAR[ListItem.ChannelNumberLabel]</label>
                                     <textcolor>aawhite</textcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
                                 </control>
                                 <control type="label">
@@ -395,6 +399,7 @@
                                     <align>left</align>
                                     <label>$VAR[ListItem.Label]</label>
                                     <textcolor>bbwhite</textcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
                                     <visible>!ListItem.HasEpg</visible>
                                 </control>
@@ -410,6 +415,7 @@
                                         <align>left</align>
                                         <label>$VAR[ListItem.Label]</label>
                                         <textcolor>bbwhite</textcolor>
+                                        <selectedcolor>SelectedColor</selectedcolor>
                                         <scroll>false</scroll>
                                     </control>
                                     <control type="progress">
@@ -450,6 +456,7 @@
                                         <align>left</align>
                                         <label>$VAR[ListItem.Title]</label>
                                         <textcolor>bbwhite</textcolor>
+                                        <selectedcolor>SelectedColor</selectedcolor>
                                         <scroll>false</scroll>
                                     </control>
                                 </control>
