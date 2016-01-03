@@ -76,7 +76,7 @@
                     </control>
                     <control type="label">
                         <description>Label 2</description>
-                        <posx>1390</posx>
+                        <posx>140</posx>
                         <posy>0</posy>
                         <width>1250</width>
                         <height>98</height>
@@ -148,7 +148,7 @@
                     </control>
                     <control type="label">
                         <description>Label 2</description>
-                        <posx>1390</posx>
+                        <posx>140</posx>
                         <posy>0</posy>
                         <width>1250</width>
                         <height>98</height>
@@ -214,7 +214,7 @@
                         </control>
                         <control type="label">
                             <description>Label 2</description>
-                            <posx>1390</posx>
+                            <posx>140</posx>
                             <posy>0</posy>
                             <width>1250</width>
                             <height>98</height>
@@ -301,7 +301,7 @@
                         </control>
                         <control type="label">
                             <description>Label 2</description>
-                            <posx>1390</posx>
+                            <posx>140</posx>
                             <posy>0</posy>
                             <width>1250</width>
                             <height>98</height>
