@@ -16,7 +16,6 @@
         <onclick condition="Window.IsActive(shutdownmenu)">Dialog.Close(shutdownmenu)</onclick>
         <onclick condition="Window.IsActive(seekbar)">Dialog.Close(seekbar)</onclick>
         <onclick condition="Window.IsActive(musicosd)">Dialog.Close(musicosd)</onclick>
-        <onclick condition="Window.IsActive(visualisationpresetlist)">Dialog.Close(visualisationpresetlist)</onclick>
         <onclick condition="Window.IsActive(osdvideosettings)">Dialog.Close(osdvideosettings)</onclick>
         <onclick condition="Window.IsActive(osdaudiosettings)">Dialog.Close(osdaudiosettings)</onclick>
         <onclick condition="Window.IsActive(videobookmarks)">Dialog.Close(videobookmarks)</onclick>
@@ -32,11 +31,8 @@
         <onclick condition="Window.IsActive(addonsettings)">Dialog.Close(addonsettings)</onclick>
         <onclick condition="Window.IsActive(accesspoints)">Dialog.Close(accesspoints)</onclick>
         <onclick condition="Window.IsActive(fullscreeninfo)">Dialog.Close(fullscreeninfo)</onclick>
-        <onclick condition="Window.IsActive(karaokeselector)">Dialog.Close(karaokeselector)</onclick>
-        <onclick condition="Window.IsActive(karaokelargeselector)">Dialog.Close(karaokelargeselector)</onclick>
         <onclick condition="Window.IsActive(sliderdialog)">Dialog.Close(sliderdialog)</onclick>
         <onclick condition="Window.IsActive(addoninformation)">Dialog.Close(addoninformation)</onclick>
-        <onclick condition="Window.IsActive(peripherals)">Dialog.Close(peripherals)</onclick>
         <onclick condition="Window.IsActive(peripheralsettings)">Dialog.Close(peripheralsettings)</onclick>
         <onclick condition="Window.IsActive(mediafilter)">Dialog.Close(mediafilter)</onclick>
         <onclick condition="Window.IsActive(pvrguideinfo)">Dialog.Close(pvrguideinfo)</onclick>
@@ -51,7 +47,6 @@
         <onclick condition="Window.IsActive(musicinformation)">Dialog.Close(musicinformation)</onclick>
         <onclick condition="Window.IsActive(okdialog)">Dialog.Close(okdialog)</onclick>
         <onclick condition="Window.IsActive(movieinformation)">Dialog.Close(movieinformation)</onclick>
-        <onclick condition="Window.IsActive(filestackingdialog)">Dialog.Close(filestackingdialog)</onclick>
         <onclick condition="Window.IsActive(1122)">Dialog.Close(1122)</onclick>
         <onclick condition="Window.IsActive(3000)">Dialog.Close(3000)</onclick>
         <onclick condition="Window.IsActive(3001)">Dialog.Close(3001)</onclick>
