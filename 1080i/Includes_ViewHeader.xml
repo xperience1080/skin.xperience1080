@@ -691,6 +691,35 @@
         </control>
     </include>
 
+    <include name="EventLogHeader">
+        <control type="group">
+            <posx>75</posx>
+            <posy>26</posy>
+            <visible>!Window.IsActive(favourites)</visible>
+            <include>BannerListInfoAnimation</include>
+            <control type="group">
+                <control type="image">
+                    <posx>17</posx>
+                    <posy>32</posy>
+                    <width>85</width>
+                    <height>85</height>
+                    <texture>DefaultSystemInfo.png</texture>
+                </control>
+                <control type="label">
+                    <posx>110</posx>
+                    <posy>15</posy>
+                    <width>500</width>
+                    <height>120</height>
+                    <label>$LOCALIZE[14111]</label>
+                    <font>Font-Condensed-S36-B</font>
+                    <textcolor>C0FFFFFF</textcolor>
+                    <scroll>false</scroll>
+                    <align>left</align>
+                </control>
+            </control>
+        </control>
+    </include>
+
     <include name="PVRHeader">
         <control type="group">
             <posx>75</posx>
