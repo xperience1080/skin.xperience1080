@@ -43,9 +43,9 @@
                 <height>700</height>
                 <width>1420</width>
                 <pagecontrol>70</pagecontrol>
-                <onleft condition="substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)">ActivateWindow(1122)</onleft>
-                <onleft condition="!Skin.HasSetting(KioskMode) + !substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)">9010</onleft>
-                <onleft condition="Skin.HasSetting(KioskMode) + !substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)">50</onleft>
+                <oninfo condition="!StringCompare(ListItem.Label,..) + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)">ActivateWindow(1122)</oninfo>
+                <onleft condition="!Skin.HasSetting(KioskMode)">9010</onleft>
+                <onleft condition="Skin.HasSetting(KioskMode)">50</onleft>
                 <onright>70</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
@@ -536,7 +536,9 @@
                     <width>710</width>
                     <height>600</height>
                     <pagecontrol>70</pagecontrol>
-                    <onleft>ActivateWindow(1122)</onleft>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9010</onleft>
+                    <onleft condition="Skin.HasSetting(KioskMode)">52</onleft>
                     <onright condition="Control.IsVisible(70) | !Control.IsVisible(71)">70</onright>
                     <onright condition="!Control.IsVisible(70) + Control.IsVisible(71)">71</onright>
                     <onup>52</onup>
@@ -858,7 +860,9 @@
                     <width>630</width>
                     <height>480</height>
                     <pagecontrol>70</pagecontrol>
-                    <onleft>ActivateWindow(1122)</onleft>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
+                    <onleft condition="!Skin.HasSetting(KioskMode)">9010</onleft>
+                    <onleft condition="Skin.HasSetting(KioskMode)">53</onleft>
                     <onright condition="Control.IsVisible(70) | !Control.IsVisible(71)">70</onright>
                     <onright condition="!Control.IsVisible(70) + Control.IsVisible(71)">71</onright>
                     <onup>53</onup>
@@ -1019,6 +1023,7 @@
                     <width>572</width>
                     <height>624</height>
                     <pagecontrol>70</pagecontrol>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
                     <onleft>54</onleft>
                     <onright>54</onright>
                     <onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
@@ -1307,6 +1312,7 @@
                     <width>668</width>
                     <height>504</height>
                     <pagecontrol>70</pagecontrol>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
                     <onleft>55</onleft>
                     <onright>55</onright>
                     <onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
@@ -2083,9 +2089,11 @@
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>horizontal</orientation>
                     <viewtype label="31966">list</viewtype>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
                     <onleft>56</onleft>
                     <onright>56</onright>
-                    <onup>ActivateWindow(1122)</onup>
+                    <onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
+                    <onup condition="Skin.HasSetting(KioskMode)">54</onup>
                     <ondown>70</ondown>
                     <focusposition>1</focusposition>
                     <preloaditems>2</preloaditems>
@@ -2760,9 +2768,11 @@
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>horizontal</orientation>
                     <viewtype label="31967">list</viewtype>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
                     <onleft>57</onleft>
                     <onright>57</onright>
-                    <onup>ActivateWindow(1122)</onup>
+                    <onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
+                    <onup condition="Skin.HasSetting(KioskMode)">57</onup>
                     <ondown>70</ondown>
                     <focusposition>1</focusposition>
                     <preloaditems>2</preloaditems>
@@ -3392,9 +3402,11 @@
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>horizontal</orientation>
                     <viewtype label="31968">list</viewtype>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
                     <onleft>58</onleft>
                     <onright>58</onright>
-                    <onup>ActivateWindow(1122)</onup>
+                    <onup condition="!Skin.HasSetting(KioskMode)">9000</onup>
+                    <onup condition="Skin.HasSetting(KioskMode)">58</onup>
                     <ondown>70</ondown>
                     <focusposition>1</focusposition>
                     <preloaditems>2</preloaditems>
@@ -3612,6 +3624,7 @@
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>vertical</orientation>
                     <viewtype label="31969">list</viewtype>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
                     <onleft>70</onleft>
                     <onright condition="!Skin.HasSetting(KioskMode)">9010</onright>
                     <onright condition="Skin.HasSetting(KioskMode)">501</onright>
@@ -3897,6 +3910,7 @@
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>vertical</orientation>
                     <viewtype label="31970">list</viewtype>
+                    <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
                     <onleft>70</onleft>
                     <onright condition="!Skin.HasSetting(KioskMode)">9010</onright>
                     <onright condition="Skin.HasSetting(KioskMode)">502</onright>
@@ -4141,7 +4155,9 @@
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>vertical</orientation>
                 <viewtype label="31971">list</viewtype>
-                <onleft>ActivateWindow(1122)</onleft>
+                <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
+                <onleft condition="!Skin.HasSetting(KioskMode)">9010</onleft>
+                <onleft condition="Skin.HasSetting(KioskMode)">60</onleft>
                 <onright>70</onright>
                 <onup>60</onup>
                 <ondown>60</ondown>
@@ -4313,7 +4329,9 @@
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>vertical</orientation>
                 <viewtype label="31972">list</viewtype>
-                <onleft>ActivateWindow(1122)</onleft>
+                <oninfo condition="!StringCompare(ListItem.Label,..)">ActivateWindow(1122)</oninfo>
+                <onleft condition="!Skin.HasSetting(KioskMode)">9010</onleft>
+                <onleft condition="Skin.HasSetting(KioskMode)">61</onleft>
                 <onright>70</onright>
                 <onup>61</onup>
                 <ondown>61</ondown>
