@@ -225,8 +225,8 @@
                     <label>$LOCALIZE[14111]</label>
                     <include>GuideDialogClose</include>
                     <onclick>ActivateWindow(EventLog,events://,return)</onclick>
-                    <texturefocus border="70,2,2,2">dialogs/options/buttons/bullet-fo.png</texturefocus>
-                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/bullet-nf.png</texturenofocus>
+                    <texturefocus border="70,2,2,2">dialogs/options/buttons/events-fo.png</texturefocus>
+                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/events-nf.png</texturenofocus>
                     <visible>System.Loggedon + System.GetBool(EventLog.Enabled)</visible>
                 </control>
                 <control type="button" id="143">
