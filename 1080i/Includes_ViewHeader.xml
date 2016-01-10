@@ -705,7 +705,7 @@
                     <posy>32</posy>
                     <width>85</width>
                     <height>85</height>
-                    <texture>DefaultSystemInfo.png</texture>
+                    <texture>DefaultSystemEvents.png</texture>
                 </control>
                 <control type="label">
                     <posx>110</posx>
