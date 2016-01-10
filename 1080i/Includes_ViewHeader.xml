@@ -84,8 +84,10 @@
         <value condition="substring(Container.FolderPath,item,right)">DefaultAddonContextItem.png</value>
         <value condition="substring(Container.FolderPath,pvrclient,right)">DefaultAddonPVRClient.png</value>
         <value condition="substring(Container.FolderPath,screensaver,right)">DefaultAddonScreensaver.png</value>
+        <value condition="substring(Container.FolderPath,adsp,right)">DefaultAddonAudioDSP.png</value>
         <value condition="substring(Container.FolderPath,service,right)">DefaultAddonService.png</value>
         <value condition="substring(Container.FolderPath,skin,right)">DefaultAddonSkin.png</value>
+        <value condition="substring(Container.FolderPath,lookandfeel,right)">DefaultAddonSkin.png</value>
         <value condition="substring(Container.FolderPath,subtitles,right)">DefaultAddonSubtitles.png</value>
         <value condition="substring(Container.FolderPath,tvshows,right)">DefaultAddonTvInfo.png</value>
         <value condition="substring(Container.FolderPath,video,right)">DefaultAddonVideo.png</value>
