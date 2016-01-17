@@ -40,7 +40,7 @@
                     <posy>51</posy>
                     <width>1490</width>
                     <height>100</height>
-                    <label>$INFO[Window.Property(actor.title)]</label>
+                    <label>$INFO[Window.Property(Title)]</label>
                     <font>Font-Condensed-S75</font>
                     <textcolor>aawhite</textcolor>
                     <align>left</align>
@@ -53,7 +53,7 @@
                     <posy>51</posy>
                     <width>832</width>
                     <height>100</height>
-                    <label>$INFO[Window.Property(actor.title)]</label>
+                    <label>$INFO[Window.Property(Title)]</label>
                     <font>Font-Condensed-S75</font>
                     <textcolor>aawhite</textcolor>
                     <align>left</align>
@@ -207,7 +207,7 @@
                             <effect type="fade" time="600" delay="200" />
                         </animation>                          
                         <onright condition="!Control.IsVisible(70) + IntegerGreaterThan(Container(150).NumItems,0)">150</onright>
-                        <onleft>Back</onleft>
+                        <onleft>Close</onleft>
                         <height>1080</height>
                         <pagecontrol>70</pagecontrol>
                         <visible>!ControlGroup(1500).HasFocus | !ControlGroup(2500).HasFocus | !ControlGroup(5500).HasFocus | !ControlGroup(6500).HasFocus | !ControlGroup(4500).HasFocus | !ControlGroup(7500).HasFocus</visible>
@@ -219,7 +219,7 @@
                             <width>440</width>
                             <height>686</height>
                             <aspectratio aligny="top">scale</aspectratio>
-                            <texture fallback="views/fallbacks/DefaultActor.png/medium.png">$INFO[Window.Property(actor.thumb)]</texture>
+                            <texture fallback="views/fallbacks/DefaultActor.png/medium.png">$INFO[Window.Property(Thumb)]</texture>
                         </control>
 
                         <!-- Actor Image Shadow -->                
@@ -250,7 +250,7 @@
                                     <height>70</height>
                                     <font>Font-Condensed-S45</font>
                                     <align>left</align>
-                                    <label>$INFO[Window.Property(actor.title)]</label>
+                                    <label>$INFO[Window.Property(Title)]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -259,7 +259,7 @@
                                 <control type="group">
                                     <width>1240</width>
                                     <height>50</height>
-                                    <visible>!IsEmpty(Window.Property(actor.Birthday))</visible>
+                                    <visible>!IsEmpty(Window.Property(Birthday))</visible>
                                     <control type="label">
                                         <posx>0</posx>
                                         <posy>0</posy>
@@ -278,7 +278,7 @@
                                         <height>50</height>
                                         <font>Font-Condensed-S34</font>
                                         <align>left</align>
-                                        <label>$INFO[Window.Property(actor.Birthday)]</label>
+                                        <label>$INFO[Window.Property(Birthday)]</label>
                                         <textcolor>aawhite</textcolor>
                                         <scroll>false</scroll>
                                     </control>
@@ -288,7 +288,7 @@
                                 <control type="group">
                                     <width>1240</width>
                                     <height>50</height>
-                                    <visible>!IsEmpty(Window.Property(actor.Deathday))</visible>
+                                    <visible>!IsEmpty(Window.Property(Deathday))</visible>
                                     <control type="label">
                                         <posx>0</posx>
                                         <posy>0</posy>
@@ -307,7 +307,7 @@
                                         <height>50</height>
                                         <font>Font-Condensed-S34</font>
                                         <align>left</align>
-                                        <label>$INFO[Window.Property(actor.Deathday)]</label>
+                                        <label>$INFO[Window.Property(Deathday)]</label>
                                         <textcolor>aawhite</textcolor>
                                         <scroll>false</scroll>
                                     </control>
@@ -317,7 +317,7 @@
                                 <control type="group">
                                     <width>1240</width>
                                     <height>50</height>
-                                    <visible>!IsEmpty(Window.Property(actor.PlaceOfBirth))</visible>
+                                    <visible>!IsEmpty(Window.Property(PlaceOfBirth))</visible>
                                     <control type="label">
                                         <posx>0</posx>
                                         <posy>0</posy>
@@ -336,7 +336,7 @@
                                         <height>50</height>
                                         <font>Font-Condensed-S34</font>
                                         <align>left</align>
-                                        <label>$INFO[Window.Property(actor.PlaceOfBirth)]</label>
+                                        <label>$INFO[Window.Property(PlaceOfBirth)]</label>
                                         <textcolor>aawhite</textcolor>
                                         <scroll>false</scroll>
                                     </control>
@@ -346,7 +346,7 @@
                                 <control type="group">
                                     <width>1240</width>
                                     <height>50</height>
-                                    <visible>!IsEmpty(Window.Property(actor.AlsoKnownAs))</visible>
+                                    <visible>!IsEmpty(Window.Property(AlsoKnownAs))</visible>
                                     <control type="label">
                                         <posx>0</posx>
                                         <posy>0</posy>
@@ -365,7 +365,7 @@
                                         <height>50</height>
                                         <font>Font-Condensed-S34</font>
                                         <align>left</align>
-                                        <label>$INFO[Window.Property(actor.AlsoKnownAs)]</label>
+                                        <label>$INFO[Window.Property(AlsoKnownAs)]</label>
                                         <textcolor>aawhite</textcolor>
                                         <scroll>false</scroll>
                                     </control>
@@ -398,8 +398,8 @@
                                     <textcolor>bbwhite</textcolor>
                                     <pagecontrol>70</pagecontrol>
                                     <autoscroll time="2000" delay="15000" repeat="10000">!Control.HasFocus(70) + !Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                                    <label>$INFO[Window.Property(actor.Biography)][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR]-MovieDB</label>
-                                    <visible>!IsEmpty(Window.Property(actor.Biography))</visible>
+                                    <label>$INFO[Window.Property(Biography)][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR]-MovieDB</label>
+                                    <visible>!IsEmpty(Window.Property(Biography))</visible>
                                 </control>
                                 <control type="label">
                                     <posx>0</posx>
@@ -410,7 +410,7 @@
                                     <label>$LOCALIZE[31329]</label>
                                     <textcolor>bbwhite</textcolor>
                                     <scroll>false</scroll>
-                                    <visible>IsEmpty(Window.Property(actor.Biography))</visible>
+                                    <visible>IsEmpty(Window.Property(Biography))</visible>
                                 </control>
                                 <control type="image">
                                     <description>Scrollbar background</description>
@@ -428,13 +428,13 @@
                                     <posy>65</posy>
                                     <width>6</width>
                                     <height>244</height>
-                                    <onleft>Back</onleft>
+                                    <onleft>Close</onleft>
                                     <onright condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onright>
                                     <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                                     <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                                     <orientation>vertical</orientation>
                                     <showonepage>false</showonepage>
-                                    <visible allowhiddenfocus="false">!IsEmpty(Window.Property(actor.Biography))</visible>
+                                    <visible allowhiddenfocus="false">!IsEmpty(Window.Property(Biography))</visible>
                                     <animation effect="fade" start="80" end="35" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(70)">Conditional</animation>
                                 </control>
                             </control>              
@@ -1023,7 +1023,7 @@
                                     <posx>50</posx>
                                     <width>373</width>
                                     <height>260</height>
-                                    <texture border="40" colordiffuse="$INFO[Window(home).Property(actor.ImageColor)]">buttons/roundedbutton-nofocus.png</texture>
+                                    <texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">buttons/roundedbutton-nofocus.png</texture>
                                 </control>
                                 <control type="group">
                                     <posx>77</posx>
@@ -1054,7 +1054,7 @@
                                     <posx>50</posx>
                                     <width>373</width>
                                     <height>260</height>
-                                    <texture border="40" colordiffuse="$INFO[Window(home).Property(actor.ImageColor)]">buttons/roundedbutton-nofocus.png</texture>
+                                    <texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">buttons/roundedbutton-nofocus.png</texture>
                                 </control>
                                 <control type="image">
                                     <posy>0</posy>
@@ -1063,7 +1063,7 @@
                                     <animation effect="fade" start="0" end="100" time="160">Focus</animation>
                                     <animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
                                     <height>260</height>
-                                    <texture border="40" colordiffuse="$INFO[Window(home).Property(actor.ImageColor)]">buttons/roundedbutton-focus.png</texture>
+                                    <texture border="40" colordiffuse="$INFO[Window(home).Property(ImageColor)]">buttons/roundedbutton-focus.png</texture>
                                 </control>
                                 <control type="group">
                                     <posx>77</posx>
