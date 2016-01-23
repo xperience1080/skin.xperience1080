@@ -176,12 +176,16 @@
                     <texturenofocus>buttons/switch-nf.png</texturenofocus>
                     <include>DialogButtonDimensions</include>
                     <onleft>7</onleft>
-                    <onright>4</onright>
+                    <onright>400</onright>
                     <onup>60</onup>
                     <ondown>60</ondown>
                 </control>
                 <control type="button" id="4">
                     <description>Find similar</description>
+                    <visible>false</visible>
+                </control>
+                <control type="button" id="400">
+                    <description>Close channel OSD and trigger find similar</description>
                     <visible>Window.IsActive(pvrguideinfo)</visible>
                     <posx>420</posx>
                     <label>$LOCALIZE[19003]</label>
@@ -192,6 +196,8 @@
                     <onright>6</onright>
                     <onup>60</onup>
                     <ondown>60</ondown>
+                    <onclick>Dialog.Close(pvrosdchannels)</onclick>
+                    <onclick>SendClick(4)</onclick>
                 </control>
                 <control type="button" id="6">
                     <description>Record</description>
@@ -201,7 +207,7 @@
                     <include>DialogButtonDimensionsRightAlign</include>
                     <texturefocus>buttons/record-fo.png</texturefocus>
                     <texturenofocus>buttons/record-nf.png</texturenofocus>
-                    <onleft>4</onleft>
+                    <onleft>400</onleft>
                     <onright>7</onright>
                     <onup>60</onup>
                     <ondown>60</ondown>
