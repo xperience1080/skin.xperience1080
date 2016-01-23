@@ -187,8 +187,8 @@
                     <visible>Window.IsActive(pvrguideinfo)</visible>
                     <posx>200</posx>
                     <label>$LOCALIZE[19003]</label>
-                    <texturefocus>buttons/get-fo.png</texturefocus>
-                    <texturenofocus>buttons/get-nf.png</texturenofocus>
+                    <texturefocus>buttons/search-fo.png</texturefocus>
+                    <texturenofocus>buttons/search-nf.png</texturenofocus>
                     <include>DialogButtonDimensions</include>
                     <onleft>7</onleft>
                     <onright>6</onright>
