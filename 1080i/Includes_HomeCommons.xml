@@ -479,7 +479,7 @@
                 <label>$LOCALIZE[1]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(10)">Conditional</animation>
                 <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(1025)">Conditional</animation>
-                <visible>!Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeClassicMode)</visible>
+                <visible>!Skin.HasSetting(HomePictures)</visible>
             </control>
 
             <control type="label">
