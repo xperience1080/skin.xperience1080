@@ -3702,7 +3702,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir)) + Weather.IsFetched</visible>
+                            <visible>Skin.HasSetting(ShowWeatherFanart) + [!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Weather.IsFetched</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="multiimage">
                                 <width>572</width>
@@ -3714,7 +3714,7 @@
                                 <animation effect="fade" start="0" end="100" time="0">Visible</animation>
                                 <animation effect="fade" start="100" delay="500" end="0" time="10">Hidden</animation>
                                 <aspectratio>scale</aspectratio>
-                                <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+                                <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
                                 <visible>Container(20).HasFocus(7)</visible>
                             </control>
                             <control type="image">
@@ -3799,7 +3799,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>[!Skin.HasSetting(ShowWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))] + Weather.IsFetched</visible>
+                            <visible>![Skin.HasSetting(ShowWeatherFanart) + [!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)]] + Weather.IsFetched</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>current weather icon</description>

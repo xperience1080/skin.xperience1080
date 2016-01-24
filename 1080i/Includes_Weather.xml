@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="Weather.FanartDir">
+        <value condition="!IsEmpty(Skin.String(WeatherFanartDir))">$INFO[Skin.String(WeatherFanartDir)]</value>
+        <value condition="System.HasAddon(resource.images.weatherfanart.multi)">resource://resource.images.weatherfanart.multi/</value>
+    </variable>
+
     <include name="WeatherDefault">
         <include>OptionsShutdownAnimation</include>
         <animation type="WindowClose" reversible="false">
@@ -48,7 +53,7 @@
                 <fadetime>600</fadetime>
                 <loop>yes</loop>
                 <include>Animation_FanartFade</include>
-                <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Weather.FanartCode]</imagepath>
+                <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
             </control>
             <control type="image">
                 <posx>-27</posx>
@@ -209,7 +214,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>!IsEmpty(Skin.String(WeatherFanartDir)) + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -220,7 +225,7 @@
                     <fadetime>600</fadetime>
                     <loop>yes</loop>
                     <include>Animation_FanartFade</include>
-                    <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Day0.FanartCode)]</imagepath>
+                    <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Day0.FanartCode)]</imagepath>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -314,7 +319,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>!IsEmpty(Skin.String(WeatherFanartDir)) + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -325,7 +330,7 @@
                     <fadetime>600</fadetime>
                     <loop>yes</loop>
                     <include>Animation_FanartFade</include>
-                    <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Day1.FanartCode)]</imagepath>
+                    <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Day1.FanartCode)]</imagepath>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -419,7 +424,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>!IsEmpty(Skin.String(WeatherFanartDir)) + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -430,7 +435,7 @@
                     <fadetime>600</fadetime>
                     <loop>yes</loop>
                     <include>Animation_FanartFade</include>
-                    <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Day2.FanartCode)]</imagepath>
+                    <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Day2.FanartCode)]</imagepath>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -524,7 +529,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>!IsEmpty(Skin.String(WeatherFanartDir)) + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -535,7 +540,7 @@
                     <fadetime>600</fadetime>
                     <loop>yes</loop>
                     <include>Animation_FanartFade</include>
-                    <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Day3.FanartCode)]</imagepath>
+                    <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Day3.FanartCode)]</imagepath>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -629,7 +634,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>!IsEmpty(Skin.String(WeatherFanartDir)) + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -640,7 +645,7 @@
                     <fadetime>600</fadetime>
                     <loop>yes</loop>
                     <include>Animation_FanartFade</include>
-                    <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Day4.FanartCode)]</imagepath>
+                    <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Day4.FanartCode)]</imagepath>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -882,7 +887,7 @@
                     <fadetime>600</fadetime>
                     <loop>yes</loop>
                     <include>Animation_FanartFade</include>
-                    <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+                    <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -1098,7 +1103,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.1.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.1.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -1243,7 +1248,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.2.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.2.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -1389,7 +1394,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.3.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.3.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -1536,7 +1541,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.4.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.4.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -1683,7 +1688,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.5.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.5.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -1830,7 +1835,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.6.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.6.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -1977,7 +1982,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.7.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.7.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -2124,7 +2129,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.8.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.8.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -2271,7 +2276,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.9.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.9.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
@@ -2418,7 +2423,7 @@
                             <fadetime>600</fadetime>
                             <loop>yes</loop>
                             <include>Animation_FanartFade</include>
-                            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window.Property(Daily.10.FanartCode)]</imagepath>
+                            <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window.Property(Daily.10.FanartCode)]</imagepath>
                             <aspectratio align="center">scale</aspectratio>
                         </control>
                         <control type="image">
