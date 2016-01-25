@@ -458,7 +458,7 @@
                                     <posy>59</posy>
                                     <width>410</width>
                                     <height>60</height>
-                                    <label>$INFO[ListItem.StartTime]: $INFO[ListItem.NextTitle]</label>
+                                    <label>$INFO[ListItem.NextStartTime]: $INFO[ListItem.NextTitle]</label>
                                     <font>Font-Condensed-S29</font>
                                     <textcolor>aawhite</textcolor>
                                     <visible>!IsEmpty(ListItem.NextTitle)</visible>
@@ -510,7 +510,7 @@
                                     <posy>59</posy>
                                     <width>410</width>
                                     <height>60</height>
-                                    <label>$INFO[ListItem.StartTime]: $INFO[ListItem.NextTitle]</label>
+                                    <label>$INFO[ListItem.NextStartTime]: $INFO[ListItem.NextTitle]</label>
                                     <font>Font-Condensed-S29</font>
                                     <textcolor>aawhite</textcolor>
                                     <visible>!IsEmpty(ListItem.NextTitle)</visible>
