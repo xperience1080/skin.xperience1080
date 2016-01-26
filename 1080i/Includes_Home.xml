@@ -1028,29 +1028,32 @@
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
-                        <control type="image">
-                            <posx>287</posx>
-                            <posy>100</posy>
-                            <width>256</width>
-                            <height>256</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>windows/home/nocontent/nocontent.png</texture>
+                        <control type="group">
+                            <description>No info available</description>
                             <visible>!Library.HasContent(Video) + !Control.IsVisible(5023)</visible>
-                        </control>
-                        <control type="button">
-                            <description>Title label</description>
-                            <posx>0</posx>
-                            <posy>360</posy>
-                            <width>829</width>
-                            <height>64</height>
-                            <label>$LOCALIZE[31977]</label>
-                            <font>Font-Condensed-S34</font>
-                            <disabledcolor>aawhite</disabledcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <enable>false</enable>
-                            <visible>!Library.HasContent(Video) + !Control.IsVisible(5023)</visible>
-                            <include>visiblehidefadeinfodelayvisible</include>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>100</posy>
+                                <width>829</width>
+                                <height>256</height>
+                                <align>center</align>
+                                <aspectratio>keep</aspectratio>
+                                <texture>windows/home/nocontent/nocontent.png</texture>
+                            </control>
+                            <control type="button">
+                                <description>Title label</description>
+                                <posx>0</posx>
+                                <posy>360</posy>
+                                <width>829</width>
+                                <height>64</height>
+                                <label>$LOCALIZE[31977]</label>
+                                <font>Font-Condensed-S34</font>
+                                <disabledcolor>aawhite</disabledcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <enable>false</enable>
+                                <include>visiblehidefadeinfodelayvisible</include>
+                            </control>
                         </control>
                         <control type="wraplist" id="5022">
                             <posx>0</posx>
@@ -1241,29 +1244,32 @@
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
-                        <control type="image">
-                            <posx>126</posx>
-                            <posy>164</posy>
-                            <width>128</width>
-                            <height>128</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>windows/home/nocontent/nocontent.png</texture>
+                        <control type="group">
+                            <description>No info available</description>
                             <visible>!Library.HasContent(Video) + !Control.IsVisible(5033)</visible>
-                        </control>
-                        <control type="button">
-                            <description>Title label</description>
-                            <posx>0</posx>
-                            <posy>300</posy>
-                            <width>382</width>
-                            <height>64</height>
-                            <label>$LOCALIZE[31977]</label>
-                            <font>Font-Condensed-S28</font>
-                            <disabledcolor>aawhite</disabledcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <enable>false</enable>
-                            <visible>!Library.HasContent(Video) + !Control.IsVisible(5033)</visible>
-                            <include>visiblehidefadeinfodelayvisible</include>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>100</posy>
+                                <width>382</width>
+                                <height>206</height>
+                                <align>center</align>
+                                <aspectratio>keep</aspectratio>
+                                <texture>windows/home/nocontent/nocontent.png</texture>
+                            </control>
+                            <control type="button">
+                                <description>Title label</description>
+                                <posx>0</posx>
+                                <posy>360</posy>
+                                <width>382</width>
+                                <height>64</height>
+                                <label>$LOCALIZE[31977]</label>
+                                <font>Font-Condensed-S30</font>
+                                <disabledcolor>aawhite</disabledcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <enable>false</enable>
+                                <include>visiblehidefadeinfodelayvisible</include>
+                            </control>
                         </control>
                         <control type="wraplist" id="5032">
                             <posx>0</posx>
@@ -1786,29 +1792,32 @@
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
-                        <control type="image">
-                            <posx>336</posx>
-                            <posy>100</posy>
-                            <width>256</width>
-                            <height>256</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>windows/home/nocontent/nocontent.png</texture>
+                        <control type="group">
+                            <description>No info available</description>
                             <visible>!Library.HasContent(Movies) + !Control.IsVisible(2023)</visible>
-                        </control>
-                        <control type="button">
-                            <description>Title label</description>
-                            <posx>0</posx>
-                            <posy>360</posy>
-                            <width>928</width>
-                            <height>64</height>
-                            <label>$LOCALIZE[31977]</label>
-                            <font>Font-Condensed-S34</font>
-                            <disabledcolor>aawhite</disabledcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <enable>false</enable>
-                            <visible>!Library.HasContent(Movies) + !Control.IsVisible(2023)</visible>
-                            <include>visiblehidefadeinfodelayvisible</include>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>100</posy>
+                                <width>928</width>
+                                <height>256</height>
+                                <align>center</align>
+                                <aspectratio>keep</aspectratio>
+                                <texture>windows/home/nocontent/nocontent.png</texture>
+                            </control>
+                            <control type="button">
+                                <description>Title label</description>
+                                <posx>0</posx>
+                                <posy>360</posy>
+                                <width>928</width>
+                                <height>64</height>
+                                <label>$LOCALIZE[31977]</label>
+                                <font>Font-Condensed-S34</font>
+                                <disabledcolor>aawhite</disabledcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <enable>false</enable>
+                                <include>visiblehidefadeinfodelayvisible</include>
+                            </control>
                         </control>
                         <control type="wraplist" id="2022">
                             <posx>0</posx>
@@ -2535,29 +2544,32 @@
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
-                        <control type="image">
-                            <posx>336</posx>
-                            <posy>100</posy>
-                            <width>256</width>
-                            <height>256</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>windows/home/nocontent/nocontent.png</texture>
+                        <control type="group">
+                            <description>No info available</description>
                             <visible>!Library.HasContent(TVShows) + !Control.IsVisible(3023)</visible>
-                        </control>
-                        <control type="button">
-                            <description>Title label</description>
-                            <posx>0</posx>
-                            <posy>360</posy>
-                            <width>928</width>
-                            <height>64</height>
-                            <label>$LOCALIZE[31977]</label>
-                            <font>Font-Condensed-S34</font>
-                            <disabledcolor>aawhite</disabledcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <enable>false</enable>
-                            <visible>!Library.HasContent(TVShows) + !Control.IsVisible(3023)</visible>
-                            <include>visiblehidefadeinfodelayvisible</include>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>100</posy>
+                                <width>928</width>
+                                <height>256</height>
+                                <align>center</align>
+                                <aspectratio>keep</aspectratio>
+                                <texture>windows/home/nocontent/nocontent.png</texture>
+                            </control>
+                            <control type="button">
+                                <description>Title label</description>
+                                <posx>0</posx>
+                                <posy>360</posy>
+                                <width>928</width>
+                                <height>64</height>
+                                <label>$LOCALIZE[31977]</label>
+                                <font>Font-Condensed-S34</font>
+                                <disabledcolor>aawhite</disabledcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <enable>false</enable>
+                                <include>visiblehidefadeinfodelayvisible</include>
+                            </control>
                         </control>
                         <control type="wraplist" id="3022">
                             <posx>0</posx>
@@ -3285,29 +3297,32 @@
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
-                        <control type="image">
-                            <posx>195</posx>
-                            <posy>154</posy>
-                            <width>192</width>
-                            <height>192</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>windows/home/nocontent/nocontent.png</texture>
+                        <control type="group">
+                            <description>No info available</description>
                             <visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
-                        </control>
-                        <control type="button">
-                            <description>Title label</description>
-                            <posx>0</posx>
-                            <posy>350</posy>
-                            <width>573</width>
-                            <height>64</height>
-                            <label>$LOCALIZE[31977]</label>
-                            <font>Font-Condensed-S28</font>
-                            <disabledcolor>aawhite</disabledcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <enable>false</enable>
-                            <visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
-                            <include>visiblehidefadeinfodelayvisible</include>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>100</posy>
+                                <width>573</width>
+                                <height>256</height>
+                                <align>center</align>
+                                <aspectratio>keep</aspectratio>
+                                <texture>windows/home/nocontent/nocontent.png</texture>
+                            </control>
+                            <control type="button">
+                                <description>Title label</description>
+                                <posx>0</posx>
+                                <posy>360</posy>
+                                <width>573</width>
+                                <height>64</height>
+                                <label>$LOCALIZE[31977]</label>
+                                <font>Font-Condensed-S34</font>
+                                <disabledcolor>aawhite</disabledcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <enable>false</enable>
+                                <include>visiblehidefadeinfodelayvisible</include>
+                            </control>
                         </control>
                         <control type="wraplist" id="4022">
                             <posx>0</posx>
@@ -4037,29 +4052,32 @@
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
-                        <control type="image">
-                            <posx>336</posx>
-                            <posy>100</posy>
-                            <width>256</width>
-                            <height>256</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>windows/home/nocontent/nocontent.png</texture>
-                            <visible>!IntegerGreaterThan(Container(10022).NumItems,0)</visible>
-                        </control>
-                        <control type="button">
-                            <description>Title label</description>
-                            <posx>0</posx>
-                            <posy>360</posy>
-                            <width>928</width>
-                            <height>64</height>
-                            <label>$LOCALIZE[31977]</label>
-                            <font>Font-Condensed-S34</font>
-                            <disabledcolor>aawhite</disabledcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <enable>false</enable>
-                            <visible>!IntegerGreaterThan(Container(10022).NumItems,0)</visible>
-                            <include>visiblehidefadeinfodelayvisible</include>
+                        <control type="group">
+                            <description>No info available</description>
+                            <visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>100</posy>
+                                <width>928</width>
+                                <height>256</height>
+                                <align>center</align>
+                                <aspectratio>keep</aspectratio>
+                                <texture>windows/home/nocontent/nocontent.png</texture>
+                            </control>
+                            <control type="button">
+                                <description>Title label</description>
+                                <posx>0</posx>
+                                <posy>360</posy>
+                                <width>928</width>
+                                <height>64</height>
+                                <label>$LOCALIZE[31977]</label>
+                                <font>Font-Condensed-S34</font>
+                                <disabledcolor>aawhite</disabledcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <enable>false</enable>
+                                <include>visiblehidefadeinfodelayvisible</include>
+                            </control>
                         </control>
                         <control type="wraplist" id="10022">
                             <posx>0</posx>
