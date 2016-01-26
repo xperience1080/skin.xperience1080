@@ -4054,7 +4054,7 @@
                         </control>
                         <control type="group">
                             <description>No info available</description>
-                            <visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
+                            <visible>!IntegerGreaterThan(Container(10022).NumItems,0) + stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)</visible>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>100</posy>
@@ -4144,7 +4144,7 @@
                             <texture border="1">windows/common/black.png</texture>
                         </control>
                         <control type="group" id="10023">
-                            <visible>!Control.IsVisible(10022)</visible>
+                            <visible>!Control.IsVisible(10022) + !stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Loading Back</description>
@@ -4153,7 +4153,6 @@
                                 <width>148</width>
                                 <height>148</height>
                                 <texture>windows/home/loading-back.png</texture>
-                                <visible>Skin.String(PicturesPath)</visible>
                             </control>
                             <control type="image">
                                 <description>Loading</description>
@@ -4163,7 +4162,6 @@
                                 <height>148</height>
                                 <texture>windows/home/loading.png</texture>
                                 <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="Control.IsVisible(10023)">Conditional</animation>
-                                <visible>Skin.String(PicturesPath)</visible>
                             </control>
                             <control type="label">
                                 <description>Loading label</description>
@@ -4177,7 +4175,6 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <scroll>false</scroll>
-                                <visible>!IntegerGreaterThan(Container(10022).NumItems,0)</visible>
                             </control>
                         </control>
                         <control type="button">
