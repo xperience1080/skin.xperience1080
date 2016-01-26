@@ -424,17 +424,17 @@
                                     <colordiffuse>22FFFFFF</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <width>112</width>
-                                    <height>112</height>
-                                    <aspectratio align="right">keep</aspectratio>
+                                    <posx>15</posx>
+                                    <posy>10</posy>
+                                    <width>92</width>
+                                    <height>92</height>
+                                    <aspectratio align="center">keep</aspectratio>
                                     <texture>$INFO[ListItem.Icon]</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>135</posx>
+                                    <posx>130</posx>
                                     <posy>2</posy>
-                                    <width>410</width>
+                                    <width>415</width>
                                     <height>40</height>
                                     <info>ListItem.Label</info>
                                     <font>Font-Condensed-S30</font>
@@ -442,9 +442,9 @@
                                     <align></align>
                                 </control>
                                 <control type="label">
-                                    <posx>135</posx>
+                                    <posx>130</posx>
                                     <posy>26</posy>
-                                    <width>410</width>
+                                    <width>415</width>
                                     <height>60</height>
                                     <label>$LOCALIZE[19030]: $INFO[ListItem.Title]</label>
                                     <font>Font-Condensed-S29</font>
@@ -454,9 +454,9 @@
                                     <align></align>
                                 </control>
                                 <control type="label">
-                                    <posx>135</posx>
+                                    <posx>130</posx>
                                     <posy>59</posy>
-                                    <width>410</width>
+                                    <width>415</width>
                                     <height>60</height>
                                     <label>$INFO[ListItem.NextStartTime]: $INFO[ListItem.NextTitle]</label>
                                     <font>Font-Condensed-S29</font>
@@ -477,17 +477,17 @@
                                     <colordiffuse>55000000</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <width>112</width>
-                                    <height>112</height>
-                                    <aspectratio align="right">keep</aspectratio>
+                                    <posx>15</posx>
+                                    <posy>10</posy>
+                                    <width>92</width>
+                                    <height>92</height>
+                                    <aspectratio align="center">keep</aspectratio>
                                     <texture>$INFO[ListItem.Icon]</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>135</posx>
+                                    <posx>130</posx>
                                     <posy>2</posy>
-                                    <width>410</width>
+                                    <width>415</width>
                                     <height>40</height>
                                     <info>ListItem.Label</info>
                                     <font>Font-Condensed-S30-B</font>
@@ -495,9 +495,9 @@
                                     <align></align>
                                 </control>
                                 <control type="label">
-                                    <posx>135</posx>
+                                    <posx>130</posx>
                                     <posy>26</posy>
-                                    <width>410</width>
+                                    <width>415</width>
                                     <height>60</height>
                                     <label>$LOCALIZE[19030]: $INFO[ListItem.Title]</label>
                                     <font>Font-Condensed-S29</font>
@@ -506,9 +506,9 @@
                                     <align></align>
                                 </control>
                                 <control type="label">
-                                    <posx>135</posx>
+                                    <posx>130</posx>
                                     <posy>59</posy>
-                                    <width>410</width>
+                                    <width>415</width>
                                     <height>60</height>
                                     <label>$INFO[ListItem.NextStartTime]: $INFO[ListItem.NextTitle]</label>
                                     <font>Font-Condensed-S29</font>
