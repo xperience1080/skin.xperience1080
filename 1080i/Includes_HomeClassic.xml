@@ -1202,6 +1202,8 @@
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePrograms)">625</onright>
                     <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">825</onright>
+                    <onclick condition="!Library.HasContent(movies)">ActivateWindow(videos,files,return)</onclick>
+                    <onclick condition="Library.HasContent(movies)">ActivateWindow(videos,movietitles,return)</onclick>
                     <onup>ActivateWindow(3020)</onup>
                     <ondown>201</ondown>
                 </control>
@@ -1948,6 +1950,8 @@
                     <onright condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1025</onright>
                     <onright condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">625</onright>
                     <onright condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSettings(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
+                    <onclick condition="!Library.HasContent(tvshows)">ActivateWindow(videos,files,return)</onclick>
+                    <onclick condition="Library.HasContent(tvshows)">ActivateWindow(videos,tvshowtitles,return)</onclick>
                     <onup>ActivateWindow(3021)</onup>
                     <ondown>301</ondown>
                 </control>
