@@ -1,4 +1,27 @@
-﻿[B]5.0.020[/B]
+﻿[B]5.0.030[/B]
+• Classic Home: Category Movies and TV Shows will now open the corresponding window
+• Classic Home: No info available added to classic home
+• Classic Home: Classic home now supports hiding of categories 
+• Classic Home: Category pictures added to the classic home screen
+• Weather: Adds support for weather multi fanart addon
+• PVR: Close channel osd if find similar (fixes #40)
+• PVR: Increase size of the info dialog to show all available buttons
+• Home: Fix freeze while skin initialization is triggered
+• Music: Support to show selected seek range/step size if seeking music
+• RSS: Fix bottom rss feed overlaps bottom buttons
+• Extended Info: Fix window property names for actor information
+• Media: Severval missing and addional textures added
+
+[B]5.0.021[/B]
+• Advanced Launcher: Use oninfo to open gameinfo window
+• Event Log: Skin file for new eventlog window and place item in the power menu
+• Video: Adds userrating button to DialogVideoInfo
+• Music: Re-design of songinfo dialog and adds userrating button
+• PVR: Unify guide and recording info dialog into new DialogPVRInfo.xml
+• Media: Additional flags + missing textures added
+• Various: Cleanups and small fixes
+
+[B]5.0.020[/B]
 • Classic Home: Removes Tile Colour Settings and Navigation Arrow Skin Options if Classic Home is enabled.
 • Classic Home: Fixes focus issue when using toggle to enable/disable Classic Home.
 
