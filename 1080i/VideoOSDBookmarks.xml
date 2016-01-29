@@ -24,16 +24,15 @@
             <animation effect="slide" start="0,0" end="0,-70" time="250" tween="sine" easing="inout" condition="Window.IsActive(videoosd) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Paused]">Conditional</animation>
             <include>FullscreenDimensions</include>
             <control type="image">
-				<posx>0</posx>
-                <posy>453</posy>
+                <posx>0</posx>
+                <posy>350</posy>
                 <width>1920</width>
-                <height>586</height>
-                <texture>osd/bookmarks/back.png</texture>
-                <aspectratio>stretch</aspectratio>
+                <height>740</height>
+                <texture border="1,401,1,45">osd/bookmarks/back.png</texture>
             </control>
             <control type="label">
                 <posx>75</posx>
-                <posy>785</posy>
+                <posy>685</posy>
                 <width>1360</width>
                 <height>56</height>
                 <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE]</label>
@@ -46,9 +45,9 @@
             </control>
             <control type="list" id="11">
                 <posx>0</posx>
-                <posy>849</posy>
+                <posy>749</posy>
                 <width>1920</width>
-                <height>190</height>
+                <height>290</height>
                 <onleft>11</onleft>
                 <onright>11</onright>
                 <onup>1</onup>
@@ -56,20 +55,20 @@
                 <pagecontrol>12</pagecontrol>
                 <scrolltime>0</scrolltime>
                 <orientation>horizontal</orientation>
-                <itemlayout width="340" height="190">
+                <itemlayout width="490" height="290">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>340</width>
-                        <height>190</height>
+                        <width>490</width>
+                        <height>290</height>
                         <texture fallback="dialogs/favourites/nothumb.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
                         <posx>0</posx>
-                        <posy>150</posy>
-                        <width>340</width>
-                        <height>40</height>
+                        <posy>240</posy>
+                        <width>490</width>
+                        <height>50</height>
                         <texture>windows/common/black.png</texture>
                         <aspectratio>stretch</aspectratio>
                         <colordiffuse>88FFFFFF</colordiffuse>
@@ -77,9 +76,9 @@
                     <control type="label">
                         <left>0</left>
                         <bottom>8</bottom>
-                        <width>324</width>
-                        <height>30</height>
-                        <font>Font-Condensed-S26</font>
+                        <width>474</width>
+                        <height>40</height>
+                        <font>Font-Condensed-S30</font>
                         <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
@@ -87,20 +86,20 @@
                         <aligny>center</aligny>
                     </control>
                 </itemlayout>
-                <focusedlayout width="340" height="190">
+                <focusedlayout width="490" height="290">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>340</width>
-                        <height>190</height>
+                        <width>490</width>
+                        <height>290</height>
                         <texture fallback="dialogs/favourites/nothumb.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
                         <posx>0</posx>
-                        <posy>150</posy>
-                        <width>340</width>
-                        <height>40</height>
+                        <posy>240</posy>
+                        <width>490</width>
+                        <height>50</height>
                         <texture>windows/common/black.png</texture>
                         <aspectratio>stretch</aspectratio>
                         <colordiffuse>88FFFFFF</colordiffuse>
@@ -108,9 +107,9 @@
                     <control type="label">
                         <left>0</left>
                         <bottom>8</bottom>
-                        <width>324</width>
-                        <height>30</height>
-                        <font>Font-Condensed-S26</font>
+                        <width>474</width>
+                        <height>40</height>
+                        <font>Font-Condensed-S30</font>
                         <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
@@ -121,24 +120,25 @@
                         <visible>Control.HasFocus(11) | Window.IsVisible(contextmenu)</visible>
                         <control type="image">
                             <posx>-13</posx>
-                            <posy>-8</posy>
-                            <width>366</width>
-                            <height>206</height>
+                            <posy>-14</posy>
+                            <width>516</width>
+                            <height>318</height>
                             <texture border="21,0,21,0">windows/home/tile-fo.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                     </control>
                     <control type="button" id="2003">
                         <description>Delete</description>
-                        <top>-8</top>
-                        <left>268</left>
-                        <width>275</width>
+                        <top>0</top>
+                        <left>0</left>
+                        <width>335</width>
                         <height>65</height>
                         <texturefocus>buttons/cancel-fo.png</texturefocus>
                         <texturenofocus>buttons/cancel-fo.png</texturenofocus>
                         <label>-</label>
                         <visible>Window.IsVisible(contextmenu)</visible>
                         <aspectratio>keep</aspectratio>
+                        <enable>false</enable>
                     </control>
                 </focusedlayout>
             </control>
@@ -171,7 +171,7 @@
             </control>
             <control type="grouplist" id="1">
                 <posx>1550</posx>
-                <posy>760</posy>
+                <posy>660</posy>
                 <width>300</width>
                 <height>100</height>
                 <align>right</align>
