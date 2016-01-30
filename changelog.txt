@@ -1,4 +1,7 @@
-﻿[B]5.0.030[/B]
+﻿[B]5.0.110[/B]
+• AudioDSP: Integration of feature
+
+[B]5.0.030[/B]
 • Classic Home: Category Movies and TV Shows will now open the corresponding window
 • Classic Home: No info available added to classic home
 • Classic Home: Classic home now supports hiding of categories 
