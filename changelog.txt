@@ -1,4 +1,8 @@
-﻿[B]5.0.120[/B]
+﻿[B]5.0.210[/B]
+• AudioDSP: Initial DSP Settings dialog added
+• Video OSD: Adds conditional visibility to allow for AudioDSP dialog
+
+[B]5.0.120[/B]
 • AudioDSP: adjust list's focusedlayout background images
 • Textviewer: always show scrollbar to be able to reach the close button
 
