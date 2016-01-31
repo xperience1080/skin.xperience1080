@@ -134,7 +134,15 @@
 					<width>358</width>
 					<height>60</height>
 					<texture border="2">dialogs/default/highlight.png</texture>
-					<animation effect="fade" start="100" end="100" time="0" condition="!Control.HasFocus(9000)">conditional</animation>
+					<visible>Control.HasFocus(9000)</visible>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>358</width>
+					<height>60</height>
+					<texture border="2">dialogs/default/highlight-grey.png</texture>
+					<visible>!Control.HasFocus(9000)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -235,6 +243,7 @@
 					<height>350</height>
 					<texture border="5">button-nofocus.png</texture>
 				</control>
+				<!-- Scrollbar not worked on 
 				<control type="scrollbar" id="60">
 					<description>scrollbar for available modes list</description>
 					<posx>5</posx>
@@ -251,6 +260,7 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
+				-->
 
 				<control type="list" id="20">
 					<description>available modes list</description>
@@ -260,7 +270,7 @@
 					<height>350</height>
 					<onup>9000</onup>
 					<ondown>9001</ondown>
-					<onleft>60</onleft>
+					<onleft>9000</onleft>
 					<onright>21</onright>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
@@ -323,16 +333,16 @@
 							<posy>0</posy>
 							<width>538</width>
 							<height>70</height>
-							<texture border="2">dialogs/default/highlight-grey.png</texture>
-							<visible>!Control.HasFocus(20)</visible>
+							<texture border="2">dialogs/default/highlight.png</texture>
+							<visible>Control.HasFocus(20)</visible>
 						</control>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>538</width>
 							<height>70</height>
-							<texture border="2">dialogs/default/highlight-selected.png</texture>
-							<visible>Control.HasFocus(20)</visible>
+							<texture border="2">dialogs/default/highlight-grey.png</texture>
+							<visible>!Control.HasFocus(20)</visible>
 						</control>
 						<control type="image">
 							<posx>5</posx>
@@ -407,9 +417,7 @@
 					<textcolor>FF585858</textcolor>
 				</control>
 
-
-
-				<!-- Scrollbar not worked on -->
+				<!-- Scrollbar not worked on
 				<control type="scrollbar" id="61">
 					<description>scrollbar for active modes list</description>
 					<posx>542</posx>
@@ -426,9 +434,7 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
-				<!-- Scrollbar not worked on -->
-
-
+				-->
 
 				<control type="list" id="21">
 					<description>active modes list</description>
@@ -501,9 +507,10 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>258</width>
+							<width>538</width>
 							<height>70</height>
-							<texture border="5">dialogs/default/separator-btn.png</texture>
+							<texture border="2">dialogs/default/highlight.png</texture>
+							<visible>Control.HasFocus(21)</visible>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -512,14 +519,6 @@
 							<height>70</height>
 							<texture border="2">dialogs/default/highlight-grey.png</texture>
 							<visible>!Control.HasFocus(21)</visible>
-						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>538</width>
-							<height>70</height>
-							<texture border="2">dialogs/default/highlight-selected.png</texture>
-							<visible>Control.HasFocus(21)</visible>
 						</control>
 						<control type="image">
 							<posx>5</posx>
