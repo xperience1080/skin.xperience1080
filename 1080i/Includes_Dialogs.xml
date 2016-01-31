@@ -1642,7 +1642,6 @@
                     <textureslidernibfocus>-</textureslidernibfocus>
                     <onleft>8000</onleft>
                     <onright>8000</onright>
-                    <showonepage>false</showonepage>
                     <orientation>vertical</orientation>
                     <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(62)">Conditional</animation>
                 </control>
