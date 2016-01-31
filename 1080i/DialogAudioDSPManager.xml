@@ -243,7 +243,7 @@
 					<height>350</height>
 					<texture border="5">button-nofocus.png</texture>
 				</control>
-				<!-- Scrollbar not worked on 
+				<!-- Scrollbar not worked on
 				<control type="scrollbar" id="60">
 					<description>scrollbar for available modes list</description>
 					<posx>5</posx>
@@ -576,7 +576,7 @@
 			<posy>528</posy>
 			<width>1090</width>
 			<control type="radiobutton" id="22">
-				<description>Default RadioButton</description>
+				<description>Apply changes directly RadioButton</description>
 				<posx>213</posx>>
 				<posy>162</posy>
 				<onup>9000</onup>
@@ -604,7 +604,7 @@
 				<onup>22</onup>
 				<ondown>9000</ondown>
 				<onleft>22</onleft>
-				<onright>24</onright>
+				<onright>25</onright>
 				<textwidth>452</textwidth>
 				<label>14070</label>
 			</control>
@@ -618,10 +618,26 @@
 				<posy>224</posy>
 				<onup>200</onup>
 				<ondown>9000</ondown>
-				<onleft>23</onleft>
+				<onleft>25</onleft>
 				<onright>22</onright>
 				<label>$LOCALIZE[15066]</label>
 			</control>
+
+            <control type="button" id="25">
+                <description>Close</description>
+                <texturefocus>buttons/cancel-fo.png</texturefocus>
+                <texturenofocus>buttons/cancel-nf.png</texturenofocus>
+                <include>DialogButtonDimensions</include>
+				<posx>560</posx>
+				<posy>224</posy>
+                <onleft>23</onleft>
+                <onright>24</onright>
+                <onup>200</onup>
+                <ondown>9000</ondown>
+                <label>$LOCALIZE[31923]</label>
+                <onclick>PreviousMenu</onclick>
+            </control>
+
 		</control>
 	</control>
 </controls>
