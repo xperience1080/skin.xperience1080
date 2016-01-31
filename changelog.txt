@@ -1,5 +1,10 @@
-﻿[B]5.0.110[/B]
+﻿[B]5.0.120[/B]
+• AudioDSP: adjust list's focusedlayout background images
+• Textviewer: always show scrollbar to be able to reach the close button
+
+[B]5.0.110[/B]
 • AudioDSP: Integration of feature
+• Bookmarks: Enlarge the bookmark dialog + fix deletion
 
 [B]5.0.030[/B]
 • Classic Home: Category Movies and TV Shows will now open the corresponding window
