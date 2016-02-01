@@ -163,13 +163,31 @@
                     </animation>
                     <control type="group">
                         <posy>117</posy>
-                        <control type="image">
-                            <posx>1692</posx>
-                            <posy>885</posy>
-                            <width>140</width>
-                            <height>100</height>
-                            <colordiffuse>bbwhite</colordiffuse>
-                            <texture fallback="flags/audioosd/na.png">$INFO[MusicPlayer.Codec,flags/audioosd/,.png]</texture>
+                        <control type="grouplist">
+                            <posx>1520</posx>
+                            <posy>916</posy>
+                            <width>300</width>
+                            <orientation>horizontal</orientation>
+                            <itemgap>10</itemgap>
+                            <align>right</align>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>140</width>
+                                <height>38</height>
+                                <colordiffuse>bbwhite</colordiffuse>
+                                <texture fallback="flags/audioosd/na.png">$INFO[MusicPlayer.Codec,flags/audioosd/,.png]</texture>
+                            </control>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>88</width>
+                                <height>38</height>
+                                <colordiffuse>bbwhite</colordiffuse>
+                                <texture>$INFO[MusicPlayer.Channels,flags/audio/osd/channels/,.png]</texture>
+                                <include>visiblehidefadeflags</include>
+                                <visible>!IsEmpty(MusicPlayer.Channels)</visible>
+                            </control> 
                         </control>
                         <control type="label">
                             <posx>360</posx>
