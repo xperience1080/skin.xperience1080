@@ -1,6 +1,9 @@
 ﻿[B]5.0.210[/B]
 • AudioDSP: Initial DSP Settings dialog added
 • Video OSD: Adds conditional visibility to allow for AudioDSP dialog
+• Music OSD: fix missing zorder to show the osd on top of the
+• Music OSD: key up to close the osd 
+• Music OSD: adds audio channel flags to music info
 
 [B]5.0.120[/B]
 • AudioDSP: adjust list's focusedlayout background images
