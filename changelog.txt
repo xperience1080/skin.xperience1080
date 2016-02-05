@@ -1,4 +1,7 @@
-﻿[B]5.0.280[/B]
+﻿[B]5.0.290[/B]
+• Master Lock: Adds radio button to unlock sources until dislabed (Videos, Music, Add-ons, Pictures)
+
+[B]5.0.280[/B]
 • KaiToast: Changes for Jarvis
 • KaiToast: Default notification icons added
 
