@@ -17,7 +17,7 @@
                 <posy>46</posy>
                 <width>59</width>
                 <height>59</height>
-                <texture>dialogs/kaitoast/download.png</texture>
+                <texture>dialogs/notifications/download.png</texture>
             </control>
             <control type="label" id="2002">
                 <description>Header label</description>
