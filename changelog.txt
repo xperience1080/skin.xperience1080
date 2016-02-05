@@ -1,4 +1,8 @@
-﻿[B]5.0.210[/B]
+﻿[B]5.0.280[/B]
+• KaiToast: Changes for Jarvis
+• KaiToast: Default notification icons added
+
+[B]5.0.210[/B]
 • AudioDSP: Initial DSP Settings dialog added
 • Video OSD: Adds conditional visibility to allow for AudioDSP dialog
 • Music OSD: fix missing zorder to show the osd on top of the
