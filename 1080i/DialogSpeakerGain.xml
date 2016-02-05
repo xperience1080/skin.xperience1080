@@ -21,7 +21,7 @@
 			</control>
 
 			<control type="label">
-				<description>Settings</description>
+				<description>Speaker Gain Header</description>
 				<posx>510</posx>
 				<posy>245</posy>
 				<width>900</width>
@@ -306,14 +306,19 @@
 
 					<control type="spincontrolex" id="21">
 						<description>Speaker Distance BC</description>
-						<height>40</height>
-						<width>720</width>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturenofocus border="5">button-nofocus.png</texturenofocus>
-						<texturefocus border="5">button-focus2.png</texturefocus>
+						<height>77</height>
+						<width>1080</width>
+						<spinposx>33</spinposx>
+						<align>left</align>
+						<aligny>center</aligny>
 						<label>$ADDON[adsp.basic 30039]</label>
+						<texturefocus border="150,1,150,1">windows/settings/images/right-focus.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textcolor>96FFFFFF</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<disabledcolor>40FFFFFF</disabledcolor>
+						<font>Font-Condensed-S30-B</font>
+						<textoffsetx>35</textoffsetx>
 					</control>
 
 					<control type="spincontrolex" id="30">
