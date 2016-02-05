@@ -219,6 +219,20 @@
                         <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(20)">Conditional</animation>
 						<usealttexture>library.isscanningvideo</usealttexture>
                     </control>
+                    <control type="radiobutton" id="23">
+                        <description>Unlock sources</description>
+                        <include>optionsbuttonsdimensions</include>
+                        <label>$LOCALIZE[20336]</label>
+                        <texturefocus border="2">dialogs/options/buttons/default-fo.png</texturefocus>
+                        <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
+                        <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
+                        <radioposx>-19</radioposx>
+                        <selected>system.ismaster</selected>
+                        <onclick>SetFocus(50)</onclick>
+                        <onclick>mastermode</onclick>
+                        <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(98)">Conditional</animation>
+                       <visible>system.haslocks</visible>
+                    </control>
                 </control>
                 <control type="grouplist" id="9222">
                     <description>View Specific Controls</description>
@@ -651,8 +665,6 @@
                 </control>
             </control>
         </control>
-
-        <!-- Scrollbar visibility controls -->
         <control type="image" id="9773">
             <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
         </control>

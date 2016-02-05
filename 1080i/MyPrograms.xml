@@ -9,12 +9,12 @@
         <include>ProgramHeader</include>
         <include>ProgramViews</include>
         <include>Common-Info</include>
-        
+
         <control type="group" id="9000">
             <posx>267</posx>
             <posy>517</posy>
             <include>OptionsAnimations</include>
-            <animation effect="slide" start="0" end="-204" time="0" condition="Skin.HasSetting(HideShutdownButton)">Conditional</animation> 
+            <animation effect="slide" start="0" end="-204" time="0" condition="Skin.HasSetting(HideShutdownButton)">Conditional</animation>
             <control type="group">
                 <include>OptionsPanelAnimations</include>
                 <control type="image">
@@ -36,7 +36,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
-                
+
             <control type="grouplist" id="9111">
                 <posx>19</posx>
                 <posy>47</posy>
@@ -105,7 +105,7 @@
                     <focusedcolor>DDFFFFFF</focusedcolor>
                     <textoffsety>3</textoffsety>
                     <textoffsetx>75</textoffsetx>
-                    <scroll>false</scroll>  
+                    <scroll>false</scroll>
                     <label>587</label>
                     <pulseonselect>false</pulseonselect>
                     <texturefocus border="62,2,62,2">dialogs/options/buttons/filter-fo.png</texturefocus>
@@ -123,7 +123,7 @@
                     <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
                     <animation type="Conditional" condition="Window.IsVisible(3008)" reversible="false">
                         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
-                    </animation>        
+                    </animation>
                 </control>
                 <control type="button" id="22">
                     <description>sort</description>
@@ -136,7 +136,21 @@
                     <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
                     <animation type="Conditional" condition="Window.IsVisible(3009)" reversible="false">
                         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
-                    </animation>    
+                    </animation>
+                </control>
+                <control type="radiobutton" id="23">
+                    <description>Unlock sources</description>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>20336</label>
+                    <texturefocus border="2">dialogs/options/buttons/default-fo.png</texturefocus>
+                    <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
+                    <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
+                    <radioposx>-19</radioposx>
+                    <selected>system.ismaster</selected>
+                    <onclick>SetFocus(50)</onclick>
+                    <onclick>mastermode</onclick>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(19)">Conditional</animation>
+                    <visible>system.haslocks</visible>
                 </control>
             </control>
             <control type="grouplist" id="9222">
@@ -494,7 +508,7 @@
                     <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
                 </control>
             </control>
-            
+
             <control type="group">
                 <include>GeneralOptionsAnimations</include>
                 <control type="image">
@@ -515,7 +529,7 @@
                     <shadowcolor>22000000</shadowcolor>
                 </control>
             </control>
-            
+
             <control type="group">
                 <include>SpecificOptionsAnimations</include>
                 <control type="image">
@@ -536,7 +550,7 @@
                     <shadowcolor>22000000</shadowcolor>
                 </control>
             </control>
-            
+
             <control type="group">
                 <include>ViewOptionsAnimations</include>
                 <control type="image">
@@ -547,7 +561,7 @@
                     <texture>buttons/options_nofo.png</texture>
                 </control>
                 <control type="label">
-                    <posx>94</posx> 
+                    <posx>94</posx>
                     <posy>433</posy>
                     <width>300</width>
                     <height>100</height>
@@ -556,9 +570,9 @@
                     <textcolor>eewhite</textcolor>
                     <shadowcolor>22000000</shadowcolor>
                 </control>
-            </control>          
+            </control>
         </control>
-        
+
         <!-- Scrollbar visibility controls -->
         <control type="image" id="9773">
             <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
