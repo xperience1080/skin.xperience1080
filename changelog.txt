@@ -1,4 +1,17 @@
-﻿[B]5.0.310[/B]
+﻿[B]5.0.380[/B]
+• AudioDSP: OSD Parametric EQ
+• AudioDSP: OSD Parametric EQ textures
+
+[B]5.0.360[/B]
+• AudioDSP: OSD Speaker Distance
+
+[B]5.0.350[/B]
+• AudioDSP: OSD Speaker Gain
+
+[B]5.0.340[/B]
+• AudioDSP: OSD Settings alignment
+
+[B]5.0.310[/B]
 • AudioDSP: OSD Settings dialog refined
 • AudioDSP: flags added
 
