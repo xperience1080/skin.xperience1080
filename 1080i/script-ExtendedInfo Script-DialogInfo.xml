@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">4000</defaultcontrol>
+    <!--
     <onload>SetFocus(4001)</onload>
+    -->
     <controls>
         <control type="group">
             <posx>0</posx>
@@ -20,6 +22,7 @@
             </control>
 
             <!-- MovieDB Logo -->
+            <!-- FIXME: overlaps the volume bar
             <control type="image">
                 <posx>1659</posx>
                 <posy>34</posy>
@@ -29,6 +32,7 @@
                 <texture background="true">dialogs/extendedinfo/moviedb-logo.png</texture>
                 <colordiffuse>aawhite</colordiffuse>
             </control>
+            -->
 
             <!-- Header -->
             <control type="group">
@@ -198,20 +202,17 @@
      
                     <!-- Biography -->
                     <control type="group" id="4001">
-                        <animation type="Focus" condition="!Control.IsVisible(70) | Control.HasFocus(150)">
-                            <effect type="slide" start="2320" end="0" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
+                        <animation type="Focus">
+                            <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
-                        </animation>                          
-                        <onright condition="!Control.IsVisible(70) + IntegerGreaterThan(Container(150).NumItems,0)">150</onright>
-                        <onleft>Close</onleft>
-                        <height>1080</height>
-                        <pagecontrol>70</pagecontrol>
-                        <visible>!ControlGroup(1500).HasFocus | !ControlGroup(2500).HasFocus | !ControlGroup(5500).HasFocus | !ControlGroup(6500).HasFocus | !ControlGroup(4500).HasFocus | !ControlGroup(7500).HasFocus</visible>
+                            <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
+                        </animation>
 
+                        <posx>-2320</posx>
+                        <posy>0</posy>
+                        <height>1080</height>
+                        
                         <!-- Actor Image --> 
                         <control type="image">
                             <posx>100</posx>
@@ -398,19 +399,7 @@
                                     <textcolor>bbwhite</textcolor>
                                     <pagecontrol>70</pagecontrol>
                                     <autoscroll time="2000" delay="15000" repeat="10000">!Control.HasFocus(70) + !Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                                    <label>$INFO[Window.Property(Biography)][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR]-MovieDB</label>
-                                    <visible>!IsEmpty(Window.Property(Biography))</visible>
-                                </control>
-                                <control type="label">
-                                    <posx>0</posx>
-                                    <posy>50</posy>
-                                    <width>1240</width>
-                                    <font>Font-Condensed-S40</font>
-                                    <align>left</align>
-                                    <label>$LOCALIZE[31329]</label>
-                                    <textcolor>bbwhite</textcolor>
-                                    <scroll>false</scroll>
-                                    <visible>IsEmpty(Window.Property(Biography))</visible>
+                                    <label fallback="31329">$INFO[Window.Property(Biography)]</label>
                                 </control>
                                 <control type="image">
                                     <description>Scrollbar background</description>
@@ -430,37 +419,33 @@
                                     <height>244</height>
                                     <onleft>Close</onleft>
                                     <onright condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onright>
+                                    <onright condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onright>
+                                    <onright condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onright>
+                                    <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
+                                    <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
+                                    <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
+                                    <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
                                     <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                                     <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                                     <orientation>vertical</orientation>
                                     <showonepage>false</showonepage>
-                                    <visible allowhiddenfocus="false">!IsEmpty(Window.Property(Biography))</visible>
+                                    <visible allowhiddenfocus="true">!IsEmpty(Window.Property(Biography))</visible>
                                     <animation effect="fade" start="80" end="35" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(70)">Conditional</animation>
                                 </control>
                             </control>              
                         </control>          
                     </control>
 
-                    <!-- 1500 - Known Film Roles -->
+                    <!-- 150 - Known Film Roles -->
                     <control type="group" id="1500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
+                            <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="0" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="0" delay="0" />
+                            <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
-                        <animation type="Focus" condition="Control.HasFocus(70) | Control.HasFocus(4001)">
-                            <effect type="slide" start="2320" end="0" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
-                        </animation>
-                        <animation type="UnFocus" condition="Control.HasFocus(70) | Control.HasFocus(4001)">
-                            <effect type="slide" start="0" end="-2320" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
-                        </animation>                        
-                        <visible allowhiddenfocus="true">IntegerGreaterThan(Container(150).NumItems,0)</visible>
-                        <posx>0</posx>
+                        <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                        <posx>-2320</posx>
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
@@ -470,7 +455,12 @@
                             <width>1215</width>
                             <height>660</height>
                             <onleft>4001</onleft>
-                            <onright>250</onright>
+                            <onright condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onright>
+                            <onright condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onright>
+                            <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
+                            <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
+                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
+                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
                             <onup>150</onup>
                             <ondown>150</ondown>
                             <pagecontrol>151</pagecontrol>
@@ -540,7 +530,7 @@
                             <width>6</width>
                             <height>687</height>
                             <texture border="1">views/other/scrollbar-sq.png</texture>
-                            <visible>Control.IsVisible(151) + !ControlGroup(4001).HasFocus</visible>
+                            <visible>Control.IsVisible(151)</visible>
                             <animation effect="fade" start="25" end="10" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151)">Conditional</animation>
                         </control>
                         <control type="scrollbar" id="151">
@@ -556,7 +546,6 @@
                             <orientation>vertical</orientation>
                             <showonepage>false</showonepage>
                             <animation effect="fade" start="80" end="35" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151)">Conditional</animation>
-                            <visible>!ControlGroup(4001).HasFocus</visible>
                         </control>
 
                         <!-- Item Image -->
@@ -580,17 +569,15 @@
                         </control>
                     </control>
 
-                    <!-- 2500 - Known TV Roles -->
+                    <!-- 250 - Known TV Roles -->
                     <control type="group" id="2500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
+                            <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
-                        </animation>   
-                        <posx>0</posx>
+                            <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
+                        </animation>
+                        <posx>-2320</posx>
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
@@ -600,8 +587,13 @@
                             <posy>234</posy>
                             <width>1215</width>
                             <height>660</height>
-                            <onleft>150</onleft>
-                            <onright>550</onright>
+                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft>4001</onleft>
+                            <onright condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onright>
+                            <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
+                            <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
+                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
+                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
                             <onup>250</onup>
                             <ondown>250</ondown>
                             <pagecontrol>251</pagecontrol>
@@ -710,18 +702,16 @@
                         </control>
                     </control>
 
-                    <!-- 5500 - Known Movie Crew -->
+                    <!-- 550 - Known Movie Crew -->
                     <control type="group" id="5500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
+                            <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
-                        </animation>    
+                            <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
+                        </animation>
                         <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
-                        <posx>0</posx>
+                        <posx>-2320</posx>
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
@@ -730,8 +720,13 @@
                             <posy>234</posy>
                             <width>1215</width>
                             <height>660</height>
-                            <onleft>250</onleft>
-                            <onright>650</onright>
+                            <onleft condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft>4001</onleft>
+                            <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
+                            <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
+                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
+                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
                             <onup>550</onup>
                             <ondown>550</ondown>
                             <pagecontrol>551</pagecontrol>
@@ -840,17 +835,15 @@
                         </control>                                
                     </control>
 
-                    <!-- 6500 - Known TV Crew -->
+                    <!-- 650 - Known TV Crew -->
                     <control type="group" id="6500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
+                            <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
-                        </animation>                         
-                        <posx>0</posx>
+                            <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
+                        </animation>
+                        <posx>-2320</posx>
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
@@ -860,8 +853,13 @@
                             <posy>234</posy>
                             <width>1215</width>
                             <height>660</height>
-                            <onleft>550</onleft>
-                            <onright>450</onright>
+                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft>4001</onleft>
+                            <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
+                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
+                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
                             <onup>650</onup>
                             <ondown>650</ondown>
                             <pagecontrol>651</pagecontrol>
@@ -971,7 +969,13 @@
                     </control>
 
                     <!-- 350 - YouTube (hidden) -->
-                    <control type="group">
+                    <control type="group" id="3500">
+                        <animation type="Focus">
+                            <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
+                        </animation>
+                        <animation type="UnFocus">
+                            <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
+                        </animation>
                         <visible>false</visible>
                         <height>440</height>
                         <control type="label">
@@ -1004,13 +1008,17 @@
                             <visible>Container(350).HasNext + Control.HasFocus(350)</visible>
                         </control>
                         <control type="panel" id="350">
-                            <visible>false</visible>
                             <posx>-45</posx>
                             <posy>30</posy>
                             <width>1950</width>
                             <height>700</height>
-                            <onleft>250</onleft>
-                            <onright>250</onright>
+                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">650</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">250</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft>4001</onleft>
+                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
+                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
                             <onup>650</onup>
                             <ondown>450</ondown>
                             <pagecontrol>60</pagecontrol>
@@ -1091,17 +1099,15 @@
                         </control>
                     </control>
 
-                    <!-- 4500 - Actor Artwork -->
+                    <!-- 450 - Actor Artwork -->
                     <control type="group" id="4500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
+                            <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
-                        </animation>                        
-                        <posx>0</posx>
+                            <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
+                        </animation>
+                        <posx>-2320</posx>
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
@@ -1111,8 +1117,13 @@
                             <posy>234</posy>
                             <width>1260</width>
                             <height>660</height>
-                            <onleft>650</onleft>
-                            <onright>750</onright>
+                            <onleft condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft>4001</onleft>
+                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
                             <onup>450</onup>
                             <ondown>450</ondown>
                             <pagecontrol>451</pagecontrol>
@@ -1221,17 +1232,15 @@
                         </control>                
                     </control>
 
-                    <!-- 7500 - Actor-related Fanart -->
+                    <!-- 750 - Actor-related Fanart -->
                     <control type="group" id="7500">
                         <animation type="Focus">
-                            <effect type="slide" start="2320" end="0" time="800" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
+                            <effect type="slide" start="1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
                         <animation type="UnFocus">
-                            <effect type="slide" start="0" end="-2320" time="1000" delay="0" tween="sine" easing="inout" />
-                            <effect type="fade" time="600" delay="200" />
-                        </animation>                 
-                        <posx>0</posx>
+                            <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
+                        </animation>
+                        <posx>-2320</posx>
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
@@ -1241,7 +1250,13 @@
                             <posy>234</posy>
                             <width>1754</width>
                             <height>663</height>
-                            <onleft>450</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onleft>
+                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft>4001</onleft>
                             <onright>noop</onright>
                             <onup>750</onup>
                             <ondown>750</ondown>
