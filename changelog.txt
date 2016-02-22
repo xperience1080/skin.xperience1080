@@ -1,4 +1,8 @@
-﻿[B]5.0.380[/B]
+﻿[B]5.0.400[/B]
+• Extended-Info: fix different navigation issues + animations
+• Extended-Info: fix for slideshow not displaying
+
+[B]5.0.380[/B]
 • AudioDSP: OSD Parametric EQ
 • AudioDSP: OSD Parametric EQ textures
 
