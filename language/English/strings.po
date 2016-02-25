@@ -497,7 +497,7 @@ msgstr ""
 #empty strings from id 31204 to 31219
 
 msgctxt "#31220"
-msgid "Live TV"
+msgid "TV"
 msgstr ""
 
 msgctxt "#31221"

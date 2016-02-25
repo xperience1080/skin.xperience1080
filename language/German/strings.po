@@ -449,8 +449,8 @@ msgid "Play Trailer minimized"
 msgstr "Trailer minimiert starten"
 
 msgctxt "#31220"
-msgid "Live TV"
-msgstr "Live TV"
+msgid "TV"
+msgstr "TV"
 
 msgctxt "#31221"
 msgid "Enable Genre Colours in the TV EPG"
