@@ -9,9 +9,8 @@
             <width>2</width>
             <onup>21</onup>
             <orientation>horizontal</orientation>
-            <include condition="System.HasAddon(script.globalsearch) + System.GetBool(pvrmanager.enabled)">HomeControlListFocus2</include>
-            <include condition="[!System.HasAddon(script.globalsearch) + System.GetBool(pvrmanager.enabled)] | [System.HasAddon(script.globalsearch) + !System.GetBool(pvrmanager.enabled)]">HomeControlListFocus1</include>
-            <include condition="!System.HasAddon(script.globalsearch) + !System.GetBool(pvrmanager.enabled)">HomeControlListFocus0</include>
+            <include condition="System.HasAddon(script.globalsearch)">HomeControlListFocus1</include>
+            <include condition="!System.HasAddon(script.globalsearch)">HomeControlListFocus0</include>
             <scrolltime>0</scrolltime>
             <viewtype>list</viewtype>
             <itemlayout width="2" height="2"/>
@@ -23,17 +22,17 @@
                     <property name="search">1</property>
                     <visible>System.HasAddon(script.globalsearch)</visible>
                 </item>
-                <item id="9">
-                    <label>$LOCALIZE[31220]</label>
-                    <onclick>noop</onclick>
-                    <visible>System.GetBool(pvrmanager.enabled)</visible>
-                </item>
                 <item id="2">
                     <label>$LOCALIZE[31524]</label>
                     <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeHomeSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeHomeMultiImage)]</property>
                     <property name="home">1</property>
+                </item>
+                <item id="9">
+                    <label>$LOCALIZE[31220]</label>
+                    <onclick>noop</onclick>
+                    <visible>System.GetBool(pvrmanager.enabled)</visible>
                 </item>
                 <item id="3">
                     <label>$LOCALIZE[342]</label>
@@ -119,7 +118,6 @@
                 <control type="button" id="125">
                     <onleft condition="!Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
                     <onright>Control.Move(20,1)</onright>
-                    <onright condition="System.GetBool(pvrmanager.enabled)">925</onright>
                     <onright>525</onright>
                     <onclick>SetProperty(HomeSearch,1)</onclick>
                     <onclick>RunScript(script.globalsearch)</onclick>
@@ -233,11 +231,10 @@
                         </control>
                         <control type="button" id="101">
                             <onleft condition="!Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
-                            <onright condition="!System.GetBool(pvrmanager.enabled)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onright>
-                            <onright condition="!System.GetBool(pvrmanager.enabled)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onright>
+                            <onright>AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onright>
+                            <onright>AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onright>
                             <onright>Control.Move(20,1)</onright>
-                            <onright condition="System.GetBool(pvrmanager.enabled)">901</onright>
-                            <onright condition="!System.GetBool(pvrmanager.enabled)">501</onright>
+                            <onright>501</onright>
                             <onup>125</onup>
                             <ondown>80</ondown>
                             <align>left</align>
@@ -245,218 +242,6 @@
                             <onclick>SetProperty(HomeSearch,1)</onclick>
                             <onclick>RunScript(script.globalsearch)</onclick>
                         </control>
-                    </control>
-                </control>
-            </control>
-
-            <!-- Live TV -->
-            <control type="group" id="900">
-                <width>2320</width>
-                <height>780</height>
-                <description>Live TV</description>
-                <visible>System.GetBool(pvrmanager.enabled)</visible>
-                <control type="button" id="925">
-                    <onleft condition="System.HasAddon(script.globalsearch)">Control.Move(20,-1)</onleft>
-                    <onleft condition="System.HasAddon(script.globalsearch)">125</onleft>
-                    <onleft condition="!System.HasAddon(script.globalsearch) + !Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
-                    <onright>Control.Move(20,1)</onright>
-                    <onright>525</onright>
-                    <onclick>ActivateWindow(tvchannels)</onclick>
-                    <onup>80</onup>
-                    <ondown>901</ondown>
-                </control>
-                <control type="group" id="950">
-                    <posy>100</posy>
-                    <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(9)" reversible="true">
-                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(9)" reversible="true">
-                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
-                    <animation effect="slide" end="-156" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(1)">Conditional</animation>
-                    <animation effect="slide" end="156" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(2)">Conditional</animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(9) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
-                        <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
-                        <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
-                    </animation>
-                    <control type="image">
-                        <description>Bottom shadow</description>
-                        <posx>102</posx>
-                        <posy>570</posy>
-                        <width>1052</width>
-                        <height>150</height>
-                        <texture>windows/home/item-shadow.png</texture>
-                    </control>
-                    <control type="panel" id="901">
-                        <posx>170</posx>
-                        <posy>-24</posy>
-                        <width>903</width>
-                        <height>620</height>
-                        <onleft condition="System.HasAddon(script.globalsearch)">Control.Move(20,-1)</onleft>
-                        <onleft condition="System.HasAddon(script.globalsearch)">101</onleft>
-                        <onleft condition="!System.HasAddon(script.globalsearch) + !Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
-                        <onright>AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onright>
-                        <onright>AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onright>
-                        <onright>Control.Move(20,1)</onright>
-                        <onright>501</onright>
-                        <onup>925</onup>
-                        <ondown>80</ondown>
-                        <scrolltime>0</scrolltime>
-                        <itemlayout width="289" height="289">
-                            <control type="group">
-                                <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
-                                <control type="image">
-                                    <posx>19</posx>
-                                    <posy>19</posy>
-                                    <width>293</width>
-                                    <height>293</height>
-                                    <texture border="7">windows/home/tile.png</texture>
-                                </control>
-                                <control type="image">
-                                    <posx>24</posx>
-                                    <posy>241</posy>
-                                    <width>283</width>
-                                    <height>66</height>
-                                    <texture border="1">windows/home/tile-overlay.png</texture>
-                                    <colordiffuse>99FFFFFF</colordiffuse>
-                                </control>
-                                <control type="image">
-                                    <posx>24</posx>
-                                    <posy>24</posy>
-                                    <width>283</width>
-                                    <height>283</height>
-                                    <texture>$INFO[ListItem.Icon]</texture>
-                                </control>
-                                <control type="label">
-                                    <posx>24</posx>
-                                    <posy>241</posy>
-                                    <width>283</width>
-                                    <height>66</height>
-                                    <label>$INFO[ListItem.Label]</label>
-                                    <font>Font-Condensed-S33</font>
-                                    <textcolor>aawhite</textcolor>
-                                    <align>left</align>
-                                    <aligny>center</aligny>
-                                    <textoffsetx>20</textoffsetx>
-                                </control>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout width="289" height="289">
-                            <control type="group">
-                                <control type="image">
-                                    <posx>3</posx>
-                                    <posy>3</posy>
-                                    <width>325</width>
-                                    <height>325</height>
-                                    <texture border="40">windows/home/tile-fo.png</texture>
-                                    <animation type="Focus">
-                                        <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-                                        <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
-                                    </animation>
-                                    <animation type="Unfocus">
-                                        <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-                                        <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-                                    </animation>
-                                </control>
-                                <control type="group">
-                                    <animation type="Focus">
-                                        <effect type="fade" start="90" end="100" time="200" tween="sine" easing="in" />
-                                    </animation>
-                                    <animation type="Unfocus">
-                                        <effect type="fade" start="100" end="90" time="200" tween="sine" easing="out" />
-                                    </animation>
-                                    <control type="image">
-                                        <posx>19</posx>
-                                        <posy>19</posy>
-                                        <width>293</width>
-                                        <height>293</height>
-                                        <texture border="7">windows/home/tile.png</texture>
-                                    </control>
-                                    <control type="image">
-                                        <posx>24</posx>
-                                        <posy>241</posy>
-                                        <width>283</width>
-                                        <height>66</height>
-                                        <texture border="1">windows/home/tile-overlay.png</texture>
-                                        <colordiffuse>99FFFFFF</colordiffuse>
-                                    </control>
-                                    <control type="image">
-                                        <posx>24</posx>
-                                        <posy>24</posy>
-                                        <width>283</width>
-                                        <height>283</height>
-                                        <texture>$INFO[ListItem.Icon]</texture>
-                                        <animation type="Focus" reversible="false">
-                                            <effect type="zoom" end="115" time="75" tween="sine" easing="out" center="auto" />
-                                            <effect type="zoom" end="86.9565217" time="225" tween="sine" delay="100" easing="out" center="auto" />
-                                        </animation>
-                                    </control>
-                                    <control type="label">
-                                        <posx>24</posx>
-                                        <posy>241</posy>
-                                        <width>246</width>
-                                        <height>66</height>
-                                        <label>$INFO[ListItem.Label]</label>
-                                        <font>Font-Condensed-S33</font>
-                                        <textcolor>aawhite</textcolor>
-                                        <align>left</align>
-                                        <aligny>center</aligny>
-                                        <textoffsetx>20</textoffsetx>
-                                    </control>
-                                </control>
-                            </control>
-                        </focusedlayout>
-                        <content>
-                            <item id="1">
-                                <label>$LOCALIZE[19023]</label>
-                                <icon>windows/home/icons/tvshows.png</icon>
-                                <onclick>ActivateWindow(tvchannels)</onclick>
-                            </item>
-                            <item id="2">
-                                <label>$LOCALIZE[19024]</label>
-                                <icon>windows/home/icons/radio.png</icon>
-                                <onclick>ActivateWindow(radiochannels)</onclick>
-                            </item>
-                            <item id="3">
-                                <label>$LOCALIZE[19069]</label>
-                                <icon>windows/home/icons/epg.png</icon>
-                                <onclick>ActivateWindow(tvguide)</onclick>
-                            </item>
-                            <item id="4">
-                                <label>$LOCALIZE[19163]</label>
-                                <icon>windows/home/icons/recordings.png</icon>
-                                <onclick>ActivateWindow(tvrecordings)</onclick>
-                            </item>
-                            <item id="5">
-                                <label>$LOCALIZE[19040]</label>
-                                <icon>windows/home/icons/timers.png</icon>
-                                <onclick>ActivateWindow(tvtimers)</onclick>
-                            </item>
-                            <item id="6">
-                                <label>$LOCALIZE[137]</label>
-                                <icon>windows/home/icons/search-tv.png</icon>
-                                <onclick>ActivateWindow(tvsearch)</onclick>
-                            </item>
-                        </content>
                     </control>
                 </control>
             </control>
@@ -470,14 +255,14 @@
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled) | System.HasAddon(script.globalsearch)">Control.Move(20,-1)</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
+                    <onleft condition="System.HasAddon(script.globalsearch)">Control.Move(20,-1)</onleft>
                     <onleft condition="System.HasAddon(script.globalsearch)">125</onleft>
-                    <onleft condition="!System.HasAddon(script.globalsearch) + !System.GetBool(pvrmanager.enabled) + !Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
+                    <onleft condition="!System.HasAddon(script.globalsearch) + !Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveThree,true)</onright>
                     <onright>Control.Move(20,1)</onright>
+                    <onright condition="System.GetBool(pvrmanager.enabled)">925</onright>
                     <onright condition="!Skin.HasSetting(HomeMovies)">225</onright>
                     <onright condition="!Skin.HasSetting(HomeTVShows)">325</onright>
                     <onright condition="!Skin.HasSetting(HomeMusic)">425</onright>
@@ -749,6 +534,7 @@
                             <onleft>AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
                             <onleft>502</onleft>
                             <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
+                            <onright condition="System.GetBool(pvrmanager.enabled)">901</onright>
                             <onright condition="!Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onright>
                             <onright condition="!Skin.HasSetting(HomeMovies)">201</onright>
                             <onright condition="Skin.HasSetting(HomeMovies) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onright>
@@ -954,13 +740,12 @@
                         <posy>-24</posy>
                         <width>331</width>
                         <height>620</height>
-                        <onleft condition="System.HasAddon(script.globalsearch) | System.GetBool(pvrmanager.enabled)">CancelAlarm(HomeTileMove,true)</onleft>
-                        <onleft condition="System.HasAddon(script.globalsearch) | System.GetBool(pvrmanager.enabled)">CancelAlarm(HomeTileMoveTwo,true)</onleft>
-                        <onleft condition="System.HasAddon(script.globalsearch) | System.GetBool(pvrmanager.enabled)">CancelAlarm(HomeTileMoveThree,true)</onleft>
-                        <onleft condition="System.HasAddon(script.globalsearch) | System.GetBool(pvrmanager.enabled)">Control.Move(20,-1)</onleft>
-                        <onleft condition="System.GetBool(pvrmanager.enabled)">901</onleft>
-                        <onleft condition="System.HasAddon(script.globalsearch) + !System.GetBool(pvrmanager.enabled)">101</onleft>
-                        <onleft condition="!System.HasAddon(script.globalsearch) + !System.GetBool(pvrmanager.enabled) + !Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
+                        <onleft condition="System.HasAddon(script.globalsearch)">CancelAlarm(HomeTileMove,true)</onleft>
+                        <onleft condition="System.HasAddon(script.globalsearch)">CancelAlarm(HomeTileMoveTwo,true)</onleft>
+                        <onleft condition="System.HasAddon(script.globalsearch)">CancelAlarm(HomeTileMoveThree,true)</onleft>
+                        <onleft condition="System.HasAddon(script.globalsearch)">Control.Move(20,-1)</onleft>
+                        <onleft condition="System.HasAddon(script.globalsearch)">101</onleft>
+                        <onleft condition="!System.HasAddon(script.globalsearch) + !Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
                         <onright>502</onright>
                         <onup>525</onup>
                         <ondown>80</ondown>
@@ -1165,6 +950,232 @@
                 </control>
             </control>
 
+            <!-- Live TV -->
+            <control type="group" id="900">
+                <width>2320</width>
+                <height>780</height>
+                <description>Live TV</description>
+                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                <control type="button" id="925">
+                    <onleft>Control.Move(20,-1)</onleft>
+                    <onleft>525</onleft>
+                    <onright>Control.Move(20,1)</onright>
+                    <onright condition="!Skin.HasSetting(HomeMovies)">225</onright>
+                    <onright condition="!Skin.HasSetting(HomeTVShows)">325</onright>
+                    <onright condition="!Skin.HasSetting(HomeMusic)">425</onright>
+                    <onright condition="!Skin.HasSetting(HomePictures)">1025</onright>
+                    <onright condition="!Skin.HasSetting(HomePrograms)">625</onright>
+                    <onright condition="!Skin.HasSetting(HomeWeather)">725</onright>
+                    <onright>825</onright>
+                    <onclick>ActivateWindow(tvchannels)</onclick>
+                    <onup>80</onup>
+                    <ondown>901</ondown>
+                </control>
+                <control type="group" id="950">
+                    <posy>100</posy>
+                    <posx>535</posx>
+                    <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
+                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+                    </animation>
+                    <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
+                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+                    </animation>
+                    <animation type="WindowOpen" condition="Container(20).HasFocus(9)" reversible="true">
+                        <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" /> 
+                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
+                    </animation>
+                    <animation type="WindowClose" condition="Container(20).HasFocus(9)" reversible="true">
+                        <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+                    </animation>
+                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
+                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
+                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
+                    </animation>
+                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
+                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
+                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
+                    </animation>
+                    <animation effect="slide" end="-156" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(1)">Conditional</animation>
+                    <animation effect="slide" end="156" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(2)">Conditional</animation>
+                    <animation type="Conditional" condition="!Container(20).HasFocus(9) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                        <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
+                        <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
+                    </animation>
+                    <control type="image">
+                        <description>Bottom shadow</description>
+                        <posx>102</posx>
+                        <posy>570</posy>
+                        <width>1052</width>
+                        <height>150</height>
+                        <texture>windows/home/item-shadow.png</texture>
+                    </control>
+                    <control type="panel" id="901">
+                        <posx>170</posx>
+                        <posy>-24</posy>
+                        <width>903</width>
+                        <height>620</height>
+                        <onleft>Control.Move(20,-1)</onleft>
+                        <onleft>5031</onleft>
+                        <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
+                        <onright condition="!Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onright>
+                        <onright condition="!Skin.HasSetting(HomeMovies)">201</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + !Skin.HasSetting(HomeTVShows)">301</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">401</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">701</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(1022,1),00:07,silent,loop)</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1001</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">601</onright>
+                        <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">801</onright>
+                        <onright>Control.Move(20,1)</onright>
+                        <onup>925</onup>
+                        <ondown>80</ondown>
+                        <scrolltime>0</scrolltime>
+                        <itemlayout width="289" height="289">
+                            <control type="group">
+                                <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
+                                    <texture border="7">windows/home/tile.png</texture>
+                                </control>
+                                <control type="image">
+                                    <posx>24</posx>
+                                    <posy>241</posy>
+                                    <width>283</width>
+                                    <height>66</height>
+                                    <texture border="1">windows/home/tile-overlay.png</texture>
+                                    <colordiffuse>99FFFFFF</colordiffuse>
+                                </control>
+                                <control type="image">
+                                    <posx>24</posx>
+                                    <posy>24</posy>
+                                    <width>283</width>
+                                    <height>283</height>
+                                    <texture>$INFO[ListItem.Icon]</texture>
+                                </control>
+                                <control type="label">
+                                    <posx>24</posx>
+                                    <posy>241</posy>
+                                    <width>283</width>
+                                    <height>66</height>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <font>Font-Condensed-S33</font>
+                                    <textcolor>aawhite</textcolor>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <textoffsetx>20</textoffsetx>
+                                </control>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout width="289" height="289">
+                            <control type="group">
+                                <control type="image">
+                                    <posx>3</posx>
+                                    <posy>3</posy>
+                                    <width>325</width>
+                                    <height>325</height>
+                                    <texture border="40">windows/home/tile-fo.png</texture>
+                                    <animation type="Focus">
+                                        <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
+                                        <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
+                                    </animation>
+                                    <animation type="Unfocus">
+                                        <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
+                                        <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
+                                    </animation>
+                                </control>
+                                <control type="group">
+                                    <animation type="Focus">
+                                        <effect type="fade" start="90" end="100" time="200" tween="sine" easing="in" />
+                                    </animation>
+                                    <animation type="Unfocus">
+                                        <effect type="fade" start="100" end="90" time="200" tween="sine" easing="out" />
+                                    </animation>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
+                                        <texture border="7">windows/home/tile.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <posx>24</posx>
+                                        <posy>241</posy>
+                                        <width>283</width>
+                                        <height>66</height>
+                                        <texture border="1">windows/home/tile-overlay.png</texture>
+                                        <colordiffuse>99FFFFFF</colordiffuse>
+                                    </control>
+                                    <control type="image">
+                                        <posx>24</posx>
+                                        <posy>24</posy>
+                                        <width>283</width>
+                                        <height>283</height>
+                                        <texture>$INFO[ListItem.Icon]</texture>
+                                        <animation type="Focus" reversible="false">
+                                            <effect type="zoom" end="115" time="75" tween="sine" easing="out" center="auto" />
+                                            <effect type="zoom" end="86.9565217" time="225" tween="sine" delay="100" easing="out" center="auto" />
+                                        </animation>
+                                    </control>
+                                    <control type="label">
+                                        <posx>24</posx>
+                                        <posy>241</posy>
+                                        <width>246</width>
+                                        <height>66</height>
+                                        <label>$INFO[ListItem.Label]</label>
+                                        <font>Font-Condensed-S33</font>
+                                        <textcolor>aawhite</textcolor>
+                                        <align>left</align>
+                                        <aligny>center</aligny>
+                                        <textoffsetx>20</textoffsetx>
+                                    </control>
+                                </control>
+                            </control>
+                        </focusedlayout>
+                        <content>
+                            <item id="1">
+                                <label>$LOCALIZE[19023]</label>
+                                <icon>windows/home/icons/tvshows.png</icon>
+                                <onclick>ActivateWindow(tvchannels)</onclick>
+                            </item>
+                            <item id="2">
+                                <label>$LOCALIZE[19024]</label>
+                                <icon>windows/home/icons/radio.png</icon>
+                                <onclick>ActivateWindow(radiochannels)</onclick>
+                            </item>
+                            <item id="3">
+                                <label>$LOCALIZE[19069]</label>
+                                <icon>windows/home/icons/epg.png</icon>
+                                <onclick>ActivateWindow(tvguide)</onclick>
+                            </item>
+                            <item id="4">
+                                <label>$LOCALIZE[19163]</label>
+                                <icon>windows/home/icons/recordings.png</icon>
+                                <onclick>ActivateWindow(tvrecordings)</onclick>
+                            </item>
+                            <item id="5">
+                                <label>$LOCALIZE[19040]</label>
+                                <icon>windows/home/icons/timers.png</icon>
+                                <onclick>ActivateWindow(tvtimers)</onclick>
+                            </item>
+                            <item id="6">
+                                <label>$LOCALIZE[137]</label>
+                                <icon>windows/home/icons/search-tv.png</icon>
+                                <onclick>ActivateWindow(tvsearch)</onclick>
+                            </item>
+                        </content>
+                    </control>
+                </control>
+            </control>
+
             <!-- Movies -->
             <control type="group" id="200">
                 <width>2320</width>
@@ -1176,14 +1187,11 @@
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
+                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveThree,true)</onright>
-                    <!--<onright condition="!Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onright>-->
-                    <!--<onright condition="!Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onright>-->
-                    <!--<onright condition="!Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onright>-->
-                    <!--<onright condition="!Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>-->
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="!Skin.HasSetting(HomeTVShows)">325</onright>
                     <onright condition="!Skin.HasSetting(HomeMusic)">425</onright>
@@ -1447,6 +1455,7 @@
                         <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                         <onleft>AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                         <onleft>Control.Move(20,-1)</onleft>
+                        <onleft condition="System.GetBool(pvrmanager.enabled)">901</onleft>
                         <onleft>503</onleft>
                         <onright>202</onright>
                         <onup>225</onup>
@@ -1924,13 +1933,9 @@
                     <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
                     <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
-                    <!--
-                    <onleft condition="!Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
-                    -->
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
+                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
@@ -2197,7 +2202,8 @@
                         <onleft condition="Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                         <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMovies)">203</onleft>
-                        <onleft condition="Skin.HasSetting(HomeMovies)">503</onleft>
+                        <onleft condition="System.GetBool(pvrmanager.enabled)">901</onleft>
+                        <onleft>503</onleft>
                         <onright>302</onright>
                         <onup>325</onup>
                         <ondown>80</ondown>
@@ -2630,6 +2636,7 @@
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
+                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
@@ -2886,8 +2893,9 @@
                         <onleft condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                         <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
-                        <onleft condition="Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">201</onleft>
-                        <onleft condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">501</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeMovies)">201</onleft>
+                        <onleft condition="System.GetBool(pvrmanager.enabled)">901</onleft>
+                        <onleft>501</onleft>
                         <onright>402</onright>
                         <onup>425</onup>
                         <ondown>80</ondown>
@@ -3327,6 +3335,7 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
+                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
@@ -3602,15 +3611,16 @@
                         <height>620</height>
                         <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">201</onleft>
                         <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
                         <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeMovies)">201</onleft>
+                        <onleft condition="System.GetBool(pvrmanager.enabled)">901</onleft>
+                        <onleft>503</onleft>
                         <onleft>Control.Move(20,-1)</onleft>
-                        <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">503</onleft>
                         <onright>1002</onright>
                         <onup>1025</onup>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
@@ -4049,6 +4059,7 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
+                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
@@ -4108,21 +4119,18 @@
                         <height>620</height>
                         <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                         <onleft condition="!Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="!Skin.HasSetting(HomePictures)">1003</onleft>
                         <onleft condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">203</onleft>
                         <onleft condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
                         <onleft condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">503</onleft>
                         <onleft>Control.Move(20,-1)</onleft>
+                        <onleft condition="!Skin.HasSetting(HomePictures)">1003</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
-                        <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">303</onleft>
-                        <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">203</onleft>
-                        <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">503</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeMovies)">203</onleft>
+                        <onleft condition="System.GetBool(pvrmanager.enabled)">901</onleft>
+                        <onleft>503</onleft>
                         <onright>CancelAlarm(HomeTileMove,true)</onright>
                         <onright>Control.Move(20,1)</onright>
                         <onright condition="!Skin.HasSetting(HomeWeather)">701</onright>
@@ -4478,6 +4486,7 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
+                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
@@ -5154,18 +5163,19 @@
                         <width>331</width>
                         <height>620</height>
                         <onleft>Control.Move(20,-1)</onleft>
-                        <onleft condition="!Skin.HasSetting(HomePrograms)">601</onleft>
                         <onleft condition="Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomePictures)">1003</onleft>
                         <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">203</onleft>
                         <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
                         <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">503</onleft>
+                        <onleft condition="!Skin.HasSetting(HomePrograms)">601</onleft>
+                        <onleft condition="!Skin.HasSetting(HomePictures)">1003</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeMovies)">203</onleft>
+                        <onleft condition="System.GetBool(pvrmanager.enabled)">901</onleft>
+                        <onleft>503</onleft>
                         <onright>Control.Move(20,1)</onright>
                         <onright>801</onright>
                         <onup>725</onup>
@@ -5308,6 +5318,7 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
+                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
                     <onright condition="!Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
                     <onup condition="!System.HasAddon(service.openelec.settings)">80</onup>
@@ -5352,16 +5363,17 @@
                         <width>1302</width>
                         <height>620</height>
                         <onleft>Control.Move(20,-1)</onleft>
-                        <onleft condition="!Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="!Skin.HasSetting(HomeWeather)">701</onleft>
-                        <onleft condition="Skin.HasSetting(HomeWeather) + !Skin.HasSetting(HomePrograms)">601</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onleft>                        
                         <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomePictures)">1003</onleft>
                         <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
-                        <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">403</onleft>
-                        <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">303</onleft>
-                        <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">203</onleft>
-                        <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">503</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeWeather)">701</onleft>
+                        <onleft condition="!Skin.HasSetting(HomePrograms)">601</onleft>
+                        <onleft condition="!Skin.HasSetting(HomePictures)">1003</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
+                        <onleft condition="!Skin.HasSetting(HomeMovies)">203</onleft>
+                        <onleft condition="System.GetBool(pvrmanager.enabled)">901</onleft>
+                        <onleft>503</onleft>
                         <onright>801</onright>
                         <onup>825</onup>
                         <ondown>80</ondown>
