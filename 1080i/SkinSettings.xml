@@ -361,8 +361,6 @@
                         <include>SettingsCategoryDefaultButtonVars</include>
                         <onclick>SetProperty(Dialog,$LOCALIZE[31131])</onclick>
                         <onclick>ActivateWindow(3001)</onclick>
-                        <onfocus condition="!IsEmpty(Window(Home).Property(ReloadSkin))">ReloadSkin</onfocus>
-                        <onfocus condition="!IsEmpty(Window(Home).Property(ReloadSkin))">ClearProperty(ReloadSkin,Home)</onfocus>
                         <label>$LOCALIZE[31131]</label>
                     </control>
                     <control type="button" id="2002">
