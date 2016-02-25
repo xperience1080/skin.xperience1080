@@ -1,4 +1,10 @@
-﻿[B]5.0.400[/B]
+﻿[B]5.0.500[/B]
+• Home: Re-ordner TV category behind Home category
+• Classic-Home: Fix navigation issues if some categories are hidden
+• Settings: Proper way to get rid of unnecessary skin reload on category changes within skin settings
+• Settings: Get rid of skin reload after switched between classic and default home
+
+[B]5.0.400[/B]
 • Extended-Info: fix different navigation issues + animations
 • Extended-Info: fix for slideshow not displaying
 
