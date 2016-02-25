@@ -349,9 +349,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(HomeClassicMode)</selected>
                         <onclick>Skin.ToggleSetting(HomeClassicMode)</onclick>
-                        <onclick>ReloadSkin</onclick>
-                        <onclick>Control.SetFocus(30,1)</onclick>
-                        <onclick>SetFocus(2000)</onclick>
+                        <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                         <label>$LOCALIZE[31129]</label>
                     </control>
                     <control type="button" id="2001">
