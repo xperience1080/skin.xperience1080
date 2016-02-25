@@ -10,6 +10,7 @@
     <onload condition="Container(20).HasFocus(4)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onload>
     <onload condition="Container(20).HasFocus(5)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onload>
     <onload condition="!Skin.HasSetting(HideHomeProfileInfo)">AlarmClock(ProfileMove,Control.Move(30,1),00:10,silent,loop)</onload>
+    <include condition="!IsEmpty(Window.Property(CategoryChanged))">FocusSettingsCategory</include>
     <onunload>CancelAlarm(HomeTileMove,true)</onunload>
     <onunload>CancelAlarm(HomeTileMoveTwo,true)</onunload>
     <onunload>CancelAlarm(HomeTileMoveThree,true)</onunload>

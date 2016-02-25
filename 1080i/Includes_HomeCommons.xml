@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include name="FocusSettingsCategory">
+        <onload>SetFocus(20,$INFO[Container(20).NumItems])</onload>
+        <onload>SetFocus(825)</onload>
+        <onload>SetFocus(801)</onload>
+        <onload>ClearProperty(CategoryChanged,Home)</onload>
+    </include>
+
     <!--Home shutdown-favs Buttons-->
     <include name="shutdown-favs">
         <control type="group" id="80">

@@ -2,7 +2,6 @@
 <window type="dialog" id="3001">
     <defaultcontrol always="true">3</defaultcontrol>
     <onunload condition="!IsEmpty(Window(skinsettings).property(Guide.Custom))">ClearProperty(Guide.Custom,skinsettings)</onunload>
-    <onunload condition="!IsEmpty(Window(Home).Property(ReloadSkin))">SetFocus(2000)</onunload>
     <controls>
         <control type="group">
             <include>KeyboardAnimations</include>
@@ -49,7 +48,7 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeMovies)</selected>
                     <onclick>Skin.ToggleSetting(HomeMovies)</onclick>
-                    <onclick>SetProperty(ReloadSkin,1,Home)</onclick>
+                    <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[342]</label>
                 </control>
                 <control type="radiobutton" id="2102">
@@ -57,7 +56,7 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeTVShows)</selected>
                     <onclick>Skin.ToggleSetting(HomeTVShows)</onclick>
-                    <onclick>SetProperty(ReloadSkin,1,Home)</onclick>
+                    <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[31446]</label>
                 </control>
                 <control type="radiobutton" id="2103">
@@ -65,7 +64,7 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeMusic)</selected>
                     <onclick>Skin.ToggleSetting(HomeMusic)</onclick>
-                    <onclick>SetProperty(ReloadSkin,1,Home)</onclick>
+                    <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[2]</label>
                 </control>
                 <control type="radiobutton" id="2104">
@@ -73,7 +72,7 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomePictures)</selected>
                     <onclick>Skin.ToggleSetting(HomePictures)</onclick>
-                    <onclick>SetProperty(ReloadSkin,1,Home)</onclick>
+                    <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[1]</label>
                 </control>                
                 <control type="radiobutton" id="2105">
@@ -81,7 +80,7 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomePrograms)</selected>
                     <onclick>Skin.ToggleSetting(HomePrograms)</onclick>
-                    <onclick>SetProperty(ReloadSkin,1,Home)</onclick>
+                    <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[31504]</label>
                 </control>
                 <control type="radiobutton" id="2106">
@@ -89,7 +88,7 @@
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeWeather)</selected>
                     <onclick>Skin.ToggleSetting(HomeWeather)</onclick>
-                    <onclick>SetProperty(ReloadSkin,1,Home)</onclick>
+                    <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[8]</label>
                 </control>				
             </control>
