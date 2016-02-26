@@ -133,14 +133,6 @@
                     <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                 </control>
                 <control type="button" id="125">
                     <onleft condition="!Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
@@ -299,14 +291,6 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                    <animation type="WindowOpen" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
@@ -1065,14 +1049,6 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(9)" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
@@ -1687,14 +1663,6 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(3)" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
@@ -2445,14 +2413,6 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(4)" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
@@ -3197,14 +3157,6 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(5)" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
@@ -4722,14 +4674,6 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(6)" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
@@ -5240,14 +5184,6 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
@@ -6041,14 +5977,6 @@
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <colordiffuse>aawhite</colordiffuse>
                     </control>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
-                        <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
-                    </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
-                        <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
-                        <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
-                    </animation>
                     <animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
