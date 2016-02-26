@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<includes>    
+<includes>
     <include name="HomeControlListClassic">
         <control type="wraplist" id="20">
             <description>Control list</description>
@@ -135,11 +135,11 @@
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -278,11 +278,11 @@
                 <control type="group" id="550">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+                    <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+                    <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -294,11 +294,25 @@
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMovies)] | [Container(20).HasFocus(5) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(9) | 
+                        [Container(20).HasFocus(3) + !Control.IsVisible(9)] | 
+                        [Container(20).HasFocus(4) + !Control.IsVisible(9) + !Control.IsVisible(3)] | 
+                        [Container(20).HasFocus(5) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4)] | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMovies)] | [Container(20).HasFocus(5) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(9) | 
+                        [Container(20).HasFocus(3) + !Control.IsVisible(9)] | 
+                        [Container(20).HasFocus(4) + !Control.IsVisible(9) + !Control.IsVisible(3)] | 
+                        [Container(20).HasFocus(5) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4)] | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -974,11 +988,11 @@
                 <control type="group" id="950">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
+                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
+                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -990,11 +1004,23 @@
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(3) | 
+                        [Container(20).HasFocus(4) + !Control.IsVisible(3)] | 
+                        [Container(20).HasFocus(5) + !Control.IsVisible(3) + !Control.IsVisible(4)] | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(3) | 
+                        [Container(20).HasFocus(4) + !Control.IsVisible(3)] | 
+                        [Container(20).HasFocus(5) + !Control.IsVisible(3) + !Control.IsVisible(4)] | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -1207,11 +1233,13 @@
                 <control type="group" id="250">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(9) | 
+                        [Container(20).HasFocus(2) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(9) | 
+                        [Container(20).HasFocus(2) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -1223,11 +1251,21 @@
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(5) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(4) | 
+                        [Container(20).HasFocus(5) + !Control.IsVisible(4)] | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(4) + !Control.IsVisible(5)] | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(5) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(6) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(4) | 
+                        [Container(20).HasFocus(5) + !Control.IsVisible(4)] | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(4) + !Control.IsVisible(5)] | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -1954,11 +1992,15 @@
                 <control type="group" id="350">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(3) | 
+                        [Container(20).HasFocus(9) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(3) | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                     <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(3) | 
+                        [Container(20).HasFocus(9) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -1970,11 +2012,19 @@
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(5) | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(5)] | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(5) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(6) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(7) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                     <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(5) | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(5)] | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(5) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -2655,11 +2705,17 @@
                 <control type="group" id="450">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(4) | 
+                        [Container(20).HasFocus(3) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(4) | 
+                        [Container(20).HasFocus(3) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -2671,11 +2727,17 @@
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(7) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(10) | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(7) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(10) | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(10)] | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(10) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -3351,11 +3413,19 @@
                 <control type="group" id="1050">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(5) | 
+                        [Container(20).HasFocus(4) + !Control.IsVisible(5)] |
+                        [Container(20).HasFocus(3) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(4) | [Container(20).HasFocus(3) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(5) | 
+                        [Container(20).HasFocus(4) + !Control.IsVisible(5)] |
+                        [Container(20).HasFocus(3) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -3367,11 +3437,15 @@
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(7) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(6) | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(7) + Skin.HasSetting(HomePrograms)]" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(6) | 
+                        [Container(20).HasFocus(7) + !Control.IsVisible(6)] | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -4074,11 +4148,21 @@
                 <control type="group" id="650">
                     <posy>100</posy>
                     <posx>585</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(10) | 
+                        [Container(20).HasFocus(5) + !Control.IsVisible(10)] |
+                        [Container(20).HasFocus(4) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [Container(20).HasFocus(3) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(10) | 
+                        [Container(20).HasFocus(5) + !Control.IsVisible(10)] |
+                        [Container(20).HasFocus(4) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [Container(20).HasFocus(3) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -4090,11 +4174,13 @@
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(7) | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(7) | 
+                        [Container(20).HasFocus(8) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -4501,11 +4587,23 @@
                 <control type="group" id="750">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(6) | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(6)] |
+                        [Container(20).HasFocus(5) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
+                        [Container(20).HasFocus(4) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [Container(20).HasFocus(3) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(6) | [Container(20).HasFocus(5) + Skin.HasSetting(HomePrograms)] | [Container(20).HasFocus(4) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(6) | 
+                        [Container(20).HasFocus(10) + !Control.IsVisible(6)] |
+                        [Container(20).HasFocus(5) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
+                        [Container(20).HasFocus(4) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [Container(20).HasFocus(3) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -5329,11 +5427,25 @@
                 <control type="group" id="850">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
+                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(7) | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(7)] |
+                        [Container(20).HasFocus(10) + !Control.IsVisible(7) + !Control.IsVisible(6)] |
+                        [Container(20).HasFocus(5) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
+                        [Container(20).HasFocus(4) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [Container(20).HasFocus(3) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" /> 
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
+                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(7) | 
+                        [Container(20).HasFocus(6) + !Control.IsVisible(7)] |
+                        [Container(20).HasFocus(10) + !Control.IsVisible(7) + !Control.IsVisible(6)] |
+                        [Container(20).HasFocus(5) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
+                        [Container(20).HasFocus(4) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [Container(20).HasFocus(3) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [Container(20).HasFocus(9) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [Container(20).HasFocus(2) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" /> 
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
