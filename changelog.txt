@@ -1,4 +1,9 @@
-﻿[B]5.0.510[/B]
+﻿[B]5.0.580[/B]
+• AudioDSP: Fixed missing scrollbar and height for over 6 channels
+• AudioDSP: Created Master Mode Free Surroud dialog
+• Cleanups: Corrected parentheses error in multiple files
+
+[B]5.0.510[/B]
 • Home: Fix category focus issue after enable/disable live tv
 • Classic-Home: Fix window open/close animations
 • Cleanups: Removes obsolete window open/close animations from default home
