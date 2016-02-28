@@ -214,7 +214,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -319,7 +319,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -424,7 +424,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -529,7 +529,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -634,7 +634,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>

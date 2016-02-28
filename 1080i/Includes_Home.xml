@@ -5337,7 +5337,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>Skin.HasSetting(ShowWeatherFanart) + [!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)] + Weather.IsFetched</visible>
+                            <visible>Skin.HasSetting(ShowWeatherFanart) + [!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Weather.IsFetched</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="multiimage">
                                 <width>829</width>
@@ -5434,7 +5434,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>![Skin.HasSetting(ShowWeatherFanart) + [!IsEmpty(Skin.String(WeatherFanartDir) | System.HasAddon(resource.images.weatherfanart.multi)]] + Weather.IsFetched</visible>
+                            <visible>![Skin.HasSetting(ShowWeatherFanart) + [!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)]] + Weather.IsFetched</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Lower overlay</description>
@@ -6048,7 +6048,7 @@
                         <width>1302</width>
                         <height>620</height>
                         <onleft>Control.Move(20,-1)</onleft>
-                        <onleft condition="!Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onleft>            
+                        <onleft condition="!Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onleft>
                         <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onleft>
                         <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeWeather)">701</onleft>
