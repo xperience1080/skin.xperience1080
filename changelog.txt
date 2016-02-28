@@ -1,4 +1,10 @@
-﻿[B]5.0.580[/B]
+﻿[B]5.0.600[/B]
+• Music: Added AudioDSP control  
+• Profiles: Fixed incorrect alignment for created date on master
+• Artwork: Updated skin icon.png and fanart.jpg to reflect new films and programmes
+• Skin Animation: Speed decreased by .04
+
+[B]5.0.580[/B]
 • AudioDSP: Fixed missing scrollbar and height for over 6 channels
 • AudioDSP: Created Master Mode Free Surroud dialog
 • Cleanups: Corrected parentheses error in multiple files
