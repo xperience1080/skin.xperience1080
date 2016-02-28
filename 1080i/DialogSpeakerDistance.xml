@@ -74,12 +74,14 @@
 					<posx>0</posx>
 					<posy>152</posy>
 					<width>1080</width>
+					<height>381</height>
 					<itemgap>-1</itemgap>
 					<orientation>vertical</orientation>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>10</onup>
 					<ondown>9001</ondown>
+					<pagecontrol>60</pagecontrol>
 					<control type="spincontrolex" id="13">
 						<height>77</height>
 						<width>1080</width>
@@ -450,6 +452,21 @@
 						<ondown>11</ondown>
 					</control>
 				</control>
+			</control>
+
+			<control type="scrollbar" id="60">
+				<description>Scrollbar</description>
+				<posx>1476</posx>
+				<posy>304</posy>
+				<width>11</width>
+				<height>514</height>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<texturesliderbar border="0,6,0,6">views/other/scrollbar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,6,0,6">views/other/scrollbar.png</texturesliderbarfocus>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<animation effect="fade" start="50" end="30" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">Conditional</animation>
 			</control>
 		</control>
 	</controls>
