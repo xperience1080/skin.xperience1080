@@ -173,10 +173,10 @@
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <width>140</width>
+                                <width>88</width>
                                 <height>38</height>
                                 <colordiffuse>bbwhite</colordiffuse>
-                                <texture fallback="flags/audioosd/na.png">$INFO[MusicPlayer.Codec,flags/audioosd/,.png]</texture>
+                                <texture fallback="flags/audioosd/na.png">$INFO[MusicPlayer.Codec,flags/audio/osd/,.png]</texture>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -187,7 +187,7 @@
                                 <texture>$INFO[MusicPlayer.Channels,flags/audio/osd/channels/,.png]</texture>
                                 <include>visiblehidefadeflags</include>
                                 <visible>!IsEmpty(MusicPlayer.Channels)</visible>
-                            </control> 
+                            </control>
                         </control>
                         <control type="label">
                             <posx>360</posx>
@@ -269,7 +269,7 @@
                                     <texture diffuse="osd/fullscreen/cd-diffuse.png" background="true">$INFO[Player.FolderPath,,cdart.png]</texture>
                                     <animation effect="rotate" center="auto" start="360" end="0" time="2500" loop="true" condition="!Player.Paused">Conditional</animation>
                                 </control>
-                            </control>             
+                            </control>
                             <control type="image">
                                 <posx>80</posx>
                                 <posy>27</posy>
@@ -392,7 +392,7 @@
                                     <texture>$INFO[VideoPlayer.AudioChannels,flags/audio/osd/channels/,.png]</texture>
                                     <include>visiblehidefadeflags</include>
                                     <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
-                                </control>                                
+                                </control>
                             </control>
                             <control type="label">
                                 <posx>360</posx>
