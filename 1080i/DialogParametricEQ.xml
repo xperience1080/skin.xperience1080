@@ -26,8 +26,7 @@
 				<posy>245</posy>
 				<width>900</width>
 				<height>34</height>
-				<label>E.Q.</label>
-				<!--<label>$ADDON[adsp.basic 30100]</label>-->
+				<label>$ADDON[adsp.basic 30100]</label>
 				<align>center</align>
 				<font>Font-Condensed-S34-B</font>
 				<textcolor>bbwhite</textcolor>
@@ -60,7 +59,6 @@
 					<posy>73</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -81,7 +79,6 @@
 
 				<control type="slider" id="8001">
 					<description>32Hz Frequency Band Slider</description>
-
 					<posx>805</posx>
 					<posy>126</posy>
 					<width>300</width>
@@ -102,7 +99,6 @@
 					<posy>123</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -144,7 +140,6 @@
 					<posy>173</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -186,7 +181,6 @@
 					<posy>223</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -228,7 +222,6 @@
 					<posy>273</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -269,7 +262,6 @@
 					<posy>323</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -310,7 +302,6 @@
 					<posy>373</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -352,7 +343,6 @@
 					<posy>423</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -390,12 +380,10 @@
 				</control>
 				<control type="label" id="8108">
 					<description>4kHz Frequency Band Label</description>
-
 					<posx>85</posx>
 					<posy>473</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -437,7 +425,6 @@
 					<posy>523</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
@@ -479,7 +466,6 @@
 					<posy>573</posy>
 					<width>330</width>
 					<height>40</height>
-
 					<align>left</align>
 					<font>Font-Condensed-S37</font>
 					<textcolor>aawhite</textcolor>
