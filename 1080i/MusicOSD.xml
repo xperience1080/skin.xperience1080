@@ -33,30 +33,44 @@
                 <posx>-90</posx>
                 <posy>989</posy>
                 <control type="progress" id="1">
-					<description>Mini Progress</description>
-					<left>90</left>
-					<top>7</top>
-					<width>2010</width>
-					<height>4</height>
-					<info>Player.Progress</info>
-					<texturebg>osd/fullscreen/progress/back-mini.png</texturebg>
-					<lefttexture>-</lefttexture>
-					<midtexture>osd/fullscreen/progress/mid-mini.png</midtexture>
-					<righttexture>osd/fullscreen/progress/right-mini.png</righttexture>
-					<animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation>
-				</control>
-				<control type="label">				
-					<description>Mini Progress Time</description>
-					<posx>1680</posx>
-					<posy>38</posy>
-					<width>360</width>
-					<height>25</height>
-					<label>$INFO[Player.Time(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
-					<textcolor>aawhite</textcolor>
-					<font>Font-Condensed-S34</font>
-					<align>left</align>
-					<animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation> 
-                </control>				
+                    <description>Mini Progress</description>
+                    <left>90</left>
+                    <top>7</top>
+                    <width>2010</width>
+                    <height>4</height>
+                    <info>Player.Progress</info>
+                    <texturebg>osd/fullscreen/progress/back-mini.png</texturebg>
+                    <lefttexture>-</lefttexture>
+                    <midtexture>osd/fullscreen/progress/mid-mini.png</midtexture>
+                    <righttexture>osd/fullscreen/progress/right-mini.png</righttexture>
+                    <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation>
+                </control>
+                <control type="label">
+                    <description>Mini Progress Time</description>
+                    <posx>1680</posx>
+                    <posy>38</posy>
+                    <width>360</width>
+                    <height>25</height>
+                    <label>$INFO[Player.Time(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+                    <textcolor>aawhite</textcolor>
+                    <font>Font-Condensed-S34</font>
+                    <align>left</align>
+                    <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation>
+                </control>
+                <control type="button" id="15">
+                    <description>Playlist</description>
+                    <posx>370</posx>
+                    <height>100</height>
+                    <width>100</width>
+                    <texturefocus>osd/fullscreen/buttons/audio-settings-fo.png</texturefocus>
+                    <texturenofocus>osd/fullscreen/buttons/audio-settings-nofo.png</texturenofocus>
+                    <onclick>ActivateWindow(OSDAudioDSPSettings)</onclick>
+                    <visible>system.getbool(audiooutput.dspaddonsenabled)</visible>
+                    <onleft>14</onleft>
+                    <onright>7</onright>
+                    <onup>Close</onup>
+                    <ondown>noop</ondown>
+                </control>
                 <control type="button" id="7">
                     <description>Playlist</description>
                     <posx>460</posx>
@@ -66,7 +80,7 @@
                     <texturenofocus>osd/fullscreen/buttons/playlists-nofo.png</texturenofocus>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(musicplaylist)</onclick>
-                    <onleft>14</onleft>
+                    <onleft>15</onleft>
                     <onright>12</onright>
                     <onup>Close</onup>
                     <ondown>noop</ondown>
@@ -249,7 +263,7 @@
                     <onup>Close</onup>
                     <ondown>noop</ondown>
                     <onleft>13</onleft>
-                    <onright>7</onright>
+                    <onright>15</onright>
                     <enable>Skin.HasSetting(OSDVisualisation.Enabled)</enable>
                     <animation effect="fade" end="50" time="0" condition="!Control.IsEnabled(14)">Conditional</animation>
                 </control>
