@@ -26,7 +26,8 @@
 				<posy>245</posy>
 				<width>900</width>
 				<height>34</height>
-				<label>$ADDON[adsp.basic 30100]</label>
+				<label>E.Q.</label>
+				<!--<label>$ADDON[adsp.basic 30100]</label>-->
 				<align>center</align>
 				<font>Font-Condensed-S34-B</font>
 				<textcolor>bbwhite</textcolor>
