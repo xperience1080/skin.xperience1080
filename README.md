@@ -22,7 +22,7 @@ Xperience1080 is a Kodi v14/v15/v16 skin with two texture sets. Additional featu
 #### Credit to `Black and his work, of which this is a continuation.
 
 #### Further information
-See http://forum.kodi.tv/showthread.php?tid=197125 for more information.
+See http://forum.kodi.tv/forumdisplay.php?fid=197 for more information.
 
 #### Licence
 Please make sure you observe the skin's licence. All parts, including textures, are for non-commercial use.
