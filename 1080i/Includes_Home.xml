@@ -1350,6 +1350,7 @@
                         <posy>-24</posy>
                         <width>331</width>
                         <height>620</height>
+                        <onleft>Control.Move(20,-1)</onleft>
                         <onleft>503</onleft>
                         <onright>902</onright>
                         <onup>925</onup>
@@ -2438,9 +2439,9 @@
                     <onright>CancelAlarm(HomeTileMoveThree,true)</onright>
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="!Skin.HasSetting(HomeMusic)">425</onright>
-                    <onright condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1025</onright>
-                    <onright condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">625</onright>
-                    <onright condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSettings(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
+                    <onright condition="!Skin.HasSetting(HomePictures)">1025</onright>
+                    <onright condition="!Skin.HasSetting(HomePrograms)">625</onright>
+                    <onright condition="!Skin.HasSetting(HomeWeather)">725</onright>
                     <onright>825</onright>
                     <onclick condition="!Library.HasContent(tvshows)">ActivateWindow(videos,files,return)</onclick>
                     <onclick condition="Library.HasContent(tvshows)">ActivateWindow(videos,tvshowtitles,return)</onclick>
@@ -5999,7 +6000,7 @@
                     <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
                     <onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeWeather)">725</onleft>
-                    <onleft condition="Skin.HasSetting(HomePrograms)">625</onleft>
+                    <onleft condition="!Skin.HasSetting(HomePrograms)">625</onleft>
                     <onleft condition="!Skin.HasSetting(HomePictures)">1025</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
