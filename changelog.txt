@@ -1,4 +1,7 @@
-﻿[B]5.0.600[/B]
+﻿[B]5.0.610[/B]
+• Home: Fix navigation issues after 67b6c4d
+
+[B]5.0.600[/B]
 • Music: Added AudioDSP control  
 • Profiles: Fixed incorrect alignment for created date on master
 • Artwork: Updated skin icon.png and fanart.jpg to reflect new films and programmes
