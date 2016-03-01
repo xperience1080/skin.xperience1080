@@ -1,4 +1,7 @@
-﻿[B]5.0.610[/B]
+﻿[B]5.0.620[/B]
+• Keyboard: Support for Chinese characters using Baidu
+
+[B]5.0.610[/B]
 • Home: Fix navigation issues after 67b6c4d
 
 [B]5.0.600[/B]
