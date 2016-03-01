@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
     <defaultcontrol always="true">450</defaultcontrol>
-    <zorder>-1</zorder>
+    <!--<zorder>-1</zorder>-->
     <onload condition="IsEmpty(Window(Home).Property(Favourites))">SetProperty(Favourites,1,Home)</onload>
     <onload condition="IsEmpty(Window(Home).Property(Favourites))">Control.Move(450,-1)</onload>
     <onload condition="!Control.IsVisible(63)">PreviousMenu</onload>
@@ -121,6 +121,7 @@
                 <animation type="Conditional" condition="!Window.IsActive(shutdownmenu)" reversible="false">
                     <effect type="zoom" start="92" end="100" time="300" delay="250" center="auto" tween="sine" easing="in"  />
                 </animation>
+                <include>OptionsShutdownAnimation</include>
                 <control type="fixedlist" id="450">
                     <description>Fav list</description>
                     <posx>-221</posx>
@@ -298,5 +299,6 @@
                 </control>
             </control>
         </control>
+        <include>Common-Info-NoOptions</include>
     </controls>
 </window>
