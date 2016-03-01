@@ -13,6 +13,46 @@
                 <effect type="fade" start="0" end="100" time="0" delay="500" />
             </animation>
             <include condition="Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)">FadeBackgroundDialog</include>
+
+            <!-- Chinese Additional -->
+            <control type="group">
+                <posx>335</posx>
+                <posy>94</posy>
+                <visible>Control.IsVisible(313)</visible>
+                <include>KeyboardAnimations</include>
+                <control type="image">
+                    <description>image</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1235</width>
+                    <height>100</height>
+                    <texture border="39">dialogs/default/bg.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label" id="313">
+                    <description>HZCODE label</description>
+                    <posx>118</posx>
+                    <posy>-30</posy>
+                    <width>1000</width>
+                    <height>22</height>
+                    <font>Font-Condensed-S45</font>
+                    <align>center</align>
+                    <textcolor>77FFFFFF</textcolor>
+                </control>
+                <control type="label" id="314">
+                    <description>HZLIST label</description>
+                    <posx>0</posx>
+                    <posy>40</posy>
+                    <width>1235</width>
+                    <height>22</height>
+                    <font>Font-Condensed-S30</font>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>KeyboardGrey</textcolor>
+                </control>
+            </control>
+
+            <!-- Layout -->
             <control type="group">
                 <posx>335</posx>
                 <posy>294</posy>
@@ -54,7 +94,8 @@
                     <aligny>top</aligny>
                     <textcolor>eewhite</textcolor>
                 </control>
-            <!-- First Row -->
+
+                <!-- First Row -->
                 <control type="group" id="320">
                     <posx>32</posx>
                     <posy>50</posy>
@@ -63,18 +104,15 @@
                         <posx>0</posx>
                         <onleft>111</onleft>
                         <onright>100</onright>
-
                         <onup>9001</onup>
                         <ondown>304</ondown>
                         <label>$LOCALIZE[150]</label>
                         <include>BigKey</include>
                     </control>
-
                     <control type="button" id="100">
                         <description>:0,0: button</description>
                         <posx>190</posx>
                         <onright>101</onright>
-
                         <onup>9001</onup>
                         <ondown>120</ondown>
                         <onleft>307</onleft>
@@ -85,7 +123,6 @@
                         <posx>271</posx>
                         <onleft>100</onleft>
                         <onright>102</onright>
-
                         <onup>9001</onup>
                         <ondown>121</ondown>
                         <include>SmallKey</include>
@@ -95,7 +132,6 @@
                         <posx>352</posx>
                         <onleft>101</onleft>
                         <onright>103</onright>
-
                         <onup>9001</onup>
                         <ondown>122</ondown>
                         <include>SmallKey</include>
@@ -105,7 +141,6 @@
                         <posx>433</posx>
                         <onleft>102</onleft>
                         <onright>104</onright>
-
                         <onup>9001</onup>
                         <ondown>123</ondown>
                         <include>SmallKey</include>
@@ -115,7 +150,6 @@
                         <posx>514</posx>
                         <onleft>103</onleft>
                         <onright>105</onright>
-
                         <onup>9001</onup>
                         <ondown>124</ondown>
                         <include>SmallKey</include>
@@ -125,19 +159,15 @@
                         <posx>595</posx>
                         <onleft>104</onleft>
                         <onright>106</onright>
-
                         <onup>9001</onup>
                         <ondown>125</ondown>
                         <include>SmallKey</include>
                     </control>
-
-
                     <control type="button" id="106">
                         <description>:0,6: button</description>
                         <posx>676</posx>
                         <onleft>105</onleft>
                         <onright>107</onright>
-
                         <onup>9001</onup>
                         <ondown>126</ondown>
                         <include>SmallKey</include>
@@ -147,19 +177,15 @@
                         <posx>757</posx>
                         <onleft>106</onleft>
                         <onright>108</onright>
-
                         <onup>9001</onup>
                         <ondown>127</ondown>
                         <include>SmallKey</include>
                     </control>
-
-
                     <control type="button" id="108">
                         <description>:0,8: button</description>
                         <posx>838</posx>
                         <onleft>107</onleft>
                         <onright>109</onright>
-
                         <onup>9001</onup>
                         <ondown>128</ondown>
                         <include>SmallKey</include>
@@ -169,7 +195,6 @@
                         <posx>919</posx>
                         <onleft>108</onleft>
                         <onright>110</onright>
-
                         <onup>9001</onup>
                         <ondown>129</ondown>
                         <include>SmallKey</include>
@@ -179,7 +204,6 @@
                         <posx>1000</posx>
                         <onleft>109</onleft>
                         <onright>111</onright>
-
                         <onup>9001</onup>
                         <ondown>130</ondown>
                         <include>SmallKey</include>
@@ -189,14 +213,13 @@
                         <posx>1081</posx>
                         <onleft>110</onleft>
                         <onright>307</onright>
-
                         <onup>9001</onup>
                         <ondown>131</ondown>
                         <include>SmallKey</include>
                     </control>
                 </control>
 
-            <!-- Second Row -->
+                <!-- Second Row -->
                 <control type="group" id="330">
                     <posx>32</posx>
                     <posy>130</posy>
@@ -325,7 +348,7 @@
                         <include>SmallKey</include>
                     </control>
                 </control>
-            <!-- Third Row -->
+                <!-- Third Row -->
                 <control type="group" id="340">
                     <posx>32</posx>
                     <posy>210</posy>
@@ -335,23 +358,6 @@
                         <onleft>151</onleft>
                         <onright>140</onright>
                         <onup>304</onup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <ondown>302</ondown>
                         <include>CapsKey</include>
                         <radioposx>15</radioposx>
@@ -361,7 +367,6 @@
                         <textureradioon>dialogs/keyboard/radio-on.png</textureradioon>
                         <textureradiooff>dialogs/keyboard/radio-off.png</textureradiooff>
                     </control>
-
                     <control type="button" id="140">
                         <description>:2,0: button</description>
                         <posx>190</posx>
@@ -416,7 +421,6 @@
                         <ondown>165</ondown>
                         <include>SmallKey</include>
                     </control>
-
                     <control type="button" id="146">
                         <description>:2,6: button</description>
                         <posx>676</posx>
@@ -473,21 +477,16 @@
                     </control>
                 </control>
 
-            <!-- Fourth Row -->
+                <!-- Fourth Row -->
                 <control type="group" id="350">
                     <posx>32</posx>
                     <posy>290</posy>
-
-
                     <control type="radiobutton" id="302">
                         <description>:Shift: button</description>
                         <posx>0</posx>
-
                         <onleft>171</onleft>
                         <onright>160</onright>
                         <onup>303</onup>
-
-
                         <ondown>309</ondown>
                         <include>ShiftKey</include>
                         <radioposx>15</radioposx>
@@ -501,7 +500,6 @@
                     <control type="button" id="160">
                         <description>:4,0: button</description>
                         <posx>190</posx>
-
                         <onleft>302</onleft>
                         <onright>161</onright>
                         <onup>140</onup>
@@ -576,7 +574,6 @@
                         <posx>838</posx>
                         <onleft>167</onleft>
                         <onright>169</onright>
-
                         <onup>148</onup>
                         <ondown>32</ondown>
                         <include>SmallKey</include>
@@ -586,7 +583,6 @@
                         <posx>919</posx>
                         <onleft>168</onleft>
                         <onright>170</onright>
-
                         <onup>149</onup>
                         <ondown>8</ondown>
                         <include>SmallKey</include>
@@ -596,7 +592,6 @@
                         <posx>1000</posx>
                         <onleft>169</onleft>
                         <onright>171</onright>
-
                         <onup>150</onup>
                         <ondown>8</ondown>
                         <include>SmallKey</include>
@@ -605,8 +600,6 @@
                         <description>:4,11: button</description>
                         <posx>1081</posx>
                         <onleft>170</onleft>
-
-
                         <onright>302</onright>
                         <onup>151</onup>
                         <ondown>8</ondown>
@@ -614,20 +607,10 @@
                     </control>
                 </control>
 
-
-
-
-
-
-
-
-
-
-            <!-- Fifth Row -->
+                <!-- Fifth Row -->
                 <control type="group" id="360">
                     <posx>32</posx>
                     <posy>370</posy>
-
                     <control type="button" id="309">
                         <description>Layout button</description>
                         <posx>0</posx>
@@ -639,12 +622,9 @@
                     </control>
                     <control type="button" id="305">
                         <description>:move left: button</description>
-
-
                         <posx>190</posx>
                         <onleft>309</onleft>
                         <onright>306</onright>
-
                         <onup>160</onup>
                         <ondown>9001</ondown>
                         <textoffsety>15</textoffsety>
@@ -652,24 +632,18 @@
                     </control>
                     <control type="button" id="306">
                         <description>:move right: button</description>
-
                         <posx>271</posx>
                         <onleft>305</onleft>
                         <onright>32</onright>
-
                         <onup>161</onup>
                         <ondown>9001</ondown>
                         <textoffsety>15</textoffsety>
                         <include>MediumKeyRarr</include>
                     </control>
-
                     <control type="button" id="32">
                         <description>:space: button</description>
-
                         <posx>352</posx>
                         <onleft>306</onleft>
-
-
                         <onright>8</onright>
                         <onup>164</onup>
                         <ondown>9001</ondown>
@@ -684,32 +658,6 @@
                         <ondown>9001</ondown>
                         <include>BackSpace</include>
                     </control>
-                    <!--
-                    <control type="group" id="362">
-                        <control type="button" id="301">
-                            <description>Cancel button</description>
-                            <posx>758</posx>
-                            <onleft>32</onleft>
-                            <onright>300</onright>
-                            <onup>8</onup>
-                            <ondown>322</ondown>
-                            <label>$LOCALIZE[31922]</label>
-                            <include>DoubleKeyCancel</include>
-                        </control>
-                        <control type="button" id="300">
-                            <description>Done button</description>
-                            <posx>920</posx>
-                            <onleft>301</onleft>
-                            <onright>305</onright>
-                            <onup>8</onup>
-                            <ondown>323</ondown>
-                            <label>$LOCALIZE[20177]</label>
-                            <include>DoubleKeyDone</include>
-                            <onclick>SetProperty(Clear,1)</onclick>
-                            <onclick condition="!IsEmpty(Window(Home).Property(actor.search))">RunScript(script.metadata.actors,$INFO[Control.GetLabel(310)])</onclick>
-                        </control>
-                    </control>
-                    -->
                 </control>
                 <control type="group" id="9001">
                     <posx>30</posx>
@@ -741,8 +689,8 @@
                         <ondown>320</ondown>
                         <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(301)">Conditional</animation>
                     </control>
-                  </control>
-              </control>
+                </control>
             </control>
+        </control>
     </controls>
 </window>
