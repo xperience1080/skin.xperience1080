@@ -6,7 +6,10 @@
     <onload condition="Skin.HasSetting(MovieInformation.PlayTrailer)">AlarmClock(PlayTrailer,PlayMedia($INFO[ListItem.Trailer],false,1),00:01,silent)</onload>
     <onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <onunload>ClearProperty(fanart_image,home)</onunload>
+    <onunload>ClearProperty(FanartZoom,movieinformation)</onunload>
+    <allowoverlay>no</allowoverlay>
     <controls>
+
         <!-- Movies, TVShows, Seasons, Episodes -->
         <control type="group">
             <visible>!Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
@@ -32,7 +35,7 @@
                 <effect type="slide" start="0" end="-2320" time="500" delay="0" tween="sine" easing="inout" />
             </animation>
 
-            <visible>!Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
+            <visible>!Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 
             <!-- Title Label -->
             <control type="group">
@@ -43,7 +46,6 @@
                     <posy>51</posy>
                     <width>1490</width>
                     <height>100</height>
-                    <aligny>center</aligny>
                     <orientation>horizontal</orientation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="in">WindowOpen</animation>
                     <visible>Container.Content(tvshows) + !IsEmpty(listitem.mpaa)</visible>
@@ -107,7 +109,6 @@
                     <posy>51</posy>
                     <width>832</width>
                     <height>100</height>
-                    <aligny>center</aligny>
                     <orientation>horizontal</orientation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="in">WindowOpen</animation>
                     <visible>Container.Content(tvshows) + !IsEmpty(listitem.mpaa)</visible>
@@ -249,7 +250,7 @@
                     <textcolor>eewhite</textcolor>
                     <align>left</align>
                     <scroll>false</scroll>
-                    <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Control.HasFocus(9333) | Control.HasFocus(9335) | Control.HasFocus(1101) | Control.HasFocus(1104) | Control.HasFocus(1105) | Control.HasFocus(1110) | Control.HasFocus(70) | Control.HasFocus(71) | Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]">Conditional</animation>
+                    <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Control.HasFocus(9333) | Control.HasFocus(9335) | Control.HasFocus(1101) | Control.HasFocus(1104) | Control.HasFocus(1105) | Control.HasFocus(1110) | Control.HasFocus(70) | Control.HasFocus(71) | Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]">Conditional</animation>
                     <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
                 </control>
                 <!-- Right Arrow Label -->
@@ -272,7 +273,7 @@
             <!-- Info Stuff -->
             <control type="group">
                 <include>FullscreenDimensions</include>
-                <visible allowhiddenfocus="true">Control.HasFocus(9333) | Control.HasFocus(9335) | Control.HasFocus(1101) | Control.HasFocus(1104) | Control.HasFocus(1105) | Control.HasFocus(1110) | Control.HasFocus(70) | Control.HasFocus(71) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]</visible>
+                <visible allowhiddenfocus="true">Control.HasFocus(9337) | Control.HasFocus(9333) | Control.HasFocus(9335) | Control.HasFocus(1101) | Control.HasFocus(1104) | Control.HasFocus(1105) | Control.HasFocus(1110) | Control.HasFocus(70) | Control.HasFocus(71) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]</visible>
                 <include>listEndAnimation</include>
                 <animation type="Visible">
                     <effect type="slide" start="-1920" end="0" time="500" delay="0" tween="sine" easing="inout" />
@@ -306,52 +307,6 @@
                     <width>638</width>
                     <height>335</height>
                     <texture border="3">views/list/panel/panel.png</texture>
-                </control>
-
-                <!-- Fanart / Thumb / Overlay -->
-                <control type="group">
-                    <posx>100</posx>
-                    <posy>220</posy>
-                    <control type="group">
-                        <visible>!Player.HasVideo</visible>
-                        <include>visiblehidefadeinfo</include>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>634</width>
-                            <height>355</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture background="true">$VAR[VideoInfoArt]</texture>
-                        </control>
-                        <control type="image">
-                            <posx>534</posx>
-                            <posy>0</posy>
-                            <width>100</width>
-                            <height>100</height>
-                            <texture>$VAR[VideoInfoOverlay]</texture>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <visible>Player.HasVideo</visible>
-                        <include>visiblehidefadeinfo</include>
-                        <control type="image">
-                            <description>black</description>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>634</width>
-                            <height>355</height>
-                            <texture border="1">windows/common/black.png</texture>
-                        </control>
-                        <control type="videowindow">
-                            <description>video</description>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>634</width>
-                            <height>356</height>
-                            <include>visiblehidefadeinfo</include>
-                            <visible>Window.IsActive(movieinformation)</visible>
-                        </control>
-                    </control>
                 </control>
 
                 <!-- OSD Back -->
@@ -434,7 +389,7 @@
                     <onright condition="!Control.IsVisible(70) + !Control.IsVisible(71) + !IntegerGreaterThan(Container(50).NumItems,0)">SetProperty(BounceRight,1,Home)</onright>
                     <onright condition="!Control.IsVisible(70) + !Control.IsVisible(71) + IntegerGreaterThan(Container(50).NumItems,0)">SendClick(2003,5)</onright>
                     <onright condition="!Control.IsVisible(70) + !Control.IsVisible(71) + IntegerGreaterThan(Container(50).NumItems,0)">SetFocus(9334)</onright>
-                    <onup condition="!Player.HasVideo">9333</onup>
+                    <onup condition="!Player.HasVideo">9337</onup>
                     <onup condition="Player.HasVideo">9336</onup>
                     <ondown condition="!Player.HasVideo">9333</ondown>
                     <ondown condition="Player.HasVideo">9336</ondown>
@@ -944,7 +899,9 @@
                         <font>Font-Condensed-S40</font>
                         <autoscroll time="2000" delay="10000" repeat="10000">Window.IsActive(movieinformation) + !Control.HasFocus(70) + [Control.HasFocus(9333) | Control.HasFocus(71) | ControlGroup(9336).HasFocus] + !Window.IsActive(3004) + !Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                         <pagecontrol>70</pagecontrol>
+                        <animation effect="fade" start="100" end="71.5" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(70)">Conditional</animation>
                     </control>
+
                     <!-- Scrollbar -->
                     <control type="image">
                         <description>Scrollbar background</description>
@@ -976,6 +933,81 @@
                         <visible>!IsEmpty(ListItem.Plot)</visible>
                     </control>
                 </control>
+
+                <!-- Fanart / Thumb / Overlay -->
+                <control type="group">
+                    <posx>100</posx>
+                    <posy>220</posy>
+                    <control type="group">
+                        <visible>!Player.HasVideo</visible>
+                        <include>visiblehidefadeinfo</include>
+                        <control type="button" id="9337">
+                            <description>Fanart Zoom</description>
+                            <onup>9333</onup>
+                            <onleft>ClearProperty(FanartZoom,movieinformation)</onleft>
+                            <onright>ClearProperty(FanartZoom,movieinformation)</onright>
+                            <onback>ClearProperty(FanartZoom,movieinformation)</onback>
+                            <ondown>9333</ondown>
+                            <onclick condition="IsEmpty(Window(movieinformation).Property(FanartZoom))">SetProperty(FanartZoom,True,movieinformation)</onclick>
+                            <onclick condition="!IsEmpty(Window(movieinformation).Property(FanartZoom))">ClearProperty(FanartZoom,movieinformation)</onclick>
+                        </control>
+                        <control type="image">
+                            <posx>-21</posx>
+                            <posy>-21</posy>
+                            <width>676</width>
+                            <height>397</height>
+                            <texture border="40">windows/home/tile-fo.png</texture>
+                            <visible>Control.HasFocus(9337)</visible>
+                            <animation type="Visible" reversible="false">
+                                <effect type="fade" start="0" end="100" time="150" tween="sine" easing="inout" />
+                            </animation>
+                            <animation type="Hidden" reversible="false">
+                                <effect type="fade" start="100" end="0" time="150" tween="sine" easing="inout" />
+                            </animation>
+                            <animation effect="zoom" start="-21,-21,676,397" end="-121,-241,1944,1112" time="640" tween="cubic" condition="!IsEmpty(Window(movieinformation).Property(FanartZoom))">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>634</width>
+                            <height>355</height>
+                            <aspectratio>scale</aspectratio>
+                            <texture background="true">$VAR[VideoInfoArt]</texture>
+                            <animation effect="zoom" start="0,0,634,355" end="-100,-220,1920,1080" time="640" tween="cubic" condition="!IsEmpty(Window(movieinformation).Property(FanartZoom))">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <posx>534</posx>
+                            <posy>0</posy>
+                            <width>100</width>
+                            <height>100</height>
+                            <texture>$VAR[VideoInfoOverlay]</texture>
+                            <visible>IsEmpty(Window(movieinformation).Property(FanartZoom))</visible>
+                            <include>visiblehidefadeinfo</include>
+                            <animation effect="zoom" start="534,0,100,100" end="1620,-220,200,200" time="640" tween="cubic" condition="!IsEmpty(Window(movieinformation).Property(FanartZoom))">Conditional</animation>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>Player.HasVideo</visible>
+                        <include>visiblehidefadeinfo</include>
+                        <control type="image">
+                            <description>black</description>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>634</width>
+                            <height>355</height>
+                            <texture border="1">windows/common/black.png</texture>
+                        </control>
+                        <control type="videowindow">
+                            <description>video</description>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>634</width>
+                            <height>356</height>
+                            <include>visiblehidefadeinfo</include>
+                            <visible>Window.IsActive(movieinformation)</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
 
             <!-- Cast Stuff -->
@@ -992,12 +1024,10 @@
                 </animation>
 
                 <control type="group">
-
                     <control type="button" id="9334">
                         <onfocus>Action(left)</onfocus>
                         <onleft>50</onleft>
                     </control>
-
                     <control type="list" id="50">
                         <posx>118</posx>
                         <posy>234</posy>
@@ -1041,7 +1071,6 @@
                             </control>
                         </focusedlayout>
                     </control>
-
                     <control type="image">
                         <description>Scrollbar background</description>
                         <posx>1340</posx>
@@ -1064,7 +1093,6 @@
                         <showonepage>false</showonepage>
                         <animation effect="fade" start="80" end="35" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151)">Conditional</animation>
                     </control>
-
                     <control type="image">
                         <description>Actor image</description>
                         <posx>1362</posx>
@@ -1085,9 +1113,7 @@
                         <visible>!IsEmpty(Container(50).ListItem.Art(thumb))</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>
-
                 </control>
-
             </control>
 
             <control type="group">
@@ -1130,7 +1156,6 @@
                     <include>listEndAnimation</include>
                 </control>
             </control>
-
         </control>
 
         <!-- Invisible Buttons -->
