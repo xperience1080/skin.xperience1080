@@ -2412,7 +2412,7 @@
                 <posx>100</posx>
                 <posy>260</posy>
                 <animation effect="fade" start="0" end="100" time="0" reversible="false">Visible</animation>
-                <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(karaoke) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(81)</visible>
+                <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(81)</visible>
                 <control type="group">
                     <animation type="WindowOpen">
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
@@ -3122,7 +3122,7 @@
                                 <align>left</align>
                             </control>
                             <control type="label">
-								<visible>Container.Content(episodes)</visible>							 
+								<visible>Container.Content(episodes)</visible>
                                 <posx>20</posx>
                                 <posy>329</posy>
                                 <width>440</width>
@@ -3144,7 +3144,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>							
+                            </control>
                             <control type="textbox">
                                 <description>Plot</description>
                                 <posx>20</posx>
@@ -3253,9 +3253,9 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>					
+                            </control>
                             <control type="label">
-								<visible>Container.Content(episodes)</visible>							 
+								<visible>Container.Content(episodes)</visible>
                                 <posx>20</posx>
                                 <posy>329</posy>
                                 <width>440</width>
@@ -3267,7 +3267,7 @@
                                 <align>left</align>
                             </control>
                             <control type="label">
-								<visible>!Container.Content(episodes)</visible>							 
+								<visible>!Container.Content(episodes)</visible>
                                 <posx>20</posx>
                                 <posy>329</posy>
                                 <width>440</width>
@@ -3277,7 +3277,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>							
+                            </control>
                             <control type="textbox">
                                 <description>Plot</description>
                                 <posx>20</posx>
@@ -3414,7 +3414,7 @@
                 <posx>113</posx>
                 <posy>240</posy>
                 <animation effect="fade" start="0" end="100" time="0" reversible="false">Visible</animation>
-                <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(karaoke) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(80)</visible>
+                <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(80)</visible>
                 <control type="group">
                     <animation type="Conditional" condition="true">
                         <effect type="zoom" start="100" end="94.7368421" time="0" center="-186,301" />
@@ -4892,7 +4892,7 @@
 				<width>1720</width>
 				<height>734</height>
 				<texture>views/fanart/back-tile.png</texture>
-			</control>	
+			</control>
 			<control type="image">
 				<description>Landscape</description>
 				<posx>585</posx>
@@ -4907,7 +4907,7 @@
 				<posy>647</posy>
 				<width>1230</width>
 				<height>87</height>
-				<texture border="7">views/fanart/slide-overlay.png</texture>		 
+				<texture border="7">views/fanart/slide-overlay.png</texture>
 			</control>
 			<control type="image">
 				<posx>1715</posx>
@@ -4960,7 +4960,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<scroll>false</scroll>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>121</posx>
 				<posy>680</posy>
@@ -4986,7 +4986,7 @@
 				<aligny>center</aligny>
 				<scroll>false</scroll>
 				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Premiered)</visible>
-			</control>	
+			</control>
 			<control type="label">
 				<posx>121</posx>
 				<posy>640</posy>
@@ -5011,18 +5011,18 @@
 				<aligny>center</aligny>
 				<scroll>true</scroll>
 				<visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>121</posx>
 				<posy>30</posy>
 				<width>510</width>
 				<font>Font-Condensed-S60</font>
-				<label>$LOCALIZE[207]</label> 
+				<label>$LOCALIZE[207]</label>
 				<textcolor>aawhite</textcolor>
 				<shadowcolor>22000000</shadowcolor>
 				<scroll>false</scroll>
 				<visible>!IsEmpty(ListItem.Plot)</visible>
-			</control>		
+			</control>
 			<control type="textbox">
 				<posx>121</posx>
 				<posy>80</posy>
@@ -5097,7 +5097,7 @@
 				<onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
 				<onup condition="Skin.HasSetting(KioskMode)">502</onup>
 				<ondown condition="!Skin.HasSetting(KioskMode)">9010</ondown>
-				<ondown condition="Skin.HasSetting(KioskMode)">502</ondown>				
+				<ondown condition="Skin.HasSetting(KioskMode)">502</ondown>
 				<onleft>502</onleft>
 				<onright>502</onright>
 				<preloaditems>0</preloaditems>
@@ -5111,7 +5111,7 @@
 			</control>
 		</control>
 	</include>
-	
+
 <!-- =========== -->
 <!-- Banner (60) -->
 <!-- =========== -->
