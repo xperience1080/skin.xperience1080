@@ -72,6 +72,8 @@
         <disabledcolor>black</disabledcolor>
         <textureradiofocus>buttons/radio/radio-button-fo.png</textureradiofocus>
         <textureradionofocus>buttons/radio/radio-button-nf.png</textureradionofocus>
+        <textureradioondisabled>-</textureradioondisabled>
+        <textureradiooffdisabled>-</textureradiooffdisabled>
         <textoffsetx>5</textoffsetx>
         <pulseonselect>false</pulseonselect>
     </default>
@@ -86,6 +88,8 @@
         <texturedown>buttons/spinctrl/arrow-down-nf.png</texturedown>
         <textureupfocus>buttons/spinctrl/arrow-up-fo.png</textureupfocus>
         <texturedownfocus>buttons/spinctrl/arrow-down-fo.png</texturedownfocus>
+        <textureupdisabled>-</textureupdisabled>
+        <texturedowndisabled>-</texturedowndisabled>
         <spinwidth>32</spinwidth>
         <spinheight>60</spinheight>
         <textcolor>grey</textcolor>
@@ -107,6 +111,8 @@
         <texturedown>buttons/spinctrl/arrow-down-nf.png</texturedown>
         <textureupfocus>buttons/spinctrl/arrow-up-fo.png</textureupfocus>
         <texturedownfocus>buttons/spinctrl/arrow-down-fo.png</texturedownfocus>
+        <textureupdisabled>-</textureupdisabled>
+        <texturedowndisabled>-</texturedowndisabled>
         <spinwidth>32</spinwidth>
         <spinheight>60</spinheight>
         <font>Font-Condensed-S32</font>
