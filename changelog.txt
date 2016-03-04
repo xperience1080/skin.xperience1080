@@ -1,4 +1,13 @@
-﻿[B]5.0.620[/B]
+﻿[B]5.0.700[/B]
+• Extras: Get rid of movie genre icons, music genre icons, studio flags and use resource addons instead
+• Favourites: Fade-out unselected items a little more
+• Favourites: Drop custom context menu and use default instead
+• RSS: Hide rss feed if context menu is visible
+• Fanart: Adds option to focus and zoom on fanart + cleanup
+• Cleanup: Removes Window.Next(karaoke)
+• Cleanup: Radiobutton, spincontrol and spincontrolex - disabled textures
+
+[B]5.0.620[/B]
 • Keyboard: Support for Chinese characters using Baidu
 
 [B]5.0.610[/B]
