@@ -116,7 +116,7 @@
                         <height>85</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!Container.Content(genres)</visible>
+                        <visible>!Container.Content(genres) | stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
                         <posx>89</posx>
@@ -124,7 +124,7 @@
                         <width>60</width>
                         <height>90</height>
                         <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
-                        <visible>Container.Content(genres)</visible>
+                        <visible>Container.Content(genres) + !stringcompare(ListItem.Label,..)</visible>
                     </control>
                 </itemlayout>
                 <itemlayout height="100" condition="Container.Content(movies)">
@@ -522,7 +522,7 @@
                         <height>85</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!Container.Content(genres)</visible>
+                        <visible>!Container.Content(genres) | stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
                         <posx>89</posx>
@@ -530,7 +530,7 @@
                         <width>60</width>
                         <height>90</height>
                         <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
-                        <visible>Container.Content(genres)</visible>
+                        <visible>Container.Content(genres) + !stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="group">
                         <animation type="Focus" condition="[Container(50).OnNext | Container(50).OnPrevious] + !Container(50).ListItem.IsPlaying" reversible="false">
@@ -4567,7 +4567,7 @@
                             <texture background="true">$VAR[WallPoster]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>!Container.Content(Genres)</visible>
+                            <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <description>Poster</description>
@@ -4578,7 +4578,7 @@
                             <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>Container.Content(Genres)</visible>
+                            <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <posx>117</posx>
@@ -4600,7 +4600,7 @@
                             <texture background="true">$VAR[WallPoster]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>!Container.Content(Genres)</visible>
+                            <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <description>Poster</description>
@@ -4611,7 +4611,7 @@
                             <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>Container.Content(Genres)</visible>
+                            <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <posx>173</posx>
@@ -4638,7 +4638,7 @@
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="true">$VAR[WallPoster]</texture>
-                                <visible>!Container.Content(Genres)</visible>
+                                <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <description>Poster</description>
@@ -4648,7 +4648,7 @@
                                 <height>232</height>
                                 <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <visible>Container.Content(Genres)</visible>
+                                <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>117</posx>
@@ -4691,7 +4691,7 @@
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="true">$VAR[WallPoster]</texture>
-                                <visible>!Container.Content(Genres)</visible>
+                                <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <description>Poster</description>
@@ -4701,7 +4701,7 @@
                                 <height>354</height>
                                 <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <visible>Container.Content(Genres)</visible>
+                                <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>173</posx>
@@ -4773,7 +4773,7 @@
                     <texture background="true">$VAR[PosterViewPoster]</texture>
                     <fadetime>500</fadetime>
                     <aspectratio>scale</aspectratio>
-                    <visible>!Container.Content(Genres)</visible>
+                    <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                 </control>
                 <control type="image">
                     <description>Poster</description>
@@ -4784,7 +4784,7 @@
                     <fadetime>500</fadetime>
                     <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                     <aspectratio>scale</aspectratio>
-                    <visible>Container.Content(Genres)</visible>
+                    <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                 </control>
                 <control type="group">
                     <posx>1304</posx>
