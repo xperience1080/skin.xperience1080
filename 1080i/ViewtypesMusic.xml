@@ -75,7 +75,7 @@
                         <width>85</width>
                         <height>85</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <visible>!Container.Content(Genres)</visible>
+                        <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
                         <posx>30</posx>
@@ -83,7 +83,7 @@
                         <width>85</width>
                         <height>85</height>
                         <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
-                        <visible>Container.Content(Genres)</visible>
+                        <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="label">
                         <description>Label</description>
@@ -429,7 +429,7 @@
                         <width>85</width>
                         <height>85</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <visible>!Container.Content(Genres)</visible>
+                        <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
                         <posx>30</posx>
@@ -437,7 +437,7 @@
                         <width>85</width>
                         <height>85</height>
                         <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
-                        <visible>Container.Content(Genres)</visible>
+                        <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="group">
                         <animation type="Focus" condition="[Container(50).OnNext | Container(50).OnPrevious] + !Container(50).ListItem.IsPlaying" reversible="false">
@@ -2337,7 +2337,7 @@
                             <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                            <visible>Container.Content(Genres)</visible>
+                            <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <description>Poster</description>
@@ -2349,7 +2349,7 @@
                             <texture background="true">$VAR[SquareThumbSmall]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>!Container.Content(genres)</visible>
+                            <visible>!Container.Content(genres) | stringcompare(ListItem.Label,..)</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout width="244" height="244">
@@ -2368,7 +2368,7 @@
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
                                 <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                                <visible>Container.Content(Genres)</visible>
+                                <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>12</posx>
@@ -2378,7 +2378,7 @@
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <texture background="true">$VAR[SquareThumbSmall]</texture>
-                                <visible>!Container.Content(Genres)</visible>
+                                <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -2433,7 +2433,7 @@
                     <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
                     <colordiffuse>eewhite</colordiffuse>
                     <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                    <visible>Container.Content(Genres)</visible>
+                    <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                 </control>
                 <control type="image">
                     <description>Poster</description>
@@ -2445,7 +2445,7 @@
                     <texture background="true">$VAR[SquareThumbLarge]</texture>
                     <fadetime>500</fadetime>
                     <aspectratio>scale</aspectratio>
-                    <visible>!Container.Content(Genres)</visible>
+                    <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                 </control>
                 <control type="image">
                     <posx>1327</posx>
