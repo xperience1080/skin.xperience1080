@@ -5041,7 +5041,7 @@
 				<width>60</width>
 				<height>57</height>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
-				<texture>$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+				<texture>$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
 				<colordiffuse>aawhite</colordiffuse>
 				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Studio)</visible>
 			</control>
@@ -5312,7 +5312,7 @@
                                 <width>60</width>
                                 <height>57</height>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture background="true">$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+                                <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                                 <colordiffuse>FF383838</colordiffuse>
                                 <visible>Container.Content(TVShows) + !IsEmpty(ListItem.Studio)</visible>
                             </control>
@@ -5457,7 +5457,7 @@
                                 <width>161</width>
                                 <aspectratio align="center" aligny="center">center</aspectratio>
                                 <height>120</height>
-                                <texture background="true">$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+                                <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                                 <colordiffuse>FF383838</colordiffuse>
                                 <visible>!IsEmpty(ListItem.Studio)</visible>
                             </control>
@@ -5575,7 +5575,7 @@
                             <width>161</width>
                             <aspectratio align="right" aligny="bottom">center</aspectratio>
                             <height>120</height>
-                            <texture background="true">$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+                            <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                             <colordiffuse>FF383838</colordiffuse>
                             <visible>!IsEmpty(ListItem.Studio)</visible>
                         </control>

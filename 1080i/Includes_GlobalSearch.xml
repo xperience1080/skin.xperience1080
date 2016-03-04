@@ -198,7 +198,7 @@
                     <width>161</width>
                     <aspectratio align="right" aligny="center">center</aspectratio>
                     <height>120</height>
-                    <texture background="true" fallback=".">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/studioflags/,.png]</texture>
+                    <texture background="true" fallback=".">$INFO[Container(100).ListItem.Property(Studio),resource://resource.images.studios.white/,.png]</texture>
                     <colordiffuse>aawhite</colordiffuse>
                     <visible>!IsEmpty(Container(100).ListItem.Property(Studio))</visible>
                 </control>

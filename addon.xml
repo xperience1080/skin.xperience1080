@@ -11,6 +11,7 @@
 		<import addon="script.videolanguage" version="0.1.0" />
 		<import addon="script.randomandlastitems" version="2.2.2" />
 		<import addon="script.toolbox" version="1.0.1" />
+		<import addon="resource.images.studios.white" version="0.0.1"/>
 	</requires>
 	<extension point="xbmc.gui.skin" effectslowdown="0.80" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
