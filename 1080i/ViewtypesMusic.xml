@@ -82,7 +82,7 @@
                         <posy>7</posy>
                         <width>85</width>
                         <height>85</height>
-                        <texture background="true" fallback="special://skin/extras/musicgenres/default.jpg">$INFO[ListItem.Label,special://skin/extras/musicgenres/,.jpg]</texture>
+                        <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
                         <visible>Container.Content(Genres)</visible>
                     </control>
                     <control type="label">
@@ -436,7 +436,7 @@
                         <posy>7</posy>
                         <width>85</width>
                         <height>85</height>
-                        <texture background="true" fallback="special://skin/extras/musicgenres/default.jpg">$INFO[ListItem.Label,special://skin/extras/musicgenres/,.jpg]</texture>
+                        <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
                         <visible>Container.Content(Genres)</visible>
                     </control>
                     <control type="group">
@@ -2334,7 +2334,7 @@
                             <width>232</width>
                             <height>232</height>
                             <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
-                            <texture background="true" fallback="special://skin/extras/musicgenres/default.jpg">$INFO[ListItem.Label,special://skin/extras/musicgenres/,.jpg]</texture>
+                            <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <visible>Container.Content(Genres)</visible>
@@ -2366,7 +2366,7 @@
                                 <width>232</width>
                                 <height>232</height>
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
-                                <texture background="true" fallback="special://skin/extras/musicgenres/default.jpg">$INFO[ListItem.Label,special://skin/extras/musicgenres/,.jpg]</texture>
+                                <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
                                 <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                                 <visible>Container.Content(Genres)</visible>
                             </control>
@@ -2430,7 +2430,7 @@
                     <width>476</width>
                     <height>476</height>
                     <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
-                    <texture background="true" fallback="special://skin/extras/musicgenres/default.jpg">$INFO[ListItem.Label,special://skin/extras/musicgenres/,.jpg]</texture>
+                    <texture background="true" fallback="resource://resource.images.musicgenreicons.grey/default.jpg">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</texture>
                     <colordiffuse>eewhite</colordiffuse>
                     <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                     <visible>Container.Content(Genres)</visible>
