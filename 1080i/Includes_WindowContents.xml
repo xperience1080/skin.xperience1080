@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
-<!-- ========== -->
-<!-- Dimensions -->
-<!-- ========== -->
+    <!-- ========== -->
+    <!-- Dimensions -->
+    <!-- ========== -->
 
     <include name="FullscreenDimensions">
         <posx>0</posx>
@@ -14,18 +14,18 @@
     </include>
 
 
-<!-- ================================================== -->
-<!-- Common Items: Shutdown, Options, Clock etc. -->
-<!-- ================================================== -->
+    <!-- ================================================== -->
+    <!-- Common Items: Shutdown, Options, Clock etc. -->
+    <!-- ================================================== -->
 
     <include name="CommonOverlay">
         <control type="videowindow">
             <include>FullscreenDimensions</include>
             <visible>Skin.HasSetting(BackgroundVideo) + Player.HasVideo</visible>
         </control>
-            <control type="image">
+        <control type="image">
             <include>FullscreenDimensions</include>
-			<texture fallback="special://skin/extras/fade/overlay.png">$INFO[Skin.String(GlobalOverlay)]</texture>
+            <texture fallback="special://skin/extras/fade/overlay.png">$INFO[Skin.String(GlobalOverlay)]</texture>
         </control>
     </include>
 
@@ -42,6 +42,7 @@
     <include name="CommonItemsMusicOSD">
         <include condition="Skin.HasSetting(OSDVisualisation.Enabled) + ![System.HasAddon(script.artistslideshow) + Skin.HasSetting(ArtistSlideShow.Enabled)]">OSDVisualisation</include>
         <include>BackgroundFanartMusicOSD</include>
+        <include>MusicCodecInfo</include>
     </include>
     <include name="CommonSettingsItems">
         <include>CommonContent</include>
@@ -77,9 +78,9 @@
         <include>CommonOverlay</include>
     </include>
 
-<!-- ============== -->
-<!-- Home Backdrops -->
-<!-- ============== -->
+    <!-- ============== -->
+    <!-- Home Backdrops -->
+    <!-- ============== -->
 
     <include name="HomeCustomBackdrops">
         <control type="image">
@@ -109,9 +110,9 @@
         </control>
     </include>
 
-<!-- ============== -->
-<!-- Skin Backdrops -->
-<!-- ============== -->
+    <!-- ============== -->
+    <!-- Skin Backdrops -->
+    <!-- ============== -->
 
     <include name="CommonContent">
         <control type="group">
@@ -137,9 +138,9 @@
         </control>
     </include>
 
-<!-- ====== -->
-<!-- Fanart -->
-<!-- ====== -->
+    <!-- ====== -->
+    <!-- Fanart -->
+    <!-- ====== -->
 
     <variable name="ViewFanart">
         <value condition="!IsEmpty(Window(home).property(fanart_image)) + !Window.IsActive(script-Actors-DialogInfo.xml) + [Window.IsActive(movieinformation) | Window.IsActive(script-Actors-DialogVideoInfo.xml)]">$INFO[Window(home).property(fanart_image)]</value>
@@ -196,9 +197,9 @@
         <value>$INFO[Container(50).ListItem.Art(fanart)]</value>
     </variable>
 
-<!-- ============================================= -->
-<!-- Fade Backgrounds (behind dialogs, menus etc.) -->
-<!-- ============================================= -->
+    <!-- ============================================= -->
+    <!-- Fade Backgrounds (behind dialogs, menus etc.) -->
+    <!-- ============================================= -->
 
     <include name="FadeBackgroundDialog">
         <control type="image">
@@ -234,9 +235,9 @@
         </control>
     </include>
 
-<!-- ============== -->
-<!-- Sort letters -->
-<!-- ============== -->
+    <!-- ============== -->
+    <!-- Sort letters -->
+    <!-- ============== -->
 
     <include name="SortLetterFileBrowser">
         <control type="group">
@@ -312,9 +313,9 @@
         </control>
     </include>
 
-<!-- ============= -->
-<!-- Various stuff -->
-<!-- ============= -->
+    <!-- ======== -->
+    <!-- Various  -->
+    <!-- ======== -->
 
     <include name="optionsbuttonsdimensions">
         <posx>0</posx>
