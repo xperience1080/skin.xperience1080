@@ -157,7 +157,7 @@
                 <include>SettingsCustomDialogButtonVars</include>
                 <label>$LOCALIZE[31139]</label>
                 <label2>$VAR[HomeTileEditIcon]</label2>
-                <onclick>Skin.SetImage($INFO[Window.Property(HomeTileEdit)].Icon,,special://skin/extras/icons)</onclick>
+                <onclick>Skin.SetImage($INFO[Window.Property(HomeTileEdit)].Icon,special://skin/extras/icons)</onclick>
             </control>
             <control type="radiobutton" id="2403">
                 <include>SettingsCustomDialogRadioButtonVars</include>
@@ -696,7 +696,7 @@
                             <onfocus>SetProperty(HomeTileEdit.ShowLabel,$INFO[Skin.String(HomePicturesTile4.ShowLabel)])</onfocus>
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomePicturesTile4.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomePicturesTile4)</selected>
-                        </control>                        
+                        </control>
                         <control type="radiobutton" id="44">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
                             <label>$LOCALIZE[31161] 2</label>
@@ -716,7 +716,7 @@
                             <onfocus>SetProperty(HomeTileEdit.ShowLabel,$INFO[Skin.String(HomeMusicTile4.ShowLabel)])</onfocus>
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeMusicTile4.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeMusicTile4)</selected>
-                        </control>						
+                        </control>
                         <control type="radiobutton" id="45">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
                             <label>$LOCALIZE[31161] 3</label>
@@ -796,7 +796,7 @@
                             <onfocus>SetProperty(HomeTileEdit.ShowLabel,$INFO[Skin.String(HomeMusicTile6.ShowLabel)])</onfocus>
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeMusicTile6.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeMusicTile6)</selected>
-                        </control>													
+                        </control>
                         <control type="radiobutton" id="47">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
                             <label>$LOCALIZE[31159] 1</label>
@@ -956,7 +956,7 @@
                             <onfocus>SetProperty(HomeTileEdit.ShowLabel,$INFO[Skin.String(HomeProgramTile4.ShowLabel)])</onfocus>
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeProgramTile4.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeProgramTile4)</selected>
-                        </control>	
+                        </control>
                         <control type="radiobutton" id="55">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
                             <label>$LOCALIZE[31159] 9</label>
@@ -996,7 +996,7 @@
                             <onfocus>SetProperty(HomeTileEdit.ShowLabel,$INFO[Skin.String(HomeProgramTile10.ShowLabel)])</onfocus>
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeProgramTile10.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeProgramTile10)</selected>
-                        </control>																
+                        </control>
                     </control>
 
                     <control type="group">
@@ -1033,7 +1033,7 @@
                         <visible>Control.HasFocus(2142)</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>
-                </control>              
+                </control>
             </control>
         </control>
     </include>
@@ -1099,7 +1099,7 @@
                     <include condition="StringCompare(Window.Property(SingleDialog),widget4)">PanelDialogHomeWidget4</include>
                     <include condition="StringCompare(Window.Property(SingleDialog),widget5)">PanelDialogHomeWidget5</include>
                     <include condition="StringCompare(Window.Property(SingleDialog),widget10)">PanelDialogHomeWidget6</include>
-                </control> 
+                </control>
 
                 <control type="group">
                     <posx>682</posx>
