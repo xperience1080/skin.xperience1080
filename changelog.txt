@@ -1,4 +1,15 @@
-﻿[B]5.0.700[/B]
+﻿[B]5.0.800[/B]
+• Music: Adds back codec information when pressing 'o' 
+• PVR: Adds blank DialogPVRRadioRDSInfo (until we work out whether to add it in)
+• Music: Fixes visualisation author not being displayed correctly 
+• Home: Fixes tile icon default location not defaulting to extras 
+• Progress Dialog: Corrects line height so three lines no longer scroll  
+• Music: Fix wrong texture for parent folder item
+• Video: Fix wrong texture for parent folder item
+• Weather: Adds new dependency for weather artwork
+• Starup: Allows videos to be included for the startup playlist 
+
+[B]5.0.700[/B]
 • Extras: Get rid of movie genre icons, music genre icons, studio flags and use resource addons instead
 • Favourites: Fade-out unselected items a little more
 • Favourites: Drop custom context menu and use default instead
