@@ -1,4 +1,7 @@
-﻿[B]5.0.820[/B]
+﻿[B]5.1.0[/B]
+• Version: bumped for official repository
+
+[B]5.0.820[/B]
 • GlobalSearch: Fix blank screen being displayed if no results found
 • ExtendedInfo: Fix slideshow and adds loading indicator
 • Keyboard: Adjustments for chinese keyboard layout
@@ -17,7 +20,7 @@
 • Music: Fix wrong texture for parent folder item
 • Video: Fix wrong texture for parent folder item
 • Weather: Adds new dependency for weather artwork
-• Starup: Allows videos to be included for the startup playlist 
+• Startup: Allows videos to be included for the startup playlist 
 
 [B]5.0.700[/B]
 • Extras: Get rid of movie genre icons, music genre icons, studio flags and use resource addons instead
