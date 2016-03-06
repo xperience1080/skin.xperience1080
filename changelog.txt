@@ -1,4 +1,7 @@
-﻿[B]5.0.800[/B]
+﻿[B]5.0.810[/B]
+• Home: Adds "Tags" to movies sub-menu items
+
+[B]5.0.800[/B]
 • Music: Adds back codec information when pressing 'o' 
 • PVR: Adds blank DialogPVRRadioRDSInfo (until we work out whether to add it in)
 • Music: Fixes visualisation author not being displayed correctly 
