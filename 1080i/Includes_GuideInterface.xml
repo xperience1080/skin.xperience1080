@@ -991,7 +991,7 @@
                 </item>
                 <item id="5">
                     <label>$LOCALIZE[31458]</label>
-                    <label2>5</label2>
+                    <label2>5.1</label2>
                     <onclick>noop</onclick>
                 </item>
                 <item id="6">
