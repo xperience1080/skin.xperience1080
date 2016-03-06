@@ -60,24 +60,14 @@
                         <visible>false</visible>
                     </control>
                 </control>
-                <control type="group">
-                    <visible>Control.IsVisible(198)</visible>
-                    <include>visiblehidefadeinfo</include>
-                    <control type="image">
-                        <description>No results icon</description>
-                    </control>
-                    <control type="label" id="198">
-                        <description>No results</description>
-                    </control>
-                </control>
             </control>
             <control type="group">
-                <animation effect="fade" start="0" end="100" time="400" tween="sine" delay="300" easing="in">WindowOpen</animation>
-                <animation effect="fade" start="0" end="100" time="400" tween="sine" delay="500" easing="in">Visible</animation>
-                <animation effect="fade" start="100" end="0" time="400" tween="sine" delay="500" easing="out">Hidden</animation>
+                <visible>Control.IsVisible(199)</visible>
+                <animation effect="fade" start="0" end="100" time="400" tween="sine" delay="100" easing="in">WindowOpen</animation>
+                <animation effect="fade" start="0" end="100" time="400" tween="sine" delay="200" easing="in">Visible</animation>
                 <control type="button" id="198">
                     <description>New search button</description>
-                    <visible>false</visible>
+                    <visible allowhiddenfocus="true">false</visible>
                 </control>
                 <control type="label" id="199">
                     <posx>0</posx>
@@ -91,7 +81,6 @@
                     <aligny>center</aligny>
                 </control>
                 <control type="image">
-                    <visible>Control.IsVisible(199)</visible>
                     <posx>832</posx>
                     <posy>372</posy>
                     <width>256</width>
