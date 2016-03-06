@@ -1,4 +1,11 @@
-﻿[B]5.0.810[/B]
+﻿[B]5.0.820[/B]
+• GlobalSearch: Fix blank screen being displayed if no results found
+• ExtendedInfo: Fix slideshow and adds loading indicator
+• Keyboard: Adjustments for chinese keyboard layout
+• Home: Fixes live tv widget visbility when moving to 200
+• Quicknav: Changed skin version, show count to episode, music label to songs
+
+[B]5.0.810[/B]
 • Home: Adds "Tags" to movies sub-menu items
 
 [B]5.0.800[/B]
