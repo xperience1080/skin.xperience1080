@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<!-- =============== -->
-<!-- Guide Interface -->
-<!-- =============== -->
+    <!-- =============== -->
+    <!-- Guide Interface -->
+    <!-- =============== -->
 
     <!-- This needs something like Dialog.Close(all) with animations in the future -->
     <include name="GuideDialogClose">
@@ -216,17 +216,17 @@
         </focusedlayout>
         <content>
             <item id="0">
-                <label>$LOCALIZE[31445]</label> 
+                <label>$LOCALIZE[31445]</label>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(videos,movietitles,return)</onclick>
             </item>
             <item id="1">
-                <label>$LOCALIZE[31446]</label>
+                <label>$LOCALIZE[31813]</label>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(videos,tvshowtitles,return)</onclick>
             </item>
             <item id="2">
-                <label>$LOCALIZE[31447]</label>
+                <label>$LOCALIZE[134]</label>
                 <include>GuideDialogClose</include>
                 <onclick condition="IsEmpty(Skin.String(music.path))">ActivateWindow(Music)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(music.path))">ActivateWindow(Music,$INFO[Skin.String(music.path)],return)</onclick>
@@ -293,7 +293,7 @@
             </item>
         </content>
     </include>
-    
+
     <include name="GuideSettings">
         <posx>643</posx>
         <posy>333</posy>
@@ -439,7 +439,7 @@
             </item>
         </content>
     </include>
-    
+
     <include name="GuideRecentlyAdded">
         <posx>643</posx>
         <posy>333</posy>
@@ -599,7 +599,7 @@
                     <textcolor>eewhite</textcolor>
                     <font>Font-Condensed-S38</font>
                     <align>left</align>
-                </control>                
+                </control>
                 <control type="label">
                     <posx>238</posx>
                     <posy>57</posy>
@@ -888,7 +888,7 @@
             </item>
         </content>
     </include>
-    
+
     <include name="GuideSystemInfo">
         <control type="list">
             <posx>643</posx>
@@ -991,7 +991,7 @@
                 </item>
                 <item id="5">
                     <label>$LOCALIZE[31458]</label>
-                    <label2>3.50</label2>
+                    <label2>5</label2>
                     <onclick>noop</onclick>
                 </item>
                 <item id="6">
@@ -1002,7 +1002,7 @@
             </content>
         </control>
     </include>
-    
+
     <include name="GuideUpNext">
         <posx>643</posx>
         <posy>333</posy>
@@ -1221,7 +1221,7 @@
             </item>
         </content>
     </include>
-    
+
     <include name="GuideNowPlaying">
         <control type="group">
             <animation effect="fade" start="0" end="100" time="250" tween="sine" easing="inout">Visible</animation>
@@ -1269,14 +1269,14 @@
             </control>
         </control>
     </include>
-    
+
     <variable name="NowPlayingControlsButton">
         <value condition="!Control.HasFocus(9110)">$INFO[ListItem.Label,osd/media-guide/buttons/,-nf.png]</value>
         <value>$INFO[ListItem.Label,osd/media-guide/buttons/,-fo.png]</value>
     </variable>
-    
+
     <include name="NowPlayingControls">
-        <posx>1024</posx>        
+        <posx>1024</posx>
         <posy>726</posy>
         <width>400</width>
         <height>100</height>
@@ -1340,7 +1340,7 @@
             </item>
         </content>
     </include>
-    
+
     <include name="GuideBladeLeft">
         <control type="image">
             <posx>439</posx>
@@ -1351,7 +1351,7 @@
             <aspectratio>stretch</aspectratio>
         </control>
     </include>
-    
+
     <include name="GuideBladeRight">
         <control type="image">
             <posx>1361</posx>
@@ -1362,10 +1362,10 @@
             <aspectratio>stretch</aspectratio>
         </control>
     </include>
-    
+
     <include name="GuideInterface">
         <include>MediaGuideAnimations</include>
-    
+
         <!-- Left Side Blades -->
         <control type="group">
             <width>120</width>
@@ -1385,7 +1385,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-            
+
         <control type="group">
             <width>120</width>
             <height>574</height>
@@ -1404,7 +1404,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-        
+
         <control type="group">
             <width>120</width>
             <height>574</height>
@@ -1423,7 +1423,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-        
+
         <control type="group">
             <width>120</width>
             <height>574</height>
@@ -1442,7 +1442,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-    
+
         <!-- Right Side Blades -->
         <control type="group">
             <width>120</width>
@@ -1462,7 +1462,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-        
+
         <control type="group">
             <width>120</width>
             <height>574</height>
@@ -1481,7 +1481,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-        
+
         <control type="group">
             <width>120</width>
             <height>574</height>
@@ -1500,7 +1500,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-        
+
         <control type="group">
             <width>120</width>
             <height>574</height>
@@ -1519,7 +1519,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-        
+
         <control type="image">
             <posx>512</posx>
             <posy>255</posy>
@@ -1527,7 +1527,7 @@
             <height>568</height>
             <texture border="132,25,132,25">osd/media-guide/center.png</texture>
         </control>
-         
+
         <control type="image">
             <posx>539</posx>
             <posy>265</posy>
@@ -1715,7 +1715,7 @@
                 <animation effect="rotate" start="0" end="-90" center="auto" time="0">WindowClose</animation>
             </control>
         </control>
-            
+
         <control type="label">
             <description>Clock</description>
             <posx>560r</posx>

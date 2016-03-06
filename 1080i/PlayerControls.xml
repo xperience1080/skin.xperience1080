@@ -153,7 +153,7 @@
             <control type="list" id="9100">
                 <visible allowhiddenfocus="true">Control.HasFocus(9100)</visible>
                 <onup>9100</onup>
-                <ondown>9100</ondown>   
+                <ondown>9100</ondown>
                 <animation type="Hidden" reversible="false">
                     <effect type="fade" start="100" end="0" time="175" tween="sine" easing="out" />
                 </animation>
@@ -272,7 +272,7 @@
                     <effect type="slide" start="0" end="30" time="175" tween="sine" easing="in" />
                 </animation>
                 <include>GuideSettings</include>
-            </control>          
+            </control>
             <control type="group">
                 <posx>637</posx>
                 <posy>325</posy>
@@ -280,15 +280,15 @@
                 <height>500</height>
                 <visible>Control.HasFocus(9100)</visible>
                 <animation type="Conditional" condition="Control.HasFocus(9100) + IsEmpty(Window.Property(center))" reversible="false">
-                        <effect type="fade" start="0" end="100" time="175" tween="sine" easing="in" />
-                        <effect type="zoom" start="95" end="100" center="960,325" time="175" tween="sine" easing="out" />
-                        <effect type="slide" start="30" end="0" time="175" tween="sine" easing="out" />
-                    </animation>
+                    <effect type="fade" start="0" end="100" time="175" tween="sine" easing="in" />
+                    <effect type="zoom" start="95" end="100" center="960,325" time="175" tween="sine" easing="out" />
+                    <effect type="slide" start="30" end="0" time="175" tween="sine" easing="out" />
+                </animation>
                 <animation type="Conditional" condition="Control.HasFocus(9100) + !IsEmpty(Window.Property(center))" reversible="false">
-                        <effect type="fade" start="0" end="100" time="175" tween="sine" easing="in" />
-                        <effect type="zoom" start="95" end="100" center="960,325" time="175" tween="sine" easing="out" />
-                        <effect type="slide" start="-30" end="0" time="175" tween="sine" easing="out" />
-                    </animation>
+                    <effect type="fade" start="0" end="100" time="175" tween="sine" easing="in" />
+                    <effect type="zoom" start="95" end="100" center="960,325" time="175" tween="sine" easing="out" />
+                    <effect type="slide" start="-30" end="0" time="175" tween="sine" easing="out" />
+                </animation>
                 <animation type="Hidden" reversible="false">
                     <effect type="fade" start="100" end="0" time="175" tween="sine" easing="out" />
                 </animation>
@@ -322,7 +322,7 @@
                         <colordiffuse>eewhite</colordiffuse>
                     </control>
                 </control>
-                
+
                 <control type="group">
                     <posx>668</posx>
                     <posy>77</posy>
@@ -331,7 +331,7 @@
                     <control type="label">
                         <width>100</width>
                         <height>60</height>
-                        <label fallback=" 0">$INFO[Window(Home).Property(TVShows.Count)]</label>
+                        <label fallback=" 0">$INFO[Window(Home).Property(Episodes.Count)]</label>
                         <textcolor>eewhite</textcolor>
                         <font>Font-Condensed-S41</font>
                         <align>right</align>
@@ -345,7 +345,7 @@
                         <colordiffuse>eewhite</colordiffuse>
                     </control>
                 </control>
-                
+
                 <control type="group">
                     <posx>668</posx>
                     <posy>144</posy>
@@ -369,9 +369,9 @@
                     </control>
                 </control>
             </control>
-            
+
             <!-- Quicknav Icon -->
-            
+
             <control type="image">
                 <posx>538</posx>
                 <posy>274</posy>
@@ -387,9 +387,9 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-            
+
             <!-- Now Playing Icon -->
-            
+
             <control type="image">
                 <posx>538</posx>
                 <posy>274</posy>
@@ -405,9 +405,9 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-            
+
             <!-- Settings Icon -->
-            
+
             <control type="image">
                 <posx>538</posx>
                 <posy>274</posy>
@@ -423,7 +423,7 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-            
+
             <!-- Recently added Icon -->
 
             <control type="image">
@@ -441,9 +441,9 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-            
+
             <!-- System info Icon -->
-            
+
             <control type="image">
                 <posx>538</posx>
                 <posy>274</posy>
@@ -459,9 +459,9 @@
                     <effect type="fade" start="100" end="15" time="100" />
                 </animation>
             </control>
-            
+
             <!-- System Info -->
-            
+
             <control type="group">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -480,9 +480,9 @@
                 <visible>Control.HasFocus(9103)</visible>
                 <include>GuideSystemInfo</include>
             </control>
-            
+
             <!-- Now playing -->
-            
+
             <control type="group">
                 <posx>637</posx>
                 <posy>325</posy>
