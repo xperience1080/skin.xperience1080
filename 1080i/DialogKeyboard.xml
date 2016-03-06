@@ -20,15 +20,6 @@
                 <posy>94</posy>
                 <visible>Control.IsVisible(313)</visible>
                 <include>KeyboardAnimations</include>
-                <control type="image">
-                    <description>image</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>1235</width>
-                    <height>100</height>
-                    <texture border="39">dialogs/default/bg.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="label" id="313">
                     <description>HZCODE label</description>
                     <posx>118</posx>
@@ -48,7 +39,7 @@
                     <font>Font-Condensed-S30</font>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>KeyboardGrey</textcolor>
+                    <textcolor>77FFFFFF</textcolor>
                 </control>
             </control>
 
