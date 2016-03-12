@@ -1,4 +1,12 @@
-﻿[B]5.1.0[/B]
+﻿[B]5.99.000[/B]
+• Version: bumped for 17 and backport for 16
+• Cleanup: old metadata.actors script - support now entirely removed
+• Animations: Correction to a few animations
+• Add-on List: Correction of label positioning
+• Fixes: Various throughout different files
+• Dependencies: library.addon.provider added for upcoming changes to widgets
+
+[B]5.1.0[/B]
 • Version: bumped for official repository
 
 [B]5.0.820[/B]
