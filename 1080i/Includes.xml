@@ -24,10 +24,11 @@
     <include file="Includes_GlobalSearch.xml" />
     <include file="Includes_Weather.xml" />
     <include file="Includes_PVR.xml" />
-    
+    <include file="script-skinshortcuts-includes.xml"/>
+
     <constant name="FanartCrossfadeTime">400</constant>
     <constant name="IconCrossfadeTime">400</constant>
-    
+
     <!-- Spin control direction includes -->
     <include name="SpinControlDefault">
         <reverse>no</reverse>

@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <backgroundcolor>0</backgroundcolor>
-    <include>HomeWidgets.Initialization</include>
+    <include condition="!Skin.HasSetting(Skin.Initialization)">HomeWidgets.Initialization</include>
     <onunload condition="IsEmpty(Window(startup).Property(Started))">SetProperty(Started,1)</onunload>
     <controls>
         <include>CommonSettingsItems</include>
