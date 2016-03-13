@@ -229,6 +229,21 @@
         <value condition="stringcompare(ListItem.Label2,$LOCALIZE[24068])">overlays/addons/update.png</value>
     </variable>
 
+    <!-- Home Widgets -->
+
+    <variable name="PosterWidget">
+      <value condition="!IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+      <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+      <value>$INFO[ListItem.Icon]</value>
+    </variable>
+
+    <variable name="FanartWidget">
+      <value condition="!IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+      <value condition="!IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
+      <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+      <value>$INFO[ListItem.Icon]</value>
+    </variable>
+
     <!-- Thumbnails -->
     <variable name="DefaultListPoster">
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
