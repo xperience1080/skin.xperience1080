@@ -441,7 +441,7 @@
                                     <texture background="true">$VAR[WidgetFanart]</texture>
                                 </control>
                             </focusedlayout>
-                            <content target="video">$VAR[Widget.1]</content>
+                            <content target="video">$VAR[Widget.1.Home]</content>
                         </control>
                         <control type="image">
                             <description>Title overlay</description>
@@ -492,7 +492,7 @@
                             <posy>508</posy>
                             <width>779</width>
                             <height>64</height>
-                            <label>$INFO[Container(5022).ListItem.Label]</label>
+                            <label>$INFO[Container(5022).ListItem.Season,,x]$INFO[Container(5022).ListItem.Episode,, ]$INFO[Container(5022).ListItem.Title]</label>
                             <label2>$INFO[Container(5022).ListItem.Rating, ★ ,]</label2>
                             <font>Font-Condensed-S29-B</font>
                             <disabledcolor>aawhite</disabledcolor>
@@ -649,7 +649,7 @@
                                     <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$VAR[WidgetPoster]</texture>
                                 </control>
                             </focusedlayout>
-                            <content target="video">$VAR[Widget.2]</content>
+                            <content target="video">$VAR[Widget.2.Home]</content>
                         </control>
                         <control type="image">
                             <description>Title overlay</description>
@@ -700,7 +700,7 @@
                             <posy>508</posy>
                             <width>342</width>
                             <height>64</height>
-                            <label>$INFO[Container(5032).ListItem.Label]</label>
+                            <label>$INFO[Container(5032).ListItem.Season,,x]$INFO[Container(5032).ListItem.Episode,, ]$INFO[Container(5032).ListItem.Title]</label>
                             <label2>$INFO[Container(5032).ListItem.Rating, ★ ,]</label2>
                             <font>Font-Condensed-S29-B</font>
                             <disabledcolor>aawhite</disabledcolor>
@@ -1646,25 +1646,12 @@
                     </animation>
                 </control>
                 <control type="button" id="225">
-                    <onleft>CancelAlarm(HomeTileMove,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
-                    <onleft>AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
-                    <onleft>AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
-                    <onright>CancelAlarm(HomeTileMove,true)</onright>
-                    <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
-                    <onright>CancelAlarm(HomeTileMoveThree,true)</onright>
-                    <onright>AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onright>
-                    <onright condition="!Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onright>
                     <onright condition="!Skin.HasSetting(HomeTVShows)">325</onright>
-                    <onright condition="Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">425</onright>
-                    <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePictures)">1025</onright>
-                    <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePrograms)">625</onright>
@@ -1720,15 +1707,13 @@
                             <posy>0</posy>
                             <width>928</width>
                             <height>572</height>
-                            <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
-                            <onup>AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onup>
                             <onup>225</onup>
                             <ondown>Control.Move(2022,1)</ondown>
-                            <onleft>AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onleft>
                             <onleft>201</onleft>
-                            <onright>AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onright>
                             <onright>203</onright>
-                            <onclick condition="System.HasAddon(service.skin.widgets)">$INFO[Container(2022).ListItem.Property(Play)]</onclick>
+                            <onclick>SetFocus(2022)</onclick>
+                            <onclick>Select</onclick>
+                            <onclick>SetFocus(2021)</onclick>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget3,3003)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(Dialog,$LOCALIZE[31168],skinsettings)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">ActivateWindow(3003)</onback>
@@ -1777,6 +1762,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="7000" delay="8000" repeat="8000">!Control.HasFocus(2021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>2024</pagecontrol>
@@ -1789,7 +1775,7 @@
                                     <width>928</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$INFO[ListItem.ActualIcon]</texture>
+                                    <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$VAR[WidgetFanart]</texture>
                                 </control>
                             </itemlayout>
                             <focusedlayout width="928" height="572">
@@ -1799,14 +1785,10 @@
                                     <width>928</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$INFO[ListItem.ActualIcon]</texture>
+                                    <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$VAR[WidgetFanart]</texture>
                                 </control>
                             </focusedlayout>
-                            <content>
-                                <include name="HomeWidget.3">
-                                    <param name="IconType">fanart</param>
-                                </include>
-                            </content>
+                            <content target="video">$VAR[Widget.3.Movies]</content>
                         </control>
                         <control type="image">
                             <description>Title overlay</description>
@@ -1818,7 +1800,7 @@
                             <texture border="1">windows/common/black.png</texture>
                         </control>
                         <control type="group" id="2023">
-                            <visible>!Control.IsVisible(2022) + [[stringcompare(Skin.String(HomeWidget.3.Type),service.skin.widgets) + IsEmpty(Window(Home).Property(SkinWidgets_Running))] | [stringcompare(Skin.String(HomeWidget.3.Type),script.randomandlastitems) + IsEmpty(Window(Home).Property(HomeWidget3.Loaded))] | [!stringcompare(Skin.String(HomeWidget.3.Type),service.skin.widgets) + !stringcompare(Skin.String(HomeWidget.3.Type),script.randomandlastitems) + !IsEmpty(Window(Home).Property(extendedinfo_running))]]</visible>
+                            <visible>!Control.IsVisible(2022)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Loading Back</description>
@@ -1843,7 +1825,7 @@
                                 <posy>508</posy>
                                 <width>342</width>
                                 <height>64</height>
-                                <label>$LOCALIZE[31564] "$VAR[NewMoviesLabelVAR]"...</label>
+                                <label>$LOCALIZE[31564] "$INFO[Skin.String(HomeWidget.3.Label)]"...</label>
                                 <font>Font-Condensed-S29-B</font>
                                 <textcolor>aawhite</textcolor>
                                 <align>left</align>
@@ -1857,8 +1839,8 @@
                             <posy>508</posy>
                             <width>888</width>
                             <height>64</height>
-                            <label>$INFO[Container(2022).ListItem.Label]</label>
-                            <label2>$INFO[Container(2022).ListItem.Label2, ★ ,]</label2>
+                            <label>$INFO[Container(2022).ListItem.Season,,x]$INFO[Container(2022).ListItem.Episode,, ]$INFO[Container(2022).ListItem.Title]</label>
+                            <label2>$INFO[Container(2022).ListItem.Rating, ★ ,]</label2>
                             <font>Font-Condensed-S29-B</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>left</align>
@@ -1878,7 +1860,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textoffsetx>5</textoffsetx>
-                            <label>[UPPERCASE]$VAR[NewMoviesLabelVAR][/UPPERCASE]</label>
+                            <label>[UPPERCASE]$INFO[Skin.String(HomeWidget.3.Label)][/UPPERCASE]</label>
                             <animation effect="slide" end="0,6" time="100" tween="sine" easing="out" condition="ControlGroup(202).HasFocus">Conditional</animation>
                         </control>
                         <control type="group">
@@ -2396,19 +2378,10 @@
                     </animation>
                 </control>
                 <control type="button" id="325">
-                    <onleft>CancelAlarm(HomeTileMove,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
-                    <onleft condition="!Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
                     <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
-                    <onright>CancelAlarm(HomeTileMove,true)</onright>
-                    <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
-                    <onright>CancelAlarm(HomeTileMoveThree,true)</onright>
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="!Skin.HasSetting(HomeMusic)">425</onright>
                     <onright condition="!Skin.HasSetting(HomePictures)">1025</onright>
@@ -2466,15 +2439,13 @@
                             <posy>0</posy>
                             <width>928</width>
                             <height>572</height>
-                            <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
-                            <onup>AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onup>
                             <onup>325</onup>
                             <ondown>Control.Move(3022,1)</ondown>
-                            <onleft>AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onleft>
                             <onleft>301</onleft>
-                            <onright>AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onright>
                             <onright>303</onright>
-                            <onclick condition="System.HasAddon(service.skin.widgets)">$INFO[Container(3022).ListItem.Property(Play)]</onclick>
+                            <onclick>SetFocus(3022)</onclick>
+                            <onclick>Select</onclick>
+                            <onclick>SetFocus(3021)</onclick>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget4,3003)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(Dialog,$LOCALIZE[31168],skinsettings)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">ActivateWindow(3003)</onback>
@@ -2523,6 +2494,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="7000" delay="8000" repeat="8000">!Control.HasFocus(3021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>3024</pagecontrol>
@@ -2535,7 +2507,7 @@
                                     <width>928</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true">$INFO[ListItem.ActualIcon]</texture>
+                                    <texture background="true">$VAR[WidgetFanart]</texture>
                                 </control>
                             </itemlayout>
                             <focusedlayout width="928" height="572">
@@ -2545,12 +2517,10 @@
                                     <width>928</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true">$INFO[ListItem.ActualIcon]</texture>
+                                    <texture background="true">$VAR[WidgetFanart]</texture>
                                 </control>
                             </focusedlayout>
-                            <content>
-                                <include>HomeWidget.4</include>
-                            </content>
+                            <content target="video">$VAR[Widget.4.TVShows]</content>
                         </control>
                         <control type="image">
                             <description>Title overlay</description>
@@ -2562,7 +2532,7 @@
                             <texture border="1">windows/common/black.png</texture>
                         </control>
                         <control type="group" id="3023">
-                            <visible>!Control.IsVisible(3022) + [[stringcompare(Skin.String(HomeWidget.4.Type),service.skin.widgets) + IsEmpty(Window(Home).Property(SkinWidgets_Running))] | [stringcompare(Skin.String(HomeWidget.4.Type),script.randomandlastitems) + IsEmpty(Window(Home).Property(HomeWidget4.Loaded))] | [!stringcompare(Skin.String(HomeWidget.4.Type),service.skin.widgets) + !stringcompare(Skin.String(HomeWidget.4.Type),script.randomandlastitems) + !IsEmpty(Window(Home).Property(extendedinfo_running))]]</visible>
+                            <visible>!Control.IsVisible(3022)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Loading Back</description>
@@ -2587,7 +2557,7 @@
                                 <posy>508</posy>
                                 <width>1019</width>
                                 <height>64</height>
-                                <label>$LOCALIZE[31564] "$VAR[NewShowsLabelVAR]"...</label>
+                                <label>$LOCALIZE[31564] "$INFO[Skin.String(HomeWidget.4.Label)]"...</label>
                                 <font>Font-Condensed-S29-B</font>
                                 <textcolor>aawhite</textcolor>
                                 <align>left</align>
@@ -2601,8 +2571,8 @@
                             <posy>508</posy>
                             <width>888</width>
                             <height>64</height>
-                            <label>$INFO[Container(3022).ListItem.Label]</label>
-                            <label2>$INFO[Container(3022).ListItem.Label2, ★ ,]</label2>
+                            <label>$INFO[Container(3022).ListItem.Season,,x]$INFO[Container(3022).ListItem.Episode,, ]$INFO[Container(3022).ListItem.Title]</label>
+                            <label2>$INFO[Container(3022).ListItem.Rating, ★ ,]</label2>
                             <font>Font-Condensed-S29-B</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>left</align>
@@ -2622,7 +2592,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textoffsetx>5</textoffsetx>
-                            <label>[UPPERCASE]$VAR[NewShowsLabelVAR][/UPPERCASE]</label>
+                            <label>[UPPERCASE]$INFO[Skin.String(HomeWidget.4.Label)][/UPPERCASE]</label>
                             <animation effect="slide" end="0,6" time="100" tween="sine" easing="out" condition="ControlGroup(302).HasFocus">Conditional</animation>
                         </control>
                         <control type="group">
@@ -3140,26 +3110,13 @@
                     </animation>
                 </control>
                 <control type="button" id="425">
-                    <onleft>CancelAlarm(HomeTileMove,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
-                    <onleft condition="!Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMove,Control.Move(3022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMove,Control.Move(2022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
                     <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
-                    <onright>CancelAlarm(HomeTileMove,true)</onright>
-                    <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
-                    <onright>CancelAlarm(HomeTileMoveThree,true)</onright>
                     <onright>Control.Move(20,1)</onright>
-                    <onright condition="!Skin.HasSetting(HomePictures)">AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onright>
-                    <onright condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">AlarmClock(HomeTileMove,Control.Move(601,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">625</onright>
-                    <onright condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
                     <onright condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">825</onright>
                     <onright condition="!Skin.HasSetting(HomePictures)">1025</onright>
@@ -3213,15 +3170,13 @@
                         <description>Featured albums</description>
                         <posx>339</posx>
                         <control type="button" id="4021">
-                            <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
-                            <onup>AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onup>
                             <onup>425</onup>
                             <ondown>Control.Move(4022,1)</ondown>
-                            <onleft>AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
                             <onleft>401</onleft>
-                            <onright>AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onright>
                             <onright>403</onright>
-                            <onclick>$INFO[Container(4022).ListItem.Property(Play)]</onclick>
+                            <onclick>SetFocus(4022)</onclick>
+                            <onclick>Select</onclick>
+                            <onclick>SetFocus(4021)</onclick>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget5,3003)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(Dialog,$LOCALIZE[31168],skinsettings)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">ActivateWindow(3003)</onback>
@@ -3270,6 +3225,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="7000" delay="8000" repeat="8000">!Control.HasFocus(4021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>4024</pagecontrol>
@@ -3295,9 +3251,7 @@
                                     <texture background="true" fallback="views/fallbacks/DefaultAlbumCover.png/square-large.png">$INFO[ListItem.Icon]</texture>
                                 </control>
                             </focusedlayout>
-                            <content>
-                                <include>HomeWidget.5</include>
-                            </content>
+                            <content target="music">$VAR[Widget.5.Music]</content>
                         </control>
                         <control type="image">
                             <description>Title overlay</description>
@@ -3309,7 +3263,7 @@
                             <texture border="1">windows/common/black.png</texture>
                         </control>
                         <control type="group" id="4023">
-                            <visible>!Control.IsVisible(4022) + [[stringcompare(Skin.String(HomeWidget.5.Type),service.skin.widgets) + IsEmpty(Window(Home).Property(SkinWidgets_Running))] | [stringcompare(Skin.String(HomeWidget.5.Type),script.randomandlastitems) + IsEmpty(Window(Home).Property(HomeWidget5.Loaded))] | [!stringcompare(Skin.String(HomeWidget.5.Type),service.skin.widgets) + !stringcompare(Skin.String(HomeWidget.5.Type),script.randomandlastitems) + !IsEmpty(Window(Home).Property(extendedinfo_running))]]</visible>
+                            <visible>!Control.IsVisible(4022)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Loading Back</description>
@@ -3338,7 +3292,7 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <textcolor>bbwhite</textcolor>
-                                <label>$LOCALIZE[31564] "$VAR[FeaturedAlbumsLabelVAR]"...</label>
+                                <label>$LOCALIZE[31564] "$INFO[Skin.String(HomeWidget.5.Label)]"...</label>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -3349,7 +3303,7 @@
                             <width>534</width>
                             <height>64</height>
                             <label>[B]$INFO[Container(4022).ListItem.Label][/B]</label>
-                            <label2>$INFO[Container(4022).ListItem.Label2]</label2>
+                            <label2>$INFO[Container(4022).ListItem.Artist]</label2>
                             <font>Font-Condensed-S29</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>left</align>
@@ -3369,7 +3323,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textoffsetx>5</textoffsetx>
-                            <label>[UPPERCASE]$VAR[FeaturedAlbumsLabelVAR][/UPPERCASE]</label>
+                            <label>[UPPERCASE]$INFO[Skin.String(HomeWidget.5.Label)][/UPPERCASE]</label>
                             <animation effect="slide" end="0,6" time="100" tween="sine" easing="out" condition="ControlGroup(402).HasFocus">Conditional</animation>
                         </control>
                         <control type="group">
@@ -3923,9 +3877,6 @@
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                 </animation>
                 <control type="button" id="1025">
-                    <onleft>CancelAlarm(HomeTileMove,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveTwo,true)</onleft>
-                    <onleft>CancelAlarm(HomeTileMoveThree,true)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
                     <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveThree,Control.Move(3032,1),00:04,silent,loop)</onleft>
                     <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveTwo,Control.Move(3022,1),00:07,silent,loop)</onleft>
@@ -3939,9 +3890,6 @@
                     <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
                     <onleft>525</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
-                    <onright>CancelAlarm(HomeTileMove,true)</onright>
-                    <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
-                    <onright>CancelAlarm(HomeTileMoveThree,true)</onright>
                     <onright condition="!Skin.HasSetting(HomePrograms)">625</onright>
                     <onright condition="Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
@@ -3992,7 +3940,6 @@
                         </control>
                         <control type="group">
                             <description>No info available</description>
-                            <visible>!IntegerGreaterThan(Container(10022).NumItems,0) + stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)</visible>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>100</posy>
@@ -4001,6 +3948,7 @@
                                 <align>center</align>
                                 <aspectratio>keep</aspectratio>
                                 <texture>windows/home/nocontent/nocontent.png</texture>
+                                <visible>!Control.IsVisible(10022)</visible>
                             </control>
                             <control type="button">
                                 <description>Title label</description>
@@ -4014,6 +3962,7 @@
                                 <align>center</align>
                                 <aligny>center</aligny>
                                 <enable>false</enable>
+                                <visible>!Control.IsVisible(10022)</visible>
                                 <include>visiblehidefadeinfodelayvisible</include>
                             </control>
                         </control>
@@ -4070,7 +4019,7 @@
                                     <visible>!IsEmpty(ListItem.PicturePath)</visible>
                                 </control>
                             </focusedlayout>
-                            <content target="pictures">$VAR[HomeWidget.6.Pictures]</content>
+                            <content target="pictures">$VAR[Widget.6.Pictures]</content>
                         </control>
                         <control type="image">
                             <description>Title overlay</description>
@@ -4082,7 +4031,7 @@
                             <texture border="1">windows/common/black.png</texture>
                         </control>
                         <control type="group" id="10023">
-                            <visible>!Control.IsVisible(10022) + !stringcompare(Skin.String(HomeWidget.6.Type),service.skin.widgets)</visible>
+                            <visible>!Control.IsVisible(10022)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Loading Back</description>
@@ -4107,7 +4056,7 @@
                                 <posy>508</posy>
                                 <width>1019</width>
                                 <height>64</height>
-                                <label>$LOCALIZE[31564] "$VAR[PicturesLabelVAR]"...</label>
+                                <label>$LOCALIZE[31564] "$INFO[Skin.String(HomeWidget.6.Label)]"...</label>
                                 <font>Font-Condensed-S29-B</font>
                                 <textcolor>aawhite</textcolor>
                                 <align>left</align>
@@ -4141,7 +4090,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textoffsetx>5</textoffsetx>
-                            <label>[UPPERCASE]$VAR[PicturesLabelVAR][/UPPERCASE]</label>
+                            <label>[UPPERCASE]$INFO[Skin.String(HomeWidget.6.Label)][/UPPERCASE]</label>
                             <animation effect="slide" end="0,6" time="100" tween="sine" easing="out" condition="ControlGroup(1002).HasFocus">Conditional</animation>
                         </control>
                         <control type="group">
