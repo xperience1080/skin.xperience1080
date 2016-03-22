@@ -3877,13 +3877,6 @@
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                 </animation>
                 <control type="button" id="1025">
-                    <onleft condition="!Skin.HasSetting(HomeMusic)">AlarmClock(HomeTileMove,Control.Move(4022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveThree,Control.Move(3032,1),00:04,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveTwo,Control.Move(3022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveThree,Control.Move(2032,1),00:04,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(2022,1),00:07,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveThree,Control.Move(5032,1),00:04,silent,loop)</onleft>
-                    <onleft condition="Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
@@ -3891,7 +3884,6 @@
                     <onleft>525</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
                     <onright condition="!Skin.HasSetting(HomePrograms)">625</onright>
-                    <onright condition="Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">AlarmClock(HomeTileMove,Control.Move(7022,1),00:07,silent,loop)</onright>
                     <onright condition="Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">825</onright>
@@ -3918,12 +3910,9 @@
                         <posx>289</posx>
                         <control type="button" id="10021">
                             <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
-                            <onup>AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onup>
                             <onup>1025</onup>
                             <ondown>Control.Move(10022,1)</ondown>
-                            <onleft>AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onleft>
                             <onleft>1001</onleft>
-                            <onright>AlarmClock(HomeTileMove,Control.Move(10022,1),00:07,silent,loop)</onright>
                             <onright>1003</onright>
                             <onclick condition="IsEmpty(Container(10022).ListItem.PicturePath)">ShowPicture($INFO[Container(10022).ListItem.Thumb])</onclick>
                             <onclick condition="!IsEmpty(Container(10022).ListItem.PicturePath)">ShowPicture($INFO[Container(10022).ListItem.PicturePath])</onclick>
@@ -3974,6 +3963,7 @@
                             <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="7000" delay="8000" repeat="8000">!Control.HasFocus(10021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>10024</pagecontrol>
