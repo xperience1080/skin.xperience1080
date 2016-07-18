@@ -32,7 +32,7 @@
                 <item id="9">
                     <label>$LOCALIZE[31220]</label>
                     <onclick>noop</onclick>
-                    <visible>System.GetBool(pvrmanager.enabled)</visible>
+                    <visible>PVR.HasTVChannels | PVR.HasRadioChannels</visible>
                 </item>
                 <item id="3">
                     <label>$LOCALIZE[342]</label>
@@ -153,11 +153,11 @@
                     <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+                    <animation type="WindowOpen" condition="[Container(20).HasFocus(2) + !PVR.HasTVChannels | PVR.HasRadioChannels] | [Container(20).HasFocus(9) + PVR.HasTVChannels | PVR.HasRadioChannels]" reversible="true">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="[Container(20).HasFocus(2) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+                    <animation type="WindowClose" condition="[Container(20).HasFocus(2) + !PVR.HasTVChannels | PVR.HasRadioChannels] | [Container(20).HasFocus(9) + PVR.HasTVChannels | PVR.HasRadioChannels]" reversible="true">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -300,7 +300,7 @@
                     <onleft condition="System.HasAddon(script.globalsearch)">Control.Move(20,-1)</onleft>
                     <onleft condition="System.HasAddon(script.globalsearch)">125</onleft>
                     <onleft condition="!System.HasAddon(script.globalsearch) + !Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
-                    <onright condition="System.GetBool(pvrmanager.enabled)">925</onright>
+                    <onright condition="PVR.HasTVChannels | PVR.HasRadioChannels">925</onright>
                     <onright condition="!Skin.HasSetting(HomeMovies)">225</onright>
                     <onright condition="!Skin.HasSetting(HomeTVShows)">325</onright>
                     <onright condition="!Skin.HasSetting(HomeMusic)">425</onright>
@@ -317,11 +317,11 @@
                 <control type="group" id="550">
                     <posy>100</posy>
                     <posx>407</posx>
-                    <animation type="WindowOpen" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+                    <animation type="WindowOpen" condition="[Container(20).HasFocus(1) + !PVR.HasTVChannels | PVR.HasRadioChannels] | [Container(20).HasFocus(9) + PVR.HasTVChannels | PVR.HasRadioChannels]" reversible="true">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="[Container(20).HasFocus(1) + !System.GetBool(pvrmanager.enabled)] | [Container(20).HasFocus(9) + System.GetBool(pvrmanager.enabled)]" reversible="true">
+                    <animation type="WindowClose" condition="[Container(20).HasFocus(1) + !PVR.HasTVChannels | PVR.HasRadioChannels] | [Container(20).HasFocus(9) + PVR.HasTVChannels | PVR.HasRadioChannels]" reversible="true">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
@@ -563,7 +563,7 @@
                             <onup>525</onup>
                             <ondown>Control.Move(5032,1)</ondown>
                             <onleft>502</onleft>
-                            <onright condition="System.GetBool(pvrmanager.enabled)">901</onright>
+                            <onright condition="PVR.HasTVChannels | PVR.HasRadioChannels">901</onright>
                             <onright condition="!Skin.HasSetting(HomeMovies)">201</onright>
                             <onright condition="!Skin.HasSetting(HomeTVShows)">301</onright>
                             <onright condition="!Skin.HasSetting(HomeMusic)">401</onright>
@@ -999,7 +999,7 @@
                 <width>2320</width>
                 <height>780</height>
                 <description>Live TV</description>
-                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                <visible>PVR.HasTVChannels | PVR.HasRadioChannels</visible>
                 <control type="group">
                     <posy>348</posy>
                     <visible>Skin.HasSetting(HomeArrows)</visible>
@@ -1647,7 +1647,7 @@
                 </control>
                 <control type="button" id="225">
                     <onleft>Control.Move(20,-1)</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
+                    <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">925</onleft>
                     <onleft>525</onleft>
                     <onright condition="!Skin.HasSetting(HomeTVShows)">325</onright>
                     <onright condition="Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMusic)">425</onright>
@@ -1907,7 +1907,7 @@
                         <onleft>CancelAlarm(HomeTileMove,true)</onleft>
                         <onleft>AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                         <onleft>Control.Move(20,-1)</onleft>
-                        <onleft condition="System.GetBool(pvrmanager.enabled)">903</onleft>
+                        <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">903</onleft>
                         <onleft>503</onleft>
                         <onright>202</onright>
                         <onup>225</onup>
@@ -2380,7 +2380,7 @@
                 <control type="button" id="325">
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
+                    <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">925</onleft>
                     <onleft>525</onleft>
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="!Skin.HasSetting(HomeMusic)">425</onright>
@@ -2641,7 +2641,7 @@
                         <onleft condition="Skin.HasSetting(HomeMovies)">AlarmClock(HomeTileMoveTwo,Control.Move(5022,1),00:07,silent,loop)</onleft>
                         <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMovies)">203</onleft>
-                        <onleft condition="System.GetBool(pvrmanager.enabled)">903</onleft>
+                        <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">903</onleft>
                         <onleft>503</onleft>
                         <onright>302</onright>
                         <onup>325</onup>
@@ -3113,7 +3113,7 @@
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
+                    <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">925</onleft>
                     <onleft>525</onleft>
                     <onright>Control.Move(20,1)</onright>
                     <onright condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">625</onright>
@@ -3365,7 +3365,7 @@
                         <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMovies)">201</onleft>
-                        <onleft condition="System.GetBool(pvrmanager.enabled)">903</onleft>
+                        <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">903</onleft>
                         <onleft>501</onleft>
                         <onright>402</onright>
                         <onup>425</onup>
@@ -3880,7 +3880,7 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
+                    <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">925</onleft>
                     <onleft>525</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
                     <onright condition="!Skin.HasSetting(HomePrograms)">625</onright>
@@ -4134,7 +4134,7 @@
                         <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMovies)">201</onleft>
-                        <onleft condition="System.GetBool(pvrmanager.enabled)">903</onleft>
+                        <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">903</onleft>
                         <onleft>503</onleft>
                         <onright>1002</onright>
                         <onup>1025</onup>
@@ -4609,7 +4609,7 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
+                    <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">925</onleft>
                     <onleft>525</onleft>
                     <onleft>Control.Move(20,-1)</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
@@ -4680,7 +4680,7 @@
                         <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMovies)">203</onleft>
-                        <onleft condition="System.GetBool(pvrmanager.enabled)">903</onleft>
+                        <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">903</onleft>
                         <onleft>503</onleft>
                         <onleft>Control.Move(20,-1)</onleft>
                         <onright>CancelAlarm(HomeTileMove,true)</onright>
@@ -5123,7 +5123,7 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
+                    <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">925</onleft>
                     <onleft>525</onleft>
                     <onright>CancelAlarm(HomeTileMove,true)</onright>
                     <onright>CancelAlarm(HomeTileMoveTwo,true)</onright>
@@ -5743,7 +5743,7 @@
                         <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMovies)">203</onleft>
-                        <onleft condition="System.GetBool(pvrmanager.enabled)">903</onleft>
+                        <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">903</onleft>
                         <onleft>503</onleft>
                         <onright>Control.Move(20,1)</onright>
                         <onright>801</onright>
@@ -5916,7 +5916,7 @@
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
                     <onleft condition="!Skin.HasSetting(HomeTVShows)">325</onleft>
                     <onleft condition="!Skin.HasSetting(HomeMovies)">225</onleft>
-                    <onleft condition="System.GetBool(pvrmanager.enabled)">925</onleft>
+                    <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">925</onleft>
                     <onleft>525</onleft>
                     <onright condition="!Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
                     <onup condition="!System.HasAddon(service.openelec.settings)">80</onup>
@@ -5969,7 +5969,7 @@
                         <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMovies)">203</onleft>
-                        <onleft condition="System.GetBool(pvrmanager.enabled)">903</onleft>
+                        <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">903</onleft>
                         <onleft>503</onleft>
                         <onright>801</onright>
                         <onup>825</onup>

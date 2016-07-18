@@ -594,7 +594,6 @@
                         <selected>Skin.HasSetting(EPGGenreColors.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(EPGGenreColors.Enabled)</onclick>
                         <label>$LOCALIZE[31221]</label>
-                        <visible>System.GetBool(pvrmanager.enabled)</visible>
                     </control>
                     <control type="radiobutton" id="3009">
                         <description>Hide weather fanart</description>
