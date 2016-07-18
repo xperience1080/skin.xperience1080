@@ -14,7 +14,7 @@
                 <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
             </animation>
             <control type="group">
-                <animation effect="slide" end="-65" time="300" tween="sine" easing="inout" condition="Window.IsActive(mutebug)">Conditional</animation>
+                <animation effect="slide" end="-65" time="300" tween="sine" easing="inout" condition="Player.Muted">Conditional</animation>
                 <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="PVR.IsRecording | PVR.HasTimer">Conditional</animation>
                 <control type="image">
                     <description>Small weather</description>
@@ -78,7 +78,7 @@
             </control>
             <control type="group">
                 <visible>PVR.IsRecording</visible>
-                <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Window.IsActive(mutebug)">Conditional</animation>
+                <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Player.Muted">Conditional</animation>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <posx>154r</posx>
@@ -102,7 +102,7 @@
                 <width>100</width>
                 <height>100</height>
                 <texture>windows/pvr/timer.png</texture>
-                <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Window.IsActive(mutebug)">Conditional</animation>
+                <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Player.Muted">Conditional</animation>
                 <include>visiblehidefadeinfo</include>
                 <visible>!PVR.IsRecording + PVR.HasTimer</visible>
             </control>
@@ -114,7 +114,7 @@
                 <height>100</height>
                 <texture>overlays/volume/muted.png</texture>
                 <include>visiblehidefadeinfo</include>
-                <visible>Window.IsActive(mutebug)</visible>
+                <visible>Player.Muted</visible>
             </control>
         </control>
     </include>
