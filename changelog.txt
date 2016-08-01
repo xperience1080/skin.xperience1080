@@ -1,4 +1,9 @@
-﻿[B]5.1.500[/B]
+﻿[B]5.1.510[/B]
+• Home: Fix freezes caused by AlarmClock built-in
+• Language: Updated english language file
+• Widgets: Default item sets, appears to be duplicated
+
+[B]5.1.500[/B]
 • Home Default: Widgets entirely rewritten (NOT for Classic Home)
 • Cleanup: old metadata.actors script - support now entirely removed
 • Animations: Correction to a few animations
