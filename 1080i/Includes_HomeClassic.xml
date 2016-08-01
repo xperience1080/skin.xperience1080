@@ -2087,7 +2087,7 @@
                                     <width>671</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true">$VAR[WidgetPoster]</texture>
+                                    <texture background="true">$VAR[WidgetFanart]</texture>
                                 </control>
                             </itemlayout>
                             <focusedlayout width="671" height="572">
@@ -2097,7 +2097,7 @@
                                     <width>671</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true">$VAR[WidgetPoster]</texture>
+                                    <texture background="true">$VAR[WidgetFanart]</texture>
                                 </control>
                             </focusedlayout>
                             <content target="video">$VAR[Widget.4.TVShows]</content>
