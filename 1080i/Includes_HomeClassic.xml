@@ -3423,6 +3423,7 @@
                             <onup>1025</onup>
                             <onleft>1001</onleft>
                             <onright>1003</onright>
+                            <ondown>Control.Move(10022,1)</ondown>
                             <onclick condition="IsEmpty(Container(10022).ListItem.PicturePath)">ShowPicture($INFO[Container(10022).ListItem.Thumb])</onclick>
                             <onclick condition="!IsEmpty(Container(10022).ListItem.PicturePath)">ShowPicture($INFO[Container(10022).ListItem.PicturePath])</onclick>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget10,3003)</onback>
