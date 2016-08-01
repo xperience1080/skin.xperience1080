@@ -403,7 +403,7 @@
                                     <width>572</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true">$VAR[WidgetFanart]</texture>
+                                    <texture background="true">$VAR[WidgetPoster]</texture>
                                 </control>
                             </itemlayout>
                             <focusedlayout width="572" height="501">
@@ -413,7 +413,7 @@
                                     <width>572</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true">$VAR[WidgetFanart]</texture>
+                                    <texture background="true">$VAR[WidgetPoster]</texture>
                                 </control>
                             </focusedlayout>
                             <content>
@@ -1338,8 +1338,8 @@
                                     <posy>0</posy>
                                     <width>382</width>
                                     <height>572</height>
-                                    <aspectratio>scale</aspectratio>
-                                    <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$VAR[WidgetFanart]</texture>
+                                    <aspectratio>skeep</aspectratio>
+                                    <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$VAR[WidgetPoster]</texture>
                                 </control>
                             </itemlayout>
                             <focusedlayout width="382" height="572">
@@ -1349,7 +1349,7 @@
                                     <width>382</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$VAR[WidgetFanart]</texture>
+                                    <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$VAR[WidgetPoster]</texture>
                                 </control>
                             </focusedlayout>
                            <content target="video">$VAR[Widget.3.Movies]</content>
@@ -2087,7 +2087,7 @@
                                     <width>671</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true">$VAR[WidgetFanart]</texture>
+                                    <texture background="true">$VAR[WidgetPoster]</texture>
                                 </control>
                             </itemlayout>
                             <focusedlayout width="671" height="572">
@@ -2097,7 +2097,7 @@
                                     <width>671</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture background="true">$VAR[WidgetFanart]</texture>
+                                    <texture background="true">$VAR[WidgetPoster]</texture>
                                 </control>
                             </focusedlayout>
                             <content target="video">$VAR[Widget.4.TVShows]</content>
