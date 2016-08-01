@@ -1,4 +1,7 @@
 ﻿[B]5.1.510[/B]
+• Home: Updates widgets for classic home
+
+[B]5.1.510[/B]
 • Home: Fix freezes caused by AlarmClock built-in
 • Language: Updated english language file
 • Widgets: Default item sets, appears to be duplicated
