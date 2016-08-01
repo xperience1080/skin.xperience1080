@@ -1473,7 +1473,7 @@
                         <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="PVR.HasTVChannels | PVR.HasRadioChannels">901</onleft>
                         <onleft>503</onleft>
-                        <onright>202</onright>
+                        <onright>2021</onright>
                         <onup>225</onup>
                         <ondown>80</ondown>
                         <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(EditTile,1)</onback>
