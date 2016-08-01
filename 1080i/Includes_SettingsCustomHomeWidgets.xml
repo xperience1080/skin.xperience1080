@@ -56,47 +56,56 @@
           <label>$LOCALIZE[31550]</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,1)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label,$LOCALIZE[31550])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31551]</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,2)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label,$LOCALIZE[31551])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31552]</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,3)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label,$LOCALIZE[31552])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31553]</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,4)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label,$LOCALIZE[31553])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31173] (trakt)</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,15)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label,$LOCALIZE[31173])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31174] (trakt)</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,16)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label,$LOCALIZE[31174])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31170] (MovieDB)</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,6)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label,$LOCALIZE[31173])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31171] (MovieDB)</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,7)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label,$LOCALIZE[31174])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[20012]</label>
           <onclick>Skin.SetString(HomeWidget.1.Type,17)</onclick>
           <onclick>Skin.SetString(HomeWidget.1.Label)</onclick>
           <onclick>Skin.SetFile(HomeWidget.1.Path,.xsp,special://profile/playlists/video/)</onclick>
+          <onclick>Close</onclick>
         </item>
       </content>
     </control>
@@ -157,47 +166,56 @@
           <label>$LOCALIZE[31550]</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,1)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label,$LOCALIZE[31550])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31551]</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,2)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label,$LOCALIZE[31551])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31552]</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,3)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label,$LOCALIZE[31552])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31553]</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,4)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label,$LOCALIZE[31553])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31173] (trakt)</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,15)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label,$LOCALIZE[31173])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31174] (trakt)</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,16)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label,$LOCALIZE[31174])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31170] (MovieDB)</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,6)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label,$LOCALIZE[31173])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31171] (MovieDB)</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,7)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label,$LOCALIZE[31174])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[20012]</label>
           <onclick>Skin.SetString(HomeWidget.2.Type,17)</onclick>
           <onclick>Skin.SetString(HomeWidget.2.Label)</onclick>
           <onclick>Skin.SetFile(HomeWidget.2.Path,.xsp,special://profile/playlists/video/)</onclick>
+          <onclick>Close</onclick>
         </item>
       </content>
     </control>
@@ -257,37 +275,44 @@
           <label>$LOCALIZE[31552]</label>
           <onclick>Skin.SetString(HomeWidget.3.Type,3)</onclick>
           <onclick>Skin.SetString(HomeWidget.3.Label,$LOCALIZE[31552])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31553]</label>
           <onclick>Skin.SetString(HomeWidget.3.Type,4)</onclick>
           <onclick>Skin.SetString(HomeWidget.3.Label,$LOCALIZE[31553])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31173] (trakt)</label>
           <onclick>Skin.SetString(HomeWidget.3.Type,15)</onclick>
           <onclick>Skin.SetString(HomeWidget.3.Label,$LOCALIZE[31173])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31174] (trakt)</label>
           <onclick>Skin.SetString(HomeWidget.3.Type,16)</onclick>
           <onclick>Skin.SetString(HomeWidget.3.Label,$LOCALIZE[31174])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31170] (MovieDB)</label>
           <onclick>Skin.SetString(HomeWidget.3.Type,6)</onclick>
           <onclick>Skin.SetString(HomeWidget.3.Label,$LOCALIZE[31173])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31171] (MovieDB)</label>
           <onclick>Skin.SetString(HomeWidget.3.Type,7)</onclick>
           <onclick>Skin.SetString(HomeWidget.3.Label,$LOCALIZE[31174])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[20012]</label>
           <onclick>Skin.SetString(HomeWidget.3.Type,17)</onclick>
           <onclick>Skin.SetString(HomeWidget.3.Label)</onclick>
           <onclick>Skin.SetFile(HomeWidget.3.Path,.xsp,special://profile/playlists/video/)</onclick>
+          <onclick>Close</onclick>
         </item>
       </content>
     </control>
@@ -347,32 +372,38 @@
           <label>$LOCALIZE[31553]</label>
           <onclick>Skin.SetString(HomeWidget.4.Type,4)</onclick>
           <onclick>Skin.SetString(HomeWidget.4.Label,$LOCALIZE[31553])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31173] (trakt)</label>
           <onclick>Skin.SetString(HomeWidget.4.Type,15)</onclick>
           <onclick>Skin.SetString(HomeWidget.4.Label,$LOCALIZE[31173])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31174] (trakt)</label>
           <onclick>Skin.SetString(HomeWidget.4.Type,16)</onclick>
           <onclick>Skin.SetString(HomeWidget.4.Label,$LOCALIZE[31174])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31170] (MovieDB)</label>
           <onclick>Skin.SetString(HomeWidget.4.Type,6)</onclick>
           <onclick>Skin.SetString(HomeWidget.4.Label,$LOCALIZE[31173])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31171] (MovieDB)</label>
           <onclick>Skin.SetString(HomeWidget.4.Type,7)</onclick>
           <onclick>Skin.SetString(HomeWidget.4.Label,$LOCALIZE[31174])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[20012]</label>
           <onclick>Skin.SetString(HomeWidget.4.Type,17)</onclick>
           <onclick>Skin.SetString(HomeWidget.4.Label)</onclick>
           <onclick>Skin.SetFile(HomeWidget.4.Path,.xsp,special://profile/playlists/video/)</onclick>
+          <onclick>Close</onclick>
         </item>
       </content>
     </control>
@@ -432,27 +463,32 @@
           <label>$LOCALIZE[31046]</label>
           <onclick>Skin.SetString(HomeWidget.5.Type,18)</onclick>
           <onclick>Skin.SetString(HomeWidget.5.Label,$LOCALIZE[31046])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31047]</label>
           <onclick>Skin.SetString(HomeWidget.5.Type,19)</onclick>
           <onclick>Skin.SetString(HomeWidget.5.Label,$LOCALIZE[31047])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31048]</label>
           <onclick>Skin.SetString(HomeWidget.5.Type,20)</onclick>
           <onclick>Skin.SetString(HomeWidget.5.Label,$LOCALIZE[31048])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31049]</label>
           <onclick>Skin.SetString(HomeWidget.5.Type,21)</onclick>
           <onclick>Skin.SetString(HomeWidget.5.Label,$LOCALIZE[31049])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[20011]</label>
           <onclick>Skin.SetString(HomeWidget.5.Type,17)</onclick>
           <onclick>Skin.SetString(HomeWidget.5.Label,$LOCALIZE[20011])</onclick>
           <onclick>Skin.SetFile(HomeWidget.5.Path,.xsp|.m3u,special://profile/playlists/music/)</onclick>
+          <onclick>Close</onclick>
         </item>
       </content>
     </control>
@@ -512,17 +548,20 @@
           <label>$LOCALIZE[31033]</label>
           <onclick>Skin.SetString(HomeWidget.6.Type,30)</onclick>
           <onclick>Skin.SetString(HomeWidget.6.Label,$LOCALIZE[31033])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31034]</label>
           <onclick>Skin.SetString(HomeWidget.6.Type,31)</onclick>
           <onclick>Skin.SetString(HomeWidget.6.Label,$LOCALIZE[31034])</onclick>
+          <onclick>Close</onclick>
         </item>
         <item>
           <label>$LOCALIZE[31051]</label>
           <onclick>Skin.SetString(HomeWidget.6.Type,34)</onclick>
           <onclick>Skin.SetString(HomeWidget.6.Label,$LOCALIZE[31051])</onclick>
           <onclick>Skin.SetPath(PicturesPath)</onclick>
+          <onclick>Close</onclick>
         </item>
       </content>
     </control>
