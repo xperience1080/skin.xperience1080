@@ -416,9 +416,7 @@
                                     <texture background="true">$VAR[WidgetPoster]</texture>
                                 </control>
                             </focusedlayout>
-                            <content>
-                                <include>$VAR[Widget.1.Home]</include>
-                            </content>
+                            <content target="video">$VAR[Widget.1.Home]</content>
                         </control>
                         <control type="image">
                             <description>Title overlay</description>
@@ -625,9 +623,7 @@
                                     <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$VAR[WidgetPoster]</texture>
                                 </control>
                             </focusedlayout>
-                            <content>
-                                <include>$VAR[Widget.2.Home]</include>
-                            </content>
+                            <content target="video">$VAR[Widget.2.Home]</content>
                         </control>
                         <control type="image">
                             <description>Title overlay</description>
