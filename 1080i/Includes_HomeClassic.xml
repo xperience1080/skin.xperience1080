@@ -391,6 +391,7 @@
                             <ondown>80</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(5021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>5024</pagecontrol>
@@ -598,6 +599,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(5031)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>5034</pagecontrol>
@@ -1323,6 +1325,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(2021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>2024</pagecontrol>
@@ -2071,6 +2074,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(3021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>3024</pagecontrol>
@@ -2772,6 +2776,7 @@
                             <ondown>80</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(4021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>4024</pagecontrol>
@@ -3468,6 +3473,7 @@
                             <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
+                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(10021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>10024</pagecontrol>
