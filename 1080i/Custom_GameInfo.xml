@@ -49,7 +49,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>!Player.HasMedia + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
+                <visible>!Player.HasMedia + !Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             <!-- Title Label -->            
@@ -64,13 +64,13 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>Player.HasMedia | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)</visible>
+                <visible>Player.HasMedia | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             
             <!-- Rating -->
             <control type="group">
-                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)">
+                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                     <effect type="zoom" start="100" end="50" center="1665,101" tween="sine" easing="inout" time="300" />
                 </animation>

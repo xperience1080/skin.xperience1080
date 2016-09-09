@@ -29,7 +29,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>!Player.HasMedia + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
+                <visible>!Player.HasMedia + !Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             <control type="label">
@@ -43,7 +43,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>Player.HasMedia | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)</visible>
+                <visible>Player.HasMedia | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
 

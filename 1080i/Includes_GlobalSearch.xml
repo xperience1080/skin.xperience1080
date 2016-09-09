@@ -59,7 +59,7 @@
             
             <!-- Title Label -->
             <control type="group">
-                <visible>!Player.HasMedia + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
+                <visible>!Player.HasMedia + !Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="in">WindowOpen</animation>
                 <include>visiblehidefadeinfo</include>
                 <control type="grouplist">
@@ -123,7 +123,7 @@
             
             <!-- Title Label -->
             <control type="group">
-                <visible>Player.HasMedia | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)</visible>
+                <visible>Player.HasMedia | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)</visible>
                 <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="in">WindowOpen</animation>
                 <include>visiblehidefadeinfo</include>
                 <control type="grouplist">
@@ -188,7 +188,7 @@
             <!-- Studio / Rating -->
             <control type="group">
                 <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="in">WindowOpen</animation>
-                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)">
+                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                     <effect type="zoom" start="100" end="50" center="1665,101" tween="sine" easing="inout" time="300" />
                 </animation>
@@ -771,7 +771,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>Control.IsVisible(160) + !Player.HasMedia + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
+                <visible>Control.IsVisible(160) + !Player.HasMedia + !Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             <control type="label">
@@ -785,7 +785,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>Control.IsVisible(160) + [Player.HasMedia | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)]</visible>
+                <visible>Control.IsVisible(160) + [Player.HasMedia | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)]</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             
@@ -801,7 +801,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>[Control.IsVisible(170) | Control.IsVisible(180)] + !Player.HasMedia + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
+                <visible>[Control.IsVisible(170) | Control.IsVisible(180)] + !Player.HasMedia + !Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             <control type="label">
@@ -815,7 +815,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>[Control.IsVisible(170) | Control.IsVisible(180)] + [Player.HasMedia | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)]</visible>
+                <visible>[Control.IsVisible(170) | Control.IsVisible(180)] + [Player.HasMedia | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)]</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             
@@ -828,7 +828,7 @@
                 <height>120</height>
                 <texture>$INFO[Container(100).ListItem.Property(Album_Rating),dialogs/music-info/rating,.png]</texture>
                 <visible>Control.IsVisible(170)</visible>
-                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)">
+                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                     <effect type="zoom" start="100" end="50" center="1670,99" tween="sine" easing="inout" time="300" />
                 </animation>
@@ -841,7 +841,7 @@
                 <height>120</height>
                 <texture>$INFO[Container(100).ListItem.Property(Rating),dialogs/music-info/rating,.png]</texture>
                 <visible>Control.IsVisible(180)</visible>
-                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)">
+                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                     <effect type="zoom" start="100" end="50" center="1670,99" tween="sine" easing="inout" time="300" />
                 </animation>

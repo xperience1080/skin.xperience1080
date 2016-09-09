@@ -30,7 +30,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>Container.Content(artists) + !Player.HasMedia + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
+                <visible>Container.Content(artists) + !Player.HasMedia + !Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             <control type="label">
@@ -44,7 +44,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>Container.Content(artists) + [Player.HasMedia | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)]</visible>
+                <visible>Container.Content(artists) + [Player.HasMedia | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)]</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             
@@ -60,7 +60,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>Container.Content(albums) + !Player.HasMedia + !Window.IsActive(infodialog) + !Window.IsActive(extendedprogressdialog)</visible>
+                <visible>Container.Content(albums) + !Player.HasMedia + !Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             <control type="label">
@@ -74,7 +74,7 @@
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>Container.Content(albums) + [Player.HasMedia | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)]</visible>
+                <visible>Container.Content(albums) + [Player.HasMedia | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)]</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
             
@@ -87,7 +87,7 @@
                 <height>120</height>
                 <texture>$INFO[ListItem.StarRating,dialogs/music-info/,]</texture>
                 <visible>Container.Content(albums)</visible>
-                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)">
+                <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                     <effect type="zoom" start="100" end="50" center="1670,99" tween="sine" easing="inout" time="300" />
                 </animation>
