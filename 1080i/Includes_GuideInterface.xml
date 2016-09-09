@@ -372,66 +372,54 @@
         </focusedlayout>
         <content>
             <item id="1">
-                <label>$LOCALIZE[480]</label>
+                <label>$LOCALIZE[14206]</label>
                 <icon>osd/media-guide/settings/appearance.png</icon>
                 <include>GuideDialogClose</include>
-                <onclick>ActivateWindow(appearancesettings)</onclick>
+                <onclick>ActivateWindow(InterfaceSettings)</onclick>
             </item>
             <item id="2">
-                <label>$LOCALIZE[157]</label>
+                <label>$LOCALIZE[14200]</label>
                 <icon>osd/media-guide/settings/video.png</icon>
                 <include>GuideDialogClose</include>
-                <onclick>ActivateWindow(videossettings)</onclick>
+                <onclick>ActivateWindow(PlayerSettings)</onclick>
             </item>
             <item id="3">
-                <label>$LOCALIZE[2]</label>
+                <label>$LOCALIZE[14211]</label>
                 <icon>osd/media-guide/settings/music.png</icon>
                 <include>GuideDialogClose</include>
-                <onclick>ActivateWindow(musicsettings)</onclick>
+                <onclick>ActivateWindow(MediaSettings)</onclick>
             </item>
             <item id="4">
-                <label>$LOCALIZE[1]</label>
-                <icon>osd/media-guide/settings/pictures.png</icon>
-                <include>GuideDialogClose</include>
-                <onclick>ActivateWindow(picturessettings)</onclick>
-            </item>
-            <item id="5">
                 <label>$LOCALIZE[19020]</label>
                 <icon>osd/media-guide/settings/tvshows.png</icon>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(pvrsettings)</onclick>
             </item>
-            <item id="6">
-                <label>$LOCALIZE[8]</label>
-                <icon>osd/media-guide/settings/weather.png</icon>
-                <include>GuideDialogClose</include>
-                <onclick>ActivateWindow(weathersettings)</onclick>
-            </item>
-            <item id="7">
+            <item id="5">
                 <label>$LOCALIZE[14036]</label>
                 <icon>osd/media-guide/settings/network.png</icon>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(servicesettings)</onclick>
             </item>
-            <item id="8">
+            <item id="6">
                 <label>$LOCALIZE[13200]</label>
                 <icon>osd/media-guide/settings/profiles.png</icon>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(profiles)</onclick>
             </item>
-            <item id="9">
+            <item id="7">
                 <label>$LOCALIZE[24001]</label>
                 <icon>osd/media-guide/settings/addons.png</icon>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(addonbrowser)</onclick>
             </item>
-            <item id="10">
+            <item id="8">
                 <label>$LOCALIZE[166]</label>
                 <icon>osd/media-guide/settings/skin.png</icon>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(skinsettings)</onclick>
             </item>
-            <item id="11">
+            <item id="9">
                 <label>$LOCALIZE[13000]</label>
                 <icon>osd/media-guide/settings/system.png</icon>
                 <include>GuideDialogClose</include>

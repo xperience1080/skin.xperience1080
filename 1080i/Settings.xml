@@ -39,7 +39,7 @@
             </control>
             
             <control type="group">
-                <posx>190</posx>
+                <posx>290</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="750" />
@@ -47,22 +47,22 @@
                     <effect type="zoom" start="90" end="100" center="316,547" tween="cubic" easing="out" time="400" />
                 </animation>
                 <control type="group">
-                    <description>Appearance settings</description>
+                    <description>Interface settings</description>
                     <control type="group">
                         <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(100)">Conditional</animation>
                         <include>SettingsButtonBackground</include>
                         <control type="label">
                             <include>SettingsLabelVars</include>
-                            <label>$LOCALIZE[480]</label>
+                            <label>$LOCALIZE[14206]</label>
                         </control>
                     </control>
                     <control type="button" id="100">
                         <include>SettingsButtonVars</include>
-                        <onleft>110</onleft>
+                        <onleft>108</onleft>
                         <onright>102</onright>
                         <onup>101</onup>
                         <ondown>101</ondown>
-                        <onclick>ActivateWindow(appearancesettings)</onclick>
+                        <onclick>ActivateWindow(InterfaceSettings)</onclick>
                         <texturefocus>windows/home/icons/appearance.png</texturefocus>
                         <texturenofocus>windows/home/icons/appearance.png</texturenofocus>
                     </control>
@@ -80,7 +80,7 @@
                     </control>
                     <control type="button" id="101">
                         <include>SettingsButtonVars</include>
-                        <onleft>111</onleft>
+                        <onleft>109</onleft>
                         <onright>103</onright>
                         <onup>100</onup>
                         <ondown>100</ondown>
@@ -92,7 +92,7 @@
             </control>
             
             <control type="group">
-                <posx>442</posx>
+                <posx>542</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="670" delay="80" />
@@ -100,13 +100,13 @@
                     <effect type="zoom" start="87" end="100" center="568,547" tween="cubic" easing="out" time="400" delay="80" />
                 </animation>
                 <control type="group">
-                    <description>Video settings</description>
+                    <description>Player settings</description>
                     <control type="group">
                         <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(102)">Conditional</animation>
                         <include>SettingsButtonBackground</include>
                         <control type="label">
                             <include>SettingsLabelVars</include>
-                            <label>$LOCALIZE[157]</label>
+                            <label>$LOCALIZE[14200]</label>
                         </control>
                     </control>
                     <control type="button" id="102">
@@ -115,7 +115,7 @@
                         <onright>104</onright>
                         <onup>103</onup>
                         <ondown>103</ondown>
-                        <onclick>ActivateWindow(videossettings)</onclick>
+                        <onclick>ActivateWindow(PlayerSettings)</onclick>
                         <texturefocus>windows/home/icons/video.png</texturefocus>
                         <texturenofocus>windows/home/icons/video.png</texturenofocus>
                     </control>
@@ -145,7 +145,7 @@
             </control>
             
             <control type="group">
-                <posx>694</posx>
+                <posx>794</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="620" delay="130" />
@@ -153,13 +153,13 @@
                     <effect type="zoom" start="84" end="100" center="820,547" tween="cubic" easing="out" time="400" delay="130" />
                 </animation>
                 <control type="group">
-                    <description>Music settings</description>
+                    <description>Media settings</description>
                     <control type="group">
                         <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(104)">Conditional</animation>
                         <include>SettingsButtonBackground</include>
                         <control type="label">
                             <include>SettingsLabelVars</include>
-                            <label>$LOCALIZE[2]</label>
+                            <label>$LOCALIZE[14211]</label>
                         </control>
                     </control>
                     <control type="button" id="104">
@@ -168,7 +168,7 @@
                         <onright>106</onright>
                         <onup>105</onup>
                         <ondown>105</ondown>
-                        <onclick>ActivateWindow(musicsettings)</onclick>
+                        <onclick>ActivateWindow(MediaSettings)</onclick>
                         <texturefocus>windows/home/icons/music.png</texturefocus>
                         <texturenofocus>windows/home/icons/music.png</texturenofocus>
                     </control>
@@ -198,7 +198,7 @@
             </control>
             
             <control type="group">
-                <posx>946</posx>
+                <posx>1046</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="585" delay="165" />
@@ -206,13 +206,13 @@
                     <effect type="zoom" start="81" end="100" center="1072,547" tween="cubic" easing="out" time="400" delay="165" />
                 </animation>
                 <control type="group">
-                    <description>Picture settings</description>
+                    <description>TV settings</description>
                     <control type="group">
                         <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(106)">Conditional</animation>
                         <include>SettingsButtonBackground</include>
                         <control type="label">
                             <include>SettingsLabelVars</include>
-                            <label>$LOCALIZE[1]</label>
+                            <label>$LOCALIZE[31220]</label>
                         </control>
                     </control>
                     <control type="button" id="106">
@@ -221,59 +221,6 @@
                         <onright>108</onright>
                         <onup>107</onup>
                         <ondown>107</ondown>
-                        <onclick>ActivateWindow(picturessettings)</onclick>
-                        <texturefocus>windows/home/icons/pictures.png</texturefocus>
-                        <texturenofocus>windows/home/icons/pictures.png</texturenofocus>
-                    </control>
-                </control>
-                <control type="group">
-                    <description>Skin settings</description>
-                    <posy>289</posy>
-                    <control type="group">
-                        <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(107)">Conditional</animation>
-                        <include>SettingsButtonBackground</include>
-                        <control type="label">
-                            <include>SettingsLabelVars</include>
-                            <label>$LOCALIZE[166]</label>
-                        </control>
-                    </control>
-                    <control type="button" id="107">
-                        <include>SettingsButtonVars</include>
-                        <onleft>105</onleft>
-                        <onright>109</onright>
-                        <onup>106</onup>
-                        <ondown>106</ondown>
-                        <onclick>ActivateWindow(skinsettings)</onclick>
-                        <texturefocus>windows/home/icons/skin.png</texturefocus>
-                        <texturenofocus>windows/home/icons/skin.png</texturenofocus>
-                    </control>
-                </control>
-            </control>
-            
-            <control type="group">
-                <posx>1198</posx>
-                <posy>295</posy>
-                <animation type="WindowOpen">
-                    <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="563" delay="187" />
-                    <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="187" />
-                    <effect type="zoom" start="78" end="100" center="1324,547" tween="cubic" easing="out" time="400" delay="187" />
-                </animation>
-                <control type="group">
-                    <description>TV settings</description>
-                    <control type="group">
-                        <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(108)">Conditional</animation>
-                        <include>SettingsButtonBackground</include>
-                        <control type="label">
-                            <include>SettingsLabelVars</include>
-                            <label>$LOCALIZE[31220]</label>
-                        </control>
-                    </control>
-                    <control type="button" id="108">
-                        <include>SettingsButtonVars</include>
-                        <onleft>106</onleft>
-                        <onright>110</onright>
-                        <onup>109</onup>
-                        <ondown>109</ondown>
                         <onclick>ActivateWindow(pvrsettings)</onclick>
                         <texturefocus>windows/home/icons/tvshows.png</texturefocus>
                         <texturenofocus>windows/home/icons/tvshows.png</texturenofocus>
@@ -283,19 +230,19 @@
                     <description>System settings</description>
                     <posy>289</posy>
                     <control type="group">
-                        <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(109)">Conditional</animation>
+                        <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(107)">Conditional</animation>
                         <include>SettingsButtonBackground</include>
                         <control type="label">
                             <include>SettingsLabelVars</include>
                             <label>$LOCALIZE[13000]</label>
                         </control>
                     </control>
-                    <control type="button" id="109">
+                    <control type="button" id="107">
                         <include>SettingsButtonVars</include>
-                        <onleft>107</onleft>
-                        <onright>111</onright>
-                        <onup>108</onup>
-                        <ondown>108</ondown>
+                        <onleft>105</onleft>
+                        <onright>109</onright>
+                        <onup>106</onup>
+                        <ondown>106</ondown>
                         <onclick>ActivateWindow(systemsettings)</onclick>
                         <texturefocus>windows/home/icons/system.png</texturefocus>
                         <texturenofocus>windows/home/icons/system.png</texturenofocus>
@@ -304,51 +251,51 @@
             </control>
             
             <control type="group">
-                <posx>1450</posx>
+                <posx>1298</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
-                    <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="550" delay="200" />
-                    <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="200" />
-                    <effect type="zoom" start="75" end="100" center="1576,547" tween="cubic" easing="out" time="400" delay="200" />
+                    <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="563" delay="187" />
+                    <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="187" />
+                    <effect type="zoom" start="78" end="100" center="1324,547" tween="cubic" easing="out" time="400" delay="187" />
                 </animation>
                 <control type="group">
-                    <description>Weather settings</description>
+                    <description>Skin settings</description>
                     <control type="group">
-                        <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(110)">Conditional</animation>
+                        <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(108)">Conditional</animation>
                         <include>SettingsButtonBackground</include>
                         <control type="label">
                             <include>SettingsLabelVars</include>
-                            <label>$LOCALIZE[8]</label>
+                            <label>$LOCALIZE[166]</label>
                         </control>
                     </control>
-                    <control type="button" id="110">
+                    <control type="button" id="108">
                         <include>SettingsButtonVars</include>
-                        <onleft>108</onleft>
+                        <onleft>106</onleft>
                         <onright>100</onright>
-                        <onup>111</onup>
-                        <ondown>111</ondown>
-                        <onclick>ActivateWindow(weathersettings)</onclick>
-                        <texturefocus>windows/home/icons/weather.png</texturefocus>
-                        <texturenofocus>windows/home/icons/weather.png</texturenofocus>
+                        <onup>109</onup>
+                        <ondown>109</ondown>
+                        <onclick>ActivateWindow(skinsettings)</onclick>
+                        <texturefocus>windows/home/icons/skin.png</texturefocus>
+                        <texturenofocus>windows/home/icons/skin.png</texturenofocus>
                     </control>
                 </control>
                 <control type="group">
                     <description>System info</description>
                     <posy>289</posy>
                     <control type="group">
-                        <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(111)">Conditional</animation>
+                        <animation effect="fade" start="100" end="90" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(109)">Conditional</animation>
                         <include>SettingsButtonBackground</include>
                         <control type="label">
                             <include>SettingsLabelVars</include>
                             <label>$LOCALIZE[130]</label>
                         </control>
                     </control>
-                    <control type="button" id="111">
+                    <control type="button" id="109">
                         <include>SettingsButtonVars</include>
-                        <onleft>109</onleft>
+                        <onleft>107</onleft>
                         <onright>101</onright>
-                        <onup>110</onup>
-                        <ondown>110</ondown>
+                        <onup>108</onup>
+                        <ondown>108</ondown>
                         <onclick>ActivateWindow(systeminfo)</onclick>
                         <texturefocus>windows/home/icons/sysinfo.png</texturefocus>
                         <texturenofocus>windows/home/icons/sysinfo.png</texturenofocus>
@@ -357,7 +304,7 @@
             </control>
             
             <control type="group">
-                <posx>190</posx>
+                <posx>290</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="750" />
@@ -378,7 +325,7 @@
             </control>
             
             <control type="group">
-                <posx>442</posx>
+                <posx>542</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="670" delay="80" />
@@ -399,7 +346,7 @@
             </control>
             
             <control type="group">
-                <posx>694</posx>
+                <posx>794</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="620" delay="130" />
@@ -420,7 +367,7 @@
             </control>
             
             <control type="group">
-                <posx>946</posx>
+                <posx>1046</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="585" delay="165" />
@@ -441,7 +388,7 @@
             </control>
             
             <control type="group">
-                <posx>1198</posx>
+                <posx>1298</posx>
                 <posy>295</posy>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="563" delay="187" />
@@ -457,27 +404,6 @@
                     <control type="image">
                         <include>SettingsFocusImageVars</include>
                         <visible>Control.HasFocus(109)</visible>
-                    </control>
-                </control>
-            </control>
-            
-            <control type="group">
-                <posx>1450</posx>
-                <posy>295</posy>
-                <animation type="WindowOpen">
-                    <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="550" delay="200" />
-                    <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="200" />
-                    <effect type="zoom" start="75" end="100" center="1576,547" tween="cubic" easing="out" time="400" delay="200" />
-                </animation>
-                <control type="image">
-                    <include>SettingsFocusImageVars</include>
-                    <visible>Control.HasFocus(110)</visible>
-                </control>
-                <control type="group">
-                    <posy>289</posy>
-                    <control type="image">
-                        <include>SettingsFocusImageVars</include>
-                        <visible>Control.HasFocus(111)</visible>
                     </control>
                 </control>
             </control>

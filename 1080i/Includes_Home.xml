@@ -5131,7 +5131,7 @@
                     <onright>Control.Move(20,1)</onright>
                     <onright>825</onright>
                     <onclick condition="!IsEmpty(Weather.Plugin)">ActivateWindow(weather)</onclick>
-                    <onclick condition="IsEmpty(Weather.Plugin)">ActivateWindow(weathersettings)</onclick>
+                    <onclick condition="IsEmpty(Weather.Plugin)">ActivateWindow(playersettings)</onclick>
                     <onup>80</onup>
                     <ondown>701</ondown>
                 </control>
@@ -5860,12 +5860,12 @@
                                 <label>$LOCALIZE[8]</label>
                                 <icon>windows/home/icons/weather.png</icon>
                                 <onclick condition="!IsEmpty(Weather.Plugin)">ActivateWindow(weather)</onclick>
-                                <onclick condition="IsEmpty(Weather.Plugin)">ActivateWindow(weathersettings)</onclick>
+                                <onclick condition="IsEmpty(Weather.Plugin)">ActivateWindow(playersettings)</onclick>
                             </item>
                             <item id="1">
                                 <label>$LOCALIZE[5]</label>
                                 <icon>windows/home/icons/settings.png</icon>
-                                <onclick>ActivateWindow(weathersettings)</onclick>
+                                <onclick>ActivateWindow(playersettings)</onclick>
                             </item>
                         </content>
                     </control>
@@ -6082,34 +6082,34 @@
                         </focusedlayout>
                         <content>
                             <item id="1">
-                                <label>$LOCALIZE[480]</label>
+                                <label>$LOCALIZE[14206]</label>
                                 <icon>windows/home/icons/appearance.png</icon>
-                                <onclick>ActivateWindow(appearancesettings)</onclick>
+                                <onclick>ActivateWindow(InterfaceSettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
                             <item id="2">
-                                <label>$LOCALIZE[157]</label>
+                                <label>$LOCALIZE[14200]</label>
                                 <icon>windows/home/icons/video.png</icon>
-                                <onclick>ActivateWindow(videossettings)</onclick>
+                                <onclick>ActivateWindow(PlayerSettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
                             <item id="3">
-                                <label>$LOCALIZE[2]</label>
+                                <label>$LOCALIZE[14211]</label>
                                 <icon>windows/home/icons/music.png</icon>
-                                <onclick>ActivateWindow(musicsettings)</onclick>
-                                <property name="pos">top</property>
+                                <include>GuideDialogClose</include>
+                                <onclick>ActivateWindow(MediaSettings)</onclick>
                             </item>
                             <item id="4">
-                                <label>$LOCALIZE[1]</label>
-                                <icon>windows/home/icons/pictures.png</icon>
-                                <onclick>ActivateWindow(picturessettings)</onclick>
-                                <property name="pos">top</property>
-                            </item>
-                            <item id="5">
                                 <label>$LOCALIZE[31220]</label>
                                 <icon>windows/home/icons/tvshows.png</icon>
                                 <onclick>ActivateWindow(pvrsettings)</onclick>
                                 <property name="pos">top</property>
+                            </item>
+                            <item id="5">
+                                <label>$LOCALIZE[166]</label>
+                                <icon>windows/home/icons/skin.png</icon>
+                                <onclick>ActivateWindow(skinsettings)</onclick>
+                                <property name="pos">bottom</property>
                             </item>
                             <item id="6">
                                 <label>$LOCALIZE[14036]</label>
@@ -6130,15 +6130,15 @@
                                 <property name="pos">bottom</property>
                             </item>
                             <item id="9">
-                                <label>$LOCALIZE[166]</label>
-                                <icon>windows/home/icons/skin.png</icon>
-                                <onclick>ActivateWindow(skinsettings)</onclick>
-                                <property name="pos">bottom</property>
-                            </item>
-                            <item id="10">
                                 <label>$LOCALIZE[13000]</label>
                                 <icon>windows/home/icons/system.png</icon>
                                 <onclick>ActivateWindow(systemsettings)</onclick>
+                                <property name="pos">bottom</property>
+                            </item>
+                            <item id="10">
+                                <label>$LOCALIZE[130]</label>
+                                <icon>windows/home/icons/sysinfo.png</icon>
+                                <onclick>ActivateWindow(systeminfo)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
                         </content>
