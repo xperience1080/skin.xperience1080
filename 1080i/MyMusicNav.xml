@@ -111,7 +111,7 @@
                     <label>$LOCALIZE[744]</label>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/files-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/files-nf.png</texturenofocus>
-                    <onclick>replacewindow(musicfiles)</onclick>
+                    <onclick>replacewindow(music)</onclick>
                     <onclick>setfocus(50)</onclick>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(99)">Conditional</animation>
                 </control>

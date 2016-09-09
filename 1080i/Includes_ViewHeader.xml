@@ -18,7 +18,7 @@
     </variable>
 
     <variable name="MusicHeaderLabel">
-        <value condition="Window.IsVisible(musicfiles)">$LOCALIZE[744]</value>
+        <value condition="Window.IsVisible(music)">$LOCALIZE[744]</value>
         <value condition="Window.IsVisible(musicplaylist)">$LOCALIZE[20011]</value>
         <value condition="substring(Container.FolderPath,musicdb://top100/songs/,left)">$LOCALIZE[10504]</value>
         <value condition="substring(Container.FolderPath,musicdb://top100/albums/,left)">$LOCALIZE[10505]</value>
