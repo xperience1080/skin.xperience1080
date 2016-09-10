@@ -848,6 +848,21 @@ msgctxt "#31822"
 msgid "Item"
 msgstr "Element"
 
+#: \1080i\DialogPlayerProcess.xml
+msgctxt "#31900"
+msgid "Player information"
+msgstr "Player Information"
+
+#: \1080i\DialogPlayerProcess.xml
+msgctxt "#31901"
+msgid "Video decoder"
+msgstr "Video Dekoder"
+
+#: \1080i\DialogPlayerProcess.xml
+msgctxt "#31902"
+msgid "Pixel format"
+msgstr "Pixel Format"
+
 msgctxt "#31920"
 msgid "Recently Added"
 msgstr "Zuletzt hinzugefügt"
