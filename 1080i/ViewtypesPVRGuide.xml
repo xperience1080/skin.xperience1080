@@ -450,7 +450,7 @@
                         <pagecontrol>71</pagecontrol>
                         <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71)</autoscroll>
                         <font>Font-Condensed-S34</font>
-                        <visible>!IsEmpty(Container(11).ListItem.Plot)</visible>
+                        <visible>!String.IsEmpty(Container(11).ListItem.Plot)</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>
                     <control type="label">
@@ -535,7 +535,7 @@
                     <viewtype label="535">list</viewtype>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <itemlayout height="96" condition="![substring(System.Time,AM,right) | substring(System.Time,PM,right)]">
+                    <itemlayout height="96" condition="![String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)]">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -632,7 +632,7 @@
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
-                    <itemlayout height="96" condition="substring(System.Time,AM,right) | substring(System.Time,PM,right)">
+                    <itemlayout height="96" condition="String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -729,7 +729,7 @@
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="96" condition="![substring(System.Time,AM,right) | substring(System.Time,PM,right)]">
+                    <focusedlayout height="96" condition="![String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)]">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -843,7 +843,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <focusedlayout height="96" condition="substring(System.Time,AM,right) | substring(System.Time,PM,right)">
+                    <focusedlayout height="96" condition="String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1031,7 +1031,7 @@
                         <pagecontrol>71</pagecontrol>
                         <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71)</autoscroll>
                         <font>Font-Condensed-S34</font>
-                        <visible>!IsEmpty(Container(12).ListItem.Plot)</visible>
+                        <visible>!String.IsEmpty(Container(12).ListItem.Plot)</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>
                     <control type="label">
@@ -1116,7 +1116,7 @@
                     <viewtype label="535">list</viewtype>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <itemlayout height="96" condition="![substring(System.Time,AM,right) | substring(System.Time,PM,right)]">
+                    <itemlayout height="96" condition="![String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)]">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1213,7 +1213,7 @@
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
-                    <itemlayout height="96" condition="substring(System.Time,AM,right) | substring(System.Time,PM,right)">
+                    <itemlayout height="96" condition="String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1310,7 +1310,7 @@
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="96" condition="![substring(System.Time,AM,right) | substring(System.Time,PM,right)]">
+                    <focusedlayout height="96" condition="![String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)]">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1424,7 +1424,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <focusedlayout height="96" condition="substring(System.Time,AM,right) | substring(System.Time,PM,right)">
+                    <focusedlayout height="96" condition="String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1612,7 +1612,7 @@
                         <pagecontrol>71</pagecontrol>
                         <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71)</autoscroll>
                         <font>Font-Condensed-S34</font>
-                        <visible>!IsEmpty(Container(13).ListItem.Plot)</visible>
+                        <visible>!String.IsEmpty(Container(13).ListItem.Plot)</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>
                     <control type="label">
@@ -1674,7 +1674,7 @@
                     <width>1820</width>
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
-                    <animation effect="zoom" start="50,883,1820,150" end="50,883,1222,150" time="300" tween="sine" easing="inout" condition="!Pvr.IsPlayingTv + !IntegerGreaterThan(Container(13).NumItems,0)">Conditional</animation>
+                    <animation effect="zoom" start="50,883,1820,150" end="50,883,1222,150" time="300" tween="sine" easing="inout" condition="!Pvr.IsPlayingTv + Integer.IsEqual(Container(13).NumItems,0)">Conditional</animation>
                 </control>
                 <control type="image">
                     <description>List Panel</description>
@@ -1694,7 +1694,7 @@
                     <font>Font-Condensed-S50</font>
                     <scroll>false</scroll>
                     <align>center</align>
-                    <visible>!Pvr.IsPlayingTv + !IntegerGreaterThan(Container(13).NumItems,0)</visible>
+                    <visible>!Pvr.IsPlayingTv + Integer.IsEqual(Container(13).NumItems,0)</visible>
                 </control>
                 <control type="list" id="13">
                     <viewtype label="19029">list</viewtype>
@@ -1710,7 +1710,7 @@
                     <viewtype label="535">list</viewtype>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <itemlayout height="96" condition="![substring(System.Time,AM,right) | substring(System.Time,PM,right)]">
+                    <itemlayout height="96" condition="![String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)]">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1771,7 +1771,7 @@
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
-                    <itemlayout height="96" condition="substring(System.Time,AM,right) | substring(System.Time,PM,right)">
+                    <itemlayout height="96" condition="String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1832,7 +1832,7 @@
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="96" condition="![substring(System.Time,AM,right) | substring(System.Time,PM,right)]">
+                    <focusedlayout height="96" condition="![String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)]">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -1910,7 +1910,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <focusedlayout height="96" condition="substring(System.Time,AM,right) | substring(System.Time,PM,right)">
+                    <focusedlayout height="96" condition="String.EndsWith(System.Time,AM) | String.EndsWith(System.Time,PM)">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>

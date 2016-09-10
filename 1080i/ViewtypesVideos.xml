@@ -101,7 +101,7 @@
                         <height>85</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!Container.Content(genres) | stringcompare(ListItem.Label,..)</visible>
+                        <visible>!Container.Content(genres) | String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
                         <posx>89</posx>
@@ -109,7 +109,7 @@
                         <width>60</width>
                         <height>90</height>
                         <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
-                        <visible>Container.Content(genres) + !stringcompare(ListItem.Label,..)</visible>
+                        <visible>Container.Content(genres) + !String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                 </itemlayout>
                 <itemlayout height="100" condition="Container.Content(movies)">
@@ -161,7 +161,7 @@
                         <selectedcolor>SelectedColor</selectedcolor>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
-                        <visible>IsEmpty(ListItem.Genre)</visible>
+                        <visible>String.IsEmpty(ListItem.Genre)</visible>
                     </control>
                     <control type="label">
                         <description>Label</description>
@@ -175,7 +175,7 @@
                         <selectedcolor>SelectedColor</selectedcolor>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Genre)</visible>
+                        <visible>!String.IsEmpty(ListItem.Genre)</visible>
                     </control>
                     <control type="label">
                         <description>Year / Genre / Runtime</description>
@@ -189,7 +189,7 @@
                         <selectedcolor>D4FFFFFF</selectedcolor>
                         <textcolor>99FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Genre)</visible>
+                        <visible>!String.IsEmpty(ListItem.Genre)</visible>
                     </control>
                     <control type="image">
                         <description>HD/SD flag</description>
@@ -199,7 +199,7 @@
                         <height>60</height>
                         <texture>$VAR[ListHDSDFlagSmall]</texture>
                         <colordiffuse>$VAR[Colordiffuse.Color]</colordiffuse>
-                        <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                        <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                     </control>
                     <control type="image">
                         <description>Set icon</description>
@@ -208,7 +208,7 @@
                         <width>90</width>
                         <height>60</height>
                         <texture>flags/other/set-list.png</texture>
-                        <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                        <visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
                         <colordiffuse>$VAR[Colordiffuse.Color]</colordiffuse>
                     </control>
                     <control type="label">
@@ -276,10 +276,10 @@
                         <label>$VAR[ListItem.Label2.Year]</label>
                         <textcolor>99FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <visible>!String.IsEmpty(ListItem.Title)</visible>
                     </control>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                        <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                         <posx>30</posx>
                         <control type="image">
                             <posx>0</posx>
@@ -354,10 +354,10 @@
                         <label>$VAR[ListItem.Property(NumEpisodes)]</label>
                         <textcolor>99FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Property(NumEpisodes))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(NumEpisodes))</visible>
                     </control>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                        <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                         <posx>30</posx>
                         <control type="image">
                             <posx>0</posx>
@@ -455,7 +455,7 @@
                         <selectedcolor>D4FFFFFF</selectedcolor>
                         <textcolor>99FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Premiered)</visible>
+                        <visible>!String.IsEmpty(ListItem.Premiered)</visible>
                     </control>
                     <control type="label">
                         <posx>366</posx>
@@ -506,7 +506,7 @@
                         <height>85</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!Container.Content(genres) | stringcompare(ListItem.Label,..)</visible>
+                        <visible>!Container.Content(genres) | String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
                         <posx>89</posx>
@@ -514,7 +514,7 @@
                         <width>60</width>
                         <height>90</height>
                         <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
-                        <visible>Container.Content(genres) + !stringcompare(ListItem.Label,..)</visible>
+                        <visible>Container.Content(genres) + !String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     <control type="group">
                         <animation type="Focus" condition="[Container(50).OnNext | Container(50).OnPrevious] + !Container(50).ListItem.IsPlaying" reversible="false">
@@ -554,7 +554,7 @@
                             <height>100</height>
                             <colordiffuse>D4FFFFFF</colordiffuse>
                             <texture>$VAR[DefaultListOverlay]</texture>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </control>
                 </focusedlayout>
@@ -612,7 +612,7 @@
                             <label>$VAR[ListItem.Label.Offset.Focus]</label>
                             <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>eewhite</textcolor>
-                            <visible>IsEmpty(ListItem.Genre)</visible>
+                            <visible>String.IsEmpty(ListItem.Genre)</visible>
                         </control>
                         <control type="label">
                             <description>Label</description>
@@ -625,7 +625,7 @@
                             <label>$VAR[ListItem.Label.Offset.Focus]</label>
                             <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>eewhite</textcolor>
-                            <visible>!IsEmpty(ListItem.Genre)</visible>
+                            <visible>!String.IsEmpty(ListItem.Genre)</visible>
                         </control>
                         <control type="label">
                             <description>Year / Genre</description>
@@ -639,7 +639,7 @@
                             <selectedcolor>D4FFFFFF</selectedcolor>
                             <textcolor>D4FFFFFF</textcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Genre)</visible>
+                            <visible>!String.IsEmpty(ListItem.Genre)</visible>
                         </control>
                         <control type="image">
                             <description>HD/SD flag</description>
@@ -649,7 +649,7 @@
                             <height>60</height>
                             <texture>$VAR[ListHDSDFlagSmall]</texture>
                             <colordiffuse>D4FFFFFF</colordiffuse>
-                            <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                            <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                         </control>
                         <control type="image">
                             <description>Set icon</description>
@@ -658,7 +658,7 @@
                             <width>90</width>
                             <height>60</height>
                             <texture>flags/other/set-list.png</texture>
-                            <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                            <visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
                             <colordiffuse>D4FFFFFF</colordiffuse>
                         </control>
                         <control type="image">
@@ -753,7 +753,7 @@
                         </control>
                     </control>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                        <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                         <posx>30</posx>
                         <control type="image">
                             <posx>0</posx>
@@ -773,7 +773,7 @@
                             <textcolor>FF27D0FA</textcolor>
                             <scroll>no</scroll>
                             <align>center</align>
-                            <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                         </control>
                     </control>
                 </focusedlayout>
@@ -843,11 +843,11 @@
                             <label>$VAR[ListItem.Property(NumEpisodes)]</label>
                             <textcolor>D4FFFFFF</textcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Property(NumEpisodes))</visible>
+                            <visible>!String.IsEmpty(ListItem.Property(NumEpisodes))</visible>
                         </control>
                     </control>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                        <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                         <posx>30</posx>
                         <control type="image">
                             <posx>0</posx>
@@ -950,7 +950,7 @@
                             <selectedcolor>D4FFFFFF</selectedcolor>
                             <textcolor>D4FFFFFF</textcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Premiered)</visible>
+                            <visible>!String.IsEmpty(ListItem.Premiered)</visible>
                         </control>
                         <control type="image">
                             <description>Watched/unwatched overlay</description>
@@ -1015,7 +1015,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                     <effect type="zoom" start="90" end="100" center="300,438" tween="cubic" easing="out" time="400" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="750" delay="300" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="300" />
                     <effect type="zoom" start="90" end="100" center="300,438" tween="cubic" easing="out" time="400" delay="300" />
@@ -1077,7 +1077,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="175" />
                     <effect type="zoom" start="70" end="100" center="1522,438" tween="cubic" easing="out" time="400" delay="175" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="575" delay="475" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="475" />
                     <effect type="zoom" start="70" end="100" center="1522,438" tween="cubic" easing="out" time="400" delay="475" />
@@ -1101,7 +1101,7 @@
                         <width>580</width>
                         <height>604</height>
                         <texture background="true">views/list/panel/panel.png</texture>
-                        <visible>[IsEmpty(Container(52).ListItem.Art(fanart)) + IsEmpty(Container(52).ListItem.Art(season.fanart))] | Container.Content(Episodes)</visible>
+                        <visible>[String.IsEmpty(Container(52).ListItem.Art(fanart)) + String.IsEmpty(Container(52).ListItem.Art(season.fanart))] | Container.Content(Episodes)</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>
                     <control type="image">
@@ -1128,7 +1128,7 @@
                         <visible>!Skin.HasSetting(InfoListHideInfo) | [Skin.HasSetting(InfoListShowPlotOnFocus) + Control.HasFocus(71)]</visible>
                         <include>visiblehidefadeinfo</include>
                         <control type="group">
-                            <visible>!IsEmpty(Container(52).ListItem.Plot) + [Skin.HasSetting(InfoListPlot) | [Skin.HasSetting(InfoListShowPlotOnFocus) + Control.HasFocus(71)]] + !Container.Content(Episodes)</visible>
+                            <visible>!String.IsEmpty(Container(52).ListItem.Plot) + [Skin.HasSetting(InfoListPlot) | [Skin.HasSetting(InfoListShowPlotOnFocus) + Control.HasFocus(71)]] + !Container.Content(Episodes)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <posx>0</posx>
@@ -1137,7 +1137,7 @@
                                 <height>600</height>
                                 <texture>windows/common/grey.png</texture>
                                 <colordiffuse>DF222222</colordiffuse>
-                                <visible>!IsEmpty(Container(52).ListItem.Art(fanart)) | !IsEmpty(Container(52).ListItem.Art(season.fanart))</visible>
+                                <visible>!String.IsEmpty(Container(52).ListItem.Art(fanart)) | !String.IsEmpty(Container(52).ListItem.Art(season.fanart))</visible>
                                 <include>visiblehidefadeinfo</include>
                             </control>
                             <control type="label">
@@ -1166,7 +1166,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>!IsEmpty(Container(52).ListItem.Plot) + Container.Content(Episodes)</visible>
+                            <visible>!String.IsEmpty(Container(52).ListItem.Plot) + Container.Content(Episodes)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <posx>0</posx>
@@ -1237,7 +1237,7 @@
                                 <textcolor>aawhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <visible>IsEmpty(ListItem.VideoResolution)</visible>
+                                <visible>String.IsEmpty(ListItem.VideoResolution)</visible>
                             </control>
                             <control type="label">
                                 <posx>90</posx>
@@ -1248,7 +1248,7 @@
                                 <textcolor>aawhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                             </control>
                             <control type="image">
                                 <posx>10</posx>
@@ -1256,7 +1256,7 @@
                                 <width>90</width>
                                 <height>60</height>
                                 <texture>$VAR[ListHDSDFlagSmall]</texture>
-                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                                 <colordiffuse>aawhite</colordiffuse>
                             </control>
                         </control>
@@ -1270,7 +1270,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />
                     <effect type="zoom" start="80" end="100" center="867,438" tween="cubic" easing="out" time="400" delay="105" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="645" delay="405" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="405" />
                     <effect type="zoom" start="80" end="100" center="867,438" tween="cubic" easing="out" time="400" delay="405" />
@@ -1284,7 +1284,7 @@
                     <effect type="zoom" start="100" end="125" center="960,600" tween="sine" easing="out" time="350" />
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" time="250" />
                 </animation>
-                <animation effect="slide" end="588" time="400" tween="cubic" easing="inout" condition="![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets)] + substring(Container.FolderPath,plugin,left) + Container.HasFiles">Conditional</animation>
+                <animation effect="slide" end="588" time="400" tween="cubic" easing="inout" condition="![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets)] + String.StartsWith(Container.FolderPath,plugin) + Container.HasFiles">Conditional</animation>
                 <control type="image">
                     <description>List Panel</description>
                     <posx>510</posx>
@@ -1294,7 +1294,7 @@
                     <texture>views/list/panel/panel.png</texture>
                 </control>
                 <control type="list" id="52">
-                    <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets)] | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]</visible>
+                    <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets)] | [String.StartsWith(Container.FolderPath,plugin) + Container.HasFiles]</visible>
                     <posx>512</posx>
                     <posy>277</posy>
                     <width>710</width>
@@ -1303,7 +1303,7 @@
                     <onleft condition="!Skin.HasSetting(KioskMode)">9010</onleft>
                     <onleft condition="Skin.HasSetting(KioskMode)">52</onleft>
                     <onright condition="Control.IsVisible(70) | !Control.IsVisible(71)">70</onright>
-                    <onright condition="!Control.IsVisible(70) + [Control.IsVisible(71) | [Skin.HasSetting(InfoListShowPlotOnFocus) + !IsEmpty(Container(52).ListItem.Plot)]]">71</onright>
+                    <onright condition="!Control.IsVisible(70) + [Control.IsVisible(71) | [Skin.HasSetting(InfoListShowPlotOnFocus) + !String.IsEmpty(Container(52).ListItem.Plot)]]">71</onright>
                     <onup>52</onup>
                     <ondown>52</ondown>
                     <viewtype label="31962">list</viewtype>
@@ -1358,7 +1358,7 @@
                             <height>60</height>
                             <texture>$VAR[InfoListOverlay]</texture>
                             <colordiffuse>$VAR[Colordiffuse.Color.3]</colordiffuse>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </itemlayout>
                     <itemlayout height="60" condition="Container.Content(Movies) | Container.Content(Sets)">
@@ -1415,7 +1415,7 @@
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
-                            <visible>!substring(ListItem.Path,videodb://movies/sets,left) + !IsEmpty(ListItem.Year)</visible>
+                            <visible>!String.StartsWith(ListItem.Path,videodb://movies/sets) + !String.IsEmpty(ListItem.Year)</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -1423,7 +1423,7 @@
                             <width>60</width>
                             <height>60</height>
                             <texture>$VAR[InfoListOverlay]</texture>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             <colordiffuse>$VAR[Colordiffuse.Color.3]</colordiffuse>
                         </control>
                         <control type="image">
@@ -1432,7 +1432,7 @@
                             <width>90</width>
                             <height>60</height>
                             <texture>flags/other/set-list.png</texture>
-                            <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                            <visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
                             <colordiffuse>$VAR[Colordiffuse.Color.2]</colordiffuse>
                         </control>
                     </itemlayout>
@@ -1466,7 +1466,7 @@
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
-                            <visible>!substring(ListItem.Path,videodb://movies/sets,left) + !IsEmpty(ListItem.Year)</visible>
+                            <visible>!String.StartsWith(ListItem.Path,videodb://movies/sets) + !String.IsEmpty(ListItem.Year)</visible>
                         </control>
                         <control type="label">
                             <posx>170</posx>
@@ -1482,7 +1482,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                             <control type="image">
                                 <posx>20</posx>
                                 <posy>12</posy>
@@ -1534,10 +1534,10 @@
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Property(NumEpisodes))</visible>
+                            <visible>!String.IsEmpty(ListItem.Property(NumEpisodes))</visible>
                         </control>
                         <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                             <control type="image">
                                 <posx>20</posx>
                                 <posy>12</posy>
@@ -1609,7 +1609,7 @@
                             <width>60</width>
                             <height>60</height>
                             <texture>$VAR[InfoListOverlay]</texture>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             <animation effect="fade" end="50" time="0" condition="!ListItem.IsPlaying">Conditional</animation>
                         </control>
                     </itemlayout>
@@ -1674,7 +1674,7 @@
                                 <height>60</height>
                                 <texture>$VAR[InfoListOverlay]</texture>
                                 <colordiffuse>D4FFFFFF</colordiffuse>
-                                <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             </control>
                         </control>
                     </focusedlayout>
@@ -1747,7 +1747,7 @@
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <visible>!substring(ListItem.Path,videodb://movies/sets,left) + !Container.Content(Episodes) + !IsEmpty(ListItem.Year)</visible>
+                                <visible>!String.StartsWith(ListItem.Path,videodb://movies/sets) + !Container.Content(Episodes) + !String.IsEmpty(ListItem.Year)</visible>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -1755,7 +1755,7 @@
                                 <width>60</width>
                                 <height>60</height>
                                 <texture>$VAR[InfoListOverlay]</texture>
-                                <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             </control>
                             <control type="image">
                                 <posx>41</posx>
@@ -1763,7 +1763,7 @@
                                 <width>90</width>
                                 <height>60</height>
                                 <texture>flags/other/set-list.png</texture>
-                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                                <visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
                                 <colordiffuse>D4FFFFFF</colordiffuse>
                             </control>
                         </control>
@@ -1802,7 +1802,7 @@
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.Year)</visible>
+                                <visible>!String.IsEmpty(ListItem.Year)</visible>
                             </control>
                             <control type="label">
                                 <posx>169</posx>
@@ -1830,7 +1830,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                             <control type="image">
                                 <posx>20</posx>
                                 <posy>12</posy>
@@ -1896,11 +1896,11 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <align>right</align>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.Property(NumEpisodes))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(NumEpisodes))</visible>
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                             <control type="image">
                                 <posx>20</posx>
                                 <posy>12</posy>
@@ -1986,7 +1986,7 @@
                                 <width>60</width>
                                 <height>60</height>
                                 <texture>$VAR[InfoListOverlay]</texture>
-                                <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             </control>
                         </control>
                     </focusedlayout>
@@ -1998,7 +1998,7 @@
                     <width>6</width>
                     <height>600</height>
                     <onleft>52</onleft>
-                    <onright condition="Control.IsVisible(71) | [Skin.HasSetting(InfoListShowPlotOnFocus) + !IsEmpty(Container(52).ListItem.Plot)]">71</onright>
+                    <onright condition="Control.IsVisible(71) | [Skin.HasSetting(InfoListShowPlotOnFocus) + !String.IsEmpty(Container(52).ListItem.Plot)]">71</onright>
                     <onright condition="!Control.IsVisible(71) + !Skin.HasSetting(KioskMode)">9010</onright>
                     <onright condition="!Control.IsVisible(71) + Skin.HasSetting(KioskMode)">52</onright>
                     <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
@@ -2022,7 +2022,7 @@
                     <orientation>vertical</orientation>
                     <showonepage>false</showonepage>
                     <animation effect="fade" start="35" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(71)">Conditional</animation>
-                    <visible allowhiddenfocus="!Container.Content(Episodes) + Skin.HasSetting(InfoListShowPlotOnFocus) + !IsEmpty(Container(52).ListItem.Plot)">[Control.HasFocus(71) + !Container.Content(Episodes)] | [!Skin.HasSetting(InfoListHideInfo) + Control.IsVisible(52) + !Container.Content(Episodes) + Skin.HasSetting(InfoListPlot) + !IsEmpty(Container(52).ListItem.Plot)]</visible>
+                    <visible allowhiddenfocus="!Container.Content(Episodes) + Skin.HasSetting(InfoListShowPlotOnFocus) + !String.IsEmpty(Container(52).ListItem.Plot)">[Control.HasFocus(71) + !Container.Content(Episodes)] | [!Skin.HasSetting(InfoListHideInfo) + Control.IsVisible(52) + !Container.Content(Episodes) + Skin.HasSetting(InfoListPlot) + !String.IsEmpty(Container(52).ListItem.Plot)]</visible>
                 </control>
                 <control type="scrollbar" id="71">
                     <description>Scrollbar</description>
@@ -2059,7 +2059,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />
                     <effect type="zoom" start="80" end="100" center="786,438" tween="cubic" easing="out" time="400" delay="105" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="645" delay="405" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="405" />
                     <effect type="zoom" start="80" end="100" center="786,438" tween="cubic" easing="out" time="400" delay="405" />
@@ -2073,9 +2073,9 @@
                     <effect type="zoom" start="100" end="125" center="960,600" tween="sine" easing="out" time="350" />
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" time="250" />
                 </animation>
-                <animation effect="slide" end="210" time="400" tween="cubic" easing="inout" condition="[!IntegerGreaterThan(Container(53).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [!IntegerGreaterThan(Container(53).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="140" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(53).NumItems,3) + !IntegerGreaterThan(Container(53).NumItems,6) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(53).NumItems,2) + !IntegerGreaterThan(Container(53).NumItems,5) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="70" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(53).NumItems,6) + !IntegerGreaterThan(Container(53).NumItems,9) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(53).NumItems,5) + !IntegerGreaterThan(Container(53).NumItems,8) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="210" time="400" tween="cubic" easing="inout" condition="[Integer.IsLessOrEqual(Container(53).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsLessOrEqual(Container(53).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="140" time="400" tween="cubic" easing="inout" condition="[Integer.IsGreater(Container(53).NumItems,3) + Integer.IsLessOrEqual(Container(53).NumItems,6) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsGreater(Container(53).NumItems,2) + Integer.IsLessOrEqual(Container(53).NumItems,5) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="70" time="400" tween="cubic" easing="inout" condition="[Integer.IsGreater(Container(53).NumItems,6) + Integer.IsLessOrEqual(Container(53).NumItems,9) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsGreater(Container(53).NumItems,5) + Integer.IsLessOrEqual(Container(53).NumItems,8) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
                 <control type="panel" id="53">
                     <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Sets)</visible>
                     <posx>500</posx>
@@ -2109,7 +2109,7 @@
                             <width>50</width>
                             <height>50</height>
                             <texture>$VAR[InfoPanelOverlay]</texture>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout width="140" height="204">
@@ -2135,7 +2135,7 @@
                                 <width>50</width>
                                 <height>50</height>
                                 <texture>$VAR[InfoPanelOverlay]</texture>
-                                <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -2191,7 +2191,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                     <effect type="zoom" start="90" end="100" center="300,438" tween="cubic" easing="out" time="400" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="750" delay="300" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="300" />
                     <effect type="zoom" start="90" end="100" center="300,438" tween="cubic" easing="out" time="400" delay="300" />
@@ -2205,9 +2205,9 @@
                     <effect type="zoom" start="100" end="125" center="960,600" tween="sine" easing="out" time="350" />
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" time="250" />
                 </animation>
-                <animation effect="slide" end="210" time="400" tween="cubic" easing="inout" condition="[!IntegerGreaterThan(Container(53).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [!IntegerGreaterThan(Container(53).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="140" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(53).NumItems,3) + !IntegerGreaterThan(Container(53).NumItems,6) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(53).NumItems,2) + !IntegerGreaterThan(Container(53).NumItems,5) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="70" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(53).NumItems,6) + !IntegerGreaterThan(Container(53).NumItems,9) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(53).NumItems,5) + !IntegerGreaterThan(Container(53).NumItems,8) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="210" time="400" tween="cubic" easing="inout" condition="[Integer.IsLessOrEqual(Container(53).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsLessOrEqual(Container(53).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="140" time="400" tween="cubic" easing="inout" condition="[Integer.IsGreater(Container(53).NumItems,3) + Integer.IsLessOrEqual(Container(53).NumItems,6) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsGreater(Container(53).NumItems,2) + Integer.IsLessOrEqual(Container(53).NumItems,5) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="70" time="400" tween="cubic" easing="inout" condition="[Integer.IsGreater(Container(53).NumItems,6) + Integer.IsLessOrEqual(Container(53).NumItems,9) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsGreater(Container(53).NumItems,5) + Integer.IsLessOrEqual(Container(53).NumItems,8) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
                 <control type="image">
                     <description>Shadow</description>
                     <posx>0</posx>
@@ -2215,9 +2215,9 @@
                     <width>1920</width>
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
-                    <animation effect="zoom" end="0,870,1500,150" time="400" tween="cubic" easing="inout" condition="[!IntegerGreaterThan(Container(53).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [!IntegerGreaterThan(Container(53).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                    <animation effect="zoom" end="0,870,1640,150" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(53).NumItems,3) + !IntegerGreaterThan(Container(53).NumItems,6) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(53).NumItems,2) + !IntegerGreaterThan(Container(53).NumItems,5) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                    <animation effect="zoom" end="0,870,1780,150" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(53).NumItems,6) + !IntegerGreaterThan(Container(53).NumItems,9) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(53).NumItems,5) + !IntegerGreaterThan(Container(53).NumItems,8) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                    <animation effect="zoom" end="0,870,1500,150" time="400" tween="cubic" easing="inout" condition="[Integer.IsLessOrEqual(Container(53).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsLessOrEqual(Container(53).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                    <animation effect="zoom" end="0,870,1640,150" time="400" tween="cubic" easing="inout" condition="[Integer.IsGreater(Container(53).NumItems,3) + Integer.IsLessOrEqual(Container(53).NumItems,6) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsGreater(Container(53).NumItems,2) + Integer.IsLessOrEqual(Container(53).NumItems,5) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                    <animation effect="zoom" end="0,870,1780,150" time="400" tween="cubic" easing="inout" condition="[Integer.IsGreater(Container(53).NumItems,6) + Integer.IsLessOrEqual(Container(53).NumItems,9) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsGreater(Container(53).NumItems,5) + Integer.IsLessOrEqual(Container(53).NumItems,8) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
                 </control>
                 <control type="image">
                     <description>Poster</description>
@@ -2237,7 +2237,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="175" />
                     <effect type="zoom" start="70" end="100" center="1441,438" tween="cubic" easing="out" time="400" delay="175" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="575" delay="475" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="475" />
                     <effect type="zoom" start="70" end="100" center="1441,438" tween="cubic" easing="out" time="400" delay="475" />
@@ -2251,9 +2251,9 @@
                     <effect type="zoom" start="100" end="125" center="960,600" tween="sine" easing="out" time="350" />
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" time="250" />
                 </animation>
-                <animation effect="slide" end="-210" time="400" tween="cubic" easing="inout" condition="[!IntegerGreaterThan(Container(53).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [!IntegerGreaterThan(Container(53).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="-140" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(53).NumItems,3) + !IntegerGreaterThan(Container(53).NumItems,6) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(53).NumItems,2) + !IntegerGreaterThan(Container(53).NumItems,5) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="-70" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(53).NumItems,6) + !IntegerGreaterThan(Container(53).NumItems,9) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(53).NumItems,5) + !IntegerGreaterThan(Container(53).NumItems,8) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="-210" time="400" tween="cubic" easing="inout" condition="[Integer.IsLessOrEqual(Container(53).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsLessOrEqual(Container(53).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="-140" time="400" tween="cubic" easing="inout" condition="[Integer.IsGreater(Container(53).NumItems,3) + Integer.IsLessOrEqual(Container(53).NumItems,6) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsGreater(Container(53).NumItems,2) + Integer.IsLessOrEqual(Container(53).NumItems,5) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="-70" time="400" tween="cubic" easing="inout" condition="[Integer.IsGreater(Container(53).NumItems,6) + Integer.IsLessOrEqual(Container(53).NumItems,9) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsGreater(Container(53).NumItems,5) + Integer.IsLessOrEqual(Container(53).NumItems,8) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
                 <control type="group">
                     <description>Fanart + Info</description>
                     <posx>1072</posx>
@@ -2264,7 +2264,7 @@
                         <width>742</width>
                         <height>604</height>
                         <texture>views/list/panel/panel.png</texture>
-                        <visible>IsEmpty(Container(53).ListItem.Art(fanart)) + IsEmpty(Container(53).ListItem.Art(season.fanart))</visible>
+                        <visible>String.IsEmpty(Container(53).ListItem.Art(fanart)) + String.IsEmpty(Container(53).ListItem.Art(season.fanart))</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>
                     <control type="image">
@@ -2280,7 +2280,7 @@
                         <visible>!Skin.HasSetting(InfoPanelHideInfo)</visible>
                         <include>visiblehidefadeinfo</include>
                         <control type="group">
-                            <visible>!IsEmpty(Container(53).ListItem.Plot) + Skin.HasSetting(InfoPanelPlot)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem.Plot) + Skin.HasSetting(InfoPanelPlot)</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <posx>0</posx>
@@ -2289,7 +2289,7 @@
                                 <height>600</height>
                                 <texture>windows/common/grey.png</texture>
                                 <colordiffuse>DF222222</colordiffuse>
-                                <visible>!IsEmpty(Container(53).ListItem.Art(fanart)) | !IsEmpty(Container(53).ListItem.Art(season.fanart))</visible>
+                                <visible>!String.IsEmpty(Container(53).ListItem.Art(fanart)) | !String.IsEmpty(Container(53).ListItem.Art(season.fanart))</visible>
                                 <include>visiblehidefadeinfo</include>
                             </control>
                             <control type="label">
@@ -2333,7 +2333,7 @@
                             <textcolor>bbwhite</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
-                            <animation effect="slide" end="0,40" time="0" condition="IsEmpty(Container(53).ListItem.Genre)">Conditional</animation>
+                            <animation effect="slide" end="0,40" time="0" condition="String.IsEmpty(Container(53).ListItem.Genre)">Conditional</animation>
                         </control>
                         <control type="label">
                             <posx>30</posx>
@@ -2388,7 +2388,7 @@
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="-400" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="-400" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -2470,7 +2470,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>substring(Container(54).ListItem(-1).Path,videodb://movies/sets,left)</visible>
+                                <visible>String.StartsWith(Container(54).ListItem(-1).Path,videodb://movies/sets)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2481,7 +2481,7 @@
                             <texture background="true">$VAR[ExtendedViewThumb-1]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(-1).Art(clearart)) + IsEmpty(Container(54).ListItem(-1).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(-1).Art(clearart)) + String.IsEmpty(Container(54).ListItem(-1).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2491,7 +2491,7 @@
                             <texture background="true">$VAR[ExtendedViewLogo-1]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![IsEmpty(Container(54).ListItem(-1).Art(clearart)) + IsEmpty(Container(54).ListItem(-1).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![String.IsEmpty(Container(54).ListItem(-1).Art(clearart)) + String.IsEmpty(Container(54).ListItem(-1).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2500,7 +2500,7 @@
                             <height>1</height>
                             <colordiffuse>99000000</colordiffuse>
                             <texture>windows/common/black.png</texture>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(-1).Art(clearart)) + IsEmpty(Container(54).ListItem(-1).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(-1).Art(clearart)) + String.IsEmpty(Container(54).ListItem(-1).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>380</posx>
@@ -2510,7 +2510,7 @@
                             <texture>$VAR[ExtendedOverlay-1]</texture>
                             <animation effect="slide" end="0,270" time="0" condition="[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]]">Conditional</animation>
                         </control>
-                        <visible>!IsEmpty(Container(54).ListItemNoWrap(-1).Label)</visible>
+                        <visible>!String.IsEmpty(Container(54).ListItemNoWrap(-1).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -2518,7 +2518,7 @@
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="1000" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="1000" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -2600,7 +2600,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>substring(Container(54).ListItem(3).Path,videodb://movies/sets,left)</visible>
+                                <visible>String.StartsWith(Container(54).ListItem(3).Path,videodb://movies/sets)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2611,7 +2611,7 @@
                             <texture background="true">$VAR[ExtendedViewThumb3]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(3).Art(clearart)) + IsEmpty(Container(54).ListItem(3).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(3).Art(clearart)) + String.IsEmpty(Container(54).ListItem(3).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2621,7 +2621,7 @@
                             <texture background="true">$VAR[ExtendedViewLogo3]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![IsEmpty(Container(54).ListItem(3).Art(clearart)) + IsEmpty(Container(54).ListItem(3).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![String.IsEmpty(Container(54).ListItem(3).Art(clearart)) + String.IsEmpty(Container(54).ListItem(3).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2630,7 +2630,7 @@
                             <height>1</height>
                             <colordiffuse>99000000</colordiffuse>
                             <texture>windows/common/black.png</texture>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(3).Art(clearart)) + IsEmpty(Container(54).ListItem(3).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(3).Art(clearart)) + String.IsEmpty(Container(54).ListItem(3).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>380</posx>
@@ -2640,7 +2640,7 @@
                             <texture>$VAR[ExtendedOverlay3]</texture>
                             <animation effect="slide" end="0,270" time="0" condition="[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]]">Conditional</animation>
                         </control>
-                        <visible>!IsEmpty(Container(54).ListItemNoWrap(3).Label)</visible>
+                        <visible>!String.IsEmpty(Container(54).ListItemNoWrap(3).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -2648,7 +2648,7 @@
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="700" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="700" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -2730,7 +2730,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>substring(Container(54).ListItem(2).Path,videodb://movies/sets,left)</visible>
+                                <visible>String.StartsWith(Container(54).ListItem(2).Path,videodb://movies/sets)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2741,7 +2741,7 @@
                             <texture background="true">$VAR[ExtendedViewThumb2]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(2).Art(clearart)) + IsEmpty(Container(54).ListItem(2).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(2).Art(clearart)) + String.IsEmpty(Container(54).ListItem(2).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2751,7 +2751,7 @@
                             <texture background="true">$VAR[ExtendedViewLogo2]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![IsEmpty(Container(54).ListItem(2).Art(clearart)) + IsEmpty(Container(54).ListItem(2).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![String.IsEmpty(Container(54).ListItem(2).Art(clearart)) + String.IsEmpty(Container(54).ListItem(2).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2760,7 +2760,7 @@
                             <height>1</height>
                             <colordiffuse>99000000</colordiffuse>
                             <texture>windows/common/black.png</texture>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(2).Art(clearart)) + IsEmpty(Container(54).ListItem(2).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(2).Art(clearart)) + String.IsEmpty(Container(54).ListItem(2).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>380</posx>
@@ -2770,7 +2770,7 @@
                             <texture>$VAR[ExtendedOverlay2]</texture>
                             <animation effect="slide" end="0,270" time="0" condition="[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]]">Conditional</animation>
                         </control>
-                        <visible>!IsEmpty(Container(54).ListItemNoWrap(2).Label)</visible>
+                        <visible>!String.IsEmpty(Container(54).ListItemNoWrap(2).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -2778,7 +2778,7 @@
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="400" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="400" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -2860,7 +2860,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>substring(Container(54).ListItem(1).Path,videodb://movies/sets,left)</visible>
+                                <visible>String.StartsWith(Container(54).ListItem(1).Path,videodb://movies/sets)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2871,7 +2871,7 @@
                             <texture background="true">$VAR[ExtendedViewThumb1]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(1).Art(clearart)) + IsEmpty(Container(54).ListItem(1).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(1).Art(clearart)) + String.IsEmpty(Container(54).ListItem(1).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2881,7 +2881,7 @@
                             <texture background="true">$VAR[ExtendedViewLogo1]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![IsEmpty(Container(54).ListItem(1).Art(clearart)) + IsEmpty(Container(54).ListItem(1).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![String.IsEmpty(Container(54).ListItem(1).Art(clearart)) + String.IsEmpty(Container(54).ListItem(1).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2890,7 +2890,7 @@
                             <height>1</height>
                             <colordiffuse>99000000</colordiffuse>
                             <texture>windows/common/black.png</texture>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(1).Art(clearart)) + IsEmpty(Container(54).ListItem(1).Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(1).Art(clearart)) + String.IsEmpty(Container(54).ListItem(1).Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>380</posx>
@@ -2900,7 +2900,7 @@
                             <texture>$VAR[ExtendedOverlay1]</texture>
                             <animation effect="slide" end="0,270" time="0" condition="[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]]">Conditional</animation>
                         </control>
-                        <visible>!IsEmpty(Container(54).ListItemNoWrap(1).Label)</visible>
+                        <visible>!String.IsEmpty(Container(54).ListItemNoWrap(1).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -2909,7 +2909,7 @@
                         <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                         <effect type="zoom" start="94.7368421" end="100" center="400,301" tween="cubic" easing="out" time="400" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="700" delay="300" />
                         <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="300" />
                         <effect type="zoom" start="94.7368421" end="100" center="400,301" tween="cubic" easing="out" time="400" delay="300" />
@@ -2987,7 +2987,7 @@
                         <width>214</width>
                         <height>120</height>
                         <texture>flags/other/set-landscape.png</texture>
-                        <visible>substring(Container(54).ListItem(0).Path,videodb://movies/sets,left)</visible>
+                        <visible>String.StartsWith(Container(54).ListItem(0).Path,videodb://movies/sets)</visible>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -2996,7 +2996,7 @@
                         <height>270</height>
                         <texture background="true">$VAR[ExtendedViewThumb0]</texture>
                         <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                        <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(0).Art(clearart)) + IsEmpty(Container(54).ListItem(0).Art(clearlogo))]</visible>
+                        <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(0).Art(clearart)) + String.IsEmpty(Container(54).ListItem(0).Art(clearlogo))]</visible>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -3005,7 +3005,7 @@
                         <height>270</height>
                         <texture background="true">$VAR[ExtendedViewLogo0]</texture>
                         <aspectratio align="center" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                        <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![IsEmpty(Container(54).ListItem(0).Art(clearart)) + IsEmpty(Container(54).ListItem(0).Art(clearlogo))]</visible>
+                        <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![String.IsEmpty(Container(54).ListItem(0).Art(clearart)) + String.IsEmpty(Container(54).ListItem(0).Art(clearlogo))]</visible>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -3014,7 +3014,7 @@
                         <height>1</height>
                         <colordiffuse>D1000000</colordiffuse>
                         <texture>windows/common/black.png</texture>
-                        <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(Container(54).ListItem(0).Art(clearart)) + IsEmpty(Container(54).ListItem(0).Art(clearlogo))]</visible>
+                        <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(Container(54).ListItem(0).Art(clearart)) + String.IsEmpty(Container(54).ListItem(0).Art(clearlogo))]</visible>
                     </control>
                     <control type="image">
                         <posx>380</posx>
@@ -3135,7 +3135,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                                <visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -3146,7 +3146,7 @@
                             <texture background="true">$VAR[ExtendedViewThumb]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(ListItem.Art(clearart)) + IsEmpty(ListItem.Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(ListItem.Art(clearart)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -3156,7 +3156,7 @@
                             <texture background="true">$VAR[ExtendedViewLogo]</texture>
                             <colordiffuse>bbwhite</colordiffuse>
                             <aspectratio align="center" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![IsEmpty(ListItem.Art(clearart)) + IsEmpty(ListItem.Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![String.IsEmpty(ListItem.Art(clearart)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
                         </control>
                         <control type="image">
                             <posx>380</posx>
@@ -3173,7 +3173,7 @@
                             <height>1</height>
                             <colordiffuse>99000000</colordiffuse>
                             <texture>windows/common/black.png</texture>
-                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(ListItem.Art(clearart)) + IsEmpty(ListItem.Art(clearlogo))]</visible>
+                            <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(ListItem.Art(clearart)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout width="492">
@@ -3268,7 +3268,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                                <visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
                             </control>
                         </control>
                         <control type="group">
@@ -3285,7 +3285,7 @@
                                 <height>270</height>
                                 <texture background="true">$VAR[ExtendedViewThumb]</texture>
                                 <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                                <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(ListItem.Art(clearart)) + IsEmpty(ListItem.Art(clearlogo))]</visible>
+                                <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(ListItem.Art(clearart)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -3294,7 +3294,7 @@
                                 <height>270</height>
                                 <texture background="true">$VAR[ExtendedViewLogo]</texture>
                                 <aspectratio align="center" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                                <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![IsEmpty(ListItem.Art(clearart)) + IsEmpty(ListItem.Art(clearlogo))]</visible>
+                                <visible>[[Container.Content(tvshows) + [Skin.HasSetting(ExtendedUseClearArt) | Skin.HasSetting(ExtendedUseClearLogo)]] | [Container.Content(movies) + [Skin.HasSetting(ExtendedUseClearMovieArt) | Skin.HasSetting(ExtendedUseClearMovieLogo)]]] + ![String.IsEmpty(ListItem.Art(clearart)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -3303,7 +3303,7 @@
                                 <height>1</height>
                                 <colordiffuse>D1000000</colordiffuse>
                                 <texture>windows/common/black.png</texture>
-                                <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [IsEmpty(ListItem.Art(clearart)) + IsEmpty(ListItem.Art(clearlogo))]</visible>
+                                <visible>[[Container.Content(tvshows) + !Skin.HasSetting(ExtendedUseClearArt) + !Skin.HasSetting(ExtendedUseClearLogo)] | [Container.Content(movies) + !Skin.HasSetting(ExtendedUseClearMovieArt) + !Skin.HasSetting(ExtendedUseClearMovieLogo)]] | [String.IsEmpty(ListItem.Art(clearart)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -3393,7 +3393,7 @@
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="-400" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="-400" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -3444,7 +3444,7 @@
                             <height>100</height>
                             <texture>$VAR[ExtendedOverlay-1]</texture>
                         </control>
-                        <visible>!IsEmpty(Container(55).ListItemNoWrap(-1).Label)</visible>
+                        <visible>!String.IsEmpty(Container(55).ListItemNoWrap(-1).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -3455,7 +3455,7 @@
                         <effect type="fade" start="0" end="200" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="1600" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300"/>
                         <effect type="slide" start="1600" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -3499,7 +3499,7 @@
                             <texture background="true">$VAR[PosterViewPoster5]</texture>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         </control>
-                        <visible>!IsEmpty(Container(55).ListItemNoWrap(5).Label)</visible>
+                        <visible>!String.IsEmpty(Container(55).ListItemNoWrap(5).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -3510,7 +3510,7 @@
                         <effect type="fade" start="0" end="200" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="1300" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300"/>
                         <effect type="slide" start="1300" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -3561,7 +3561,7 @@
                             <height>100</height>
                             <texture>$VAR[ExtendedOverlay4]</texture>
                         </control>
-                        <visible>!IsEmpty(Container(55).ListItemNoWrap(4).Label)</visible>
+                        <visible>!String.IsEmpty(Container(55).ListItemNoWrap(4).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -3572,7 +3572,7 @@
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="1000" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="1000" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -3623,7 +3623,7 @@
                             <height>100</height>
                             <texture>$VAR[ExtendedOverlay3]</texture>
                         </control>
-                        <visible>!IsEmpty(Container(55).ListItemNoWrap(3).Label)</visible>
+                        <visible>!String.IsEmpty(Container(55).ListItemNoWrap(3).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -3634,7 +3634,7 @@
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="700" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="700" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -3685,7 +3685,7 @@
                             <height>100</height>
                             <texture>$VAR[ExtendedOverlay2]</texture>
                         </control>
-                        <visible>!IsEmpty(Container(55).ListItemNoWrap(2).Label)</visible>
+                        <visible>!String.IsEmpty(Container(55).ListItemNoWrap(2).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -3696,7 +3696,7 @@
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="400" end="0" delay="100" tween="cubic" easing="out" time="600" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="fade" start="0" end="100" delay="400" tween="sine" easing="in" time="300" />
                         <effect type="slide" start="400" end="0" delay="400" tween="cubic" easing="out" time="600" />
                     </animation>
@@ -3747,7 +3747,7 @@
                             <height>100</height>
                             <texture>$VAR[ExtendedOverlay1]</texture>
                         </control>
-                        <visible>!IsEmpty(Container(55).ListItemNoWrap(1).Label)</visible>
+                        <visible>!String.IsEmpty(Container(55).ListItemNoWrap(1).Label)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -3756,7 +3756,7 @@
                         <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                         <effect type="zoom" start="94.7368421" end="100" center="400,301" tween="cubic" easing="out" time="400" />
                     </animation>
-                    <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                    <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                         <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="700" delay="300" />
                         <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="300" />
                         <effect type="zoom" start="94.7368421" end="100" center="400,301" tween="cubic" easing="out" time="400" delay="300" />
@@ -4009,7 +4009,7 @@
                                 <textcolor>aawhite</textcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                                <animation effect="slide" end="-73" time="0" condition="IsEmpty(Container(55).ListItem.VideoResolution)">Conditional</animation>
+                                <animation effect="slide" end="-73" time="0" condition="String.IsEmpty(Container(55).ListItem.VideoResolution)">Conditional</animation>
                             </control>
                             <control type="image">
                                 <posx>-29</posx>
@@ -4018,7 +4018,7 @@
                                 <height>100</height>
                                 <texture>$VAR[ListHDSDFlag]</texture>
                                 <colordiffuse>aawhite</colordiffuse>
-                                <visible>!Skin.HasSetting(nohdflag) + !IsEmpty(Container(55).ListItem.VideoResolution)</visible>
+                                <visible>!Skin.HasSetting(nohdflag) + !String.IsEmpty(Container(55).ListItem.VideoResolution)</visible>
                             </control>
                             <control type="label">
                                 <posx>13</posx>
@@ -4042,7 +4042,7 @@
                                 <textcolor>aawhite</textcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                                <animation effect="slide" end="-116" time="0" condition="IsEmpty(ListItem.MPAA)">Conditional</animation>
+                                <animation effect="slide" end="-116" time="0" condition="String.IsEmpty(ListItem.MPAA)">Conditional</animation>
                             </control>
                             <control type="group">
                                 <posx>5</posx>
@@ -4121,7 +4121,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                     <effect type="zoom" start="90" end="100" center="960,538" tween="cubic" easing="out" time="400" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" delay="300" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="300" />
                     <effect type="zoom" start="90" end="100" center="960,538" tween="cubic" easing="out" time="400" delay="300" />
@@ -4158,7 +4158,7 @@
                     <onup>500</onup>
                     <ondown>500</ondown>
                     <preloaditems>2</preloaditems>
-                    <visible>substring(Container.FolderPath,addons,left) | substring(Container.FolderPath,plugin,left) | Container.HasFiles</visible>
+                    <visible>String.StartsWith(Container.FolderPath,addons) | String.StartsWith(Container.FolderPath,plugin) | Container.HasFiles</visible>
                     <animation effect="slide" end="59" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(ThumbnailSmall)">Conditional</animation>
                     <itemlayout width="344" height="344" condition="!Skin.HasSetting(ThumbnailSmall)">
                         <control type="image">
@@ -4208,7 +4208,7 @@
                             <height>100</height>
                             <colordiffuse>eewhite</colordiffuse>
                             <texture>$VAR[DefaultListOverlay]</texture>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </itemlayout>
                     <itemlayout width="229" height="230" condition="Skin.HasSetting(ThumbnailSmall)">
@@ -4258,7 +4258,7 @@
                             <height>60</height>
                             <texture>$VAR[InfoListOverlay]</texture>
                             <colordiffuse>eewhite</colordiffuse>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout width="344" height="344" condition="!Skin.HasSetting(ThumbnailSmall)">
@@ -4320,7 +4320,7 @@
                                     <height>100</height>
                                     <colordiffuse>eewhite</colordiffuse>
                                     <texture>$VAR[DefaultListOverlay]</texture>
-                                    <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                    <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                                 </control>
                             </control>
                             <control type="image">
@@ -4398,7 +4398,7 @@
                                     <height>60</height>
                                     <texture>$VAR[InfoListOverlay]</texture>
                                     <colordiffuse>eewhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                    <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                                 </control>
                             </control>
                             <control type="image">
@@ -4453,7 +4453,7 @@
                     <height>100</height>
                     <colordiffuse>eewhite</colordiffuse>
                     <texture>$VAR[DefaultListOverlay]</texture>
-                    <visible>!IsEmpty(ListItem.Overlay)</visible>
+                    <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                     <animation effect="slide" end="-59" time="0" condition="Skin.HasSetting(ThumbnailSmall)">Conditional</animation>
                 </control>
                 <control type="group">
@@ -4537,7 +4537,7 @@
                             <texture background="true">$VAR[WallPoster]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
+                            <visible>!Container.Content(Genres) | String.IsEqual(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <description>Poster</description>
@@ -4548,7 +4548,7 @@
                             <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
+                            <visible>Container.Content(Genres) + !String.IsEqual(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <posx>117</posx>
@@ -4556,7 +4556,7 @@
                             <width>50</width>
                             <height>50</height>
                             <texture>$VAR[ExtendedOverlay]</texture>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </itemlayout>
                     <itemlayout width="248" height="366" condition="!Skin.HasSetting(ThumbnailVideoSmall)">
@@ -4570,7 +4570,7 @@
                             <texture background="true">$VAR[WallPoster]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
+                            <visible>!Container.Content(Genres) | String.IsEqual(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <description>Poster</description>
@@ -4581,7 +4581,7 @@
                             <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
+                            <visible>Container.Content(Genres) + !String.IsEqual(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <posx>173</posx>
@@ -4589,7 +4589,7 @@
                             <width>75</width>
                             <height>75</height>
                             <texture>$VAR[ExtendedOverlay]</texture>
-                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout width="167" height="244" condition="Skin.HasSetting(ThumbnailVideoSmall)">
@@ -4608,7 +4608,7 @@
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="true">$VAR[WallPoster]</texture>
-                                <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
+                                <visible>!Container.Content(Genres) | String.IsEqual(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <description>Poster</description>
@@ -4618,7 +4618,7 @@
                                 <height>232</height>
                                 <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
+                                <visible>Container.Content(Genres) + !String.IsEqual(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>117</posx>
@@ -4626,7 +4626,7 @@
                                 <width>50</width>
                                 <height>50</height>
                                 <texture>$VAR[ExtendedOverlay]</texture>
-                                <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -4661,7 +4661,7 @@
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="true">$VAR[WallPoster]</texture>
-                                <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
+                                <visible>!Container.Content(Genres) | String.IsEqual(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <description>Poster</description>
@@ -4671,7 +4671,7 @@
                                 <height>354</height>
                                 <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
+                                <visible>Container.Content(Genres) + !String.IsEqual(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>173</posx>
@@ -4679,7 +4679,7 @@
                                 <width>75</width>
                                 <height>75</height>
                                 <texture>$VAR[ExtendedOverlay]</texture>
-                                <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -4743,7 +4743,7 @@
                     <texture background="true">$VAR[PosterViewPoster]</texture>
                     <fadetime>500</fadetime>
                     <aspectratio>scale</aspectratio>
-                    <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
+                    <visible>!Container.Content(Genres) | String.IsEqual(ListItem.Label,..)</visible>
                 </control>
                 <control type="image">
                     <description>Poster</description>
@@ -4754,7 +4754,7 @@
                     <fadetime>500</fadetime>
                     <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                     <aspectratio>scale</aspectratio>
-                    <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
+                    <visible>Container.Content(Genres) + !String.IsEqual(ListItem.Label,..)</visible>
                 </control>
                 <control type="group">
                     <posx>1304</posx>
@@ -4762,7 +4762,7 @@
                     <visible>!Skin.HasSetting(ThumbnailHideInfo)</visible>
                     <include>visiblehidefadeinfo</include>
                     <control type="group">
-                        <visible>!IsEmpty(Container(501).ListItem.Plot) + Skin.HasSetting(ThumbnailPlot)</visible>
+                        <visible>!String.IsEmpty(Container(501).ListItem.Plot) + Skin.HasSetting(ThumbnailPlot)</visible>
                         <include>visiblehidefadeinfo</include>
                         <control type="image">
                             <posx>0</posx>
@@ -4813,7 +4813,7 @@
                         <textcolor>bbwhite</textcolor>
                         <shadowcolor>22000000</shadowcolor>
                         <scroll>false</scroll>
-                        <animation effect="slide" end="0,40" time="0" condition="IsEmpty(Container(501).ListItem.Genre)">Conditional</animation>
+                        <animation effect="slide" end="0,40" time="0" condition="String.IsEmpty(Container(501).ListItem.Genre)">Conditional</animation>
                         <animation effect="slide" end="0,40" time="0" condition="Container.Content(Genres) | Container.Content(Actors)">Conditional</animation>
                     </control>
                     <control type="label">
@@ -4843,7 +4843,7 @@
                     <width>100</width>
                     <height>100</height>
                     <texture>$VAR[ExtendedOverlay]</texture>
-                    <visible>!IsEmpty(ListItem.Overlay)</visible>
+                    <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                 </control>
             </control>
         </control>
@@ -4895,7 +4895,7 @@
                 <texture background="true">$VAR[PosterViewPoster]</texture>
                 <fadetime>500</fadetime>
                 <aspectratio>scale</aspectratio>
-                <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) + [!Container.Content(seasons) | IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)]</visible>
+                <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) + [!Container.Content(seasons) | Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)]</visible>
             </control>
             <control type="image">
                 <posx>95</posx>
@@ -4905,7 +4905,7 @@
                 <texture>windows/common/grey.png</texture>
                 <colordiffuse>DF222222</colordiffuse>
                 <include>visiblehidefadeinfo</include>
-                <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) + [!Container.Content(seasons) | IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)]</visible>
+                <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) + [!Container.Content(seasons) | Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)]</visible>
             </control>
             <control type="label">
                 <posx>617</posx>
@@ -4955,7 +4955,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <scroll>false</scroll>
-                <visible>Container.Content(episodes) + !IsEmpty(ListItem.Premiered)</visible>
+                <visible>Container.Content(episodes) + !String.IsEmpty(ListItem.Premiered)</visible>
             </control>
             <control type="label">
                 <posx>121</posx>
@@ -4980,7 +4980,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
-                <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
             </control>
             <control type="label">
                 <posx>121</posx>
@@ -4991,7 +4991,7 @@
                 <textcolor>aawhite</textcolor>
                 <shadowcolor>22000000</shadowcolor>
                 <scroll>false</scroll>
-                <visible>!IsEmpty(ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(ListItem.Plot)</visible>
             </control>
             <control type="textbox">
                 <posx>121</posx>
@@ -5013,7 +5013,7 @@
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <texture>$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                 <colordiffuse>aawhite</colordiffuse>
-                <visible>Container.Content(TVShows) + !IsEmpty(ListItem.Studio)</visible>
+                <visible>Container.Content(TVShows) + !String.IsEmpty(ListItem.Studio)</visible>
             </control>
             <control type="image">
                 <description>Flagging</description>
@@ -5023,7 +5023,7 @@
                 <height>100</height>
                 <texture>$VAR[ListHDSDFlag]</texture>
                 <colordiffuse>$VAR[Colordiffuse.Color]</colordiffuse>
-                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
             </control>
         </control>
     </include>
@@ -5135,7 +5135,7 @@
                             <textcolor>77white</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IsEmpty(ListItem.Title) + !Container.Content(Seasons)</visible>
+                            <visible>!String.IsEmpty(ListItem.Title) + !Container.Content(Seasons)</visible>
                         </control>
                         <control type="label">
                             <posx>-134</posx>
@@ -5171,7 +5171,7 @@
                             <visible>!Container.Content(TVShows) + !Container.Content(Seasons)</visible>
                         </control>
                         <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                             <animation effect="slide" end="6" time="0" condition="Container.Content(TVShows) + !Skin.HasSetting(posterstv)">Conditional</animation>
                             <animation effect="slide" end="-416" time="0" condition="Container.Content(Seasons)">Conditional</animation>
                             <posx>835</posx>
@@ -5230,7 +5230,7 @@
                             <textcolor>77white</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
+                            <!-- <visible>!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible> -->
                         </control>
                         <control type="label">
                             <posx>100</posx>
@@ -5284,10 +5284,10 @@
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                                 <colordiffuse>FF383838</colordiffuse>
-                                <visible>Container.Content(TVShows) + !IsEmpty(ListItem.Studio)</visible>
+                                <visible>Container.Content(TVShows) + !String.IsEmpty(ListItem.Studio)</visible>
                             </control>
                             <control type="group">
-                                <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                                <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                                 <posx>835</posx>
                                 <posy>53</posy>
                                 <control type="image">
@@ -5316,7 +5316,7 @@
                                 <height>28</height>
                                 <texture>$VAR[BannerListHDSDFlag]</texture>
                                 <colordiffuse>eewhite</colordiffuse>
-                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                             </control>
                             <control type="image">
                                 <description>Set icon</description>
@@ -5325,7 +5325,7 @@
                                 <width>44</width>
                                 <height>28</height>
                                 <texture>flags/other/set-banner.png</texture>
-                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                                <visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
                             </control>
                             <control type="label">
                                 <posx>0</posx>
@@ -5429,10 +5429,10 @@
                                 <height>120</height>
                                 <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                                 <colordiffuse>FF383838</colordiffuse>
-                                <visible>!IsEmpty(ListItem.Studio)</visible>
+                                <visible>!String.IsEmpty(ListItem.Studio)</visible>
                             </control>
                             <control type="group">
-                                <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                                <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                                 <posx>841</posx>
                                 <posy>84</posy>
                                 <control type="image">
@@ -5547,10 +5547,10 @@
                             <height>120</height>
                             <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                             <colordiffuse>FF383838</colordiffuse>
-                            <visible>!IsEmpty(ListItem.Studio)</visible>
+                            <visible>!String.IsEmpty(ListItem.Studio)</visible>
                         </control>
                         <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                             <posx>634</posx>
                             <posy>67</posy>
                             <control type="image">
@@ -5614,7 +5614,7 @@
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                                <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
+                                <!-- <visible>!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible> -->
                             </control>
                             <control type="label">
                                 <posx>100</posx>
@@ -5640,7 +5640,7 @@
                                 <height>28</height>
                                 <texture>$VAR[BannerListHDSDFlag]</texture>
                                 <colordiffuse>eewhite</colordiffuse>
-                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                             </control>
                             <control type="label">
                                 <posx>100</posx>

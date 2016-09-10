@@ -75,7 +75,7 @@
                             <width>60</width>
                             <height>60</height>
                             <texture>dialogs/select/selected.png</texture>
-                            <visible>StringCompare(ListItem.Label2,Skin.String(MovieMPAALang))</visible>
+                            <visible>String.IsEqual(ListItem.Label2,Skin.String(MovieMPAALang))</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout height="60">
@@ -131,7 +131,7 @@
                             <width>60</width>
                             <height>60</height>
                             <texture>dialogs/select/selected.png</texture>
-                            <visible>StringCompare(ListItem.Label2,Skin.String(MovieMPAALang))</visible>
+                            <visible>String.IsEqual(ListItem.Label2,Skin.String(MovieMPAALang))</visible>
                         </control>
                     </focusedlayout>
                     <content>

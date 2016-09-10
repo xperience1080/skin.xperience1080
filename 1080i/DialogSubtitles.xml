@@ -159,7 +159,7 @@
                                 <visible>ListItem.property(sync) + ListItem.property(hearing_imp)</visible>
                             </control>
                             <control type="group">
-                                <visible>!IntegerGreaterThan(ListItem.ActualIcon,9)</visible>
+                                <visible>Integer.IsLessOrEqual(ListItem.ActualIcon,9)</visible>
                                 <control type="image">
                                     <posx>930</posx>
                                     <posy>-16</posy>
@@ -181,7 +181,7 @@
                                 </control>
                             </control>
                             <control type="group">
-                                <visible>IntegerGreaterThan(ListItem.ActualIcon,9)</visible>
+                                <visible>Integer.IsGreater(ListItem.ActualIcon,9)</visible>
                                 <control type="image">
                                     <posx>930</posx>
                                     <posy>-16</posy>
@@ -292,7 +292,7 @@
                                     <visible>ListItem.property(sync) + ListItem.property(hearing_imp)</visible>
                                 </control>
                                 <control type="group">
-                                    <visible>!IntegerGreaterThan(ListItem.ActualIcon,9)</visible>
+                                    <visible>Integer.IsLessOrEqual(ListItem.ActualIcon,9)</visible>
                                     <control type="image">
                                         <posx>930</posx>
                                         <posy>-16</posy>
@@ -314,7 +314,7 @@
                                     </control>
                                 </control>
                                 <control type="group">
-                                    <visible>IntegerGreaterThan(ListItem.ActualIcon,9)</visible>
+                                    <visible>Integer.IsGreater(ListItem.ActualIcon,9)</visible>
                                     <control type="image">
                                         <posx>930</posx>
                                         <posy>-16</posy>
@@ -372,7 +372,7 @@
                             <width>100</width>
                             <height>100</height>
                             <texture>dialogs/xbmcsubtitles/subtitles.png</texture>
-                            <visible>!IsEmpty(Control.GetLabel(100)) + !Control.IsVisible(4001) + !Control.IsVisible(4002)</visible>
+                            <visible>!String.IsEmpty(Control.GetLabel(100)) + !Control.IsVisible(4001) + !Control.IsVisible(4002)</visible>
                             <include>XBMCSubtitlesShowHide</include>
                             <animation effect="fade" start="65" end="100" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
                         </control>
@@ -394,7 +394,7 @@
                         <wrapmultiline>false</wrapmultiline>
                         <scroll>false</scroll>
                         <visible>!Control.IsVisible(111)</visible>
-                        <animation effect="slide" start="0" end="-83" time="250" tween="sine" easing="inout" condition="!IsEmpty(Control.GetLabel(100)) + !Control.IsVisible(4001) + !Control.IsVisible(4002)">Conditional</animation>
+                        <animation effect="slide" start="0" end="-83" time="250" tween="sine" easing="inout" condition="!String.IsEmpty(Control.GetLabel(100)) + !Control.IsVisible(4001) + !Control.IsVisible(4002)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>538</posx>
@@ -418,7 +418,7 @@
                         <texture>overlays/scan/busy.png</texture>
                         <animation effect="fade" start="65" end="100" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
                         <include>XBMCSubtitlesShowHide</include>
-                        <visible>stringcompare(Control.GetLabel(100),$LOCALIZE[24107])</visible>
+                        <visible>String.IsEqual(Control.GetLabel(100),$LOCALIZE[24107])</visible>
                     </control>
                     <control type="image" id="4002">
                         <posx>435</posx>
@@ -428,7 +428,7 @@
                         <texture>overlays/scan/download.png</texture>
                         <animation effect="fade" start="65" end="100" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
                         <include>XBMCSubtitlesShowHide</include>
-                        <visible>stringcompare(Control.GetLabel(140),$LOCALIZE[24110])</visible>
+                        <visible>String.IsEqual(Control.GetLabel(140),$LOCALIZE[24110])</visible>
                     </control>
                     <control type="label">
                         <posx>1465</posx>
@@ -441,7 +441,7 @@
                         <scroll>false</scroll>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <visible>IntegerGreaterThan(Container(120).NumPages,1)</visible>
+                        <visible>Integer.IsGreater(Container(120).NumPages,1)</visible>
                     </control>
                     <control type="label" id="300">
                         <description>textarea</description>

@@ -37,7 +37,7 @@
                 <control type="group">
                     <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd)]" easing="inout" effect="slide" end="0,213" start="0,0" time="300" tween="cubic">Conditional</animation>
                     <animation condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)" easing="inout" effect="slide" end="0,70" start="0,0" time="300" tween="cubic">Conditional</animation>
-                    <visible>IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd)</visible>
+                    <visible>String.IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd)</visible>
                     <include>visiblehidefadeinfo</include>
                     <control type="group">
                         <posx>358</posx>
@@ -186,7 +186,7 @@
                                 <colordiffuse>bbwhite</colordiffuse>
                                 <texture>$INFO[MusicPlayer.Channels,flags/audio/osd/channels/,.png]</texture>
                                 <include>visiblehidefadeflags</include>
-                                <visible>!IsEmpty(MusicPlayer.Channels)</visible>
+                                <visible>!String.IsEmpty(MusicPlayer.Channels)</visible>
                             </control>
                         </control>
                         <control type="label">
@@ -344,7 +344,7 @@
                     <control type="group">
                         <posy>117</posy>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(ExtendPlot))</visible>
+                            <visible>String.IsEmpty(Window.Property(ExtendPlot))</visible>
                             <include>visiblehidefadeinfo</include>
                             <control type="grouplist">
                                 <posx>1520</posx>
@@ -361,7 +361,7 @@
                                     <colordiffuse>bbwhite</colordiffuse>
                                     <texture>flags/other/3d-osd.png</texture>
                                     <include>visiblehidefadeflags</include>
-                                    <visible>substring(Player.FileNameAndPath,.3D.) | substring(Player.FileNameAndPath,-3D.)</visible>
+                                    <visible>String.Contains(Player.FileNameAndPath,.3D.) | String.Contains(Player.FileNameAndPath,-3D.)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>0</posx>
@@ -371,7 +371,7 @@
                                     <colordiffuse>bbwhite</colordiffuse>
                                     <texture>$INFO[VideoPlayer.VideoResolution,flags/res/osd/,.png]</texture>
                                     <include>visiblehidefadeflags</include>
-                                    <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>0</posx>
@@ -381,7 +381,7 @@
                                     <colordiffuse>bbwhite</colordiffuse>
                                     <texture>$INFO[VideoPlayer.AudioCodec,flags/audio/osd/,.png]</texture>
                                     <include>visiblehidefadeflags</include>
-                                    <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>0</posx>
@@ -391,7 +391,7 @@
                                     <colordiffuse>bbwhite</colordiffuse>
                                     <texture>$INFO[VideoPlayer.AudioChannels,flags/audio/osd/channels/,.png]</texture>
                                     <include>visiblehidefadeflags</include>
-                                    <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
                                 </control>
                             </control>
                             <control type="label">
@@ -479,10 +479,10 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <scroll>false</scroll>
-                                <animation condition="!IsEmpty(Window.Property(ExtendPlot))" easing="inout" effect="slide" end="0,-90" time="300" tween="cubic">Conditional</animation>
+                                <animation condition="!String.IsEmpty(Window.Property(ExtendPlot))" easing="inout" effect="slide" end="0,-90" time="300" tween="cubic">Conditional</animation>
                             </control>
                             <control type="group">
-                                <visible>IsEmpty(Window.Property(ExtendPlot))</visible>
+                                <visible>String.IsEmpty(Window.Property(ExtendPlot))</visible>
                                 <include>visiblehidefadeinfo</include>
                                 <control type="button">
                                     <posx>360</posx>
@@ -496,7 +496,7 @@
                                     <align>left</align>
                                     <aligny>center</aligny>
                                     <enable>false</enable>
-                                    <visible>!IsEmpty(VideoPlayer.Year) + !IsEmpty(VideoPlayer.Genre)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.Year) + !String.IsEmpty(VideoPlayer.Genre)</visible>
                                 </control>
                                 <control type="button">
                                     <posx>360</posx>
@@ -510,7 +510,7 @@
                                     <align>left</align>
                                     <aligny>center</aligny>
                                     <enable>false</enable>
-                                    <visible>IsEmpty(VideoPlayer.Year) | IsEmpty(VideoPlayer.Genre)</visible>
+                                    <visible>String.IsEmpty(VideoPlayer.Year) | String.IsEmpty(VideoPlayer.Genre)</visible>
                                 </control>
                                 <control type="textbox">
                                     <posx>360</posx>
@@ -549,10 +549,10 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <scroll>false</scroll>
-                                <animation condition="!IsEmpty(Window.Property(ExtendPlot))" easing="inout" effect="slide" end="0,-90" time="300" tween="cubic">Conditional</animation>
+                                <animation condition="!String.IsEmpty(Window.Property(ExtendPlot))" easing="inout" effect="slide" end="0,-90" time="300" tween="cubic">Conditional</animation>
                             </control>
                             <control type="group">
-                                <visible>IsEmpty(Window.Property(ExtendPlot))</visible>
+                                <visible>String.IsEmpty(Window.Property(ExtendPlot))</visible>
                                 <include>visiblehidefadeinfo</include>
                                 <control type="button">
                                     <posx>360</posx>
@@ -602,10 +602,10 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <scroll>false</scroll>
-                                <animation condition="!IsEmpty(Window.Property(ExtendPlot))" easing="inout" effect="slide" end="0,-90" time="300" tween="cubic">Conditional</animation>
+                                <animation condition="!String.IsEmpty(Window.Property(ExtendPlot))" easing="inout" effect="slide" end="0,-90" time="300" tween="cubic">Conditional</animation>
                             </control>
                             <control type="group">
-                                <visible>IsEmpty(Window.Property(ExtendPlot))</visible>
+                                <visible>String.IsEmpty(Window.Property(ExtendPlot))</visible>
                                 <include>visiblehidefadeinfo</include>
                                 <control type="label">
                                     <posx>360</posx>
@@ -674,7 +674,7 @@
                                     <align>left</align>
                                     <aligny>center</aligny>
                                     <scroll>false</scroll>
-                                    <visible>!IsEmpty(VideoPlayer.Artist)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.Artist)</visible>
                                 </control>
                                 <control type="label">
                                     <posx>0</posx>
@@ -687,7 +687,7 @@
                                     <align>left</align>
                                     <aligny>center</aligny>
                                     <scroll>false</scroll>
-                                    <visible>!IsEmpty(VideoPlayer.Album)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.Album)</visible>
                                 </control>
                                 <control type="label">
                                     <posx>0</posx>
@@ -711,7 +711,7 @@
                                     <textcolor>aawhite</textcolor>
                                     <font>Font-Condensed-S32</font>
                                     <align>justify</align>
-                                    <visible>!IsEmpty(VideoPlayer.Plot) + Skin.HasSetting(OSD.HideFileStreamPath)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.Plot) + Skin.HasSetting(OSD.HideFileStreamPath)</visible>
                                     <autoscroll delay="11500" repeat="7500" time="5000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                 </control>
                                 <control type="textbox">
@@ -723,7 +723,7 @@
                                     <textcolor>aawhite</textcolor>
                                     <font>Font-Condensed-S32</font>
                                     <align>justify</align>
-                                    <visible>!IsEmpty(VideoPlayer.Plot) + !Skin.HasSetting(OSD.HideFileStreamPath)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.Plot) + !Skin.HasSetting(OSD.HideFileStreamPath)</visible>
                                     <autoscroll delay="11500" repeat="7500" time="5000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                 </control>
                             </control>

@@ -7,7 +7,7 @@
         <control type="group" id="100">
             <control type="group">
                 <description>Searching</description>
-                <visible>!IsEmpty(Control.GetLabel(190)) + !IsEmpty(Control.GetLabel(191))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(190)) + !String.IsEmpty(Control.GetLabel(191))</visible>
                 <posx>1745</posx>
                 <posy>24</posy>
                 <include>BannerListInfoAnimation</include>
@@ -189,7 +189,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(111).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(111).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -199,7 +199,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(111).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(111).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -239,7 +239,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(211).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(211).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -249,7 +249,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(211).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(211).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -289,7 +289,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(121).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(121).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -299,7 +299,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(121).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(121).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -339,7 +339,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(131).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(131).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -349,7 +349,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(131).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(131).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -389,7 +389,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(141).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(141).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -399,7 +399,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(141).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(141).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -439,7 +439,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(151).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(151).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -449,7 +449,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(151).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(151).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -489,7 +489,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(161).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(161).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -499,7 +499,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(161).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(161).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -539,7 +539,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(171).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(171).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -549,7 +549,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(171).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(171).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -589,7 +589,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>!IntegerGreaterThan(Container(181).NumItems,1)</visible>
+                            <visible>Integer.IsEqual(Container(181).NumItems,0)</visible>
                         </control>
                         <control type="label">
                             <width min="50" max="400">auto</width>
@@ -599,7 +599,7 @@
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                            <visible>IntegerGreaterThan(Container(181).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(181).NumItems,1)</visible>
                         </control>
                     </control>
                 </control>
@@ -614,10 +614,10 @@
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(111)</visible>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(111) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(111) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(111) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(111) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(111) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(111) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(111) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(111) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="110">
                         <description>Number of found movies</description>
@@ -706,7 +706,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout width="332" height="750">
@@ -783,7 +783,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                             </control>
                         </focusedlayout>
                     </control>
@@ -809,10 +809,10 @@
                         <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(211)</visible>
                         <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                         <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                        <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(211) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                        <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(211) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                        <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                        <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                        <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(211) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                        <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(211) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                        <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                        <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                         <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                         <control type="label" id="210">
                             <description>Number of found movies containing actor</description>
@@ -901,7 +901,7 @@
                                     <width>100</width>
                                     <height>100</height>
                                     <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                    <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                    <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                                 </control>
                             </itemlayout>
                             <focusedlayout width="332" height="750">
@@ -978,7 +978,7 @@
                                     <width>100</width>
                                     <height>100</height>
                                     <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                    <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                    <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                                 </control>
                             </focusedlayout>
                         </control>
@@ -1001,10 +1001,10 @@
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(121)</visible>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(121) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(121) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(121) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(121) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(121) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(121) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(121) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(121) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="120">
                         <description>Number of found tv shows</description>
@@ -1093,7 +1093,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout width="332" height="750">
@@ -1170,7 +1170,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                             </control>
                         </focusedlayout>
                     </control>
@@ -1191,10 +1191,10 @@
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(131)</visible>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(131) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(131) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(131) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(131) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(131) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(131) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(131) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(131) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="130">
                         <description>Number of found seasons</description>
@@ -1367,10 +1367,10 @@
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(141)</visible>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(141) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(141) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(141) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(141) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(141) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(141) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(141) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(141) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="140">
                         <description>Number of found episodes</description>
@@ -1471,7 +1471,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout width="492" height="500">
@@ -1560,7 +1560,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                             </control>
                         </focusedlayout>
                     </control>
@@ -1581,10 +1581,10 @@
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(151)</visible>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(151) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(151) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(151) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(151) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(151) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="150">
                         <description>Number of found music videos</description>
@@ -1673,7 +1673,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout width="492" height="450">
@@ -1750,7 +1750,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <texture>overlays/OverlayUnWatched.png/extended-w.png</texture>
-                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <visible>Integer.IsEqual(ListItem.Property(PlayCount),0)</visible>
                             </control>
                         </focusedlayout>
                     </control>
@@ -1771,10 +1771,10 @@
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(161)</visible>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(161) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(161) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(161) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(161) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(161) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(161) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(161) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(161) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="160">
                         <description>Number of found artists</description>
@@ -1945,10 +1945,10 @@
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(171)</visible>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(171) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(171) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(171) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(171) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(171) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(171) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(171) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(171) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="170">
                         <description>Number of found albums</description>
@@ -2119,10 +2119,10 @@
                     <visible allowhiddenfocus="true">!Window.IsVisible(script-globalsearch-infodialog.xml) + Control.HasFocus(181)</visible>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(181) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(181) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(181) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(181) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(181) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(181) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(181) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(181) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <animation effect="zoom" start="100" end="110" time="300" tween="sine" easing="inout" center="auto" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="label" id="180">
                         <description>Number of found songs</description>

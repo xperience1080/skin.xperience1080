@@ -2,8 +2,8 @@
 <window>
     <defaultcontrol>30</defaultcontrol>
     <backgroundcolor>0</backgroundcolor>
-    <onload condition="IsEmpty(Skin.String(music.name))">Skin.SetString(music.name,$LOCALIZE[14022])</onload>
-    <onload condition="IsEmpty(Skin.String(rss.setting))">Skin.SetString(rss.setting,$LOCALIZE[1223])</onload>
+    <onload condition="String.IsEmpty(Skin.String(music.name))">Skin.SetString(music.name,$LOCALIZE[14022])</onload>
+    <onload condition="String.IsEmpty(Skin.String(rss.setting))">Skin.SetString(rss.setting,$LOCALIZE[1223])</onload>
     <controls>
         <include>CommonSettingsItems</include>
         <include>SettingsHeader</include>
@@ -261,22 +261,22 @@
                             <ondown>1002</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Top)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Bottom)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting,$LOCALIZE[1223])</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(rss.setting.pos)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),1)">Skin.Reset(GlobalRSS.Top)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),1)">Skin.SetBool(GlobalRSS.Bottom)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),1)">Skin.SetString(rss.setting,$LOCALIZE[31114])</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),1)">Skin.SetString(rss.setting.pos,2)</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetBool(GlobalRSS.Top)</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.Reset(GlobalRSS.Bottom)</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting,$LOCALIZE[31113])</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting.pos,1)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Top)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Bottom)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting,$LOCALIZE[1223])</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(rss.setting.pos)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Top)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Bottom)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting,$LOCALIZE[1223])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.Reset(rss.setting.pos)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),1)">Skin.Reset(GlobalRSS.Top)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),1)">Skin.SetBool(GlobalRSS.Bottom)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),1)">Skin.SetString(rss.setting,$LOCALIZE[31114])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),1)">Skin.SetString(rss.setting.pos,2)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetBool(GlobalRSS.Top)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.Reset(GlobalRSS.Bottom)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting,$LOCALIZE[31113])</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting.pos,1)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Top)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Bottom)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting,$LOCALIZE[1223])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.Reset(rss.setting.pos)</onclick>
                         </control>
                         <control type="button" id="10082">
                             <posx>1145</posx>
@@ -289,22 +289,22 @@
                             <ondown>1002</ondown>
                             <texturefocus>buttons/spinctrl/arrow-up-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-up-nf.png</texturenofocus>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.Reset(GlobalRSS.Top)</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetBool(GlobalRSS.Bottom)</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting,$LOCALIZE[31114])</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting.pos,2)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),1)">Skin.Reset(GlobalRSS.Top)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),1)">Skin.Reset(GlobalRSS.Bottom)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),1)">Skin.SetString(rss.setting,$LOCALIZE[1223])</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),1)">Skin.Reset(rss.setting.pos)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.SetBool(GlobalRSS.Top)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Bottom)</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting,$LOCALIZE[31113])</onclick>
-                            <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting.pos,1)</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.Reset(GlobalRSS.Top)</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetBool(GlobalRSS.Bottom)</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting,$LOCALIZE[31114])</onclick>
-                            <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting.pos,2)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.Reset(GlobalRSS.Top)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetBool(GlobalRSS.Bottom)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting,$LOCALIZE[31114])</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting.pos,2)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),1)">Skin.Reset(GlobalRSS.Top)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),1)">Skin.Reset(GlobalRSS.Bottom)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),1)">Skin.SetString(rss.setting,$LOCALIZE[1223])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),1)">Skin.Reset(rss.setting.pos)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.SetBool(GlobalRSS.Top)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.Reset(GlobalRSS.Bottom)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting,$LOCALIZE[31113])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting.pos,1)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.Reset(GlobalRSS.Top)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetBool(GlobalRSS.Bottom)</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting,$LOCALIZE[31114])</onclick>
+                            <onclick condition="String.IsEmpty(Skin.String(rss.setting.pos))">Skin.SetString(rss.setting.pos,2)</onclick>
                         </control>
                         <control type="button">
                             <posx>0</posx>
@@ -442,36 +442,36 @@
                             <ondown>2000</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.Reset(music.path)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[136])">Skin.SetString(music.name,$LOCALIZE[1038])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[136])">Skin.SetString(music.path,plugins)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[521])">Skin.SetString(music.name,$LOCALIZE[136])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[521])">Skin.SetString(music.path,playlists)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[517])">Skin.SetString(music.name,$LOCALIZE[521])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[517])">Skin.SetString(music.path,compilations)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[359])">Skin.SetString(music.name,$LOCALIZE[517])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[359])">Skin.SetString(music.path,recentlyplayedalbums)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[10505])">Skin.SetString(music.name,$LOCALIZE[359])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[10505])">Skin.SetString(music.path,recentlyaddedalbums)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[10504])">Skin.SetString(music.name,$LOCALIZE[10505])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[10504])">Skin.SetString(music.path,top100albums)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[652])">Skin.SetString(music.name,$LOCALIZE[10504])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[652])">Skin.SetString(music.path,top100songs)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[134])">Skin.SetString(music.name,$LOCALIZE[652])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[134])">Skin.SetString(music.path,years)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1050])">Skin.SetString(music.name,$LOCALIZE[134])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1050])">Skin.SetString(music.path,songs)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[132])">Skin.SetString(music.name,$LOCALIZE[1050])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[132])">Skin.SetString(music.path,singles)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[133])">Skin.SetString(music.name,$LOCALIZE[132])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[133])">Skin.SetString(music.path,albums)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[135])">Skin.SetString(music.name,$LOCALIZE[133])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[135])">Skin.SetString(music.path,artists)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.name,$LOCALIZE[135])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.path,genres)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.Reset(music.path)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1038])">Skin.Reset(music.path)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[136])">Skin.SetString(music.name,$LOCALIZE[1038])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[136])">Skin.SetString(music.path,plugins)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[521])">Skin.SetString(music.name,$LOCALIZE[136])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[521])">Skin.SetString(music.path,playlists)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[517])">Skin.SetString(music.name,$LOCALIZE[521])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[517])">Skin.SetString(music.path,compilations)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[359])">Skin.SetString(music.name,$LOCALIZE[517])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[359])">Skin.SetString(music.path,recentlyplayedalbums)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[10505])">Skin.SetString(music.name,$LOCALIZE[359])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[10505])">Skin.SetString(music.path,recentlyaddedalbums)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[10504])">Skin.SetString(music.name,$LOCALIZE[10505])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[10504])">Skin.SetString(music.path,top100albums)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[652])">Skin.SetString(music.name,$LOCALIZE[10504])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[652])">Skin.SetString(music.path,top100songs)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[134])">Skin.SetString(music.name,$LOCALIZE[652])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[134])">Skin.SetString(music.path,years)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1050])">Skin.SetString(music.name,$LOCALIZE[134])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1050])">Skin.SetString(music.path,songs)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[132])">Skin.SetString(music.name,$LOCALIZE[1050])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[132])">Skin.SetString(music.path,singles)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[133])">Skin.SetString(music.name,$LOCALIZE[132])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[133])">Skin.SetString(music.path,albums)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[135])">Skin.SetString(music.name,$LOCALIZE[133])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[135])">Skin.SetString(music.path,artists)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.name,$LOCALIZE[135])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.path,genres)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1038])">Skin.Reset(music.path)</onclick>
                         </control>
                         <control type="button" id="20082">
                             <posx>1145</posx>
@@ -484,36 +484,36 @@
                             <ondown>2000</ondown>
                             <texturefocus>buttons/spinctrl/arrow-up-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-up-nf.png</texturenofocus>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.name,$LOCALIZE[1038])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.path,plugins)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[135])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[135])">Skin.Reset(music.path)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[133])">Skin.SetString(music.name,$LOCALIZE[135])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[133])">Skin.SetString(music.path,genre)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[132])">Skin.SetString(music.name,$LOCALIZE[133])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[132])">Skin.SetString(music.path,artists)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1050])">Skin.SetString(music.name,$LOCALIZE[132])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1050])">Skin.SetString(music.path,albums)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[134])">Skin.SetString(music.name,$LOCALIZE[1050])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[134])">Skin.SetString(music.path,singles)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[652])">Skin.SetString(music.name,$LOCALIZE[134])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[652])">Skin.SetString(music.path,songs)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[10504])">Skin.SetString(music.name,$LOCALIZE[652])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[10504])">Skin.SetString(music.path,years)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[10505])">Skin.SetString(music.name,$LOCALIZE[10504])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[10505])">Skin.SetString(music.path,top100songs)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[359])">Skin.SetString(music.name,$LOCALIZE[10505])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[359])">Skin.SetString(music.path,top100albums)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[517])">Skin.SetString(music.name,$LOCALIZE[359])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[517])">Skin.SetString(music.path,recentlyaddedalbums)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[521])">Skin.SetString(music.name,$LOCALIZE[517])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[521])">Skin.SetString(music.path,recentlyplayedalbums)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[136])">Skin.SetString(music.name,$LOCALIZE[521])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[136])">Skin.SetString(music.path,compilations)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[136])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.path,playlists)</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.name,$LOCALIZE[1038])</onclick>
-                            <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.path,plugins)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.name,$LOCALIZE[1038])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.path,plugins)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[135])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[135])">Skin.Reset(music.path)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[133])">Skin.SetString(music.name,$LOCALIZE[135])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[133])">Skin.SetString(music.path,genre)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[132])">Skin.SetString(music.name,$LOCALIZE[133])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[132])">Skin.SetString(music.path,artists)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1050])">Skin.SetString(music.name,$LOCALIZE[132])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1050])">Skin.SetString(music.path,albums)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[134])">Skin.SetString(music.name,$LOCALIZE[1050])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[134])">Skin.SetString(music.path,singles)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[652])">Skin.SetString(music.name,$LOCALIZE[134])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[652])">Skin.SetString(music.path,songs)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[10504])">Skin.SetString(music.name,$LOCALIZE[652])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[10504])">Skin.SetString(music.path,years)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[10505])">Skin.SetString(music.name,$LOCALIZE[10504])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[10505])">Skin.SetString(music.path,top100songs)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[359])">Skin.SetString(music.name,$LOCALIZE[10505])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[359])">Skin.SetString(music.path,top100albums)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[517])">Skin.SetString(music.name,$LOCALIZE[359])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[517])">Skin.SetString(music.path,recentlyaddedalbums)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[521])">Skin.SetString(music.name,$LOCALIZE[517])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[521])">Skin.SetString(music.path,recentlyplayedalbums)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[136])">Skin.SetString(music.name,$LOCALIZE[521])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[136])">Skin.SetString(music.path,compilations)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[136])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.path,playlists)</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.name,$LOCALIZE[1038])</onclick>
+                            <onclick condition="String.IsEqual(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.path,plugins)</onclick>
                         </control>
                         <control type="button">
                             <posx>0</posx>
@@ -627,7 +627,7 @@
                         <label>- $LOCALIZE[31044]</label>
                         <onclick>Skin.Reset(WeatherFanartDir)</onclick>
                         <enable>!Skin.SetPath(WeatherFanartDir)</enable>
-                        <visible>!IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                        <visible>!String.IsEmpty(Skin.String(WeatherFanartDir))</visible>
                     </control>
                 </control>
 

@@ -179,7 +179,7 @@
                     <onclick>system.logoff</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/logout-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/logout-nf.png</texturenofocus>
-                    <visible>[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon + stringcompare(System.Language,German)</visible>
+                    <visible>[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon + String.IsEqual(System.Language,German)</visible>
                 </control>
                 <control type="button" id="12">
                     <description>Profile Log Off button (Other Languages)</description>
@@ -189,7 +189,7 @@
                     <onclick>system.logoff</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/logout-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/logout-nf.png</texturenofocus>
-                    <visible>[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon + !stringcompare(System.Language,German)</visible>
+                    <visible>[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon + !String.IsEqual(System.Language,German)</visible>
                 </control>
                 <control type="button" id="13">
                     <description>Inhibit idle shutdown</description>

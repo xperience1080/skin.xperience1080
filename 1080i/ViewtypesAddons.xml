@@ -63,7 +63,7 @@
                         <label>$INFO[ListItem.Label]</label>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Icon)</visible>
+                        <visible>!String.IsEmpty(ListItem.Icon)</visible>
                     </control>
                     <control type="label">
                         <description>Label 2</description>
@@ -140,7 +140,7 @@
                             <label>$VAR[AddonLabel2]</label>
                             <textcolor>D4FFFFFF</textcolor>
                             <scroll>false</scroll>
-                            <animation type="Focus" condition="[Container(50).OnNext | Container(50).OnPrevious] + !stringcompare(ListItem.Label2,$LOCALIZE[24098]) + !stringcompare(ListItem.Label2,$LOCALIZE[24068]) + !stringcompare(ListItem.Label2,$LOCALIZE[305])" reversible="false">
+                            <animation type="Focus" condition="[Container(50).OnNext | Container(50).OnPrevious] + !String.IsEqual(ListItem.Label2,$LOCALIZE[24098]) + !String.IsEqual(ListItem.Label2,$LOCALIZE[24068]) + !String.IsEqual(ListItem.Label2,$LOCALIZE[305])" reversible="false">
                                 <effect type="fade" start="71.5" end="100" time="500" tween="sine" easing="inout" />
                             </animation>
                         </control>
@@ -179,13 +179,13 @@
             <include>FullscreenDimensions</include>
             <include>OptionsShutdownAnimation</include>
             <control type="group">
-                <visible>Control.IsVisible(500) + !Window.IsActive(addoninformation) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(500) + !Window.IsActive(addoninformation) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml) + String.IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favourites)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                     <effect type="zoom" start="90" end="100" center="792,538" tween="cubic" easing="out" time="400" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" delay="300" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="300" />
                     <effect type="zoom" start="90" end="100" center="792,538" tween="cubic" easing="out" time="400" delay="300" />
@@ -199,10 +199,10 @@
                     <effect type="zoom" start="100" end="125" center="960,600" tween="sine" easing="out" time="350" />
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" time="250" />
                 </animation>
-                <animation effect="slide" end="488" time="400" tween="cubic" easing="inout" condition="[!IntegerGreaterThan(Container(500).NumItems,1) + !System.GetBool(filelists.showparentdiritems)] | [!IntegerGreaterThan(Container(500).NumItems,0) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="366" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,1) + !IntegerGreaterThan(Container(500).NumItems,2) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,0) + !IntegerGreaterThan(Container(500).NumItems,1) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="244" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,2) + !IntegerGreaterThan(Container(500).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,1) + !IntegerGreaterThan(Container(500).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="122" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,3) + !IntegerGreaterThan(Container(500).NumItems,4) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,2) + !IntegerGreaterThan(Container(500).NumItems,3) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="488" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,1) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,0) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="366" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,2) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,1) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="244" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="122" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,4) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,3) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
                 <control type="image">
                     <description>Shadow</description>
                     <posx>-125</posx>
@@ -210,10 +210,10 @@
                     <width>2170</width>
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
-                    <animation effect="zoom" end="-125,890,1194,150" time="400" tween="cubic" easing="inout" condition="[!IntegerGreaterThan(Container(500).NumItems,1) + !System.GetBool(filelists.showparentdiritems)] | [!IntegerGreaterThan(Container(500).NumItems,0) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                    <animation effect="zoom" end="-125,890,1438,150" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,1) + !IntegerGreaterThan(Container(500).NumItems,2) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,0) + !IntegerGreaterThan(Container(500).NumItems,1) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                    <animation effect="zoom" end="-125,890,1682,150" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,2) + !IntegerGreaterThan(Container(500).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,1) + !IntegerGreaterThan(Container(500).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                    <animation effect="zoom" end="-125,890,1926,150" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,3) + !IntegerGreaterThan(Container(500).NumItems,4) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,2) + !IntegerGreaterThan(Container(500).NumItems,3) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                    <animation effect="zoom" end="-125,890,1194,150" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,1) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,0) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                    <animation effect="zoom" end="-125,890,1438,150" time="400" tween="cubic" easing="inout" condition="[IInteger.IsEqual(Container(500).NumItems,2) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,1) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                    <animation effect="zoom" end="-125,890,1682,150" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,3) !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                    <animation effect="zoom" end="-125,890,1926,150" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,4) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,3) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
                 </control>
                 <control type="panel" id="500">
                     <posx>100</posx>
@@ -241,7 +241,7 @@
                             <texture background="true">views/fallbacks/DefaultFolderBack.png/square-small.png</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>stringcompare(ListItem.Label,..)</visible>
+                            <visible>String.IsEqual(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <description>Poster</description>
@@ -253,7 +253,7 @@
                             <texture background="true" fallback="views/fallbacks/DefaultAddon.png/square-small.png">$INFO[ListItem.Thumb]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>!stringcompare(ListItem.Label,..)</visible>
+                            <visible>!String.IsEqual(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <posx>169</posx>
@@ -279,7 +279,7 @@
                                 <height>232</height>
                                 <texture background="true">views/fallbacks/DefaultFolderBack.png/square-small.png</texture>
                                 <aspectratio>scale</aspectratio>
-                                <visible>stringcompare(ListItem.Label,..)</visible>
+                                <visible>String.IsEqual(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <description>Poster</description>
@@ -290,7 +290,7 @@
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <texture background="true" fallback="views/fallbacks/DefaultAddon.png/square-small.png">$INFO[ListItem.Thumb]</texture>
                                 <aspectratio>scale</aspectratio>
-                                <visible>!stringcompare(ListItem.Label,..)</visible>
+                                <visible>!String.IsEqual(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>169</posx>
@@ -319,13 +319,13 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(500) + !Window.IsActive(addoninformation) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(500) + !Window.IsActive(addoninformation) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml) + String.IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favourites)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="105" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />
                     <effect type="zoom" start="90" end="100" center="1570,538" tween="cubic" easing="out" time="400" delay="105" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="405" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="405" />
                     <effect type="zoom" start="90" end="100" center="1570,538" tween="cubic" easing="out" time="400" delay="405" />
@@ -339,10 +339,10 @@
                     <effect type="zoom" start="100" end="125" center="960,600" tween="sine" easing="out" time="350" />
                     <effect type="fade" start="100" end="0" tween="cubic" easing="out" time="250" />
                 </animation>
-                <animation effect="slide" end="-488" time="400" tween="cubic" easing="inout" condition="[!IntegerGreaterThan(Container(500).NumItems,1) + !System.GetBool(filelists.showparentdiritems)] | [!IntegerGreaterThan(Container(500).NumItems,0) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="-366" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,1) + !IntegerGreaterThan(Container(500).NumItems,2) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,0) + !IntegerGreaterThan(Container(500).NumItems,1) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="-244" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,2) + !IntegerGreaterThan(Container(500).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,1) + !IntegerGreaterThan(Container(500).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
-                <animation effect="slide" end="-122" time="400" tween="cubic" easing="inout" condition="[IntegerGreaterThan(Container(500).NumItems,3) + !IntegerGreaterThan(Container(500).NumItems,4) + !System.GetBool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(500).NumItems,2) + !IntegerGreaterThan(Container(500).NumItems,3) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="-488" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,1) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,0) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="-366" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,2) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,1) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="-244" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,3) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,2) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
+                <animation effect="slide" end="-122" time="400" tween="cubic" easing="inout" condition="[Integer.IsEqual(Container(500).NumItems,4) + !System.GetBool(filelists.showparentdiritems)] | [Integer.IsEqual(Container(500).NumItems,3) + System.GetBool(filelists.showparentdiritems)]">Conditional</animation>
                 <control type="image">
                     <description>Poster</description>
                     <posx>1332</posx>

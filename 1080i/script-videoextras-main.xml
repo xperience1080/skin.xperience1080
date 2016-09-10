@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="3001">
-	<onload condition="!IsEmpty(ListItem.TvShowTitle)">SetProperty("TvTunesSupported", "TvShows")</onload>
-	<onload condition="IsEmpty(ListItem.TvShowTitle)">SetProperty("TvTunesSupported", "Movies")</onload>
+	<onload condition="!String.IsEmpty(ListItem.TvShowTitle)">SetProperty("TvTunesSupported", "TvShows")</onload>
+	<onload condition="String.IsEmpty(ListItem.TvShowTitle)">SetProperty("TvTunesSupported", "Movies")</onload>
 	<defaultcontrol always="true">51</defaultcontrol>
 	<controls>
 		<control type="image">
@@ -11,7 +11,7 @@
 	        <height>1080</height>
 	    	<aspectratio>scale</aspectratio>
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			<visible>!Skin.HasSetting(HideBackGroundFanart) + !String.IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
 			<aspectratio align="center">scale</aspectratio>
@@ -133,7 +133,7 @@
 						<height>20</height>
 						<!-- Default XBMC Icon -->
 						<texture>OverlayWatched.png</texture>
-						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+						<visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="100">
@@ -197,7 +197,7 @@
 						<width>20</width>
 						<height>20</height>
 						<texture>OverlayWatched.png</texture>
-						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+						<visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -211,7 +211,7 @@
 			<orientation>horizontal</orientation>
 			<align>left</align>
 			<itemgap>5</itemgap>
-			<visible>!IsEmpty(ListItem.Plot)</visible>
+			<visible>!String.IsEmpty(ListItem.Plot)</visible>
 			<control type="label">
 				<posx>0</posx>
 				<posy>0</posy>

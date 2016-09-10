@@ -4,35 +4,35 @@
     <!-- Variables -->
     <variable name="MusicHeaderIcon">
         <value condition="Window.IsVisible(musicplaylist)">DefaultMusicPlaylists.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://genres/,left)">DefaultMusicGenres.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://artists/,left)">DefaultMusicArtists.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://albums/,left)">DefaultMusicAlbums.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://songs/,left)">DefaultMusicSongs.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://top100/,left)">DefaultMusicTop100.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://recentlyaddedalbums/,left)">DefaultMusicRecentlyAdded.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://recentlyplayedalbums/,left)">DefaultMusicRecentlyPlayed.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://compilations/,left)">DefaultMusicCompilations.png</value>
-        <value condition="substring(Container.FolderPath,musicdb://years/,left)">DefaultMusicYears.png</value>
-        <value condition="stringcompare(Container.FolderPath,special://musicplaylists/) | substring(Container.FolderPath,special://profile/playlists/music/,left)">DefaultPlaylist.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://genres/)">DefaultMusicGenres.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://artists/)">DefaultMusicArtists.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://albums/)">DefaultMusicAlbums.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://songs/)">DefaultMusicSongs.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://top100/)">DefaultMusicTop100.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://recentlyaddedalbums/)">DefaultMusicRecentlyAdded.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://recentlyplayedalbums/)">DefaultMusicRecentlyPlayed.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://compilations/)">DefaultMusicCompilations.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://years/)">DefaultMusicYears.png</value>
+        <value condition="String.IsEqual(Container.FolderPath,special://musicplaylists/) | String.StartsWith(Container.FolderPath,special://profile/playlists/music/)">DefaultPlaylist.png</value>
         <value>DefaultAudio.png</value>
     </variable>
 
     <variable name="MusicHeaderLabel">
         <value condition="Window.IsVisible(music)">$LOCALIZE[744]</value>
         <value condition="Window.IsVisible(musicplaylist)">$LOCALIZE[20011]</value>
-        <value condition="substring(Container.FolderPath,musicdb://top100/songs/,left)">$LOCALIZE[10504]</value>
-        <value condition="substring(Container.FolderPath,musicdb://top100/albums/,left)">$LOCALIZE[10505]</value>
-        <value condition="substring(Container.FolderPath,musicdb://genres/,left)">$LOCALIZE[135]</value>
-        <value condition="substring(Container.FolderPath,musicdb://artists/,left)">$LOCALIZE[133]</value>
-        <value condition="substring(Container.FolderPath,musicdb://albums/,left)">$LOCALIZE[132]</value>
-        <value condition="substring(Container.FolderPath,musicdb://songs/,left)">$LOCALIZE[134]</value>
-        <value condition="substring(Container.FolderPath,musicdb://top100/,left) + !substring(Container.FolderPath,musicdb://top100/songs/,left) + !substring(Container.FolderPath,musicdb://top100/albums/,left)">$LOCALIZE[271]</value>
-        <value condition="substring(Container.FolderPath,musicdb://recentlyaddedalbums/,left)">$LOCALIZE[359]</value>
-        <value condition="substring(Container.FolderPath,musicdb://recentlyplayedalbums/,left)">$LOCALIZE[517]</value>
-        <value condition="substring(Container.FolderPath,musicdb://compilations/,left)">$LOCALIZE[521]</value>
-        <value condition="substring(Container.FolderPath,musicdb://years/,left)">$LOCALIZE[652]</value>
-        <value condition="stringcompare(Container.FolderPath,special://musicplaylists/) | substring(Container.FolderPath,special://profile/playlists/music/,left)">$LOCALIZE[136]</value>
-        <value condition="stringcompare(Container.FolderPath,addons://sources/audio/) | substring(Container.FolderPath,plugin://plugin,left)">$LOCALIZE[1038]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://top100/songs/)">$LOCALIZE[10504]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://top100/albums/)">$LOCALIZE[10505]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://genres/)">$LOCALIZE[135]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://artists/)">$LOCALIZE[133]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://albums/)">$LOCALIZE[132]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://songs/)">$LOCALIZE[134]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://top100/) + !String.StartsWith(Container.FolderPath,musicdb://top100/songs/) + !String.StartsWith(Container.FolderPath,musicdb://top100/albums/)">$LOCALIZE[271]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://recentlyaddedalbums/)">$LOCALIZE[359]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://recentlyplayedalbums/)">$LOCALIZE[517]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://compilations/)">$LOCALIZE[521]</value>
+        <value condition="String.StartsWith(Container.FolderPath,musicdb://years/)">$LOCALIZE[652]</value>
+        <value condition="String.IsEqual(Container.FolderPath,special://musicplaylists/) | String.StartsWith(Container.FolderPath,special://profile/playlists/music/)">$LOCALIZE[136]</value>
+        <value condition="String.IsEqual(Container.FolderPath,addons://sources/audio/) | String.StartsWith(Container.FolderPath,plugin://plugin)">$LOCALIZE[1038]</value>
         <value>$LOCALIZE[2]</value>
     </variable>
 
@@ -42,65 +42,65 @@
     </variable>
 
     <variable name="VideoHeaderIcon">
-        <value condition="substring(Container.FolderPath,library://video/movies/,left) | substring(Container.FolderPath,videodb://movies/,left)">DefaultMovies.png</value>
-        <value condition="substring(Container.FolderPath,library://video/tvshows/,left) | substring(Container.FolderPath,videodb://tvshows/,left)">DefaultTVShows.png</value>
-        <value condition="substring(Container.FolderPath,library://video/inprogressshows.xml/,left)">DefaultInProgressShows.png</value>
-        <value condition="substring(Container.FolderPath,library://video/recentlyaddedmovies.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">DefaultRecentlyAddedMovies.png</value>
-        <value condition="substring(Container.FolderPath,library://video/recentlyaddedepisodes.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">DefaultRecentlyAddedEpisodes.png</value>
-        <value condition="substring(Container.FolderPath,special://videoplaylists/,left) | substring(Container.FolderPath,special://profile/playlists/video/,left)">DefaultPlaylist.png</value>
-        <value condition="substring(Container.FolderPath,addons://sources/video/,left) | substring(Container.FolderPath,plugin://plugin.video,left)">DefaultAddonVideo.png</value>
-        <value condition="substring(Container.FolderPath,videodb://recentlyaddedmusicvideos/,left)">DefaultRecentlyAddedMusicVideos.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/movies/) | String.StartsWith(Container.FolderPath,videodb://movies/)">DefaultMovies.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/tvshows/) | String.StartsWith(Container.FolderPath,videodb://tvshows/)">DefaultTVShows.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/inprogressshows.xml/)">DefaultInProgressShows.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/recentlyaddedmovies.xml/) | String.IsEqual(Container.FolderPath,videodb://recentlyaddedmovies/)">DefaultRecentlyAddedMovies.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/recentlyaddedepisodes.xml/) | String.IsEqual(Container.FolderPath,videodb://recentlyaddedepisodes/)">DefaultRecentlyAddedEpisodes.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,special://videoplaylists/) | String.StartsWith(Container.FolderPath,special://profile/playlists/video/)">DefaultPlaylist.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,addons://sources/video/) | String.StartsWith(Container.FolderPath,plugin://plugin.video)">DefaultAddonVideo.png</value>
+        <value condition="String.StartsWith(Container.FolderPath,videodb://recentlyaddedmusicvideos/)">DefaultRecentlyAddedMusicVideos.png</value>
         <value>DefaultFolder.png</value>
     </variable>
 
     <variable name="VideoHeaderLabel">
-        <value condition="substring(Container.FolderPath,library://video/movies/,left) | substring(Container.FolderPath,videodb://movies/,left)">$LOCALIZE[342]</value>
-        <value condition="substring(Container.FolderPath,library://video/tvshows/,left) | substring(Container.FolderPath,videodb://tvshows/,left)">$LOCALIZE[31446]</value>
-        <value condition="substring(Container.FolderPath,library://video/inprogressshows.xml/,left)">$LOCALIZE[626]</value>
-        <value condition="substring(Container.FolderPath,library://video/recentlyaddedmovies.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[342]</value>
-        <value condition="substring(Container.FolderPath,library://video/recentlyaddedepisodes.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[20387]</value>
-        <value condition="substring(Container.FolderPath,special://videoplaylists/,left) | substring(Container.FolderPath,special://profile/playlists/video/,left)">$LOCALIZE[20012]</value>
-        <value condition="substring(Container.FolderPath,addons://sources/video/,left) | substring(Container.FolderPath,plugin://plugin.video,left)">$LOCALIZE[1037]</value>
-        <value condition="!IsEmpty(Container.FolderPath)">$LOCALIZE[1214]</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/movies/) | String.StartsWith(Container.FolderPath,videodb://movies/)">$LOCALIZE[342]</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/tvshows/) | String.StartsWith(Container.FolderPath,videodb://tvshows/)">$LOCALIZE[31446]</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/inprogressshows.xml/)">$LOCALIZE[626]</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/recentlyaddedmovies.xml/) | String.IsEqual(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[342]</value>
+        <value condition="String.StartsWith(Container.FolderPath,library://video/recentlyaddedepisodes.xml/) | String.IsEqual(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[20387]</value>
+        <value condition="String.StartsWith(Container.FolderPath,special://videoplaylists/) | String.StartsWith(Container.FolderPath,special://profile/playlists/video/)">$LOCALIZE[20012]</value>
+        <value condition="String.StartsWith(Container.FolderPath,addons://sources/video/) | String.StartsWith(Container.FolderPath,plugin://plugin.video)">$LOCALIZE[1037]</value>
+        <value condition="!String.IsEmpty(Container.FolderPath)">$LOCALIZE[1214]</value>
         <value>$LOCALIZE[3]</value>
     </variable>
 
     <variable name="AddonHeaderIcon">
-        <value condition="substring(Container.FolderPath,albums,right)">DefaultAddonAlbumInfo.png</value>
-        <value condition="substring(Container.FolderPath,artists,right)">DefaultAddonArtistInfo.png</value>
-        <value condition="substring(Container.FolderPath,lyrics,right)">DefaultAddonLyrics.png</value>
-        <value condition="substring(Container.FolderPath,movies,right)">DefaultAddonMovieInfo.png</value>
-        <value condition="substring(Container.FolderPath,audio,right)">DefaultAddonMusic.png</value>
-        <value condition="substring(Container.FolderPath,musicvideos,right)">DefaultAddonMusicVideoInfo.png</value>
-        <value condition="substring(Container.FolderPath,image,right)">DefaultAddonPicture.png</value>
-        <value condition="substring(Container.FolderPath,executable,right)">DefaultAddonProgram.png</value>
-        <value condition="substring(Container.FolderPath,language,right)">DefaultAddonLanguage.png</value>
-        <value condition="substring(Container.FolderPath,uisounds,right)">DefaultAddonUISounds.png</value>
-        <value condition="substring(Container.FolderPath,infoproviders,right)">DefaultAddonInfoProvider.png</value>
-        <value condition="substring(Container.FolderPath,repository,right)">DefaultAddonRepository.png</value>
-        <value condition="substring(Container.FolderPath,audiodecoder,right)">DefaultAddonAudioDecoder.png</value>
-        <value condition="substring(Container.FolderPath,images,right)">DefaultAddonImages.png</value>
-        <value condition="substring(Container.FolderPath,audioencoder,right)">DefaultAddonAudioEncoder.png</value>
-        <value condition="substring(Container.FolderPath,item,right)">DefaultAddonContextItem.png</value>
-        <value condition="substring(Container.FolderPath,pvrclient,right)">DefaultAddonPVRClient.png</value>
-        <value condition="substring(Container.FolderPath,screensaver,right)">DefaultAddonScreensaver.png</value>
-        <value condition="substring(Container.FolderPath,adsp,right)">DefaultAddonAudioDSP.png</value>
-        <value condition="substring(Container.FolderPath,service,right)">DefaultAddonService.png</value>
-        <value condition="substring(Container.FolderPath,skin,right)">DefaultAddonSkin.png</value>
-        <value condition="substring(Container.FolderPath,lookandfeel,right)">DefaultAddonSkin.png</value>
-        <value condition="substring(Container.FolderPath,subtitles,right)">DefaultAddonSubtitles.png</value>
-        <value condition="substring(Container.FolderPath,tvshows,right)">DefaultAddonTvInfo.png</value>
-        <value condition="substring(Container.FolderPath,video,right)">DefaultAddonVideo.png</value>
-        <value condition="substring(Container.FolderPath,musicviz,right)">DefaultAddonVisualization.png</value>
-        <value condition="substring(Container.FolderPath,weather,right)">DefaultAddonWeather.png</value>
-        <value condition="substring(Container.FolderPath,webinterface,right)">DefaultAddonWebSkin.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,albums)">DefaultAddonAlbumInfo.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,artists)">DefaultAddonArtistInfo.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,lyrics)">DefaultAddonLyrics.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,movies)">DefaultAddonMovieInfo.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,audio)">DefaultAddonMusic.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,musicvideos)">DefaultAddonMusicVideoInfo.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,image)">DefaultAddonPicture.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,executable)">DefaultAddonProgram.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,language)">DefaultAddonLanguage.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,uisounds)">DefaultAddonUISounds.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,infoproviders)">DefaultAddonInfoProvider.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,repository)">DefaultAddonRepository.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,audiodecoder)">DefaultAddonAudioDecoder.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,images)">DefaultAddonImages.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,audioencoder)">DefaultAddonAudioEncoder.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,item)">DefaultAddonContextItem.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,pvrclient)">DefaultAddonPVRClient.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,screensaver)">DefaultAddonScreensaver.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,adsp)">DefaultAddonAudioDSP.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,service)">DefaultAddonService.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,skin)">DefaultAddonSkin.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,lookandfeel)">DefaultAddonSkin.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,subtitles)">DefaultAddonSubtitles.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,tvshows)">DefaultAddonTvInfo.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,video)">DefaultAddonVideo.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,musicviz)">DefaultAddonVisualization.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,weather)">DefaultAddonWeather.png</value>
+        <value condition="String.EndsWith(Container.FolderPath,webinterface)">DefaultAddonWebSkin.png</value>
         <value>DefaultAddon.png</value>
     </variable>
 
     <variable name="AddonHeaderLabel">
-        <value condition="substring(Container.FolderPath,addons://disabled,left)">$LOCALIZE[24039]</value>
-        <value condition="substring(Container.FolderPath,addons://enabled,left)">$LOCALIZE[24062]</value>
-        <value condition="substring(Container.FolderPath,addons://repos,left)">$LOCALIZE[24033]</value>
+        <value condition="String.StartsWith(Container.FolderPath,addons://disabled)">$LOCALIZE[24039]</value>
+        <value condition="String.StartsWith(Container.FolderPath,addons://enabled)">$LOCALIZE[24062]</value>
+        <value condition="String.StartsWith(Container.FolderPath,addons://repos)">$LOCALIZE[24033]</value>
         <value>$LOCALIZE[24001]</value>
     </variable>
 
@@ -180,7 +180,7 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>IntegerGreaterThan(Container.NumItems,0) + !IntegerGreaterThan(Container.NumItems,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
+                <visible>Integer.IsEqual(Container.NumItems,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
             </control>
             <control type="label">
                 <width min="50" max="600">auto</width>
@@ -190,7 +190,7 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>!IntegerGreaterThan(Container.NumItems,0) | IntegerGreaterThan(Container.NumItems,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
+                <visible>[Integer.IsEqual(Container.NumItems,0) | Integer.IsGreater(Container.NumItems,1)] + !Window.IsVisible(script-videoextras-main.xml)</visible>
             </control>
             <control type="label">
                 <width min="50" max="400">auto</width>
@@ -200,7 +200,7 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>![Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
+                <visible>![Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + Integer.IsGreater(Container.NumPages,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
             </control>
             <control type="label">
                 <width min="50" max="400">auto</width>
@@ -210,7 +210,7 @@
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
                 <align>left</align>
-                <visible>[Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1) + !IsEmpty(Container.NumItems) + !Window.IsVisible(home) + !Window.IsVisible(script-videoextras-main.xml)</visible>
+                <visible>[Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + Integer.IsGreater(Container.NumPages,1) + !String.IsEmpty(Container.NumItems) + !Window.IsVisible(home) + !Window.IsVisible(script-videoextras-main.xml)</visible>
             </control>
             <control type="label">
                 <width min="50" max="400">auto</width>
@@ -309,7 +309,7 @@
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!substring(Container.FolderPath,special,left) + !substring(Container.FolderPath,addons,left) + !substring(Container.FolderPath,sources,left) + !Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://movies/)</visible>
+                        <visible>!String.StartsWith(Container.FolderPath,special) + !String.StartsWith(Container.FolderPath,addons) + !String.StartsWith(Container.FolderPath,sources) + !Container.Content(episodes) + !String.IsEqual(Container.FolderPath,videodb://movies/)</visible>
                     </control>
                     <control type="label">
                         <width min="0" max="500">auto</width>
@@ -351,7 +351,7 @@
                         <textcolor>C0FFFFFF</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <visible>!String.IsEmpty(ListItem.Title)</visible>
                     </control>
                 </control>
             </control>
@@ -392,7 +392,7 @@
                     <textcolor>aawhite</textcolor>
                     <scroll>false</scroll>
                     <align>left</align>
-                    <visible>!stringcompare(Container.FolderPath,musicdb://genres/) + !stringcompare(Container.FolderPath,musicdb://artists/) + !stringcompare(Container.FolderPath,musicdb://albums/) + !stringcompare(Container.FolderPath,musicdb://songs/) + !stringcompare(Container.FolderPath,musicdb://top100/) + !stringcompare(Container.FolderPath,musicdb://recentlyaddedalbums/) + !stringcompare(Container.FolderPath,musicdb://recentlyplayedalbums/) + !stringcompare(Container.FolderPath,musicdb://compilations/) + !stringcompare(Container.FolderPath,musicdb://years/) + !stringcompare(Container.FolderPath,musicdb://top100/songs/) + !stringcompare(Container.FolderPath,special://musicplaylists/) + !Container.Content(albums)</visible>
+                    <visible>!String.IsEqual(Container.FolderPath,musicdb://genres/) + !String.IsEqual(Container.FolderPath,musicdb://artists/) + !String.IsEqual(Container.FolderPath,musicdb://albums/) + !String.IsEqual(Container.FolderPath,musicdb://songs/) + !String.IsEqual(Container.FolderPath,musicdb://top100/) + !String.IsEqual(Container.FolderPath,musicdb://recentlyaddedalbums/) + !String.IsEqual(Container.FolderPath,musicdb://recentlyplayedalbums/) + !String.IsEqual(Container.FolderPath,musicdb://compilations/) + !String.IsEqual(Container.FolderPath,musicdb://years/) + !String.IsEqual(Container.FolderPath,musicdb://top100/songs/) + !String.IsEqual(Container.FolderPath,special://musicplaylists/) + !Container.Content(albums)</visible>
                 </control>
                 <control type="label">
                     <width min="0" max="500">auto</width>
@@ -443,7 +443,7 @@
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!IsEmpty(Container.FolderPath)</visible>
+                        <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     </control>
                 </control>
             </control>
@@ -485,7 +485,7 @@
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!IsEmpty(Container.FolderPath)</visible>
+                        <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     </control>
                 </control>
             </control>
@@ -527,7 +527,7 @@
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!IsEmpty(Container.FolderPath) + !stringcompare(Container.FolderPath,addons://disabled/) + !stringcompare(Container.FolderPath,addons://enabled/) + !stringcompare(Container.FolderPath,addons://repos/)</visible>
+                        <visible>!String.IsEmpty(Container.FolderPath) + !String.IsEqual(Container.FolderPath,addons://disabled/) + !String.IsEqual(Container.FolderPath,addons://enabled/) + !String.IsEqual(Container.FolderPath,addons://repos/)</visible>
                     </control>
                 </control>
             </control>
@@ -741,7 +741,7 @@
                         <textcolor>C0FFFFFF</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                     </control>
                     <control type="label">
                         <width min="0" max="500">auto</width>
@@ -751,7 +751,7 @@
                         <textcolor>C0FFFFFF</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                     </control>
                     <control type="label">
                         <width min="0" max="500">auto</width>

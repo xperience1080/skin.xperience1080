@@ -98,7 +98,7 @@
                 <include>Animation_FavButton</include>
                 <include>homebuttonsanim3</include>
                 <visible>!Skin.HasSetting(KioskMode)</visible>
-                <visible allowhiddenfocus="true">!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch-main.xml) + !Window.IsVisible(script-globalsearch-infodialog.xml) + !Window.IsVisible(script-globalsearch-contextmenu.xml) + !Window.IsVisible(virtualkeyboard) + IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols)</visible>
+                <visible allowhiddenfocus="true">!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch-main.xml) + !Window.IsVisible(script-globalsearch-infodialog.xml) + !Window.IsVisible(script-globalsearch-contextmenu.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols)</visible>
             </control>
             <control type="label">
                 <description>Favourites Label</description>
@@ -113,7 +113,7 @@
                 <include>Animation_FavButton</include>
                 <include>homebuttonsanim4</include>
                 <visible>!Skin.HasSetting(KioskMode)</visible>
-                <visible>!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch-main.xml) + !Window.IsVisible(script-globalsearch-infodialog.xml) + !Window.IsVisible(script-globalsearch-contextmenu.xml) + !Window.IsVisible(virtualkeyboard) + IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols)</visible>
+                <visible>!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch-main.xml) + !Window.IsVisible(script-globalsearch-infodialog.xml) + !Window.IsVisible(script-globalsearch-contextmenu.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols)</visible>
             </control>
         </control>
     </include>
@@ -149,12 +149,12 @@
     </include>
 
     <variable name="HomePictureImageSingle">
-        <value condition="IsEmpty(Skin.String(HomePicturesSingleImage))">$INFO[Skin.String(GlobalBackdropSingle)]</value>
+        <value condition="String.IsEmpty(Skin.String(HomePicturesSingleImage))">$INFO[Skin.String(GlobalBackdropSingle)]</value>
         <value>$INFO[Skin.String(HomePicturesSingleImage)]</value>
     </variable>
 
     <variable name="HomePictureImageMulti">
-        <value condition="IsEmpty(Skin.String(HomePicturesMultiImage))">$INFO[Skin.String(GlobalBackdropMulti)]</value>
+        <value condition="String.IsEmpty(Skin.String(HomePicturesMultiImage))">$INFO[Skin.String(GlobalBackdropMulti)]</value>
         <value>$INFO[Skin.String(HomePicturesMultiImage)]</value>
     </variable>
 
@@ -169,7 +169,7 @@
 
     <include name="HomeProfileInfo">
         <control type="group">
-            <visible>!Window.IsActive(favourites) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml) + ![Window.IsVisible(virtualkeyboard) + !IsEmpty(Window.Property(HomeSearch))]</visible>
+            <visible>!Window.IsActive(favourites) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml) + ![Window.IsVisible(virtualkeyboard) + !String.IsEmpty(Window.Property(HomeSearch))]</visible>
             <posx>75</posx>
             <posy>24</posy>
             <include>BannerListInfoAnimation</include>
@@ -342,7 +342,7 @@
             <itemgap>45</itemgap>
             <align>center</align>
             <usecontrolcoords>true</usecontrolcoords>
-            <visible>!Window.IsActive(favourites) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml) + ![Window.IsVisible(virtualkeyboard) + !IsEmpty(Window.Property(HomeSearch))]</visible>
+            <visible>!Window.IsActive(favourites) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml) + ![Window.IsVisible(virtualkeyboard) + !String.IsEmpty(Window.Property(HomeSearch))]</visible>
             <control type="image">
                 <description>Search</description>
                 <posx>0</posx>

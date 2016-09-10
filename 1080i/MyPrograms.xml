@@ -120,7 +120,7 @@
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/custom-nf.png</texturenofocus>
                     <onclick>Skin.SetString(GameTile.Path,$INFO[Container.FolderPath])</onclick>
                     <onclick>SetProperty(BounceLeft,1,Home)</onclick>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                     <animation type="Conditional" condition="Window.IsVisible(3008)" reversible="false">
                         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
                     </animation>
@@ -133,7 +133,7 @@
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/custom-back-nf.png</texturenofocus>
                     <onclick>Skin.Reset(GameTile.Path)</onclick>
                     <onclick>SetProperty(BounceRight,1,Home)</onclick>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                     <animation type="Conditional" condition="Window.IsVisible(3009)" reversible="false">
                         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
                     </animation>
@@ -385,7 +385,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="205">
                     <description>Info List Square</description>
@@ -397,7 +397,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="206">
                     <description>Info Panel</description>
@@ -409,7 +409,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="207">
                     <description>Info Panel Square</description>
@@ -421,7 +421,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="208">
                     <description>Landscape</description>
@@ -433,7 +433,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="209">
                     <description>Poster</description>
@@ -445,7 +445,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="210">
                     <description>Poster square</description>
@@ -457,7 +457,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="211">
                     <description>Thumbnail</description>
@@ -469,7 +469,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="212">
                     <description>Thumbnail Square</description>
@@ -481,7 +481,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="213">
                     <description>Banner</description>
@@ -493,7 +493,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
                 <control type="radiobutton" id="214">
                     <description>Banner Square</description>
@@ -505,7 +505,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
                 </control>
             </control>
 

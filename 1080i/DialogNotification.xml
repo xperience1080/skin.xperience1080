@@ -34,7 +34,7 @@
                     <textcolor>C0FFFFFF</textcolor>
                     <scroll>false</scroll>
                     <align>right</align>
-                    <animation effect="slide" end="0,16" time="300" tween="sine" easing="inout" condition="IsEmpty(Control.GetLabel(402))">Conditional</animation>
+                    <animation effect="slide" end="0,16" time="300" tween="sine" easing="inout" condition="String.IsEmpty(Control.GetLabel(402))">Conditional</animation>
                 </control>
                 <control type="label">
                     <description>Line 2</description>
@@ -93,7 +93,7 @@
         <control type="group">
 			<include>BannerListInfoAnimation</include>
 			<visible>Window.IsActive(fullscreenvideo) | [Window.IsActive(visualisation) + Skin.HasSetting(OSDMusicAlt.Enabled)]</visible>
-			<animation effect="slide" end="-100" time="300" tween="sine" easing="inout" condition="Player.Muted | substring(Player.Volume,-60.0)">Conditional</animation>
+			<animation effect="slide" end="-100" time="300" tween="sine" easing="inout" condition="Player.Muted | String.Contains(Player.Volume,-60.0)">Conditional</animation>
 			<animation effect="slide" end="-213" time="300" tween="sine" easing="inout" condition="Window.IsActive(volumebar) + !Player.Passthrough">Conditional</animation>
 			<animation effect="slide" end="-463" time="300" tween="sine" easing="inout" condition="Window.IsActive(volumebar) + Player.Passthrough">Conditional</animation>
 			<control type="image">
@@ -114,7 +114,7 @@
 				<textcolor>aawhite</textcolor>
 				<label>$INFO[Control.GetLabel(401)]</label>
 				<scroll>false</scroll>
-				<animation effect="slide" end="0,14" time="300" tween="sine" easing="inout" condition="IsEmpty(Control.GetLabel(402))">Conditional</animation>
+				<animation effect="slide" end="0,14" time="300" tween="sine" easing="inout" condition="String.IsEmpty(Control.GetLabel(402))">Conditional</animation>
 			</control>
 			<control type="label">
 				<posx>1715</posx>

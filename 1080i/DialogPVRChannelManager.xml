@@ -552,7 +552,7 @@
                             <onright>8003</onright>
                             <onup>14</onup>
                             <ondown>31</ondown>
-                            <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         </control>
                         <control type="button" id="34">
                             <description>TV/Radio Button</description>
@@ -573,7 +573,7 @@
                             <onright>8003</onright>
                             <onup>14</onup>
                             <ondown>31</ondown>
-                            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         </control>
                     </control>
                 </control>
@@ -589,11 +589,11 @@
                     <label>$LOCALIZE[31921]</label>
                     <onleft>5</onleft>
                     <onright>6</onright>
-                    <onup condition="!IsEmpty(Window.Property(Focus))">33</onup>
-                    <onup condition="IsEmpty(Window.Property(Focus))">8000</onup>
+                    <onup condition="!String.IsEmpty(Window.Property(Focus))">33</onup>
+                    <onup condition="String.IsEmpty(Window.Property(Focus))">8000</onup>
                     <onup>ClearProperty(Focus)</onup>
-                    <ondown condition="!IsEmpty(Window.Property(Focus))">7</ondown>
-                    <ondown condition="IsEmpty(Window.Property(Focus))">8000</ondown>
+                    <ondown condition="!String.IsEmpty(Window.Property(Focus))">7</ondown>
+                    <ondown condition="String.IsEmpty(Window.Property(Focus))">8000</ondown>
                     <ondown>ClearProperty(Focus)</ondown>
                 </control>
                 <control type="button" id="6">
@@ -605,11 +605,11 @@
                     <include>DialogButtonDimensions</include>
                     <onleft>4</onleft>
                     <onright>5</onright>
-                    <onup condition="!IsEmpty(Window.Property(Focus))">33</onup>
-                    <onup condition="IsEmpty(Window.Property(Focus))">8000</onup>
+                    <onup condition="!String.IsEmpty(Window.Property(Focus))">33</onup>
+                    <onup condition="String.IsEmpty(Window.Property(Focus))">8000</onup>
                     <onup>ClearProperty(Focus)</onup>
-                    <ondown condition="!IsEmpty(Window.Property(Focus))">7</ondown>
-                    <ondown condition="IsEmpty(Window.Property(Focus))">8000</ondown>
+                    <ondown condition="!String.IsEmpty(Window.Property(Focus))">7</ondown>
+                    <ondown condition="String.IsEmpty(Window.Property(Focus))">8000</ondown>
                     <ondown>ClearProperty(Focus)</ondown>
                 </control>
                 <control type="button" id="5">
@@ -622,11 +622,11 @@
                     <texturenofocus border="0,0,100,0">buttons/options-right-nf.png</texturenofocus>
                     <onleft>6</onleft>
                     <onright>4</onright>
-                    <onup condition="!IsEmpty(Window.Property(Focus))">33</onup>
-                    <onup condition="IsEmpty(Window.Property(Focus))">8000</onup>
+                    <onup condition="!String.IsEmpty(Window.Property(Focus))">33</onup>
+                    <onup condition="String.IsEmpty(Window.Property(Focus))">8000</onup>
                     <onup>ClearProperty(Focus)</onup>
-                    <ondown condition="!IsEmpty(Window.Property(Focus))">7</ondown>
-                    <ondown condition="IsEmpty(Window.Property(Focus))">8000</ondown>
+                    <ondown condition="!String.IsEmpty(Window.Property(Focus))">7</ondown>
+                    <ondown condition="String.IsEmpty(Window.Property(Focus))">8000</ondown>
                     <ondown>ClearProperty(Focus)</ondown>
                 </control>
             </control>

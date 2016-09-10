@@ -50,12 +50,12 @@
     </include>
 
     <variable name="PVRChannelManagerItemsPageLabel">
-        <value condition="IntegerGreaterThan(Container(20).NumItems,0) + !IntegerGreaterThan(Container(20).NumItems,1)">$INFO[Container(20).NumItems,, $LOCALIZE[19029]]$INFO[Container(20).CurrentPage, • $LOCALIZE[31819] ,]$INFO[Container(20).NumPages,/,]</value>
+        <value condition="Integer.IsEqual(Container(20).NumItems,1)">$INFO[Container(20).NumItems,, $LOCALIZE[19029]]$INFO[Container(20).CurrentPage, • $LOCALIZE[31819] ,]$INFO[Container(20).NumPages,/,]</value>
         <value>$INFO[Container(20).NumItems,, $LOCALIZE[19019]]$INFO[Container(20).CurrentPage, • $LOCALIZE[31819] ,]$INFO[Container(20).NumPages,/,]</value>
     </variable>
 
     <variable name="PVRChannelsOSDItemsPageLabel">
-        <value condition="IntegerGreaterThan(Container(20).NumItems,0) + !IntegerGreaterThan(Container(11).NumItems,1)">$INFO[Container(11).NumItems,, $LOCALIZE[19029]]$INFO[Container(11).CurrentPage, • $LOCALIZE[31819] ,]$INFO[Container(11).NumPages,/,]</value>
+        <value condition="Integer.IsEqual(Container(20).NumItems,1)">$INFO[Container(11).NumItems,, $LOCALIZE[19029]]$INFO[Container(11).CurrentPage, • $LOCALIZE[31819] ,]$INFO[Container(11).NumPages,/,]</value>
         <value>$INFO[Container(11).NumItems,, $LOCALIZE[19019]]$INFO[Container(11).CurrentPage, • $LOCALIZE[31819] ,]$INFO[Container(11).NumPages,/,]</value>
     </variable>
 
@@ -65,32 +65,32 @@
     </variable>
 
     <variable name="FileBrowserArtThumb">
-        <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+        <value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/medium.png]</value>
     </variable>
 
     <variable name="FileBrowserArtThumbLarge">
-        <value condition="!IsEmpty(Container(450).ListItem.Thumb)">$INFO[Container(450).ListItem.Thumb]</value>
+        <value condition="!String.IsEmpty(Container(450).ListItem.Thumb)">$INFO[Container(450).ListItem.Thumb]</value>
         <value>$INFO[Container(450).ListItem.ActualIcon,views/fallbacks/,/large.png]</value>
     </variable>
 
     <variable name="FileBrowserArtSquare">
-        <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+        <value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/square-medium.png]</value>
     </variable>
 
     <variable name="FileBrowserArtLandscape">
-        <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+        <value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/landscape.png]</value>
     </variable>
 
     <variable name="FileBrowserArtBanner">
-        <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+        <value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/banner.png]</value>
     </variable>
 
     <variable name="SeekLabel">
-        <value condition="!IsEmpty(Player.SeekStepSize)">$INFO[Player.SeekStepSize,$LOCALIZE[773] ,]</value>
+        <value condition="!String.IsEmpty(Player.SeekStepSize)">$INFO[Player.SeekStepSize,$LOCALIZE[773] ,]</value>
         <value condition="Player.DisplayAfterSeek">$INFO[Player.SeekOffset,$LOCALIZE[773] ,]</value>
         <value condition="Player.Seeking">$LOCALIZE[773]</value>
     </variable>
@@ -607,7 +607,7 @@
     <include name="DialogSelect">
         <control type="group">
             <include>KeyboardAnimations</include>
-            <visible>!Window.IsVisible(yesnodialog) + !Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput) + ![Window.IsVisible(script-LibraryEditor-genre.xml) + IsEmpty(Window.Property(ShowDialog))] + !Window.IsVisible(script-LibraryEditor-dialogs.xml)</visible>
+            <visible>!Window.IsVisible(yesnodialog) + !Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput) + ![Window.IsVisible(script-LibraryEditor-genre.xml) + String.IsEmpty(Window.Property(ShowDialog))] + !Window.IsVisible(script-LibraryEditor-dialogs.xml)</visible>
 
             <control type="label" id="1">
                 <description>Heading</description>
@@ -748,7 +748,7 @@
                             <textcolor>FF585858</textcolor>
                             <selectedcolor>FF585858</selectedcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Label2)</visible>
+                            <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         </control>
                     </control>
                     <control type="group">
@@ -778,7 +778,7 @@
                             <textcolor>FF585858</textcolor>
                             <selectedcolor>FF585858</selectedcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Label2)</visible>
+                            <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         </control>
                         <control type="image">
                             <posx>584</posx>
@@ -829,7 +829,7 @@
                                 <textcolor>FF585858</textcolor>
                                 <selectedcolor>FF585858</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                             </control>
                         </control>
                         <control type="group">
@@ -859,7 +859,7 @@
                                 <textcolor>FF585858</textcolor>
                                 <selectedcolor>FF585858</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                             </control>
                             <control type="image">
                                 <posx>584</posx>
@@ -905,7 +905,7 @@
                                 <aligny>center</aligny>
                                 <textcolor>eewhite</textcolor>
                                 <selectedcolor>eewhite</selectedcolor>
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                             </control>
                         </control>
                         <control type="group">
@@ -933,7 +933,7 @@
                                 <aligny>center</aligny>
                                 <textcolor>eewhite</textcolor>
                                 <selectedcolor>eewhite</selectedcolor>
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                             </control>
                             <control type="image">
                                 <posx>584</posx>
@@ -1004,8 +1004,8 @@
                 </itemlayout>
                 <focusedlayout height="60">
                     <control type="button">
-                        <onfocus condition="!IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Label,$INFO[Container(6).ListItem.Label])</onfocus>
-                        <onfocus condition="!IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Icon,$INFO[Container(6).ListItem.Icon])</onfocus>
+                        <onfocus condition="!String.IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Label,$INFO[Container(6).ListItem.Label])</onfocus>
+                        <onfocus condition="!String.IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Icon,$INFO[Container(6).ListItem.Icon])</onfocus>
                     </control>
                     <control type="group">
                         <visible>!Control.HasFocus(6)</visible>
@@ -1152,7 +1152,7 @@
                     <ondown condition="Control.IsVisible(3)">3</ondown>
                     <onup condition="Control.IsVisible(6)">6</onup>
                     <ondown condition="Control.IsVisible(6)">6</ondown>
-                    <animation effect="slide" end="-200" time="0" condition="IsEmpty(Control.GetLabel(5))">Conditional</animation>
+                    <animation effect="slide" end="-200" time="0" condition="String.IsEmpty(Control.GetLabel(5))">Conditional</animation>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(7)">Conditional</animation>
                 </control>
                 <control type="label">
@@ -1182,7 +1182,7 @@
     <include name="DialogSelectOSD">
         <control type="group">
             <include>NowPlayingFullscreen</include>
-            <visible>!Window.IsVisible(yesnodialog) + !Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput) + ![Window.IsVisible(script-LibraryEditor-genre.xml) + IsEmpty(Window.Property(ShowDialog))] + !Window.IsVisible(script-LibraryEditor-dialogs.xml) + !Window.IsVisible(textviewer)</visible>
+            <visible>!Window.IsVisible(yesnodialog) + !Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput) + ![Window.IsVisible(script-LibraryEditor-genre.xml) + String.IsEmpty(Window.Property(ShowDialog))] + !Window.IsVisible(script-LibraryEditor-dialogs.xml) + !Window.IsVisible(textviewer)</visible>
 
             <control type="image">
                 <include>FullscreenDimensions</include>
@@ -1235,7 +1235,7 @@
                     <focusedcolor>96FFFFFF</focusedcolor>
                     <disabledcolor>96FFFFFF</disabledcolor>
                     <enable>false</enable>
-                    <visible>!IsEmpty(Container(6).ListItem.Property(Addon.Creator))</visible>
+                    <visible>!String.IsEmpty(Container(6).ListItem.Property(Addon.Creator))</visible>
                 </control>
             </control>
 
@@ -1274,7 +1274,7 @@
                         <aligny>center</aligny>
                         <textcolor>96FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout height="76">
@@ -1305,7 +1305,7 @@
                             <aligny>center</aligny>
                             <textcolor>96FFFFFF</textcolor>
                             <scroll>false</scroll>
-                            <visible>!IsEmpty(ListItem.Label2)</visible>
+                            <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         </control>
                     </control>
                     <control type="group">
@@ -1339,7 +1339,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <visible>!IsEmpty(ListItem.Label2)</visible>
+                            <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         </control>
                     </control>
                 </focusedlayout>
@@ -1530,7 +1530,7 @@
                     <ondown condition="Control.IsVisible(3)">3</ondown>
                     <onup condition="Control.IsVisible(6)">6</onup>
                     <ondown condition="Control.IsVisible(6)">6</ondown>
-                    <animation effect="slide" end="-200" time="0" condition="IsEmpty(Control.GetLabel(5))">Conditional</animation>
+                    <animation effect="slide" end="-200" time="0" condition="String.IsEmpty(Control.GetLabel(5))">Conditional</animation>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(7)">Conditional</animation>
                 </control>
                 <control type="group">
@@ -1732,7 +1732,7 @@
             <control type="group">
                 <include>KeyboardAnimations</include>
                 <include>OptionsShutdownAnimation</include>
-                <visible>!Window.IsVisible(virtualkeyboard) + ![Window.IsVisible(networksetup) + IsEmpty(Window.Property(ShowDialog))] + !Window.IsVisible(locksettings)</visible>
+                <visible>!Window.IsVisible(virtualkeyboard) + ![Window.IsVisible(networksetup) + String.IsEmpty(Window.Property(ShowDialog))] + !Window.IsVisible(locksettings)</visible>
 
                 <control type="image">
                     <posx>920</posx>
@@ -1781,7 +1781,7 @@
                     <height>478</height>
                     <aspectratio>keep</aspectratio>
                     <texture>$INFO[ListItem.ActualIcon,dialogs/filebrowser/icons/,]</texture>
-                    <visible>IsEmpty(Container(450).ListItem.Thumb)</visible>
+                    <visible>String.IsEmpty(Container(450).ListItem.Thumb)</visible>
                 </control>
 
                 <control type="image">
@@ -1791,7 +1791,7 @@
                     <height>478</height>
                     <aspectratio>keep</aspectratio>
                     <texture background="true">$INFO[Container(450).ListItem.Thumb]</texture>
-                    <visible>!IsEmpty(Container(450).ListItem.Thumb)</visible>
+                    <visible>!String.IsEmpty(Container(450).ListItem.Thumb)</visible>
                 </control>
 
                 <include>SortLetterFileBrowser</include>
@@ -1834,13 +1834,13 @@
                             <aligny>center</aligny>
                             <textcolor>FF585858</textcolor>
                             <scroll>false</scroll>
-                            <animation effect="slide" end="-50" time="0" condition="IsEmpty(ListItem.Icon)">Conditional</animation>
+                            <animation effect="slide" end="-50" time="0" condition="String.IsEmpty(ListItem.Icon)">Conditional</animation>
                         </control>
                     </itemlayout>
                     <focusedlayout height="60">
                         <control type="button">
-                            <onfocus condition="!IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Label,$INFO[Container(450).ListItem.Label],selectdialog)</onfocus>
-                            <onfocus condition="!IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Icon,$INFO[Container(450).ListItem.Icon],selectdialog)</onfocus>
+                            <onfocus condition="!String.IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Label,$INFO[Container(450).ListItem.Label],selectdialog)</onfocus>
+                            <onfocus condition="!String.IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Icon,$INFO[Container(450).ListItem.Icon],selectdialog)</onfocus>
                         </control>
                         <control type="group">
                             <visible>!Control.HasFocus(450)</visible>
@@ -1872,7 +1872,7 @@
                                 <aligny>center</aligny>
                                 <textcolor>FF585858</textcolor>
                                 <scroll>false</scroll>
-                                <animation effect="slide" end="-50" time="0" condition="IsEmpty(ListItem.Icon)">Conditional</animation>
+                                <animation effect="slide" end="-50" time="0" condition="String.IsEmpty(ListItem.Icon)">Conditional</animation>
                             </control>
                         </control>
                         <control type="group">
@@ -1902,7 +1902,7 @@
                                 <font>Font-Condensed-S32</font>
                                 <align>left</align>
                                 <aligny>center</aligny>
-                                <animation effect="slide" end="-50" time="0" condition="IsEmpty(ListItem.Icon)">Conditional</animation>
+                                <animation effect="slide" end="-50" time="0" condition="String.IsEmpty(ListItem.Icon)">Conditional</animation>
                             </control>
                         </control>
                     </focusedlayout>
@@ -1950,8 +1950,8 @@
                     </itemlayout>
                     <focusedlayout height="60">
                         <control type="button">
-                            <onfocus condition="!IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Label,$INFO[Container(451).ListItem.Label],selectdialog)</onfocus>
-                            <onfocus condition="!IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Icon,$INFO[Container(451).ListItem.Icon],selectdialog)</onfocus>
+                            <onfocus condition="!String.IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Label,$INFO[Container(451).ListItem.Label],selectdialog)</onfocus>
+                            <onfocus condition="!String.IsEmpty(Window(selectdialog).Property(Property))">SetProperty(Icon,$INFO[Container(451).ListItem.Icon],selectdialog)</onfocus>
                         </control>
                         <control type="group">
                             <visible>!Control.HasFocus(451)</visible>
@@ -1983,7 +1983,7 @@
                                 <aligny>center</aligny>
                                 <textcolor>FF585858</textcolor>
                                 <scroll>false</scroll>
-                                <animation effect="slide" end="-50" time="0" condition="IsEmpty(ListItem.Icon)">Conditional</animation>
+                                <animation effect="slide" end="-50" time="0" condition="String.IsEmpty(ListItem.Icon)">Conditional</animation>
                             </control>
                         </control>
                         <control type="group">
@@ -2013,7 +2013,7 @@
                                 <font>Font-Condensed-S32</font>
                                 <align>left</align>
                                 <aligny>center</aligny>
-                                <animation effect="slide" end="-50" time="0" condition="IsEmpty(ListItem.Icon)">Conditional</animation>
+                                <animation effect="slide" end="-50" time="0" condition="String.IsEmpty(ListItem.Icon)">Conditional</animation>
                             </control>
                         </control>
                     </focusedlayout>
@@ -2121,10 +2121,10 @@
                 <align>left</align>
                 <scroll>false</scroll>
                 <textoffsetx>30</textoffsetx>
-                <include condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
+                <include condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
             </control>
 
             <control type="label">
@@ -2137,7 +2137,7 @@
                 <textcolor>eewhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>StringCompare(Window(3004).Property(ChooseArt),poster)</visible>
+                <visible>String.IsEqual(Window(3004).Property(ChooseArt),poster)</visible>
             </control>
 
             <control type="image">
@@ -2146,10 +2146,10 @@
                 <posy>900</posy>
                 <height>125</height>
                 <texture>windows/home/item-shadow.png</texture>
-                <include condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthSquare</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),poster)">ArtDialogShadowWidthPoster</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogShadowWidthBanner</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthLandscape</include>
+                <include condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthSquare</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">ArtDialogShadowWidthPoster</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">ArtDialogShadowWidthBanner</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthLandscape</include>
             </control>
 
             <control type="image">
@@ -2160,16 +2160,16 @@
                 <aspectratio>scale</aspectratio>
                 <texture background="true">$VAR[FileBrowserArtThumbLarge]</texture>
                 <fadetime>500</fadetime>
-                <visible>StringCompare(Window(3004).Property(ChooseArt),poster)</visible>
+                <visible>String.IsEqual(Window(3004).Property(ChooseArt),poster)</visible>
             </control>
 
             <control type="panel" id="450">
                 <posx>88</posx>
                 <posy>208</posy>
-                <include condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
+                <include condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
                 <height>716</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>vertical</orientation>
@@ -2180,7 +2180,7 @@
                 <ondown>450</ondown>
                 <preloaditems>2</preloaditems>
                 <pagecontrol>61</pagecontrol>
-                <itemlayout width="358" height="357" condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">
+                <itemlayout width="358" height="357" condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">
                     <control type="image">
                         <description>Poster</description>
                         <posx>12</posx>
@@ -2207,10 +2207,10 @@
                         <height>100</height>
                         <texture>overlays/addons/enabled.png</texture>
                         <colordiffuse>eewhite</colordiffuse>
-                        <visible>substring(ListItem.Label,$LOCALIZE[13512]) | substring(ListItem.Label,$LOCALIZE[20440])</visible>
+                        <visible>String.Contains(ListItem.Label,$LOCALIZE[13512]) | String.Contains(ListItem.Label,$LOCALIZE[20440])</visible>
                     </control>
                 </itemlayout>
-                <itemlayout width="248" height="357" condition="StringCompare(Window(3004).Property(ChooseArt),poster)">
+                <itemlayout width="248" height="357" condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">
                     <control type="image">
                         <description>Poster</description>
                         <posx>12</posx>
@@ -2237,10 +2237,10 @@
                         <height>100</height>
                         <texture>overlays/addons/enabled.png</texture>
                         <colordiffuse>eewhite</colordiffuse>
-                        <visible>substring(ListItem.Label,$LOCALIZE[13512]) | substring(ListItem.Label,$LOCALIZE[20440])</visible>
+                        <visible>String.Contains(ListItem.Label,$LOCALIZE[13512]) | String.Contains(ListItem.Label,$LOCALIZE[20440])</visible>
                     </control>
                 </itemlayout>
-                <itemlayout width="615" height="357" condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">
+                <itemlayout width="615" height="357" condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">
                     <control type="image">
                         <description>Poster</description>
                         <posx>12</posx>
@@ -2267,10 +2267,10 @@
                         <height>100</height>
                         <texture>overlays/addons/enabled.png</texture>
                         <colordiffuse>eewhite</colordiffuse>
-                        <visible>substring(ListItem.Label,$LOCALIZE[13512]) | substring(ListItem.Label,$LOCALIZE[20440])</visible>
+                        <visible>String.Contains(ListItem.Label,$LOCALIZE[13512]) | String.Contains(ListItem.Label,$LOCALIZE[20440])</visible>
                     </control>
                 </itemlayout>
-                <itemlayout width="846" height="178" condition="StringCompare(Window(3004).Property(ChooseArt),banner)">
+                <itemlayout width="846" height="178" condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">
                     <control type="image">
                         <description>Banner Back</description>
                         <posx>12</posx>
@@ -2297,10 +2297,10 @@
                         <height>100</height>
                         <texture>overlays/addons/enabled.png</texture>
                         <colordiffuse>eewhite</colordiffuse>
-                        <visible>substring(ListItem.Label,$LOCALIZE[13512]) | substring(ListItem.Label,$LOCALIZE[20440])</visible>
+                        <visible>String.Contains(ListItem.Label,$LOCALIZE[13512]) | String.Contains(ListItem.Label,$LOCALIZE[20440])</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout width="358" height="357" condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">
+                <focusedlayout width="358" height="357" condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="fade" start="93.36" end="100" time="200" tween="sine" easing="in" />
@@ -2331,7 +2331,7 @@
                             <width>100</width>
                             <height>100</height>
                             <texture>overlays/addons/enabled.png</texture>
-                            <visible>substring(ListItem.Label,$LOCALIZE[13512]) | substring(ListItem.Label,$LOCALIZE[20440])</visible>
+                            <visible>String.Contains(ListItem.Label,$LOCALIZE[13512]) | String.Contains(ListItem.Label,$LOCALIZE[20440])</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2350,7 +2350,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <focusedlayout width="248" height="357" condition="StringCompare(Window(3004).Property(ChooseArt),poster)">
+                <focusedlayout width="248" height="357" condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="fade" start="93.36" end="100" time="200" tween="sine" easing="in" />
@@ -2381,7 +2381,7 @@
                             <width>100</width>
                             <height>100</height>
                             <texture>overlays/addons/enabled.png</texture>
-                            <visible>substring(ListItem.Label,$LOCALIZE[13512]) | substring(ListItem.Label,$LOCALIZE[20440])</visible>
+                            <visible>String.Contains(ListItem.Label,$LOCALIZE[13512]) | String.Contains(ListItem.Label,$LOCALIZE[20440])</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2400,7 +2400,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <focusedlayout width="615" height="357" condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">
+                <focusedlayout width="615" height="357" condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="fade" start="93.36" end="100" time="200" tween="sine" easing="in" />
@@ -2431,7 +2431,7 @@
                             <width>100</width>
                             <height>100</height>
                             <texture>overlays/addons/enabled.png</texture>
-                            <visible>substring(ListItem.Label,$LOCALIZE[13512]) | substring(ListItem.Label,$LOCALIZE[20440])</visible>
+                            <visible>String.Contains(ListItem.Label,$LOCALIZE[13512]) | String.Contains(ListItem.Label,$LOCALIZE[20440])</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2450,7 +2450,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <focusedlayout width="846" height="178" condition="StringCompare(Window(3004).Property(ChooseArt),banner)">
+                <focusedlayout width="846" height="178" condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="fade" start="93.36" end="100" time="200" tween="sine" easing="in" />
@@ -2481,7 +2481,7 @@
                             <width>100</width>
                             <height>100</height>
                             <texture>overlays/addons/enabled.png</texture>
-                            <visible>substring(ListItem.Label,$LOCALIZE[13512]) | substring(ListItem.Label,$LOCALIZE[20440])</visible>
+                            <visible>String.Contains(ListItem.Label,$LOCALIZE[13512]) | String.Contains(ListItem.Label,$LOCALIZE[20440])</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -2571,10 +2571,10 @@
                 <align>left</align>
                 <scroll>true</scroll>
                 <textoffsetx>16</textoffsetx>
-                <include condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
+                <include condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
             </control>
 
             <control type="label">
@@ -2587,7 +2587,7 @@
                 <textcolor>eewhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <visible>StringCompare(Window(3004).Property(ChooseArt),poster)</visible>
+                <visible>String.IsEqual(Window(3004).Property(ChooseArt),poster)</visible>
             </control>
 
             <control type="image">
@@ -2596,10 +2596,10 @@
                 <posy>900</posy>
                 <height>125</height>
                 <texture>windows/home/item-shadow.png</texture>
-                <include condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthSquare</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),poster)">ArtDialogShadowWidthPoster</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogShadowWidthBanner</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthLandscape</include>
+                <include condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthSquare</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">ArtDialogShadowWidthPoster</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">ArtDialogShadowWidthBanner</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogShadowWidthLandscape</include>
             </control>
 
             <control type="image">
@@ -2610,7 +2610,7 @@
                 <aspectratio>scale</aspectratio>
                 <texture background="true" fallback="views/fallbacks/DefaultVideo.png/large.png">$INFO[Container(6).ListItem.Icon]</texture>
                 <fadetime>500</fadetime>
-                <visible>StringCompare(Window(3004).Property(ChooseArt),poster)</visible>
+                <visible>String.IsEqual(Window(3004).Property(ChooseArt),poster)</visible>
             </control>
 
             <control type="panel" id="3">
@@ -2620,10 +2620,10 @@
             <control type="panel" id="6">
                 <posx>88</posx>
                 <posy>208</posy>
-                <include condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
-                <include condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
+                <include condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthSquare</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">ArtDialogPanelWidthPoster</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">ArtDialogPanelWidthBanner</include>
+                <include condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">ArtDialogPanelWidthLandscape</include>
                 <height>716</height>
                 <onup>6</onup>
                 <ondown>6</ondown>
@@ -2633,7 +2633,7 @@
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>vertical</orientation>
                 <preloaditems>2</preloaditems>
-                <itemlayout width="358" height="357" condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">
+                <itemlayout width="358" height="357" condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">
                     <control type="image">
                         <description>Poster</description>
                         <posx>12</posx>
@@ -2654,7 +2654,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                 </itemlayout>
-                <itemlayout width="248" height="357" condition="StringCompare(Window(3004).Property(ChooseArt),poster)">
+                <itemlayout width="248" height="357" condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">
                     <control type="image">
                         <description>Poster</description>
                         <posx>12</posx>
@@ -2675,7 +2675,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                 </itemlayout>
-                <itemlayout width="615" height="357" condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">
+                <itemlayout width="615" height="357" condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">
                     <control type="image">
                         <description>Poster</description>
                         <posx>12</posx>
@@ -2696,7 +2696,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                 </itemlayout>
-                <itemlayout width="846" height="178" condition="StringCompare(Window(3004).Property(ChooseArt),banner)">
+                <itemlayout width="846" height="178" condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">
                     <control type="image">
                         <description>Banner Back</description>
                         <posx>12</posx>
@@ -2717,9 +2717,9 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                 </itemlayout>
-                <focusedlayout width="358" height="357" condition="!StringCompare(Window(3004).Property(ChooseArt),poster) + !StringCompare(Window(3004).Property(ChooseArt),fanart) + !StringCompare(Window(3004).Property(ChooseArt),banner) + !StringCompare(Window(3004).Property(ChooseArt),landscape)">
+                <focusedlayout width="358" height="357" condition="!String.IsEqual(Window(3004).Property(ChooseArt),poster) + !String.IsEqual(Window(3004).Property(ChooseArt),fanart) + !String.IsEqual(Window(3004).Property(ChooseArt),banner) + !String.IsEqual(Window(3004).Property(ChooseArt),landscape)">
                     <control type="button">
-                        <onfocus condition="StringCompare(Window(3004).Property(ChooseArt),1)">SetProperty(ChooseArtType,$INFO[Container(6).ListItem.Label],3004)</onfocus>
+                        <onfocus condition="String.IsEqual(Window(3004).Property(ChooseArt),1)">SetProperty(ChooseArtType,$INFO[Container(6).ListItem.Label],3004)</onfocus>
                     </control>
                     <control type="group">
                         <animation type="Focus">
@@ -2762,7 +2762,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <focusedlayout width="248" height="357" condition="StringCompare(Window(3004).Property(ChooseArt),poster)">
+                <focusedlayout width="248" height="357" condition="String.IsEqual(Window(3004).Property(ChooseArt),poster)">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="fade" start="93.36" end="100" time="200" tween="sine" easing="in" />
@@ -2804,7 +2804,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <focusedlayout width="615" height="357" condition="StringCompare(Window(3004).Property(ChooseArt),fanart) | StringCompare(Window(3004).Property(ChooseArt),landscape)">
+                <focusedlayout width="615" height="357" condition="String.IsEqual(Window(3004).Property(ChooseArt),fanart) | String.IsEqual(Window(3004).Property(ChooseArt),landscape)">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="fade" start="93.36" end="100" time="200" tween="sine" easing="in" />
@@ -2846,7 +2846,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <focusedlayout width="846" height="178" condition="StringCompare(Window(3004).Property(ChooseArt),banner)">
+                <focusedlayout width="846" height="178" condition="String.IsEqual(Window(3004).Property(ChooseArt),banner)">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="fade" start="93.36" end="100" time="200" tween="sine" easing="in" />

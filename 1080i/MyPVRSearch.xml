@@ -164,7 +164,7 @@
                                 <textcolor>99FFFFFF</textcolor>
                                 <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
-                                <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+                                <animation effect="slide" end="0,19" time="0" condition="String.IsEmpty(ListItem.ChannelName)">Conditional</animation>
                             </control>
                             <control type="label">
                                 <description>Genre</description>
@@ -242,7 +242,7 @@
                                     <textcolor>99FFFFFF</textcolor>
                                     <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
-                                    <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+                                    <animation effect="slide" end="0,19" time="0" condition="String.IsEmpty(ListItem.ChannelName)">Conditional</animation>
                                 </control>
                                 <control type="label">
                                     <description>Genre</description>

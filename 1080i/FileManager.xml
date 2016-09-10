@@ -31,7 +31,7 @@
                         <effect type="zoom" start="88" end="100" center="576,560" tween="cubic" easing="out" time="400" />
                     </animation>
                     <control type="group" id="35">
-                        <visible allowhiddenfocus="true">!stringcompare(Control.GetLabel(101),$LOCALIZE[20108])</visible>
+                        <visible allowhiddenfocus="true">!String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])</visible>
                         <control type="button" id="33">
                             <posx>-16</posx>
                             <posy>-73</posy>
@@ -43,9 +43,9 @@
                             <onup>Control.Message(20,movedown,3)</onup>
                             <onup>SetFocus(20)</onup>
                             <ondown>SetFocus(20)</ondown>
-                            <onclick condition="!stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">SetProperty(ParentDir,1)</onclick>
-                            <onclick condition="!stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">SetFocus(20)</onclick>
-                            <onfocus condition="stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">SetFocus(20)</onfocus>
+                            <onclick condition="!String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">SetProperty(ParentDir,1)</onclick>
+                            <onclick condition="!String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">SetFocus(20)</onclick>
+                            <onfocus condition="String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">SetFocus(20)</onfocus>
                             <visible>!Control.HasFocus(34)</visible>
                         </control>
                         <control type="button" id="34">
@@ -58,9 +58,9 @@
                             <onup>SetFocus(20)</onup>
                             <ondown>Control.Message(20,moveup,3)</ondown>
                             <ondown>SetFocus(20)</ondown>
-                            <onclick condition="!stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">SetProperty(ParentDir,1)</onclick>
-                            <onclick condition="!stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">SetFocus(20)</onclick>
-                            <onfocus condition="stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">SetFocus(20)</onfocus>
+                            <onclick condition="!String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">SetProperty(ParentDir,1)</onclick>
+                            <onclick condition="!String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">SetFocus(20)</onclick>
+                            <onfocus condition="String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">SetFocus(20)</onfocus>
                             <visible allowhiddenfocus="true">Control.HasFocus(34)</visible>
                         </control>
                     </control>
@@ -72,7 +72,7 @@
                         <align>left</align>
                         <font>Font-Condensed-S30</font>
                         <textcolor>aawhite</textcolor>
-                        <animation effect="slide" start="0" end="50" time="200" tween="sine" easing="inout" condition="!stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">Conditional</animation>
+                        <animation effect="slide" start="0" end="50" time="200" tween="sine" easing="inout" condition="!String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">Conditional</animation>
                     </control>
                     <control type="group">
                         <control type="label" id="12">
@@ -117,10 +117,10 @@
                         <height>600</height>
                         <onleft>30</onleft>
                         <onright>21</onright>
-                        <onup condition="stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">20</onup>
-                        <onup condition="!stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">33</onup>
-                        <ondown condition="stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">20</ondown>
-                        <ondown condition="!stringcompare(Control.GetLabel(101),$LOCALIZE[20108])">34</ondown>
+                        <onup condition="String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">20</onup>
+                        <onup condition="!String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">33</onup>
+                        <ondown condition="String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">20</ondown>
+                        <ondown condition="!String.IsEqual(Control.GetLabel(101),$LOCALIZE[20108])">34</ondown>
                         <pagecontrol>30</pagecontrol>
                         <scrolltime>0</scrolltime>
                         <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(20) + Window.IsActive(contextmenu)">Conditional</animation>
@@ -181,9 +181,9 @@
                         </itemlayout>
                         <focusedlayout height="60">
                             <control type="button">
-                                <onfocus condition="!IsEmpty(Window.Property(ParentDir))">ParentDir</onfocus>
-                                <onfocus condition="!IsEmpty(Window.Property(ParentDir))">SetFocus(35)</onfocus>
-                                <onfocus condition="!IsEmpty(Window.Property(ParentDir))">ClearProperty(ParentDir)</onfocus>
+                                <onfocus condition="!String.IsEmpty(Window.Property(ParentDir))">ParentDir</onfocus>
+                                <onfocus condition="!String.IsEmpty(Window.Property(ParentDir))">SetFocus(35)</onfocus>
+                                <onfocus condition="!String.IsEmpty(Window.Property(ParentDir))">ClearProperty(ParentDir)</onfocus>
                             </control>
                             <control type="image">
                                 <description>List separator</description>
@@ -304,7 +304,7 @@
                         <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="105" /> 
                     </animation>
                     <control type="group" id="45">
-                        <visible allowhiddenfocus="true">!stringcompare(Control.GetLabel(102),$LOCALIZE[20108])</visible>
+                        <visible allowhiddenfocus="true">!String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])</visible>
                         <control type="button" id="43">
                             <description>Down</description>
                             <posx>-16</posx>
@@ -317,9 +317,9 @@
                             <onup>Control.Message(21,movedown,3)</onup>
                             <onup>SetFocus(21)</onup>
                             <ondown>SetFocus(21)</ondown>
-                            <onclick condition="!stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">SetProperty(ParentDir,1)</onclick>
-                            <onclick condition="!stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">SetFocus(21)</onclick>
-                            <onfocus condition="stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">SetFocus(21)</onfocus>
+                            <onclick condition="!String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">SetProperty(ParentDir,1)</onclick>
+                            <onclick condition="!String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">SetFocus(21)</onclick>
+                            <onfocus condition="String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">SetFocus(21)</onfocus>
                             <visible>!Control.HasFocus(44)</visible>
                         </control>
                         <control type="button" id="44">
@@ -333,9 +333,9 @@
                             <onup>SetFocus(21)</onup>
                             <ondown>Control.Message(21,moveup,3)</ondown>
                             <ondown>SetFocus(21)</ondown>
-                            <onclick condition="!stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">SetProperty(ParentDir,1)</onclick>
-                            <onclick condition="!stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">SetFocus(21)</onclick>
-                            <onfocus condition="stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">SetFocus(21)</onfocus>
+                            <onclick condition="!String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">SetProperty(ParentDir,1)</onclick>
+                            <onclick condition="!String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">SetFocus(21)</onclick>
+                            <onfocus condition="String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">SetFocus(21)</onfocus>
                             <visible allowhiddenfocus="true">Control.HasFocus(44)</visible>
                         </control>
                     </control>
@@ -347,7 +347,7 @@
                         <align>left</align>
                         <font>Font-Condensed-S30</font>
                         <textcolor>aawhite</textcolor>
-                        <animation effect="slide" start="0" end="50" time="200" tween="sine" easing="inout" condition="!stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">Conditional</animation>
+                        <animation effect="slide" start="0" end="50" time="200" tween="sine" easing="inout" condition="!String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">Conditional</animation>
                     </control>
                     <control type="group">
                         <control type="label" id="13">
@@ -392,10 +392,10 @@
                         <height>600</height>
                         <onleft>20</onleft>
                         <onright>40</onright>
-                        <onup condition="stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">21</onup>
-                        <onup condition="!stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">43</onup>
-                        <ondown condition="stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">21</ondown>
-                        <ondown condition="!stringcompare(Control.GetLabel(102),$LOCALIZE[20108])">44</ondown>
+                        <onup condition="String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">21</onup>
+                        <onup condition="!String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">43</onup>
+                        <ondown condition="String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">21</ondown>
+                        <ondown condition="!String.IsEqual(Control.GetLabel(102),$LOCALIZE[20108])">44</ondown>
                         <pagecontrol>40</pagecontrol>
                         <scrolltime>0</scrolltime>
                         <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(21) + Window.IsActive(contextmenu)">Conditional</animation>
@@ -455,9 +455,9 @@
                         </itemlayout>
                         <focusedlayout height="60">
                             <control type="button">
-                                <onfocus condition="!IsEmpty(Window.Property(ParentDir))">ParentDir</onfocus>
-                                <onfocus condition="!IsEmpty(Window.Property(ParentDir))">SetFocus(45)</onfocus>
-                                <onfocus condition="!IsEmpty(Window.Property(ParentDir))">ClearProperty(ParentDir)</onfocus>
+                                <onfocus condition="!String.IsEmpty(Window.Property(ParentDir))">ParentDir</onfocus>
+                                <onfocus condition="!String.IsEmpty(Window.Property(ParentDir))">SetFocus(45)</onfocus>
+                                <onfocus condition="!String.IsEmpty(Window.Property(ParentDir))">ClearProperty(ParentDir)</onfocus>
                             </control>
                             <control type="image">
                                 <description>List separator</description>

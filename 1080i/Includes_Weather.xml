@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <variable name="Weather.FanartDir">
-        <value condition="!IsEmpty(Skin.String(WeatherFanartDir))">$INFO[Skin.String(WeatherFanartDir)]</value>
+        <value condition="!String.IsEmpty(Skin.String(WeatherFanartDir))">$INFO[Skin.String(WeatherFanartDir)]</value>
         <value condition="System.HasAddon(resource.images.weatherfanart.multi)">resource://resource.images.weatherfanart.multi/</value>
     </variable>
 
@@ -214,7 +214,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -256,7 +256,7 @@
                 <label>$INFO[Window(Weather).Property(Day0.Title)]</label>
                 <font>Font-Condensed-S45</font>
                 <textcolor>ddwhite</textcolor>
-                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | String.IsEmpty(Skin.String(WeatherFanartDir))</visible>
             </control>
             <control type="image">
                 <description>day icon</description>
@@ -319,7 +319,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -361,7 +361,7 @@
                 <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
                 <font>Font-Condensed-S45</font>
                 <textcolor>ddwhite</textcolor>
-                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | String.IsEmpty(Skin.String(WeatherFanartDir))</visible>
             </control>
             <control type="image">
                 <description>day icon</description>
@@ -424,7 +424,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -466,7 +466,7 @@
                 <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
                 <font>Font-Condensed-S45</font>
                 <textcolor>ddwhite</textcolor>
-                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | String.IsEmpty(Skin.String(WeatherFanartDir))</visible>
             </control>
             <control type="image">
                 <description>day icon</description>
@@ -529,7 +529,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -571,7 +571,7 @@
                 <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
                 <font>Font-Condensed-S45</font>
                 <textcolor>ddwhite</textcolor>
-                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | String.IsEmpty(Skin.String(WeatherFanartDir))</visible>
             </control>
             <control type="image">
                 <description>day icon</description>
@@ -634,7 +634,7 @@
                 <texture border="7">windows/home/tile.png</texture>
             </control>
             <control type="group">
-                <visible>[!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
+                <visible>[!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + Skin.HasSetting(ShowDailyWeatherFanart)</visible>
                 <control type="multiimage">
                     <posx>-17</posx>
                     <posy>-100</posy>
@@ -676,7 +676,7 @@
                 <label>$INFO[Window(Weather).Property(Day4.Title)]</label>
                 <font>Font-Condensed-S45</font>
                 <textcolor>ddwhite</textcolor>
-                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                <visible>!Skin.HasSetting(ShowDailyWeatherFanart) | String.IsEmpty(Skin.String(WeatherFanartDir))</visible>
             </control>
             <control type="image">
                 <description>day icon</description>
@@ -711,14 +711,14 @@
     </include>
 
     <variable name="WeatherMoonPhaseIcon">
-        <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32501))">weather/moon/new.png</value>
-        <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32502))">weather/moon/waxing-c.png</value>
-        <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32503))">weather/moon/first-q.png</value>
-        <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32504))">weather/moon/waxing-g.png</value>
-        <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32505))">weather/moon/full.png</value>
-        <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32506))">weather/moon/waning-g.png</value>
-        <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32507))">weather/moon/last-q.png</value>
-        <value condition="StringCompare(Window(Weather).Property(Today.moonphase),Control.GetLabel(32508))">weather/moon/waning-c.png</value>
+        <value condition="String.IsEqual(Window(Weather).Property(Today.moonphase),Control.GetLabel(32501))">weather/moon/new.png</value>
+        <value condition="String.IsEqual(Window(Weather).Property(Today.moonphase),Control.GetLabel(32502))">weather/moon/waxing-c.png</value>
+        <value condition="String.IsEqual(Window(Weather).Property(Today.moonphase),Control.GetLabel(32503))">weather/moon/first-q.png</value>
+        <value condition="String.IsEqual(Window(Weather).Property(Today.moonphase),Control.GetLabel(32504))">weather/moon/waxing-g.png</value>
+        <value condition="String.IsEqual(Window(Weather).Property(Today.moonphase),Control.GetLabel(32505))">weather/moon/full.png</value>
+        <value condition="String.IsEqual(Window(Weather).Property(Today.moonphase),Control.GetLabel(32506))">weather/moon/waning-g.png</value>
+        <value condition="String.IsEqual(Window(Weather).Property(Today.moonphase),Control.GetLabel(32507))">weather/moon/last-q.png</value>
+        <value condition="String.IsEqual(Window(Weather).Property(Today.moonphase),Control.GetLabel(32508))">weather/moon/waning-c.png</value>
     </variable>
 
     <!-- Direct compare to the $ADDON[...] strings doesn't work -->
@@ -768,7 +768,7 @@
                 <effect type="zoom" start="100" end="50" center="1745,100" tween="sine" easing="inout" time="300" />
             </animation>
             <include>MoonPhaseDummyLabels</include>
-            <visible>Weather.IsFetched + !IsEmpty(Window.Property(Today.IsFetched)) + !IsEmpty(Window(Weather).Property(Today.moonphase)) + !Window.IsActive(favourites)</visible>
+            <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Today.IsFetched)) + !String.IsEmpty(Window(Weather).Property(Today.moonphase)) + !Window.IsActive(favourites)</visible>
             <control type="group">
                 <control type="image">
                     <posx>0</posx>
@@ -989,7 +989,7 @@
                     <height>56</height>
                     <colordiffuse>aawhite</colordiffuse>
                     <texture>weather/sunrise.png</texture>
-                    <visible>!IsEmpty(Window.Property(Today.Sunrise))</visible>
+                    <visible>!String.IsEmpty(Window.Property(Today.Sunrise))</visible>
                 </control>
                 <control type="label">
                     <description>sunrise label</description>
@@ -1009,7 +1009,7 @@
                     <height>56</height>
                     <colordiffuse>aawhite</colordiffuse>
                     <texture>weather/sunset.png</texture>
-                    <visible>!IsEmpty(Window.Property(Today.Sunset))</visible>
+                    <visible>!String.IsEmpty(Window.Property(Today.Sunset))</visible>
                 </control>
                 <control type="label">
                     <description>sunset label</description>
@@ -1042,7 +1042,7 @@
                     <effect type="zoom" start="100" end="85" time="300" center="960,500" tween="sine" easing="out" />
                 </animation>
                 <animation effect="fade" start="100" end="75" time="300" tween="sine" easing="inout" condition="!ControlGroup(200).HasFocus">Conditional</animation>
-                <visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window(Weather).Property(Daily.IsFetched))</visible>
                 <control type="button" id="201">
                     <posx>27</posx>
                     <posy>-50</posy>
@@ -2597,7 +2597,7 @@
                     <effect type="zoom" start="100" end="85" time="300" center="960,500" tween="sine" easing="out" />
                 </animation>
                 <animation effect="fade" start="100" end="75" time="300" tween="sine" easing="inout" condition="!ControlGroup(300).HasFocus">Conditional</animation>
-                <visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window(Weather).Property(Hourly.IsFetched))</visible>
                 <control type="button" id="301">
                     <posx>27</posx>
                     <posy>-50</posy>
@@ -2821,7 +2821,7 @@
                         <item>
                             <icon>$LOCALIZE[31909]</icon>
                             <onclick>noop</onclick>
-                            <visible>IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.1.Time)]</label>
@@ -2830,7 +2830,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.1.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.1.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.2.Time)]</label>
@@ -2839,7 +2839,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.2.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.2.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.3.Time)]</label>
@@ -2848,7 +2848,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.3.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.3.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.4.Time)]</label>
@@ -2857,7 +2857,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.4.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.4.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.5.Time)]</label>
@@ -2866,7 +2866,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.5.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.5.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.6.Time)]</label>
@@ -2875,7 +2875,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.6.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.6.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.7.Time)]</label>
@@ -2884,7 +2884,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.7.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.7.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.8.Time)]</label>
@@ -2893,7 +2893,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.8.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.8.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.9.Time)]</label>
@@ -2902,7 +2902,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.9.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.9.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
                             <label>$INFO[Window.Property(Hourly.10.Time)]</label>
@@ -2911,7 +2911,7 @@
                             <property name="temp">$INFO[Window.Property(Hourly.10.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.10.Outlook)]</property>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                     </content>
                 </control>

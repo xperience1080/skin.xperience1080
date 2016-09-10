@@ -3,8 +3,8 @@
     <defaultcontrol>525</defaultcontrol>
     <backgroundcolor>0</backgroundcolor>
     <onload condition="!Skin.HasSetting(Skin.Initialization)">SetProperty(Skin.Initialization,1,startup)</onload>
-    <onload condition="!Skin.HasSetting(Skin.Initialization) | IsEmpty(Window(startup).Property(Started))">ReplaceWindow(startup)</onload>
-    <include condition="!IsEmpty(Window.Property(CategoryChanged))">FocusSettingsCategory</include>
+    <onload condition="!Skin.HasSetting(Skin.Initialization) | String.IsEmpty(Window(startup).Property(Started))">ReplaceWindow(startup)</onload>
+    <include condition="!String.IsEmpty(Window.Property(CategoryChanged))">FocusSettingsCategory</include>
     <controls>
         <!-- Backgrounds -->
         <include>CommonItemsHome</include>

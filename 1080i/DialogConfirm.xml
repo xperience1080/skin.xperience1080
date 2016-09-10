@@ -14,9 +14,9 @@
                 <control type="group">
                     <posx>590</posx>
                     <posy>490</posy>
-                    <animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>
-                    <animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
-                    <animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>
+                    <animation effect="slide" end="0,-25" time="0" condition="String.IsEmpty(Control.GetLabel(2))">Conditional</animation>
+                    <animation effect="slide" end="0,-25" time="0" condition="String.IsEmpty(Control.GetLabel(3))">Conditional</animation>
+                    <animation effect="slide" end="0,-25" time="0" condition="String.IsEmpty(Control.GetLabel(4))">Conditional</animation>
                     <control type="image">
                         <posx>330</posx>
                         <posy>13</posy>
@@ -140,7 +140,7 @@
                     <effect type="zoom" start="100" end="75" center="960,540" easing="in" tween="back" time="300" />
                     <effect type="fade" start="100" end="0" delay="200" time="100" />
                 </animation>
-                <visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(selectdialog) + !Window.IsVisible(DialogSelect.xml) + !Window.IsVisible(yesnodialog) + !Window.IsVisible(okdialog) + IsEmpty(Window(3004).Property(ChooseArt))</visible>
+                <visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(selectdialog) + !Window.IsVisible(DialogSelect.xml) + !Window.IsVisible(yesnodialog) + !Window.IsVisible(okdialog) + String.IsEmpty(Window(3004).Property(ChooseArt))</visible>
                 <control type="image">
                     <posx>602</posx>
                     <posy>345</posy>

@@ -33,8 +33,8 @@
                 <align>right</align>
                 <orientation>horizontal</orientation>
                 <itemgap>-40</itemgap>
-                <onup condition="IsEmpty(Window(seekbar).Property(ExtendPlot))">SetProperty(ExtendPlot,1,seekbar)</onup>
-                <ondown condition="!IsEmpty(Window(seekbar).Property(ExtendPlot))">ClearProperty(ExtendPlot,seekbar)</ondown>
+                <onup condition="String.IsEmpty(Window(seekbar).Property(ExtendPlot))">SetProperty(ExtendPlot,1,seekbar)</onup>
+                <ondown condition="!String.IsEmpty(Window(seekbar).Property(ExtendPlot))">ClearProperty(ExtendPlot,seekbar)</ondown>
                 <usecontrolcoords>true</usecontrolcoords>
                 <control type="button" id="51">
                     <posx>0</posx>
@@ -43,8 +43,8 @@
                     <height>100</height>
                     <texturenofocus border="100,0,0,0">buttons/switch-nf.png</texturenofocus>
                     <texturefocus border="100,0,0,0">buttons/switch-fo.png</texturefocus>
-                    <onclick condition="VideoPlayer.Content(LiveTV) + IsEmpty(Window(seekbar).Property(ShowNext))">SetProperty(ShowNext,1,seekbar)</onclick>
-                    <onclick condition="VideoPlayer.Content(LiveTV) + !IsEmpty(Window(seekbar).Property(ShowNext))">ClearProperty(ShowNext,seekbar)</onclick>
+                    <onclick condition="VideoPlayer.Content(LiveTV) + String.IsEmpty(Window(seekbar).Property(ShowNext))">SetProperty(ShowNext,1,seekbar)</onclick>
+                    <onclick condition="VideoPlayer.Content(LiveTV) + !String.IsEmpty(Window(seekbar).Property(ShowNext))">ClearProperty(ShowNext,seekbar)</onclick>
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                 </control>
                 <control type="togglebutton" id="52">
@@ -56,9 +56,9 @@
                     <texturenofocus border="0,0,100,0">buttons/up-nf.png</texturenofocus>
                     <alttexturefocus border="0,0,100,0">buttons/down-fo.png</alttexturefocus>
                     <alttexturenofocus border="0,0,100,0">buttons/down-nf.png</alttexturenofocus>
-                    <usealttexture>!IsEmpty(Window(seekbar).Property(ExtendPlot))</usealttexture>
-                    <onclick condition="IsEmpty(Window(seekbar).Property(ExtendPlot))">SetProperty(ExtendPlot,1,seekbar)</onclick>
-                    <onclick condition="!IsEmpty(Window(seekbar).Property(ExtendPlot))">ClearProperty(ExtendPlot,seekbar)</onclick>
+                    <usealttexture>!String.IsEmpty(Window(seekbar).Property(ExtendPlot))</usealttexture>
+                    <onclick condition="String.IsEmpty(Window(seekbar).Property(ExtendPlot))">SetProperty(ExtendPlot,1,seekbar)</onclick>
+                    <onclick condition="!String.IsEmpty(Window(seekbar).Property(ExtendPlot))">ClearProperty(ExtendPlot,seekbar)</onclick>
                 </control>
                 <control type="button" id="53">
                     <posx>0</posx>
@@ -80,7 +80,7 @@
                 <font>Font-Condensed-S38</font>
                 <align>justify</align>
                 <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                <visible>!IsEmpty(VideoPlayer.Plot) + !IsEmpty(Window(seekbar).Property(ExtendPlot))</visible>
+                <visible>!String.IsEmpty(VideoPlayer.Plot) + !String.IsEmpty(Window(seekbar).Property(ExtendPlot))</visible>
                 <visible>!Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
                 <visible>!Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)</visible>
                 <include>visiblehidefadeinfo</include>

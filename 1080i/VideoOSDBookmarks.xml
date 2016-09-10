@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">1</defaultcontrol>
-	<onload condition="IntegerGreaterThan(Container(11).NumItems,0)">SetFocus(11)</onload>
+	<onload condition="Integer.IsGreater(Container(11).NumItems,0)">SetFocus(11)</onload>
     <controls>
         <control type="group">
             <animation type="WindowOpen">

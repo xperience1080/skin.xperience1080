@@ -23,7 +23,7 @@
 
             <!-- MovieDB Logo -->
             <control type="image">
-                <animation type="Conditional" condition="[Player.HasMedia + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)">
+                <animation type="Conditional" condition="[Player.HasMedia + String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
                     <effect type="zoom" start="100" end="50" center="1765,101" tween="sine" easing="inout" time="300" />
                 </animation>
@@ -120,7 +120,7 @@
                         <align>left</align>
                         <scroll>false</scroll>
                         <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="!ControlGroup(1500).HasFocus">Conditional</animation>
-                        <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
                     </control>
 
                     <!-- Known TV Roles -->
@@ -135,7 +135,7 @@
                         <align>left</align>
                         <scroll>false</scroll>
                         <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="!ControlGroup(2500).HasFocus">Conditional</animation>
-                        <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
                     </control>
 
                     <!-- Known Movie Crew -->
@@ -150,7 +150,7 @@
                         <align>left</align>
                         <scroll>false</scroll>
                         <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="!ControlGroup(5500).HasFocus">Conditional</animation>
-                        <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
                     </control>
 
                     <!-- Known TV Crew -->
@@ -165,7 +165,7 @@
                         <align>left</align>
                         <scroll>false</scroll>
                         <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="!ControlGroup(6500).HasFocus">Conditional</animation>
-                        <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
                     </control>
 
                     <!-- Artwork -->
@@ -180,7 +180,7 @@
                         <align>left</align>
                         <scroll>false</scroll>
                         <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="!ControlGroup(4500).HasFocus">Conditional</animation>
-                        <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                     </control>
 
                     <!-- Fanart -->
@@ -195,7 +195,7 @@
                         <align>left</align>
                         <scroll>false</scroll>
                         <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="!ControlGroup(7500).HasFocus">Conditional</animation>
-                        <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
                     </control>
                 </control>
 
@@ -263,7 +263,7 @@
                                 <control type="group">
                                     <width>1240</width>
                                     <height>50</height>
-                                    <visible>!IsEmpty(Window.Property(Birthday))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Birthday))</visible>
                                     <control type="label">
                                         <posx>0</posx>
                                         <posy>0</posy>
@@ -292,7 +292,7 @@
                                 <control type="group">
                                     <width>1240</width>
                                     <height>50</height>
-                                    <visible>!IsEmpty(Window.Property(Deathday))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Deathday))</visible>
                                     <control type="label">
                                         <posx>0</posx>
                                         <posy>0</posy>
@@ -321,7 +321,7 @@
                                 <control type="group">
                                     <width>1240</width>
                                     <height>50</height>
-                                    <visible>!IsEmpty(Window.Property(PlaceOfBirth))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(PlaceOfBirth))</visible>
                                     <control type="label">
                                         <posx>0</posx>
                                         <posy>0</posy>
@@ -350,7 +350,7 @@
                                 <control type="group">
                                     <width>1240</width>
                                     <height>50</height>
-                                    <visible>!IsEmpty(Window.Property(AlsoKnownAs))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(AlsoKnownAs))</visible>
                                     <control type="label">
                                         <posx>0</posx>
                                         <posy>0</posy>
@@ -421,18 +421,18 @@
                                     <width>6</width>
                                     <height>244</height>
                                     <onleft>Close</onleft>
-                                    <onright condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onright>
-                                    <onright condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onright>
-                                    <onright condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onright>
-                                    <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
-                                    <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
-                                    <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
-                                    <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
+                                    <onright condition="Integer.IsGreater(Container(150).NumItems,0)">150</onright>
+                                    <onright condition="Integer.IsGreater(Container(250).NumItems,0)">250</onright>
+                                    <onright condition="Integer.IsGreater(Container(550).NumItems,0)">550</onright>
+                                    <onright condition="Integer.IsGreater(Container(650).NumItems,0)">650</onright>
+                                    <onright condition="Integer.IsGreater(Container(350).NumItems,0)">350</onright>
+                                    <onright condition="Integer.IsGreater(Container(450).NumItems,0)">450</onright>
+                                    <onright condition="Integer.IsGreater(Container(750).NumItems,0)">750</onright>
                                     <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                                     <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                                     <orientation>vertical</orientation>
                                     <showonepage>false</showonepage>
-                                    <visible allowhiddenfocus="true">!IsEmpty(Window.Property(Biography))</visible>
+                                    <visible allowhiddenfocus="true">!String.IsEmpty(Window.Property(Biography))</visible>
                                     <animation effect="fade" start="80" end="35" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(70)">Conditional</animation>
                                 </control>
                             </control>
@@ -447,7 +447,7 @@
                         <animation type="UnFocus">
                             <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
-                        <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
                         <posx>-2320</posx>
                         <posy>0</posy>
                         <width>1920</width>
@@ -458,12 +458,12 @@
                             <width>1215</width>
                             <height>660</height>
                             <onleft>4001</onleft>
-                            <onright condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onright>
-                            <onright condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onright>
-                            <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
-                            <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
-                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
-                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
+                            <onright condition="Integer.IsGreater(Container(250).NumItems,0)">250</onright>
+                            <onright condition="Integer.IsGreater(Container(550).NumItems,0)">550</onright>
+                            <onright condition="Integer.IsGreater(Container(650).NumItems,0)">650</onright>
+                            <onright condition="Integer.IsGreater(Container(350).NumItems,0)">350</onright>
+                            <onright condition="Integer.IsGreater(Container(450).NumItems,0)">450</onright>
+                            <onright condition="Integer.IsGreater(Container(750).NumItems,0)">750</onright>
                             <onup>150</onup>
                             <ondown>150</ondown>
                             <pagecontrol>151</pagecontrol>
@@ -479,7 +479,7 @@
                                     <height>28</height>
                                     <texture>views/other/isInLibrary.png</texture>
                                     <colordiffuse>aawhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                                 <!-- Item name and role -->
                                 <control type="label">
@@ -506,7 +506,7 @@
                                     <height>28</height>
                                     <texture>views/other/isInLibrary.png</texture>
                                     <colordiffuse>eewhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                                 <!-- Item name and role -->
                                 <control type="label">
@@ -543,7 +543,7 @@
                             <width>6</width>
                             <height>687</height>
                             <onleft>150</onleft>
-                            <onright condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onright>
+                            <onright condition="Integer.IsGreater(Container(250).NumItems,0)">250</onright>
                             <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                             <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                             <orientation>vertical</orientation>
@@ -584,19 +584,19 @@
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
-                        <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
                         <control type="list" id="250">
                             <posx>83</posx>
                             <posy>234</posy>
                             <width>1215</width>
                             <height>660</height>
-                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft condition="Integer.IsGreater(Container(150).NumItems,0)">150</onleft>
                             <onleft>4001</onleft>
-                            <onright condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onright>
-                            <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
-                            <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
-                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
-                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
+                            <onright condition="Integer.IsGreater(Container(550).NumItems,0)">550</onright>
+                            <onright condition="Integer.IsGreater(Container(650).NumItems,0)">650</onright>
+                            <onright condition="Integer.IsGreater(Container(350).NumItems,0)">350</onright>
+                            <onright condition="Integer.IsGreater(Container(450).NumItems,0)">450</onright>
+                            <onright condition="Integer.IsGreater(Container(750).NumItems,0)">750</onright>
                             <onup>250</onup>
                             <ondown>250</ondown>
                             <pagecontrol>251</pagecontrol>
@@ -612,7 +612,7 @@
                                     <height>28</height>
                                     <texture>views/other/isInLibrary.png</texture>
                                     <colordiffuse>aawhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                                 <!-- Item name and role -->
                                 <control type="label">
@@ -639,7 +639,7 @@
                                     <height>28</height>
                                     <texture>views/other/isInLibrary.png</texture>
                                     <colordiffuse>eewhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                                 <!-- Item name and role -->
                                 <control type="label">
@@ -676,7 +676,7 @@
                             <width>6</width>
                             <height>687</height>
                             <onleft>250</onleft>
-                            <onright condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onright>
+                            <onright condition="Integer.IsGreater(Container(550).NumItems,0)">550</onright>
                             <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                             <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                             <orientation>vertical</orientation>
@@ -713,7 +713,7 @@
                         <animation type="UnFocus">
                             <effect type="slide" end="2320" time="500" delay="0" tween="sine" easing="inout" />
                         </animation>
-                        <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
                         <posx>-2320</posx>
                         <posy>0</posy>
                         <width>1920</width>
@@ -723,13 +723,13 @@
                             <posy>234</posy>
                             <width>1215</width>
                             <height>660</height>
-                            <onleft condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft condition="Integer.IsGreater(Container(250).NumItems,0)">250</onleft>
+                            <onleft condition="Integer.IsGreater(Container(150).NumItems,0)">150</onleft>
                             <onleft>4001</onleft>
-                            <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
-                            <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
-                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
-                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
+                            <onright condition="Integer.IsGreater(Container(650).NumItems,0)">650</onright>
+                            <onright condition="Integer.IsGreater(Container(350).NumItems,0)">350</onright>
+                            <onright condition="Integer.IsGreater(Container(450).NumItems,0)">450</onright>
+                            <onright condition="Integer.IsGreater(Container(750).NumItems,0)">750</onright>
                             <onup>550</onup>
                             <ondown>550</ondown>
                             <pagecontrol>551</pagecontrol>
@@ -745,7 +745,7 @@
                                     <height>28</height>
                                     <texture>views/other/isInLibrary.png</texture>
                                     <colordiffuse>aawhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                                 <!-- Item name and role -->
                                 <control type="label">
@@ -772,7 +772,7 @@
                                     <height>28</height>
                                     <texture>views/other/isInLibrary.png</texture>
                                     <colordiffuse>eewhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                                 <!-- Item name and role -->
                                 <control type="label">
@@ -809,7 +809,7 @@
                             <width>6</width>
                             <height>687</height>
                             <onleft>250</onleft>
-                            <onright condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onright>
+                            <onright condition="Integer.IsGreater(Container(650).NumItems,0)">650</onright>
                             <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                             <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                             <orientation>vertical</orientation>
@@ -850,19 +850,19 @@
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
-                        <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
                         <control type="list" id="650">
                             <posx>83</posx>
                             <posy>234</posy>
                             <width>1215</width>
                             <height>660</height>
-                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft condition="Integer.IsGreater(Container(550).NumItems,0)">550</onleft>
+                            <onleft condition="Integer.IsGreater(Container(250).NumItems,0)">250</onleft>
+                            <onleft condition="Integer.IsGreater(Container(150).NumItems,0)">150</onleft>
                             <onleft>4001</onleft>
-                            <onright condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onright>
-                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
-                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
+                            <onright condition="Integer.IsGreater(Container(350).NumItems,0)">350</onright>
+                            <onright condition="Integer.IsGreater(Container(450).NumItems,0)">450</onright>
+                            <onright condition="Integer.IsGreater(Container(750).NumItems,0)">750</onright>
                             <onup>650</onup>
                             <ondown>650</ondown>
                             <pagecontrol>651</pagecontrol>
@@ -878,7 +878,7 @@
                                     <height>28</height>
                                     <texture>views/other/isInLibrary.png</texture>
                                     <colordiffuse>aawhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                                 <!-- Item name and role -->
                                 <control type="label">
@@ -905,7 +905,7 @@
                                     <height>28</height>
                                     <texture>views/other/isInLibrary.png</texture>
                                     <colordiffuse>eewhite</colordiffuse>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                                 <!-- Item name and role -->
                                 <control type="label">
@@ -942,7 +942,7 @@
                             <width>6</width>
                             <height>687</height>
                             <onleft>550</onleft>
-                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
+                            <onright condition="Integer.IsGreater(Container(450).NumItems,0)">450</onright>
                             <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
                             <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                             <orientation>vertical</orientation>
@@ -1015,13 +1015,13 @@
                             <posy>30</posy>
                             <width>1950</width>
                             <height>700</height>
-                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">650</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">250</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft condition="Integer.IsGreater(Container(550).NumItems,0)">650</onleft>
+                            <onleft condition="Integer.IsGreater(Container(550).NumItems,0)">550</onleft>
+                            <onleft condition="Integer.IsGreater(Container(150).NumItems,0)">250</onleft>
+                            <onleft condition="Integer.IsGreater(Container(150).NumItems,0)">150</onleft>
                             <onleft>4001</onleft>
-                            <onright condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onright>
-                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
+                            <onright condition="Integer.IsGreater(Container(450).NumItems,0)">450</onright>
+                            <onright condition="Integer.IsGreater(Container(750).NumItems,0)">750</onright>
                             <onup>650</onup>
                             <ondown>450</ondown>
                             <pagecontrol>60</pagecontrol>
@@ -1114,19 +1114,19 @@
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
-                        <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                         <control type="panel" id="450">
                             <posx>43</posx>
                             <posy>234</posy>
                             <width>1260</width>
                             <height>660</height>
-                            <onleft condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft condition="Integer.IsGreater(Container(350).NumItems,0)">350</onleft>
+                            <onleft condition="Integer.IsGreater(Container(650).NumItems,0)">650</onleft>
+                            <onleft condition="Integer.IsGreater(Container(550).NumItems,0)">550</onleft>
+                            <onleft condition="Integer.IsGreater(Container(250).NumItems,0)">250</onleft>
+                            <onleft condition="Integer.IsGreater(Container(150).NumItems,0)">150</onleft>
                             <onleft>4001</onleft>
-                            <onright condition="IntegerGreaterThan(Container(750).NumItems,0)">750</onright>
+                            <onright condition="Integer.IsGreater(Container(750).NumItems,0)">750</onright>
                             <onup>450</onup>
                             <ondown>450</ondown>
                             <pagecontrol>451</pagecontrol>
@@ -1247,18 +1247,18 @@
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
-                        <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
                         <control type="panel" id="750">
                             <posx>83</posx>
                             <posy>234</posy>
                             <width>1754</width>
                             <height>663</height>
-                            <onleft condition="IntegerGreaterThan(Container(450).NumItems,0)">450</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(350).NumItems,0)">350</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(650).NumItems,0)">650</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(550).NumItems,0)">550</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(250).NumItems,0)">250</onleft>
-                            <onleft condition="IntegerGreaterThan(Container(150).NumItems,0)">150</onleft>
+                            <onleft condition="Integer.IsGreater(Container(450).NumItems,0)">450</onleft>
+                            <onleft condition="Integer.IsGreater(Container(350).NumItems,0)">350</onleft>
+                            <onleft condition="Integer.IsGreater(Container(650).NumItems,0)">650</onleft>
+                            <onleft condition="Integer.IsGreater(Container(550).NumItems,0)">550</onleft>
+                            <onleft condition="Integer.IsGreater(Container(250).NumItems,0)">250</onleft>
+                            <onleft condition="Integer.IsGreater(Container(150).NumItems,0)">150</onleft>
                             <onleft>4001</onleft>
                             <onright>noop</onright>
                             <onup>750</onup>

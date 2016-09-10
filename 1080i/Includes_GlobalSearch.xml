@@ -2,27 +2,27 @@
 <includes>
 
     <variable name="GlobalSearchInfoVideoArt">
-        <value condition="Control.IsVisible(140) + !IsEmpty(Container(100).ListItem.Thumb)">$INFO[Container(100).ListItem.Thumb]</value>
-        <value condition="!IsEmpty(Container(100).ListItem.property(fanart))">$INFO[Container(100).ListItem.property(fanart)]</value>
+        <value condition="Control.IsVisible(140) + !String.IsEmpty(Container(100).ListItem.Thumb)">$INFO[Container(100).ListItem.Thumb]</value>
+        <value condition="!String.IsEmpty(Container(100).ListItem.property(fanart))">$INFO[Container(100).ListItem.property(fanart)]</value>
         <value condition="Control.IsVisible(120)">views/fallbacks/DefaultFolder.png/landscape.png</value>
         <value>views/fallbacks/DefaultVideo.png/landscape.png</value>
     </variable>
     
     <variable name="GlobalSearchInfoVideoThumb">
-        <value condition="!IsEmpty(Container(100).ListItem.Thumb)">$INFO[Container(100).ListItem.Thumb]</value>
+        <value condition="!String.IsEmpty(Container(100).ListItem.Thumb)">$INFO[Container(100).ListItem.Thumb]</value>
         <value condition="Control.IsVisible(120)">views/fallbacks/DefaultFolder.png/large.png</value>
         <value>views/fallbacks/DefaultVideo.png/large.png</value>
     </variable>
     
     <variable name="GlobalSearchInfoAudioArt">
-        <value condition="!IsEmpty(Container(100).ListItem.Thumb)">$INFO[Container(100).ListItem.Thumb]</value>
+        <value condition="!String.IsEmpty(Container(100).ListItem.Thumb)">$INFO[Container(100).ListItem.Thumb]</value>
         <value condition="Control.IsVisible(160)">views/fallbacks/DefaultArtist.png/square-large.png</value>
         <value condition="Control.IsVisible(170)">views/fallbacks/DefaultAlbumCover.png/square-large.png</value>
         <value>views/fallbacks/DefaultAudio.png/square-large.png</value>
     </variable>
     
     <variable name="GlobalSearchInfoVideoOverlay">
-        <value condition="!IntegerGreaterThan(Container(100).ListItem.property(playcount),0)">overlays/OverlayUnWatched.png/extended-w.png</value>
+        <value condition="Integer.IsEqual(Container(100).ListItem.property(playcount),0)">overlays/OverlayUnWatched.png/extended-w.png</value>
     </variable>
 
     <variable name="GlobalSearchMainSortLetter">
@@ -38,7 +38,7 @@
     </variable>
     
     <variable name="GlobalSearchInfoTitleLabel">
-        <value condition="!IsEmpty(Container(100).ListItem.Property(TagLine))">$INFO[Container(100).ListItem.Property(TagLine)]</value>
+        <value condition="!String.IsEmpty(Container(100).ListItem.Property(TagLine))">$INFO[Container(100).ListItem.Property(TagLine)]</value>
         <value>$INFO[Container(100).ListItem.Label]</value>
     </variable>
 
@@ -69,7 +69,7 @@
                     <height>100</height>
                     <aligny>center</aligny>
                     <orientation>horizontal</orientation>
-                    <visible>Control.IsVisible(120) + !IsEmpty(Container(100).ListItem.Property(MPAA))</visible>
+                    <visible>Control.IsVisible(120) + !String.IsEmpty(Container(100).ListItem.Property(MPAA))</visible>
                     <control type="group">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -103,7 +103,7 @@
                     <textcolor>aawhite</textcolor>
                     <align>left</align>
                     <scroll>false</scroll>
-                    <visible>!Control.IsVisible(140) + ![Control.IsVisible(120) + !IsEmpty(Container(100).ListItem.Property(MPAA))]</visible>
+                    <visible>!Control.IsVisible(140) + ![Control.IsVisible(120) + !String.IsEmpty(Container(100).ListItem.Property(MPAA))]</visible>
                 </control>
     
                 <!-- Title Label -->            
@@ -133,7 +133,7 @@
                     <height>100</height>
                     <aligny>center</aligny>
                     <orientation>horizontal</orientation>
-                    <visible>Control.IsVisible(120) + !IsEmpty(Container(100).ListItem.Property(MPAA))</visible>
+                    <visible>Control.IsVisible(120) + !String.IsEmpty(Container(100).ListItem.Property(MPAA))</visible>
                     <control type="group">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -167,7 +167,7 @@
                     <textcolor>aawhite</textcolor>
                     <align>left</align>
                     <scroll>false</scroll>
-                    <visible>!Control.IsVisible(140) + ![Control.IsVisible(120) + !IsEmpty(Container(100).ListItem.Property(MPAA))]</visible>
+                    <visible>!Control.IsVisible(140) + ![Control.IsVisible(120) + !String.IsEmpty(Container(100).ListItem.Property(MPAA))]</visible>
                 </control>
     
                 <!-- Title Label -->            
@@ -200,7 +200,7 @@
                     <height>120</height>
                     <texture background="true" fallback=".">$INFO[Container(100).ListItem.Property(Studio),resource://resource.images.studios.white/,.png]</texture>
                     <colordiffuse>aawhite</colordiffuse>
-                    <visible>!IsEmpty(Container(100).ListItem.Property(Studio))</visible>
+                    <visible>!String.IsEmpty(Container(100).ListItem.Property(Studio))</visible>
                 </control>
                 <control type="label">
                     <posx>1820</posx>
@@ -212,8 +212,8 @@
                     <textcolor>aawhite</textcolor>
                     <align>right</align>
                     <scroll>false</scroll>
-                    <visible>stringcompare(Control.GetLabel(9340),.)</visible>
-                    <visible>!IsEmpty(Container(100).ListItem.Property(Rating))</visible>
+                    <visible>String.IsEqual(Control.GetLabel(9340),.)</visible>
+                    <visible>!String.IsEmpty(Container(100).ListItem.Property(Rating))</visible>
                 </control>
             </control>
 
@@ -315,12 +315,12 @@
                     <texture border="150,1,150,1">views/other/focus.png</texture>
                     <animation effect="slide" end="0,83" time="0" condition="[ControlGroup(9333).HasFocus(193) + Control.IsVisible(192)] | [ControlGroup(9333).HasFocus(191) + [[Control.IsVisible(192) + !Control.IsVisible(193)] | [!Control.IsVisible(192) + Control.IsVisible(193)]]]">Conditional</animation>
                     <animation effect="slide" end="0,166" time="0" condition="ControlGroup(9333).HasFocus(191) + Control.IsVisible(192) + Control.IsVisible(193)">Conditional</animation>
-                    <animation effect="slide" start="0,-83" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(191)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,83" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(191)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-83" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(192)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,83" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(192)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-83" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(193)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,83" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(193)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-83" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(191)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,83" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(191)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-83" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(192)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,83" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(192)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-83" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(193)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,83" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(193)" reversible="false">Conditional</animation>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(1110) | Control.HasFocus(70)">Conditional</animation>
                 </control>
                 
@@ -449,7 +449,7 @@
                     <control type="group">
                         <width>950</width>
                         <height>40</height>
-                        <visible>!Control.IsVisible(120) + !Control.IsVisible(140) + ![IsEmpty(Container(100).ListItem.Property(Year)) + IsEmpty(Container(100).ListItem.Property(Duration)) + IsEmpty(Container(100).ListItem.Property(Rating))]</visible>
+                        <visible>!Control.IsVisible(120) + !Control.IsVisible(140) + ![String.IsEmpty(Container(100).ListItem.Property(Year)) + String.IsEmpty(Container(100).ListItem.Property(Duration)) + String.IsEmpty(Container(100).ListItem.Property(Rating))]</visible>
                         <control type="label">
                             <posx>8</posx>
                             <posy>0</posy>
@@ -465,7 +465,7 @@
                     <control type="group">
                         <width>950</width>
                         <height>40</height>
-                        <visible>Control.IsVisible(140) + !IsEmpty(Container(100).ListItem.Property(Duration))</visible>
+                        <visible>Control.IsVisible(140) + !String.IsEmpty(Container(100).ListItem.Property(Duration))</visible>
                         <control type="label">
                             <posx>8</posx>
                             <posy>0</posy>
@@ -481,7 +481,7 @@
                     <control type="group">
                         <width>950</width>
                         <height>40</height>
-                        <visible>[Control.IsVisible(120) | Control.IsVisible(140)] + !IsEmpty(Container(100).ListItem.Property(Premiered))</visible>
+                        <visible>[Control.IsVisible(120) | Control.IsVisible(140)] + !String.IsEmpty(Container(100).ListItem.Property(Premiered))</visible>
                         <control type="label">
                             <posx>8</posx>
                             <posy>0</posy>
@@ -497,7 +497,7 @@
                     <control type="group">
                         <width>950</width>
                         <height>40</height>
-                        <visible>[Control.IsVisible(120) | Control.IsVisible(150)] + !IsEmpty(Container(100).ListItem.Property(Studio))</visible>
+                        <visible>[Control.IsVisible(120) | Control.IsVisible(150)] + !String.IsEmpty(Container(100).ListItem.Property(Studio))</visible>
                         <control type="label">
                             <posx>8</posx>
                             <posy>0</posy>
@@ -513,7 +513,7 @@
                     <control type="group">
                         <width>950</width>
                         <height>40</height>
-                        <visible>!Control.IsVisible(130) + !Control.IsVisible(140) + !IsEmpty(Container(100).ListItem.Property(Genre))</visible>
+                        <visible>!Control.IsVisible(130) + !Control.IsVisible(140) + !String.IsEmpty(Container(100).ListItem.Property(Genre))</visible>
                         <control type="image">
                             <posx>0</posx>
                             <posy>-6</posy>
@@ -537,7 +537,7 @@
                         <!-- Director -->
                         <width>950</width>
                         <height>40</height>
-                        <visible>!Control.IsVisible(120) + !Control.IsVisible(130) + !IsEmpty(Container(100).ListItem.Property(Director))</visible>
+                        <visible>!Control.IsVisible(120) + !Control.IsVisible(130) + !String.IsEmpty(Container(100).ListItem.Property(Director))</visible>
                         <control type="image">
                             <posx>0</posx>
                             <posy>-6</posy>
@@ -561,7 +561,7 @@
                         <!-- Writer -->
                         <width>950</width>
                         <height>59</height>
-                        <visible>!Control.IsVisible(120) + !Control.IsVisible(130) + !Control.IsVisible(150) + !IsEmpty(Container(100).ListItem.Property(Writer))</visible>
+                        <visible>!Control.IsVisible(120) + !Control.IsVisible(130) + !Control.IsVisible(150) + !String.IsEmpty(Container(100).ListItem.Property(Writer))</visible>
                         <control type="image">
                             <posx>0</posx>
                             <posy>-5</posy>
@@ -603,33 +603,33 @@
                         <height>56</height>
                         <texture>flags/other/3d-info.png</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>substring(Container(100).ListItem.Property(Path),.3D.) | substring(Container(100).ListItem.Property(Path),-3D.)</visible>
+                        <visible>String.Contains(Container(100).ListItem.Property(Path),.3D.) | String.Contains(Container(100).ListItem.Property(Path),-3D.)</visible>
                     </control>
                     <control type="image">
                         <include>ResDimensionsSmall</include>
                         <texture>$INFO[Container(100).ListItem.Property(VideoResolution),flags/res/,.png]</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>!IsEmpty(Container(100).ListItem.Property(VideoResolution))</visible>
+                        <visible>!String.IsEmpty(Container(100).ListItem.Property(VideoResolution))</visible>
                     </control>
                     <control type="image">
                         <include>AspectDimensionsSmall</include>
                         <texture>$INFO[Container(100).ListItem.Property(VideoAspect),flags/aspectratio/,.png]</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>!IsEmpty(Container(100).ListItem.Property(VideoAspect))</visible>
+                        <visible>!String.IsEmpty(Container(100).ListItem.Property(VideoAspect))</visible>
                     </control>
                     <control type="group">
                         <width>121</width>
-                        <visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec))</visible>
+                        <visible>!String.IsEmpty(Container(100).ListItem.Property(VideoCodec))</visible>
                         <control type="image">
                             <include>vCodecDimensionsSmall</include>
                             <texture>$INFO[Container(100).ListItem.Property(VideoCodec),flags/video/,.png]</texture>
-                            <visible>![substring(Container(100).ListItem.Property(VideoCodec),divx) | substring(Container(100).ListItem.Property(VideoCodec),div3) | substring(Container(100).ListItem.Property(VideoCodec),div4) | substring(Container(100).ListItem.Property(VideoCodec),div5) | substring(Container(100).ListItem.Property(VideoCodec),dx50)]</visible>
+                            <visible>![String.Contains(Container(100).ListItem.Property(VideoCodec),divx) | String.Contains(Container(100).ListItem.Property(VideoCodec),div3) | String.Contains(Container(100).ListItem.Property(VideoCodec),div4) | String.Contains(Container(100).ListItem.Property(VideoCodec),div5) | String.Contains(Container(100).ListItem.Property(VideoCodec),dx50)]</visible>
                             <include>visiblehidefadeflags</include>
                         </control> 
                         <control type="image">
                             <include>vCodecDimensionsSmall</include>
                             <texture>flags/video/divx.png</texture>
-                            <visible>substring(Container(100).ListItem.Property(VideoCodec),divx) | substring(Container(100).ListItem.Property(VideoCodec),div3) | substring(Container(100).ListItem.Property(VideoCodec),div4) | substring(Container(100).ListItem.Property(VideoCodec),div5) | substring(Container(100).ListItem.Property(VideoCodec),dx50)</visible>
+                            <visible>String.Contains(Container(100).ListItem.Property(VideoCodec),divx) | String.Contains(Container(100).ListItem.Property(VideoCodec),div3) | String.Contains(Container(100).ListItem.Property(VideoCodec),div4) | String.Contains(Container(100).ListItem.Property(VideoCodec),div5) | String.Contains(Container(100).ListItem.Property(VideoCodec),dx50)</visible>
                             <include>visiblehidefadeflags</include>
                         </control>
                     </control>
@@ -637,11 +637,11 @@
                         <include>aCodecDimensionsSmall</include>
                         <texture>$INFO[Container(100).ListItem.Property(AudioCodec),flags/audio/,.png]</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec))</visible>
+                        <visible>!String.IsEmpty(Container(100).ListItem.Property(AudioCodec))</visible>
                     </control>
                     <control type="group">
                         <width>121</width>
-                        <visible>Control.IsVisible(110) + !IsEmpty(Container(100).ListItem.Property(MPAA))</visible>
+                        <visible>Control.IsVisible(110) + !String.IsEmpty(Container(100).ListItem.Property(MPAA))</visible>
                         <control type="image">
                             <description>Language independent rating</description>
                             <include>MPAADimensionsSmall</include>
@@ -697,7 +697,7 @@
                         <orientation>vertical</orientation>
                         <showonepage>false</showonepage>
                         <animation effect="fade" start="80" end="35" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(70)">Conditional</animation>
-                        <visible>!IsEmpty(Container(100).ListItem.Property(Plot))</visible>
+                        <visible>!String.IsEmpty(Container(100).ListItem.Property(Plot))</visible>
                     </control>
                 </control>      
             </control>
@@ -909,12 +909,12 @@
                     <texture border="150,1,150,1">views/other/focus.png</texture>
                     <animation effect="slide" end="0,82" time="0" condition="[ControlGroup(9333).HasFocus(193) + Control.IsVisible(192)] | [ControlGroup(9333).HasFocus(191) + [[Control.IsVisible(192) + !Control.IsVisible(193)] | [!Control.IsVisible(192) + Control.IsVisible(193)]]]">Conditional</animation>
                     <animation effect="slide" end="0,164" time="0" condition="ControlGroup(9333).HasFocus(191) + Control.IsVisible(192) + Control.IsVisible(193)">Conditional</animation>
-                    <animation effect="slide" start="0,-82" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(191)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,82" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(191)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-82" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(192)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,82" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(192)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-82" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(193)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,82" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(193)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-82" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(191)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,82" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(191)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-82" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(192)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,82" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(192)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-82" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(193)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,82" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9333).HasFocus(193)" reversible="false">Conditional</animation>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(1110)">Conditional</animation>
                 </control>
                 
@@ -1030,7 +1030,7 @@
                         </control>
                         <control type="grouplist">
                             <!-- Born -->
-                            <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Born))</visible>
+                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Artist_Born))</visible>
                             <width>1240</width>
                             <height>50</height>
                             <posy>50</posy>
@@ -1058,7 +1058,7 @@
                         </control>
                         <control type="grouplist">
                             <!-- Formed -->
-                            <visible>IsEmpty(Container(100).ListItem.Property(Artist_Born))</visible>
+                            <visible>String.IsEmpty(Container(100).ListItem.Property(Artist_Born))</visible>
                             <width>1240</width>
                             <height>50</height>
                             <posy>50</posy>
@@ -1156,7 +1156,7 @@
                                 <textcolor>bbwhite</textcolor>
                                 <label>$INFO[Container(100).ListItem.Property(Artist_Description)]</label>
                                 <autoscroll time="2000" delay="10000" repeat="10000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                                <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Description))</visible>
+                                <visible>!String.IsEmpty(Container(100).ListItem.Property(Artist_Description))</visible>
                             </control>
                             <control type="label">
                                 <posx>0</posx>
@@ -1167,7 +1167,7 @@
                                 <label>$LOCALIZE[547]</label>
                                 <textcolor>bbwhite</textcolor>
                                 <scroll>false</scroll>
-                                <visible>IsEmpty(Container(100).ListItem.Property(Artist_Description))</visible>
+                                <visible>String.IsEmpty(Container(100).ListItem.Property(Artist_Description))</visible>
                             </control>
                         </control>
                     </control>
@@ -1294,7 +1294,7 @@
                                 <textcolor>bbwhite</textcolor>
                                 <label>$INFO[Container(100).ListItem.Property(Album_Description)]</label>
                                 <autoscroll time="2000" delay="10000" repeat="10000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                                <visible>!IsEmpty(Container(100).ListItem.Property(Album_Description))</visible>
+                                <visible>!String.IsEmpty(Container(100).ListItem.Property(Album_Description))</visible>
                             </control>
                             <control type="label">
                                 <posx>0</posx>
@@ -1305,7 +1305,7 @@
                                 <label>$LOCALIZE[414]</label>
                                 <textcolor>bbwhite</textcolor>
                                 <scroll>false</scroll>
-                                <visible>IsEmpty(Container(100).ListItem.Property(Album_Description))</visible>
+                                <visible>String.IsEmpty(Container(100).ListItem.Property(Album_Description))</visible>
                             </control>
                         </control>
                     </control>

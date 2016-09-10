@@ -2,135 +2,135 @@
 <includes>
 
     <variable name="HomeTileEditLabel">
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.Label)]</value>
     </variable>
 
     <variable name="HomeTileEditIcon">
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.Icon)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.Icon)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.Icon)]</value>
     </variable>
 
     <variable name="HomeTileEditTypeName">
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.TypeName)]</value>
     </variable>
 
     <variable name="HomeTileEditPath">
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.Path)]</value>
     </variable>
 
     <include name="PanelDialogHomeTile">
@@ -162,20 +162,20 @@
             <control type="radiobutton" id="2403">
                 <include>SettingsCustomDialogRadioButtonVars</include>
                 <label>$LOCALIZE[31156]</label>
-                <onclick condition="IsEmpty(Window.Property(HomeTileEdit.ShowLabel))">Skin.SetString($INFO[Window.Property(HomeTileEdit)].ShowLabel,on)</onclick>
-                <onclick condition="IsEmpty(Window.Property(HomeTileEdit.ShowLabel))">SetProperty(HomeTileEdit.ShowLabel,on)</onclick>
-                <onclick condition="!IsEmpty(Window.Property(HomeTileEdit.ShowLabel))">Skin.Reset($INFO[Window.Property(HomeTileEdit)].ShowLabel)</onclick>
-                <onclick condition="!IsEmpty(Window.Property(HomeTileEdit.ShowLabel))">ClearProperty(HomeTileEdit.ShowLabel)</onclick>
-                <selected>!IsEmpty(Window.Property(HomeTileEdit.ShowLabel))</selected>
+                <onclick condition="String.IsEmpty(Window.Property(HomeTileEdit.ShowLabel))">Skin.SetString($INFO[Window.Property(HomeTileEdit)].ShowLabel,on)</onclick>
+                <onclick condition="String.IsEmpty(Window.Property(HomeTileEdit.ShowLabel))">SetProperty(HomeTileEdit.ShowLabel,on)</onclick>
+                <onclick condition="!String.IsEmpty(Window.Property(HomeTileEdit.ShowLabel))">Skin.Reset($INFO[Window.Property(HomeTileEdit)].ShowLabel)</onclick>
+                <onclick condition="!String.IsEmpty(Window.Property(HomeTileEdit.ShowLabel))">ClearProperty(HomeTileEdit.ShowLabel)</onclick>
+                <selected>!String.IsEmpty(Window.Property(HomeTileEdit.ShowLabel))</selected>
             </control>
             <control type="radiobutton" id="2404">
                 <include>SettingsCustomDialogRadioButtonVars</include>
                 <label>$LOCALIZE[31160]</label>
-                <onclick condition="IsEmpty(Window.Property(HomeTileEdit.Animate))">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Animate,on)</onclick>
-                <onclick condition="IsEmpty(Window.Property(HomeTileEdit.Animate))">SetProperty(HomeTileEdit.Animate,on)</onclick>
-                <onclick condition="!IsEmpty(Window.Property(HomeTileEdit.Animate))">Skin.Reset($INFO[Window.Property(HomeTileEdit)].Animate)</onclick>
-                <onclick condition="!IsEmpty(Window.Property(HomeTileEdit.Animate))">ClearProperty(HomeTileEdit.Animate)</onclick>
-                <selected>!IsEmpty(Window.Property(HomeTileEdit.Animate))</selected>
+                <onclick condition="String.IsEmpty(Window.Property(HomeTileEdit.Animate))">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Animate,on)</onclick>
+                <onclick condition="String.IsEmpty(Window.Property(HomeTileEdit.Animate))">SetProperty(HomeTileEdit.Animate,on)</onclick>
+                <onclick condition="!String.IsEmpty(Window.Property(HomeTileEdit.Animate))">Skin.Reset($INFO[Window.Property(HomeTileEdit)].Animate)</onclick>
+                <onclick condition="!String.IsEmpty(Window.Property(HomeTileEdit.Animate))">ClearProperty(HomeTileEdit.Animate)</onclick>
+                <selected>!String.IsEmpty(Window.Property(HomeTileEdit.Animate))</selected>
             </control>
         </control>
 
@@ -244,66 +244,66 @@
                 <height>60</height>
                 <texturefocus>buttons/spinctrl/arrow-light-down-fo.png</texturefocus>
                 <texturenofocus>buttons/spinctrl/arrow-light-down-nf.png</texturenofocus>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31145])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">SetProperty(HomeTileEdit.Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),6)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),6)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31151])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),6)">SetProperty(HomeTileEdit.Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),5)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,6)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),5)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31153])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),5)">SetProperty(HomeTileEdit.Type,6)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),4)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,5)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),4)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31150])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),4)">SetProperty(HomeTileEdit.Type,5)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),3)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,4)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),3)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31149])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),3)">SetProperty(HomeTileEdit.Type,4)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),2)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,3)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),2)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31148])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),2)">SetProperty(HomeTileEdit.Type,3)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),1)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,2)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),1)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31147])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),1)">SetProperty(HomeTileEdit.Type,2)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,1)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31146])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">SetProperty(HomeTileEdit.Type,1)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31145])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">SetProperty(HomeTileEdit.Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31145])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">SetProperty(HomeTileEdit.Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),6)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),6)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31151])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),6)">SetProperty(HomeTileEdit.Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),5)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,6)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),5)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31153])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),5)">SetProperty(HomeTileEdit.Type,6)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),4)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,5)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),4)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31150])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),4)">SetProperty(HomeTileEdit.Type,5)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),3)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,4)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),3)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31149])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),3)">SetProperty(HomeTileEdit.Type,4)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),2)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,3)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),2)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31148])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),2)">SetProperty(HomeTileEdit.Type,3)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),1)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,2)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),1)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31147])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),1)">SetProperty(HomeTileEdit.Type,2)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,1)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31146])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">SetProperty(HomeTileEdit.Type,1)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31145])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">SetProperty(HomeTileEdit.Type,0)</onclick>
             </control>
             <control type="button" id="24052">
                 <width>32</width>
                 <height>60</height>
                 <texturefocus>buttons/spinctrl/arrow-light-up-fo.png</texturefocus>
                 <texturenofocus>buttons/spinctrl/arrow-light-up-nf.png</texturenofocus>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31151])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">SetProperty(HomeTileEdit.Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),1)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),1)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31145])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),1)">SetProperty(HomeTileEdit.Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),2)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,1)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),2)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31146])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),2)">SetProperty(HomeTileEdit.Type,1)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),3)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,2)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),3)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31147])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),3)">SetProperty(HomeTileEdit.Type,2)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),4)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,3)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),4)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31148])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),4)">SetProperty(HomeTileEdit.Type,3)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),5)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,4)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),5)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31149])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),5)">SetProperty(HomeTileEdit.Type,4)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),6)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,5)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),6)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31150])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),6)">SetProperty(HomeTileEdit.Type,5)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,6)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31153])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">SetProperty(HomeTileEdit.Type,6)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31151])</onclick>
-                <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">SetProperty(HomeTileEdit.Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31151])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">SetProperty(HomeTileEdit.Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),1)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),1)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31145])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),1)">SetProperty(HomeTileEdit.Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),2)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,1)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),2)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31146])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),2)">SetProperty(HomeTileEdit.Type,1)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),3)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,2)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),3)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31147])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),3)">SetProperty(HomeTileEdit.Type,2)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),4)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,3)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),4)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31148])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),4)">SetProperty(HomeTileEdit.Type,3)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),5)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,4)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),5)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31149])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),5)">SetProperty(HomeTileEdit.Type,4)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),6)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,5)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),6)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31150])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),6)">SetProperty(HomeTileEdit.Type,5)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,6)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31153])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">SetProperty(HomeTileEdit.Type,6)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].TypeName,$LOCALIZE[31151])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">SetProperty(HomeTileEdit.Type,7)</onclick>
             </control>
         </control>
 
@@ -318,15 +318,15 @@
             <include>SettingsCustomDialogButtonVars</include>
             <label>$LOCALIZE[31142]</label>
             <label2>$VAR[HomeTileEditPath]</label2>
-            <onclick condition="!stringcompare(Window.Property(HomeTileEdit.Type),6) + !stringcompare(Window.Property(HomeTileEdit.Type),7)">SetProperty(Property,$INFO[Window.Property(HomeTileEdit)],selectdialog)</onclick>
-            <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),0)">Skin.SetAddon($INFO[Window.Property(HomeTileEdit)].Path,xbmc.addon.video)</onclick>
-            <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),1)">Skin.SetAddon($INFO[Window.Property(HomeTileEdit)].Path,xbmc.addon.audio)</onclick>
-            <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),2)">Skin.SetAddon($INFO[Window.Property(HomeTileEdit)].Path,xbmc.addon.image)</onclick>
-            <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),3)">Skin.SetAddon($INFO[Window.Property(HomeTileEdit)].Path,xbmc.addon.executable)</onclick>
-            <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),4)">Skin.SetFile($INFO[Window.Property(HomeTileEdit)].Path,.xsp|.m3u,special://profile/playlists/video/)</onclick>
-            <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),5)">Skin.SetFile($INFO[Window.Property(HomeTileEdit)].Path,.xsp|.m3u,special://profile/playlists/music/)</onclick>
-            <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),6)">RunScript(script.favourites,property=$INFO[Window.Property(HomeTileEdit)])</onclick>
-            <onclick condition="stringcompare(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Path)</onclick>
+            <onclick condition="!String.IsEqual(Window.Property(HomeTileEdit.Type),6) + !String.IsEqual(Window.Property(HomeTileEdit.Type),7)">SetProperty(Property,$INFO[Window.Property(HomeTileEdit)],selectdialog)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),0)">Skin.SetAddon($INFO[Window.Property(HomeTileEdit)].Path,xbmc.addon.video)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),1)">Skin.SetAddon($INFO[Window.Property(HomeTileEdit)].Path,xbmc.addon.audio)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),2)">Skin.SetAddon($INFO[Window.Property(HomeTileEdit)].Path,xbmc.addon.image)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),3)">Skin.SetAddon($INFO[Window.Property(HomeTileEdit)].Path,xbmc.addon.executable)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),4)">Skin.SetFile($INFO[Window.Property(HomeTileEdit)].Path,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),5)">Skin.SetFile($INFO[Window.Property(HomeTileEdit)].Path,.xsp|.m3u,special://profile/playlists/music/)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),6)">RunScript(script.favourites,property=$INFO[Window.Property(HomeTileEdit)])</onclick>
+            <onclick condition="String.IsEqual(Window.Property(HomeTileEdit.Type),7)">Skin.SetString($INFO[Window.Property(HomeTileEdit)].Path)</onclick>
         </control>
     </include>
 
@@ -1002,7 +1002,7 @@
                     <control type="group">
                         <posx>558</posx>
                         <posy>360</posy>
-                        <visible>!IsEmpty(Window.Property(HomeTileEdit.Enabled))</visible>
+                        <visible>!String.IsEmpty(Window.Property(HomeTileEdit.Enabled))</visible>
                         <include>PanelDialogHomeTile</include>
                     </control>
                 </control>
@@ -1092,13 +1092,13 @@
                 <control type="group" id="9">
                     <posx>694</posx>
                     <posy>360</posy>
-                    <include condition="SubString(Window.Property(SingleDialog),item,left)">PanelDialogHomeTile</include>
-                    <include condition="StringCompare(Window.Property(SingleDialog),widget1)">PanelDialogHomeWidget1</include>
-                    <include condition="StringCompare(Window.Property(SingleDialog),widget2)">PanelDialogHomeWidget2</include>
-                    <include condition="StringCompare(Window.Property(SingleDialog),widget3)">PanelDialogHomeWidget3</include>
-                    <include condition="StringCompare(Window.Property(SingleDialog),widget4)">PanelDialogHomeWidget4</include>
-                    <include condition="StringCompare(Window.Property(SingleDialog),widget5)">PanelDialogHomeWidget5</include>
-                    <include condition="StringCompare(Window.Property(SingleDialog),widget10)">PanelDialogHomeWidget6</include>
+                    <include condition="String.StartsWith(Window.Property(SingleDialog),item)">PanelDialogHomeTile</include>
+                    <include condition="String.IsEqual(Window.Property(SingleDialog),widget1)">PanelDialogHomeWidget1</include>
+                    <include condition="String.IsEqual(Window.Property(SingleDialog),widget2)">PanelDialogHomeWidget2</include>
+                    <include condition="String.IsEqual(Window.Property(SingleDialog),widget3)">PanelDialogHomeWidget3</include>
+                    <include condition="String.IsEqual(Window.Property(SingleDialog),widget4)">PanelDialogHomeWidget4</include>
+                    <include condition="String.IsEqual(Window.Property(SingleDialog),widget5)">PanelDialogHomeWidget5</include>
+                    <include condition="String.IsEqual(Window.Property(SingleDialog),widget10)">PanelDialogHomeWidget6</include>
                 </control>
 
                 <control type="group">
@@ -1139,13 +1139,13 @@
                         <ondown>9</ondown>
                         <onleft>5</onleft>
                         <onright>5</onright>
-                        <onclick condition="SubString(Window.Property(SingleDialog),item,left)">SetFocus(10)</onclick>
-                        <onclick condition="StringCompare(Window.Property(SingleDialog),widget1)">SetFocus(11)</onclick>
-                        <onclick condition="StringCompare(Window.Property(SingleDialog),widget2)">SetFocus(12)</onclick>
-                        <onclick condition="StringCompare(Window.Property(SingleDialog),widget3)">SetFocus(13)</onclick>
-                        <onclick condition="StringCompare(Window.Property(SingleDialog),widget4)">SetFocus(14)</onclick>
-                        <onclick condition="StringCompare(Window.Property(SingleDialog),widget5)">SetFocus(15)</onclick>
-                        <onclick condition="StringCompare(Window.Property(SingleDialog),widget10)">SetFocus(16)</onclick>
+                        <onclick condition="String.StartsWith(Window.Property(SingleDialog),item)">SetFocus(10)</onclick>
+                        <onclick condition="String.IsEqual(Window.Property(SingleDialog),widget1)">SetFocus(11)</onclick>
+                        <onclick condition="String.IsEqual(Window.Property(SingleDialog),widget2)">SetFocus(12)</onclick>
+                        <onclick condition="String.IsEqual(Window.Property(SingleDialog),widget3)">SetFocus(13)</onclick>
+                        <onclick condition="String.IsEqual(Window.Property(SingleDialog),widget4)">SetFocus(14)</onclick>
+                        <onclick condition="String.IsEqual(Window.Property(SingleDialog),widget5)">SetFocus(15)</onclick>
+                        <onclick condition="String.IsEqual(Window.Property(SingleDialog),widget10)">SetFocus(16)</onclick>
                         <visible allowhiddenfocus="true">!Control.HasFocus(2142)</visible>
                         <include>visiblehidefadeinfo</include>
                     </control>

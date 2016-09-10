@@ -2,8 +2,8 @@
 <window type="dialog">
     <defaultcontrol always="true">450</defaultcontrol>
     <!--<zorder>-1</zorder>-->
-    <onload condition="IsEmpty(Window(Home).Property(Favourites))">SetProperty(Favourites,1,Home)</onload>
-    <onload condition="IsEmpty(Window(Home).Property(Favourites))">Control.Move(450,-1)</onload>
+    <onload condition="String.IsEmpty(Window(Home).Property(Favourites))">SetProperty(Favourites,1,Home)</onload>
+    <onload condition="String.IsEmpty(Window(Home).Property(Favourites))">Control.Move(450,-1)</onload>
     <onload condition="!Control.IsVisible(63)">PreviousMenu</onload>
     <controls>
         <control type="group" id="63">
@@ -92,7 +92,7 @@
                         <textcolor>80FFFFFF</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>IntegerGreaterThan(Container(450).NumItems,0) + !IntegerGreaterThan(Container(450).NumItems,1)</visible>
+                        <visible>Integer.IsEqual(Container(450).NumItems,1)</visible>
                     </control>
                     <control type="label">
                         <width min="50" max="400">auto</width>
@@ -102,7 +102,7 @@
                         <textcolor>80FFFFFF</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!IntegerGreaterThan(Container(450).NumItems,0) | IntegerGreaterThan(Container(450).NumItems,1)</visible>
+                        <visible>Integer.IsEqual(Container(450).NumItems,0) | Integer.IsGreater(Container(450).NumItems,1)</visible>
                     </control>
                 </control>
             </control>

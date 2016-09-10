@@ -35,23 +35,23 @@
     </include>
 
     <variable name="OSDPlot">
-        <value condition="!IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextPlot]</value>
+        <value condition="!String.IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextPlot]</value>
         <value>$INFO[VideoPlayer.Plot]</value>
     </variable>
 
     <variable name="OSDTitle">
-        <value condition="!IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextTitle]</value>
+        <value condition="!String.IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextTitle]</value>
         <value>$INFO[VideoPlayer.Title]</value>
     </variable>
 
     <variable name="OSDNextTitle">
-        <value condition="!IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextStartTime,$LOCALIZE[19080] ,]$INFO[VideoPlayer.NextEndTime, • $LOCALIZE[19081] ,]</value>
+        <value condition="!String.IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextStartTime,$LOCALIZE[19080] ,]$INFO[VideoPlayer.NextEndTime, • $LOCALIZE[19081] ,]</value>
         <value>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ,]$INFO[VideoPlayer.NextStartTime, (,)]</value>
     </variable>
 
     <variable name="OSDMusicFanart">
-        <value condition="!IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
-        <value condition="IsEmpty(Player.Art(fanart)) + !IsEmpty(Skin.String(GlobalBackdropSingle))">$INFO[Skin.String(GlobalBackdropSingle)]</value>
+        <value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
+        <value condition="String.IsEmpty(Player.Art(fanart)) + !String.IsEmpty(Skin.String(GlobalBackdropSingle))">$INFO[Skin.String(GlobalBackdropSingle)]</value>
         <value>special://skin/extras/backgrounds/01.jpg</value>
     </variable>
 
@@ -59,7 +59,7 @@
         <control type="group">
             <visible>!Skin.HasSetting(OSD.HideChapterInfo)</visible>
             <include>BannerListInfoAnimation</include>
-            <visible>[Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Player.ShowCodec + !Window.IsActive(script-cu-lrclyrics-main.xml) + !IsEmpty(Player.Chapter) + IntegerGreaterThan(Player.ChapterCount,0)</visible>
+            <visible>[Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Player.ShowCodec + !Window.IsActive(script-cu-lrclyrics-main.xml) + !String.IsEmpty(Player.Chapter) + Integer.IsGreater(Player.ChapterCount,0)</visible>
             <control type="button">
                 <posx>45</posx>
                 <posy>0</posy>
@@ -79,7 +79,7 @@
     <include name="OSDWeatherClockPVR">
         <control type="group">
             <visible>!Window.IsActive(videoosd) + !Window.IsActive(musicosd)</visible>
-            <animation effect="slide" end="70" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
+            <animation effect="slide" end="70" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]">Conditional</animation>
             <control type="label">
                 <description>Clock</description>
                 <posx>1704</posx>
@@ -101,7 +101,7 @@
                 <height>100</height>
                 <colordiffuse>bbwhite</colordiffuse>
                 <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
-                <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                <visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
         </control>
@@ -110,7 +110,7 @@
     <include name="OSDWeatherClock">
         <control type="group">
             <visible>!Skin.HasSetting(OSD.HideWeatherClock)</visible>
-            <animation effect="slide" end="-92" time="300" tween="sine" easing="inout" condition="Player.Muted | substring(Player.Volume,-60.0)">Conditional</animation>
+            <animation effect="slide" end="-92" time="300" tween="sine" easing="inout" condition="Player.Muted | String.Contains(Player.Volume,-60.0)">Conditional</animation>
             <animation effect="slide" end="-204" time="300" tween="sine" easing="inout" condition="!Player.Muted + Window.IsVisible(volumebar) + !Player.Passthrough">Conditional</animation>
             <animation effect="slide" end="-454" time="300" tween="sine" easing="inout" condition="!Player.Muted + Window.IsVisible(volumebar) + Player.Passthrough">Conditional</animation>
             <include condition="Window.IsActive(fullscreenvideo)">BannerListInfoAnimation</include>
@@ -139,7 +139,7 @@
                 <visible>!Weather.IsFetched</visible>
             </control>
             <control type="group">
-                <visible>![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                <visible>![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <description>Small weather</description>
@@ -165,7 +165,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)</visible>
+                <visible>String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <description>Weather loading background</description>
@@ -182,7 +182,7 @@
                     <width>100</width>
                     <height>100</height>
                     <texture>osd/fullscreen/weather-loading.png</texture>
-                    <animation effect="rotate" center="auto" start="360" end="0" time="1000" loop="true" condition="stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)">Conditional</animation>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1000" loop="true" condition="String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)">Conditional</animation>
                 </control>
             </control>
             <control type="image">
@@ -201,7 +201,7 @@
                 <width>100</width>
                 <height>100</height>
                 <texture>osd/fullscreen/clock-pm.png</texture>
-                <visible>substring(System.Time,Pm,right)</visible>
+                <visible>String.EndsWith(System.Time,Pm)</visible>
             </control>
             <control type="label">
                 <description>Clock label</description>

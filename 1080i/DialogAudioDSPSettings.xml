@@ -73,7 +73,7 @@
 					<width>85</width>
 					<height>35</height>
 					<aspectratio align="center">keep</aspectratio>
-					<visible>!IsEmpty(ADSP.MasterOwnIcon)</visible>
+					<visible>!String.IsEmpty(ADSP.MasterOwnIcon)</visible>
 					<texture>$INFO[ADSP.MasterOwnIcon]</texture>
 				</control>
 
@@ -85,7 +85,7 @@
 					<height>56</height>
 					<aspectratio align="center">keep</aspectratio>
 					<texture>$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
-					<visible>IsEmpty(ADSP.MasterOverrideIcon) + Player.HasVideo</visible>
+					<visible>String.IsEmpty(ADSP.MasterOverrideIcon) + Player.HasVideo</visible>
 				</control>
 
 				<control type="image">
@@ -96,7 +96,7 @@
 					<height>56</height>
 					<aspectratio align="center">keep</aspectratio>
 					<texture>$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
-					<visible>IsEmpty(ADSP.MasterOverrideIcon) + Player.HasAudio</visible>
+					<visible>String.IsEmpty(ADSP.MasterOverrideIcon) + Player.HasAudio</visible>
 				</control>
 
 				<control type="image">
@@ -106,7 +106,7 @@
 					<width>85</width>
 					<height>35</height>
 					<aspectratio align="center">keep</aspectratio>
-					<visible>!IsEmpty(ADSP.MasterOverrideIcon)</visible>
+					<visible>!String.IsEmpty(ADSP.MasterOverrideIcon)</visible>
 					<texture>$INFO[ADSP.MasterOverrideIcon]</texture>
 				</control>
 

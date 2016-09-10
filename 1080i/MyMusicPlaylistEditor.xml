@@ -17,7 +17,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                     <effect type="zoom" start="88" end="100" center="576,560" tween="cubic" easing="out" time="400" />
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" delay="300" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="300" />
                     <effect type="zoom" start="88" end="100" center="576,560" tween="cubic" easing="out" time="400" delay="300" />
@@ -52,7 +52,7 @@
                             <font>Font-Condensed-S28</font>
                             <textcolor>77white</textcolor>
                             <label>$INFO[Container(50).NumItems,, $LOCALIZE[31817]]</label>
-                            <visible>IntegerGreaterThan(Container(50).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(50).NumItems,1)</visible>
                             <animation type="Visible" reversible="false">
                                 <effect type="fade" start="0" end="85" time="400" tween="sine" easing="inout" />
                                 <effect type="slide" start="0,-80" end="0,0" time="550" tween="back" easing="out" />
@@ -71,7 +71,7 @@
                             <font>Font-Condensed-S28</font>
                             <label>$INFO[Container(50).CurrentPage]$INFO[Container(50).NumPages,/,]</label>
                             <textcolor>77white</textcolor>
-                            <visible>IntegerGreaterThan(Container(50).NumPages,0)</visible>
+                            <visible>Integer.IsGreater(Container(50).NumPages,0)</visible>
                             <animation type="Visible" reversible="false">
                                 <effect type="fade" start="0" end="85" time="400" tween="sine" easing="inout" />
                                 <effect type="slide" start="0,-80" end="0,0" time="550" tween="back" easing="out" />
@@ -128,7 +128,7 @@
                                     <height>60</height>
                                     <texture>$INFO[ListItem.ActualIcon,windows/filemanager/icons/,/fo.png]</texture>
                                     <aspectratio>keep</aspectratio>
-                                    <visible>IsEmpty(ListItem.Thumb) | ![stringcompare(ListItem.ActualIcon,DefaultAlbumCover.png) + stringcompare(ListItem.ActualIcon,DefaultAudio.png) + stringcompare(ListItem.ActualIcon,DefaultArtist.png)]</visible>
+                                    <visible>String.IsEmpty(ListItem.Thumb) | ![String.IsEqual(ListItem.ActualIcon,DefaultAlbumCover.png) + String.IsEqual(ListItem.ActualIcon,DefaultAudio.png) + String.IsEqual(ListItem.ActualIcon,DefaultArtist.png)]</visible>
                                 </control>
                                 <control type="image">
                                     <posx>15</posx>
@@ -137,7 +137,7 @@
                                     <height>40</height>
                                     <texture>$INFO[ListItem.Thumb]</texture>
                                     <aspectratio>keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Thumb) + [stringcompare(ListItem.ActualIcon,DefaultAlbumCover.png) | stringcompare(ListItem.ActualIcon,DefaultAudio.png) | stringcompare(ListItem.ActualIcon,DefaultArtist.png)]</visible>
+                                    <visible>!String.IsEmpty(ListItem.Thumb) + [String.IsEqual(ListItem.ActualIcon,DefaultAlbumCover.png) | String.IsEqual(ListItem.ActualIcon,DefaultAudio.png) | String.IsEqual(ListItem.ActualIcon,DefaultArtist.png)]</visible>
                                 </control>
                                 <control type="label">
                                     <posx>70</posx>
@@ -202,7 +202,7 @@
                                     <height>60</height>
                                     <texture>$INFO[ListItem.ActualIcon,windows/filemanager/icons/,/fo.png]</texture>
                                     <aspectratio>keep</aspectratio>
-                                    <visible>IsEmpty(ListItem.Thumb) | ![stringcompare(ListItem.ActualIcon,DefaultAlbumCover.png) + stringcompare(ListItem.ActualIcon,DefaultAudio.png) + stringcompare(ListItem.ActualIcon,DefaultArtist.png)]</visible>
+                                    <visible>String.IsEmpty(ListItem.Thumb) | ![String.IsEqual(ListItem.ActualIcon,DefaultAlbumCover.png) + String.IsEqual(ListItem.ActualIcon,DefaultAudio.png) + String.IsEqual(ListItem.ActualIcon,DefaultArtist.png)]</visible>
                                 </control>
                                 <control type="image">
                                     <posx>15</posx>
@@ -211,7 +211,7 @@
                                     <height>40</height>
                                     <texture>$INFO[ListItem.Thumb]</texture>
                                     <aspectratio>keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Thumb) + [stringcompare(ListItem.ActualIcon,DefaultAlbumCover.png) | stringcompare(ListItem.ActualIcon,DefaultAudio.png) | stringcompare(ListItem.ActualIcon,DefaultArtist.png)]</visible>
+                                    <visible>!String.IsEmpty(ListItem.Thumb) + [String.IsEqual(ListItem.ActualIcon,DefaultAlbumCover.png) | String.IsEqual(ListItem.ActualIcon,DefaultAudio.png) | String.IsEqual(ListItem.ActualIcon,DefaultArtist.png)]</visible>
                                 </control>
                                 <control type="group">
                                     <animation type="Focus" condition="Container(50).OnNext | Container(50).OnPrevious" reversible="false">
@@ -291,7 +291,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />
                     <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="105" /> 
                 </animation>
-                <animation type="Visible" condition="IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
+                <animation type="Visible" condition="String.IsEmpty(Window(home).property(NoAnimation)) + !Window.Next(visualisation)" reversible="false">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="405" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="405" />
                     <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="405" />
@@ -336,7 +336,7 @@
                             <font>Font-Condensed-S28</font>
                             <textcolor>77white</textcolor>
                             <label>$INFO[Container(100).NumItems,, $LOCALIZE[31817]]</label>
-                            <visible>IntegerGreaterThan(Container(100).NumItems,1)</visible>
+                            <visible>Integer.IsGreater(Container(100).NumItems,1)</visible>
                             <animation type="Visible" reversible="false">
                                 <effect type="fade" start="0" end="85" time="400" tween="sine" easing="inout" />
                                 <effect type="slide" start="0,-80" end="0,0" time="550" tween="back" easing="out" />
@@ -355,7 +355,7 @@
                             <font>Font-Condensed-S28</font>
                             <label>$INFO[Container(100).CurrentPage]$INFO[Container(100).NumPages,/,]</label>
                             <textcolor>77white</textcolor>
-                            <visible>IntegerGreaterThan(Container(100).NumPages,0)</visible>
+                            <visible>Integer.IsGreater(Container(100).NumPages,0)</visible>
                             <animation type="Visible" reversible="false">
                                 <effect type="fade" start="0" end="85" time="400" tween="sine" easing="inout" />
                                 <effect type="slide" start="0,-80" end="0,0" time="550" tween="back" easing="out" />
@@ -410,7 +410,7 @@
                                 <height>60</height>
                                 <texture>$INFO[ListItem.ActualIcon,windows/filemanager/icons/,/fo.png]</texture>
                                 <aspectratio>keep</aspectratio>
-                                <visible>IsEmpty(ListItem.Thumb)</visible>
+                                <visible>String.IsEmpty(ListItem.Thumb)</visible>
                             </control>
                             <control type="image">
                                 <posx>15</posx>
@@ -419,7 +419,7 @@
                                 <height>40</height>
                                 <texture>$INFO[ListItem.Thumb]</texture>
                                 <aspectratio>keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Thumb)</visible>
+                                <visible>!String.IsEmpty(ListItem.Thumb)</visible>
                             </control>
                             <control type="label">
                                 <posx>70</posx>
@@ -481,7 +481,7 @@
                                 <height>60</height>
                                 <texture>$INFO[ListItem.ActualIcon,windows/filemanager/icons/,/fo.png]</texture>
                                 <aspectratio>keep</aspectratio>
-                                <visible>IsEmpty(ListItem.Thumb)</visible>
+                                <visible>String.IsEmpty(ListItem.Thumb)</visible>
                             </control>
                             <control type="image">
                                 <posx>15</posx>
@@ -490,7 +490,7 @@
                                 <height>40</height>
                                 <texture>$INFO[ListItem.Thumb]</texture>
                                 <aspectratio>keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Thumb)</visible>
+                                <visible>!String.IsEmpty(ListItem.Thumb)</visible>
                             </control>
                             <control type="group">
                                 <animation type="Focus" condition="Container(100).OnNext | Container(100).OnPrevious" reversible="false">

@@ -73,7 +73,7 @@
             <loop>yes</loop>
             <include>Animation_FanartFade</include>
             <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
-            <visible>Skin.HasSetting(ShowWeatherFanart) + [!IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo] + Weather.IsFetched + !Window.IsActive(favourites)</visible>
+            <visible>Skin.HasSetting(ShowWeatherFanart) + [!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)] + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo] + Weather.IsFetched + !Window.IsActive(favourites)</visible>
         </control>
         <include>CommonOverlay</include>
     </include>
@@ -88,7 +88,7 @@
             <include>Animation_FanartFade</include>
             <fadetime>600</fadetime>
             <texture background="true" fallback=".">$INFO[Container(20).ListItem.property(single)]</texture>
-            <visible>!IsEmpty(Container(20).ListItem.property(single)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo] + !Container(20).Scrolling + !Window.IsActive(favourites)</visible>
+            <visible>!String.IsEmpty(Container(20).ListItem.property(single)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo] + !Container(20).Scrolling + !Window.IsActive(favourites)</visible>
         </control>
         <control type="multiimage">
             <include>FullscreenDimensions</include>
@@ -98,7 +98,7 @@
             <loop>yes</loop>
             <include>Animation_FanartFade</include>
             <imagepath background="true" fallback=".">$INFO[Container(20).ListItem.property(multi)]</imagepath>
-            <visible>!IsEmpty(Container(20).ListItem.property(multi)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo] + !Container(20).Scrolling + !Window.IsActive(favourites)</visible>
+            <visible>!String.IsEmpty(Container(20).ListItem.property(multi)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo] + !Container(20).Scrolling + !Window.IsActive(favourites)</visible>
         </control>
         <control type="image">
             <description>Search results fanart</description>
@@ -106,7 +106,7 @@
             <texture background="true">$INFO[Window(Home).Property(fanart_image)]</texture>
             <fadetime>500</fadetime>
             <include>Animation_FanartFade</include>
-            <visible>!IsEmpty(Window(Home).property(fanart_image)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo] + !Window.IsActive(favourites)</visible>
+            <visible>!String.IsEmpty(Window(Home).property(fanart_image)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo] + !Window.IsActive(favourites)</visible>
         </control>
     </include>
 
@@ -116,13 +116,13 @@
 
     <include name="CommonContent">
         <control type="group">
-            <animation effect="slide" end="0" time="0" delay="400" condition="!IsEmpty(Window(home).property(NoAnimation))" reversible="false">WindowClose</animation>
+            <animation effect="slide" end="0" time="0" delay="400" condition="!String.IsEmpty(Window(home).property(NoAnimation))" reversible="false">WindowClose</animation>
             <control type="image">
                 <description>Custom Wallpaper Image</description>
                 <include>FullscreenDimensions</include>
                 <texture fallback="special://skin/extras/backgrounds/01.jpg">$INFO[Skin.String(GlobalBackdropSingle)]</texture>
                 <include>visiblehidefadeinfo</include>
-                <visible>IsEmpty(Skin.String(GlobalBackdropMulti)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo]</visible>
+                <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo]</visible>
             </control>
             <control type="multiimage">
                 <description>Custom Wallpaper Image</description>
@@ -133,7 +133,7 @@
                 <loop>yes</loop>
                 <imagepath background="true">$INFO[Skin.String(GlobalBackdropMulti)]</imagepath>
                 <include>visiblehidefadeinfo</include>
-                <visible>!IsEmpty(Skin.String(GlobalBackdropMulti)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo]</visible>
+                <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti)) + ![Skin.HasSetting(BackgroundVideo) + Player.HasVideo]</visible>
             </control>
         </control>
     </include>
@@ -143,7 +143,7 @@
     <!-- ====== -->
 
     <variable name="ViewFanart">
-        <value condition="!IsEmpty(Window(home).property(fanart_image)) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + [Window.IsActive(movieinformation) | Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)]">$INFO[Window(home).property(fanart_image)]</value>
+        <value condition="!String.IsEmpty(Window(home).property(fanart_image)) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + [Window.IsActive(movieinformation) | Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)]">$INFO[Window(home).property(fanart_image)]</value>
         <value condition="!Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)">$INFO[ListItem.Art(fanart)]</value>
         <value>-</value>
     </variable>
@@ -215,7 +215,7 @@
             <texture background="true">fade/overlay.png</texture>
             <animation effect="fade" time="300" start="0" end="100" tween="sine" easing="out">Visible</animation>
             <animation effect="fade" time="300" start="100" end="0" tween="sine" easing="in">Hidden</animation>
-            <visible>[Window.IsActive(songinformation) | Window.IsActive(contentsettings) | Window.IsActive(addonsettings) | Window.IsActive(filebrowser) | [Window.IsActive(virtualkeyboard) + IsEmpty(Window(Home).Property(HomeSearch))] | Window.IsActive(playercontrols) | Window.IsActive(profilesettings) | Window.IsActive(selectdialog) | Window.IsActive(progressdialog) | Window.IsActive(mediasource) | Window.IsActive(screencalibration) | Window.IsActive(numericinput) | Window.IsActive(LockSettings) | Window.IsActive(smartplaylisteditor) | Window.IsActive(smartplaylistrule) | Window.IsActive(pictureinfo) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsActive(3001) | Window.IsActive(3002) | Window.IsActive(3003) | Window.IsActive(3006) | Window.IsActive(peripheralsettings) | Window.IsActive(mediafilter) | Window.IsActive(mediafilter) | Window.IsActive(pvrgroupmanager) | Window.IsActive(pvrtimersetting) | Window.IsActive(pvrguidesearch) | Window.IsActive(pvrchannelmanager) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(DialogSelect.xml) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | ControlGroup(9000).HasFocus() | [Window.IsActive(contextmenu) + [Window.IsActive(favourites) | [!Window.IsActive(filemanager) + !Window.IsActive(home)]]]] + !Window.IsActive(movieinformation) + !Window.IsActive(1122) + !Window.IsActive(addoninformation) + !Window.IsActive(musicinformation) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(musicplaylisteditor)</visible>
+            <visible>[Window.IsActive(songinformation) | Window.IsActive(contentsettings) | Window.IsActive(addonsettings) | Window.IsActive(filebrowser) | [Window.IsActive(virtualkeyboard) + String.IsEmpty(Window(Home).Property(HomeSearch))] | Window.IsActive(playercontrols) | Window.IsActive(profilesettings) | Window.IsActive(selectdialog) | Window.IsActive(progressdialog) | Window.IsActive(mediasource) | Window.IsActive(screencalibration) | Window.IsActive(numericinput) | Window.IsActive(LockSettings) | Window.IsActive(smartplaylisteditor) | Window.IsActive(smartplaylistrule) | Window.IsActive(pictureinfo) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsActive(3001) | Window.IsActive(3002) | Window.IsActive(3003) | Window.IsActive(3006) | Window.IsActive(peripheralsettings) | Window.IsActive(mediafilter) | Window.IsActive(mediafilter) | Window.IsActive(pvrgroupmanager) | Window.IsActive(pvrtimersetting) | Window.IsActive(pvrguidesearch) | Window.IsActive(pvrchannelmanager) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(DialogSelect.xml) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | ControlGroup(9000).HasFocus() | [Window.IsActive(contextmenu) + [Window.IsActive(favourites) | [!Window.IsActive(filemanager) + !Window.IsActive(home)]]]] + !Window.IsActive(movieinformation) + !Window.IsActive(1122) + !Window.IsActive(addoninformation) + !Window.IsActive(musicinformation) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(musicplaylisteditor)</visible>
         </control>
     </include>
     <include name="FadeBackgroundMovieInfo">
@@ -224,7 +224,7 @@
             <texture background="true">fade/overlay.png</texture>
             <animation effect="fade" time="300" start="0" end="100" tween="sine" easing="out">Visible</animation>
             <animation effect="fade" time="300" start="100" end="0" tween="sine" easing="in">Hidden</animation>
-            <visible>[[IsEmpty(Window(3004).Property(ChooseArt)) | ![Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml) | Window.IsActive(progressdialog)]] + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml) | Window.IsActive(progressdialog)]] | Window.IsActive(contentsettings) | Window.IsActive(addonsettings) | Window.IsActive(virtualkeyboard) | Window.IsActive(playercontrols) | Window.IsActive(profilesettings) | Window.IsActive(numericinput) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog)</visible>
+            <visible>[[String.IsEmpty(Window(3004).Property(ChooseArt)) | ![Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml) | Window.IsActive(progressdialog)]] + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml) | Window.IsActive(progressdialog)]] | Window.IsActive(contentsettings) | Window.IsActive(addonsettings) | Window.IsActive(virtualkeyboard) | Window.IsActive(playercontrols) | Window.IsActive(profilesettings) | Window.IsActive(numericinput) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog)</visible>
         </control>
     </include>
     <include name="FadeBackgroundButtonMenu">

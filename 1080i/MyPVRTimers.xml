@@ -65,12 +65,12 @@
                             <pagecontrol>71</pagecontrol>
                             <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71)</autoscroll>
                             <font>Font-Condensed-S34</font>
-                            <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
+                            <visible>!String.IsEmpty(Container(50).ListItem.Plot)</visible>
                             <include>visiblehidefadeinfo</include>
                         </control>
                         <control type="label">
                             <description>Empty Plot</description>
-                            <visible>IsEmpty(Container(50).ListItem.Plot)</visible>
+                            <visible>String.IsEmpty(Container(50).ListItem.Plot)</visible>
                             <posx>30</posx>
                             <posy>300</posy>
                             <width>516</width>
@@ -192,7 +192,7 @@
                                 <textcolor>99FFFFFF</textcolor>
                                 <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
-                                <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+                                <animation effect="slide" end="0,19" time="0" condition="String.IsEmpty(ListItem.ChannelName)">Conditional</animation>
                             </control>
                             <control type="label">
                                 <description>Date + Start / End Time + Channel</description>
@@ -206,7 +206,7 @@
                                 <textcolor>77white</textcolor>
                                 <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                             </control>
                             <control type="image">
                                 <posx>913</posx>
@@ -262,7 +262,7 @@
                                     <textcolor>99FFFFFF</textcolor>
                                     <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
-                                    <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+                                    <animation effect="slide" end="0,19" time="0" condition="String.IsEmpty(ListItem.ChannelName)">Conditional</animation>
                                 </control>
                                 <control type="label">
                                     <description>Date + Start / End Time + Channel</description>
@@ -276,7 +276,7 @@
                                     <textcolor>77white</textcolor>
                                     <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
-                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>913</posx>
@@ -318,7 +318,7 @@
                             <righttexture>windows/pvr/progress-leftright.png</righttexture>
                             <info>PVR.BackendDiskspaceProgr</info>
                             <colordiffuse>aawhite</colordiffuse>
-                            <visible>!IntegerGreaterThan(PVR.BackendDiskspaceProgr,100)</visible>
+                            <visible>Integer.IsLessOrEqual(PVR.BackendDiskspaceProgr,100)</visible>
                         </control>
                         <control type="label">
                             <description>Disk usage text</description>
@@ -331,7 +331,7 @@
                             <aligny>center</aligny>
                             <textcolor>D4FFFFFF</textcolor>
                             <font>Font-Condensed-S28</font>
-                            <visible>!IntegerGreaterThan(PVR.BackendDiskspaceProgr,100)</visible>
+                            <visible>Integer.IsLessOrEqual(PVR.BackendDiskspaceProgr,100)</visible>
                         </control>
                     </control>
                 </control>

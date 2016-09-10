@@ -356,7 +356,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,addons,left) | substring(Container.FolderPath,plugin,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,addons) | String.StartsWith(Container.FolderPath,plugin)</visible>
                 </control>
                 <control type="radiobutton" id="207">
                     <description>Thumbnail</description>

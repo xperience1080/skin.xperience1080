@@ -384,15 +384,15 @@
                             <posx>0</posx>
                             <posy>50</posy>
                             <width>1240</width>
-                            <include condition="IsEmpty(ListItem.Property(Addon.Disclaimer)) + IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_1</include>
-                            <include condition="[!IsEmpty(ListItem.Property(Addon.Disclaimer)) + IsEmpty(ListItem.Property(Addon.broken))] | IsEmpty(ListItem.Property(Addon.Disclaimer)) + !IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_2</include>
-                            <include condition="!IsEmpty(ListItem.Property(Addon.Disclaimer)) + !IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_3</include>
+                            <include condition="String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + String.IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_1</include>
+                            <include condition="[!String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + String.IsEmpty(ListItem.Property(Addon.broken))] | String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + !String.IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_2</include>
+                            <include condition="!String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + !String.IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_3</include>
                             <font>Font-Condensed-S40</font>
                             <align>justify</align>
                             <textcolor>bbwhite</textcolor>
                             <label fallback="">$INFO[ListItem.Property(Addon.Description)]</label>
                             <autoscroll time="2000" delay="10000" repeat="10000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                            <visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
+                            <visible>!String.IsEmpty(ListItem.Property(Addon.Description))</visible>
                         </control>
                         <control type="label">
                             <posx>0</posx>
@@ -403,13 +403,13 @@
                             <label>$LOCALIZE[31938]</label>
                             <textcolor>bbwhite</textcolor>
                             <scroll>false</scroll>
-                            <visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
+                            <visible>String.IsEmpty(ListItem.Property(Addon.Description))</visible>
                         </control>
                     </control>
                     <control type="group">
                         <!-- Disclaimer -->
-                        <visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
-                        <animation effect="slide" end="0,100" time="0" condition="IsEmpty(ListItem.Property(Addon.broken))">Conditional</animation>
+                        <visible>!String.IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
+                        <animation effect="slide" end="0,100" time="0" condition="String.IsEmpty(ListItem.Property(Addon.broken))">Conditional</animation>
                         <width>1240</width>
                         <height>50</height>
                         <posy>470</posy>
@@ -444,7 +444,7 @@
                     </control>
                     <control type="group">
                         <!-- Disclaimer -->
-                        <visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(Addon.broken))</visible>
                         <width>1150</width>
                         <height>50</height>
                         <posy>570</posy>

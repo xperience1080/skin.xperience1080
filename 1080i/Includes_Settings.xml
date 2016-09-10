@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <variable name="MovieMPAALangLabel">
-        <value condition="!IsEmpty(Skin.String(MovieMPAALang))">$INFO[Skin.String(MovieMPAALang)]</value>
+        <value condition="!String.IsEmpty(Skin.String(MovieMPAALang))">$INFO[Skin.String(MovieMPAALang)]</value>
         <value>US</value>
     </variable>
 
@@ -298,13 +298,13 @@
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true" fallback="special://skin/extras/backgrounds/09.jpg">$INFO[Skin.String(GlobalBackdropSingle)]</texture>
-            <visible>IsEmpty(Skin.String(GlobalBackdropMulti))</visible>
+            <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(GlobalBackdropMulti)]</imagepath>
-            <visible>!IsEmpty(Skin.String(GlobalBackdropMulti))</visible>
+            <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti))</visible>
         </control>
 
         <control type="grouplist" id="3">
@@ -317,7 +317,7 @@
             </control>
             <control type="radiobutton" id="2102">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(GlobalBackdropSingle))</selected>
+                <selected>!String.IsEmpty(Skin.String(GlobalBackdropSingle))</selected>
                 <onclick>Skin.Reset(GlobalBackdropMulti)</onclick>
                 <onclick>Skin.SetString(GlobalBackdropSingle,special://skin/extras/backgrounds/01.jpg)</onclick>
                 <label>$LOCALIZE[31252]</label>
@@ -325,7 +325,7 @@
             </control>
             <control type="radiobutton" id="2103">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(GlobalBackdropMulti))</selected>
+                <selected>!String.IsEmpty(Skin.String(GlobalBackdropMulti))</selected>
                 <onclick>Skin.Reset(GlobalBackdropSingle)</onclick>
                 <onclick>Skin.SetString(GlobalBackdropMulti,special://skin/extras/backgrounds/)</onclick>
                 <label>$LOCALIZE[31253]</label>
@@ -337,16 +337,16 @@
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(GlobalBackdropSingle)]</label2>
             <onclick>Skin.SetImage(GlobalBackdropSingle)</onclick>
-            <visible>IsEmpty(Skin.String(GlobalBackdropMulti))</visible>
-            <enable>!IsEmpty(Skin.String(GlobalBackdropSingle))</enable>
+            <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti))</visible>
+            <enable>!String.IsEmpty(Skin.String(GlobalBackdropSingle))</enable>
         </control>
         
         <control type="button" id="4">
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(GlobalBackdropMulti)]</label2>
             <onclick>Skin.SetPath(GlobalBackdropMulti)</onclick>
-            <visible>!IsEmpty(Skin.String(GlobalBackdropMulti))</visible>
-            <enable>!IsEmpty(Skin.String(GlobalBackdropMulti))</enable>
+            <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti))</visible>
+            <enable>!String.IsEmpty(Skin.String(GlobalBackdropMulti))</enable>
         </control>
     </include>
 
@@ -354,14 +354,14 @@
 		<control type="image">
 			<include>SettingsBackgroundDialogImageVars</include>
 			<texture background="true">$INFO[Skin.String(GlobalOverlay)]</texture>
-			<visible>!IsEmpty(Skin.String(GlobalOverlay))</visible>
+			<visible>!String.IsEmpty(Skin.String(GlobalOverlay))</visible>
 		</control>
 	
 		<control type="grouplist" id="3">
 			<include>SettingsBackgroundDialogGroupListVars</include>
 			<control type="radiobutton" id="2102">
 				<include>SettingsBackgroundDialogRadioButtonVars</include>
-				<selected>!IsEmpty(Skin.String(GlobalOverlay))</selected>
+				<selected>!String.IsEmpty(Skin.String(GlobalOverlay))</selected>
 				<onclick>Skin.SetString(GlobalOverlay,special://skin/extras/fade/overlay.png)</onclick>
 				<label>$LOCALIZE[31252]</label>
 			</control>
@@ -378,25 +378,25 @@
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true" fallback="special://skin/extras/backgrounds/01.jpg">$INFO[Skin.String(GlobalBackdropSingle)]</texture>
-            <visible>IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeSettingsSingleImage)) + IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
+            <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeSettingsSingleImage)) + String.IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(GlobalBackdropMulti)]</imagepath>
-            <visible>!IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeSettingsSingleImage)) + IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeSettingsSingleImage)) + String.IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
         </control>
         
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true">$INFO[Skin.String(HomeSettingsSingleImage)]</texture>
-            <visible>!IsEmpty(Skin.String(HomeSettingsSingleImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeSettingsSingleImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(HomeSettingsMultiImage)]</imagepath>
-            <visible>!IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
         </control>
 
         <control type="grouplist" id="3">
@@ -404,14 +404,14 @@
             <control type="radiobutton" id="2101">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
                 <label>$LOCALIZE[31251]</label>
-                <selected>IsEmpty(Skin.String(HomeSettingsSingleImage)) + IsEmpty(Skin.String(HomeSettingsMultiImage))</selected>
+                <selected>String.IsEmpty(Skin.String(HomeSettingsSingleImage)) + String.IsEmpty(Skin.String(HomeSettingsMultiImage))</selected>
                 <onclick>Skin.Reset(HomeSettingsSingleImage)</onclick>
                 <onclick>Skin.Reset(HomeSettingsMultiImage)</onclick>
                 <animation effect="fade" end="47" time="0" condition="!Control.IsEnabled(2101)">Conditional</animation>
             </control>
             <control type="radiobutton" id="2102">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeSettingsSingleImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeSettingsSingleImage))</selected>
                 <onclick>Skin.Reset(HomeSettingsMultiImage)</onclick>
                 <onclick>Skin.SetString(HomeSettingsSingleImage,special://skin/extras/backgrounds/01.jpg)</onclick>
                 <label>$LOCALIZE[31252]</label>
@@ -419,7 +419,7 @@
             </control>
             <control type="radiobutton" id="2103">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeSettingsMultiImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeSettingsMultiImage))</selected>
                 <onclick>Skin.Reset(HomeSettingsSingleImage)</onclick>
                 <onclick>Skin.SetString(HomeSettingsMultiImage,special://skin/extras/backgrounds/)</onclick>
                 <label>$LOCALIZE[31253]</label>
@@ -431,16 +431,16 @@
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeSettingsSingleImage)]</label2>
             <onclick>Skin.SetImage(HomeSettingsSingleImage)</onclick>
-            <visible>IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeSettingsSingleImage))</enable>
+            <visible>String.IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeSettingsSingleImage))</enable>
         </control>
         
         <control type="button" id="4">
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeSettingsMultiImage)]</label2>
             <onclick>Skin.SetPath(HomeSettingsMultiImage)</onclick>
-            <visible>!IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeSettingsMultiImage))</enable>
+            <visible>!String.IsEmpty(Skin.String(HomeSettingsMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeSettingsMultiImage))</enable>
         </control>
     </include>
     
@@ -448,25 +448,25 @@
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true" fallback="special://skin/extras/backgrounds/01.jpg">$INFO[Skin.String(GlobalBackdropSingle)]</texture>
-            <visible>IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeMoviesSingleImage)) + IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
+            <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeMoviesSingleImage)) + String.IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(GlobalBackdropMulti)]</imagepath>
-            <visible>!IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeMoviesSingleImage)) + IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeMoviesSingleImage)) + String.IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
         </control>
         
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true">$INFO[Skin.String(HomeMoviesSingleImage)]</texture>
-            <visible>!IsEmpty(Skin.String(HomeMoviesSingleImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeMoviesSingleImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(HomeMoviesMultiImage)]</imagepath>
-            <visible>!IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
         </control>
 
         <control type="grouplist" id="3">
@@ -474,14 +474,14 @@
             <control type="radiobutton" id="2101">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
                 <label>$LOCALIZE[31251]</label>
-                <selected>IsEmpty(Skin.String(HomeMoviesSingleImage)) + IsEmpty(Skin.String(HomeMoviesMultiImage))</selected>
+                <selected>String.IsEmpty(Skin.String(HomeMoviesSingleImage)) + String.IsEmpty(Skin.String(HomeMoviesMultiImage))</selected>
                 <onclick>Skin.Reset(HomeMoviesSingleImage)</onclick>
                 <onclick>Skin.Reset(HomeMoviesMultiImage)</onclick>
                 <animation effect="fade" end="47" time="0" condition="!Control.IsEnabled(2101)">Conditional</animation>
             </control>
             <control type="radiobutton" id="2102">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeMoviesSingleImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeMoviesSingleImage))</selected>
                 <onclick>Skin.Reset(HomeMoviesMultiImage)</onclick>
                 <onclick>Skin.SetString(HomeMoviesSingleImage,special://skin/extras/backgrounds/01.jpg)</onclick>
                 <label>$LOCALIZE[31252]</label>
@@ -489,7 +489,7 @@
             </control>
             <control type="radiobutton" id="2103">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeMoviesMultiImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeMoviesMultiImage))</selected>
                 <onclick>Skin.Reset(HomeMoviesSingleImage)</onclick>
                 <onclick>Skin.SetString(HomeMoviesMultiImage,special://skin/extras/backgrounds/)</onclick>
                 <label>$LOCALIZE[31253]</label>
@@ -501,16 +501,16 @@
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeMoviesSingleImage)]</label2>
             <onclick>Skin.SetImage(HomeMoviesSingleImage)</onclick>
-            <visible>IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeMoviesSingleImage))</enable>
+            <visible>String.IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeMoviesSingleImage))</enable>
         </control>
         
         <control type="button" id="4">
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeMoviesMultiImage)]</label2>
             <onclick>Skin.SetPath(HomeMoviesMultiImage)</onclick>
-            <visible>!IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeMoviesMultiImage))</enable>
+            <visible>!String.IsEmpty(Skin.String(HomeMoviesMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeMoviesMultiImage))</enable>
         </control>
     </include>
     
@@ -518,25 +518,25 @@
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true" fallback="special://skin/extras/backgrounds/01.jpg">$INFO[Skin.String(GlobalBackdropSingle)]</texture>
-            <visible>IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeTVShowsSingleImage)) + IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
+            <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeTVShowsSingleImage)) + String.IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(GlobalBackdropMulti)]</imagepath>
-            <visible>!IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeTVShowsSingleImage)) + IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeTVShowsSingleImage)) + String.IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
         </control>
         
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true">$INFO[Skin.String(HomeTVShowsSingleImage)]</texture>
-            <visible>!IsEmpty(Skin.String(HomeTVShowsSingleImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeTVShowsSingleImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(HomeTVShowsMultiImage)]</imagepath>
-            <visible>!IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
         </control>
     
         <control type="grouplist" id="3">
@@ -544,14 +544,14 @@
             <control type="radiobutton" id="2101">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
                 <label>$LOCALIZE[31251]</label>
-                <selected>IsEmpty(Skin.String(HomeTVShowsSingleImage)) + IsEmpty(Skin.String(HomeTVShowsMultiImage))</selected>
+                <selected>String.IsEmpty(Skin.String(HomeTVShowsSingleImage)) + String.IsEmpty(Skin.String(HomeTVShowsMultiImage))</selected>
                 <onclick>Skin.Reset(HomeTVShowsSingleImage)</onclick>
                 <onclick>Skin.Reset(HomeTVShowsMultiImage)</onclick>
                 <animation effect="fade" end="47" time="0" condition="!Control.IsEnabled(2101)">Conditional</animation>
             </control>
             <control type="radiobutton" id="2102">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeTVShowsSingleImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeTVShowsSingleImage))</selected>
                 <onclick>Skin.Reset(HomeTVShowsMultiImage)</onclick>
                 <onclick>Skin.SetString(HomeTVShowsSingleImage,special://skin/extras/backgrounds/01.jpg)</onclick>
                 <label>$LOCALIZE[31252]</label>
@@ -559,7 +559,7 @@
             </control>
             <control type="radiobutton" id="2103">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeTVShowsMultiImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeTVShowsMultiImage))</selected>
                 <onclick>Skin.Reset(HomeTVShowsSingleImage)</onclick>
                 <onclick>Skin.SetString(HomeTVShowsMultiImage,special://skin/extras/backgrounds/)</onclick>
                 <label>$LOCALIZE[31253]</label>
@@ -571,16 +571,16 @@
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeTVShowsSingleImage)]</label2>
             <onclick>Skin.SetImage(HomeTVShowsSingleImage)</onclick>
-            <visible>IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeTVShowsSingleImage))</enable>
+            <visible>String.IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeTVShowsSingleImage))</enable>
         </control>
         
         <control type="button" id="4">
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeTVShowsMultiImage)]</label2>
             <onclick>Skin.SetPath(HomeTVShowsMultiImage)</onclick>
-            <visible>!IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeTVShowsMultiImage))</enable>
+            <visible>!String.IsEmpty(Skin.String(HomeTVShowsMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeTVShowsMultiImage))</enable>
         </control>
     </include>
     
@@ -588,25 +588,25 @@
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true" fallback="special://skin/extras/backgrounds/01.jpg">$INFO[Skin.String(GlobalBackdropSingle)]</texture>
-            <visible>IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeMusicSingleImage)) + IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
+            <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeMusicSingleImage)) + String.IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(GlobalBackdropMulti)]</imagepath>
-            <visible>!IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeMusicSingleImage)) + IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeMusicSingleImage)) + String.IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
         </control>
         
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true">$INFO[Skin.String(HomeMusicSingleImage)]</texture>
-            <visible>!IsEmpty(Skin.String(HomeMusicSingleImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeMusicSingleImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(HomeMusicMultiImage)]</imagepath>
-            <visible>!IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
         </control>
     
         <control type="grouplist" id="3">
@@ -614,14 +614,14 @@
             <control type="radiobutton" id="2101">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
                 <label>$LOCALIZE[31251]</label>
-                <selected>IsEmpty(Skin.String(HomeMusicSingleImage)) + IsEmpty(Skin.String(HomeMusicMultiImage))</selected>
+                <selected>String.IsEmpty(Skin.String(HomeMusicSingleImage)) + String.IsEmpty(Skin.String(HomeMusicMultiImage))</selected>
                 <onclick>Skin.Reset(HomeMusicSingleImage)</onclick>
                 <onclick>Skin.Reset(HomeMusicMultiImage)</onclick>
                 <animation effect="fade" end="47" time="0" condition="!Control.IsEnabled(2101)">Conditional</animation>
             </control>
             <control type="radiobutton" id="2102">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeMusicSingleImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeMusicSingleImage))</selected>
                 <onclick>Skin.Reset(HomeMusicMultiImage)</onclick>
                 <onclick>Skin.SetString(HomeMusicSingleImage,special://skin/extras/backgrounds/01.jpg)</onclick>
                 <label>$LOCALIZE[31252]</label>
@@ -629,7 +629,7 @@
             </control>
             <control type="radiobutton" id="2103">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeMusicMultiImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeMusicMultiImage))</selected>
                 <onclick>Skin.Reset(HomeMusicSingleImage)</onclick>
                 <onclick>Skin.SetString(HomeMusicMultiImage,special://skin/extras/backgrounds/)</onclick>
                 <label>$LOCALIZE[31253]</label>
@@ -641,16 +641,16 @@
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeMusicSingleImage)]</label2>
             <onclick>Skin.SetImage(HomeMusicSingleImage)</onclick>
-            <visible>IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeMusicSingleImage))</enable>
+            <visible>String.IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeMusicSingleImage))</enable>
         </control>
         
         <control type="button" id="4">
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeMusicMultiImage)]</label2>
             <onclick>Skin.SetPath(HomeMusicMultiImage)</onclick>
-            <visible>!IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeMusicMultiImage))</enable>
+            <visible>!String.IsEmpty(Skin.String(HomeMusicMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeMusicMultiImage))</enable>
         </control>
     </include>
     
@@ -658,25 +658,25 @@
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true" fallback="special://skin/extras/backgrounds/01.jpg">$INFO[Skin.String(GlobalBackdropSingle)]</texture>
-            <visible>IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeProgramsSingleImage)) + IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
+            <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeProgramsSingleImage)) + String.IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(GlobalBackdropMulti)]</imagepath>
-            <visible>!IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeProgramsSingleImage)) + IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeProgramsSingleImage)) + String.IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
         </control>
         
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true">$INFO[Skin.String(HomeProgramsSingleImage)]</texture>
-            <visible>!IsEmpty(Skin.String(HomeProgramsSingleImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeProgramsSingleImage))</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(HomeProgramsMultiImage)]</imagepath>
-            <visible>!IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
         </control>
     
         <control type="grouplist" id="3">
@@ -684,14 +684,14 @@
             <control type="radiobutton" id="2101">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
                 <label>$LOCALIZE[31251]</label>
-                <selected>IsEmpty(Skin.String(HomeProgramsSingleImage)) + IsEmpty(Skin.String(HomeProgramsMultiImage))</selected>
+                <selected>String.IsEmpty(Skin.String(HomeProgramsSingleImage)) + String.IsEmpty(Skin.String(HomeProgramsMultiImage))</selected>
                 <onclick>Skin.Reset(HomeProgramsSingleImage)</onclick>
                 <onclick>Skin.Reset(HomeProgramsMultiImage)</onclick>
                 <animation effect="fade" end="47" time="0" condition="!Control.IsEnabled(2101)">Conditional</animation>
             </control>
             <control type="radiobutton" id="2102">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeProgramsSingleImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeProgramsSingleImage))</selected>
                 <onclick>Skin.Reset(HomeProgramsMultiImage)</onclick>
                 <onclick>Skin.SetString(HomeProgramsSingleImage,special://skin/extras/backgrounds/01.jpg)</onclick>
                 <label>$LOCALIZE[31252]</label>
@@ -699,7 +699,7 @@
             </control>
             <control type="radiobutton" id="2103">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeProgramsMultiImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeProgramsMultiImage))</selected>
                 <onclick>Skin.Reset(HomeProgramsSingleImage)</onclick>
                 <onclick>Skin.SetString(HomeProgramsMultiImage,special://skin/extras/backgrounds/)</onclick>
                 <label>$LOCALIZE[31253]</label>
@@ -711,16 +711,16 @@
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeProgramsSingleImage)]</label2>
             <onclick>Skin.SetImage(HomeProgramsSingleImage)</onclick>
-            <visible>IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeProgramsSingleImage))</enable>
+            <visible>String.IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeProgramsSingleImage))</enable>
         </control>
         
         <control type="button" id="4">
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeProgramsMultiImage)]</label2>
             <onclick>Skin.SetPath(HomeProgramsMultiImage)</onclick>
-            <visible>!IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeProgramsMultiImage))</enable>
+            <visible>!String.IsEmpty(Skin.String(HomeProgramsMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeProgramsMultiImage))</enable>
         </control>
     </include>
         
@@ -728,25 +728,25 @@
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true" fallback="special://skin/extras/backgrounds/01.jpg">$INFO[Skin.String(GlobalBackdropSingle)]</texture>
-            <visible>IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeWeatherSingleImage)) + IsEmpty(Skin.String(HomeWeatherMultiImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</visible>
+            <visible>String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeWeatherSingleImage)) + String.IsEmpty(Skin.String(HomeWeatherMultiImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(GlobalBackdropMulti)]</imagepath>
-            <visible>!IsEmpty(Skin.String(GlobalBackdropMulti)) + IsEmpty(Skin.String(HomeWeatherSingleImage)) + IsEmpty(Skin.String(HomeWeatherMultiImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</visible>
+            <visible>!String.IsEmpty(Skin.String(GlobalBackdropMulti)) + String.IsEmpty(Skin.String(HomeWeatherSingleImage)) + String.IsEmpty(Skin.String(HomeWeatherMultiImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</visible>
         </control>
         
         <control type="image">
             <include>SettingsBackgroundDialogImageVars</include>
             <texture background="true">$INFO[Skin.String(HomeWeatherSingleImage)]</texture>
-            <visible>!IsEmpty(Skin.String(HomeWeatherSingleImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeWeatherSingleImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</visible>
         </control>
         
         <control type="multiimage">
             <include>SettingsBackgroundDialogMultiImageVars</include>
             <imagepath background="true">$INFO[Skin.String(HomeWeatherMultiImage)]</imagepath>
-            <visible>!IsEmpty(Skin.String(HomeWeatherMultiImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeWeatherMultiImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</visible>
         </control>
         
         <control type="multiimage">
@@ -760,14 +760,14 @@
             <control type="radiobutton" id="2101">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
                 <label>$LOCALIZE[31251]</label>
-                <selected>IsEmpty(Skin.String(HomeWeatherSingleImage)) + IsEmpty(Skin.String(HomeWeatherMultiImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</selected>
+                <selected>String.IsEmpty(Skin.String(HomeWeatherSingleImage)) + String.IsEmpty(Skin.String(HomeWeatherMultiImage)) + !Skin.HasSetting(ShowWeatherFanartHome)</selected>
                 <onclick>Skin.Reset(HomeWeatherSingleImage)</onclick>
                 <onclick>Skin.Reset(HomeWeatherMultiImage)</onclick>
                 <animation effect="fade" end="47" time="0" condition="!Control.IsEnabled(2101)">Conditional</animation>
             </control>
             <control type="radiobutton" id="2102">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeWeatherSingleImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeWeatherSingleImage))</selected>
                 <onclick>Skin.Reset(HomeWeatherMultiImage)</onclick>
                 <onclick>Skin.SetString(HomeWeatherSingleImage,special://skin/extras/backgrounds/01.jpg)</onclick>
                 <label>$LOCALIZE[31252]</label>
@@ -775,7 +775,7 @@
             </control>
             <control type="radiobutton" id="2103">
                 <include>SettingsBackgroundDialogRadioButtonVars</include>
-                <selected>!IsEmpty(Skin.String(HomeWeatherMultiImage))</selected>
+                <selected>!String.IsEmpty(Skin.String(HomeWeatherMultiImage))</selected>
                 <onclick>Skin.Reset(HomeWeatherSingleImage)</onclick>
                 <onclick>Skin.Reset(HomeWeatherSingleImage)</onclick>
                 <onclick>Skin.SetString(HomeWeatherMultiImage,special://skin/extras/backgrounds/)</onclick>
@@ -788,16 +788,16 @@
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeWeatherSingleImage)]</label2>
             <onclick>Skin.SetImage(HomeWeatherSingleImage)</onclick>
-            <visible>IsEmpty(Skin.String(HomeWeatherMultiImage))</visible>
-            <enable>!IsEmpty(Skin.String(HomeWeatherSingleImage))</enable>
+            <visible>String.IsEmpty(Skin.String(HomeWeatherMultiImage))</visible>
+            <enable>!String.IsEmpty(Skin.String(HomeWeatherSingleImage))</enable>
         </control>
         
         <control type="button" id="4">
             <include>SettingsBackgroundDialogButtonVars</include>
             <label2>$INFO[Skin.String(HomeWeatherMultiImage)]</label2>
             <onclick>Skin.SetPath(HomeWeatherMultiImage)</onclick>
-            <visible>!IsEmpty(Skin.String(HomeWeatherMultiImage)) </visible>
-            <enable>!IsEmpty(Skin.String(HomeWeatherMultiImage))</enable>
+            <visible>!String.IsEmpty(Skin.String(HomeWeatherMultiImage)) </visible>
+            <enable>!String.IsEmpty(Skin.String(HomeWeatherMultiImage))</enable>
         </control>
     </include>
         

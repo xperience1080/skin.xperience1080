@@ -9,7 +9,7 @@
             <control type="group">
                 <include>KeyboardAnimations</include>
                 <include>OptionsShutdownAnimation</include>
-                <visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput) + !Window.IsVisible(okdialog) + ![Window.IsVisible(filebrowser) + !IsEmpty(Window(Home).Property(ShowDialog))]</visible>
+                <visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput) + !Window.IsVisible(okdialog) + ![Window.IsVisible(filebrowser) + !String.IsEmpty(Window(Home).Property(ShowDialog))]</visible>
                 <control type="image">
                     <posx>920</posx>
                     <posy>292</posy>

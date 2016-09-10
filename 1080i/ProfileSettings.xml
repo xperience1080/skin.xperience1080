@@ -51,7 +51,7 @@
                 <textcolor>ddwhite</textcolor>
                 <align>center</align>
                 <label>$INFO[Control.GetLabel(102)]</label>
-                <visible>IsEmpty(Control.GetLabel(101))</visible>
+                <visible>String.IsEmpty(Control.GetLabel(101))</visible>
             </control>
             
             <control type="grouplist" id="5">

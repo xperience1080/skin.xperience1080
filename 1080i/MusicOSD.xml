@@ -216,7 +216,7 @@
                     <altclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</altclick>
                     <altclick>Close</altclick>
                     <altclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
-                    <usealttexture>IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
+                    <usealttexture>String.IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
                     <onleft>6</onleft>
                     <onright>500</onright>
                     <onup>Close</onup>

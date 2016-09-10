@@ -80,7 +80,7 @@
                             </control>
                             <control type="label">
                                 <description>Empty Plot</description>
-                                <visible>IsEmpty(Container(50).ListItem.Plot)</visible>
+                                <visible>String.IsEmpty(Container(50).ListItem.Plot)</visible>
                                 <posx>30</posx>
                                 <posy>300</posy>
                                 <width>516</width>

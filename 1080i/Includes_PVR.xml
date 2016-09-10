@@ -51,8 +51,8 @@
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(100)">Conditional</animation>
                     <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">SetFocus(50)</onclick>
                     <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">SendClick(28)</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVChannels) + !Window.IsActive(RadioChannels)">ActivateWindow(TVChannels)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))+ !Window.IsActive(TVChannels) + !Window.IsActive(RadioChannels)">ActivateWindow(RadioChannels)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVChannels) + !Window.IsActive(RadioChannels)">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))+ !Window.IsActive(TVChannels) + !Window.IsActive(RadioChannels)">ActivateWindow(RadioChannels)</onclick>
                 </control>
                 <control type="button" id="101">
                     <description>Label</description>
@@ -63,8 +63,8 @@
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(101)">Conditional</animation>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">SetFocus(50)</onclick>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">SendClick(28)</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVGuide) + !Window.IsActive(TVGuide)">ActivateWindow(TVGuide)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVGuide) + !Window.IsActive(RadioGuide)">ActivateWindow(RadioGuide)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVGuide) + !Window.IsActive(TVGuide)">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVGuide) + !Window.IsActive(RadioGuide)">ActivateWindow(RadioGuide)</onclick>
                 </control>
                 <control type="button" id="102">
                     <description>Label</description>
@@ -73,8 +73,8 @@
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/recordings-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/recordings-nf.png</texturenofocus>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(102)">Conditional</animation>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVRecordings) + !Window.IsActive(RadioRecordings)">ActivateWindow(TVRecordings)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVRecordings) + !Window.IsActive(RadioRecordings)">ActivateWindow(RadioRecordings)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVRecordings) + !Window.IsActive(RadioRecordings)">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVRecordings) + !Window.IsActive(RadioRecordings)">ActivateWindow(RadioRecordings)</onclick>
                 </control>
                 <control type="button" id="103">
                     <description>Label</description>
@@ -83,8 +83,8 @@
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/timer-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/timer-nf.png</texturenofocus>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(103)">Conditional</animation>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVTimers) + !Window.IsActive(RadioTimers)">ActivateWindow(TVTimers)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVTimers) + !Window.IsActive(RadioTimers)">ActivateWindow(RadioTimers)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVTimers) + !Window.IsActive(RadioTimers)">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVTimers) + !Window.IsActive(RadioTimers)">ActivateWindow(RadioTimers)</onclick>
                 </control>
                 <control type="button" id="104">
                     <description>Label</description>
@@ -93,8 +93,8 @@
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/search-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/search-nf.png</texturenofocus>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(104)">Conditional</animation>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVSearch) + !Window.IsActive(RadioSearch)">ActivateWindow(TVSearch)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVSearch) + !Window.IsActive(RadioSearch)">ActivateWindow(RadioSearch)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVSearch) + !Window.IsActive(RadioSearch)">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVSearch) + !Window.IsActive(RadioSearch)">ActivateWindow(RadioSearch)</onclick>
                 </control>
                 <control type="button" id="105">
                     <description>Label</description>

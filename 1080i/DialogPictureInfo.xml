@@ -42,7 +42,7 @@
                         <font>Font-Condensed-S31</font>
                         <textcolor>77white</textcolor>
                         <label>$INFO[Container(5).NumItems,, $LOCALIZE[31817]]</label>
-                        <visible>IntegerGreaterThan(Container(5).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(5).NumItems,0)</visible>
                         <animation type="Visible" reversible="false">
                             <effect type="fade" start="0" end="85" time="400" tween="sine" easing="inout" />
                             <effect type="slide" start="0,-80" end="0,0" time="550" tween="back" easing="out" />
@@ -61,7 +61,7 @@
                         <font>Font-Condensed-S31</font>
                         <label>$INFO[Container(5).CurrentPage]/$INFO[Container(5).NumPages]</label>
                         <textcolor>77white</textcolor>
-                        <visible>IntegerGreaterThan(Container(5).NumPages,1)</visible>
+                        <visible>Integer.IsGreater(Container(5).NumPages,1)</visible>
                         <animation type="Visible" reversible="false">
                             <effect type="fade" start="0" end="85" time="400" tween="sine" easing="inout" />
                             <effect type="slide" start="0,-80" end="0,0" time="550" tween="back" easing="out" />

@@ -23,7 +23,7 @@
                     <width>100</width>
                     <height>100</height>
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
-                    <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                    <visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
                     <include>visiblehidefadeinfo</include>
 					<visible>!Skin.HasSetting(Guide.HideWeather)</visible>
                 </control>
@@ -40,8 +40,8 @@
                     <align>right</align>
                     <scroll>false</scroll>
                     <include>visiblehidefadeinfo</include>
-                    <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
-					<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                    <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]">Conditional</animation>
+					<visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
 					<visible>!Skin.HasSetting(Guide.HideWeather)</visible>
                 </control>
 				<control type="image">
@@ -220,7 +220,7 @@
             <posx>1741</posx>
             <posy>26</posy>
             <include>BannerListInfoAnimationNoOpenClose</include>
-            <visible>Player.HasMedia + IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !Window.IsActive(visualisation)</visible>
+            <visible>Player.HasMedia + String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !Window.IsActive(visualisation)</visible>
             <animation effect="slide" end="-76" time="300" tween="sine" easing="inout" condition="Window.IsActive(busydialog)">Conditional</animation>
             <animation type="Conditional" condition="Window.IsActive(notification) | Window.IsActive(extendedprogressdialog) | Window.IsActive(volumebar)">
                 <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
@@ -238,7 +238,7 @@
                     <textcolor>C0FFFFFF</textcolor>
                     <scroll>false</scroll>
                     <align>right</align>
-                    <animation effect="slide" end="0,16" time="300" tween="sine" easing="inout" condition="IsEmpty(Control.GetLabel(934))">Conditional</animation>
+                    <animation effect="slide" end="0,16" time="300" tween="sine" easing="inout" condition="String.IsEmpty(Control.GetLabel(934))">Conditional</animation>
                 </control>
                 <control type="label" id="934">
                     <description>Sub label</description>
@@ -307,7 +307,7 @@
     			    <width>100</width>
     			    <height>100</height>
     			    <texture>$INFO[Control.GetLabel(933),overlays/nowplaying/progress/p,.png]</texture>
-    			    <visible>!IsEmpty(Player.Duration)</visible>
+    			    <visible>!String.IsEmpty(Player.Duration)</visible>
     			</control>
     			<control type="image">
     			    <description>Loading indicator</description>
@@ -317,7 +317,7 @@
     			    <height>100</height>
     			    <texture>dialogs/search/loading.png</texture>
     			    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="!Player.Paused">Conditional</animation>
-    			    <visible>IsEmpty(Player.Duration)</visible>
+    			    <visible>String.IsEmpty(Player.Duration)</visible>
     			</control>
             </control>
         </control>

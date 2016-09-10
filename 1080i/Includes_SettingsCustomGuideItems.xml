@@ -2,24 +2,24 @@
 <includes>
 
     <variable name="CustomHomePanelLabel">
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide1)">$INFO[Skin.String(CustomHomePanel1.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide2)">$INFO[Skin.String(CustomHomePanel2.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide3)">$INFO[Skin.String(CustomHomePanel3.Label)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide4)">$INFO[Skin.String(CustomHomePanel4.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide1)">$INFO[Skin.String(CustomHomePanel1.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide2)">$INFO[Skin.String(CustomHomePanel2.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide3)">$INFO[Skin.String(CustomHomePanel3.Label)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide4)">$INFO[Skin.String(CustomHomePanel4.Label)]</value>
     </variable>
     
     <variable name="CustomHomePanelTypeName">
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide1)">$INFO[Skin.String(CustomHomePanel1.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide2)">$INFO[Skin.String(CustomHomePanel2.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide3)">$INFO[Skin.String(CustomHomePanel3.TypeName)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide4)">$INFO[Skin.String(CustomHomePanel4.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide1)">$INFO[Skin.String(CustomHomePanel1.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide2)">$INFO[Skin.String(CustomHomePanel2.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide3)">$INFO[Skin.String(CustomHomePanel3.TypeName)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide4)">$INFO[Skin.String(CustomHomePanel4.TypeName)]</value>
     </variable>
     
     <variable name="CustomHomePanelPath">
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide1)">$INFO[Skin.String(CustomHomePanel1.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide2)">$INFO[Skin.String(CustomHomePanel2.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide3)">$INFO[Skin.String(CustomHomePanel3.Path)]</value>
-        <value condition="stringcompare(Window(3003).Property(SingleDialog),guide4)">$INFO[Skin.String(CustomHomePanel4.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide1)">$INFO[Skin.String(CustomHomePanel1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide2)">$INFO[Skin.String(CustomHomePanel2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide3)">$INFO[Skin.String(CustomHomePanel3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),guide4)">$INFO[Skin.String(CustomHomePanel4.Path)]</value>
     </variable>
 
     <include name="PanelDialogGuideItem">
@@ -106,66 +106,66 @@
                 <height>60</height>
                 <texturefocus>buttons/spinctrl/arrow-light-down-fo.png</texturefocus>
                 <texturenofocus>buttons/spinctrl/arrow-light-down-nf.png</texturenofocus>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31145])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">SetProperty(CustomHomePanelEdit.Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),6)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),6)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31151])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),6)">SetProperty(CustomHomePanelEdit.Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,6)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31153])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),5)">SetProperty(CustomHomePanelEdit.Type,6)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,5)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31150])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),4)">SetProperty(CustomHomePanelEdit.Type,5)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,4)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31149])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),3)">SetProperty(CustomHomePanelEdit.Type,4)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,3)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31148])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),2)">SetProperty(CustomHomePanelEdit.Type,3)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,2)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31147])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),1)">SetProperty(CustomHomePanelEdit.Type,2)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,1)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31146])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">SetProperty(CustomHomePanelEdit.Type,1)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31145])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">SetProperty(CustomHomePanelEdit.Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31145])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">SetProperty(CustomHomePanelEdit.Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),6)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),6)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31151])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),6)">SetProperty(CustomHomePanelEdit.Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,6)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31153])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),5)">SetProperty(CustomHomePanelEdit.Type,6)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,5)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31150])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),4)">SetProperty(CustomHomePanelEdit.Type,5)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,4)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31149])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),3)">SetProperty(CustomHomePanelEdit.Type,4)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,3)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31148])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),2)">SetProperty(CustomHomePanelEdit.Type,3)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,2)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31147])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),1)">SetProperty(CustomHomePanelEdit.Type,2)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,1)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31146])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">SetProperty(CustomHomePanelEdit.Type,1)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31145])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">SetProperty(CustomHomePanelEdit.Type,0)</onclick>
             </control>
             <control type="button" id="24052">
                 <width>32</width>
                 <height>60</height>
                 <texturefocus>buttons/spinctrl/arrow-light-up-fo.png</texturefocus>
                 <texturenofocus>buttons/spinctrl/arrow-light-up-nf.png</texturenofocus>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31151])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">SetProperty(CustomHomePanelEdit.Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31145])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),1)">SetProperty(CustomHomePanelEdit.Type,0)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,1)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31146])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),2)">SetProperty(CustomHomePanelEdit.Type,1)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,2)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31147])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),3)">SetProperty(CustomHomePanelEdit.Type,2)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,3)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31148])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),4)">SetProperty(CustomHomePanelEdit.Type,3)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,4)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31149])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),5)">SetProperty(CustomHomePanelEdit.Type,4)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),6)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,5)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),6)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31150])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),6)">SetProperty(CustomHomePanelEdit.Type,5)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,6)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31153])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">SetProperty(CustomHomePanelEdit.Type,6)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,7)</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31151])</onclick>
-                <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">SetProperty(CustomHomePanelEdit.Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31151])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">SetProperty(CustomHomePanelEdit.Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31145])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),1)">SetProperty(CustomHomePanelEdit.Type,0)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,1)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31146])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),2)">SetProperty(CustomHomePanelEdit.Type,1)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,2)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31147])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),3)">SetProperty(CustomHomePanelEdit.Type,2)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,3)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31148])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),4)">SetProperty(CustomHomePanelEdit.Type,3)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,4)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31149])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),5)">SetProperty(CustomHomePanelEdit.Type,4)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),6)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,5)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),6)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31150])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),6)">SetProperty(CustomHomePanelEdit.Type,5)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,6)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31153])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">SetProperty(CustomHomePanelEdit.Type,6)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Type,7)</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].TypeName,$LOCALIZE[31151])</onclick>
+                <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">SetProperty(CustomHomePanelEdit.Type,7)</onclick>
             </control>
         </control>
         
@@ -179,15 +179,15 @@
             <include>SettingsCustomDialogButtonVars</include>
             <label>$LOCALIZE[31142]</label>
             <label2>$VAR[CustomHomePanelPath]</label2>
-            <onclick condition="!stringcompare(Window.Property(CustomHomePanelEdit.Type),6) + !stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">SetProperty(Property,$INFO[Window.Property(CustomHomePanelEdit)],selectdialog)</onclick>
-            <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetAddon($INFO[Window.Property(CustomHomePanelEdit)].Path,xbmc.addon.video)</onclick>
-            <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetAddon($INFO[Window.Property(CustomHomePanelEdit)].Path,xbmc.addon.audio)</onclick>
-            <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetAddon($INFO[Window.Property(CustomHomePanelEdit)].Path,xbmc.addon.image)</onclick>
-            <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetAddon($INFO[Window.Property(CustomHomePanelEdit)].Path,xbmc.addon.executable)</onclick>
-            <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetFile($INFO[Window.Property(CustomHomePanelEdit)].Path,.xsp|.m3u,special://profile/playlists/video/)</onclick>
-            <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetFile($INFO[Window.Property(CustomHomePanelEdit)].Path,.xsp|.m3u,special://profile/playlists/music/)</onclick>
-            <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),6)">RunScript(script.favourites,property=$INFO[Window.Property(CustomHomePanelEdit)])</onclick>
-            <onclick condition="stringcompare(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Path)</onclick>
+            <onclick condition="!String.IsEqual(Window.Property(CustomHomePanelEdit.Type),6) + !String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">SetProperty(Property,$INFO[Window.Property(CustomHomePanelEdit)],selectdialog)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),0)">Skin.SetAddon($INFO[Window.Property(CustomHomePanelEdit)].Path,xbmc.addon.video)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),1)">Skin.SetAddon($INFO[Window.Property(CustomHomePanelEdit)].Path,xbmc.addon.audio)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),2)">Skin.SetAddon($INFO[Window.Property(CustomHomePanelEdit)].Path,xbmc.addon.image)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),3)">Skin.SetAddon($INFO[Window.Property(CustomHomePanelEdit)].Path,xbmc.addon.executable)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),4)">Skin.SetFile($INFO[Window.Property(CustomHomePanelEdit)].Path,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),5)">Skin.SetFile($INFO[Window.Property(CustomHomePanelEdit)].Path,.xsp|.m3u,special://profile/playlists/music/)</onclick>
+            <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),6)">RunScript(script.favourites,property=$INFO[Window.Property(CustomHomePanelEdit)])</onclick>
+            <onclick condition="String.IsEqual(Window.Property(CustomHomePanelEdit.Type),7)">Skin.SetString($INFO[Window.Property(CustomHomePanelEdit)].Path)</onclick>
         </control>
     </include>
     
@@ -342,7 +342,7 @@
                 <control type="group">
                     <posx>558</posx>
                     <posy>360</posy>
-                    <visible>!IsEmpty(Window.Property(CustomHomePanelEdit.Enabled))</visible>
+                    <visible>!String.IsEmpty(Window.Property(CustomHomePanelEdit.Enabled))</visible>
                     <include>PanelDialogGuideItem</include>
                 </control>
                 

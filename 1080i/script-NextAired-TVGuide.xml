@@ -157,7 +157,7 @@
                             <colordiffuse>99000000</colordiffuse>
                             <texture>windows/common/black.png</texture>
                         </control>
-                        <visible>[ControlGroup(9001).HasFocus(200) + !IsEmpty(Container(200).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(201) + !IsEmpty(Container(201).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(202) + !IsEmpty(Container(202).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(203) + !IsEmpty(Container(203).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(204) + !IsEmpty(Container(204).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(205) + !IsEmpty(Container(205).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(206) + !IsEmpty(Container(206).ListItemNoWrap(2).Label)]</visible>
+                        <visible>[ControlGroup(9001).HasFocus(200) + !String.IsEmpty(Container(200).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(201) + !String.IsEmpty(Container(201).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(202) + !String.IsEmpty(Container(202).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(203) + !String.IsEmpty(Container(203).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(204) + !String.IsEmpty(Container(204).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(205) + !String.IsEmpty(Container(205).ListItemNoWrap(2).Label)] | [ControlGroup(9001).HasFocus(206) + !String.IsEmpty(Container(206).ListItemNoWrap(2).Label)]</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -249,7 +249,7 @@
                             <colordiffuse>99000000</colordiffuse>
                             <texture>windows/common/black.png</texture>
                         </control>
-                        <visible>[ControlGroup(9001).HasFocus(200) + !IsEmpty(Container(200).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(201) + !IsEmpty(Container(201).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(202) + !IsEmpty(Container(202).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(203) + !IsEmpty(Container(203).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(204) + !IsEmpty(Container(204).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(205) + !IsEmpty(Container(205).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(206) + !IsEmpty(Container(206).ListItemNoWrap(1).Label)]</visible>
+                        <visible>[ControlGroup(9001).HasFocus(200) + !String.IsEmpty(Container(200).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(201) + !String.IsEmpty(Container(201).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(202) + !String.IsEmpty(Container(202).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(203) + !String.IsEmpty(Container(203).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(204) + !String.IsEmpty(Container(204).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(205) + !String.IsEmpty(Container(205).ListItemNoWrap(1).Label)] | [ControlGroup(9001).HasFocus(206) + !String.IsEmpty(Container(206).ListItemNoWrap(1).Label)]</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -339,7 +339,7 @@
                             <colordiffuse>99000000</colordiffuse>
                             <texture>windows/common/black.png</texture>
                         </control>
-                        <visible>[ControlGroup(9001).HasFocus(200) + !IsEmpty(Container(200).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(201) + !IsEmpty(Container(201).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(202) + !IsEmpty(Container(202).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(203) + !IsEmpty(Container(203).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(204) + !IsEmpty(Container(204).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(205) + !IsEmpty(Container(205).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(206) + !IsEmpty(Container(206).ListItem(0).Label)]</visible>
+                        <visible>[ControlGroup(9001).HasFocus(200) + !String.IsEmpty(Container(200).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(201) + !String.IsEmpty(Container(201).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(202) + !String.IsEmpty(Container(202).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(203) + !String.IsEmpty(Container(203).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(204) + !String.IsEmpty(Container(204).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(205) + !String.IsEmpty(Container(205).ListItem(0).Label)] | [ControlGroup(9001).HasFocus(206) + !String.IsEmpty(Container(206).ListItem(0).Label)]</visible>
                     </control>
                 </control>
             </control>
@@ -365,10 +365,10 @@
                     <ondown>201</ondown>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(200) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(200) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(200) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(200) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <visible allowhiddenfocus="true">ControlGroup(9001).HasFocus(200)</visible>
                     <itemlayout width="492">
                         <include>TVGuideItemLayout</include>
@@ -394,10 +394,10 @@
                     <ondown>202</ondown>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(201) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(201) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(201) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(201) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(201) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(201) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(201) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(201) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <visible allowhiddenfocus="true">ControlGroup(9001).HasFocus(201)</visible>
                     <itemlayout width="492">
                         <include>TVGuideItemLayout</include>
@@ -423,10 +423,10 @@
                     <ondown>203</ondown>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(202) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(202) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(202) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(202) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(202) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(202) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(202) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(202) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <visible allowhiddenfocus="true">ControlGroup(9001).HasFocus(202)</visible>
                     <itemlayout width="492">
                         <include>TVGuideItemLayout</include>
@@ -452,10 +452,10 @@
                     <ondown>204</ondown>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(203) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(203) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(203) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(203) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(203) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(203) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(203) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(203) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <visible allowhiddenfocus="true">ControlGroup(9001).HasFocus(203)</visible>
                     <itemlayout width="492">
                         <include>TVGuideItemLayout</include>
@@ -481,10 +481,10 @@
                     <ondown>205</ondown>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(204) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(204) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(204) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(204) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(204) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(204) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(204) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(204) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <visible allowhiddenfocus="true">ControlGroup(9001).HasFocus(204)</visible>
                     <itemlayout width="492">
                         <include>TVGuideItemLayout</include>
@@ -510,10 +510,10 @@
                     <ondown>206</ondown>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(205) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(205) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(205) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(205) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(205) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(205) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(205) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(205) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <visible allowhiddenfocus="true">ControlGroup(9001).HasFocus(205)</visible>
                     <itemlayout width="492">
                         <include>TVGuideItemLayout</include>
@@ -539,10 +539,10 @@
                     <ondown>200</ondown>
                     <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
                     <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(206) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(206) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(206) + !IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(206) + IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(206) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-60" end="0,0" time="300" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus(206) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(206) + !String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-60" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(206) + String.IsEmpty(Window.Property(Movement))" reversible="false">Conditional</animation>
                     <visible allowhiddenfocus="true">ControlGroup(9001).HasFocus(206)</visible>
                     <itemlayout width="492">
                         <include>TVGuideItemLayout</include>
@@ -591,20 +591,20 @@
                     <animation effect="slide" end="0,336" time="0" condition="ControlGroup(9001).HasFocus(204)">Conditional</animation>
                     <animation effect="slide" end="0,420" time="0" condition="ControlGroup(9001).HasFocus(205)">Conditional</animation>
                     <animation effect="slide" end="0,504" time="0" condition="ControlGroup(9001).HasFocus(206)">Conditional</animation>
-                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(200)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(201)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(202)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(203)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(204)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(205)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(206)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(200)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(201)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(202)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(203)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(204)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(205)" reversible="false">Conditional</animation>
-                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(206)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(200)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(201)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(202)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(203)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(204)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(205)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,-84" end="0,0" time="300" tween="back" easing="out" condition="String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(206)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(200)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(201)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(202)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(203)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(204)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(205)" reversible="false">Conditional</animation>
+                    <animation effect="slide" start="0,84" end="0,0" time="300" tween="back" easing="out" condition="!String.IsEmpty(Window.Property(Movement)) + ControlGroup(9001).HasFocus(206)" reversible="false">Conditional</animation>
                 </control>
                 <control type="image">
                     <description>Current weekday image</description>
@@ -615,12 +615,12 @@
                     <texture>views/other/selected.png</texture>
                     <colordiffuse>07FFFFFF</colordiffuse>
                     <aspectratio aligny="top">center</aspectratio>
-                    <animation effect="slide" end="0,84" time="0" condition="stringcompare(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
-                    <animation effect="slide" end="0,168" time="0" condition="stringcompare(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
-                    <animation effect="slide" end="0,252" time="0" condition="stringcompare(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
-                    <animation effect="slide" end="0,336" time="0" condition="stringcompare(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
-                    <animation effect="slide" end="0,420" time="0" condition="stringcompare(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
-                    <animation effect="slide" end="0,504" time="0" condition="stringcompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+                    <animation effect="slide" end="0,84" time="0" condition="String.IsEqual(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
+                    <animation effect="slide" end="0,168" time="0" condition="String.IsEqual(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
+                    <animation effect="slide" end="0,252" time="0" condition="String.IsEqual(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
+                    <animation effect="slide" end="0,336" time="0" condition="String.IsEqual(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
+                    <animation effect="slide" end="0,420" time="0" condition="String.IsEqual(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
+                    <animation effect="slide" end="0,504" time="0" condition="String.IsEqual(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                 </control>
                 <control type="grouplist">
                     <description>Weekday labels</description>
@@ -633,50 +633,50 @@
                         <include>TVGuideWeekdayButton</include>
                         <label>[B]$VAR[TVDayLabelMon][/B]</label>
                         <label2>$VAR[TVDayLabelMonColor]$INFO[Window(Home).Property(NextAired.1.Date)][/COLOR]</label2>
-                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200) + !stringcompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
-                        <enable>IntegerGreaterThan(Container(200).NumItems,0)</enable>
+                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200) + !String.IsEqual(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
+                        <enable>Integer.IsGreater(Container(200).NumItems,0)</enable>
                     </control>
                     <control type="button">
                         <include>TVGuideWeekdayButton</include>
                         <label>[B]$VAR[TVDayLabelTue][/B]</label>
                         <label2>$VAR[TVDayLabelTueColor]$INFO[Window(Home).Property(NextAired.2.Date)][/COLOR]</label2>
-                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(201) + !stringcompare(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
-                        <enable>IntegerGreaterThan(Container(201).NumItems,0)</enable>
+                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(201) + !String.IsEqual(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
+                        <enable>Integer.IsGreater(Container(201).NumItems,0)</enable>
                     </control>
                     <control type="button">
                         <include>TVGuideWeekdayButton</include>
                         <label>[B]$VAR[TVDayLabelWed][/B]</label>
                         <label2>$VAR[TVDayLabelWedColor]$INFO[Window(Home).Property(NextAired.3.Date)][/COLOR]</label2>
-                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(202) + !stringcompare(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
-                        <enable>IntegerGreaterThan(Container(202).NumItems,0)</enable>
+                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(202) + !String.IsEqual(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
+                        <enable>Integer.IsGreater(Container(202).NumItems,0)</enable>
                     </control>
                     <control type="button">
                         <include>TVGuideWeekdayButton</include>
                         <label>[B]$VAR[TVDayLabelThu][/B]</label>
                         <label2>$VAR[TVDayLabelThuColor]$INFO[Window(Home).Property(NextAired.4.Date)][/COLOR]</label2>
-                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(203) + !stringcompare(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
-                        <enable>IntegerGreaterThan(Container(203).NumItems,0)</enable>
+                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(203) + !String.IsEqual(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
+                        <enable>Integer.IsGreater(Container(203).NumItems,0)</enable>
                     </control>
                     <control type="button">
                         <include>TVGuideWeekdayButton</include>
                         <label>[B]$VAR[TVDayLabelFri][/B]</label>
                         <label2>$VAR[TVDayLabelFriColor]$INFO[Window(Home).Property(NextAired.5.Date)][/COLOR]</label2>
-                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(204) + !stringcompare(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
-                        <enable>IntegerGreaterThan(Container(204).NumItems,0)</enable>
+                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(204) + !String.IsEqual(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
+                        <enable>Integer.IsGreater(Container(204).NumItems,0)</enable>
                     </control>
                     <control type="button">
                         <include>TVGuideWeekdayButton</include>
                         <label>[B]$VAR[TVDayLabelSat][/B]</label>
                         <label2>$VAR[TVDayLabelSatColor]$INFO[Window(Home).Property(NextAired.6.Date)][/COLOR]</label2>
-                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(205) + !stringcompare(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
-                        <enable>IntegerGreaterThan(Container(205).NumItems,0)</enable>
+                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(205) + !String.IsEqual(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
+                        <enable>Integer.IsGreater(Container(205).NumItems,0)</enable>
                     </control>
                     <control type="button">
                         <include>TVGuideWeekdayButton</include>
                         <label>[B]$VAR[TVDayLabelSun][/B]</label>
                         <label2>$VAR[TVDayLabelSunColor]$INFO[Window(Home).Property(NextAired.7.Date)][/COLOR]</label2>
-                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(206) + !stringcompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
-                        <enable>IntegerGreaterThan(Container(206).NumItems,0)</enable>
+                        <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(206) + !String.IsEqual(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+                        <enable>Integer.IsGreater(Container(206).NumItems,0)</enable>
                     </control>
                 </control>
             </control>
