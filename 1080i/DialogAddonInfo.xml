@@ -488,11 +488,6 @@
             <visible allowhiddenfocus="true">false</visible>
         </control>
 
-        <control type="button" id="10">
-            <description>Changelog button</description>
-            <visible>false</visible>
-        </control>
-
         <include>FadeBackgroundMovieInfo</include>
     </controls>
 </window>
