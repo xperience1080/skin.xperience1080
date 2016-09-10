@@ -3,12 +3,15 @@
     <defaultcontrol always="true">50</defaultcontrol>
     <menucontrol>9000</menucontrol>
     <backgroundcolor>0</backgroundcolor>
-    <views>50</views>
+    <include condition="Window.Is(musicplaylist)">MusicPlaylistViewIds</include>
+    <include condition="Window.Is(videoplaylist)">VideoPlaylistViewIds</include>
+
     <controls>
-    
         <include>CommonItems</include>
-        <include>VideoHeader</include>
-        <include>VideoPlaylistViews</include>
+        <include condition="Window.Is(videoplaylist)">VideoHeader</include>
+        <include condition="Window.Is(videoplaylist)">VideoPlaylistViews</include>
+        <include condition="Window.Is(musicplaylist)">MusicHeader</include>
+        <include condition="Window.Is(musicplaylist)">MusicPlaylistViews</include>
         <include>Common-Info</include>
 
         <control type="group" id="9000">
@@ -117,6 +120,105 @@
                     <width>300</width>
                     <height>100</height>
                     <label>$LOCALIZE[31600]</label>
+                    <font>Font-Condensed-S34-B</font>
+                    <textcolor>eewhite</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                </control>
+            </control>
+
+            <control type="grouplist" id="9223">
+                <description>View Controls</description>
+                <posx>19</posx>
+                <posy>47</posy>
+                <width>404</width>
+                <height>399</height>
+                <itemgap>0</itemgap>
+                <onleft>9111</onleft>
+                <onright>9111</onright>
+                <onup>9223</onup>
+                <ondown>9223</ondown>
+                <onback>50</onback>
+                <include>ViewOptionsAnimations</include>
+                <control type="button" id="201">
+                    <description>Label</description>
+                    <posy>330</posy>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[31926]</label>
+                    <onclick>setfocus(9111)</onclick>
+                    <texturefocus border="70,2,2,2">dialogs/options/buttons/custom-back-fo.png</texturefocus>
+                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/custom-back-nf.png</texturenofocus>
+                </control>
+                <control type="radiobutton" id="202">
+                    <description>List</description>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[31961]</label>
+                    <texturefocus border="2">dialogs/options/buttons/default-fo.png</texturefocus>
+                    <onclick>Container.SetViewMode(50)</onclick>
+                    <selected>Control.IsVisible(50)</selected>
+                    <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
+                    <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
+                    <radioposx>-19</radioposx>
+                </control>
+                <control type="radiobutton" id="203">
+                    <description>Info list</description>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[31962]</label>
+                    <texturefocus border="2">dialogs/options/buttons/default-fo.png</texturefocus>
+                    <onclick>Container.SetViewMode(52)</onclick>
+                    <selected>Control.IsVisible(52)</selected>
+                    <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
+                    <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
+                    <radioposx>-19</radioposx>
+                </control>
+                <control type="radiobutton" id="205">
+                    <description>Banner</description>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[31971]</label>
+                    <texturefocus border="2">dialogs/options/buttons/default-fo.png</texturefocus>
+                    <onclick>Container.SetViewMode(60)</onclick>
+                    <selected>Control.IsVisible(60)</selected>
+                    <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
+                    <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
+                    <radioposx>-19</radioposx>
+                </control>
+            </control>
+            
+            <control type="group">
+                <include>GeneralOptionsAnimations</include>
+                <control type="image">
+                    <posx>9</posx>
+                    <posy>433</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>buttons/options_nofo.png</texture>
+                </control>
+                <control type="label">
+                    <posx>94</posx>
+                    <posy>433</posy>
+                    <width>300</width>
+                    <height>100</height>
+                    <label>$LOCALIZE[31600]</label>
+                    <font>Font-Condensed-S34-B</font>
+                    <textcolor>eewhite</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                </control>
+            </control>
+
+            <control type="group">
+                <include>ViewOptionsAnimations</include>
+                <control type="image">
+                    <posx>9</posx>
+                    <posy>433</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>buttons/options_nofo.png</texture>
+                </control>
+                <control type="label">
+                    <posx>94</posx> 
+                    <posy>433</posy>
+                    <width>300</width>
+                    <height>100</height>
+                    <label>$LOCALIZE[31930]</label>
                     <font>Font-Condensed-S34-B</font>
                     <textcolor>eewhite</textcolor>
                     <shadowcolor>22000000</shadowcolor>

@@ -66,6 +66,13 @@
 		<include>Viewtype-CoverView</include>
 	</include>
 
+	<include name="MusicPlaylistViewIds">
+		<views>50,52,55,60</views>
+	</include>
+	<include name="VideoPlaylistViewIds">
+		<views>50</views>
+	</include>
+
 	<!-- ========= -->
 	<!-- Variables -->
 	<!-- ========= -->
