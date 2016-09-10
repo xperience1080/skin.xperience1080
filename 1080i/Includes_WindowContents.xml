@@ -42,7 +42,6 @@
     <include name="CommonItemsMusicOSD">
         <include condition="Skin.HasSetting(OSDVisualisation.Enabled) + ![System.HasAddon(script.artistslideshow) + Skin.HasSetting(ArtistSlideShow.Enabled)]">OSDVisualisation</include>
         <include>BackgroundFanartMusicOSD</include>
-        <include>MusicCodecInfo</include>
     </include>
     <include name="CommonSettingsItems">
         <include>CommonContent</include>

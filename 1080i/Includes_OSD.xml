@@ -59,7 +59,7 @@
         <control type="group">
             <visible>!Skin.HasSetting(OSD.HideChapterInfo)</visible>
             <include>BannerListInfoAnimation</include>
-            <visible>[Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Player.ShowCodec + !Window.IsActive(script-cu-lrclyrics-main.xml) + !String.IsEmpty(Player.Chapter) + Integer.IsGreater(Player.ChapterCount,0)</visible>
+            <visible>[Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Window.IsActive(script-cu-lrclyrics-main.xml) + !String.IsEmpty(Player.Chapter) + Integer.IsGreater(Player.ChapterCount,0)</visible>
             <control type="button">
                 <posx>45</posx>
                 <posy>0</posy>
@@ -115,7 +115,7 @@
             <animation effect="slide" end="-454" time="300" tween="sine" easing="inout" condition="!Player.Muted + Window.IsVisible(volumebar) + Player.Passthrough">Conditional</animation>
             <include condition="Window.IsActive(fullscreenvideo)">BannerListInfoAnimation</include>
             <include condition="!Window.IsActive(fullscreenvideo)">BannerListInfoAnimationMusicOSD</include>
-            <visible>[Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Player.ShowCodec + !Window.IsActive(script-cu-lrclyrics-main.xml)</visible>
+            <visible>[Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Window.IsActive(script-cu-lrclyrics-main.xml)</visible>
             <animation type="Conditional" condition="Window.IsActive(notification)">
                 <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
                 <effect type="zoom" start="100" end="50" center="1569,97" tween="sine" easing="inout" time="300" />
@@ -290,55 +290,6 @@
                     <label>32x</label>
                     <visible>Player.Forwarding32x | Player.Rewinding32x</visible>
                 </control>
-            </control>
-        </control>
-    </include>
-
-    <!-- ================ -->
-    <!-- Music Codec Info -->
-    <!-- ================ -->
-
-    <include name="MusicCodecInfo">
-        <control type="group">
-            <posx>0</posx>
-            <posy>0</posy>
-            <visible>Player.ShowCodec</visible>
-            <control type="image">
-                <posx>-100</posx>
-                <posy>-30</posy>
-                <width>2120</width>
-                <height>215</height>
-                <texture border="43,42,43,42">osd/fullscreen/back-codec.png</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="label">
-                <posx>130</posx>
-                <posy>12</posy>
-                <width>auto</width>
-                <height>90</height>
-                <textcolor>bbwhite</textcolor>
-                <font>Font-Condensed-S29-B</font>
-                <label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, · $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, · $LOCALIZE[612]: ,]$INFO[musicplayer.Samplerate, · $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, · $LOCALIZE[21444]: ]</label>
-            </control>
-            <control type="label">
-                <posx>130</posx>
-                <posy>62</posy>
-                <width>auto</width>
-                <height>90</height>
-                <textcolor>bbwhite</textcolor>
-                <font>Font-Condensed-S29-B</font>
-                <label>$INFO[Visualisation.Name,, [COLOR=MenuBlue]($LOCALIZE[20166])[/COLOR] · ] $INFO[System.FPS]</label>
-                <visible>Visualisation.Locked</visible>
-            </control>
-            <control type="label">
-                <posx>130</posx>
-                <posy>62</posy>
-                <width>auto</width>
-                <height>90</height>
-                <textcolor>bbwhite</textcolor>
-                <font>Font-Condensed-S29-B</font>
-                <label>$INFO[Visualisation.Name,, · ] $INFO[System.FPS]</label>
-                <visible>!Visualisation.Locked</visible>
             </control>
         </control>
     </include>
