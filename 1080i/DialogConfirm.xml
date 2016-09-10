@@ -13,10 +13,7 @@
                 <include>KeyboardAnimations</include>
                 <control type="group">
                     <posx>590</posx>
-                    <posy>490</posy>
-                    <animation effect="slide" end="0,-25" time="0" condition="String.IsEmpty(Control.GetLabel(2))">Conditional</animation>
-                    <animation effect="slide" end="0,-25" time="0" condition="String.IsEmpty(Control.GetLabel(3))">Conditional</animation>
-                    <animation effect="slide" end="0,-25" time="0" condition="String.IsEmpty(Control.GetLabel(4))">Conditional</animation>
+                    <posy>440</posy>
                     <control type="image">
                         <posx>330</posx>
                         <posy>13</posy>
@@ -98,7 +95,7 @@
                 <control type="label" id="1">
                     <description>Dialog Header</description>
                     <posx>460</posx>
-                    <posy>327</posy>
+                    <posy>247</posy>
                     <width>1000</width>
                     <height>22</height>
                     <font>Font-Condensed-S34</font>
@@ -108,9 +105,9 @@
                 <control type="textbox" id="9">
                     <description>Text</description>
                     <posx>100</posx>
-                    <posy>367</posy>
+                    <posy>287</posy>
                     <width>1720</width>
-                    <font>Font-Condensed-S45</font>
+                    <font>Font-Condensed-S40</font>
                     <align>center</align>
                     <label>-</label>
                     <textcolor>white</textcolor>
