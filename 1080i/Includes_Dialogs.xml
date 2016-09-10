@@ -692,7 +692,7 @@
                     <textoffsetx>20</textoffsetx>
                     <align>left</align>
                     <label>[COLOR=FF787878]$LOCALIZE[21863][/COLOR]</label>
-                    <label2>$INFO[Container(6).ListItem.Property(Addon.Creator)]</label2>
+                    <label2>$INFO[Container(6).ListItem.AddonCreator]</label2>
                     <font>Font-Condensed-S29</font>
                     <textcolor>FF585858</textcolor>
                     <disabledcolor>FF585858</disabledcolor>
@@ -993,7 +993,7 @@
                         <posy>0</posy>
                         <width>544</width>
                         <height>60</height>
-                        <info>ListItem.Property(Addon.Version)</info>
+                        <info>ListItem.AddonVersion</info>
                         <font>Font-Condensed-S29</font>
                         <align>right</align>
                         <aligny>center</aligny>
@@ -1036,7 +1036,7 @@
                             <posy>0</posy>
                             <width>544</width>
                             <height>60</height>
-                            <info>ListItem.Property(Addon.Version)</info>
+                            <info>ListItem.AddonVersion</info>
                             <font>Font-Condensed-S29</font>
                             <align>right</align>
                             <aligny>center</aligny>
@@ -1070,7 +1070,7 @@
                             <posy>0</posy>
                             <width>544</width>
                             <height>60</height>
-                            <info>ListItem.Property(Addon.Version)</info>
+                            <info>ListItem.AddonVersion</info>
                             <font>Font-Condensed-S29</font>
                             <align>right</align>
                             <aligny>center</aligny>
@@ -1227,7 +1227,7 @@
                     <width>330</width>
                     <height>100</height>
                     <label>[B]$INFO[ListItem.Label][/B]</label>
-                    <label2>$INFO[Container(6).ListItem.Property(Addon.Creator)]</label2>
+                    <label2>$INFO[Container(6).ListItem.AddonCreator]</label2>
                     <font>Font-Condensed-S30</font>
                     <align>right</align>
                     <aligny>center</aligny>
@@ -1235,7 +1235,7 @@
                     <focusedcolor>96FFFFFF</focusedcolor>
                     <disabledcolor>96FFFFFF</disabledcolor>
                     <enable>false</enable>
-                    <visible>!String.IsEmpty(Container(6).ListItem.Property(Addon.Creator))</visible>
+                    <visible>!String.IsEmpty(Container(6).ListItem.AddonCreator)</visible>
                 </control>
             </control>
 
@@ -1383,7 +1383,7 @@
                         <posy>0</posy>
                         <width>520</width>
                         <height>76</height>
-                        <info>ListItem.Property(Addon.Version)</info>
+                        <info>ListItem.AddonVersion</info>
                         <font>Font-Condensed-S29</font>
                         <align>right</align>
                         <aligny>center</aligny>
@@ -1415,7 +1415,7 @@
                             <posy>0</posy>
                             <width>520</width>
                             <height>76</height>
-                            <info>ListItem.Property(Addon.Version)</info>
+                            <info>ListItem.AddonVersion</info>
                             <font>Font-Condensed-S29</font>
                             <align>right</align>
                             <aligny>center</aligny>
@@ -1449,7 +1449,7 @@
                             <posy>0</posy>
                             <width>520</width>
                             <height>76</height>
-                            <info>ListItem.Property(Addon.Version)</info>
+                            <info>ListItem.AddonVersion</info>
                             <font>Font-Condensed-S29</font>
                             <align>right</align>
                             <aligny>center</aligny>

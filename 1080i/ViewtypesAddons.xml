@@ -403,7 +403,7 @@
                         <width>426</width>
                         <height>74</height>
                         <font>Font-Condensed-S30</font>
-                        <label>$INFO[ListItem.Property(Addon.Summary)]</label>
+                        <label>$INFO[ListItem.AddonSummary]</label>
                         <textcolor>bbwhite</textcolor>
                         <shadowcolor>22000000</shadowcolor>
                         <scroll>false</scroll>
@@ -416,7 +416,7 @@
                         <align>left</align>
                         <font>Font-Condensed-S30</font>
                         <label>$LOCALIZE[146]</label>
-                        <label2>[B]$INFO[ListItem.Property(Addon.Type)][/B]</label2>
+                        <label2>[B]$INFO[ListItem.AddonType][/B]</label2>
                         <textcolor>99FFFFFF</textcolor>
                         <shadowcolor>22000000</shadowcolor>
                     </control>
@@ -428,7 +428,7 @@
                         <align>left</align>
                         <font>Font-Condensed-S30</font>
                         <label>$LOCALIZE[21863]:</label>
-                        <label2>[B]$INFO[ListItem.Property(Addon.Creator)][/B]</label2>
+                        <label2>[B]$INFO[ListItem.AddonCreator][/B]</label2>
                         <textcolor>99FFFFFF</textcolor>
                         <shadowcolor>22000000</shadowcolor>
                     </control>
@@ -440,7 +440,7 @@
                         <align>left</align>
                         <font>Font-Condensed-S30</font>
                         <label>$LOCALIZE[24051]</label>
-                        <label2>[B]$INFO[ListItem.Property(Addon.Version)][/B]</label2>
+                        <label2>[B]$INFO[ListItem.AddonVersion][/B]</label2>
                         <textcolor>99FFFFFF</textcolor>
                         <shadowcolor>22000000</shadowcolor>
                     </control>

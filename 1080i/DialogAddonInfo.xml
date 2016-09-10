@@ -24,7 +24,7 @@
                 <posy>51</posy>
                 <width>1684</width>
                 <height>100</height>
-                <label>$LOCALIZE[24000]: $INFO[ListItem.Property(Addon.Name)]</label>
+                <label>$LOCALIZE[24000]: $INFO[ListItem.AddonName]</label>
                 <font>Font-Condensed-S75</font>
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
@@ -38,7 +38,7 @@
                 <posy>51</posy>
                 <width>832</width>
                 <height>100</height>
-                <label>$LOCALIZE[24000]: $INFO[ListItem.Property(Addon.Name)]</label>
+                <label>$LOCALIZE[24000]: $INFO[ListItem.AddonName]</label>
                 <font>Font-Condensed-S75</font>
                 <textcolor>aawhite</textcolor>
                 <align>left</align>
@@ -286,7 +286,7 @@
                             <width>1100</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
+                            <label fallback="416">$INFO[ListItem.AddonType]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
@@ -313,7 +313,7 @@
                             <width>1100</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
+                            <label fallback="416">$INFO[ListItem.AddonCreator]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
@@ -336,7 +336,7 @@
                             <width>1100</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
+                            <label fallback="416">$INFO[ListItem.AddonVersion]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
@@ -359,7 +359,7 @@
                             <width>1100</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
+                            <label fallback="416">$INFO[ListItem.AddonSummary]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>no</scroll>
                         </control>
@@ -384,15 +384,15 @@
                             <posx>0</posx>
                             <posy>50</posy>
                             <width>1240</width>
-                            <include condition="String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + String.IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_1</include>
-                            <include condition="[!String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + String.IsEmpty(ListItem.Property(Addon.broken))] | String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + !String.IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_2</include>
-                            <include condition="!String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + !String.IsEmpty(ListItem.Property(Addon.broken))">AddonDescHeight_3</include>
+                            <include condition="String.IsEmpty(ListItem.AddonDisclaimer) + String.IsEmpty(ListItem.AddonBroken)">AddonDescHeight_1</include>
+                            <include condition="[!String.IsEmpty(ListItem.AddonDisclaimer) + String.IsEmpty(ListItem.AddonBroken)] | String.IsEmpty(ListItem.AddonDisclaimer) + !String.IsEmpty(ListItem.AddonBroken)">AddonDescHeight_2</include>
+                            <include condition="!String.IsEmpty(ListItem.AddonDisclaimer) + !String.IsEmpty(ListItem.AddonBroken)">AddonDescHeight_3</include>
                             <font>Font-Condensed-S40</font>
                             <align>justify</align>
                             <textcolor>bbwhite</textcolor>
-                            <label fallback="">$INFO[ListItem.Property(Addon.Description)]</label>
+                            <label fallback="">$INFO[ListItem.AddonDescription]</label>
                             <autoscroll time="2000" delay="10000" repeat="10000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                            <visible>!String.IsEmpty(ListItem.Property(Addon.Description))</visible>
+                            <visible>!String.IsEmpty(ListItem.AddonDescription)</visible>
                         </control>
                         <control type="label">
                             <posx>0</posx>
@@ -403,13 +403,13 @@
                             <label>$LOCALIZE[31938]</label>
                             <textcolor>bbwhite</textcolor>
                             <scroll>false</scroll>
-                            <visible>String.IsEmpty(ListItem.Property(Addon.Description))</visible>
+                            <visible>String.IsEmpty(ListItem.AddonDescription)</visible>
                         </control>
                     </control>
                     <control type="group">
                         <!-- Disclaimer -->
-                        <visible>!String.IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
-                        <animation effect="slide" end="0,100" time="0" condition="String.IsEmpty(ListItem.Property(Addon.broken))">Conditional</animation>
+                        <visible>!String.IsEmpty(ListItem.AddonDisclaimer)</visible>
+                        <animation effect="slide" end="0,100" time="0" condition="String.IsEmpty(ListItem.AddonBroken)">Conditional</animation>
                         <width>1240</width>
                         <height>50</height>
                         <posy>470</posy>
@@ -437,14 +437,14 @@
                             <width>1150</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
+                            <label>$INFO[ListItem.AddonDisclaimer]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
                     </control>
                     <control type="group">
                         <!-- Disclaimer -->
-                        <visible>!String.IsEmpty(ListItem.Property(Addon.broken))</visible>
+                        <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
                         <width>1150</width>
                         <height>50</height>
                         <posy>570</posy>
@@ -472,7 +472,7 @@
                             <width>1150</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Property(Addon.broken)]</label>
+                            <label>$INFO[ListItem.AddonBroken]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
