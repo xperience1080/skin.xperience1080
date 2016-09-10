@@ -1,19 +1,18 @@
-##Xperience1080 (Kodi v14.x, v15.x, and v16.x)
+##Xperience1080 (Kodi 17.x, 16.x, 15.x)
 
-Xperience1080 is a Kodi v14/v15/v16 skin with two texture sets. Additional features and fixes have been made.
+Xperience1080 is one of the most beautiful skin for Kodi that was ever created.
 
 #### Features
 
-- [x] Smooth transitions between screens
-- [x] Completely flat textures, taking inspiration from Microsoft Metro
-- [x] Original textures from `Black included as the default - additions added where required.
-- [x] Clean and simple user interface.
-- [x] Supports multiple languages.
-- [x] Support for low powered devices.
-- [x] Quick Media Guide to easily access latest statistics.
+* Clean and simple user interface
+* Smooth transitions and animations
+* Flat theme, taking inspiration from Microsoft Metro
+* Supports multiple languages
+* Support for low powered devices
+* Quick Media Guide to easily access latest statistics
 
 #### Installation (best to install from the official Kodi Repository)
-1. Download the zip file from the link at the top of this post.
+1. Download the zip file from Github
 2. IMPORTANT: Install from the zip, this will trigger the installation of skin dependencies.
 3. Allow the skin to install, dependencies to be downloaded (where required) and load.
 4. Xperience1080 textures are the default, but you can choose to new texture set by going to Settings -> Appearance -> Theme -> Alternative.
