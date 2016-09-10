@@ -2506,7 +2506,7 @@
                             <posy>170</posy>
                             <width>223</width>
                             <height>47</height>
-                            <texture>$INFO[ListItem.StarRating,views/banner/other/]</texture>
+                            <texture>$INFO[ListItem.RatingAndVotes,views/banner/other/]</texture>
                             <visible>Container.Content(Albums)</visible>
                         </control>
                     </control>
@@ -2812,7 +2812,7 @@
                                 <posy>-20</posy>
                                 <width>204</width>
                                 <height>56</height>
-                                <texture fallback="views/banner/other/fo-rating0.png">$INFO[ListItem.StarRating,views/banner/other/fo-,]</texture>
+                                <texture fallback="views/banner/other/fo-rating0.png">$INFO[ListItem.RatingAndVotes,views/banner/other/fo-,]</texture>
                             </control>
                             <control type="label">
                                 <posx>0</posx>
@@ -2907,7 +2907,7 @@
                                 <posy>-20</posy>
                                 <width>204</width>
                                 <height>56</height>
-                                <texture fallback="views/banner/other/fo-rating0.png">$INFO[ListItem.StarRating,views/banner/other/fo-,]</texture>
+                                <texture fallback="views/banner/other/fo-rating0.png">$INFO[ListItem.RatingAndVotes,views/banner/other/fo-,]</texture>
                             </control>
                             <control type="label">
                                 <posx>0</posx>

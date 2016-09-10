@@ -5119,7 +5119,7 @@
                             <posy>18</posy>
                             <width>157</width>
                             <height>27</height>
-                            <texture>$INFO[ListItem.StarRating,views/banner/other/,]</texture>
+                            <texture>$INFO[ListItem.RatingAndVotes,views/banner/other/,]</texture>
                             <colordiffuse>77white</colordiffuse>
                             <visible>!Container.Content(Seasons)</visible>
                             <animation effect="slide" end="34" time="0" condition="Container.Content(TVShows) + !Skin.HasSetting(posterstv)">Conditional</animation>
@@ -5214,7 +5214,7 @@
                             <posy>18</posy>
                             <width>157</width>
                             <height>27</height>
-                            <texture>$INFO[ListItem.StarRating,views/banner/other/,]</texture>
+                            <texture>$INFO[ListItem.RatingAndVotes,views/banner/other/,]</texture>
                             <colordiffuse>77white</colordiffuse>
                             <visible>!Container.Content(Seasons)</visible>
                             <animation effect="slide" end="34" time="0" condition="Container.Content(TVShows) + !Skin.HasSetting(posterstv)">Conditional</animation>

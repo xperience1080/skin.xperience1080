@@ -85,7 +85,7 @@
                 <posy>42</posy>
                 <width>350</width>
                 <height>120</height>
-                <texture>$INFO[ListItem.StarRating,dialogs/music-info/,]</texture>
+                <texture>$INFO[ListItem.RatingAndVotes,dialogs/music-info/,]</texture>
                 <visible>Container.Content(albums)</visible>
                 <animation type="Conditional" condition="Player.HasMedia | Window.IsActive(busydialog) | Window.IsActive(volumebar) | Window.IsActive(notification) | Window.IsActive(extendedprogressdialog)">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
