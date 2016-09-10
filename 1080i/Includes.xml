@@ -24,6 +24,7 @@
     <include file="Includes_GlobalSearch.xml" />
     <include file="Includes_Weather.xml" />
     <include file="Includes_PVR.xml" />
+    <include file="Includes_DialogSettings.xml" />
     
     <constant name="FanartCrossfadeTime">400</constant>
     <constant name="IconCrossfadeTime">400</constant>
