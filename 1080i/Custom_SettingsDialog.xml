@@ -46,12 +46,20 @@
                 <control type="radiobutton" id="2101">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
+                    <selected>!Skin.HasSetting(HomeTV)</selected>
+                    <onclick>Skin.ToggleSetting(HomeTV)</onclick>
+                    <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
+                    <label>$LOCALIZE[19020]</label>
+                </control>
+                <control type="radiobutton" id="2102">
+                    <width>1210</width>
+                    <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeMovies)</selected>
                     <onclick>Skin.ToggleSetting(HomeMovies)</onclick>
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[342]</label>
                 </control>
-                <control type="radiobutton" id="2102">
+                <control type="radiobutton" id="2103">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeTVShows)</selected>
@@ -59,7 +67,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[31446]</label>
                 </control>
-                <control type="radiobutton" id="2103">
+                <control type="radiobutton" id="2104">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeMusic)</selected>
@@ -67,7 +75,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[2]</label>
                 </control>
-                <control type="radiobutton" id="2104">
+                <control type="radiobutton" id="2105">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomePictures)</selected>
@@ -75,7 +83,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[1]</label>
                 </control>                
-                <control type="radiobutton" id="2105">
+                <control type="radiobutton" id="2106">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomePrograms)</selected>
@@ -83,7 +91,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[31504]</label>
                 </control>
-                <control type="radiobutton" id="2106">
+                <control type="radiobutton" id="2107">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeWeather)</selected>
