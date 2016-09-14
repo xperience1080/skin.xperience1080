@@ -309,6 +309,7 @@
                         <animation effect="fade" start="35" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(9772) + !Control.HasFocus(70)">Conditional</animation>
                     </control>
                     <control type="group">
+                        <visible>!String.IsEmpty(PVR.BackendDiskspace)</visible>
                         <description>Disk usage</description>
                         <posx>160</posx>
                         <posy>910</posy>
