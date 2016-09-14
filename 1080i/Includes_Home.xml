@@ -3929,6 +3929,7 @@
                         </control>
                         <control type="group">
                             <description>No info available</description>
+                            <visible>[!Control.IsVisible(10022) | Integer.IsEqual(Container(10022).NumItems,0)] + String.IsEqual(Skin.String(HomeWidget.6.Type),service.skin.widgets)</visible>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>100</posy>
