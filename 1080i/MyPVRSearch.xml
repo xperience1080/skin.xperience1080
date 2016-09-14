@@ -41,39 +41,57 @@
                             <height>676</height>
                             <texture border="4">views/list/panel/panel.png</texture>
                         </control>
+                        <control type="group">
+                            <visible>!String.IsEmpty(Container(50).ListItem.Title)</visible>
+                            <control type="label">
+                                <posx>30</posx>
+                                <posy>30</posy>
+                                <width>516</width>
+                                <font>Font-Condensed-S40</font>
+                                <label>$INFO[Container(50).ListItem.Title]</label>
+                                <textcolor>ddwhite</textcolor>
+                                <shadowcolor>22000000</shadowcolor>
+                                <scroll>false</scroll>
+                            </control>
+                            <control type="textbox">
+                                <description>Plot</description>
+                                <posx>30</posx>
+                                <posy>78</posy>
+                                <width>516</width>
+                                <height>505</height>
+                                <info>Container(50).ListItem.Plot</info>
+                                <align>justify</align>
+                                <textcolor>aawhite</textcolor>
+                                <shadowcolor>33000000</shadowcolor>
+                                <pagecontrol>71</pagecontrol>
+                                <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71)</autoscroll>
+                                <font>Font-Condensed-S34</font>
+                            </control>
+                            <control type="label">
+                                <posx>30</posx>
+                                <posy>610</posy>
+                                <width>516</width>
+                                <font>Font-Condensed-S30-B</font>
+                                <label>$INFO[Container(50).ListItem.Genre]</label>
+                                <textcolor>aawhite</textcolor>
+                                <shadowcolor>22000000</shadowcolor>
+                                <scroll>false</scroll>
+                            </control>
+                        </control>
                         <control type="label">
+                            <visible>String.IsEmpty(Container(50).ListItem.Title)</visible>
+                            <include>visiblehidefadeinfo</include>
                             <posx>30</posx>
-                            <posy>30</posy>
+                            <posy>300</posy>
                             <width>516</width>
+                            <height>72</height>
                             <font>Font-Condensed-S40</font>
-                            <label>$INFO[Container(50).ListItem.Title]</label>
-                            <textcolor>ddwhite</textcolor>
+                            <label>$LOCALIZE[19055]</label>
+                            <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
-                        </control>
-                        <control type="textbox">
-                            <description>Plot</description>
-                            <posx>30</posx>
-                            <posy>78</posy>
-                            <width>516</width>
-                            <height>505</height>
-                            <info>Container(50).ListItem.Plot</info>
-                            <align>justify</align>
-                            <textcolor>aawhite</textcolor>
-                            <shadowcolor>33000000</shadowcolor>
-                            <pagecontrol>71</pagecontrol>
-                            <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71)</autoscroll>
-                            <font>Font-Condensed-S34</font>
-                        </control>
-                        <control type="label">
-                            <posx>30</posx>
-                            <posy>610</posy>
-                            <width>516</width>
-                            <font>Font-Condensed-S30-B</font>
-                            <label>$INFO[Container(50).ListItem.Genre]</label>
-                            <textcolor>aawhite</textcolor>
-                            <shadowcolor>22000000</shadowcolor>
-                            <scroll>false</scroll>
+                            <align>center</align>
+                            <aligny>center</aligny>
                         </control>
                     </control>
                     <control type="scrollbar" id="71">
