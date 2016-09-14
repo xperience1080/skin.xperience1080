@@ -175,7 +175,17 @@
             <control type="label">
                 <width min="50" max="600">auto</width>
                 <height>120</height>
-                <label>$INFO[Container.NumItems,, $LOCALIZE[31822]]  [COLOR=44FFFFFF]•[/COLOR]$INFO[Control.GetLabel(3), ]</label>
+                <label>0 $LOCALIZE[31817] $INFO[Control.GetLabel(3), [COLOR=44FFFFFF]•[/COLOR] ]</label>
+                <font>Font-Condensed-S28</font>
+                <textcolor>80FFFFFF</textcolor>
+                <scroll>false</scroll>
+                <align>left</align>
+                <visible>String.IsEmpty(Container.NumItems) + !Window.IsVisible(script-videoextras-main.xml)</visible>
+            </control>
+            <control type="label">
+                <width min="50" max="600">auto</width>
+                <height>120</height>
+                <label>$INFO[Container.NumItems,, $LOCALIZE[31822]] $INFO[Control.GetLabel(3), [COLOR=44FFFFFF]•[/COLOR] ]</label>
                 <font>Font-Condensed-S28</font>
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
@@ -185,7 +195,7 @@
             <control type="label">
                 <width min="50" max="600">auto</width>
                 <height>120</height>
-                <label>$INFO[Container.NumItems,, $LOCALIZE[31817]]  [COLOR=44FFFFFF]•[/COLOR]$INFO[Control.GetLabel(3), ]</label>
+                <label>$INFO[Container.NumItems,, $LOCALIZE[31817]]$INFO[Control.GetLabel(3), [COLOR=44FFFFFF]•[/COLOR] ]</label>
                 <font>Font-Condensed-S28</font>
                 <textcolor>80FFFFFF</textcolor>
                 <scroll>false</scroll>
