@@ -294,7 +294,11 @@ msgctxt "#31109"
 msgid "Enable Auto Scrolling for text"
 msgstr ""
 
-#empty strings from id 31110 to 31111
+msgctxt "#31110"
+msgid "Enable playlist at startup"
+msgstr ""
+
+#empty strings from id 31111 to 31111
 
 msgctxt "#31112"
 msgid "Invert Spin Control"
