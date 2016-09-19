@@ -163,10 +163,6 @@
         <value>$LOCALIZE[31524]</value>
     </variable>
 
-    <variable name="CurrentAiringPVR">
-        <value condition="ControlGroup(900).HasFocus() | ControlGroup(500).HasFocus() | ControlGroup(200).HasFocus() | ControlGroup(100).HasFocus() | ControlGroup(80).HasFocus()">pvr://channels/tv/All&amp;channels/</value>
-    </variable>
-
     <include name="HomeProfileInfo">
         <control type="group">
             <visible>!Window.IsActive(favourites) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml) + ![Window.IsVisible(virtualkeyboard) + !String.IsEmpty(Window.Property(HomeSearch))]</visible>
