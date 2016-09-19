@@ -1159,11 +1159,6 @@
                                 <icon>windows/home/icons/tvshows.png</icon>
                                 <onclick>ActivateWindow(tvchannels)</onclick>
                             </item>
-                            <item id="2">
-                                <label>$LOCALIZE[19024]</label>
-                                <icon>windows/home/icons/radio.png</icon>
-                                <onclick>ActivateWindow(radiochannels)</onclick>
-                            </item>
                             <item id="3">
                                 <label>$LOCALIZE[19069]</label>
                                 <icon>windows/home/icons/epg.png</icon>
@@ -1173,6 +1168,11 @@
                                 <label>$LOCALIZE[19163]</label>
                                 <icon>windows/home/icons/recordings.png</icon>
                                 <onclick>ActivateWindow(tvrecordings)</onclick>
+                            </item>
+                            <item id="2">
+                                <label>$LOCALIZE[19024]</label>
+                                <icon>windows/home/icons/radio.png</icon>
+                                <onclick>ActivateWindow(radiochannels)</onclick>
                             </item>
                             <item id="5">
                                 <label>$LOCALIZE[19040]</label>
