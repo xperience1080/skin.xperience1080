@@ -1188,15 +1188,6 @@
                             </itemlayout>
                             <focusedlayout width="573" height="115">
                                 <control type="image">
-                                    <description>Channel underlay</description>
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <width>580</width>
-                                    <height>112</height>
-                                    <texture border="7">windows/common/black.png</texture>
-                                    <colordiffuse>55000000</colordiffuse>
-                                </control>
-                                <control type="image">
                                     <posx>15</posx>
                                     <posy>10</posy>
                                     <width>92</width>
