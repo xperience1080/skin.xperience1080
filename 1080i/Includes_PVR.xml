@@ -263,4 +263,34 @@
             <visible>!Control.HasFocus(70) + [[Container(50).Scrolling | Container(50).OnScrollNext | Container(50).OnScrollPrevious] | [Container(10).Scrolling | Container(10).OnScrollNext | Container(10).OnScrollPrevious] | [Container(11).Scrolling | Container(11).OnScrollNext | Container(11).OnScrollPrevious] | [Container(12).Scrolling | Container(12).OnScrollNext | Container(12).OnScrollPrevious] | [Container(13).Scrolling | Container(13).OnScrollNext | Container(13).OnScrollPrevious]]</visible>
         </control>
     </include>
+
+    <include name="PVRLoadingInfo">
+        <control type="group">
+            <visible>Integer.IsEqual(Container.NumItems,0) + Window.IsVisible(extendedprogressdialog)</visible>
+            <posx>0</posx>
+            <posy>200</posy>
+            <control type="image">
+                <description>Loading</description>
+                <posx>886</posx>
+                <posy>180</posy>
+                <width>148</width>
+                <height>148</height>
+                <texture>windows/home/loading.png</texture>
+                <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+            </control>
+            <control type="label">
+                <description>Loading label</description>
+                <posx>0</posx>
+                <posy>408</posy>
+                <width>1920</width>
+                <height>64</height>
+                <label>$LOCALIZE[19235]...</label>
+                <font>Font-Condensed-S29-B</font>
+                <textcolor>aawhite</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <scroll>false</scroll>
+            </control>
+        </control>
+    </include>
 </includes>
