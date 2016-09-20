@@ -1094,12 +1094,6 @@
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
-                        <control type="list" id="9025">
-                            <description>Helper to get the first channel group</description>
-                            <visible allowhiddenfocus="true">false</visible>
-                            <itemlayout />
-                            <content>pvr://channels/tv/</content>
-                        </control>
                         <control type="wraplist" id="9022">
                             <include>visiblehidefadeinfo</include>
                             <posx>0</posx>
@@ -1212,7 +1206,7 @@
                                     <align></align>
                                 </control>
                             </focusedlayout>
-                            <content>pvr://channels/tv/$INFO[Container(9025).ListItem.Label]</content>
+                            <content>pvr://channels/tv/*</content>
                         </control>
                         <control type="group" id="9023">
                             <visible>!Control.IsVisible(9022) + !String.IsEmpty(Videos,pvr://channels/tv/)</visible>
