@@ -122,9 +122,6 @@
                 <onright>21</onright>
                 <texturefocus>buttons/favourites_fo.png</texturefocus>
                 <texturenofocus>buttons/favourites_nofo.png</texturenofocus>
-                <onclick>CancelAlarm(HomeTileMove,true)</onclick>
-                <onclick>CancelAlarm(HomeTileMoveTwo,true)</onclick>
-                <onclick>CancelAlarm(HomeTileMoveThree,true)</onclick>
                 <onclick>ActivateWindow(Favourites)</onclick>
                 <include>Animation_FavButton</include>
                 <include>homebuttonsanim3</include>
