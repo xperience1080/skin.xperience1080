@@ -42,4 +42,8 @@
     <include name="SpinControlReversed">
         <reverse>yes</reverse>
     </include>
+
+    <include name="MenuControl">
+        <menucontrol>$PARAM[id]</menucontrol>
+    </include>
 </includes>

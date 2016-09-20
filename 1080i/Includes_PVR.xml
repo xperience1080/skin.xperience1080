@@ -89,14 +89,24 @@
                 <control type="button" id="104">
                     <description>Label</description>
                     <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[19138]</label>
+                    <texturefocus border="70,2,2,2">dialogs/options/buttons/timer-fo.png</texturefocus>
+                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/timer-nf.png</texturenofocus>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(104)">Conditional</animation>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVTimerRules) + !Window.IsActive(RadioTimerRules)">ActivateWindow(TVTimerRules)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVTimerRules) + !Window.IsActive(RadioTimerRules)">ActivateWindow(RadioTimerRules)</onclick>
+                </control>
+                <control type="button" id="105">
+                    <description>Label</description>
+                    <include>optionsbuttonsdimensions</include>
                     <label>$LOCALIZE[137]</label>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/search-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/search-nf.png</texturenofocus>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(104)">Conditional</animation>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(105)">Conditional</animation>
                     <onclick condition="String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVSearch) + !Window.IsActive(RadioSearch)">ActivateWindow(TVSearch)</onclick>
                     <onclick condition="!String.IsEmpty(Window.Property(IsRadio)) + !Window.IsActive(TVSearch) + !Window.IsActive(RadioSearch)">ActivateWindow(RadioSearch)</onclick>
                 </control>
-                <control type="button" id="105">
+                <control type="button" id="106">
                     <description>Label</description>
                     <posy>330</posy>
                     <include>optionsbuttonsdimensions</include>
@@ -104,7 +114,7 @@
                     <onclick>SetFocus(9222)</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/custom-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/custom-nf.png</texturenofocus>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(105)">Conditional</animation>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(106)">Conditional</animation>
                 </control>
             </control>
 

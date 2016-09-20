@@ -806,6 +806,16 @@
                     <control type="label">
                         <width min="0" max="500">auto</width>
                         <height>120</height>
+                        <label>$LOCALIZE[19138]</label>
+                        <font>Font-Condensed-S36-B</font>
+                        <textcolor>B0FFFFFF</textcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <visible>Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)</visible>
+                    </control>
+                    <control type="label">
+                        <width min="0" max="500">auto</width>
+                        <height>120</height>
                         <label>$LOCALIZE[137]</label>
                         <font>Font-Condensed-S36-B</font>
                         <textcolor>B0FFFFFF</textcolor>
