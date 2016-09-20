@@ -298,7 +298,9 @@ msgctxt "#31110"
 msgid "Enable playlist at startup"
 msgstr ""
 
-#empty strings from id 31111 to 31111
+msgctxt "#31111"
+msgid "Skin"
+msgstr ""
 
 msgctxt "#31112"
 msgid "Invert Spin Control"
