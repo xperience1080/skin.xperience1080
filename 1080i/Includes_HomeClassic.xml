@@ -2174,7 +2174,7 @@
                         <include content="HomeWidgetContextMenuOverlay">
                             <param name="width">671</param>
                             <param name="height">572</param>
-                            <param name="container">3032</param>
+                            <param name="container">3022</param>
                         </include>
                     </control>
                     <control type="panel" id="301">
@@ -2863,6 +2863,11 @@
                                 <showonepage>false</showonepage>
                             </control>
                         </control>
+                        <include content="HomeWidgetContextMenuOverlay">
+                            <param name="width">572</param>
+                            <param name="height">572</param>
+                            <param name="container">4022</param>
+                        </include>
                     </control>
                     <control type="panel" id="401">
                         <posx>26</posx>
