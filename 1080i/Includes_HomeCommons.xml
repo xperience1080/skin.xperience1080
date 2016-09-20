@@ -38,8 +38,8 @@
         <oninfo>SetFocus($PARAM[button])</oninfo>
     </include>
 
-    <!--Home shutdown-favs Buttons-->
-    <include name="shutdown-favs">
+    <!-- Shutdown and favourites buttons -->
+    <include name="HomeShutdownFavouritesButtons">
         <control type="group" id="80">
             <description>Home Buttons</description>
             <control type="button" id="21">

@@ -16,7 +16,7 @@
         <include condition="Skin.HasSetting(HomeClassicMode)">HomeItemsClassic</include>
         <include>HomeProfileInfo</include>
         <!-- Bottom buttons -->
-        <include condition="!Skin.HasSetting(HideHomeButtons)">shutdown-favs</include>
+        <include condition="!Skin.HasSetting(HideHomeButtons)">HomeShutdownFavouritesButtons</include>
         <!-- Common/profile info -->
         <include>Common-Home-Info</include>
     </controls>
