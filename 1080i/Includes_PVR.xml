@@ -117,11 +117,21 @@
                     <description>Label</description>
                     <posy>330</posy>
                     <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[24001]</label>
+                    <onclick>ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)</onclick>
+                    <texturefocus border="70,2,2,2">dialogs/options/buttons/settings-fo.png</texturefocus>
+                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/settings-nf.png</texturenofocus>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(106)">Conditional</animation>
+                </control>
+                <control type="button" id="107">
+                    <description>Label</description>
+                    <posy>330</posy>
+                    <include>optionsbuttonsdimensions</include>
                     <label>$LOCALIZE[31620]</label>
                     <onclick>SetFocus(9222)</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/custom-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/custom-nf.png</texturenofocus>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(106)">Conditional</animation>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(107)">Conditional</animation>
                 </control>
             </control>
 
