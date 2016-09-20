@@ -106,7 +106,7 @@
                 <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" />
                 <effect type="slide" start="0,0" end="0,75" time="300" tween="sine" easing="out" />
             </animation>
-            <visible>!Window.IsActive(favourites) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml) + ![Window.IsVisible(virtualkeyboard) + !String.IsEmpty(Window.Property(HomeSearch))]</visible>
+            <visible>$EXP[HomeHideOnActiveDialog]</visible>
             <include>listEndAnimation</include>
 
             <!-- Search -->
@@ -341,9 +341,10 @@
                             <ondown>Control.Move(5022,1)</ondown>
                             <onleft>501</onleft>
                             <onright>503</onright>
-                            <onclick>SetFocus(5022)</onclick>
-                            <onclick>Select</onclick>
-                            <onclick>SetFocus(5021)</onclick>
+                            <include content="HomeWidgetActions">
+                                <param name="button">5021</param>
+                                <param name="container">5022</param>
+                            </include>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget1,3003)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(Dialog,$LOCALIZE[31168],skinsettings)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">ActivateWindow(3003)</onback>
@@ -389,6 +390,7 @@
                             <height>572</height>
                             <onup>525</onup>
                             <ondown>80</ondown>
+                            <onfocus condition="String.IsEmpty(Window.Property(ContextMenuOpen))">SetFocus(5021)</onfocus>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(5021)</autoscroll>
@@ -517,16 +519,11 @@
                                 <showonepage>false</showonepage>
                             </control>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>572</width>
-                            <height>572</height>
-                            <texture border="1">windows/common/darkgrey.png</texture>
-                            <visible>Window.IsActive(contextmenu) + Control.HasFocus(5021)</visible>
-                            <animation effect="fade" time="300" start="0" end="95" tween="sine" easing="out">Visible</animation>
-                            <animation effect="fade" time="300" start="95" end="0" tween="sine" easing="in">Hidden</animation>
-                        </control>
+                        <include content="HomeWidgetContextMenuOverlay">
+                            <param name="width">572</param>
+                            <param name="height">572</param>
+                            <param name="container">5022</param>
+                        </include>
                     </control>
                     <control type="group" id="503">
                         <description>Ongoing tv shows</description>
@@ -548,9 +545,10 @@
                             <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">601</onright>
                             <onright condition="Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">801</onright>
                             <onright>Control.Move(20,1)</onright>
-                            <onclick>SetFocus(5032)</onclick>
-                            <onclick>Select</onclick>
-                            <onclick>SetFocus(5031)</onclick>
+                            <include content="HomeWidgetActions">
+                                <param name="button">5031</param>
+                                <param name="container">5032</param>
+                            </include>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget2,3003)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(Dialog,$LOCALIZE[31168],skinsettings)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">ActivateWindow(3003)</onback>
@@ -595,6 +593,7 @@
                             <width>382</width>
                             <height>572</height>
                             <onup>525</onup>
+                            <onfocus condition="String.IsEmpty(Window.Property(ContextMenuOpen))">SetFocus(5031)</onfocus>
                             <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
@@ -725,16 +724,11 @@
                                 <showonepage>false</showonepage>
                             </control>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>382</width>
-                            <height>572</height>
-                            <texture border="1">windows/common/darkgrey.png</texture>
-                            <visible>Window.IsActive(contextmenu) + Control.HasFocus(5031)</visible>
-                            <animation effect="fade" time="300" start="0" end="95" tween="sine" easing="out">Visible</animation>
-                            <animation effect="fade" time="300" start="95" end="0" tween="sine" easing="in">Hidden</animation>
-                        </control>
+                        <include content="HomeWidgetContextMenuOverlay">
+                            <param name="width">382</param>
+                            <param name="height">572</param>
+                            <param name="container">5032</param>
+                        </include>
                     </control>
                     <control type="panel" id="501">
                         <posx>-24</posx>
@@ -1274,9 +1268,10 @@
                             <ondown>Control.Move(2022,1)</ondown>
                             <onleft>201</onleft>
                             <onright>203</onright>
-                            <onclick>SetFocus(2022)</onclick>
-                            <onclick>Select</onclick>
-                            <onclick>SetFocus(2021)</onclick>
+                            <include content="HomeWidgetActions">
+                                <param name="button">2021</param>
+                                <param name="container">2022</param>
+                            </include>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget3,3003)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(Dialog,$LOCALIZE[31168],skinsettings)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">ActivateWindow(3003)</onback>
@@ -1321,6 +1316,7 @@
                             <width>382</width>
                             <height>572</height>
                             <onup>225</onup>
+                            <onfocus condition="String.IsEmpty(Window.Property(ContextMenuOpen))">SetFocus(2021)</onfocus>
                             <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
@@ -1451,16 +1447,11 @@
                                 <showonepage>false</showonepage>
                             </control>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>382</width>
-                            <height>572</height>
-                            <texture border="1">windows/common/darkgrey.png</texture>
-                            <visible>Window.IsActive(contextmenu) + Control.HasFocus(2021)</visible>
-                            <animation effect="fade" time="300" start="0" end="95" tween="sine" easing="out">Visible</animation>
-                            <animation effect="fade" time="300" start="95" end="0" tween="sine" easing="in">Hidden</animation>
-                        </control>
+                        <include content="HomeWidgetContextMenuOverlay">
+                            <param name="width">382</param>
+                            <param name="height">572</param>
+                            <param name="container">2022</param>
+                        </include>
                     </control>
                     <control type="panel" id="201">
                         <posx>-24</posx>
@@ -2023,9 +2014,10 @@
                             <ondown>Control.Move(3022,1)</ondown>
                             <onleft>301</onleft>
                             <onright>303</onright>
-                            <onclick>SetFocus(3022)</onclick>
-                            <onclick>Select</onclick>
-                            <onclick>SetFocus(3021)</onclick>
+                            <include content="HomeWidgetActions">
+                                <param name="button">3021</param>
+                                <param name="container">3022</param>
+                            </include>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget4,3003)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(Dialog,$LOCALIZE[31168],skinsettings)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">ActivateWindow(3003)</onback>
@@ -2070,6 +2062,7 @@
                             <width>671</width>
                             <height>572</height>
                             <onup>325</onup>
+                            <onfocus condition="String.IsEmpty(Window.Property(ContextMenuOpen))">SetFocus(3021)</onfocus>
                             <ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
@@ -2200,16 +2193,11 @@
                                 <showonepage>false</showonepage>
                             </control>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>671</width>
-                            <height>572</height>
-                            <texture border="1">windows/common/darkgrey.png</texture>
-                            <visible>Window.IsActive(contextmenu) + Control.HasFocus(3021)</visible>
-                            <animation effect="fade" time="300" start="0" end="95" tween="sine" easing="out">Visible</animation>
-                            <animation effect="fade" time="300" start="95" end="0" tween="sine" easing="in">Hidden</animation>
-                        </control>
+                        <include content="HomeWidgetContextMenuOverlay">
+                            <param name="width">671</param>
+                            <param name="height">572</param>
+                            <param name="container">3032</param>
+                        </include>
                     </control>
                     <control type="panel" id="301">
                         <posx>-24</posx>
@@ -2726,9 +2714,10 @@
                             <ondown>Control.Move(4022,1)</ondown>
                             <onleft>401</onleft>
                             <onright>403</onright>
-                            <onclick>SetFocus(4022)</onclick>
-                            <onclick>Select</onclick>
-                            <onclick>SetFocus(4021)</onclick>
+                            <include content="HomeWidgetActions">
+                                <param name="button">4021</param>
+                                <param name="container">4022</param>
+                            </include>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(SingleDialog,widget5,3003)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">SetProperty(Dialog,$LOCALIZE[31168],skinsettings)</onback>
                             <onback condition="!Skin.HasSetting(KioskMode)">ActivateWindow(3003)</onback>
@@ -2774,6 +2763,7 @@
                             <height>572</height>
                             <onup>425</onup>
                             <ondown>80</ondown>
+                            <onfocus condition="String.IsEmpty(Window.Property(ContextMenuOpen))">SetFocus(4021)</onfocus>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
                             <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(4021)</autoscroll>
@@ -3470,6 +3460,7 @@
                             <posy>0</posy>
                             <width>572</width>
                             <height>572</height>
+                            <onfocus condition="String.IsEmpty(Window.Property(ContextMenuOpen))">SetFocus(10021)</onfocus>
                             <onfocus>CancelAlarm(HomeTileMove,true)</onfocus>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
@@ -3618,16 +3609,11 @@
                                 <showonepage>false</showonepage>
                             </control>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>572</width>
-                            <height>572</height>
-                            <texture border="1">windows/common/darkgrey.png</texture>
-                            <visible>Window.IsActive(contextmenu) + Control.HasFocus(10021)</visible>
-                            <animation effect="fade" time="300" start="0" end="95" tween="sine" easing="out">Visible</animation>
-                            <animation effect="fade" time="300" start="95" end="0" tween="sine" easing="in">Hidden</animation>
-                        </control>
+                        <include content="HomeWidgetContextMenuOverlay">
+                            <param name="width">671</param>
+                            <param name="height">572</param>
+                            <param name="container">10022</param>
+                        </include>
                     </control>
                     <control type="panel" id="1001">
                         <posx>26</posx>
