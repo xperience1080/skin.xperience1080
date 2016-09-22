@@ -2,6 +2,10 @@
 <includes>
     <expression name="HomeHideOnActiveDialog">!Window.IsActive(movieinformation) + !Window.IsActive(favourites) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml) + ![Window.IsVisible(virtualkeyboard) + !String.IsEmpty(Window.Property(HomeSearch))]</expression>
 
+    <include name="FocusPosition">
+        <focusposition>$PARAM[value]</focusposition>
+    </include>
+
     <include name="FocusSettingsCategory">
         <onload>SetFocus(20,$INFO[Container(20).NumItems])</onload>
         <onload>SetFocus(825)</onload>
@@ -340,8 +344,42 @@
             <width>2</width>
             <onup>21</onup>
             <orientation>horizontal</orientation>
-            <include condition="System.HasAddon(script.globalsearch)">HomeControlListFocus1</include>
-            <include condition="!System.HasAddon(script.globalsearch)">HomeControlListFocus0</include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),1)">
+                <param name="value">0</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),2)">
+                <param name="value">1</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),3)">
+                <param name="value">2</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),4)">
+                <param name="value">3</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),5)">
+                <param name="value">4</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),6)">
+                <param name="value">5</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),7)">
+                <param name="value">6</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),8)">
+                <param name="value">7</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),9)">
+                <param name="value">8</param>
+            </include>
+            <include content="FocusPosition" condition="Integer.IsEqual(Window.Property(HomeCategory),10)">
+                <param name="value">9</param>
+            </include>
+            <include content="FocusPosition" condition="String.IsEmpty(Window.Property(HomeCategory)) + !System.HasAddon(script.globalsearch)">
+                <param name="value">0</param>
+            </include>
+            <include content="FocusPosition" condition="String.IsEmpty(Window.Property(HomeCategory)) + System.HasAddon(script.globalsearch)">
+                <param name="value">1</param>
+            </include>
             <scrolltime>0</scrolltime>
             <viewtype>list</viewtype>
             <itemlayout width="2" height="2"/>
@@ -597,13 +635,4 @@
             </control>
         </control>
     </include>
-
-    <include name="HomeControlListFocus1">
-        <focusposition>1</focusposition>
-    </include>
-
-    <include name="HomeControlListFocus0">
-        <focusposition>0</focusposition>
-    </include>
-
 </includes>

@@ -5,6 +5,9 @@
     <onload condition="!Skin.HasSetting(Skin.Initialization)">SetProperty(Skin.Initialization,1,startup)</onload>
     <onload condition="!Skin.HasSetting(Skin.Initialization) | String.IsEmpty(Window(startup).Property(Started))">ReplaceWindow(startup)</onload>
     <include condition="!String.IsEmpty(Window.Property(CategoryChanged))">FocusSettingsCategory</include>
+
+    <onunload>SetProperty(HomeCategory,$INFO[Container(20).CurrentItem])</onunload>
+
     <controls>
         <!-- Backgrounds -->
         <include>CommonItemsHome</include>
