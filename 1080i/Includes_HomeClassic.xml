@@ -2785,6 +2785,7 @@
                         <posy>-24</posy>
                         <width>331</width>
                         <height>620</height>
+                        <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMovies)">201</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTV)">901</onleft>
@@ -2996,6 +2997,7 @@
                         <width>331</width>
                         <height>620</height>
                         <onleft>402</onleft>
+                        <onright>Control.Move(20,1)</onright>
                         <onright condition="!Skin.HasSetting(HomePictures)">1001</onright>
                         <onright condition="Skin.HasSetting(HomePictures) + !Skin.HasSetting(HomePrograms)">601</onright>
                         <onright condition="Skin.HasSetting(HomePictures) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">701</onright>
@@ -4002,6 +4004,7 @@
                         <posy>-24</posy>
                         <width>1291</width>
                         <height>620</height>
+                        <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="!Skin.HasSetting(HomePictures)">1003</onleft>
                         <onleft condition="!Skin.HasSetting(HomeMusic)">403</onleft>
                         <onleft condition="!Skin.HasSetting(HomeTVShows)">303</onleft>
