@@ -11,7 +11,7 @@
 
         <control type="group">
             <include>OptionsShutdownAnimation</include>
-            <include>listEndAnimation</include>
+            <include>ListEndAnimation</include>
             <animation type="WindowClose">
                 <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                 <effect type="zoom" start="100" end="85" time="300" center="960,600" tween="sine" easing="out" />
