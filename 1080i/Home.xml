@@ -9,9 +9,7 @@
         <!-- Backgrounds -->
         <include>CommonItemsHome</include>
         <!-- Home screen -->
-        <include condition="!Skin.HasSetting(HomeClassicMode)">HomeControlList</include>
-        <include condition="Skin.HasSetting(HomeClassicMode)">HomeControlListClassic</include>
-        <include>HomeControlListLabels</include>
+        <include>HomeCategoryLabels</include>
         <include condition="!Skin.HasSetting(HomeClassicMode)">HomeItems</include>
         <include condition="Skin.HasSetting(HomeClassicMode)">HomeItemsClassic</include>
         <include>HomeProfileInfo</include>
