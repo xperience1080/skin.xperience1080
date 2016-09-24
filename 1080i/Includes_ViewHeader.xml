@@ -730,7 +730,7 @@
         <control type="group">
             <posx>75</posx>
             <posy>26</posy>
-            <visible>!Window.IsActive(addoninformation) + !Window.IsActive(favourites)</visible>
+            <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsActive(addoninformation) + !Window.IsActive(favourites)</visible>
             <include>BannerListInfoAnimation</include>
             <control type="group">
                 <control type="image">

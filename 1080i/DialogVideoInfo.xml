@@ -598,7 +598,7 @@
                             <height>70</height>
                             <font>Font-Condensed-S45</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</label>
+                            <label>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,, • ]$INFO[ListItem.Title]</label>
                             <textcolor>eewhite</textcolor>
                             <scroll>false</scroll>
                             <visible>Container.Content(episodes)</visible>
