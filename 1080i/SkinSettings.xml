@@ -595,40 +595,6 @@
                         <onclick>Skin.ToggleSetting(EPGGenreColors.Enabled)</onclick>
                         <label>$LOCALIZE[31221]</label>
                     </control>
-                    <control type="radiobutton" id="3009">
-                        <description>Hide weather fanart</description>
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <label>$LOCALIZE[31041]</label>
-                        <onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
-                        <selected>!Skin.HasSetting(ShowWeatherFanart)</selected>
-                    </control>
-                    <control type="radiobutton" id="3010">
-                        <description>Hide daily weather fanart</description>
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <label>$LOCALIZE[31042]</label>
-                        <onclick>Skin.ToggleSetting(ShowDailyWeatherFanart)</onclick>
-                        <selected>!Skin.HasSetting(ShowDailyWeatherFanart)</selected>
-                        <enable>Skin.HasSetting(ShowWeatherFanart)</enable>
-                        <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(3010)">Conditional</animation>
-                    </control>
-                    <control type="button" id="3007">
-                        <description>Set weather fanart path</description>
-                        <width>1210</width>
-                        <include>SettingsCategoryDefaultButtonVars</include>
-                        <label>$LOCALIZE[31043]</label>
-                        <onclick>Skin.SetPath(WeatherFanartDir)</onclick>
-                    </control>
-                    <control type="button" id="3008">
-                        <description>Reset weather fanart path</description>
-                        <width>1210</width>
-                        <include>SettingsCategoryDefaultButtonVars</include>
-                        <label>- $LOCALIZE[31044]</label>
-                        <onclick>Skin.Reset(WeatherFanartDir)</onclick>
-                        <enable>!Skin.SetPath(WeatherFanartDir)</enable>
-                        <visible>!String.IsEmpty(Skin.String(WeatherFanartDir))</visible>
-                    </control>
                 </control>
 
                 <!-- ============= -->

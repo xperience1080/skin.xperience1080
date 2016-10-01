@@ -136,18 +136,6 @@ msgctxt "#31040"
 msgid "Reset Pictures Path"
 msgstr "Wyczyść ścieżkę do folderu obrazów"
 
-msgctxt "#31041"
-msgid "Hide Weather Fanart"
-msgstr "Ukrywaj fototapetę pogody"
-
-msgctxt "#31043"
-msgid "Set Weather Fanart Path"
-msgstr "Ustaw ścieżkę do folderu fototapet pogody"
-
-msgctxt "#31044"
-msgid "Reset Weather Fanart Path"
-msgstr "Wyczyść ścieżkę do folderu fototapet pogody"
-
 msgctxt "#31045"
 msgid "Display Volume in dB"
 msgstr "Wyświetlaj głośność w decybelach"

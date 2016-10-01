@@ -180,22 +180,6 @@ msgctxt "#31040"
 msgid "Reset Pictures Path"
 msgstr "Atstatyti paveikslėlių kelią"
 
-msgctxt "#31041"
-msgid "Hide Weather Fanart"
-msgstr "Slėpti orų Fanart"
-
-msgctxt "#31042"
-msgid "Hide Weather Daily Fanart"
-msgstr "Slėpti orų dienos Fanart"
-
-msgctxt "#31043"
-msgid "Set Weather Fanart Path"
-msgstr "Nustatyti orų Fanart kelią"
-
-msgctxt "#31044"
-msgid "Reset Weather Fanart Path"
-msgstr "Atstatyti orų Fanart kelią"
-
 msgctxt "#31045"
 msgid "Display Volume in dB"
 msgstr "Rodyti garsumą dB vienetais"

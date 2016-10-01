@@ -180,22 +180,6 @@ msgctxt "#31040"
 msgid "Reset Pictures Path"
 msgstr "Réinitialiser le chemin des photos"
 
-msgctxt "#31041"
-msgid "Hide Weather Fanart"
-msgstr "Cacher le fanart Météo"
-
-msgctxt "#31042"
-msgid "Hide Weather Daily Fanart"
-msgstr "Cacher le fanart Météo journalier"
-
-msgctxt "#31043"
-msgid "Set Weather Fanart Path"
-msgstr "Définir le chemin pour les fanarts Météo"
-
-msgctxt "#31044"
-msgid "Reset Weather Fanart Path"
-msgstr "Redéfinir le chemin pour les fanarts Météo"
-
 msgctxt "#31045"
 msgid "Display Volume in dB"
 msgstr "Afficher le volume en dB"

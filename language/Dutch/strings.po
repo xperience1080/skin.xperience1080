@@ -180,22 +180,6 @@ msgctxt "#31040"
 msgid "Reset Pictures Path"
 msgstr "Herstel afbeeldingenlocatie"
 
-msgctxt "#31041"
-msgid "Hide Weather Fanart"
-msgstr "Verberg weer Fan-art"
-
-msgctxt "#31042"
-msgid "Hide Weather Daily Fanart"
-msgstr "Verberg Weather Daily Fanart"
-
-msgctxt "#31043"
-msgid "Set Weather Fanart Path"
-msgstr "Stel Weather Fanart Path in"
-
-msgctxt "#31044"
-msgid "Reset Weather Fanart Path"
-msgstr "Reset Weather Fanart Path"
-
 msgctxt "#31045"
 msgid "Display Volume in dB"
 msgstr "Toon Volume in dB"
