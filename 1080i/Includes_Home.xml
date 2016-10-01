@@ -4946,7 +4946,7 @@
                     <onright>Control.Move(20,1)</onright>
                     <onright>825</onright>
                     <onclick condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(weather)</onclick>
-                    <onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(addonbrowser)</onclick>
+                    <onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(addonbrowser,addons://repos/,true)</onclick>
                     <onup>80</onup>
                     <ondown>701</ondown>
                 </control>
@@ -5669,12 +5669,12 @@
                                 <label>$LOCALIZE[8]</label>
                                 <icon>windows/home/icons/weather.png</icon>
                                 <onclick condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(weather)</onclick>
-                                <onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(addonbrowser)</onclick>
+                                <onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(addonbrowser,addons://repos/,true)</onclick>
                             </item>
                             <item id="1">
                                 <label>$LOCALIZE[5]</label>
                                 <icon>windows/home/icons/settings.png</icon>
-                                <onclick>ActivateWindow(skinsettings)</onclick>
+                                <onclick>ActivateWindow(servicesettings,weather)</onclick>
                             </item>
                         </content>
                     </control>
