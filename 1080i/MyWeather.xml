@@ -126,7 +126,7 @@
                     <label>$LOCALIZE[5]</label>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/settings-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/settings-nf.png</texturenofocus>
-                    <onclick>ActivateWindow(playersettings)</onclick>
+                    <onclick>ActivateWindow(servicesettings,weather)</onclick>
                     <onleft condition="![Skin.HasSetting(ShowWeatherFanart) + [!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)]]">101</onleft>
                     <onleft condition="Skin.HasSetting(ShowWeatherFanart) + [!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)]">40</onleft>
                     <onright condition="![Skin.HasSetting(ShowWeatherFanart) + [!String.IsEmpty(Skin.String(WeatherFanartDir)) | System.HasAddon(resource.images.weatherfanart.multi)]]">101</onright>
