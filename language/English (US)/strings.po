@@ -693,8 +693,8 @@ msgid "Kodi Version"
 msgstr "Kodi Version"
 
 msgctxt "#31460"
-msgid "Skin Frame"
-msgstr "Skin Frame"
+msgid "Quick Navigation"
+msgstr "Quick Navigation"
 
 msgctxt "#31504"
 msgid "Applications"

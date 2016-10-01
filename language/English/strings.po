@@ -817,7 +817,7 @@ msgid "Kodi Version"
 msgstr ""
 
 msgctxt "#31460"
-msgid "Skin Frame"
+msgid "Quick Navigation"
 msgstr ""
 
 #empty strings from id 31461 to 31503

@@ -693,8 +693,8 @@ msgid "Kodi Version"
 msgstr "Version de Kodi"
 
 msgctxt "#31460"
-msgid "Skin Frame"
-msgstr "Cadre de l'habillage"
+msgid "Quick Navigation"
+msgstr "Quick Navigation"
 
 msgctxt "#31504"
 msgid "Applications"
