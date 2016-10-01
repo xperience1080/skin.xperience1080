@@ -420,10 +420,6 @@ msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr "Toon power knop (beïnvloed niet het startscherm)"
 
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr "Toon opties knop"
-
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
 msgstr "Speel trailer af bij openen filminfo"

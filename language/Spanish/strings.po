@@ -420,10 +420,6 @@ msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr "Mostrar botón de apagar (el ajuste no afecta a la pantalla de inicio)"
 
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr "Mostrar botón de Opciones"
-
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
 msgstr "Ejecutar trailer al mirar la información de la película"

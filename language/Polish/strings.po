@@ -372,10 +372,6 @@ msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr "Pokazuj przycisk Koniec (nie dotyczy ekranu startowego)"
 
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr "Pokazuj przycisk opcji"
-
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
 msgstr "Odtwarzaj zwiastun po wyświetleniu informacji o filmie"

@@ -420,10 +420,6 @@ msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr "Display Power Button (does not affect home screen)"
 
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr "Display Options Button"
-
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
 msgstr "Play Trailer on opening Movie Information"

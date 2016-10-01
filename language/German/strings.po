@@ -428,10 +428,6 @@ msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr "Energie-Schaltfläche anzeigen (Einstellung hat keinen Einfluss auf das Hauptmenü)"
 
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr "Optionen-Schaltfläche anzeigen"
-
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
 msgstr "Trailer beim Öffnen der Filminformationen abspielen"

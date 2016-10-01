@@ -223,36 +223,27 @@
                     <control type="radiobutton" id="1007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(HideOptionsButton)</selected>
-                        <onclick>Skin.ToggleSetting(HideOptionsButton)</onclick>
-                        <label>$LOCALIZE[31201]</label>
-                        <enable>!Skin.HasSetting(KioskMode)</enable>
-                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1006)">Conditional</animation>
-                    </control>
-                    <control type="radiobutton" id="1008">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
                         <label>$LOCALIZE[31975]</label>
                     </control>
-                    <control type="radiobutton" id="1009">
+                    <control type="radiobutton" id="1008">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(Guide.HideClockDate)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClockDate)</onclick>
                         <label>$LOCALIZE[31996]</label>
                         <enable>!Skin.HasSetting(Guide.HideClock)</enable>
-                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1008)">Conditional</animation>
+                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1007)">Conditional</animation>
                     </control>
-                    <control type="radiobutton" id="1010">
+                    <control type="radiobutton" id="1009">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(Guide.HideWeather)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideWeather)</onclick>
                         <label>$LOCALIZE[31976]</label>
                     </control>
-                    <control type="radiobutton" id="1011">
+                    <control type="radiobutton" id="1010">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(Guide.HideUserImage)</selected>

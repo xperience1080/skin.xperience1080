@@ -420,10 +420,6 @@ msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr "Rodyti maitinimo mygtuką (neturi įtakos pradiniam ekranaui)"
 
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr "Rodyti parinkčių mygtuką"
-
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
 msgstr "Atkurti anonsą atidarius filmo informaciją"

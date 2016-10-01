@@ -500,9 +500,7 @@ msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr ""
 
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr ""
+#empty string with id 31201
 
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
