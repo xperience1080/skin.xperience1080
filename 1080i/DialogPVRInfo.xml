@@ -75,7 +75,7 @@
                 <textcolor>eewhite</textcolor>
                 <align>left</align>
                 <scroll>false</scroll>
-                <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]">Conditional</animation>
+                <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)">Conditional</animation>
             </control>
 
             <control type="group">
