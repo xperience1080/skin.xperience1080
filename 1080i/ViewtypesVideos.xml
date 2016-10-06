@@ -1156,7 +1156,7 @@
                                 <posy>86</posy>
                                 <width>516</width>
                                 <height>375</height>
-                                <info>Container(52).ListItem.Plot</info>
+                                <label>$INFO[Container(52).ListItem.Plot]</label>
                                 <align>justify</align>
                                 <textcolor>CCFFFFFF</textcolor>
                                 <shadowcolor>33000000</shadowcolor>
@@ -1182,7 +1182,7 @@
                                 <posy>338</posy>
                                 <width>516</width>
                                 <height>182</height>
-                                <info>Container(52).ListItem.Plot</info>
+                                <label>$INFO[Container(52).ListItem.Plot]</label>
                                 <align>justify</align>
                                 <textcolor>CCFFFFFF</textcolor>
                                 <shadowcolor>33000000</shadowcolor>
@@ -2308,7 +2308,7 @@
                                 <posy>90</posy>
                                 <width>678</width>
                                 <height>330</height>
-                                <info>Container(53).ListItem.Plot</info>
+                                <label>$INFO[Container(53).ListItem.Plot]</label>
                                 <align>justify</align>
                                 <textcolor>CCFFFFFF</textcolor>
                                 <shadowcolor>33000000</shadowcolor>
@@ -2456,7 +2456,7 @@
                                 <posy>379</posy>
                                 <width>440</width>
                                 <height>230</height>
-                                <info>Container(54).ListItem(-1).Plot</info>
+                                <label>$INFO[Container(54).ListItem(-1).Plot]</label>
                                 <align>justify</align>
                                 <textcolor>99FFFFFF</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
@@ -2586,7 +2586,7 @@
                                 <posy>379</posy>
                                 <width>440</width>
                                 <height>230</height>
-                                <info>Container(54).ListItem(3).Plot</info>
+                                <label>$INFO[Container(54).ListItem(3).Plot]</label>
                                 <align>justify</align>
                                 <textcolor>99FFFFFF</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
@@ -2716,7 +2716,7 @@
                                 <posy>379</posy>
                                 <width>440</width>
                                 <height>230</height>
-                                <info>Container(54).ListItem(2).Plot</info>
+                                <label>$INFO[Container(54).ListItem(2).Plot]</label>
                                 <align>justify</align>
                                 <textcolor>99FFFFFF</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
@@ -2846,7 +2846,7 @@
                                 <posy>379</posy>
                                 <width>440</width>
                                 <height>230</height>
-                                <info>Container(54).ListItem(1).Plot</info>
+                                <label>$INFO[Container(54).ListItem(1).Plot]</label>
                                 <align>justify</align>
                                 <textcolor>99FFFFFF</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
@@ -2973,7 +2973,7 @@
                         <posy>379</posy>
                         <width>440</width>
                         <height>230</height>
-                        <info>Container(54).ListItem(0).Plot</info>
+                        <label>$INFO[Container(54).ListItem(0).Plot]</label>
                         <align>justify</align>
                         <textcolor>99FFFFFF</textcolor>
                         <shadowcolor>22000000</shadowcolor>
@@ -3121,7 +3121,7 @@
                                 <posy>379</posy>
                                 <width>440</width>
                                 <height>230</height>
-                                <info>ListItem.Plot</info>
+                                <label>$INFO[ListItem.Plot]</label>
                                 <align>justify</align>
                                 <textcolor>99FFFFFF</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
@@ -3254,7 +3254,7 @@
                                 <posy>379</posy>
                                 <width>440</width>
                                 <height>230</height>
-                                <info>ListItem.Plot</info>
+                                <label>$INFO[ListItem.Plot]</label>
                                 <align>justify</align>
                                 <textcolor>99FFFFFF</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
@@ -4789,7 +4789,7 @@
                             <posy>90</posy>
                             <width>430</width>
                             <height>470</height>
-                            <info>Container(501).ListItem.Plot</info>
+                            <label>$INFO[Container(501).ListItem.Plot]</label>
                             <align>justify</align>
                             <textcolor>CCFFFFFF</textcolor>
                             <shadowcolor>33000000</shadowcolor>
@@ -5374,7 +5374,7 @@
                                 <posy>177</posy>
                                 <width>900</width>
                                 <height>200</height>
-                                <info>ListItem.Plot</info>
+                                <label>$INFO[ListItem.Plot]</label>
                                 <align>justify</align>
                                 <textcolor>FF484848</textcolor>
                                 <autoscroll delay="13000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
@@ -5668,7 +5668,7 @@
                                 <posy>122</posy>
                                 <width>760</width>
                                 <height>200</height>
-                                <info>ListItem.Plot</info>
+                                <label>$INFO[ListItem.Plot]</label>
                                 <align>justify</align>
                                 <textcolor>FF484848</textcolor>
                                 <autoscroll delay="13000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
