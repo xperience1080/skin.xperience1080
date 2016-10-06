@@ -771,7 +771,7 @@
                             <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
                             <font>Font-Condensed-S30-B</font>
                             <textcolor>FF27D0FA</textcolor>
-                            <scroll>no</scroll>
+                            <scroll>false</scroll>
                             <align>center</align>
                             <visible>Integer.IsGreater(ListItem.Property(unWatchedEpisodes),0)</visible>
                         </control>
@@ -5192,7 +5192,7 @@
                                 <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
                                 <font>Font-Condensed-S30-B</font>
                                 <textcolor>aawhite</textcolor>
-                                <scroll>no</scroll>
+                                <scroll>false</scroll>
                                 <align>center</align>
                             </control>
                         </control>
@@ -5305,7 +5305,7 @@
                                     <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
                                     <font>Font-Condensed-S30-B</font>
                                     <textcolor>FF27D0FA</textcolor>
-                                    <scroll>no</scroll>
+                                    <scroll>false</scroll>
                                     <align>center</align>
                                 </control>
                             </control>
@@ -5450,7 +5450,7 @@
                                     <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
                                     <font>Font-Condensed-S30-B</font>
                                     <textcolor>FF27D0FA</textcolor>
-                                    <scroll>no</scroll>
+                                    <scroll>false</scroll>
                                     <align>center</align>
                                 </control>
                             </control>
@@ -5568,7 +5568,7 @@
                                 <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
                                 <font>Font-Condensed-S30-B</font>
                                 <textcolor>FF27D0FA</textcolor>
-                                <scroll>no</scroll>
+                                <scroll>false</scroll>
                                 <align>center</align>
                             </control>
                         </control>
