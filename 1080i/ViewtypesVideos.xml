@@ -2022,7 +2022,7 @@
                     <orientation>vertical</orientation>
                     <showonepage>false</showonepage>
                     <animation effect="fade" start="35" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(71)">Conditional</animation>
-                    <visible allowhiddenfocus="!Container.Content(Episodes) + Skin.HasSetting(InfoListShowPlotOnFocus) + !String.IsEmpty(Container(52).ListItem.Plot)">[Control.HasFocus(71) + !Container.Content(Episodes)] | [!Skin.HasSetting(InfoListHideInfo) + Control.IsVisible(52) + !Container.Content(Episodes) + Skin.HasSetting(InfoListPlot) + !String.IsEmpty(Container(52).ListItem.Plot)]</visible>
+                    <visible allowhiddenfocus="true">[Control.HasFocus(71) + !Container.Content(Episodes)] | [!Skin.HasSetting(InfoListHideInfo) + Control.IsVisible(52) + !Container.Content(Episodes) + Skin.HasSetting(InfoListPlot) + !String.IsEmpty(Container(52).ListItem.Plot)]</visible>
                 </control>
                 <control type="scrollbar" id="71">
                     <description>Scrollbar</description>
@@ -5062,7 +5062,7 @@
                 <height>800</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>horizontal</orientation>
-                <viewtype label="20445">fanart</viewtype>
+                <viewtype label="20445">biginfo</viewtype>
                 <pagecontrol>706</pagecontrol>
                 <onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
                 <onup condition="Skin.HasSetting(KioskMode)">502</onup>
