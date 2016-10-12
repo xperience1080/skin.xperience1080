@@ -4785,14 +4785,6 @@
                         <scroll>false</scroll>
                     </control>
                 </control>
-                <control type="image">
-                    <posx>1684</posx>
-                    <posy>186</posy>
-                    <width>100</width>
-                    <height>100</height>
-                    <texture>$VAR[ExtendedOverlay]</texture>
-                    <visible>!String.IsEmpty(ListItem.Overlay)</visible>
-                </control>
             </control>
         </control>
     </include>
