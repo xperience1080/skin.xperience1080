@@ -236,7 +236,8 @@
 	</variable>
 	<variable name="ListFanart">
 		<value condition="[Container.Content(Seasons) | Container.Content(Episodes)] + !String.IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
-		<value>$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value>$INFO[ListItem.ActualIcon,views/fallbacks/,/large.png]</value>
 	</variable>
 	<variable name="InfoListPoster">
 		<value condition="Container.Content(Episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
