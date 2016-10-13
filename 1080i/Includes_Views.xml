@@ -691,7 +691,7 @@
 		<value>$INFO[ListItem.Artist]</value>
 	</variable>
 	<variable name="VideoPanelThumbInfo">
-		<value condition="Container.Content(movies)">$INFO[ListItem.Rating,★ , [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration, [COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]$VAR[LandscapeHDSD3DLabel]</value>
+		<value condition="Container.Content(movies)">$INFO[ListItem.Rating,★ , [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration, [COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391] ]$VAR[LandscapeHDSD3DLabel]</value>
 		<value>$INFO[ListItem.Property(UnWatchedEpisodes),$LOCALIZE[31311],]</value>
 	</variable>
 	<variable name="ThumbnailViewDetailInfo">
