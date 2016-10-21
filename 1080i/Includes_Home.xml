@@ -5710,9 +5710,8 @@
                     <onleft condition="!Skin.HasSetting(HomeTV)">925</onleft>
                     <onleft>525</onleft>
                     <onright condition="!Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
-                    <onup condition="!System.HasAddon(service.openelec.settings)">80</onup>
+                    <onup>80</onup>
                     <onclick>ActivateWindow(4)</onclick>
-                    <onup condition="System.HasAddon(service.openelec.settings)">ActivateWindow(3026)</onup>
                     <ondown>801</ondown>
                 </control>
                 <control type="group" id="850">
