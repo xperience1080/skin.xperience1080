@@ -5883,7 +5883,7 @@
                             <item id="3">
                                 <label>$LOCALIZE[14211]</label>
                                 <icon>windows/home/icons/music.png</icon>
-                                <include>GuideDialogClose</include>
+                                <onclick>Dialog.Close(all)</onclick>
                                 <onclick>ActivateWindow(MediaSettings)</onclick>
                             </item>
                             <item id="4">
