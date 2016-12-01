@@ -1115,7 +1115,7 @@
                                     <align></align>
                                 </control>
                             </focusedlayout>
-                            <content>pvr://channels/tv/*</content>
+                            <content sortby="lastplayed" sortorder="descending" target="pvr" limit="20">pvr://channels/tv/*</content>
                         </control>
                         <control type="group" id="9023">
                             <visible>Container(9022).IsUpdating</visible>
