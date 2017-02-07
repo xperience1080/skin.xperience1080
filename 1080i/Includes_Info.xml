@@ -188,12 +188,13 @@
             <control type="label">
                 <posx>157</posx>
                 <posy>955</posy>
-                <width>180</width>
+                <width>140</width>
                 <height>100</height>
                 <label>$LOCALIZE[31507]</label>
                 <font>Font-Condensed-S34-B</font>
                 <textcolor>eewhite</textcolor>
                 <shadowcolor>22000000</shadowcolor>
+                <scroll>false</scroll>
                 <include>homebuttonsanim2</include>
                 <visible>!Skin.HasSetting(HideShutdownButton)</visible>
             </control>
