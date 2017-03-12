@@ -83,7 +83,7 @@
                 <control type="button" id="26">
                     <description>repeat</description>
                     <include>optionsbuttonsdimensions</include>
-                    <label>-</label>
+                    <label></label>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/bullet-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/bullet-nf.png</texturenofocus>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(26)">Conditional</animation>
