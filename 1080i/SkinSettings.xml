@@ -206,13 +206,6 @@
                         <onclick>Skin.ToggleSetting(SpinControl.Default)</onclick>
                         <label>$LOCALIZE[31112]</label>
                     </control>
-                    <control type="radiobutton" id="1005">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(HideShutdownButton)</selected>
-                        <onclick>Skin.ToggleSetting(HideShutdownButton)</onclick>
-                        <label>$LOCALIZE[31200]</label>
-                    </control>
                     <control type="radiobutton" id="1006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
