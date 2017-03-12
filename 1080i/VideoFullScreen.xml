@@ -2,6 +2,32 @@
 <window>
     <defaultcontrol>-</defaultcontrol>
     <controls>
+        <control type="group" id="0">
+            <control type="label" id="10">
+                <left>45</left>
+                <top>15</top>
+                <width>1770</width>
+                <height>100</height>
+                <label></label>
+                <font>Font-Condensed-S30-B</font>
+            </control>
+            <control type="label" id="11">
+                <left>45</left>
+                <top>45</top>
+                <width>1770</width>
+                <height>100</height>
+                <label></label>
+                <font>Font-Condensed-S30</font>
+            </control>
+            <control type="label" id="12">
+                <left>45</left>
+                <top>75</top>
+                <width>1770</width>
+                <height>100</height>
+                <label></label>
+                <font>Font-Condensed-S30</font>
+            </control>
+        </control>
         <control type="button" id="1">
             <description>Jump to time</description>
             <visible>!String.IsEmpty(Player.SeekNumeric)</visible>
