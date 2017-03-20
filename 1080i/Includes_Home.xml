@@ -271,7 +271,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(5021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(2) + !Control.HasFocus(5021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>5024</pagecontrol>
@@ -475,7 +475,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(5031)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(2) + !Control.HasFocus(5031)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>5034</pagecontrol>
@@ -1554,7 +1554,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(2021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(3) + !Control.HasFocus(2021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>2024</pagecontrol>
@@ -2259,7 +2259,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(3021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(4) + !Control.HasFocus(3021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>3024</pagecontrol>
@@ -2962,7 +2962,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(4021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(5) + !Control.HasFocus(4021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>4024</pagecontrol>
@@ -3703,7 +3703,7 @@
                             <onfocus condition="String.IsEmpty(Window.Property(ContextMenuOpen))">SetFocus(10021)</onfocus>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">!Control.HasFocus(10021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(10) + !Control.HasFocus(10021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>10024</pagecontrol>
