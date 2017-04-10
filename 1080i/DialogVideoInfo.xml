@@ -1128,7 +1128,7 @@
                 <control type="label">
                     <posx>118</posx>
                     <posy>144</posy>
-                    <width>200</width>
+                    <width>422</width>
                     <height>60</height>
                     <label>$LOCALIZE[21371]</label>
                     <font>Font-Condensed-S45</font>
