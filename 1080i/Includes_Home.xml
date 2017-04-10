@@ -657,15 +657,6 @@
                                     <width>293</width>
                                     <height>293</height>
                                     <texture border="7">windows/home/tile.png</texture>
-                                    <visible>!Skin.HasSetting(HomeHomeTiles)</visible>
-                                </control>
-                                <control type="image">
-                                    <posx>19</posx>
-                                    <posy>19</posy>
-                                    <width>293</width>
-                                    <height>293</height>
-                                    <texture border="7">windows/home/tile-red.png</texture>
-                                    <visible>Skin.HasSetting(HomeHomeTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -730,15 +721,6 @@
                                         <width>293</width>
                                         <height>293</height>
                                         <texture border="7">windows/home/tile.png</texture>
-                                        <visible>!Skin.HasSetting(HomeHomeTiles)</visible>
-                                    </control>
-                                    <control type="image">
-                                        <posx>19</posx>
-                                        <posy>19</posy>
-                                        <width>293</width>
-                                        <height>293</height>
-                                        <texture border="7">windows/home/tile-red.png</texture>
-                                        <visible>Skin.HasSetting(HomeHomeTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -1174,6 +1156,15 @@
                                     <width>293</width>
                                     <height>293</height>
                                     <texture border="7">windows/home/tile.png</texture>
+                                    <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
+                                    <texture border="7">windows/home/tile-red.png</texture>
+                                    <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -1234,6 +1225,15 @@
                                         <width>293</width>
                                         <height>293</height>
                                         <texture border="7">windows/home/tile.png</texture>
+                                        <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
+                                        <texture border="7">windows/home/tile-red.png</texture>
+                                        <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -1735,7 +1735,16 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
+                                    <texture border="7">windows/home/tile.png</texture>
+                                    <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
                                     <texture border="7">windows/home/tile-blue.png</texture>
+                                    <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -1812,7 +1821,16 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
+                                        <texture border="7">windows/home/tile.png</texture>
+                                        <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
                                         <texture border="7">windows/home/tile-blue.png</texture>
+                                        <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -1947,15 +1965,6 @@
                                     <width>293</width>
                                     <height>293</height>
                                     <texture border="7">windows/home/tile.png</texture>
-                                    <visible>!Skin.HasSetting(HomeMoviesTiles)</visible>
-                                </control>
-                                <control type="image">
-                                    <posx>19</posx>
-                                    <posy>19</posy>
-                                    <width>293</width>
-                                    <height>293</height>
-                                    <texture border="7">windows/home/tile-blue.png</texture>
-                                    <visible>Skin.HasSetting(HomeMoviesTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -2021,15 +2030,6 @@
                                         <width>293</width>
                                         <height>293</height>
                                         <texture border="7">windows/home/tile.png</texture>
-                                        <visible>!Skin.HasSetting(HomeMoviesTiles)</visible>
-                                    </control>
-                                    <control type="image">
-                                        <posx>19</posx>
-                                        <posy>19</posy>
-                                        <width>293</width>
-                                        <height>293</height>
-                                        <texture border="7">windows/home/tile-blue.png</texture>
-                                        <visible>Skin.HasSetting(HomeMoviesTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -2441,7 +2441,16 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
+                                    <texture border="7">windows/home/tile.png</texture>
+                                    <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
                                     <texture border="7">windows/home/tile-green.png</texture>
+                                    <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -2518,7 +2527,16 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
+                                        <texture border="7">windows/home/tile.png</texture>
+                                        <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
                                         <texture border="7">windows/home/tile-green.png</texture>
+                                        <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -2653,15 +2671,6 @@
                                     <width>293</width>
                                     <height>293</height>
                                     <texture border="7">windows/home/tile.png</texture>
-                                    <visible>!Skin.HasSetting(HomeTVShowsTiles)</visible>
-                                </control>
-                                <control type="image">
-                                    <posx>19</posx>
-                                    <posy>19</posy>
-                                    <width>293</width>
-                                    <height>293</height>
-                                    <texture border="7">windows/home/tile-green.png</texture>
-                                    <visible>Skin.HasSetting(HomeTVShowsTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -2727,15 +2736,6 @@
                                         <width>293</width>
                                         <height>293</height>
                                         <texture border="7">windows/home/tile.png</texture>
-                                        <visible>!Skin.HasSetting(HomeTVShowsTiles)</visible>
-                                    </control>
-                                    <control type="image">
-                                        <posx>19</posx>
-                                        <posy>19</posy>
-                                        <width>293</width>
-                                        <height>293</height>
-                                        <texture border="7">windows/home/tile-green.png</texture>
-                                        <visible>Skin.HasSetting(HomeTVShowsTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -3145,7 +3145,16 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
+                                    <texture border="7">windows/home/tile.png</texture>
+                                    <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
                                     <texture border="7">windows/home/tile-orange.png</texture>
+                                    <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -3222,7 +3231,16 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
+                                        <texture border="7">windows/home/tile.png</texture>
+                                        <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
                                         <texture border="7">windows/home/tile-orange.png</texture>
+                                        <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -3356,15 +3374,6 @@
                                 <width>293</width>
                                 <height>293</height>
                                 <texture border="7">windows/home/tile.png</texture>
-                                <visible>!Skin.HasSetting(HomeMusicTiles)</visible>
-                            </control>
-                            <control type="image">
-                                <posx>19</posx>
-                                <posy>19</posy>
-                                <width>293</width>
-                                <height>293</height>
-                                <texture border="7">windows/home/tile-orange.png</texture>
-                                <visible>Skin.HasSetting(HomeMusicTiles)</visible>
                             </control>
                             <control type="group">
                                 <control type="image">
@@ -3430,15 +3439,6 @@
                                     <width>293</width>
                                     <height>293</height>
                                     <texture border="7">windows/home/tile.png</texture>
-                                    <visible>!Skin.HasSetting(HomeMusicTiles)</visible>
-                                </control>
-                                <control type="image">
-                                    <posx>19</posx>
-                                    <posy>19</posy>
-                                    <width>293</width>
-                                    <height>293</height>
-                                    <texture border="7">windows/home/tile-orange.png</texture>
-                                    <visible>Skin.HasSetting(HomeMusicTiles)</visible>
                                 </control>
                                 <control type="group">
                                     <control type="image">
@@ -3905,7 +3905,16 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
+                                    <texture border="7">windows/home/tile.png</texture>
+                                    <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                </control>
+                                <control type="image">
+                                    <posx>19</posx>
+                                    <posy>19</posy>
+                                    <width>293</width>
+                                    <height>293</height>
                                     <texture border="7">windows/home/tile-purple.png</texture>
+                                    <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -3982,7 +3991,16 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
+                                        <texture border="7">windows/home/tile.png</texture>
+                                        <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <posx>19</posx>
+                                        <posy>19</posy>
+                                        <width>293</width>
+                                        <height>293</height>
                                         <texture border="7">windows/home/tile-purple.png</texture>
+                                        <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -4113,15 +4131,6 @@
                                     <width>293</width>
                                     <height>293</height>
                                     <texture border="7">windows/home/tile.png</texture>
-                                    <visible>!Skin.HasSetting(HomePicturesTile)</visible>
-                                </control>
-                                <control type="image">
-                                    <posx>19</posx>
-                                    <posy>19</posy>
-                                    <width>293</width>
-                                    <height>293</height>
-                                    <texture border="7">windows/home/tile-purple.png</texture>
-                                    <visible>Skin.HasSetting(HomePicturesTiles)</visible>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -4187,15 +4196,6 @@
                                         <width>293</width>
                                         <height>293</height>
                                         <texture border="7">windows/home/tile.png</texture>
-                                        <visible>!Skin.HasSetting(HomePicturesTiles)</visible>
-                                    </control>
-                                    <control type="image">
-                                        <posx>19</posx>
-                                        <posy>19</posy>
-                                        <width>293</width>
-                                        <height>293</height>
-                                        <texture border="7">windows/home/tile-purple.png</texture>
-                                        <visible>Skin.HasSetting(HomePicturesTiles)</visible>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
