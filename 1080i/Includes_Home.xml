@@ -864,7 +864,7 @@
                     <onright>825</onright>
                     <onright>Control.Move(20,1)</onright>
                     <onclick>ActivateWindow(tvchannels)</onclick>
-                    <onup>80</onup>
+                    <onup>ActivateWindow(3023)</onup>
                     <ondown>901</ondown>
                 </control>
                 <control type="group" id="950">
