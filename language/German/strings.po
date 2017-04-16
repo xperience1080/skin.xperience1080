@@ -721,8 +721,8 @@ msgid "Spotlight"
 msgstr "Im Rampenlicht"
 
 msgctxt "#31551"
-msgid "Ongoing TV Shows"
-msgstr "Laufende Serien"
+msgid "Ongoing Episodes"
+msgstr "Laufende Episoden"
 
 msgctxt "#31552"
 msgid "New Movies"

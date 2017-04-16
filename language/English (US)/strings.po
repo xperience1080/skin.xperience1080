@@ -717,8 +717,8 @@ msgid "Spotlight"
 msgstr "Spotlight"
 
 msgctxt "#31551"
-msgid "Ongoing TV Shows"
-msgstr "Ongoing TV Shows"
+msgid "Ongoing Episodes"
+msgstr "Ongoing Episodes"
 
 msgctxt "#31552"
 msgid "New Movies"

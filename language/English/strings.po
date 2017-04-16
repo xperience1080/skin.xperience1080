@@ -847,7 +847,7 @@ msgid "Spotlight"
 msgstr ""
 
 msgctxt "#31551"
-msgid "Ongoing TV Shows"
+msgid "Ongoing Episodes"
 msgstr ""
 
 msgctxt "#31552"
