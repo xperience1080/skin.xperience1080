@@ -143,7 +143,7 @@
                 <height>541</height>
                 <texture border="39">dialogs/default/bg.png</texture>
             </control>
-            <control type="label" id="20">
+            <control type="label" id="2">
                 <description>Heading</description>
                 <posx>560</posx>
                 <posy>221</posy>
@@ -165,7 +165,7 @@
                         <height>473</height>
                         <texture border="5">dialogs/default/inner.png</texture>
                     </control>
-                    <control type="grouplist" id="9">
+                    <control type="grouplist" id="3">
                         <description>button area</description>
                         <posx>0</posx>
                         <posy>0</posy>
@@ -173,12 +173,12 @@
                         <height>473</height>
                         <itemgap>-1</itemgap>
                         <onleft>8004</onleft>
-                        <onright>2</onright>
+                        <onright>5</onright>
                         <onup>9</onup>
                         <ondown>9</ondown>
                         <scrolltime>0</scrolltime>
                     </control>
-                    <control type="button" id="13">
+                    <control type="button" id="10">
                         <width>310</width>
                         <height>60</height>
                         <font>Font-Condensed-S32</font>
@@ -203,24 +203,24 @@
                         <height>473</height>
                         <texture border="5">dialogs/default/inner.png</texture>
                     </control>
-                    <control type="grouplist" id="2">
+                    <control type="grouplist" id="5">
                         <description>control area</description>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>960</width>
                         <height>473</height>
                         <itemgap>-1</itemgap>
-                        <pagecontrol>30</pagecontrol>
-                        <onleft>9</onleft>
-                        <onright>30</onright>
-                        <onup>10</onup>
+                        <pagecontrol>40</pagecontrol>
+                        <onleft>3</onleft>
+                        <onright>40</onright>
+                        <onup>28</onup>
                         <ondown>2</ondown>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
                     </control>
                 </control>
             </control>
 
-            <control type="button" id="3">
+            <control type="button" id="7">
                 <description>default</description>
                 <height>60</height>
                 <font>Font-Condensed-S32</font>
@@ -234,7 +234,7 @@
                 <texturenofocus>dialogs/default/separator.png</texturenofocus>
             </control>
 
-            <control type="radiobutton" id="4">
+            <control type="radiobutton" id="8">
                 <description>radioButton</description>
                 <height>60</height>
                 <align>left</align>
@@ -251,7 +251,7 @@
                 <texturenofocus>dialogs/default/separator.png</texturenofocus>
             </control>
 
-            <control type="spincontrolex" id="5">
+            <control type="spincontrolex" id="9">
                 <description>Directory Content</description>
                 <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
                 <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
@@ -267,7 +267,7 @@
                 <spinposx>16</spinposx>
             </control>
 
-            <control type="label" id="7">
+            <control type="label" id="14">
                 <description>Default Label</description>
                 <height>60</height>
                 <align>left</align>
@@ -279,7 +279,7 @@
                 <shadowcolor>20FFFFFF</shadowcolor>
             </control>
 
-            <control type="sliderex" id="8">
+            <control type="sliderex" id="13">
                 <description>Default Slider</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -299,7 +299,7 @@
                 <pulseonselect>false</pulseonselect>
             </control>
 
-            <control type="image" id="6">
+            <control type="image" id="11">
                 <width>300</width>
                 <height>1</height>
                 <visible>false</visible>
@@ -310,17 +310,17 @@
                 <animation effect="fade" start="100" end="0" time="0">Hidden</animation>
                 <visible>Control.HasFocus(30)</visible>
             </control>
-            <control type="scrollbar" id="30">
+            <control type="scrollbar" id="40">
                 <posx>1589</posx>
                 <posy>305</posy>
-                <width>11</width>
+                <width>29</width>
                 <height>467</height>
                 <texturesliderbackground></texturesliderbackground>
                 <texturesliderbar border="0,6,0,6">dialogs/default/scrollbar.png</texturesliderbar>
                 <texturesliderbarfocus border="0,6,0,6">dialogs/default/scrollbar.png</texturesliderbarfocus>
                 <textureslidernib></textureslidernib>
                 <textureslidernibfocus></textureslidernibfocus>
-                <onleft>2</onleft>
+                <onleft>5</onleft>
                 <onright>8004</onright>
                 <showonepage>false</showonepage>
                 <orientation>vertical</orientation>
@@ -330,40 +330,40 @@
             <control type="group" id="8004">
                 <posx>628</posx>
                 <posy>772</posy>
-                <control type="button" id="10">
+                <control type="button" id="28">
                     <description>Select</description>
                     <label>$LOCALIZE[31921]</label>
                     <include>DialogButtonDimensions</include>
                     <texturefocus>buttons/select-fo.png</texturefocus>
                     <texturenofocus>buttons/select-nf.png</texturenofocus>
-                    <onleft>12</onleft>
-                    <onright>11</onright>
+                    <onleft>30</onleft>
+                    <onright>29</onright>
                     <onup>8003</onup>
                     <ondown>8003</ondown>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(10)">Conditional</animation>
                 </control>
-                <control type="button" id="11">
+                <control type="button" id="29">
                     <posx>200</posx>
                     <description>Cancel</description>
                     <label>$LOCALIZE[31922]</label>
                     <include>DialogButtonDimensions</include>
                     <texturefocus>buttons/cancel-fo.png</texturefocus>
                     <texturenofocus>buttons/cancel-nf.png</texturenofocus>
-                    <onleft>10</onleft>
-                    <onright>12</onright>
+                    <onleft>28</onleft>
+                    <onright>30</onright>
                     <onup>8003</onup>
                     <ondown>8003</ondown>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(11)">Conditional</animation>
                 </control>
-                <control type="button" id="12">
+                <control type="button" id="30">
                     <posx>740</posx>
                     <description>Defaults</description>
                     <label>$LOCALIZE[409]</label>
                     <include>DialogButtonDimensions</include>
                     <texturefocus>buttons/options-fo.png</texturefocus>
                     <texturenofocus>buttons/options-nf.png</texturenofocus>
-                    <onleft>11</onleft>
-                    <onright>10</onright>
+                    <onleft>29</onleft>
+                    <onright>28</onright>
                     <onup>8003</onup>
                     <ondown>8003</ondown>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(12)">Conditional</animation>
@@ -407,7 +407,7 @@
                 <textcolor>bbwhite</textcolor>
                 <shadowcolor>66000000</shadowcolor>
             </control>
-            <control type="label" id="20">
+            <control type="label" id="2">
                 <description>Heading</description>
                 <posx>649</posx>
                 <posy>245</posy>
@@ -423,21 +423,21 @@
             <control type="group" id="8003">
                 <posx>225</posx>
                 <posy>232</posy>
-                <control type="grouplist" id="9">
+                <control type="grouplist" id="3">
                     <description>button area</description>
                     <posx>0</posx>
                     <posy>62</posy>
                     <width>378</width>
                     <height>457</height>
                     <itemgap>-1</itemgap>
-                    <onleft>2</onleft>
-                    <onright>2</onright>
+                    <onleft>5</onleft>
+                    <onright>5</onright>
                     <orientation>vertical</orientation>
                     <onup>9</onup>
                     <ondown>9</ondown>
                     <scrolltime>0</scrolltime>
                 </control>
-                <control type="button" id="13">
+                <control type="button" id="10">
                     <width>378</width>
                     <height>77</height>
                     <align>right</align>
@@ -450,7 +450,7 @@
                     <font>Font-Condensed-S30-B</font>
                     <textoffsetx>35</textoffsetx>
                 </control>
-                <control type="grouplist" id="2">
+                <control type="grouplist" id="5">
                     <description>Control Area</description>
                     <posx>389</posx>
                     <posy>62</posy>
@@ -458,22 +458,22 @@
                     <height>457</height>
                     <itemgap>-1</itemgap>
                     <orientation>vertical</orientation>
-                    <pagecontrol>30</pagecontrol>
-                    <onleft>9</onleft>
-                    <onright>30</onright>
+                    <pagecontrol>40</pagecontrol>
+                    <onleft>3</onleft>
+                    <onright>40</onright>
                     <onup>2</onup>
                     <ondown>2</ondown>
                     <scrolltime>0</scrolltime>
                 </control>
             </control>
 
-            <control type="scrollbar" id="30">
+            <control type="scrollbar" id="40">
                 <description>Scrollbar</description>
                 <posx>1671</posx>
                 <posy>304</posy>
-                <width>11</width>
+                <width>29</width>
                 <height>437</height>
-                <onleft>2</onleft>
+                <onleft>5</onleft>
                 <onright>8004</onright>
                 <texturesliderbar border="0,6,0,6">views/other/scrollbar.png</texturesliderbar>
                 <texturesliderbarfocus border="0,6,0,6">views/other/scrollbar.png</texturesliderbarfocus>
@@ -482,7 +482,7 @@
                 <animation effect="fade" start="50" end="30" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(30)">Conditional</animation>
             </control>
 
-            <control type="button" id="3">
+            <control type="button" id="7">
                 <description>Default Button</description>
                 <height>77</height>
                 <align>left</align>
@@ -495,7 +495,7 @@
                 <font>Font-Condensed-S30-B</font>
                 <textoffsetx>35</textoffsetx>
             </control>
-            <control type="radiobutton" id="4">
+            <control type="radiobutton" id="8">
                 <description>Default Radio Button</description>
                 <height>77</height>
                 <radioposx>957</radioposx>
@@ -509,7 +509,7 @@
                 <font>Font-Condensed-S30-B</font>
                 <textoffsetx>35</textoffsetx>
             </control>
-            <control type="spincontrolex" id="5">
+            <control type="spincontrolex" id="9">
                 <description>Default Spin Control</description>
                 <height>77</height>
                 <spinposx>33</spinposx>
@@ -523,20 +523,12 @@
                 <font>Font-Condensed-S30-B</font>
                 <textoffsetx>35</textoffsetx>
             </control>
-            <control type="image" id="6">
+            <control type="image" id="11">
                 <width>300</width>
                 <height>1</height>
                 <visible>false</visible>
             </control>
-            <control type="label" id="7">
-                <description>Default Label</description>
-                <height>77</height>
-                <align>left</align>
-                <font>Font-Condensed-S30-B</font>
-                <textoffsetx>35</textoffsetx>
-                <textcolor>bbwhite</textcolor>
-            </control>
-            <control type="sliderex" id="8">
+            <control type="sliderex" id="13">
                 <description>Slider</description>
                 <height>77</height>
                 <align>left</align>
@@ -554,44 +546,52 @@
                 <textureslidernib>buttons/OSD/orb_nofo.png</textureslidernib>
                 <textureslidernibfocus>buttons/OSD/orb_fo.png</textureslidernibfocus>
             </control>
+            <control type="label" id="14">
+                <description>Default Label</description>
+                <height>77</height>
+                <align>left</align>
+                <font>Font-Condensed-S30-B</font>
+                <textoffsetx>35</textoffsetx>
+                <textcolor>bbwhite</textcolor>
+            </control>
 
             <control type="group" id="8004">
                 <posx>622</posx>
                 <posy>751</posy>
-                <control type="button" id="10">
+                <control type="button" id="28">
                     <description>Select</description>
                     <label>$LOCALIZE[31921]</label>
                     <include>DialogButtonDimensions</include>
                     <texturefocus>buttons/select-fo.png</texturefocus>
                     <texturenofocus>buttons/select-nf.png</texturenofocus>
-                    <onleft>12</onleft>
-                    <onright>11</onright>
+                    <onleft>30</onleft>
+                    <onright>29</onright>
                     <onup>2</onup>
                     <ondown>8005</ondown>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(10)">Conditional</animation>
                 </control>
-                <control type="button" id="11">
+                <control type="button" id="29">
                     <posx>200</posx>
                     <description>Cancel</description>
                     <label>$LOCALIZE[31922]</label>
                     <include>DialogButtonDimensions</include>
                     <texturefocus>buttons/cancel-fo.png</texturefocus>
                     <texturenofocus>buttons/cancel-nf.png</texturenofocus>
-                    <onleft>10</onleft>
-                    <onright>12</onright>
+                    <onleft>28</onleft>
+                    <onright>30</onright>
                     <onup>2</onup>
                     <ondown>8005</ondown>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(11)">Conditional</animation>
                 </control>
-                <control type="button" id="12">
+                <control type="button" id="30x">
                     <posx>716</posx>
                     <description>Defaults</description>
                     <label>$LOCALIZE[409]</label>
                     <include>DialogButtonDimensionsRightAlign</include>
                     <texturefocus>buttons/options-right-fo.png</texturefocus>
                     <texturenofocus>buttons/options-right-nf.png</texturenofocus>
-                    <onleft>11</onleft>
-                    <onright>10</onright>
+                    <onleft>29</onleft>
+                    <onright>28</onright>
                     <onup>2</onup>
                     <ondown>8005</ondown>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(12)">Conditional</animation>
