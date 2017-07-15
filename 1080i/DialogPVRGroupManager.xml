@@ -490,6 +490,20 @@
                     <onright>13</onright>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
+                    <control type="togglebutton" id="34">
+                        <description>TV/Radio toggle</description>
+                        <label>$LOCALIZE[19174]</label>
+                        <altlabel>$LOCALIZE[19173]</altlabel>
+                        <texturefocus>buttons/right-fo.png</texturefocus>
+                        <texturenofocus>buttons/right-nf.png</texturenofocus>
+                        <alttexturefocus>buttons/right-fo.png</alttexturefocus>
+                        <alttexturenofocus>buttons/right-nf.png</alttexturenofocus>
+                        <usealttexture>!String.IsEmpty(Window.Property(IsRadio))</usealttexture>
+                        <textwidth>400</textwidth>
+                        <font>Font-Condensed-S26-B</font>
+                        <include>DialogButtonDimensions</include>
+                        <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(34)">Conditional</animation>
+                    </control>
                     <control type="button" id="26">
                         <description>Add group</description>
                         <label>$LOCALIZE[31946]</label>
