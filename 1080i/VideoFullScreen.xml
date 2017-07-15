@@ -44,5 +44,21 @@
             <enable>false</enable>
             <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd)]" easing="inout" effect="slide" end="265,0" start="0,0" time="300" tween="cubic">Conditional</animation>
         </control>
+        <control type="button" id="2">
+            <description>Jump to channel number</description>
+            <visible>!String.IsEmpty(PVR.ChannelNumberInput)</visible>
+            <posx>45</posx>
+            <posy>0</posy>
+            <width>305</width>
+            <height>194</height>
+            <label>$INFO[PVR.ChannelNumberInput]</label>
+            <font>Font-Condensed-S34</font>
+            <disabledcolor>aawhite</disabledcolor>
+            <texturefocus></texturefocus>
+            <texturenofocus border="20,90,20,90">overlays/volume/back-vf.png</texturenofocus>
+            <align>center</align>
+            <enable>false</enable>
+            <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd)]" easing="inout" effect="slide" end="265,0" start="0,0" time="300" tween="cubic">Conditional</animation>
+        </control>
     </controls>
 </window>
