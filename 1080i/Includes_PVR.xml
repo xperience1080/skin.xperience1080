@@ -155,6 +155,14 @@
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/view-nf.png</texturenofocus>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(2)">Conditional</animation>
                 </control>
+                <control type="button" id="10">
+                    <description>Watched Toggle</description>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[20367]</label>
+                    <texturefocus border="70,2,2,2">dialogs/options/buttons/filter-simple-fo.png</texturefocus>
+                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/filter-simple-nf.png</texturenofocus>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(3)">Conditional</animation>
+                </control>
                 <control type="button" id="3">
                     <description>sort</description>
                     <include>optionsbuttonsdimensions</include>
