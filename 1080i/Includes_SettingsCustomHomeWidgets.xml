@@ -674,27 +674,21 @@
           <content>
             <item id="1">
               <label>$LOCALIZE[31162] 1 ($LOCALIZE[31524])</label>
-              <onclick>noop</onclick>
             </item>
             <item id="2">
               <label>$LOCALIZE[31162] 2 ($LOCALIZE[31524])</label>
-              <onclick>noop</onclick>
             </item>
             <item id="3">
               <label>$LOCALIZE[31162] 3 ($LOCALIZE[342])</label>
-              <onclick>noop</onclick>
             </item>
             <item id="4">
               <label>$LOCALIZE[31162] 4 ($LOCALIZE[20364])</label>
-              <onclick>noop</onclick>
             </item>
             <item id="5">
               <label>$LOCALIZE[31162] 5 ($LOCALIZE[2])</label>
-              <onclick>noop</onclick>
             </item>
             <item id="6">
               <label>$LOCALIZE[31162] 6 ($LOCALIZE[1])</label>
-              <onclick>noop</onclick>
             </item>
           </content>
         </control>

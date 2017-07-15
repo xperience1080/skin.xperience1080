@@ -807,37 +807,30 @@
                 <item id="0">
                     <label>$LOCALIZE[31453]</label>
                     <label2>$INFO[System.ProfileName]</label2>
-                    <onclick>noop</onclick>
                 </item>
                 <item id="1">
                     <label>$LOCALIZE[31454]</label>
                     <label2>$INFO[Network.IPAddress]</label2>
-                    <onclick>noop</onclick>
                 </item>
                 <item id="2">
                     <label>$LOCALIZE[31455]</label>
                     <label2>$INFO[System.FreeMemory]</label2>
-                    <onclick>noop</onclick>
                 </item>
                 <item id="3">
                     <label>$LOCALIZE[31456]</label>
                     <label2>$INFO[System.ScreenWidth,,x]$INFO[System.ScreenHeight,, @ ]$INFO[System.FPS,, FPS]</label2>
-                    <onclick>noop</onclick>
                 </item>
                 <item id="4">
                     <label>$LOCALIZE[31457]</label>
                     <label2>$INFO[System.Uptime]</label2>
-                    <onclick>noop</onclick>
                 </item>
                 <item id="5">
                     <label>$LOCALIZE[31458]</label>
                     <label2>5.1</label2>
-                    <onclick>noop</onclick>
                 </item>
                 <item id="6">
                     <label>$LOCALIZE[31459]</label>
                     <label2>$INFO[System.BuildVersion]</label2>
-                    <onclick>noop</onclick>
                 </item>
             </content>
         </control>

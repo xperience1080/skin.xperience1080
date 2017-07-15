@@ -2764,7 +2764,6 @@
                     <content>
                         <item>
                             <icon>$LOCALIZE[31909]</icon>
-                            <onclick>noop</onclick>
                             <visible>String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2773,7 +2772,6 @@
                             <icon>$INFO[Window.Property(Hourly.1.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.1.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.1.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2782,7 +2780,6 @@
                             <icon>$INFO[Window.Property(Hourly.2.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.2.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.2.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2791,7 +2788,6 @@
                             <icon>$INFO[Window.Property(Hourly.3.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.3.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.3.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2800,7 +2796,6 @@
                             <icon>$INFO[Window.Property(Hourly.4.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.4.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.4.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2809,7 +2804,6 @@
                             <icon>$INFO[Window.Property(Hourly.5.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.5.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.5.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2818,7 +2812,6 @@
                             <icon>$INFO[Window.Property(Hourly.6.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.6.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.6.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2827,7 +2820,6 @@
                             <icon>$INFO[Window.Property(Hourly.7.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.7.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.7.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2836,7 +2828,6 @@
                             <icon>$INFO[Window.Property(Hourly.8.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.8.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.8.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2845,7 +2836,6 @@
                             <icon>$INFO[Window.Property(Hourly.9.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.9.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.9.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -2854,7 +2844,6 @@
                             <icon>$INFO[Window.Property(Hourly.10.FanartCode),weather/small/,.png]</icon>
                             <property name="temp">$INFO[Window.Property(Hourly.10.Temperature)]</property>
                             <property name="outlook">$INFO[Window.Property(Hourly.10.Outlook)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                         </item>
                     </content>

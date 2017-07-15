@@ -262,21 +262,17 @@
                     <content>
                         <item id="1">
                             <label></label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="2">
                             <label></label>
-                            <onclick>noop</onclick>
                             <visible>!Skin.HasSetting(HomeMovies)</visible>
                         </item>
                         <item id="3">
                             <label></label>
-                            <onclick>noop</onclick>
                             <visible>!Skin.HasSetting(HomeTVShows)</visible>
                         </item>
                         <item id="4">
                             <label></label>
-                            <onclick>noop</onclick>
                             <visible>!Skin.HasSetting(HomeMusic)</visible>
                         </item>
 
@@ -389,25 +385,21 @@
             <content>
                 <item id="1">
                     <label>$LOCALIZE[137]</label>
-                    <onclick>noop</onclick>
                     <property name="search">1</property>
                     <visible>System.HasAddon(script.globalsearch)</visible>
                 </item>
                 <item id="2">
                     <label>$LOCALIZE[31524]</label>
-                    <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeHomeSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeHomeMultiImage)]</property>
                     <property name="home">1</property>
                 </item>
                 <item id="9">
                     <label>$LOCALIZE[31220]</label>
-                    <onclick>noop</onclick>
                     <visible>!Skin.HasSetting(HomeTV)</visible>
                 </item>
                 <item id="3">
                     <label>$LOCALIZE[342]</label>
-                    <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeMoviesSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeMoviesMultiImage)]</property>
                     <property name="movies">1</property>
@@ -415,7 +407,6 @@
                 </item>
                 <item id="4">
                     <label>$LOCALIZE[31446]</label>
-                    <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeTVShowsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeTVShowsMultiImage)]</property>
                     <property name="tvshows">1</property>
@@ -423,7 +414,6 @@
                 </item>
                 <item id="5">
                     <label>$LOCALIZE[2]</label>
-                    <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeMusicSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeMusicMultiImage)]</property>
                     <property name="music">1</property>
@@ -431,27 +421,23 @@
                 </item>
                 <item id="10">
                     <label>$LOCALIZE[1]</label>
-                    <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomePicturesSingleImage)]</property>
                     <visible>!Skin.HasSetting(HomePictures)</visible>
                 </item>
                 <item id="6">
                     <label>$LOCALIZE[31504]</label>
-                    <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeProgramsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeProgramsMultiImage)]</property>
                     <visible>!Skin.HasSetting(HomePrograms)</visible>
                 </item>
                 <item id="7">
                     <label>$LOCALIZE[8]</label>
-                    <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeWeatherSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeWeatherMultiImage)]</property>
                     <visible>!Skin.HasSetting(HomeWeather)</visible>
                 </item>
                 <item id="8">
                     <label>$LOCALIZE[5]</label>
-                    <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeSettingsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeSettingsMultiImage)]</property>
                     <property name="settings">1</property>

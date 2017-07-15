@@ -105,7 +105,6 @@
                         <item id="31">
                             <description>Login Options</description>
                             <label>$LOCALIZE[31982]</label>
-                            <onclick>noop</onclick>
                         </item>
                     </content>
                 </control>

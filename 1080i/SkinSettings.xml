@@ -109,42 +109,34 @@
                         <item id="31">
                             <description>General Settings</description>
                             <label>$LOCALIZE[31100]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="32">
                             <description>Home Settings</description>
                             <label>$LOCALIZE[31130]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="33">
                             <description>Media Settings</description>
                             <label>$LOCALIZE[31190]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="34">
                             <description>OSD Settings</description>
                             <label>$LOCALIZE[478]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="35">
                             <description>Background Settings</description>
                             <label>$LOCALIZE[31250]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="36">
                             <description>Quicknav Settings</description>
                             <label>$LOCALIZE[31460]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="37">
                             <description>Advanced Settings</description>
                             <label>$LOCALIZE[31222]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="38">
                             <description>Add-on Settings</description>
                             <label>$LOCALIZE[31280]</label>
-                            <onclick>noop</onclick>
                         </item>
                     </content>
                 </control>
