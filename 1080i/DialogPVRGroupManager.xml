@@ -470,7 +470,7 @@
                         <textureslidernib></textureslidernib>
                         <textureslidernibfocus></textureslidernibfocus>
                         <onleft>12</onleft>
-                        <onright>26</onright>
+                        <onright>29</onright>
                         <ondown>80</ondown>
                         <onup>80</onup>
                         <showonepage>false</showonepage>
@@ -480,7 +480,7 @@
                 </control>
                 <control type="grouplist" id="9000">
                     <posx>1475</posx>
-                    <posy>-20</posy>
+                    <posy>50</posy>
                     <width>600</width>
                     <height>800</height>
                     <itemgap>-35</itemgap>
@@ -530,7 +530,8 @@
                         <texturenofocus>buttons/albuminfo-nf.png</texturenofocus>
                         <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                         <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
-                        <textwidth>400</textwidth>
+                        <textwidth>250</textwidth>
+                        <radioposx>350</radioposx>
                         <include>DialogButtonDimensions</include>
                         <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(25)">Conditional</animation>
                     </control>
@@ -545,7 +546,7 @@
                     </control>
                     <control type="button" id="29">
                         <description>Select</description>
-                        <label>$LOCALIZE[31921]</label>
+                        <label>$LOCALIZE[186]</label>
                         <texturefocus>buttons/select-fo.png</texturefocus>
                         <texturenofocus>buttons/select-nf.png</texturenofocus>
                         <textwidth>400</textwidth>
