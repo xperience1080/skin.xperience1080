@@ -335,7 +335,7 @@
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/epg-fo.png</texturefocus>
                         <texturenofocus>osd/fullscreen/buttons/epg-nofo.png</texturenofocus>
-                        <onclick>ActivateWindow(PVROSDGuide)</onclick>
+                        <onclick>ActivateWindow(PVRChannelGuide)</onclick>
                         <onleft>10</onleft>
                         <onright>9</onright>
                         <onup>Close</onup>
