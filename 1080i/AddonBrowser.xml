@@ -8,7 +8,7 @@
         <include>CommonItems</include>
         <include>AddonHeader</include>
         <include>AddonViews</include>
-        <include>Common-Info</include>       
+        <include>Common-Info</include>
         <control type="group" id="9000">
             <posx>63</posx>
             <posy>517</posy>
@@ -34,7 +34,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
-                            
+
             <control type="grouplist" id="9111">
                 <posx>19</posx>
                 <posy>47</posy>
@@ -207,7 +207,7 @@
                     <visible>Container.HasFiles</visible>
                 </control>
             </control>
-            
+
             <control type="group">
                 <include>GeneralOptionsAnimations</include>
                 <control type="image">
@@ -228,7 +228,7 @@
                     <shadowcolor>22000000</shadowcolor>
                 </control>
             </control>
-            
+
             <control type="group">
                 <include>SpecificOptionsAnimations</include>
                 <control type="image">
@@ -249,7 +249,7 @@
                     <shadowcolor>22000000</shadowcolor>
                 </control>
             </control>
-            
+
             <control type="group">
                 <include>ViewOptionsAnimations</include>
                 <control type="image">
@@ -260,7 +260,7 @@
                     <texture>buttons/options_nofo.png</texture>
                 </control>
                 <control type="label">
-                    <posx>94</posx> 
+                    <posx>94</posx>
                     <posy>433</posy>
                     <width>300</width>
                     <height>100</height>

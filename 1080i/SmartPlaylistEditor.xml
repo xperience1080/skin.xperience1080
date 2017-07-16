@@ -34,11 +34,11 @@
                 <posx>479</posx>
                 <posy>175</posy>
                 <control type="image">
-                	<posx>0</posx>
-                	<posy>0</posy>
-                	<width>962</width>
-                	<height>61</height>
-                	<texture border="5">dialogs/default/inner.png</texture>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>962</width>
+                    <height>61</height>
+                    <texture border="5">dialogs/default/inner.png</texture>
                 </control>
                 <control type="spincontrolex" id="22">
                     <description>Set Playlist type</description>
@@ -78,11 +78,11 @@
                         <font>Font-Condensed-S30</font>
                     </control>
                     <control type="image">
-                    	<posx>0</posx>
-                    	<posy>40</posy>
-                    	<width>962</width>
-                    	<height>61</height>
-                    	<texture border="5">dialogs/default/inner.png</texture>
+                        <posx>0</posx>
+                        <posy>40</posy>
+                        <width>962</width>
+                        <height>61</height>
+                        <texture border="5">dialogs/default/inner.png</texture>
                     </control>
                     <control type="edit" id="12">
                         <description>Name Button</description>
@@ -138,11 +138,11 @@
                         <font>Font-Condensed-S30</font>
                     </control>
                     <control type="image">
-                    	<posx>0</posx>
-                    	<posy>230</posy>
-                    	<width>691</width>
-                    	<height>181</height>
-                    	<texture border="5">dialogs/default/inner.png</texture>
+                        <posx>0</posx>
+                        <posy>230</posy>
+                        <width>691</width>
+                        <height>181</height>
+                        <texture border="5">dialogs/default/inner.png</texture>
                     </control>
                     <control type="list" id="10">
                         <posx>0</posx>
@@ -270,11 +270,11 @@
                     <control type="group" id="8002">
                         <posx>704</posx>
                         <control type="image">
-                        	<posx>0</posx>
-                        	<posy>230</posy>
-                        	<width>258</width>
-                        	<height>181</height>
-                        	<texture border="5">dialogs/default/inner.png</texture>
+                            <posx>0</posx>
+                            <posy>230</posy>
+                            <width>258</width>
+                            <height>181</height>
+                            <texture border="5">dialogs/default/inner.png</texture>
                         </control>
                         <control type="button" id="13">
                             <description>Add Rule Button</description>
@@ -357,11 +357,11 @@
                         <font>Font-Condensed-S30</font>
                     </control>
                     <control type="image">
-                    	<posx>0</posx>
-                    	<posy>40</posy>
-                    	<width>962</width>
-                    	<height>121</height>
-                    	<texture border="5">dialogs/default/inner.png</texture>
+                        <posx>0</posx>
+                        <posy>40</posy>
+                        <width>962</width>
+                        <height>121</height>
+                        <texture border="5">dialogs/default/inner.png</texture>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -417,11 +417,11 @@
                     <control type="group" id="8003">
                         <posy>174</posy>
                         <control type="image">
-                        	<posx>0</posx>
-                        	<posy>0</posy>
-                        	<width>690</width>
-                        	<height>61</height>
-                        	<texture border="5">dialogs/default/inner.png</texture>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>690</width>
+                            <height>61</height>
+                            <texture border="5">dialogs/default/inner.png</texture>
                         </control>
                         <control type="spincontrolex" id="18">
                             <posx>0</posx>
@@ -446,11 +446,11 @@
                             <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(18)" reversible="false">Conditional</animation>
                         </control>
                         <control type="image">
-                        	<posx>704</posx>
-                        	<posy>0</posy>
-                        	<width>258</width>
-                        	<height>61</height>
-                        	<texture border="5">dialogs/default/inner.png</texture>
+                            <posx>704</posx>
+                            <posy>0</posy>
+                            <width>258</width>
+                            <height>61</height>
+                            <texture border="5">dialogs/default/inner.png</texture>
                         </control>
                         <control type="togglebutton" id="19">
                             <posx>705</posx>

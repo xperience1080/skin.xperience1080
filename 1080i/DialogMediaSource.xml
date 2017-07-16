@@ -6,7 +6,7 @@
             <include>KeyboardAnimations</include>
             <include>OptionsShutdownAnimation</include>
             <visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(filebrowser)</visible>
-            
+
             <control type="label" id="2">
                 <description>Heading</description>
                 <posx>473</posx>
@@ -32,27 +32,27 @@
                 <texture border="39">dialogs/default/bg.png</texture>
             </control>
             <control type="image">
-            	<posx>479</posx>
-            	<posy>413</posy>
-            	<width>690</width>
-            	<height>181</height>
-            	<texture border="5">dialogs/default/inner.png</texture>
+                <posx>479</posx>
+                <posy>413</posy>
+                <width>690</width>
+                <height>181</height>
+                <texture border="5">dialogs/default/inner.png</texture>
             </control>
             <control type="image">
-            	<posx>1183</posx>
-            	<posy>413</posy>
-            	<width>258</width>
-            	<height>181</height>
-            	<texture border="5">dialogs/default/inner.png</texture>
+                <posx>1183</posx>
+                <posy>413</posy>
+                <width>258</width>
+                <height>181</height>
+                <texture border="5">dialogs/default/inner.png</texture>
             </control>
             <control type="image">
-            	<posx>479</posx>
-            	<posy>647</posy>
-            	<width>962</width>
-            	<height>61</height>
-            	<texture border="5">dialogs/default/inner.png</texture>
+                <posx>479</posx>
+                <posy>647</posy>
+                <width>962</width>
+                <height>61</height>
+                <texture border="5">dialogs/default/inner.png</texture>
             </control>
-            
+
             <control type="group" id="9002">
                 <control type="label">
                     <description>Path label</description>
@@ -161,7 +161,7 @@
                         </control>
                     </focusedlayout>
                 </control>
-                
+
                 <control type="image" id="61">
                     <animation effect="fade" start="0" end="100" time="0">Visible</animation>
                     <animation effect="fade" start="100" end="0" time="0">Hidden</animation>
@@ -205,7 +205,7 @@
                         <font>Font-Condensed-S32</font>
                         <textoffsetx>60</textoffsetx>
                         <width>258</width>
-                        <height>60</height> 
+                        <height>60</height>
                         <onup>18</onup>
                         <onleft>10</onleft>
                         <onright>10</onright>
@@ -226,7 +226,7 @@
                         <font>Font-Condensed-S32</font>
                         <textoffsetx>60</textoffsetx>
                         <width>258</width>
-                        <height>60</height> 
+                        <height>60</height>
                         <onup>11</onup>
                         <onleft>10</onleft>
                         <onright>10</onright>

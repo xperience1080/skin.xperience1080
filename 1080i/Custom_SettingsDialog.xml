@@ -82,7 +82,7 @@
                     <onclick>Skin.ToggleSetting(HomePictures)</onclick>
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[1]</label>
-                </control>                
+                </control>
                 <control type="radiobutton" id="2106">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
@@ -98,7 +98,7 @@
                     <onclick>Skin.ToggleSetting(HomeWeather)</onclick>
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[8]</label>
-                </control>				
+                </control>
             </control>
 
             <control type="grouplist" id="3">

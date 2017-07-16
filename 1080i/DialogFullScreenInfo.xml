@@ -25,7 +25,7 @@
             <visible>!Window.IsActive(videoosd) + ![!Window.IsActive(videoosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrchannelguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
             <control type="grouplist" id="5">
                 <visible>!Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
-                <visible>!Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)</visible>    
+                <visible>!Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)</visible>
                 <posx>1550</posx>
                 <posy>637</posy>
                 <width>300</width>
@@ -68,7 +68,7 @@
                     <texturenofocus border="100,0,0,0">buttons/cancel-nf.png</texturenofocus>
                     <texturefocus border="100,0,0,0">buttons/cancel-fo.png</texturefocus>
                     <onclick>PreviousMenu</onclick>
-                </control>                                                
+                </control>
             </control>
             <control type="textbox">
                 <posx>360</posx>

@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol></defaultcontrol>
     <controls>
-    	<control type="image">
+        <control type="image">
             <description>media info background image</description>
             <posx>-100</posx>
             <posy>-30</posy>
@@ -22,7 +22,7 @@
             <aspectratio>stretch</aspectratio>
             <visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
         </control>
-    	<!-- Player info -->
+        <!-- Player info -->
         <control type="group">
             <control type="label">
                 <description>Header</description>

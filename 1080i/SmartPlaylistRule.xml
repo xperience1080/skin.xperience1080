@@ -38,11 +38,11 @@
                     <posx>479</posx>
                     <posy>473</posy>
                     <control type="image">
-                    	<posx>0</posx>
-                    	<posy>0</posy>
-                    	<width>474</width>
-                    	<height>61</height>
-                    	<texture border="5">dialogs/default/inner.png</texture>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>474</width>
+                        <height>61</height>
+                        <texture border="5">dialogs/default/inner.png</texture>
                     </control>
                     <control type="spincontrolex" id="15">
                         <description>Set Playlist type</description>
@@ -67,11 +67,11 @@
                         <onright>16</onright>
                     </control>
                     <control type="image">
-                    	<posx>488</posx>
-                    	<posy>0</posy>
-                    	<width>474</width>
-                    	<height>61</height>
-                    	<texture border="5">dialogs/default/inner.png</texture>
+                        <posx>488</posx>
+                        <posy>0</posy>
+                        <width>474</width>
+                        <height>61</height>
+                        <texture border="5">dialogs/default/inner.png</texture>
                     </control>
                     <control type="spincontrolex" id="16">
                         <description>Set Playlist type</description>
@@ -100,11 +100,11 @@
                     <posx>479</posx>
                     <posy>547</posy>
                     <control type="image">
-                    	<posx>0</posx>
-                    	<posy>0</posy>
-                    	<width>690</width>
-                    	<height>61</height>
-                    	<texture border="5">dialogs/default/inner.png</texture>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>690</width>
+                        <height>61</height>
+                        <texture border="5">dialogs/default/inner.png</texture>
                     </control>
                     <control type="edit" id="17">
                         <description>Name Button</description>
@@ -128,11 +128,11 @@
                         <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(17)" reversible="false">Conditional</animation>
                     </control>
                     <control type="image">
-                    	<posx>704</posx>
-                    	<posy>0</posy>
-                    	<width>258</width>
-                    	<height>61</height>
-                    	<texture border="5">dialogs/default/inner.png</texture>
+                        <posx>704</posx>
+                        <posy>0</posy>
+                        <width>258</width>
+                        <height>61</height>
+                        <texture border="5">dialogs/default/inner.png</texture>
                     </control>
                     <control type="image">
                         <posx>617</posx>
@@ -154,7 +154,7 @@
                         <posx>704</posx>
                         <posy>0</posy>
                         <width>258</width>
-                        <height>60</height> 
+                        <height>60</height>
                         <texturefocus border="54,2,2,2">dialogs/mediasource/browse-fo.png</texturefocus>
                         <texturenofocus>dialogs/mediasource/browse-nf.png</texturenofocus>
                         <textcolor>FF585858</textcolor>

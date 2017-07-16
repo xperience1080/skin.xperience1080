@@ -91,82 +91,82 @@
             </control>
         </control>
         <control type="group">
-			<include>BannerListInfoAnimation</include>
-			<visible>Window.IsActive(fullscreenvideo) | [Window.IsActive(visualisation) + Skin.HasSetting(OSDMusicAlt.Enabled)]</visible>
-			<animation effect="slide" end="-100" time="300" tween="sine" easing="inout" condition="Player.Muted | String.Contains(Player.Volume,-60.0)">Conditional</animation>
-			<animation effect="slide" end="-213" time="300" tween="sine" easing="inout" condition="Window.IsActive(volumebar) + !Player.Passthrough">Conditional</animation>
-			<animation effect="slide" end="-463" time="300" tween="sine" easing="inout" condition="Window.IsActive(volumebar) + Player.Passthrough">Conditional</animation>
-			<control type="image">
-				<posx>1218</posx>
-				<posy>0</posy>
-				<width>702</width>
-				<height>194</height>
-				<texture>overlays/notification/back-vf.png</texture>
-				<aspectratio>stretch</aspectratio>
-			</control>
-			<control type="label">
-				<posx>1715</posx>
-				<posy>66</posy>
-				<width>375</width>
-				<height>34</height>
-				<font>Font-Condensed-S34</font>
-				<align>right</align>
-				<textcolor>aawhite</textcolor>
-				<label>$INFO[Control.GetLabel(401)]</label>
-				<scroll>false</scroll>
-				<animation effect="slide" end="0,14" time="300" tween="sine" easing="inout" condition="String.IsEmpty(Control.GetLabel(402))">Conditional</animation>
-			</control>
-			<control type="label">
-				<posx>1715</posx>
-				<posy>96</posy>
-				<width>375</width>
-				<height>34</height>
-				<font>Font-Condensed-S28</font>
-				<align>right</align>
-				<textcolor>77white</textcolor>
-				<label>$INFO[Control.GetLabel(402)]</label>
-				<scroll>false</scroll>
-			</control>
-			<control type="image" id="400">
-				<description>Icon</description>
-				<posx>1748</posx>
-				<posy>68</posy>
-				<width>58</width>
-				<height>58</height>
-				<aspectratio>keep</aspectratio>
-				<texture>overlays/notification/info-vf.png</texture>
-				<animation effect="fade" start="65" end="100" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
-			</control>
-			<control type="image" id="400">
-				<description>Info</description>
-				<posx>1748</posx>
-				<posy>89</posy>
-				<width>58</width>
-				<height>58</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>overlays/notification/info-vf.png</texture>
-			</control>
-			<control type="image" id="400">
-				<description>Warning</description>
-				<posx>1748</posx>
-				<posy>89</posy>
-				<width>58</width>
-				<height>58</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>overlays/notification/warning-vf.png</texture>
-			</control>
-			<control type="image" id="400">
-				<description>Error</description>
-				<posx>1748</posx>
-				<posy>89</posy>
-				<width>58</width>
-				<height>58</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>overlays/notification/error-vf.png</texture>
-			</control>
-		</control>
+            <include>BannerListInfoAnimation</include>
+            <visible>Window.IsActive(fullscreenvideo) | [Window.IsActive(visualisation) + Skin.HasSetting(OSDMusicAlt.Enabled)]</visible>
+            <animation effect="slide" end="-100" time="300" tween="sine" easing="inout" condition="Player.Muted | String.Contains(Player.Volume,-60.0)">Conditional</animation>
+            <animation effect="slide" end="-213" time="300" tween="sine" easing="inout" condition="Window.IsActive(volumebar) + !Player.Passthrough">Conditional</animation>
+            <animation effect="slide" end="-463" time="300" tween="sine" easing="inout" condition="Window.IsActive(volumebar) + Player.Passthrough">Conditional</animation>
+            <control type="image">
+                <posx>1218</posx>
+                <posy>0</posy>
+                <width>702</width>
+                <height>194</height>
+                <texture>overlays/notification/back-vf.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+                <posx>1715</posx>
+                <posy>66</posy>
+                <width>375</width>
+                <height>34</height>
+                <font>Font-Condensed-S34</font>
+                <align>right</align>
+                <textcolor>aawhite</textcolor>
+                <label>$INFO[Control.GetLabel(401)]</label>
+                <scroll>false</scroll>
+                <animation effect="slide" end="0,14" time="300" tween="sine" easing="inout" condition="String.IsEmpty(Control.GetLabel(402))">Conditional</animation>
+            </control>
+            <control type="label">
+                <posx>1715</posx>
+                <posy>96</posy>
+                <width>375</width>
+                <height>34</height>
+                <font>Font-Condensed-S28</font>
+                <align>right</align>
+                <textcolor>77white</textcolor>
+                <label>$INFO[Control.GetLabel(402)]</label>
+                <scroll>false</scroll>
+            </control>
+            <control type="image" id="400">
+                <description>Icon</description>
+                <posx>1748</posx>
+                <posy>68</posy>
+                <width>58</width>
+                <height>58</height>
+                <aspectratio>keep</aspectratio>
+                <texture>overlays/notification/info-vf.png</texture>
+                <animation effect="fade" start="65" end="100" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
+            </control>
+            <control type="image" id="400">
+                <description>Info</description>
+                <posx>1748</posx>
+                <posy>89</posy>
+                <width>58</width>
+                <height>58</height>
+                <aspectratio>keep</aspectratio>
+                <visible>false</visible>
+                <texture>overlays/notification/info-vf.png</texture>
+            </control>
+            <control type="image" id="400">
+                <description>Warning</description>
+                <posx>1748</posx>
+                <posy>89</posy>
+                <width>58</width>
+                <height>58</height>
+                <aspectratio>keep</aspectratio>
+                <visible>false</visible>
+                <texture>overlays/notification/warning-vf.png</texture>
+            </control>
+            <control type="image" id="400">
+                <description>Error</description>
+                <posx>1748</posx>
+                <posy>89</posy>
+                <width>58</width>
+                <height>58</height>
+                <aspectratio>keep</aspectratio>
+                <visible>false</visible>
+                <texture>overlays/notification/error-vf.png</texture>
+            </control>
+        </control>
     </controls>
 </window>

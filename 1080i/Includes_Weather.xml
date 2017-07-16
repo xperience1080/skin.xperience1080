@@ -433,7 +433,7 @@
                     <font>Font-Condensed-S34</font>
                     <textcolor>ddwhite</textcolor>
                 </control>
-            </control>            
+            </control>
             <control type="image">
                 <description>day icon</description>
                 <posx>-5</posx>

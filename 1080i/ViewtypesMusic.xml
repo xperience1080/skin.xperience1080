@@ -10,14 +10,14 @@
             <include>OptionsShutdownAnimation</include>
 
             <!--<control type="label">
-            	<posx>390</posx>
-            	<posy>152</posy>
-            	<width>560</width>
-            	<height>30</height>
-            	<font>Font-Condensed-S29-B</font>
-            	<textcolor>77white</textcolor>
-            	<shadowcolor>22000000</shadowcolor>
-            	<label>$INFO[Control.GetLabel(3)]</label>
+                <posx>390</posx>
+                <posy>152</posy>
+                <width>560</width>
+                <height>30</height>
+                <font>Font-Condensed-S29-B</font>
+                <textcolor>77white</textcolor>
+                <shadowcolor>22000000</shadowcolor>
+                <label>$INFO[Control.GetLabel(3)]</label>
             </control>-->
 
             <control type="image">

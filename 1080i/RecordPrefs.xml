@@ -5,7 +5,7 @@
   <include>OptionsShutdownAnimation</include>
   <controls>
   <control type="image">
-  	<posx>920</posx>
+      <posx>920</posx>
     <posy>180</posy>
     <width>80</width>
     <height>60</height>
@@ -23,7 +23,7 @@
         <posy>152</posy>
         <width>800</width>
         <align>center</align>
-		<font>Font-Condensed-S34</font>
+        <font>Font-Condensed-S34</font>
         <textcolor>ddwhite</textcolor>
       </control>
     <control type="group">
@@ -142,7 +142,7 @@
           <onup>14</onup>
           <onleft>2</onleft>
         </control>
-		<control type="button" id="2" description="Close">
+        <control type="button" id="2" description="Close">
           <texturefocus>buttons/cancel-fo.png</texturefocus>
           <texturenofocus>buttons/cancel-nf.png</texturenofocus>
           <include>DialogButtonDimensions</include>

@@ -5,7 +5,7 @@
     <controls>
         <include>CommonSettingsItems</include>
         <include>SettingsHeader</include>
-        
+
         <control type="group">
             <include>FullscreenDimensions</include>
             <include>OptionsShutdownAnimation</include>
@@ -23,7 +23,7 @@
                 <effect type="zoom" start="100" end="85" time="300" center="960,600" tween="sine" easing="out" />
             </animation>
             <visible>!Window.IsActive(favourites)</visible>
-            
+
             <control type="image">
                 <description>Shadow</description>
                 <posx>0</posx>
@@ -37,7 +37,7 @@
                     <effect type="zoom" start="90" end="100" center="316,547" tween="cubic" easing="out" time="400" />
                 </animation>
             </control>
-            
+
             <control type="group">
                 <posx>290</posx>
                 <posy>295</posy>
@@ -90,7 +90,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>542</posx>
                 <posy>295</posy>
@@ -143,7 +143,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>794</posx>
                 <posy>295</posy>
@@ -196,7 +196,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>1046</posx>
                 <posy>295</posy>
@@ -249,7 +249,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>1298</posx>
                 <posy>295</posy>
@@ -302,7 +302,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>290</posx>
                 <posy>295</posy>
@@ -323,7 +323,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>542</posx>
                 <posy>295</posy>
@@ -344,7 +344,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>794</posx>
                 <posy>295</posy>
@@ -365,7 +365,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>1046</posx>
                 <posy>295</posy>
@@ -386,7 +386,7 @@
                     </control>
                 </control>
             </control>
-            
+
             <control type="group">
                 <posx>1298</posx>
                 <posy>295</posy>
@@ -407,7 +407,7 @@
                     </control>
                 </control>
             </control>
-            
+
         </control>
         <include>Common-Info-NoOptions</include>
     </controls>

@@ -6,7 +6,7 @@
     <controls>
         <include>CommonPVRItems</include>
         <include>PVRHeader</include>
-        
+
         <control type="group">
             <visible>!Window.IsActive(DialogPVRInfo.xml)</visible>
             <include>CommonViewAnimations</include>
@@ -103,7 +103,7 @@
                         <posx>1755</posx>
                         <posy>296</posy>
                         <width>6</width>
-                        <height>505</height>                    
+                        <height>505</height>
                         <onleft>70</onleft>
                         <onright>11</onright>
                         <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>

@@ -52,7 +52,7 @@
                    <righttexture>osd/fullscreen/progress/right-mini.png</righttexture>
                    <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation>
                </control>
-               <control type="label">				
+               <control type="label">
                    <description>Mini Progress Time</description>
                    <posx>1590</posx>
                    <posy>38</posy>
@@ -62,7 +62,7 @@
                    <textcolor>aawhite</textcolor>
                    <font>Font-Condensed-S34</font>
                    <align>left</align>
-                   <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation> 
+                   <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="out" delay="100" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation>
                </control>
                <control type="button" id="11">
                 <description>Audio Settings</description>
@@ -254,7 +254,7 @@
             <control type="group">
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
                 <!-- DO NOT USE -->
-			<!-- <control type="button" id="14">
+            <!-- <control type="button" id="14">
                         <description>3D Dialog Trigger</description>
                         <posx>1248</posx>
                         <height>100</height>
@@ -267,8 +267,8 @@
                         <onright>10</onright>
                         <onup>Close</onup>
                         <ondown>Close</ondown>
-						<animation effect="fade" start="100" end="50" time="10" tween="sine" easing="inout" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
-                    </control>	-->					
+                        <animation effect="fade" start="100" end="50" time="10" tween="sine" easing="inout" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
+                    </control>    -->
                     <control type="button" id="10">
                         <description>DVD Menu</description>
                         <posx>1285</posx>
@@ -290,7 +290,7 @@
                         <height>100</height>
                         <width>100</width>
                         <texturefocus>osd/fullscreen/buttons/info-fo.png</texturefocus>
-                        <texturenofocus>osd/fullscreen/buttons/info-nofo.png</texturenofocus>					
+                        <texturenofocus>osd/fullscreen/buttons/info-nofo.png</texturenofocus>
                         <onclick>Close</onclick>
                         <onclick>Action(Info,FullscreenVideo)</onclick>
                         <onleft>10</onleft>

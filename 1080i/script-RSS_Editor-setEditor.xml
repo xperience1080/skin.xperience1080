@@ -47,11 +47,11 @@
                         <font>Font-Condensed-S30</font>
                     </control>
                     <control type="image">
-                    	<posx>479</posx>
-                    	<posy>469</posy>
-                    	<width>690</width>
-                    	<height>181</height>
-                    	<texture border="5">dialogs/default/inner.png</texture>
+                        <posx>479</posx>
+                        <posy>469</posy>
+                        <width>690</width>
+                        <height>181</height>
+                        <texture border="5">dialogs/default/inner.png</texture>
                     </control>
                     <control type="list" id="10">
                         <posx>479</posx>
@@ -145,7 +145,7 @@
                             </control>
                         </focusedlayout>
                     </control>
-                    
+
                     <control type="image" id="61">
                         <animation effect="fade" start="0" end="100" time="0">Visible</animation>
                         <animation effect="fade" start="100" end="0" time="0">Hidden</animation>
@@ -172,15 +172,15 @@
                         <orientation>vertical</orientation>
                         <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(61)">Conditional</animation>
                     </control>
-    
+
                     <control type="group" id="9004">
                         <posx>1183</posx>
                         <control type="image">
-                        	<posx>0</posx>
-                        	<posy>469</posy>
-                        	<width>258</width>
-                        	<height>181</height>
-                        	<texture border="5">dialogs/default/inner.png</texture>
+                            <posx>0</posx>
+                            <posy>469</posy>
+                            <width>258</width>
+                            <height>181</height>
+                            <texture border="5">dialogs/default/inner.png</texture>
                         </control>
                         <control type="button" id="20">
                             <description>Edit attribute</description>
@@ -195,7 +195,7 @@
                             <font>Font-Condensed-S32</font>
                             <textoffsetx>60</textoffsetx>
                             <width>258</width>
-                            <height>60</height> 
+                            <height>60</height>
                             <onup>18</onup>
                             <onleft>10</onleft>
                             <onright>10</onright>
@@ -218,7 +218,7 @@
                             <font>Font-Condensed-S32</font>
                             <textoffsetx>60</textoffsetx>
                             <width>258</width>
-                            <height>60</height> 
+                            <height>60</height>
                             <onup>20</onup>
                             <onleft>10</onleft>
                             <onright>10</onright>

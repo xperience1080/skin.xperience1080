@@ -5,7 +5,7 @@
         <control type="group">
             <include>KeyboardAnimations</include>
             <visible>!Window.IsVisible(filebrowser)</visible>
-            
+
             <control type="label">
                 <description>Heading</description>
                 <posx>473</posx>
@@ -17,7 +17,7 @@
                 <align>center</align>
                 <visible>String.IsEmpty(Window(skinsettings).property(CustomDialog))</visible>
             </control>
-            
+
             <control type="label">
                 <description>Heading</description>
                 <posx>473</posx>
@@ -29,7 +29,7 @@
                 <align>center</align>
                 <visible>!String.IsEmpty(Window(skinsettings).property(CustomDialog))</visible>
             </control>
-            
+
             <control type="image">
                 <posx>920</posx>
                 <posy>299</posy>
@@ -45,27 +45,27 @@
                 <texture border="39">dialogs/default/bg.png</texture>
             </control>
             <control type="image">
-            	<posx>558</posx>
-            	<posy>353</posy>
-            	<width>532</width>
-            	<height>301</height>
-            	<texture border="5">dialogs/default/inner.png</texture>
+                <posx>558</posx>
+                <posy>353</posy>
+                <width>532</width>
+                <height>301</height>
+                <texture border="5">dialogs/default/inner.png</texture>
             </control>
             <control type="image">
-            	<posx>1104</posx>
-            	<posy>353</posy>
-            	<width>258</width>
-            	<height>301</height>
-            	<texture border="5">dialogs/default/inner.png</texture>
+                <posx>1104</posx>
+                <posy>353</posy>
+                <width>258</width>
+                <height>301</height>
+                <texture border="5">dialogs/default/inner.png</texture>
             </control>
             <control type="image">
-            	<posx>558</posx>
-            	<posy>667</posy>
-            	<width>804</width>
-            	<height>61</height>
-            	<texture border="5">dialogs/default/inner.png</texture>
+                <posx>558</posx>
+                <posy>667</posy>
+                <width>804</width>
+                <height>61</height>
+                <texture border="5">dialogs/default/inner.png</texture>
             </control>
-            
+
             <include condition="String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31251])">SettingsBackgroundDialogGlobal</include>
             <include condition="String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[5])">SettingsBackgroundDialogSettings</include>
             <include condition="String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[342])">SettingsBackgroundDialogMovies</include>
@@ -73,8 +73,8 @@
             <include condition="String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[2])">SettingsBackgroundDialogMusic</include>
             <include condition="String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31504])">SettingsBackgroundDialogPrograms</include>
             <include condition="String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[12600])">SettingsBackgroundDialogWeather</include>
-			<include condition="String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31995])">GlobalOverlay</include>
-            
+            <include condition="String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31995])">GlobalOverlay</include>
+
             <control type="group">
                 <posx>547</posx>
                 <posy>723</posy>

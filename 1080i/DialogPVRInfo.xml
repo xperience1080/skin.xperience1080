@@ -182,31 +182,37 @@
                             <onclick>SendClick(5)</onclick>
                         </item>
                         <item id="2">
+                            <description>Channel guide</description>
+                            <visible>Window.IsActive(pvrguideinfo) + !Window.IsActive(pvrchannelguide)</visible>
+                            <label>$LOCALIZE[19686]</label>
+                            <onclick>SendClick(10)</onclick>
+                        </item>
+                        <item id="3">
                             <description>Find similar</description>
                             <visible>Window.IsActive(pvrguideinfo)</visible>
                             <label>$LOCALIZE[19003]</label>
                             <onclick>Dialog.Close(all)</onclick>
                             <onclick>SendClick(4)</onclick>
                         </item>
-                        <item id="3">
+                        <item id="4">
                             <description>Add timer</description>
                             <visible>Window.IsActive(pvrguideinfo)</visible>
                             <label>$LOCALIZE[19061]</label>
                             <onclick>SendClick(9)</onclick>
                         </item>
-                        <item id="4">
+                        <item id="5">
                             <description>Play Record</description>
                             <visible>Window.IsActive(pvrrecordinginfo)</visible>
                             <label>$LOCALIZE[19687]</label>
                             <onclick>SendClick(8)</onclick>
                         </item>
-                        <item id="5">
+                        <item id="6">
                             <description>Record</description>
                             <visible>Window.IsActive(pvrguideinfo)</visible>
                             <label>$LOCALIZE[264]</label>
                             <onclick>SendClick(6)</onclick>
                         </item>
-                        <item id="6">
+                        <item id="7">
                             <description>Trailer</description>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                             <label>$LOCALIZE[20410]</label>
@@ -434,7 +440,7 @@
                 </control>
             </control>
         </control>
-  
+
         <control type="button" id="4">
             <description>Find similar</description>
             <visible>false</visible>
@@ -453,6 +459,10 @@
         </control>
         <control type="button" id="9">
             <description>Add timer</description>
+            <visible>false</visible>
+        </control>
+        <control type="button" id="10">
+            <description>Channel guide</description>
             <visible>false</visible>
         </control>
     </controls>

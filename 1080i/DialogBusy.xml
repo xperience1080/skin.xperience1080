@@ -23,8 +23,8 @@
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
                 </control>
                 <control type="progress" id="10">
-                	<description>progress control</description>
-                	<visible>false</visible>
+                    <description>progress control</description>
+                    <visible>false</visible>
                 </control>
             </control>
         </control>

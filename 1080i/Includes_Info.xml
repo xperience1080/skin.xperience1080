@@ -25,7 +25,7 @@
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
                     <visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
                     <include>visiblehidefadeinfo</include>
-					<visible>!Skin.HasSetting(Guide.HideWeather)</visible>
+                    <visible>!Skin.HasSetting(Guide.HideWeather)</visible>
                 </control>
                 <control type="label">
                     <description>Weather label</description>
@@ -33,7 +33,7 @@
                     <posy>955</posy>
                     <width>250</width>
                     <height>100</height>
-					<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+                    <label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
                     <font>Font-Condensed-S34-B</font>
                     <textcolor>eewhite</textcolor>
                     <shadowcolor>22000000</shadowcolor>
@@ -41,40 +41,40 @@
                     <scroll>false</scroll>
                     <include>visiblehidefadeinfo</include>
                     <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]">Conditional</animation>
-					<visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
-					<visible>!Skin.HasSetting(Guide.HideWeather)</visible>
+                    <visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
+                    <visible>!Skin.HasSetting(Guide.HideWeather)</visible>
                 </control>
-				<control type="image">
-					<description>Clock image</description>
-					<posx>345r</posx>
-					<posy>955</posy>
-					<width>92</width>
-					<height>92</height>
-					<texture>windows/home/clock.png</texture>
-					<include>visiblehidefadeinfo</include>
-					<visible>!Skin.HasSetting(Guide.HideClock)</visible>
-					<animation effect="slide" end="0" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
-					<animation effect="slide" end="170" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
-					<animation effect="slide" end="170" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather) + !Weather.IsFetched">Conditional</animation>
-				</control>
-				<control type="label">
-					<description>Clock label</description>
-					<posx>335r</posx>
-					<posy>955</posy>
-					<width>600</width>
-					<height>100</height>
-					<label>$VAR[ClockDateTimeValue]</label>
-					<font>Font-Condensed-S34-B</font>
-					<textcolor>eewhite</textcolor>
-					<shadowcolor>22000000</shadowcolor>
-					<align>right</align>
-					<scroll>false</scroll>
-					<include>visiblehidefadeinfo</include>
-					<visible>!Skin.HasSetting(Guide.HideClock)</visible>
-					<animation effect="slide" end="0" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
-					<animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
-					<animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather) + !Weather.IsFetched">Conditional</animation>
-				</control>
+                <control type="image">
+                    <description>Clock image</description>
+                    <posx>345r</posx>
+                    <posy>955</posy>
+                    <width>92</width>
+                    <height>92</height>
+                    <texture>windows/home/clock.png</texture>
+                    <include>visiblehidefadeinfo</include>
+                    <visible>!Skin.HasSetting(Guide.HideClock)</visible>
+                    <animation effect="slide" end="0" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
+                    <animation effect="slide" end="170" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
+                    <animation effect="slide" end="170" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather) + !Weather.IsFetched">Conditional</animation>
+                </control>
+                <control type="label">
+                    <description>Clock label</description>
+                    <posx>335r</posx>
+                    <posy>955</posy>
+                    <width>600</width>
+                    <height>100</height>
+                    <label>$VAR[ClockDateTimeValue]</label>
+                    <font>Font-Condensed-S34-B</font>
+                    <textcolor>eewhite</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                    <align>right</align>
+                    <scroll>false</scroll>
+                    <include>visiblehidefadeinfo</include>
+                    <visible>!Skin.HasSetting(Guide.HideClock)</visible>
+                    <animation effect="slide" end="0" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
+                    <animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather)">Conditional</animation>
+                    <animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="!Skin.HasSetting(Guide.HideWeather) + !Weather.IsFetched">Conditional</animation>
+                </control>
             </control>
             <control type="group">
                 <visible>PVR.IsRecording</visible>
@@ -222,73 +222,73 @@
                     <scroll>false</scroll>
                     <align>right</align>
                 </control>
-    			<control type="image">
-    			    <description>Now Playing - Paused</description>
-    			    <posx>0</posx>
-    			    <posy>25</posy>
-    			    <width>100</width>
-    			    <height>100</height>
-    			    <texture>overlays/nowplaying/pause.png</texture>
-    			    <animation type="Visible">
-    			        <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
-    			        <effect type="zoom" start="50" end="100" center="50,77" tween="sine" easing="inout" time="300" />
-    			    </animation>
-    			    <animation type="Hidden">
-    			        <effect type="fade" start="100" end="0" tween="sine" easing="inout" time="300" />
-    			        <effect type="zoom" start="100" end="50" center="50,77" tween="sine" easing="inout" time="300" />
-    			    </animation>
-    			    <visible>Player.Paused</visible>
-    			</control>
-    			<control type="image">
-    			    <description>Now Playing - Play</description>
-    			    <posx>0</posx>
-    			    <posy>25</posy>
-    			    <width>100</width>
-    			    <height>100</height>
-    			    <texture>overlays/nowplaying/play.png</texture>
-    			    <animation type="Visible">
-    			        <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
-    			        <effect type="zoom" start="50" end="100" center="50,77" tween="sine" easing="inout" time="300" />
-    			    </animation>
-    			    <animation type="Hidden">
-    			        <effect type="fade" start="100" end="0" tween="sine" easing="inout" time="300" />
-    			        <effect type="zoom" start="100" end="50" center="50,77" tween="sine" easing="inout" time="300" />
-    			    </animation>
-    			    <visible>!Player.Paused</visible>
-    			</control>
-    			<control type="image">
-    			    <posx>0</posx>
-    			    <posy>25</posy>
-    			    <width>100</width>
-    			    <height>100</height>
-    			    <texture>dialogs/extendedprogress/loading-back.png</texture>
-    			</control>
-    			<control type="progress" id="933">
-    			    <texturebg></texturebg>
-    				<lefttexture></lefttexture>
-    				<midtexture></midtexture>
-    				<righttexture></righttexture>
-    				<info>Player.Progress</info>
-    				<visible>false</visible>
-    			</control>
-    			<control type="image">
-    			    <posx>0</posx>
-    			    <posy>25</posy>
-    			    <width>100</width>
-    			    <height>100</height>
-    			    <texture>$INFO[Control.GetLabel(933),overlays/nowplaying/progress/p,.png]</texture>
-    			    <visible>!String.IsEmpty(Player.Duration)</visible>
-    			</control>
-    			<control type="image">
-    			    <description>Loading indicator</description>
-    			    <posx>0</posx>
-    			    <posy>25</posy>
-    			    <width>100</width>
-    			    <height>100</height>
-    			    <texture>dialogs/search/loading.png</texture>
-    			    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="!Player.Paused">Conditional</animation>
-    			    <visible>String.IsEmpty(Player.Duration)</visible>
-    			</control>
+                <control type="image">
+                    <description>Now Playing - Paused</description>
+                    <posx>0</posx>
+                    <posy>25</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>overlays/nowplaying/pause.png</texture>
+                    <animation type="Visible">
+                        <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
+                        <effect type="zoom" start="50" end="100" center="50,77" tween="sine" easing="inout" time="300" />
+                    </animation>
+                    <animation type="Hidden">
+                        <effect type="fade" start="100" end="0" tween="sine" easing="inout" time="300" />
+                        <effect type="zoom" start="100" end="50" center="50,77" tween="sine" easing="inout" time="300" />
+                    </animation>
+                    <visible>Player.Paused</visible>
+                </control>
+                <control type="image">
+                    <description>Now Playing - Play</description>
+                    <posx>0</posx>
+                    <posy>25</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>overlays/nowplaying/play.png</texture>
+                    <animation type="Visible">
+                        <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
+                        <effect type="zoom" start="50" end="100" center="50,77" tween="sine" easing="inout" time="300" />
+                    </animation>
+                    <animation type="Hidden">
+                        <effect type="fade" start="100" end="0" tween="sine" easing="inout" time="300" />
+                        <effect type="zoom" start="100" end="50" center="50,77" tween="sine" easing="inout" time="300" />
+                    </animation>
+                    <visible>!Player.Paused</visible>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>25</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>dialogs/extendedprogress/loading-back.png</texture>
+                </control>
+                <control type="progress" id="933">
+                    <texturebg></texturebg>
+                    <lefttexture></lefttexture>
+                    <midtexture></midtexture>
+                    <righttexture></righttexture>
+                    <info>Player.Progress</info>
+                    <visible>false</visible>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>25</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>$INFO[Control.GetLabel(933),overlays/nowplaying/progress/p,.png]</texture>
+                    <visible>!String.IsEmpty(Player.Duration)</visible>
+                </control>
+                <control type="image">
+                    <description>Loading indicator</description>
+                    <posx>0</posx>
+                    <posy>25</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>dialogs/search/loading.png</texture>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="!Player.Paused">Conditional</animation>
+                    <visible>String.IsEmpty(Player.Duration)</visible>
+                </control>
             </control>
         </control>
     </include>

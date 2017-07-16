@@ -30,7 +30,7 @@
                         <height>38</height>
                         <align>center</align>
                         <font>Font-Condensed-S34-B</font>
-						<info>Player.Filename</info>
+                        <info>Player.Filename</info>
                         <textcolor>aawhite</textcolor>
                         <shadowcolor>66000000</shadowcolor>
                     </control>

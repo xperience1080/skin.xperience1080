@@ -6,7 +6,7 @@
     <controls>
         <include>CommonPVRItems</include>
         <include>PVRHeader</include>
-        
+
         <control type="group">
             <visible>!Window.IsActive(DialogPVRInfo.xml)</visible>
             <include>CommonViewAnimations</include>
@@ -303,7 +303,7 @@
                                         <texture border="12" fallback="windows/pvr/genres/0-fo.png">$INFO[ListItem.Property(GenreType),windows/pvr/genres/,-fo.png]</texture>
                                         <visible>Skin.HasSetting(EPGGenreColors.Enabled)</visible>
                                     </control>
-                                    <!-- 
+                                    <!--
                                     <control type="progress" id="2">
                                         <posx>2</posx>
                                         <posy>1</posy>

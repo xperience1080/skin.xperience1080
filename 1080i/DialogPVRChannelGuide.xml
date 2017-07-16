@@ -80,7 +80,7 @@
                     <posx>1755</posx>
                     <posy>328</posy>
                     <width>6</width>
-                    <height>480</height>                    
+                    <height>480</height>
                     <onleft>70</onleft>
                     <onright>11</onright>
                     <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
@@ -131,7 +131,7 @@
                     <height>672</height>
                     <pagecontrol>70</pagecontrol>
                     <onleft>71</onleft>
-                    <onright>71</onright> 
+                    <onright>71</onright>
                     <onup>11</onup>
                     <ondown>11</ondown>
                     <viewtype label="535">list</viewtype>

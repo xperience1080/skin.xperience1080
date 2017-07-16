@@ -23,7 +23,7 @@
         <textcolor>KeyboardGrey</textcolor>
         <focusedcolor>eewhite</focusedcolor>
         <selectedcolor>eewhite</selectedcolor>
-    </include>	
+    </include>
     <include name="SmallKey">
         <width>90</width>
         <include>Key</include>
@@ -35,7 +35,7 @@
     <include name="BigKeyLang">
         <width>199</width>
         <include>KeyLang</include>
-    </include>	
+    </include>
     <include name="SpaceBar">
         <width>577</width>
         <include>Key</include>
