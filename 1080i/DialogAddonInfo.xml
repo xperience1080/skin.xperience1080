@@ -153,6 +153,22 @@
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
                         <itemgap>-1</itemgap>
                         <orientation>vertical</orientation>
+                        <control type="button" id ="6">
+                            <description>Install/Uninstall add-on</description>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>440</width>
+                            <height>83</height>
+                            <textoffsetx>25</textoffsetx>
+                            <align>left</align>
+                            <font>Font-Condensed-S40</font>
+                            <textcolor>99FFFFFF</textcolor>
+                            <focusedcolor>eewhite</focusedcolor>
+                            <disabledcolor>44FFFFFF</disabledcolor>
+                            <shadowcolor>33000000</shadowcolor>
+                            <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
+                            <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
+                        </control>
                         <control type="button" id="8">
                             <description>Update add-on</description>
                             <label>$LOCALIZE[24069]</label>
@@ -206,22 +222,6 @@
                         </control>
                         <control type="button" id="7">
                             <description>Enable/Disable add-on</description>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>440</width>
-                            <height>83</height>
-                            <textoffsetx>25</textoffsetx>
-                            <align>left</align>
-                            <font>Font-Condensed-S40</font>
-                            <textcolor>99FFFFFF</textcolor>
-                            <focusedcolor>eewhite</focusedcolor>
-                            <disabledcolor>44FFFFFF</disabledcolor>
-                            <shadowcolor>33000000</shadowcolor>
-                            <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
-                            <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
-                        </control>
-                        <control type="button" id ="6">
-                            <description>Uninstall add-on</description>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>440</width>
@@ -370,7 +370,6 @@
                         <width>1240</width>
                         <height>50</height>
                         <posy>225</posy>
-                        <orientation>horizontal</orientation>
                         <control type="label">
                             <posy>0</posy>
                             <width>1240</width>
@@ -414,7 +413,6 @@
                         <width>1240</width>
                         <height>50</height>
                         <posy>470</posy>
-                        <orientation>horizontal</orientation>
                         <control type="image">
                             <posx>-6</posx>
                             <posy>0</posy>
@@ -449,7 +447,6 @@
                         <width>1150</width>
                         <height>50</height>
                         <posy>570</posy>
-                        <orientation>horizontal</orientation>
                         <control type="image">
                             <posx>-6</posx>
                             <posy>0</posy>
