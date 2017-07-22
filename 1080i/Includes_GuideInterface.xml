@@ -1568,7 +1568,7 @@
             <visible>!Skin.HasSetting(Guide.HideClock)</visible>
         </control>
         <control type="group">
-            <visible>[Skin.HasSetting(GlobalRSS.Top) | Skin.HasSetting(GlobalRSS.Bottom)]</visible>
+            <visible>System.GetBool(lookandfeel.enablerssfeeds) + [Skin.HasSetting(GlobalRSS.Top) | Skin.HasSetting(GlobalRSS.Bottom)]</visible>
             <control type="rss">
                 <posx>714</posx>
                 <posy>284</posy>
