@@ -1589,18 +1589,5 @@
             <colordiffuse>aawhite</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
-
-        <!-- current user logo -->
-        <control type="image">
-            <posx>920</posx>
-            <posy>188</posy>
-            <width>80</width>
-            <height>80</height>
-            <info>System.ProfileThumb</info>
-            <texture diffuse="windows/logon/profile_mask.png" />
-            <fadetime>300</fadetime>
-            <aspectratio scalediffuse="false">scale</aspectratio>
-            <visible>!Skin.HasSetting(Guide.HideUserImage)</visible>
-        </control>
     </include>
 </includes>
