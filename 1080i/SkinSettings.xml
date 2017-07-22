@@ -236,13 +236,6 @@
                         <onclick>Skin.ToggleSetting(Guide.HideWeather)</onclick>
                         <label>$LOCALIZE[31976]</label>
                     </control>
-                    <control type="radiobutton" id="1010">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(Guide.HideUserImage)</selected>
-                        <onclick>Skin.ToggleSetting(Guide.HideUserImage)</onclick>
-                        <label>$LOCALIZE[31271]</label>
-                    </control>
                     <control type="button" id="60001">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
