@@ -461,6 +461,48 @@
         </control>
     </include>
 
+    <include name="GamesHeader">
+        <control type="group">
+            <posx>75</posx>
+            <posy>26</posy>
+            <visible>!Window.IsActive(addoninformation) + !Window.IsActive(1122) + !Window.IsActive(script-script.extendedinfo-DialogInfo.xml) + !Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsActive(favourites)</visible>
+            <include>BannerListInfoAnimation</include>
+            <control type="group">
+                <control type="image">
+                    <include>ViewHeaderIconVars</include>
+                    <texture>DefaultGames.png</texture>
+                </control>
+                <include>ViewHeaderSortLetter</include>
+                <control type="grouplist">
+                    <posx>110</posx>
+                    <posy>0</posy>
+                    <orientation>horizontal</orientation>
+                    <itemgap>0</itemgap>
+                    <control type="label">
+                        <width min="0" max="500">auto</width>
+                        <height>120</height>
+                        <label>$LOCALIZE[10821]</label>
+                        <font>Font-Condensed-S36-B</font>
+                        <textcolor>C0FFFFFF</textcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                    </control>
+                    <control type="label">
+                        <width min="0" max="500">auto</width>
+                        <height>120</height>
+                        <label>$INFO[Container.FolderName,: ,]</label>
+                        <font>Font-Condensed-S36-B</font>
+                        <textcolor>aawhite</textcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <visible>!String.IsEmpty(Container.FolderPath)</visible>
+                    </control>
+                </control>
+            </control>
+            <include>ViewHeaderItemPageInfo</include>
+        </control>
+    </include>
+
     <include name="PictureHeader">
         <control type="group">
             <posx>75</posx>

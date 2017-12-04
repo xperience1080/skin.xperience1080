@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>23</defaultcontrol>
-    <visible>[Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)] + [Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsVisible(fullscreeninfo)] + !Window.IsVisible(sliderdialog) + ![!Window.IsActive(videoosd) + !Window.IsActive(musicosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrchannelguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
+    <visible>[Window.IsActive(fullscreenvideo) | Window.IsActive(fullscreengame) | Window.IsActive(visualisation)] + [Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd) | Window.IsVisible(fullscreeninfo)] + !Window.IsVisible(sliderdialog) + ![!Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(gameosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrchannelguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
     <controls>
         <include>FadeBackgroundPVRInfo</include>
         <include>OSDWeatherClock</include>
@@ -27,8 +27,8 @@
                 <visible>!Window.IsVisible(DialogPVRInfo.xml)</visible>
                 <visible>!Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
                 <visible>!Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)</visible>
-                <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd)]" easing="inout" effect="slide" end="0,-275" start="0,0" time="300" tween="cubic">Conditional</animation>
-                <animation condition="[Window.IsActive(videoosd) | Window.IsActive(musicosd)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]" easing="inout" effect="slide" end="0,-70" start="0,0" time="300" tween="cubic">Conditional</animation>
+                <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(gameosd)]" easing="inout" effect="slide" end="0,-275" start="0,0" time="300" tween="cubic">Conditional</animation>
+                <animation condition="[Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]" easing="inout" effect="slide" end="0,-70" start="0,0" time="300" tween="cubic">Conditional</animation>
                 <control type="image">
                     <posx>0</posx>
                     <posy>600</posy>
@@ -37,9 +37,9 @@
                     <texture border="1,401,1,45">osd/fullscreen/osd-back-info.png</texture>
                 </control>
                 <control type="group">
-                    <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd)]" easing="inout" effect="slide" end="0,213" start="0,0" time="300" tween="cubic">Conditional</animation>
-                    <animation condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)" easing="inout" effect="slide" end="0,70" start="0,0" time="300" tween="cubic">Conditional</animation>
-                    <visible>String.IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd)</visible>
+                    <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(gameosd)]" easing="inout" effect="slide" end="0,213" start="0,0" time="300" tween="cubic">Conditional</animation>
+                    <animation condition="Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)" easing="inout" effect="slide" end="0,70" start="0,0" time="300" tween="cubic">Conditional</animation>
+                    <visible>String.IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)</visible>
                     <include>visiblehidefadeinfo</include>
                     <control type="group">
                         <posx>358</posx>

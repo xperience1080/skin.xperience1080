@@ -59,6 +59,10 @@
         <include>Viewtype-ProgramBanner</include>
         <include>Viewtype-ProgramBannerSquare</include>
     </include>
+    <include name="GamesViews">
+        <include>Viewtype-ProgramList</include>
+        <include>Viewtype-AddonThumbnail</include>
+    </include>
     <include name="AddonViews">
         <include>Viewtype-AddonThumbnail</include>
         <include>Viewtype-AddonList</include>

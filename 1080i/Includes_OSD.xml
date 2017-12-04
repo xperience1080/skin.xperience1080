@@ -34,6 +34,25 @@
         <defaultcontrol>1</defaultcontrol>
     </include>
 
+    <variable name="GameOSDButtonLabel">
+        <!-- Video filter  -->
+        <value condition="Control.HasFocus(1)">$LOCALIZE[35225]</value>
+        <!-- Volume -->
+        <value condition="Control.HasFocus(2)">$LOCALIZE[13376]</value>
+        <!-- Reset -->
+        <value condition="Control.HasFocus(3)">$LOCALIZE[13007]</value>
+        <!-- Pause playback -->
+        <value condition="Control.HasFocus(4) + !Player.Paused">$LOCALIZE[36045]</value>
+        <!-- Play -->
+        <value condition="Control.HasFocus(4) + Player.Paused">$LOCALIZE[208]</value>
+        <!-- Stop playback -->
+        <value condition="Control.HasFocus(5)">$LOCALIZE[36044]</value>
+        <!-- View mode -->
+        <value condition="Control.HasFocus(6)">$LOCALIZE[629]</value>
+        <!-- Input setting -->
+        <value condition="Control.HasFocus(7)">$LOCALIZE[35223]</value>
+    </variable>
+
     <variable name="MusicOSDButtonLabel">
         <!-- Audio Settings -->
         <value condition="Control.HasFocus(11)">$LOCALIZE[13396]</value>
