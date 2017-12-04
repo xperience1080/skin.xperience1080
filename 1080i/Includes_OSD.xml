@@ -34,6 +34,84 @@
         <defaultcontrol>1</defaultcontrol>
     </include>
 
+    <variable name="MusicOSDButtonLabel">
+        <!-- Audio Settings -->
+        <value condition="Control.HasFocus(11)">$LOCALIZE[13396]</value>
+        <!-- Playlist -->
+        <value condition="Control.HasFocus(7)">$LOCALIZE[559]</value>
+        <!-- Shuffle -->
+        <value condition="Control.HasFocus(12)">$LOCALIZE[191]</value>
+        <!-- Repeat -->
+        <value condition="Control.HasFocus(10)">$LOCALIZE[486]</value>
+        <!-- Repeat one -->
+        <value condition="Control.HasFocus(10)">$LOCALIZE[487]</value>
+        <!-- Repeat folder -->
+        <value condition="Control.HasFocus(10)">$LOCALIZE[488]</value>
+        <!-- Skip back -->
+        <value condition="Control.HasFocus(1)">$LOCALIZE[31115]</value>
+        <!-- Skip forward -->
+        <value condition="Control.HasFocus(6)">$LOCALIZE[31116]</value>
+        <!-- Fast rewind -->
+        <value condition="Control.HasFocus(2)">$LOCALIZE[31119]</value>
+        <!-- Fast forward -->
+        <value condition="Control.HasFocus(5)">$LOCALIZE[31120]</value>
+        <!-- Pause playback -->
+        <value condition="Control.HasFocus(3) + !Player.Paused">$LOCALIZE[36045]</value>
+        <!-- Play -->
+        <value condition="Control.HasFocus(3) + Player.Paused">$LOCALIZE[208]</value>
+        <!-- Stop playback -->
+        <value condition="Control.HasFocus(4)">$LOCALIZE[36044]</value>
+        <!-- Lyrics -->
+        <value condition="Control.HasFocus(8)">$LOCALIZE[24013]</value>
+        <!-- Visualisation -->
+        <value condition="Control.HasFocus(500)">$LOCALIZE[250]</value>
+        <!-- Visualisation present list -->
+        <value condition="Control.HasFocus(13)">$LOCALIZE[10122]</value>
+        <!-- Visualisation settings -->
+        <value condition="Control.HasFocus(14)">$LOCALIZE[31122]</value>
+    </variable>
+
+    <variable name="VideoOSDButtonLabel">
+        <!-- Audio Settings -->
+        <value condition="Control.HasFocus(11)">$LOCALIZE[13396]</value>
+        <!-- Video Settings -->
+        <value condition="Control.HasFocus(12)">$LOCALIZE[13395]</value>
+        <!-- Subtitles -->
+        <value condition="Control.HasFocus(7) + !VideoPlayer.Content(LiveTV)">$LOCALIZE[24012]</value>
+        <!-- Record -->
+        <value condition="Control.HasFocus(7) + VideoPlayer.Content(LiveTV)">$LOCALIZE[264]</value>
+        <!-- Skip back -->
+        <value condition="Control.HasFocus(1) + !VideoPlayer.Content(LiveTV)">$LOCALIZE[31115]</value>
+        <!-- Previous channel -->
+        <value condition="Control.HasFocus(1) + VideoPlayer.Content(LiveTV)">$LOCALIZE[31117]</value>
+        <!-- Skip forward -->
+        <value condition="Control.HasFocus(6) + !VideoPlayer.Content(LiveTV)">$LOCALIZE[31116]</value>
+        <!-- Next channel -->
+        <value condition="Control.HasFocus(13) + VideoPlayer.Content(LiveTV)">$LOCALIZE[31118]</value>
+        <!-- Fast rewind -->
+        <value condition="Control.HasFocus(2)">$LOCALIZE[31119]</value>
+        <!-- Fast forward -->
+        <value condition="Control.HasFocus(5)">$LOCALIZE[31120]</value>
+        <!-- Pause playback -->
+        <value condition="Control.HasFocus(3) + !Player.Paused">$LOCALIZE[36045]</value>
+        <!-- Play -->
+        <value condition="Control.HasFocus(3) + Player.Paused">$LOCALIZE[208]</value>
+        <!-- Stop playback -->
+        <value condition="Control.HasFocus(4)">$LOCALIZE[36044]</value>
+        <!-- Channel list -->
+        <value condition="Control.HasFocus(10) + VideoPlayer.Content(LiveTV)">$LOCALIZE[31121]</value>
+        <!-- DVD menu -->
+        <value condition="Control.HasFocus(10) + !VideoPlayer.Content(LiveTV)">$LOCALIZE[33061]</value>
+        <!-- Channel guide -->
+        <value condition="Control.HasFocus(8) + VideoPlayer.Content(LiveTV)">$LOCALIZE[19686]</value>
+        <!-- Info -->
+        <value condition="Control.HasFocus(8) + !VideoPlayer.Content(LiveTV)">$LOCALIZE[19033]</value>
+        <!-- Teletext -->
+        <value condition="Control.HasFocus(9) + VideoPlayer.Content(LiveTV)">$LOCALIZE[10550]</value>
+        <!-- Bookmarks -->
+        <value condition="Control.HasFocus(9) + !VideoPlayer.Content(LiveTV)">$LOCALIZE[298]</value>
+    </variable>
+
     <variable name="OSDPlot">
         <value condition="!String.IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextPlot]</value>
         <value>$INFO[VideoPlayer.Plot]</value>
