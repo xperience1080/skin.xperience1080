@@ -5756,6 +5756,7 @@
                                 <icon>windows/home/icons/music.png</icon>
                                 <onclick>Dialog.Close(all)</onclick>
                                 <onclick>ActivateWindow(MediaSettings)</onclick>
+                                <property name="pos">top</property>
                             </item>
                             <item id="4">
                                 <label>$LOCALIZE[31220]</label>
@@ -5764,9 +5765,9 @@
                                 <property name="pos">top</property>
                             </item>
                             <item id="5">
-                                <label>$LOCALIZE[31111]</label>
-                                <icon>windows/home/icons/skin.png</icon>
-                                <onclick>ActivateWindow(skinsettings)</onclick>
+                                <label>$LOCALIZE[15016]</label>
+                                <icon>windows/home/icons/games.png</icon>
+                                <onclick>ActivateWindow(gamesettings)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
                             <item id="6">
