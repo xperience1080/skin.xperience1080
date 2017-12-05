@@ -22,9 +22,9 @@
 
             <!-- Search -->
             <control type="group" id="100">
+                <description>Search</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>Search</description>
                 <visible>System.HasAddon(script.globalsearch)</visible>
                 <control type="button" id="125">
                     <onleft condition="!Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
@@ -848,9 +848,9 @@
 
             <!-- Live TV -->
             <control type="group" id="900">
+                <description>Live TV</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>Live TV</description>
                 <visible>!Skin.HasSetting(HomeTV)</visible>
                 <control type="button" id="925">
                     <onleft>Control.Move(20,-1)</onleft>
@@ -1445,9 +1445,9 @@
 
             <!-- Movies -->
             <control type="group" id="200">
+                <description>Movies</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>Movies</description>
                 <visible>!Skin.HasSetting(HomeMovies)</visible>
                 <control type="button" id="225">
                     <onleft>Control.Move(20,-1)</onleft>
@@ -2150,9 +2150,9 @@
 
             <!-- TV Shows -->
             <control type="group" id="300">
+                <description>TV Shows</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>TV Shows</description>
                 <visible>!Skin.HasSetting(HomeTVShows)</visible>
                 <control type="button" id="325">
                     <onleft>Control.Move(20,-1)</onleft>
@@ -2854,9 +2854,9 @@
 
             <!-- Music -->
             <control type="group" id="400">
+                <description>Music</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>Music</description>
                 <visible>!Skin.HasSetting(HomeMusic)</visible>
                 <control type="button" id="425">
                     <onleft>Control.Move(20,-1)</onleft>
@@ -3602,9 +3602,9 @@
 
             <!-- Pictures -->
             <control type="group" id="1000">
+                <description>Pictures</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>Pictures</description>
                 <visible>!Skin.HasSetting(HomePictures)</visible>
                 <control type="button" id="1025">
                     <onleft condition="!Skin.HasSetting(HomeMusic)">425</onleft>
@@ -4312,11 +4312,11 @@
                 </control>
             </control>
 
-            <!-- Programmes -->
+            <!-- Programs -->
             <control type="group" id="600">
+                <description>Programs</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>Apps</description>
                 <visible>!Skin.HasSetting(HomePrograms)</visible>
                 <control type="button" id="625">
                     <onleft condition="!Skin.HasSetting(HomePictures)">1025</onleft>
@@ -4783,9 +4783,9 @@
 
             <!-- Weather -->
             <control type="group" id="700">
+                <description>Weather</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>Weather</description>
                 <visible>!Skin.HasSetting(HomeWeather)</visible>
                 <control type="button" id="725">
                     <onleft>Control.Move(20,-1)</onleft>
@@ -5550,9 +5550,9 @@
 
             <!-- Settings -->
             <control type="group" id="800">
+                <description>Settings</description>
                 <width>2320</width>
                 <height>780</height>
-                <description>Settings</description>
                 <control type="button" id="825">
                     <onleft>Control.Move(20,-1)</onleft>
                     <onleft condition="!Skin.HasSetting(HomeWeather)">725</onleft>
