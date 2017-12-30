@@ -51,12 +51,12 @@
                 <posx>0</posx>
                 <posy>989</posy>
                 <control type="label">
-                    <description>Mini Progress Time</description>
+                    <description>Progress Times</description>
                     <posx>1590</posx>
                     <posy>38</posy>
                     <width>360</width>
                     <height>25</height>
-                    <label>$INFO[Player.Time(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+                    <label>$VAR[Player.Times]</label>
                     <textcolor>aawhite</textcolor>
                     <font>Font-Condensed-S34</font>
                     <align>left</align>

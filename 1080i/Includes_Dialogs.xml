@@ -85,6 +85,12 @@
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/banner.png]</value>
     </variable>
 
+    <variable name="Player.Times">
+        <value condition="VideoPlayer.HasEpg">$INFO[PVR.EpgEventElapsedTime(hh:mm:ss)]$INFO[PVR.EpgEventDuration(hh:mm:ss), / ,]</value>
+        <value condition="Player.Seeking">$INFO[Player.SeekTime(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss), / ,]</value>
+        <value>$INFO[Player.Time(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss), / ,]</value>
+    </variable>
+
     <variable name="SeekLabel">
         <value condition="!String.IsEmpty(Player.SeekStepSize)">$INFO[Player.SeekStepSize,$LOCALIZE[773] ,]</value>
         <value condition="Player.DisplayAfterSeek">$INFO[Player.SeekOffset,$LOCALIZE[773] ,]</value>

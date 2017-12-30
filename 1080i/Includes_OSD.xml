@@ -152,6 +152,11 @@
         <value>special://skin/extras/backgrounds/01.jpg</value>
     </variable>
 
+    <variable name="Player.FinishTime">
+        <value condition="VideoPlayer.HasEpg">$INFO[PVR.EpgEventFinishTime(hh:mm)]</value>
+        <value>$INFO[Player.FinishTime(hh:mm)]</value>
+    </variable>
+
     <include name="OSDChapterInfo">
         <control type="group">
             <visible>!Skin.HasSetting(OSD.HideChapterInfo)</visible>
@@ -313,10 +318,10 @@
                 <scroll>false</scroll>
             </control>
             <control type="group">
+                <description>Finish Time</description>
                 <visible>!Player.Forwarding + !Player.Rewinding</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
-                    <description>Finish time image</description>
                     <posx>1730</posx>
                     <posy>47</posy>
                     <width>100</width>
@@ -324,12 +329,11 @@
                     <texture>osd/fullscreen/clock-finish.png</texture>
                 </control>
                 <control type="label">
-                    <description>Clock label</description>
                     <posx>1742</posx>
                     <posy>79</posy>
                     <width>150</width>
                     <height>34</height>
-                    <label>$INFO[Player.FinishTime(hh:mm)]</label>
+                    <label>$VAR[Player.FinishTime]</label>
                     <font>Font-Condensed-S34</font>
                     <textcolor>aawhite</textcolor>
                     <align>right</align>
