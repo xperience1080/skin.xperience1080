@@ -274,7 +274,7 @@
                         <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
                         <textureslidernib></textureslidernib>
                         <textureslidernibfocus></textureslidernibfocus>
-                        <onleft>100</onleft>
+                        <onleft>9000</onleft>
                         <onright>50</onright>
                         <showonepage>false</showonepage>
                         <orientation>vertical</orientation>
@@ -553,7 +553,7 @@
                         <textureslidernib></textureslidernib>
                         <textureslidernibfocus></textureslidernibfocus>
                         <onleft>100</onleft>
-                        <onright>50</onright>
+                        <onright>9000</onright>
                         <showonepage>false</showonepage>
                         <orientation>vertical</orientation>
                         <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(41)">Conditional</animation>
@@ -561,6 +561,137 @@
                 </control>
             </control>
         </control>
-        <include>Common-Info-NoOptions</include>
+        <include>Common-Info</include>
+
+        <control type="group" id="9000">
+            <posx>63</posx>
+            <posy>517</posy>
+            <include>OptionsAnimations</include>
+            <control type="group">
+                <include>OptionsPanelAnimations</include>
+                <control type="image">
+                    <description>shadow image</description>
+                    <posx>5</posx>
+                    <posy>505</posy>
+                    <height>60</height>
+                    <width>442</width>
+                    <texture>dialogs/shutdown/shadow.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
+                    <description>background image</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <height>540</height>
+                    <width>442</width>
+                    <texture>dialogs/shutdown/shutdown.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+            </control>
+
+            <control type="grouplist" id="9111">
+                <posx>19</posx>
+                <posy>47</posy>
+                <width>404</width>
+                <height>399</height>
+                <itemgap>0</itemgap>
+                <onleft>50</onleft>
+                <onright>50</onright>
+                <onup>9111</onup>
+                <ondown>9111</ondown>
+                <onback>50</onback>
+                <include>GeneralOptionsAnimations</include>
+                <control type="button" id="6">
+                    <description>Label</description>
+                    <posy>330</posy>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[21478]</label>
+                    <texturefocus border="70,2,2,2">dialogs/options/buttons/files-fo.png</texturefocus>
+                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/files-nf.png</texturenofocus>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(6)">Conditional</animation>
+                </control>
+                <control type="button" id="7">
+                    <description>Label</description>
+                    <posy>330</posy>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[190]</label>
+                    <texturefocus border="70,2,2,2">dialogs/options/buttons/save-fo.png</texturefocus>
+                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/save-nf.png</texturenofocus>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(6)">Conditional</animation>
+                </control>
+                <control type="button" id="8">
+                    <description>Label</description>
+                    <posy>330</posy>
+                    <include>optionsbuttonsdimensions</include>
+                    <label>$LOCALIZE[192]</label>
+                    <texturefocus border="70,2,2,2">dialogs/options/buttons/quit-fo.png</texturefocus>
+                    <texturenofocus border="70,2,2,2">dialogs/options/buttons/quit-nf.png</texturenofocus>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(6)">Conditional</animation>
+                </control>
+            </control>
+
+            <control type="group">
+                <include>GeneralOptionsAnimations</include>
+                <control type="image">
+                    <posx>9</posx>
+                    <posy>433</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>buttons/options_nofo.png</texture>
+                </control>
+                <control type="label">
+                    <posx>94</posx>
+                    <posy>433</posy>
+                    <width>300</width>
+                    <height>100</height>
+                    <label>$LOCALIZE[31600]</label>
+                    <font>Font-Condensed-S34-B</font>
+                    <textcolor>eewhite</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                </control>
+            </control>
+
+            <control type="group">
+                <include>SpecificOptionsAnimations</include>
+                <control type="image">
+                    <posx>9</posx>
+                    <posy>433</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>buttons/options_nofo.png</texture>
+                </control>
+                <control type="label">
+                    <posx>94</posx>
+                    <posy>433</posy>
+                    <width>300</width>
+                    <height>100</height>
+                    <label>$LOCALIZE[31924]</label>
+                    <font>Font-Condensed-S34-B</font>
+                    <textcolor>eewhite</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                </control>
+            </control>
+
+            <control type="group">
+                <include>ViewOptionsAnimations</include>
+                <control type="image">
+                    <posx>9</posx>
+                    <posy>433</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>buttons/options_nofo.png</texture>
+                </control>
+                <control type="label">
+                    <posx>94</posx>
+                    <posy>433</posy>
+                    <width>300</width>
+                    <height>100</height>
+                    <label>$LOCALIZE[31930]</label>
+                    <font>Font-Condensed-S34-B</font>
+                    <textcolor>eewhite</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                </control>
+            </control>
+        </control>
     </controls>
 </window>
