@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <backgroundcolor>0</backgroundcolor>
+    <views>50</views>
     <controls>
         <include>CommonPlaylistEditorItems</include>
         <include>PlaylistEditorHeader</include>
