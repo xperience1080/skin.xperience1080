@@ -9,7 +9,7 @@
         <include>CommonItems</include>
         <include>PictureHeader</include>
         <include>PictureViews</include>
-        <include>Common-Info</include>
+        <include>CommonInfo</include>
 
         <include content="OptionsMenu">
             <control type="grouplist" id="9111">

@@ -13,7 +13,7 @@
             <include condition="System.HasAddon(resource.images.weatherfanart.multi)">WeatherFanart</include>
         </control>
 
-        <include>Common-Info</include>
+        <include>CommonInfo</include>
         <control type="button" id="101">
             <description>open options</description>
             <onup condition="!Skin.HasSetting(KioskMode)">9111</onup>

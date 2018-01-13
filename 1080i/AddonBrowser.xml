@@ -8,7 +8,7 @@
         <include>CommonItems</include>
         <include>AddonHeader</include>
         <include>AddonViews</include>
-        <include>Common-Info</include>
+        <include>CommonInfo</include>
 
         <include content="OptionsMenu">
             <control type="grouplist" id="9111">
