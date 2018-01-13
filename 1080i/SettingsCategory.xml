@@ -321,7 +321,7 @@
                 <control type="button" id="21">
                     <description>Reset button</description>
                     <include>optionsbuttonsdimensions</include>
-                    <label>$LOCALIZE[10035]</label>
+                    <label>$LOCALIZE[13007]</label>
                     <onclick>SettingsReset</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/reset-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/reset-nf.png</texturenofocus>
