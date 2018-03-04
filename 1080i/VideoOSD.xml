@@ -99,7 +99,7 @@
                         <texturenofocus>osd/fullscreen/buttons/subtitles-nofo.png</texturenofocus>
                         <alttexturefocus>osd/fullscreen/buttons/subtitles-fo.png</alttexturefocus>
                         <alttexturenofocus>osd/fullscreen/buttons/subtitles-nofo.png</alttexturenofocus>
-                        <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                        <onclick>ActivateWindow(10159)</onclick>
                         <onleft>12</onleft>
                         <onright>1</onright>
                         <onup>Close</onup>
