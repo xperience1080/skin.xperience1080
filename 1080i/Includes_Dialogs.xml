@@ -1826,7 +1826,7 @@
     </include>
 
     <include name="FileBrowserDefault">
-        <include>FadeBackgroundButtonMenu</include>
+        <include condition="!Window.IsVisible(fullscreenvideo)">FadeBackgroundButtonMenu</include>
         <control type="group">
             <animation type="WindowOpen" condition="Window.IsVisible(ProfileSettings) | Window.IsVisible(MediaSource) | Window.IsVisible(3002) | Window.IsVisible(3003) | Window.IsVisible(peripheralsettings) | Window.IsVisible(networksetup) | Window.IsVisible(smartplaylistrule) | Window.IsVisible(pvrchannelmanager)" reversible="false">
                 <effect type="fade" start="0" end="100" time="0" delay="300" />
