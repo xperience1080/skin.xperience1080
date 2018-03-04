@@ -45,7 +45,7 @@
                 <posy>989</posy>
                 <control type="label">
                     <description>Progress Times</description>
-                    <posx>1680</posx>
+                    <posx>1590</posx>
                     <posy>38</posy>
                     <width>360</width>
                     <height>25</height>
