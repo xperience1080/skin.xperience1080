@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
-<!-- ========= -->
-<!-- List (50) -->
-<!-- ========= -->
+    <!-- ========= -->
+    <!-- List (50) -->
+    <!-- ========= -->
     <include name="Viewtype-PictureList">
 
         <control type="group">
@@ -448,9 +448,9 @@
         </control>
     </include>
 
-<!-- =============== -->
-<!-- Poster (55) -->
-<!-- =============== -->
+    <!-- =============== -->
+    <!-- Poster (55) -->
+    <!-- =============== -->
     <include name="Viewtype-PictureView">
         <control type="group">
             <include>FullscreenDimensions</include>

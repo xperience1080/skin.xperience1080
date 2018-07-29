@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<!-- ========= -->
-<!-- List (50) -->
-<!-- ========= -->
+    <!-- ========= -->
+    <!-- List (50) -->
+    <!-- ========= -->
     <include name="Viewtype-MusicList">
         <control type="group">
             <visible>Control.IsVisible(50) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation) + !Window.IsActive(favourites)</visible>
@@ -838,9 +838,9 @@
         </control>
     </include>
 
-<!-- ============= -->
-<!-- InfoList (52) -->
-<!-- ============= -->
+    <!-- ============= -->
+    <!-- InfoList (52) -->
+    <!-- ============= -->
     <include name="Viewtype-MusicInfoList">
         <control type="group">
             <include>FullscreenDimensions</include>
@@ -1362,9 +1362,9 @@
         </control>
     </include>
 
-<!-- ========== -->
-<!-- Panel (53) -->
-<!-- ========== -->
+    <!-- ========== -->
+    <!-- Panel (53) -->
+    <!-- ========== -->
     <include name="Viewtype-MusicPanel">
         <control type="group">
             <include>FullscreenDimensions</include>
@@ -1636,9 +1636,9 @@
         </control>
     </include>
 
-<!-- ========== -->
-<!-- Cover (55) -->
-<!-- ========== -->
+    <!-- ========== -->
+    <!-- Cover (55) -->
+    <!-- ========== -->
     <include name="Viewtype-CoverView">
         <control type="group">
             <include>FullscreenDimensions</include>
@@ -2270,9 +2270,9 @@
         </control>
     </include>
 
-<!-- =============== -->
-<!-- Thumbnail (501) -->
-<!-- =============== -->
+    <!-- =============== -->
+    <!-- Thumbnail (501) -->
+    <!-- =============== -->
     <include name="Viewtype-MusicThumbnail">
         <control type="group">
             <include>FullscreenDimensions</include>
@@ -2545,9 +2545,9 @@
         </control>
     </include>
 
-<!-- =========== -->
-<!-- Banner (60) -->
-<!-- =========== -->
+    <!-- =========== -->
+    <!-- Banner (60) -->
+    <!-- =========== -->
     <include name="Viewtype-CoverList">
         <control type="group">
             <include>FullscreenDimensions</include>
