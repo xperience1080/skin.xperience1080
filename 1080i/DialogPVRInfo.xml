@@ -190,10 +190,15 @@
                         </item>
                         <item id="3">
                             <description>Add timer</description>
-                            <visible>Window.IsActive(pvrguideinfo)</visible>
+                            <visible>Window.IsActive(pvrguideinfo) + !System.HasAddon(service.kn.switchtimer)</visible>
                             <label>$LOCALIZE[19061]</label>
                             <onclick>SendClick(9)</onclick>
                         </item>
+                        <item id="3">
+                            <label>$ADDON[service.kn.switchtimer 30040]</label>
+                            <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
+                            <onclick>RunScript(service.kn.switchtimer,action=add,channel=$INFO[ListItem.Channelname],date=$INFO[ListItem.Date],title=$INFO[ListItem.Title])</onclick>
+                            </item>
                         <item id="4">
                             <description>Play Record</description>
                             <visible>Window.IsActive(pvrrecordinginfo)</visible>
@@ -213,6 +218,11 @@
                             <onclick>Dialog.Close(all)</onclick>
                             <onclick>Action(close)</onclick>
                             <onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title])</onclick>
+                        </item>
+                        <item id="7">
+                            <label>$ADDON[service.kn.switchtimer 30011]</label>
+                            <visible>System.HasAddon(service.kn.switchtimer) + Window.IsVisible(tvguide)</visible>
+                            <onclick>RunScript(service.kn.switchtimer)</onclick>
                         </item>
                     </content>
                 </control>
