@@ -968,10 +968,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "자동 로그인"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "네비게이션 화살표 표시"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "사용자 오버레이 지정"

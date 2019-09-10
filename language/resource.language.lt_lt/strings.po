@@ -1124,10 +1124,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Automatinis prisijungimas"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Rodyti navigacijos rodyklę"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Nustatyti savą perdangą"

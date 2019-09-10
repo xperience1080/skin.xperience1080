@@ -1124,10 +1124,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Iniciar sesión automáticamente"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Mostrar indicadores de navegación"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Establecer claridad en fondo"

@@ -932,10 +932,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Automatska prijava"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Prikazuj strelicu navigacije"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Postavi vlastiti overlay"

@@ -1124,10 +1124,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Connexion automatique"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Afficher la flèche de navigation"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Définir une surcouche personnalisée"

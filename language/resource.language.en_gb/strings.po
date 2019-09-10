@@ -1226,7 +1226,11 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr ""
 
-# empty string with id 31994
+# DialogAddonInfo.xml
+msgctxt "#31994"
+msgid "ID:"
+msgstr "ID:"
+
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr ""

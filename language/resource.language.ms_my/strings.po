@@ -948,10 +948,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Daftar Masuk Auto"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Papar Anak Panah Navigasi"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Tetapkan Tindihan Atas Suai"

@@ -964,10 +964,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Autologin"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Visa navigations pil "
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Ställ in anpassat overlay"

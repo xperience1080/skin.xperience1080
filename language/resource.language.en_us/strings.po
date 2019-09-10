@@ -1108,9 +1108,10 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Auto Login"
 
+# DialogAddonInfo.xml
 msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Display Navigation Arrow"
+msgid "ID:"
+msgstr "ID:"
 
 msgctxt "#31995"
 msgid "Set Custom Overlay"

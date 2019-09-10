@@ -972,10 +972,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Login Automático"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Exibir setas de navegação na tela inicial"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Selecionar plano de fundo personalizado"

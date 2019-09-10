@@ -940,10 +940,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Auto Login"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Display Navigation Arrow"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Set Custom Overlay"

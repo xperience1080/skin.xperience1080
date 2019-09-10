@@ -952,10 +952,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Auto Login"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Mostra cursore di navigazione"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Imposta sfumatura personalizzata"

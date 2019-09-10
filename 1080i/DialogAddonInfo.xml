@@ -337,10 +337,33 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <!-- Version -->
+                        <!-- App ID -->
                         <width>1240</width>
                         <height>50</height>
                         <posy>100</posy>
+                        <orientation>horizontal</orientation>
+                        <control type="label">
+                            <width min="140" max="200">auto</width>
+                            <font>Font-Condensed-S34</font>
+                            <align>left</align>
+                            <label>[B]$LOCALIZE[31994][/B]</label>
+                            <textcolor>aawhite</textcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="label">
+                            <width>1100</width>
+                            <font>Font-Condensed-S34</font>
+                            <align>left</align>
+                            <label fallback="416">$INFO[ListItem.Property(Addon.ID)]</label>
+                            <textcolor>aawhite</textcolor>
+                            <scroll>false</scroll>
+                        </control>
+                    </control>
+                    <control type="grouplist">
+                        <!-- Version -->
+                        <width>1240</width>
+                        <height>50</height>
+                        <posy>150</posy>
                         <orientation>horizontal</orientation>
                         <control type="label">
                             <width min="140" max="200">auto</width>
@@ -363,7 +386,7 @@
                         <!-- Summary -->
                         <width>1240</width>
                         <height>50</height>
-                        <posy>150</posy>
+                        <posy>200</posy>
                         <orientation>horizontal</orientation>
                         <control type="label">
                             <width min="140" max="200">auto</width>
@@ -386,7 +409,7 @@
                         <!-- Description -->
                         <width>1240</width>
                         <height>50</height>
-                        <posy>225</posy>
+                        <posy>260</posy>
                         <control type="label">
                             <posy>0</posy>
                             <width>1240</width>
@@ -399,7 +422,7 @@
                         <control type="textbox" id="400">
                             <description>Description</description>
                             <posx>0</posx>
-                            <posy>50</posy>
+                            <posy>40</posy>
                             <width>1240</width>
                             <include condition="String.IsEmpty(ListItem.AddonDisclaimer) + String.IsEmpty(ListItem.AddonBroken)">AddonDescHeight_1</include>
                             <include condition="[!String.IsEmpty(ListItem.AddonDisclaimer) + String.IsEmpty(ListItem.AddonBroken)] | String.IsEmpty(ListItem.AddonDisclaimer) + !String.IsEmpty(ListItem.AddonBroken)">AddonDescHeight_2</include>

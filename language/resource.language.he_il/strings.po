@@ -952,10 +952,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "כניסה אוטומטית"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "הצג חץ ניווט"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "בחירת בשכבת ציפוי מותאמת אישית"
