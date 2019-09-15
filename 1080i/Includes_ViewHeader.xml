@@ -873,15 +873,6 @@
                         <scroll>false</scroll>
                         <align>left</align>
                     </control>
-                    <control type="label">
-                        <width min="0" max="500">auto</width>
-                        <height>120</height>
-                        <label>$INFO[Control.GetLabel(30),: ,]</label>
-                        <font>Font-Condensed-S36-B</font>
-                        <textcolor>A0FFFFFF</textcolor>
-                        <scroll>false</scroll>
-                        <align>left</align>
-                    </control>
                 </control>
                 <include>ViewHeaderItemPageInfo</include>
             </control>

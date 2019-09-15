@@ -43,20 +43,78 @@
                             <texture>windows/home/item-shadow.png</texture>
                         </control>
                         <include content="PVRLoadingInfo" />
+                        <control type="fixedlist" id="11">
+                            <posy>63</posy>
+                            <posx>602</posx>
+                            <onleft>noop</onleft>
+                            <onright>noop</onright>
+                            <onup>10</onup>
+                            <ondown>10</ondown>
+                            <orientation>horizontal</orientation>
+                            <scrolltime>200</scrolltime>
+                            <itemlayout height="75" width="368">
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>0</top>
+                                    <width>366</width>
+                                    <height>74</height>
+                                    <texture border="12">windows/pvr/epg-back.png</texture>
+                                </control>
+                                <control type="label">
+                                    <left>5</left>
+                                    <width>358</width>
+                                    <height>73</height>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[ListItem.Label] </label>
+                                    <textcolor>lightgrey</textcolor>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="78" width="368">
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>0</top>
+                                    <width>366</width>
+                                    <height>74</height>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture border="12">windows/pvr/epg-back.png</texture> <!-- todo what do we set this too? -->
+                                </control>
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>-2</top>
+                                    <width>366</width>
+                                    <height>78</height>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture border="12">windows/pvr/epg-fo.png</texture>
+                                    <visible>Control.HasFocus(11)</visible>
+                                </control>
+                                <control type="label">
+                                    <left>5</left>
+                                    <width>358</width>
+                                    <height>76</height>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <scroll>true</scroll>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                            </focusedlayout>
+                        </control>
                         <control type="group">
                             <visible>![Integer.IsEqual(Container.NumItems,0) + Window.IsVisible(extendedprogressdialog)]</visible>
+                            <!-- background img channel list -->
                             <control type="image">
                                 <posx>98</posx>
                                 <posy>215</posy>
                                 <width>504</width>
-                                <height>564</height>
+                                <height>555</height>
                                 <texture border="4">views/list/panel/panel.png</texture>
                             </control>
+                            <!-- background img guide -->
                             <control type="image">
                                 <posx>602</posx>
                                 <posy>215</posy>
                                 <width>1818</width>
-                                <height>564</height>
+                                <height>555</height>
                                 <texture border="4">views/list/panel/panel.png</texture>
                             </control>
                             <control type="epggrid" id="10">
@@ -65,7 +123,7 @@
                                 <posx>100</posx>
                                 <posy>178</posy>
                                 <width>1818</width>
-                                <height>600</height>
+                                <height>591</height>
                                 <pagecontrol>10</pagecontrol>
                                 <scrolltime>250</scrolltime>
                                 <timeblocks>40</timeblocks>
@@ -73,8 +131,9 @@
                                 <rulerunit>6</rulerunit>
                                 <onleft>9111</onleft>
                                 <onright>9111</onright>
-                                <onup>10</onup>
-                                <ondown>10</ondown>
+                                <onup>11</onup>
+                                <ondown>11</ondown>
+                                <!-- date/time bar at top -->
                                 <rulerlayout height="40" width="40">
                                     <control type="label" id="2">
                                         <posx>10</posx>
@@ -90,19 +149,20 @@
                                         <label>$INFO[ListItem.Label]</label>
                                     </control>
                                 </rulerlayout>
-                                <channellayout height="80" width="505">
+                                <!-- channel list left of guide for selected channel -->
+                                <channellayout height="55" width="505">
                                     <control type="image">
                                         <posx>0</posx>
                                         <posy>0</posy>
                                         <width>500</width>
-                                        <height>81</height>
+                                        <height>56</height>
                                         <texture border="90,3,90,3">views/list/other/separator.png</texture>
                                     </control>
                                     <control type="image">
                                         <posx>0</posx>
                                         <posy>1</posy>
                                         <width>500</width>
-                                        <height>79</height>
+                                        <height>54</height>
                                         <texture>views/other/selected.png</texture>
                                         <colordiffuse>07FFFFFF</colordiffuse>
                                         <aspectratio aligny="top">center</aspectratio>
@@ -112,7 +172,7 @@
                                         <posx>20</posx>
                                         <posy>5</posy>
                                         <width>70</width>
-                                        <height>70</height>
+                                        <height>45</height>
                                         <texture background="true" fallback="windows/pvr/defaultchannel.png">$VAR[PvrListIcon]</texture>
                                         <aspectratio>keep</aspectratio>
                                     </control>
@@ -121,7 +181,7 @@
                                         <posx>105</posx>
                                         <posy>0</posy>
                                         <width>305</width>
-                                        <height>80</height>
+                                        <height>55</height>
                                         <font>Font-Condensed-S34-B</font>
                                         <align>left</align>
                                         <label>$INFO[ListItem.ChannelName]</label>
@@ -134,7 +194,7 @@
                                         <posx>405</posx>
                                         <posy>0</posy>
                                         <width>75</width>
-                                        <height>80</height>
+                                        <height>55</height>
                                         <font>Font-Condensed-S49</font>
                                         <align>right</align>
                                         <label>$INFO[ListItem.ChannelNumberLabel]</label>
@@ -143,19 +203,20 @@
                                         <scroll>false</scroll>
                                     </control>
                                 </channellayout>
-                                <focusedchannellayout height="80" width="505">
+                                <!-- channel list left of guide for selected channel (focused) -->
+                                <focusedchannellayout height="55" width="505">
                                     <control type="image">
                                         <posx>0</posx>
                                         <posy>0</posy>
                                         <width>500</width>
-                                        <height>81</height>
+                                        <height>56</height>
                                         <texture border="90,3,90,3">views/list/other/separator.png</texture>
                                     </control>
                                     <control type="image">
                                         <posx>0</posx>
                                         <posy>1</posy>
                                         <width>500</width>
-                                        <height>79</height>
+                                        <height>54</height>
                                         <texture>views/other/selected.png</texture>
                                         <colordiffuse>07FFFFFF</colordiffuse>
                                         <aspectratio aligny="top">center</aspectratio>
@@ -165,7 +226,7 @@
                                         <posx>0</posx>
                                         <posy>0</posy>
                                         <width>500</width>
-                                        <height>79</height>
+                                        <height>54</height>
                                         <texture border="150,1,150,1">views/other/focus.png</texture>
                                         <include>visiblehidefadeinfo</include>
                                         <visible>Control.HasFocus(10)</visible>
@@ -174,7 +235,7 @@
                                         <posx>20</posx>
                                         <posy>5</posy>
                                         <width>70</width>
-                                        <height>70</height>
+                                        <height>45</height>
                                         <texture background="true" fallback="windows/pvr/defaultchannel.png">$VAR[PvrListIcon]</texture>
                                         <aspectratio>keep</aspectratio>
                                     </control>
@@ -183,7 +244,7 @@
                                         <posx>105</posx>
                                         <posy>0</posy>
                                         <width>305</width>
-                                        <height>80</height>
+                                        <height>55</height>
                                         <font>Font-Condensed-S34-B</font>
                                         <align>left</align>
                                         <label>$INFO[ListItem.ChannelName]</label>
@@ -197,7 +258,7 @@
                                         <posx>405</posx>
                                         <posy>0</posy>
                                         <width>75</width>
-                                        <height>80</height>
+                                        <height>55</height>
                                         <font>Font-Condensed-S49</font>
                                         <align>right</align>
                                         <label>$INFO[ListItem.ChannelNumberLabel]</label>
@@ -207,12 +268,13 @@
                                         <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(10) + ![ListItem.IsSelected | ListItem.IsPlaying]">Conditional</animation>
                                     </control>
                                 </focusedchannellayout>
-                                <itemlayout height="80" width="100">
+                                <!-- guide entries -->
+                                <itemlayout height="55" width="100">
                                     <control type="image" id="2">
                                         <posx>2</posx>
                                         <posy>0</posy>
                                         <width>98</width>
-                                        <height>80</height>
+                                        <height>55</height>
                                         <aspectratio>stretch</aspectratio>
                                         <texture border="12">windows/pvr/epg-back.png</texture>
                                         <visible>!Skin.HasSetting(EPGGenreColors.Enabled)</visible>
@@ -221,16 +283,17 @@
                                         <posx>2</posx>
                                         <posy>0</posy>
                                         <width>98</width>
-                                        <height>80</height>
+                                        <height>55</height>
                                         <aspectratio>stretch</aspectratio>
                                         <texture border="12" fallback="windows/pvr/genres/0.png">$INFO[ListItem.Property(GenreType),windows/pvr/genres/,.png]</texture>
                                         <visible>Skin.HasSetting(EPGGenreColors.Enabled)</visible>
                                     </control>
+                                    <!-- guide entry when recording/timer not set -->
                                     <control type="label" id="1">
                                         <posx>22</posx>
                                         <posy>0</posy>
                                         <width>56</width>
-                                        <height>78</height>
+                                        <height>53</height>
                                         <font>Font-Condensed-S34</font>
                                         <aligny>center</aligny>
                                         <textcolor>77white</textcolor>
@@ -241,11 +304,12 @@
                                         <scroll>false</scroll>
                                         <visible>!ListItem.IsRecording + !ListItem.HasTimer</visible>
                                     </control>
+                                    <!-- guide entry when recording/timer set -->
                                     <control type="label" id="1">
                                         <posx>53</posx>
                                         <posy>0</posy>
                                         <width>0</width>
-                                        <height>78</height>
+                                        <height>53</height>
                                         <font>Font-Condensed-S34</font>
                                         <aligny>center</aligny>
                                         <textcolor>77white</textcolor>
@@ -263,14 +327,14 @@
                                             <posx>2</posx>
                                             <posy>0</posy>
                                             <width>66</width>
-                                            <height>80</height>
+                                            <height>55</height>
                                             <texture>windows/pvr/epg-recording.png</texture>
                                         </control>
                                         <control type="image">
                                             <posx>2</posx>
                                             <posy>0</posy>
                                             <width>66</width>
-                                            <height>80</height>
+                                            <height>55</height>
                                             <texture>windows/pvr/epg-recording-pulse.png</texture>
                                             <animation effect="fade" start="75" end="100" time="1500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
                                         </control>
@@ -279,26 +343,36 @@
                                         <posx>2</posx>
                                         <posy>0</posy>
                                         <width>66</width>
-                                        <height>80</height>
+                                        <height>55</height>
                                         <texture>windows/pvr/epg-timer.png</texture>
                                         <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                                     </control>
                                 </itemlayout>
-                                <focusedlayout height="80" width="100">
+                                <!-- guide entries (focused) -->
+                                <focusedlayout height="55" width="100">
                                     <control type="image" id="2">
-                                        <posx>-3</posx>
-                                        <posy>-5</posy>
-                                        <width>108</width>
-                                        <height>90</height>
+                                        <posx>2</posx>
+                                        <posy>0</posy>
+                                        <width>98</width>
+                                        <height>55</height>
                                         <aspectratio>stretch</aspectratio>
-                                        <texture border="12">windows/pvr/epg-fo.png</texture>
-                                        <visible>!Skin.HasSetting(EPGGenreColors.Enabled)</visible>
+                                        <texture border="12">windows/pvr/epg-back.png</texture>
+                                        <visible>!Skin.HasSetting(EPGGenreColors.Enabled) + !Control.HasFocus(10)</visible>
                                     </control>
                                     <control type="image" id="2">
                                         <posx>-3</posx>
                                         <posy>-5</posy>
                                         <width>108</width>
-                                        <height>90</height>
+                                        <height>65</height>
+                                        <aspectratio>stretch</aspectratio>
+                                        <texture border="12">windows/pvr/epg-fo.png</texture>
+                                        <visible>!Skin.HasSetting(EPGGenreColors.Enabled) + Control.HasFocus(10)</visible>
+                                    </control>
+                                    <control type="image" id="2">
+                                        <posx>-3</posx>
+                                        <posy>-5</posy>
+                                        <width>108</width>
+                                        <height>65</height>
                                         <aspectratio>stretch</aspectratio>
                                         <texture border="12" fallback="windows/pvr/genres/0-fo.png">$INFO[ListItem.Property(GenreType),windows/pvr/genres/,-fo.png]</texture>
                                         <visible>Skin.HasSetting(EPGGenreColors.Enabled)</visible>
@@ -321,7 +395,7 @@
                                         <posx>22</posx>
                                         <posy>0</posy>
                                         <width>56</width>
-                                        <height>78</height>
+                                        <height>53</height>
                                         <font>Font-Condensed-S34</font>
                                         <aligny>center</aligny>
                                         <textcolor>eewhite</textcolor>
@@ -336,7 +410,7 @@
                                         <posx>53</posx>
                                         <posy>0</posy>
                                         <width>0</width>
-                                        <height>78</height>
+                                        <height>53</height>
                                         <font>Font-Condensed-S34</font>
                                         <aligny>center</aligny>
                                         <textcolor>eewhite</textcolor>
@@ -354,13 +428,13 @@
                                             <posx>2</posx>
                                             <posy>0</posy>
                                             <width>66</width>
-                                            <height>80</height>
+                                            <height>55</height>
                                             <texture>windows/pvr/epg-recording.png</texture>
                                         </control>
                                         <control type="image">
                                             <posx>2</posx>
                                             <posy>0</posy>
-                                            <width>66</width>
+                                            <width>55</width>
                                             <height>80</height>
                                             <texture>windows/pvr/epg-recording-pulse.png</texture>
                                             <animation effect="fade" start="65" end="100" time="750" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
@@ -370,7 +444,7 @@
                                         <posx>2</posx>
                                         <posy>0</posy>
                                         <width>66</width>
-                                        <height>80</height>
+                                        <height>55</height>
                                         <texture>windows/pvr/epg-timer.png</texture>
                                         <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                                     </control>
