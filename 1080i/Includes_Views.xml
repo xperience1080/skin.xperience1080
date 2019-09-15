@@ -13,7 +13,6 @@
     <include file="ViewtypesPictures.xml"/>
     <include file="ViewtypesPrograms.xml"/>
     <include file="ViewtypesAddons.xml"/>
-    <include file="ViewtypesPVRGuide.xml"/>
     <include name="VideoViews">
         <include>Viewtype-List</include>
         <include>Viewtype-InfoList</include>
