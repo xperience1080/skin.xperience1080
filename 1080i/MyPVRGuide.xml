@@ -46,12 +46,13 @@
                         <control type="fixedlist" id="11">
                             <posy>63</posy>
                             <posx>602</posx>
-                            <onleft>noop</onleft>
-                            <onright>noop</onright>
+                            <onleft>11</onleft>
+                            <onright>11</onright>
                             <onup>10</onup>
                             <ondown>10</ondown>
                             <orientation>horizontal</orientation>
                             <scrolltime>200</scrolltime>
+                            <visible>!Integer.IsEqual(Container.NumItems,0)</visible>
                             <itemlayout height="75" width="368">
                                 <control type="image">
                                     <left>1</left>
