@@ -187,13 +187,6 @@
                     <visible>Container(30).HasFocus(29)</visible>
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
-                    <control type="radiobutton" id="1001">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(PauseOsd)</selected>
-                        <onclick>Skin.ToggleSetting(PauseOsd)</onclick>
-                        <label>$LOCALIZE[31091]</label>
-                    </control>
                     <control type="radiobutton" id="1000">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -207,6 +200,21 @@
                         <selected>!Skin.HasSetting(DisableOSDSeeking)</selected>
                         <onclick>Skin.ToggleSetting(DisableOSDSeeking)</onclick>
                         <label>$LOCALIZE[31093]</label>
+                    </control>
+                    <control type="radiobutton" id="998">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>!Skin.HasSetting(PauseOsd)</selected>
+                        <onclick>Skin.ToggleSetting(PauseOsd)</onclick>
+                        <label>$LOCALIZE[31094]</label>
+                    </control>                    
+                    <control type="radiobutton" id="997">
+                        <visible>Skin.HasSetting(PauseOsd)</visible>
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(PauseOSDDelay)</selected>
+                        <onclick>Skin.ToggleSetting(PauseOSDDelay)</onclick>
+                        <label>$LOCALIZE[31095]</label>
                     </control>                    
                 </control>                
 
