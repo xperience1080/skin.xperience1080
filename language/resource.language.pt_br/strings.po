@@ -96,6 +96,14 @@ msgctxt "#31101"
 msgid "Enable Kiosk Mode"
 msgstr "Modo quiosque"
 
+msgctxt "#31091"
+msgid "Disable Pause OSD"
+msgstr "Desativar o OSD de Pausa"
+
+msgctxt "#31092"
+msgid "Enable Season/EP on Pause OSD"
+msgstr "Ativar Season/EP no OSD de Pausa"
+
 msgctxt "#31102"
 msgid "Display Now Playing Video in Background"
 msgstr "Mostrar vídeo em reprodução no fundo"
