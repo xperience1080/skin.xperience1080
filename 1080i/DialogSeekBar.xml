@@ -142,6 +142,22 @@
                         <align>left</align>
                     </control>
                     <control type="label">
+                        <visible>VideoPlayer.Content(episodes)</visible>
+                        <description>OnPause-Season/EP</description>
+                        <posx>200</posx>
+                        <posy>1027</posy>
+                        <width>360</width>
+                        <height>25</height>
+                        <label>S$INFO[VideoPlayer.Season].EP$INFO[VideoPlayer.Episode]</label>
+                        <scroll>false</scroll>
+                        <textcolor>aawhite</textcolor>
+                        <font>Font-Condensed-S34</font>
+                        <align>right</align>
+                        <visible>Player.Paused + ![Player.Seeking | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsVisible(fullscreeninfo)]</visible>
+                        <animation easing="inout" effect="fade" end="100" start="0" time="400" tween="sine">Visible</animation>
+                        <animation easing="inout" effect="fade" end="0" start="100" time="400" tween="sine">Hidden</animation>
+                    </control>                    
+                    <control type="label">
                         <description>Pause</description>
                         <posx>330</posx>
                         <posy>1027</posy>
