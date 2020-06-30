@@ -84,6 +84,10 @@ msgctxt "#31037"
 msgid "Photos"
 msgstr "Fotos"
 
+msgctxt "#31090"
+msgid "Video OSD Settings"
+msgstr "Configurações do OSD de vídeo"
+
 msgctxt "#31100"
 msgid "General"
 msgstr "Geral"
