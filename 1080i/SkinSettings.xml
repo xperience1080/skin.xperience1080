@@ -106,6 +106,10 @@
                         </control>
                     </focusedlayout>
                     <content>
+                        <item id="29">
+                            <description>Video OSD Settings</description>
+                            <label>$LOCALIZE[31090]</label>
+                        </item>                        
                         <item id="31">
                             <description>General Settings</description>
                             <label>$LOCALIZE[31100]</label>
