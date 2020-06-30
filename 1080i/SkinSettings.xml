@@ -180,6 +180,21 @@
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
                 </control>
+                <!-- ================ -->
+                <!-- Video OSD Settings -->
+                <!-- ================ -->
+                <control type="grouplist" id="5">
+                    <visible>Container(30).HasFocus(29)</visible>
+                    <onleft>30</onleft>
+                    <include>SettingsCategoryGrouplistVars</include>
+                    <control type="radiobutton" id="1001">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>!Skin.HasSetting(PauseOsd)</selected>
+                        <onclick>Skin.ToggleSetting(PauseOsd)</onclick>
+                        <label>$LOCALIZE[31091]</label>
+                    </control>
+                </control>                
 
                 <!-- ================ -->
                 <!-- General Settings -->
