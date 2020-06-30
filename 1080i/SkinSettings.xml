@@ -201,6 +201,13 @@
                         <onclick>Skin.ToggleSetting(DisableSeasonEp)</onclick>
                         <label>$LOCALIZE[31092]</label>
                     </control>
+                    <control type="radiobutton" id="999">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>!Skin.HasSetting(DisableOSDSeeking)</selected>
+                        <onclick>Skin.ToggleSetting(DisableOSDSeeking)</onclick>
+                        <label>$LOCALIZE[31093]</label>
+                    </control>                    
                 </control>                
 
 

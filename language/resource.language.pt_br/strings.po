@@ -104,6 +104,10 @@ msgctxt "#31092"
 msgid "Enable Season/EP on Pause OSD"
 msgstr "Ativar Season/EP no OSD de Pausa"
 
+msgctxt "#31093"
+msgid "Disable OSD on Seeking"
+msgstr "Desativar OSD enquanto Procura"
+
 msgctxt "#31102"
 msgid "Display Now Playing Video in Background"
 msgstr "Mostrar vídeo em reprodução no fundo"
