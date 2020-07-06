@@ -187,13 +187,6 @@
                     <visible>Container(30).HasFocus(29)</visible>
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
-                    <control type="radiobutton" id="1000">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(DisableSeasonEp)</selected>
-                        <onclick>Skin.ToggleSetting(DisableSeasonEp)</onclick>
-                        <label>$LOCALIZE[31092]</label>
-                    </control>
                     <control type="radiobutton" id="999">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -690,6 +683,13 @@
                         <onclick>Skin.ToggleSetting(OSD.HideChapterInfo)</onclick>
                         <label>$LOCALIZE[31031]</label>
                     </control>
+                    <control type="radiobutton" id="1000">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(OSD.HideEpSeasonInfo)</selected>
+                        <onclick>Skin.ToggleSetting(OSD.HideEpSeasonInfo)</onclick>
+                        <label>$LOCALIZE[31092]</label>
+                    </control>                   
                     <control type="radiobutton" id="8007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
