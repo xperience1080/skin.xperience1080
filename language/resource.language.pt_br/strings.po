@@ -1003,3 +1003,58 @@ msgstr "Selecionar plano de fundo personalizado"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Ocultar data"
+
+________________________________________________
+
+
+msgctxt "#31996"
+msgid "Hide Date"
+msgstr "Ocultar data"
+
+msgctxt "#31031"
+msgid "Hide Chapter Information"
+msgstr "Esconder Informação de Capítulos"
+
+msgctxt "#31030"
+msgid "Hide Clock & Weather"
+msgstr "Esconder Relógio e Clima"
+
+msgctxt "#31045"
+msgid "Display Volume in dB"
+msgstr "Mostar Volume em dB"
+
+msgctxt "#31131"
+msgid "Manage Home Categories"
+msgstr "Gerenciar Categorias da Tela Inicial"
+
+msgctxt "#31202"
+msgid "Play Trailer on opening Movie Information"
+msgstr "Reproduzir Trailer ao Abrir Informações do Filme"
+
+msgctxt "#31460"
+msgid "Quick Navigation"
+msgstr "Navegação Rápida"
+
+msgctxt "#31272"
+msgid "Replace Pictures with Custom Menu Item in Quick Navigation"
+msgstr "Substituir Imagens por Item de Menu Personalizado na Navegação Rápida"
+
+msgctxt "#31273"
+msgid "Replace Trailer with Custom Menu Item in Quick Navigation"
+msgstr "Substituir Trailer por Item de Menu Personalizado na Navegação Rápida"
+
+msgctxt "#31274"
+msgid "Replace New Movies with Custom Menu Item in Quick Navigation"
+msgstr "Substituir Novos Filmes por Item de Menu Personalizado na Navegação Rápida"
+
+msgctxt "#31275"
+msgid "Replace New TV Shows with Custom Menu Item in Quick Navigation"
+msgstr "Substituir Novos Programas de TV Por Item de Menu Personalizado na Navegação Rápida"
+
+msgctxt "#31024"
+msgid "Reset Skin Settings"
+msgstr "Redefinir Configurações de Tema"
+
+msgctxt "#31025"
+msgid "WARNING: This will reset ALL skin settings"
+msgstr "AVISO: Isso Redefinirá TODAS as Configurações de Capa"
