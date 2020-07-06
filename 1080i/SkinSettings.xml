@@ -106,10 +106,6 @@
                         </control>
                     </focusedlayout>
                     <content>
-                        <item id="29">
-                            <description>Video OSD Settings</description>
-                            <label>$LOCALIZE[31090]</label>
-                        </item>                        
                         <item id="31">
                             <description>General Settings</description>
                             <label>$LOCALIZE[31100]</label>
@@ -180,37 +176,6 @@
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
                 </control>
-                <!-- ================ -->
-                <!-- Video OSD Settings -->
-                <!-- ================ -->
-                <control type="grouplist" id="5">
-                    <visible>Container(30).HasFocus(29)</visible>
-                    <onleft>30</onleft>
-                    <include>SettingsCategoryGrouplistVars</include>
-                    <control type="radiobutton" id="999">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(DisableOSDSeeking)</selected>
-                        <onclick>Skin.ToggleSetting(DisableOSDSeeking)</onclick>
-                        <label>$LOCALIZE[31093]</label>
-                    </control>
-                    <control type="radiobutton" id="998">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(PauseOsd)</selected>
-                        <onclick>Skin.ToggleSetting(PauseOsd)</onclick>
-                        <label>$LOCALIZE[31094]</label>
-                    </control>                    
-                    <control type="radiobutton" id="997">
-                        <visible>Skin.HasSetting(PauseOsd)</visible>
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(PauseOSDDelay)</selected>
-                        <onclick>Skin.ToggleSetting(PauseOSDDelay)</onclick>
-                        <label>$LOCALIZE[31095]</label>
-                    </control>                    
-                </control>                
-
 
                 <!-- ================ -->
                 <!-- General Settings -->
@@ -689,7 +654,29 @@
                         <selected>Skin.HasSetting(OSD.HideEpSeasonInfo)</selected>
                         <onclick>Skin.ToggleSetting(OSD.HideEpSeasonInfo)</onclick>
                         <label>$LOCALIZE[31092]</label>
-                    </control>                   
+                    </control>
+                    <control type="radiobutton" id="999">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>!Skin.HasSetting(DisableOSDSeeking)</selected>
+                        <onclick>Skin.ToggleSetting(DisableOSDSeeking)</onclick>
+                        <label>$LOCALIZE[31093]</label>
+                    </control>
+                    <control type="radiobutton" id="998">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>!Skin.HasSetting(PauseOsd)</selected>
+                        <onclick>Skin.ToggleSetting(PauseOsd)</onclick>
+                        <label>$LOCALIZE[31094]</label>
+                    </control>                    
+                    <control type="radiobutton" id="997">
+                        <visible>Skin.HasSetting(PauseOsd)</visible>
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(PauseOSDDelay)</selected>
+                        <onclick>Skin.ToggleSetting(PauseOSDDelay)</onclick>
+                        <label>$LOCALIZE[31095]</label>
+                    </control>                    
                     <control type="radiobutton" id="8007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
