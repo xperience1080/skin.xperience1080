@@ -97,8 +97,8 @@ msgid "Enable Kiosk Mode"
 msgstr "Modo quiosque"
 
 msgctxt "#31092"
-msgid "Enable Season/EP on Pause OSD"
-msgstr "Ativar Season/EP no OSD de Pausa"
+msgid "Disable Season/EP on Pause OSD"
+msgstr "Desativar Season/EP no OSD de Pausa"
 
 msgctxt "#31093"
 msgid "Disable OSD on Seeking"
