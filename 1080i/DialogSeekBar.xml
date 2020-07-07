@@ -5,6 +5,7 @@
         <include>FadeBackgroundPVRInfo</include>
         <include>OSDWeatherClock</include>
         <include>OSDChapterInfo</include>
+        <include>OSDSeasonInfo</include>
         <control type="group">
             <animation type="WindowOpen">
                 <effect easing="inout" end="100" start="0" time="200" tween="sine" type="fade"/>
