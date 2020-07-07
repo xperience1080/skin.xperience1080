@@ -29,17 +29,22 @@
                 <visible>!Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)</visible>
                 <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(gameosd)]" easing="inout" effect="slide" end="0,-275" start="0,0" time="300" tween="cubic">Conditional</animation>
                 <animation condition="[Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]" easing="inout" effect="slide" end="0,-70" start="0,0" time="300" tween="cubic">Conditional</animation>
+                <!-- Progress Bar Background -->
                 <control type="image">
+                    <visible>Control.IsVisible(999)</visible>
                     <posx>0</posx>
                     <posy>600</posy>
                     <width>1920</width>
                     <height>740</height>
                     <texture border="1,401,1,45">osd/fullscreen/osd-back-info.png</texture>
                 </control>
-                <control type="group">
+                <!--  Progress Bar Background  -->
+                <!-- Progress Bar -->
+                <control type="group" id="999">
                     <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(gameosd)]" easing="inout" effect="slide" end="0,213" start="0,0" time="300" tween="cubic">Conditional</animation>
                     <animation condition="Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)" easing="inout" effect="slide" end="0,70" start="0,0" time="300" tween="cubic">Conditional</animation>
-                    <visible>String.IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)</visible>
+                    <visible>Skin.HasSetting(PauseOsd) + String.IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)</visible>
+
                     <include>visiblehidefadeinfo</include>
                     <control type="group">
                         <posx>358</posx>
@@ -173,6 +178,7 @@
                         <animation effect="fade" end="0" start="100" time="0">Hidden</animation>
                     </control>
                 </control>
+                <!-- Progress Bar -->
                 <control type="group">
                     <visible>Window.IsActive(visualisation) + [Player.ShowInfo | Player.Paused] + !Window.IsActive(musicosd)</visible>
                     <animation reversible="false" type="Visible">
@@ -363,6 +369,7 @@
                     </animation>
                     <control type="group">
                         <posy>117</posy>
+                        
                         <control type="group">
                             <visible>String.IsEmpty(Window.Property(ExtendPlot))</visible>
                             <include>visiblehidefadeinfo</include>
@@ -475,6 +482,7 @@
                                 </control>
                             </control>
                         </control>
+                        
                         <control type="group">
                             <posy>825</posy>
                             <visible>VideoPlayer.Content(Movies)</visible>
@@ -545,6 +553,7 @@
                                 </control>
                             </control>
                         </control>
+                        
                         <control type="group">
                             <posy>825</posy>
                             <visible>VideoPlayer.Content(Episodes)</visible>
@@ -600,6 +609,7 @@
                                 </control>
                             </control>
                         </control>
+                        
                         <control type="group">
                             <posy>825</posy>
                             <visible>VideoPlayer.Content(LiveTV)</visible>
@@ -652,6 +662,7 @@
                                 </control>
                             </control>
                         </control>
+
                         <control type="group">
                             <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
                             <posy>825</posy>
@@ -748,6 +759,7 @@
                                 </control>
                             </control>
                         </control>
+
                     </control>
                 </control>
             </control>
