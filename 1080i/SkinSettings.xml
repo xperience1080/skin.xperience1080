@@ -651,8 +651,8 @@
                     <control type="radiobutton" id="1000">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(OSD.HideEpSeasonInfo)</selected>
-                        <onclick>Skin.ToggleSetting(OSD.HideEpSeasonInfo)</onclick>
+                        <selected>Skin.HasSetting(OSD.HideSeasonInfo)</selected>
+                        <onclick>Skin.ToggleSetting(OSD.HideSeasonInfo)</onclick>
                         <label>$LOCALIZE[31092]</label>
                     </control>
                     <control type="radiobutton" id="999">
