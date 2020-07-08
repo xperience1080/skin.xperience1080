@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
     <include name="OSDVisualisation">
         <control type="visualisation" id="2">
             <description>visualisation</description>
@@ -10,7 +9,6 @@
             <height>1080</height>
         </control>
     </include>
-
     <include name="OSDFwRwLabel">
         <posx>1742</posx>
         <posy>79</posy>
@@ -21,19 +19,15 @@
         <align>right</align>
         <scroll>false</scroll>
     </include>
-
     <include name="OSDDefaultControlPlay">
         <defaultcontrol>3</defaultcontrol>
     </include>
-
     <include name="OSDDefaultControlSubtitles">
         <defaultcontrol>7</defaultcontrol>
     </include>
-
     <include name="OSDDefaultControlLiveTV">
         <defaultcontrol>1</defaultcontrol>
     </include>
-
     <variable name="GameOSDButtonLabel">
         <!-- Video filter  -->
         <value condition="Control.HasFocus(1)">$LOCALIZE[35225]</value>
@@ -52,7 +46,6 @@
         <!-- Input setting -->
         <value condition="Control.HasFocus(7)">$LOCALIZE[35223]</value>
     </variable>
-
     <variable name="MusicOSDButtonLabel">
         <!-- Audio Settings -->
         <value condition="Control.HasFocus(11)">$LOCALIZE[13396]</value>
@@ -89,7 +82,6 @@
         <!-- Visualisation settings -->
         <value condition="Control.HasFocus(14)">$LOCALIZE[31122]</value>
     </variable>
-
     <variable name="VideoOSDButtonLabel">
         <!-- Audio Settings -->
         <value condition="Control.HasFocus(11)">$LOCALIZE[13396]</value>
@@ -130,33 +122,27 @@
         <!-- Bookmarks -->
         <value condition="Control.HasFocus(9) + !VideoPlayer.Content(LiveTV)">$LOCALIZE[298]</value>
     </variable>
-
     <variable name="OSDPlot">
         <value condition="!String.IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextPlot]</value>
         <value>$INFO[VideoPlayer.Plot]</value>
     </variable>
-
     <variable name="OSDTitle">
         <value condition="!String.IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextTitle]</value>
         <value>$INFO[VideoPlayer.Title]</value>
     </variable>
-
     <variable name="OSDNextTitle">
         <value condition="!String.IsEmpty(Window(seekbar).Property(ShowNext))">$INFO[VideoPlayer.NextStartTime,$LOCALIZE[19080] ,]$INFO[VideoPlayer.NextEndTime, • $LOCALIZE[19081] ,]</value>
         <value>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ,]$INFO[VideoPlayer.NextStartTime, (,)]</value>
     </variable>
-
     <variable name="OSDMusicFanart">
         <value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
         <value condition="String.IsEmpty(Player.Art(fanart)) + !String.IsEmpty(Skin.String(GlobalBackdropSingle))">$INFO[Skin.String(GlobalBackdropSingle)]</value>
         <value>special://skin/extras/backgrounds/01.jpg</value>
     </variable>
-
     <variable name="Player.FinishTime">
         <value condition="VideoPlayer.HasEpg">$INFO[PVR.EpgEventFinishTime(hh:mm)]</value>
         <value>$INFO[Player.FinishTime(hh:mm)]</value>
     </variable>
-
     <include name="OSDEpSeasonInfo">
         <control type="group">
             <visible>!Skin.HasSetting(OSD.HideEpSeasonInfo)</visible>
@@ -224,7 +210,6 @@
             </control>            
         </control>
     </include>
-
     <include name="OSDChapterInfo">
         <control type="group">
             <visible>!Skin.HasSetting(OSD.HideChapterInfo)</visible>
@@ -245,7 +230,6 @@
             </control>
         </control>
     </include>
-
     <include name="OSDSeasonInfo">
         <control type="group">
             <visible>!Skin.HasSetting(OSD.HideSeasonInfo)</visible>
@@ -313,7 +297,6 @@
             </control>            
         </control>
     </include>
-
     <include name="OSDWeatherClockPVR">
         <control type="group">
             <visible>!Window.IsActive(videoosd) + !Window.IsActive(musicosd)</visible>
@@ -344,10 +327,8 @@
             </control>
         </control>
     </include>
-
     <include name="OSDWeatherClock">
         <control type="group">
-            <!-- <visible>!Skin.HasSetting(OSD.HideWeatherClock)</visible> -->
             <animation effect="slide" end="-92" time="300" tween="sine" easing="inout" condition="Player.Muted | String.Contains(Player.Volume,-60.0)">Conditional</animation>
             <animation effect="slide" end="-204" time="300" tween="sine" easing="inout" condition="!Player.Muted + Window.IsVisible(volumebar) + !Player.Passthrough">Conditional</animation>
             <animation effect="slide" end="-454" time="300" tween="sine" easing="inout" condition="!Player.Muted + Window.IsVisible(volumebar) + Player.Passthrough">Conditional</animation>
@@ -431,7 +412,6 @@
                 <aspectratio>stretch</aspectratio>
                 <visible>Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock)</visible>
             </control>
-
             <!-- Weather Background -->
             <control type="image">
                 <posx>1218</posx>
@@ -491,7 +471,6 @@
                 </control>
             </control>
             <!--  -->
-
             <!-- Clock -->
             <control type="image">
                 <description>Clock image</description>
@@ -548,7 +527,6 @@
                 </control>
             </control>
             <!--  -->
-
             <control type="group">
                 <visible>Player.Forwarding | Player.Rewinding</visible>
                 <include>visiblehidefadeinfo</include>
