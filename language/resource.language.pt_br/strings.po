@@ -1016,8 +1016,12 @@ msgid "Hide Chapter Information"
 msgstr "Esconder Informação de Capítulos"
 
 msgctxt "#31030"
-msgid "Hide Clock & Weather"
-msgstr "Esconder Relógio e Clima"
+msgid "Hide Clock"
+msgstr "Esconder Relógio"
+
+msgctxt "#31033"
+msgid "Hide Weather"
+msgstr "Esconder Clima"
 
 msgctxt "#31045"
 msgid "Display Volume in dB"
