@@ -347,7 +347,7 @@
 
     <include name="OSDWeatherClock">
         <control type="group">
-            <visible>!Skin.HasSetting(OSD.HideWeatherClock)</visible>
+            <!-- <visible>!Skin.HasSetting(OSD.HideWeatherClock)</visible> -->
             <animation effect="slide" end="-92" time="300" tween="sine" easing="inout" condition="Player.Muted | String.Contains(Player.Volume,-60.0)">Conditional</animation>
             <animation effect="slide" end="-204" time="300" tween="sine" easing="inout" condition="!Player.Muted + Window.IsVisible(volumebar) + !Player.Passthrough">Conditional</animation>
             <animation effect="slide" end="-454" time="300" tween="sine" easing="inout" condition="!Player.Muted + Window.IsVisible(volumebar) + Player.Passthrough">Conditional</animation>
@@ -358,30 +358,24 @@
                 <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
                 <effect type="zoom" start="100" end="50" center="1569,97" tween="sine" easing="inout" time="300" />
             </animation>
+            <!-- Weather -->
+            <!-- Weather ONLY Background -->
             <control type="image">
-                <posx>1218</posx>
+                <posx>1578</posx>
                 <posy>0</posy>
-                <width>702</width>
+                <width>300</width>
                 <height>194</height>
-                <texture>osd/fullscreen/osd-back-weatherclock.png</texture>
+                <texture>overlays/volume/back-vf.png</texture>
                 <aspectratio>stretch</aspectratio>
-                <visible>Weather.IsFetched</visible>
+                <visible>!Skin.HasSetting(OSD.HideWeather) + Skin.HasSetting(OSD.HideClock) + Weather.IsFetched</visible>
             </control>
-            <control type="image">
-                <posx>1218</posx>
-                <posy>0</posy>
-                <width>702</width>
-                <height>194</height>
-                <texture>osd/fullscreen/osd-back-clock.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <visible>!Weather.IsFetched</visible>
-            </control>
+            <!-- Weather ONLY Label -->
             <control type="group">
-                <visible>![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
+                <visible>!Skin.HasSetting(OSD.HideWeather) + Skin.HasSetting(OSD.HideClock) + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <description>Small weather</description>
-                    <posx>1388</posx>
+                    <posx>1723</posx>
                     <posy>47</posy>
                     <width>100</width>
                     <height>100</height>
@@ -390,7 +384,80 @@
                 </control>
                 <control type="label">
                     <description>Temp label</description>
-                    <posx>1400</posx>
+                    <posx>1743</posx>
+                    <posy>79</posy>
+                    <width>75</width>
+                    <height>34</height>
+                    <label>$INFO[Weather.Temperature]</label>
+                    <font>Font-Condensed-S34</font>
+                    <textcolor>aawhite</textcolor>
+                    <align>right</align>
+                    <scroll>false</scroll>
+                    <visible>Weather.IsFetched</visible>
+                </control>
+            </control>
+            <!-- Weather ONLY loadind -->
+            <control type="group">
+                <visible>String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)</visible>
+                <include>visiblehidefadeinfo</include>
+                <control type="image">
+                    <description>Weather loading background</description>
+                    <posx>1683</posx>
+                    <!-- <posx>1353</posx> -->
+                    <posy>47</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>osd/fullscreen/weather-loading-back.png</texture>
+                </control>
+                <control type="image">
+                    <description>Weather loading indicator</description>
+                    <posx>1683</posx>
+                    <!-- <posx>1353</posx> -->
+                    <posy>47</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texture>osd/fullscreen/weather-loading.png</texture>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1000" loop="true" condition="String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)">Conditional</animation>
+                </control>
+            </control>
+            <!-- Clock -->
+            <!-- Clock Background -->
+            <control type="image">
+                <posx>1218</posx>
+                <posy>0</posy>
+                <width>702</width>
+                <height>194</height>
+                <texture>osd/fullscreen/osd-back-clock.png</texture>
+                <aspectratio>stretch</aspectratio>
+                <visible>Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock)</visible>
+            </control>
+
+            <!-- Weather Background -->
+            <control type="image">
+                <posx>1218</posx>
+                <posy>0</posy>
+                <width>702</width>
+                <height>194</height>
+                <texture>osd/fullscreen/osd-back-weatherclock.png</texture>
+                <aspectratio>stretch</aspectratio>
+                <visible>!Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock) + Weather.IsFetched</visible>
+            </control>
+            <!-- Weather Label -->
+            <control type="group">
+                <visible>!Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock) + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
+                <include>visiblehidefadeinfo</include>
+                <control type="image">
+                    <description>Small weather</description>
+                    <posx>1398</posx>
+                    <posy>47</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <colordiffuse>aawhite</colordiffuse>
+                    <texture>$INFO[Weather.FanartCode,weather/small/,.png]</texture>
+                </control>
+                <control type="label">
+                    <description>Temp label</description>
+                    <posx>1408</posx>
                     <posy>79</posy>
                     <width>75</width>
                     <height>34</height>
@@ -403,7 +470,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)</visible>
+                <visible>!Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock) + String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <description>Weather loading background</description>
@@ -423,6 +490,9 @@
                     <animation effect="rotate" center="auto" start="360" end="0" time="1000" loop="true" condition="String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)">Conditional</animation>
                 </control>
             </control>
+            <!--  -->
+
+            <!-- Clock -->
             <control type="image">
                 <description>Clock image</description>
                 <posx>1563</posx>
@@ -430,7 +500,7 @@
                 <width>100</width>
                 <height>100</height>
                 <texture>osd/fullscreen/clock.png</texture>
-                <visible>!Control.IsVisible(24)</visible>
+                <visible>!Skin.HasSetting(OSD.HideClock) + !Control.IsVisible(24)</visible>
             </control>
             <control type="image" id="24">
                 <description>Clock image</description>
@@ -439,9 +509,10 @@
                 <width>100</width>
                 <height>100</height>
                 <texture>osd/fullscreen/clock-pm.png</texture>
-                <visible>String.EndsWith(System.Time,Pm)</visible>
+                <visible>!Skin.HasSetting(OSD.HideClock) + String.EndsWith(System.Time,Pm)</visible>
             </control>
             <control type="label">
+                <visible>!Skin.HasSetting(OSD.HideClock)</visible>
                 <description>Clock label</description>
                 <posx>1575</posx>
                 <posy>79</posy>
@@ -455,7 +526,7 @@
             </control>
             <control type="group">
                 <description>Finish Time</description>
-                <visible>!Player.Forwarding + !Player.Rewinding</visible>
+                <visible>!Skin.HasSetting(OSD.HideClock) + !Player.Forwarding + !Player.Rewinding</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <posx>1730</posx>
@@ -476,6 +547,8 @@
                     <scroll>false</scroll>
                 </control>
             </control>
+            <!--  -->
+
             <control type="group">
                 <visible>Player.Forwarding | Player.Rewinding</visible>
                 <include>visiblehidefadeinfo</include>
