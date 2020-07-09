@@ -1011,6 +1011,7 @@ msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Ocultar data"
 
+
 msgctxt "#31031"
 msgid "Hide Chapter Information"
 msgstr "Esconder Informação de Capítulos"
@@ -1019,9 +1020,13 @@ msgctxt "#31030"
 msgid "Hide Clock"
 msgstr "Esconder Relógio"
 
-msgctxt "#31033"
+msgctxt "#31295"
 msgid "Hide Weather"
 msgstr "Esconder Clima"
+
+msgctxt "#31033"
+msgid "XKCD.com"
+msgstr "XKCD.com"
 
 msgctxt "#31045"
 msgid "Display Volume in dB"

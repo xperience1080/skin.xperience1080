@@ -135,8 +135,12 @@ msgid "United States"
 msgstr ""
 
 msgctxt "#31030"
-msgid "Hide Clock & Weather"
-msgstr ""
+msgid "Hide Clock"
+msgstr "Hide Clock"
+
+msgctxt "#31295"
+msgid "Hide Weather"
+msgstr "Hide Weather"
 
 msgctxt "#31031"
 msgid "Hide Chapter Information"
@@ -148,7 +152,7 @@ msgstr ""
 
 msgctxt "#31033"
 msgid "XKCD.com"
-msgstr ""
+msgstr "XKCD.com"
 
 msgctxt "#31034"
 msgid "Cyanide & Happiness"

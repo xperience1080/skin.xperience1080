@@ -109,8 +109,12 @@ msgid "United States"
 msgstr "Stany Zjednoczone"
 
 msgctxt "#31030"
-msgid "Hide Clock & Weather"
-msgstr "Ukrywaj zegar i pogodę"
+msgid "Hide Clock"
+msgstr "Hide Clock"
+
+msgctxt "#31295"
+msgid "Hide Weather"
+msgstr "Hide Weather"
 
 msgctxt "#31033"
 msgid "XKCD.com"

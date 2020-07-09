@@ -137,8 +137,12 @@ msgid "United States"
 msgstr "JAV"
 
 msgctxt "#31030"
-msgid "Hide Clock & Weather"
-msgstr "Slėpti laikrodį ir orus"
+msgid "Hide Clock"
+msgstr "Hide Clock"
+
+msgctxt "#31295"
+msgid "Hide Weather"
+msgstr "Hide Weather"
 
 msgctxt "#31031"
 msgid "Hide Chapter Information"

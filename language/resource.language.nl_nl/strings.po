@@ -137,12 +137,16 @@ msgid "United States"
 msgstr "Verenigde Staten van Amerika"
 
 msgctxt "#31030"
-msgid "Hide Clock & Weather"
-msgstr "Verberg klok en weer"
+msgid "Hide Clock"
+msgstr "Hide Clock"
+
+msgctxt "#31295"
+msgid "Hide Weather"
+msgstr "Hide Weather"
 
 msgctxt "#31031"
 msgid "Hide Chapter Information"
-msgstr "Verberg hoofdstukinformatie"
+msgstr "Hide Clock"
 
 msgctxt "#31032"
 msgid "Pictures Tile"
