@@ -663,6 +663,7 @@
                         <label>$LOCALIZE[31092]</label>
                     </control>
                     <control type="radiobutton" id="999">
+                        <enable>false</enable>
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(DisableOSDSeeking)</selected>
@@ -676,14 +677,15 @@
                         <onclick>Skin.ToggleSetting(PauseOsd)</onclick>
                         <label>$LOCALIZE[31094]</label>
                     </control>                    
-<!--                     <control type="radiobutton" id="997">
+                    <control type="radiobutton" id="997">
+                        <enable>false</enable>
                         <visible>Skin.HasSetting(PauseOsd)</visible>
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(PauseOSDDelay)</selected>
                         <onclick>Skin.ToggleSetting(PauseOSDDelay)</onclick>
                         <label>$LOCALIZE[31095]</label>
-                    </control>     -->                
+                    </control>                    
                     <control type="radiobutton" id="8007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
