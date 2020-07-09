@@ -353,7 +353,7 @@ msgid "Recommended size 633x437px"
 msgstr "Empfohlene Größe 633x437px"
 
 msgctxt "#31144"
-msgid "Show coloured home tiles"
+msgid "Show Coloured Home Tiles"
 msgstr "Farbige Hauptmenü-Elemente anzeigen"
 
 msgctxt "#31145"

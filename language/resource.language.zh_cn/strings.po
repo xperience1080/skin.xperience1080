@@ -595,3 +595,7 @@ msgstr "隐藏日期"
 msgctxt "#31025"
 msgid "WARNING: This Will Reset ALL Skin Settings"
 msgstr "WARNING: This Will Reset ALL Skin Settings"
+
+msgctxt "#31144"
+msgid "Show Coloured Home Tiles"
+msgstr "Show Colored Home Tiles"
