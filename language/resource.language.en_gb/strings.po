@@ -352,7 +352,7 @@ msgstr ""
 
 msgctxt "#31144"
 msgid "Show coloured home tiles"
-msgstr ""
+msgstr "Show Colored Home Tiles"
 
 msgctxt "#31145"
 msgid "Video add-on"
