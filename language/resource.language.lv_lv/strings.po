@@ -319,3 +319,8 @@ msgstr "WARNING: This Will Reset ALL Skin Settings"
 msgctxt "#31144"
 msgid "Show Coloured Home Tiles"
 msgstr "Show Colored Home Tiles"
+
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"

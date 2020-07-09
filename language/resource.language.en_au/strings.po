@@ -951,3 +951,7 @@ msgstr "Set Custom Overlay"
 msgctxt "#31025"
 msgid "WARNING: This Will Reset ALL Skin Settings"
 msgstr "WARNING: This Will Reset ALL Skin Settings"
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"

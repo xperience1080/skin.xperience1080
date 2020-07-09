@@ -1139,3 +1139,7 @@ msgstr "Establecer claridad en fondo"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Ocultar Fecha"
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"

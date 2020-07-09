@@ -1139,3 +1139,7 @@ msgstr "Nustatyti savą perdangą"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Slėpti datą"
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"

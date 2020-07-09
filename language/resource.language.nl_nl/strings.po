@@ -1139,3 +1139,7 @@ msgstr "Gebruik aangepast overlay"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Verberg datum"
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"

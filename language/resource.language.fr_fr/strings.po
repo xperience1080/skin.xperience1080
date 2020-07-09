@@ -1139,3 +1139,7 @@ msgstr "Afficher le calque personnalisé"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Masquer la date"
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"

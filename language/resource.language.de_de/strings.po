@@ -1243,3 +1243,7 @@ msgstr "Setze eigene Überlagerung"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Verstecke das Datum"
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"

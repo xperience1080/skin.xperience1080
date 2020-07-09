@@ -1139,3 +1139,7 @@ msgstr "Définir une surcouche personnalisée"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Cacher la date"
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"
