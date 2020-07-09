@@ -646,7 +646,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(OSD.HideWeather)</selected>
                         <onclick>Skin.ToggleSetting(OSD.HideWeather)</onclick>
-                        <label>$LOCALIZE[31033]</label>
+                        <label>$LOCALIZE[31295]</label>
                     </control>
                     <control type="radiobutton" id="8006">
                         <width>1210</width>
