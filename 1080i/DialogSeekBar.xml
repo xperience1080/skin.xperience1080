@@ -357,7 +357,16 @@
                         </control>
                     </control>
                 </control>
-                <control type="group">
+                <!-- Show Info Background -->
+                <control type="image">
+                    <visible>Control.IsVisible(983)</visible>
+                    <posx>0</posx>
+                    <posy>600</posy>
+                    <width>1920</width>
+                    <height>800</height>
+                    <texture border="1,401,1,45">osd/fullscreen/osd-back-info.png</texture>
+                </control>                
+                <control type="group" id="983">
                     <visible>Window.IsActive(fullscreenvideo) + [Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + !Window.IsActive(videoosd)</visible>
                     <animation type="Visible" reversible="false">
                         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="inout" delay="150" />
