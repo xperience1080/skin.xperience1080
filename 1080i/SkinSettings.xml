@@ -600,6 +600,58 @@
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
                     <visible>Container(30).HasFocus(34)</visible>
+                    <control type="radiobutton" id="998">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(PauseOsd)</selected>
+                        <onclick>Skin.ToggleSetting(PauseOsd)</onclick>
+                        <label>$LOCALIZE[31094]</label>
+                    </control>
+                    <control type="radiobutton" id="999">
+                        <enable>false</enable>
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(DisableOSDSeeking)</selected>
+                        <onclick>Skin.ToggleSetting(DisableOSDSeeking)</onclick>
+                        <label>$LOCALIZE[31093]</label>
+                    </control>                    
+                    <control type="radiobutton" id="997">
+                        <enable>false</enable>
+                        <visible>Skin.HasSetting(PauseOsd)</visible>
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(PauseOSDDelay)</selected>
+                        <onclick>Skin.ToggleSetting(PauseOSDDelay)</onclick>
+                        <label>$LOCALIZE[31095]</label>
+                    </control>                    
+                    <control type="radiobutton" id="8006">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(OSD.HideChapterInfo)</selected>
+                        <onclick>Skin.ToggleSetting(OSD.HideChapterInfo)</onclick>
+                        <label>$LOCALIZE[31031]</label>
+                    </control>
+                    <control type="radiobutton" id="1000">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(OSD.HideSeasonInfo)</selected>
+                        <onclick>Skin.ToggleSetting(OSD.HideSeasonInfo)</onclick>
+                        <label>$LOCALIZE[31092]</label>
+                    </control>
+                    <control type="radiobutton" id="8005">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(OSD.HideClock)</selected>
+                        <onclick>Skin.ToggleSetting(OSD.HideClock)</onclick>
+                        <label>$LOCALIZE[31030]</label>
+                    </control>
+                    <control type="radiobutton" id="80051">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(OSD.HideWeather)</selected>
+                        <onclick>Skin.ToggleSetting(OSD.HideWeather)</onclick>
+                        <label>$LOCALIZE[31295]</label>
+                    </control>                    
                     <control type="radiobutton" id="8001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -634,58 +686,6 @@
                         <visible>Skin.HasSetting(ArtistSlideShow.Enabled)</visible>
                         <label>- $LOCALIZE[31105]</label>
                     </control>
-                    <control type="radiobutton" id="8005">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(OSD.HideClock)</selected>
-                        <onclick>Skin.ToggleSetting(OSD.HideClock)</onclick>
-                        <label>$LOCALIZE[31030]</label>
-                    </control>
-                    <control type="radiobutton" id="80051">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(OSD.HideWeather)</selected>
-                        <onclick>Skin.ToggleSetting(OSD.HideWeather)</onclick>
-                        <label>$LOCALIZE[31295]</label>
-                    </control>
-                    <control type="radiobutton" id="8006">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(OSD.HideChapterInfo)</selected>
-                        <onclick>Skin.ToggleSetting(OSD.HideChapterInfo)</onclick>
-                        <label>$LOCALIZE[31031]</label>
-                    </control>
-                    <control type="radiobutton" id="1000">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(OSD.HideSeasonInfo)</selected>
-                        <onclick>Skin.ToggleSetting(OSD.HideSeasonInfo)</onclick>
-                        <label>$LOCALIZE[31092]</label>
-                    </control>
-                    <control type="radiobutton" id="999">
-                        <enable>false</enable>
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(DisableOSDSeeking)</selected>
-                        <onclick>Skin.ToggleSetting(DisableOSDSeeking)</onclick>
-                        <label>$LOCALIZE[31093]</label>
-                    </control>
-                    <control type="radiobutton" id="998">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(PauseOsd)</selected>
-                        <onclick>Skin.ToggleSetting(PauseOsd)</onclick>
-                        <label>$LOCALIZE[31094]</label>
-                    </control>                    
-                    <control type="radiobutton" id="997">
-                        <enable>false</enable>
-                        <visible>Skin.HasSetting(PauseOsd)</visible>
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(PauseOSDDelay)</selected>
-                        <onclick>Skin.ToggleSetting(PauseOSDDelay)</onclick>
-                        <label>$LOCALIZE[31095]</label>
-                    </control>                    
                     <control type="radiobutton" id="8007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
