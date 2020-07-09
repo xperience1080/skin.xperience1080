@@ -116,10 +116,6 @@ msgctxt "#31024"
 msgid "Reset Skin Settings"
 msgstr "Reset Skin Settings"
 
-msgctxt "#31025"
-msgid "WARNING: This will reset ALL skin settings"
-msgstr "WARNING: This will reset ALL skin settings"
-
 msgctxt "#31026"
 msgid "Germany"
 msgstr "Germany"
