@@ -1123,3 +1123,11 @@ msgstr "Set Custom Overlay"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Hide Date"
+
+msgctxt "#31110"
+msgid "Enable Playlist At Startup"
+msgstr "Enable Playlist At Startup"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"
