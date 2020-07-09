@@ -84,10 +84,6 @@ msgctxt "#31037"
 msgid "Photos"
 msgstr "Fotos"
 
-msgctxt "#31090"
-msgid "Video OSD Settings"
-msgstr "Configurações do OSD de vídeo"
-
 msgctxt "#31100"
 msgid "General"
 msgstr "Geral"
@@ -98,15 +94,15 @@ msgstr "Modo quiosque"
 
 msgctxt "#31092"
 msgid "Hide information Season/EP"
-msgstr "Esconder informação de Season/EP"
+msgstr "Ocultar informação de Season/EP"
 
 msgctxt "#31093"
 msgid "Hide OSD on Seeking"
-msgstr "Esconder OSD enquanto Procura"
+msgstr "Ocultar OSD enquanto Procura"
 
 msgctxt "#31094"
 msgid "Hide Pause OSD"
-msgstr "Esconder o OSD de Pausa"
+msgstr "Ocultar o OSD de Pausa"
 
 msgctxt "#31095"
 msgid "Pause OSD Delay (2 Sec)"
@@ -1014,15 +1010,15 @@ msgstr "Ocultar data"
 
 msgctxt "#31031"
 msgid "Hide Chapter Information"
-msgstr "Esconder Informação de Capítulos"
+msgstr "Ocultar Informação de Capítulos"
 
 msgctxt "#31030"
 msgid "Hide Clock"
-msgstr "Esconder Relógio"
+msgstr "Ocultar Relógio"
 
 msgctxt "#31295"
 msgid "Hide Weather"
-msgstr "Esconder Clima"
+msgstr "Ocultar Clima"
 
 msgctxt "#31033"
 msgid "XKCD.com"
