@@ -289,8 +289,8 @@ msgid "Recommended size 633x437px"
 msgstr "Recommended size 633x437px"
 
 msgctxt "#31144"
-msgid "Show coloured home tiles"
-msgstr "Show colored home tiles"
+msgid "Show Coloured Home Tiles"
+msgstr "Show Colored Home Tiles"
 
 msgctxt "#31145"
 msgid "Video add-on"

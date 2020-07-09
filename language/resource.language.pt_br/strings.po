@@ -188,10 +188,6 @@ msgctxt "#31143"
 msgid "Recommended size 633x437px"
 msgstr "Tamanho recomendado de 633x437px"
 
-msgctxt "#31144"
-msgid "Manage custom Home Tile Colours"
-msgstr "Gerenciar cores"
-
 msgctxt "#31145"
 msgid "Video add-on"
 msgstr "Add-on de Vídeo"
@@ -1067,3 +1063,7 @@ msgstr "AVISO: Isso Redefinirá TODAS as Configurações do Tema"
 msgctxt "#31110"
 msgid "Enable Playlist At Startup"
 msgstr "Ativar Lista De Reprodução Na Inicialização"
+
+msgctxt "#31144"
+msgid "Show Coloured Home Tiles"
+msgstr "Mostrar Blocos Coloridos Na Casa"
