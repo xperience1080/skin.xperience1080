@@ -1061,5 +1061,9 @@ msgid "Reset Skin Settings"
 msgstr "Redefinir Configurações de Tema"
 
 msgctxt "#31025"
-msgid "WARNING: This will reset ALL skin settings"
-msgstr "AVISO: Isso Redefinirá TODAS as Configurações de Capa"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "AVISO: Isso Redefinirá TODAS as Configurações do Tema"
+
+msgctxt "#31110"
+msgid "Enable Playlist At Startup"
+msgstr "Ativar Lista De Reprodução Na Inicialização"
