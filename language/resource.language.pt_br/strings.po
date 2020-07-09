@@ -101,8 +101,8 @@ msgid "Hide OSD on Seeking"
 msgstr "Ocultar OSD enquanto Procura"
 
 msgctxt "#31094"
-msgid "Hide Pause OSD"
-msgstr "Ocultar o OSD de Pausa"
+msgid "Hide Progress Bar"
+msgstr "Ocultar o Barra de Progresso"
 
 msgctxt "#31095"
 msgid "Pause OSD Delay (2 Sec)"
