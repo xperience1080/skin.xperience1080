@@ -1059,3 +1059,7 @@ msgstr "Ustaw niestandardową nakładkę"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Ukrywaj datę"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

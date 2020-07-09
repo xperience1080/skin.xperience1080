@@ -955,3 +955,7 @@ msgstr "Papar Anak Panah Navigasi"
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Tetapkan Tindihan Atas Suai"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

@@ -599,3 +599,7 @@ msgstr "Αυτόματη Σύνδεση"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Απόκρυψη Ημερομηνίας"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

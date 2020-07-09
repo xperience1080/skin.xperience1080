@@ -59,3 +59,7 @@ msgstr "ചിത്രങ്ങള്‍"
 msgctxt "#31456"
 msgid "Resolution"
 msgstr "വ്യക്തത"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

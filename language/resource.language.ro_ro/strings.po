@@ -379,3 +379,7 @@ msgstr "Filme"
 msgctxt "#31992"
 msgid "Red"
 msgstr "Roșu"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

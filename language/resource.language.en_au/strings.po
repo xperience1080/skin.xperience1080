@@ -947,3 +947,7 @@ msgstr "Display Navigation Arrow"
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Set Custom Overlay"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

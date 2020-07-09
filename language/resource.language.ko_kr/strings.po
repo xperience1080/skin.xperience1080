@@ -979,3 +979,7 @@ msgstr "사용자 오버레이 지정"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "날짜 숨김"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

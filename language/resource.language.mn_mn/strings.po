@@ -63,3 +63,7 @@ msgstr "Байрлал"
 msgctxt "#31922"
 msgid "Cancel"
 msgstr "Цуцлах"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

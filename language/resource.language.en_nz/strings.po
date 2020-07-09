@@ -619,3 +619,7 @@ msgstr "Red"
 msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Auto Login"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

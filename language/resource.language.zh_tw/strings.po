@@ -367,3 +367,7 @@ msgstr "影片"
 msgctxt "#31992"
 msgid "Red"
 msgstr "紅色"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

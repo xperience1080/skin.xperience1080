@@ -971,3 +971,7 @@ msgstr "Visa navigations pil "
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Ställ in anpassat overlay"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"

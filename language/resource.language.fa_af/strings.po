@@ -83,3 +83,7 @@ msgstr "نمایش تنظیمات"
 msgctxt "#31930"
 msgid "View"
 msgstr "نمایه"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"
