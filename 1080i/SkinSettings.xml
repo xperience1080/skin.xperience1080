@@ -184,6 +184,7 @@
                     <visible>Container(30).HasFocus(31)</visible>
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
+                    <!--  -->
                     <control type="radiobutton" id="1002">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -239,6 +240,7 @@
                         <onclick>SetProperty(Dialog,$LOCALIZE[31995])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
                     </control>
+                    <!--  -->
                     <control type="group" id="1013">
                         <description>Fake spin control</description>
                         <width>1210</width>
@@ -608,7 +610,7 @@
                         <label>$LOCALIZE[31094]</label>
                     </control>
                     <control type="radiobutton" id="999">
-                        <enable>false</enable>
+                        <enable>true</enable>
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(DisableOSDSeeking)</selected>
