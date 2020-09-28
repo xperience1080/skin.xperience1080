@@ -1067,3 +1067,7 @@ msgstr "Ativar Lista De Reprodução Durante a Inicialização"
 msgctxt "#31144"
 msgid "Show Coloured Home Tiles"
 msgstr "Mostrar Blocos Coloridos Na Tela Inicial"
+
+msgctxt "#32145"
+msgid "Hide Home Search"
+msgstr "Ocultar Pesquisa da Home"

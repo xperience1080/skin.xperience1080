@@ -346,7 +346,7 @@
                 <posy>0</posy>
                 <width>300</width>
                 <height>194</height>
-                <texture>overlays/volume/back-vf.png</texture>
+                <texture>osd/fullscreen/osd-back-weatheronly.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <visible>!Skin.HasSetting(OSD.HideWeather) + Skin.HasSetting(OSD.HideClock) + Weather.IsFetched</visible>
             </control>
@@ -377,14 +377,13 @@
                     <visible>Weather.IsFetched</visible>
                 </control>
             </control>
-            <!-- Weather ONLY loadind -->
+            <!-- Weather ONLY loading -->
             <control type="group">
-                <visible>String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)</visible>
+                <visible>!Skin.HasSetting(OSD.HideWeather) + Skin.HasSetting(OSD.HideClock) + String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <description>Weather loading background</description>
                     <posx>1683</posx>
-                    <!-- <posx>1353</posx> -->
                     <posy>47</posy>
                     <width>100</width>
                     <height>100</height>
@@ -393,7 +392,6 @@
                 <control type="image">
                     <description>Weather loading indicator</description>
                     <posx>1683</posx>
-                    <!-- <posx>1353</posx> -->
                     <posy>47</posy>
                     <width>100</width>
                     <height>100</height>
