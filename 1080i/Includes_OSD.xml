@@ -408,9 +408,9 @@
                 <height>194</height>
                 <texture>osd/fullscreen/osd-back-clock.png</texture>
                 <aspectratio>stretch</aspectratio>
-                <visible>Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock)</visible>
+                <visible>Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock) | !Skin.HasSetting(OSD.HideWeather) + !Weather.IsFetched</visible>
             </control>
-            <!-- Weather Background -->
+            <!-- Weather and Clock Background -->
             <control type="image">
                 <posx>1218</posx>
                 <posy>0</posy>
@@ -422,7 +422,7 @@
             </control>
             <!-- Weather Label -->
             <control type="group">
-                <visible>!Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock) + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
+                <visible>!Skin.HasSetting(OSD.HideWeather) + !Skin.HasSetting(OSD.HideClock) + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)] + Weather.IsFetched</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <description>Small weather</description>
