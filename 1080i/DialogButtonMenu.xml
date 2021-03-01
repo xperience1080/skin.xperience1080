@@ -61,7 +61,7 @@
                     <description>Quit XBMC button</description>
                     <include>optionsbuttonsdimensions</include>
                     <label>$LOCALIZE[13012]</label>
-                    <onclick>XBMC.Quit()</onclick>
+                    <onclick>Quit()</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/quit-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/quit-nf.png</texturenofocus>
                     <visible>System.ShowExitButton</visible>
@@ -70,7 +70,7 @@
                     <description>Restart PC button</description>
                     <include>optionsbuttonsdimensions</include>
                     <label>$LOCALIZE[13013]</label>
-                    <onclick>XBMC.Reset()</onclick>
+                    <onclick>Reset()</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/reboot-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/reboot-nf.png</texturenofocus>
                     <visible>System.CanReboot</visible>
@@ -83,8 +83,8 @@
                         <description>Powerdown button</description>
                         <include>optionsbuttonsdimensions</include>
                         <label>$LOCALIZE[13016]</label>
-                        <onclick condition="System.CanPowerDown">XBMC.Powerdown()</onclick>
-                        <onclick condition="!System.CanPowerDown">XBMC.Shutdown()</onclick>
+                        <onclick condition="System.CanPowerDown">Powerdown()</onclick>
+                        <onclick condition="!System.CanPowerDown">Shutdown()</onclick>
                         <onleft>32</onleft>
                         <onright>31</onright>
                         <onup>6</onup>
@@ -97,7 +97,7 @@
                         <description>Custom Shutdown button</description>
                         <include>optionsbuttonsdimensions</include>
                         <label>20150</label>
-                        <onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
+                        <onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
                         <onleft>30</onleft>
                         <onright>32</onright>
                         <onup>6</onup>
@@ -148,7 +148,7 @@
                     <description>Suspend Computer button</description>
                     <include>optionsbuttonsdimensions</include>
                     <label>$LOCALIZE[13011]</label>
-                    <onclick>XBMC.Suspend()</onclick>
+                    <onclick>Suspend()</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/sushib-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/sushib-nf.png</texturenofocus>
                     <visible>System.CanSuspend</visible>
@@ -157,7 +157,7 @@
                     <description>Hibernate Computer button</description>
                     <include>optionsbuttonsdimensions</include>
                     <label>$LOCALIZE[13010]</label>
-                    <onclick>XBMC.Hibernate()</onclick>
+                    <onclick>Hibernate()</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/sushib-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/sushib-nf.png</texturenofocus>
                     <visible>System.CanHibernate</visible>
@@ -195,7 +195,7 @@
                     <description>Inhibit idle shutdown</description>
                     <include>optionsbuttonsdimensions</include>
                     <label>$LOCALIZE[13017]</label>
-                    <onclick>XBMC.InhibitIdleShutdown(true)</onclick>
+                    <onclick>InhibitIdleShutdown(true)</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/shutdown-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/shutdown-nf.png</texturenofocus>
                     <visible>System.HasShutdown +!System.IsInhibit</visible>
@@ -204,7 +204,7 @@
                     <description>Allow idle shutdown</description>
                     <include>optionsbuttonsdimensions</include>
                     <label>$LOCALIZE[13018]</label>
-                    <onclick>XBMC.InhibitIdleShutdown(false)</onclick>
+                    <onclick>InhibitIdleShutdown(false)</onclick>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/shutdown-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/shutdown-nf.png</texturenofocus>
                     <visible>System.HasShutdown + System.IsInhibit</visible>
