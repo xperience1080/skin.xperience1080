@@ -2,12 +2,12 @@
 <addon id="skin.xperience1080" version="8.0.0" name="Xperience1080" provider-name="xhaggi|luizoti">
     <requires>
         <import addon="xbmc.gui" version="5.15.0" />
-        <import addon="service.skin.widgets" version="0.0.29" />
-        <import addon="script.tv.show.next.aired" version="6.0.13" />
+        <import addon="service.skin.widgets" version="0.0.33" />
+        <import addon="script.tv.show.next.aired" version="6.0.15" />
         <import addon="script.globalsearch" version="4.0.2" />
         <import addon="script.favourites" version="6.0.1" />
         <import addon="script.artistslideshow" version="1.8.2" />
-        <import addon="script.videolanguage" version="0.1.0" />
+        <import addon="script.videolanguage" version="0.1.1" />
         <import addon="script.toolbox" version="1.0.1" />
         <import addon="resource.images.studios.white" version="0.0.1"/>
         <import addon="resource.images.musicgenreicons.grey" version="0.0.5"/>

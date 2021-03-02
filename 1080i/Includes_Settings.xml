@@ -962,6 +962,13 @@
                 <onclick>ActivateWindow(systeminfo)</onclick>
                 <property name="pos">bottom</property>
             </item>
+            <item id="11">
+                <label>$LOCALIZE[130]</label>
+                <icon>windows/home/icons/libreelec.png</icon>
+                <onclick>ActivateWindow(systeminfo)</onclick>
+                <property name="pos">bottom</property>
+                <visible>System.HasAddon(service.libreelec.settings)</visible>
+            </item>
         </content>
     </include>
 
