@@ -395,13 +395,6 @@
                         <onclick>Skin.ToggleSetting(HideHomeColouredTiles)</onclick>
                         <label>$LOCALIZE[31144]</label>
                     </control>                    
-                    <control type="radiobutton" id="2005">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(HideHomeSearch)</selected>
-                        <onclick>Skin.ToggleSetting(HideHomeSearch)</onclick>
-                        <label>$LOCALIZE[32145]</label>
-                    </control>
                     <control type="radiobutton" id="2006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
