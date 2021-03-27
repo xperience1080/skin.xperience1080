@@ -143,19 +143,19 @@
         <value condition="VideoPlayer.HasEpg">$INFO[PVR.EpgEventFinishTime(hh:mm)]</value>
         <value>$INFO[Player.FinishTime(hh:mm)]</value>
     </variable>
-    <include name="OSDEpSeasonInfo">
+    <include name="OSDSeasonInfo">
         <control type="group">
-            <visible>!Skin.HasSetting(OSD.HideEpSeasonInfo)</visible>
+            <visible>!Skin.HasSetting(OSD.HideSeasonInfo)</visible>
             <include>BannerListInfoAnimation</include>
-            <visible>[Player.ShowInfo | Player.Seeking | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Window.IsActive(script-cu-lrclyrics-main.xml) + !String.IsEmpty(VideoPlayer.Season) + !String.IsEmpty(VideoPlayer.Episode) + VideoPlayer.Content(episodes)</visible>
-            <!-- Season/EP Lower 10 -->
+            <visible>[Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Window.IsActive(script-cu-lrclyrics-main.xml) + VideoPlayer.Content(episodes) </visible>
+            <!-- Season 0/Specials -->
             <control type="button">
-                <visible>!Integer.IsGreater(VideoPlayer.Season,10) + !Integer.IsGreater(VideoPlayer.Episode,10)</visible>
-                <label>S0$INFO[VideoPlayer.Season] - E0$INFO[VideoPlayer.Episode]</label>
+                <visible>Integer.IsEqual(VideoPlayer.Season,0)</visible>
                 <posx>45</posx>
                 <posy>0</posy>
-                <width>355</width>
+                <width>300</width>
                 <height>194</height>
+                <label>S0$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode]</label>
                 <font>Font-Condensed-S34</font>
                 <disabledcolor>aawhite</disabledcolor>
                 <texturefocus></texturefocus>
@@ -163,53 +163,71 @@
                 <align>center</align>
                 <enable>false</enable>
             </control>
-            <!-- Season/EP Greater 10 -->
-            <control type="button">
-                <visible>Integer.IsGreater(VideoPlayer.Season,10) + Integer.IsGreater(VideoPlayer.Episode,10)</visible>
-                <label>S$INFO[VideoPlayer.Season] - E$INFO[VideoPlayer.Episode]</label>
-                <posx>45</posx>
-                <posy>0</posy>
-                <width>355</width>
-                <height>194</height>
-                <font>Font-Condensed-S34</font>
-                <disabledcolor>aawhite</disabledcolor>
-                <texturefocus></texturefocus>
-                <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
-                <align>center</align>
-                <enable>false</enable>
+            <control type="group">
+                <visible>!Integer.IsEqual(VideoPlayer.Season,0)</visible>
+                <!-- Season/EP equal or lower 9 -->
+                <control type="button">
+                    <visible>Integer.IsLessOrEqual(VideoPlayer.Season,9) + Integer.IsLessOrEqual(VideoPlayer.Episode,9)</visible>
+                    <posx>45</posx>
+                    <posy>0</posy>
+                    <width>300</width>
+                    <height>194</height>
+                    <label>S0$INFO[VideoPlayer.Season]E0$INFO[VideoPlayer.Episode]</label>
+                    <font>Font-Condensed-S34</font>
+                    <disabledcolor>aawhite</disabledcolor>
+                    <texturefocus></texturefocus>
+                    <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
+                    <align>center</align>
+                    <enable>false</enable>
+                </control>
+                <!-- Season/EP equal or greater 10 -->
+                <control type="button">
+                    <visible>Integer.IsGreaterOrEqual(VideoPlayer.Season,10) + Integer.IsGreaterOrEqual(VideoPlayer.Episode,10)</visible>
+                    <posx>45</posx>
+                    <posy>0</posy>
+                    <width>300</width>
+                    <height>194</height>
+                    <label>S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode]</label>
+                    <font>Font-Condensed-S34</font>
+                    <disabledcolor>aawhite</disabledcolor>
+                    <texturefocus></texturefocus>
+                    <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
+                    <align>center</align>
+                    <enable>false</enable>
+                </control>
+                <!-- Season greater 10 - EP less 9 -->
+                <control type="button">
+                    <visible>Integer.IsGreaterOrEqual(VideoPlayer.Season,10) + Integer.IsLessOrEqual(VideoPlayer.Episode,9)</visible>
+                    <posx>45</posx>
+                    <posy>0</posy>
+                    <width>300</width>
+                    <height>194</height>
+                    <label>S$INFO[VideoPlayer.Season]E0$INFO[VideoPlayer.Episode]</label>
+                    <font>Font-Condensed-S34</font>
+                    <disabledcolor>aawhite</disabledcolor>
+                    <texturefocus></texturefocus>
+                    <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
+                    <align>center</align>
+                    <enable>false</enable>
+                </control>
+                <!-- Season less 9 - EP greater 10 -->
+                <control type="button">
+                    <visible>Integer.IsLessOrEqual(VideoPlayer.Season,9) + Integer.IsGreaterOrEqual(VideoPlayer.Episode,10)</visible>
+                    <posx>45</posx>
+                    <posy>0</posy>
+                    <width>355</width>
+                    <height>194</height>
+                    <label>S0$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode]</label>
+                    <font>Font-Condensed-S34</font>
+                    <disabledcolor>aawhite</disabledcolor>
+                    <texturefocus></texturefocus>
+                    <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
+                    <align>center</align>
+                    <enable>false</enable>
+                </control>
             </control>
-            <!-- Only Season Greater 10 -->
-            <control type="button">
-                <visible>Integer.IsGreater(VideoPlayer.Season,10) + !Integer.IsGreater(VideoPlayer.Episode,10)</visible>
-                <label>S$INFO[VideoPlayer.Season] - E0$INFO[VideoPlayer.Episode]</label>
-                <posx>45</posx>
-                <posy>0</posy>
-                <width>355</width>
-                <height>194</height>
-                <font>Font-Condensed-S34</font>
-                <disabledcolor>aawhite</disabledcolor>
-                <texturefocus></texturefocus>
-                <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
-                <align>center</align>
-                <enable>false</enable>
-            </control>
-            <!-- Only EP Greater 10 -->
-            <control type="button">
-                <visible>!Integer.IsGreater(VideoPlayer.Season,10) + Integer.IsGreater(VideoPlayer.Episode,10)</visible>
-                <label>S0$INFO[VideoPlayer.Season] - E$INFO[VideoPlayer.Episode]</label>
-                <posx>45</posx>
-                <posy>0</posy>
-                <width>355</width>
-                <height>194</height>
-                <font>Font-Condensed-S34</font>
-                <disabledcolor>aawhite</disabledcolor>
-                <texturefocus></texturefocus>
-                <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
-                <align>center</align>
-                <enable>false</enable>
-            </control>            
         </control>
-    </include>
+    </include>    
     <include name="OSDChapterInfo">
         <control type="group">
             <visible>!Skin.HasSetting(OSD.HideChapterInfo)</visible>
@@ -228,73 +246,6 @@
                 <align>center</align>
                 <enable>false</enable>
             </control>
-        </control>
-    </include>
-    <include name="OSDSeasonInfo">
-        <control type="group">
-            <visible>!Skin.HasSetting(OSD.HideSeasonInfo)</visible>
-            <include>BannerListInfoAnimation</include>
-            <visible>[Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(fullscreenvideo)] + !Window.IsActive(script-cu-lrclyrics-main.xml) + VideoPlayer.Content(episodes) </visible>
-            <!-- Season/EP equal or lower 9 -->
-            <control type="button">
-                <visible>Integer.IsLessOrEqual(VideoPlayer.Season,9) + Integer.IsLessOrEqual(VideoPlayer.Episode,9)</visible>
-                <posx>45</posx>
-                <posy>0</posy>
-                <width>355</width>
-                <height>194</height>
-                <label>S0$INFO[VideoPlayer.Season] - E0$INFO[VideoPlayer.Episode]</label>
-                <font>Font-Condensed-S34</font>
-                <disabledcolor>aawhite</disabledcolor>
-                <texturefocus></texturefocus>
-                <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
-                <align>center</align>
-                <enable>false</enable>
-            </control>
-            <!-- Season/EP equal or greater 10 -->
-            <control type="button">
-                <visible>Integer.IsGreaterOrEqual(VideoPlayer.Season,10) + Integer.IsGreaterOrEqual(VideoPlayer.Episode,10)</visible>
-                <posx>45</posx>
-                <posy>0</posy>
-                <width>355</width>
-                <height>194</height>
-                <label>S$INFO[VideoPlayer.Season] - E$INFO[VideoPlayer.Episode]</label>
-                <font>Font-Condensed-S34</font>
-                <disabledcolor>aawhite</disabledcolor>
-                <texturefocus></texturefocus>
-                <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
-                <align>center</align>
-                <enable>false</enable>
-            </control>
-            <!-- Season greater 10 - EP less 9 -->
-            <control type="button">
-                <visible>Integer.IsGreaterOrEqual(VideoPlayer.Season,10) + Integer.IsLessOrEqual(VideoPlayer.Episode,9)</visible>
-                <posx>45</posx>
-                <posy>0</posy>
-                <width>355</width>
-                <height>194</height>
-                <label>S$INFO[VideoPlayer.Season] - E0$INFO[VideoPlayer.Episode]</label>
-                <font>Font-Condensed-S34</font>
-                <disabledcolor>aawhite</disabledcolor>
-                <texturefocus></texturefocus>
-                <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
-                <align>center</align>
-                <enable>false</enable>
-            </control>
-            <!-- Season less 9 - EP greater 10 -->
-            <control type="button">
-                <visible>Integer.IsLessOrEqual(VideoPlayer.Season,9) + Integer.IsGreaterOrEqual(VideoPlayer.Episode,10)</visible>
-                <posx>45</posx>
-                <posy>0</posy>
-                <width>355</width>
-                <height>194</height>
-                <label>S0$INFO[VideoPlayer.Season] - E$INFO[VideoPlayer.Episode]</label>
-                <font>Font-Condensed-S34</font>
-                <disabledcolor>aawhite</disabledcolor>
-                <texturefocus></texturefocus>
-                <texturenofocus border="150,90,150,90">overlays/volume/back-vf.png</texturenofocus>
-                <align>center</align>
-                <enable>false</enable>
-            </control>            
         </control>
     </include>
     <include name="OSDWeatherClockPVR">
