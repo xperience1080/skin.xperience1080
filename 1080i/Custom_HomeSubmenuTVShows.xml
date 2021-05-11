@@ -121,11 +121,6 @@
                     <onclick>PreviousMenu</onclick>
                     <onclick>ActivateWindow(videos,files,return)</onclick>
                 </item>
-                <item id="3">
-                    <label></label>
-                    <onclick>PreviousMenu</onclick>
-                    <onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
-                </item>
                 <item id="4">
                     <label></label>
                     <onclick>PreviousMenu</onclick>

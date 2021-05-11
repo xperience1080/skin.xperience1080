@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <addon id="skin.xperience1080" version="8.0.63" name="Xperience1080" provider-name="xhaggi|luizoti">
     <requires>
         <import addon="xbmc.gui" version="5.15.0" />
@@ -8,6 +9,15 @@
         <import addon="script.favourites" version="6.0.1" />
         <import addon="script.artistslideshow" version="1.8.2" />
         <import addon="script.videolanguage" version="0.1.1" />
+=======
+<addon id="skin.xperience1080" version="8.9.1" name="Xperience1080" provider-name="xhaggi,krupama">
+    <requires>
+        <import addon="xbmc.gui" version="5.15.0" />
+        <import addon="service.skin.widgets" version="0.0.33" />
+        <import addon="script.globalsearch" version="4.0.2" />
+        <import addon="script.favourites" version="6.0.1" />
+        <import addon="script.artistslideshow" version="1.8.2" />
+>>>>>>> c8957ad7d4f42d4777492da4554e381809331118
         <import addon="script.toolbox" version="1.0.1" />
         <import addon="resource.images.studios.white" version="0.0.1"/>
         <import addon="resource.images.musicgenreicons.grey" version="0.0.5"/>

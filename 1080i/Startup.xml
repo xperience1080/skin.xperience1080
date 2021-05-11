@@ -11,7 +11,6 @@
             <onfocus condition="!Skin.HasSetting(Skin.Initialization)">Skin.SetBool(Skin.Initialization)</onfocus>
             <onfocus condition="String.IsEmpty(Skin.String(GlobalBackdropSingle))">Skin.SetString(GlobalBackdropSingle,special://skin/extras/backgrounds/01.jpg)</onfocus>
             <onfocus condition="String.IsEmpty(Skin.String(GlobalOverlay))">Skin.SetString(GlobalOverlay,special://skin/extras/fade/overlay.png)</onfocus>
-            <onfocus condition="String.IsEmpty(Window(startup).Property(Started)) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
             <onfocus condition="String.IsEmpty(Window(startup).Property(Started)) + Skin.HasSetting(StartupPlaylist)">PlayMedia($ESCINFO[Skin.String(StartupPlaylist.Path)])</onfocus>
             <onfocus condition="System.HasAddon(script.extendedinfo) + String.IsEmpty(Window(startup).Property(Started))">SetProperty(extendedinfo_running,True,home)</onfocus>
             <onfocus condition="String.IsEmpty(Window(startup).Property(Started)) + String.IsEmpty(Window(startup).Property(Skin.Initialization))">ReplaceWindow($INFO[System.StartupWindow])</onfocus>

@@ -21,10 +21,10 @@
         <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),2)">special://skin/playlists/ongoing_episodes.xsp</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),3)">videodb://recentlyaddedmovies/</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),4)">videodb://recentlyaddedepisodes/</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),6)">plugin://script.extendedinfo?info=incinemamovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),7)">plugin://script.extendedinfo?info=popularmovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),15)">plugin://script.extendedinfo?info=trendingmovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),16)">plugin://script.extendedinfo?info=trendingshows</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),6)">plugin://plugin.video.themoviedb.helper?info=trakt_boxoffice&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),7)">plugin://plugin.video.themoviedb.helper?info=trakt_popular&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),15)">plugin://plugin.video.themoviedb.helper?info=trakt_trending&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),16)">plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp&amp;type=tv</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),17)">$INFO[Skin.String(HomeWidget.1.Path)]</value>
     </variable>
 
@@ -33,29 +33,29 @@
         <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),2)">special://skin/playlists/ongoing_episodes.xsp</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),3)">videodb://recentlyaddedmovies/</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),4)">videodb://recentlyaddedepisodes/</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),6)">plugin://script.extendedinfo?info=incinemamovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),7)">plugin://script.extendedinfo?info=popularmovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),15)">plugin://script.extendedinfo?info=trendingmovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),16)">plugin://script.extendedinfo?info=trendingshows</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),6)">plugin://plugin.video.themoviedb.helper?info=trakt_boxoffice&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),7)">plugin://plugin.video.themoviedb.helper?info=trakt_popular&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),15)">plugin://plugin.video.themoviedb.helper?info=trakt_trending&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),16)">plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;type=tv</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.2.Type),17)">$INFO[Skin.String(HomeWidget.2.Path)]</value>
     </variable>
 
     <variable name="Widget.3.Movies">
         <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),3)">videodb://recentlyaddedmovies/</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),4)">videodb://recentlyaddedepisodes/</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),6)">plugin://script.extendedinfo?info=incinemamovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),7)">plugin://script.extendedinfo?info=popularmovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),15)">plugin://script.extendedinfo?info=trendingmovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),16)">plugin://script.extendedinfo?info=trendingshows</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),6)">plugin://plugin.video.themoviedb.helper?info=trakt_boxoffice&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),7)">plugin://plugin.video.themoviedb.helper?info=trakt_popular&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),15)">plugin://plugin.video.themoviedb.helper?info=trakt_trending&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),16)">plugin://plugin.video.themoviedb.helper?info=trakt_trending&amp;type=tv</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.3.Type),17)">$INFO[Skin.String(HomeWidget.3.Path)]</value>
     </variable>
 
     <variable name="Widget.4.TVShows">
         <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),4)">videodb://recentlyaddedepisodes/</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),6)">plugin://script.extendedinfo?info=incinemamovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),7)">plugin://script.extendedinfo?info=popularmovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),15)">plugin://script.extendedinfo?info=trendingmovies</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),16)">plugin://script.extendedinfo?info=trendingshows</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),6)">plugin://plugin.video.themoviedb.helper?info=trakt_boxoffice&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),7)">plugin://plugin.video.themoviedb.helper?info=trakt_popular&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),15)">plugin://plugin.video.themoviedb.helper?info=trakt_trending&amp;type=movie</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),16)">plugin://plugin.video.themoviedb.helper?info=trakt_trending&amp;type=tv</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.4.Type),17)">$INFO[Skin.String(HomeWidget.4.Path)]</value>
     </variable>
 

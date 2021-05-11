@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9333</defaultcontrol>
-    <onload condition="System.HasAddon(script.videolanguage) + !Container.Content(musicvideos)">RunScript(script.videolanguage,movieid=$INFO[ListItem.DBID])</onload>
     <onload>SetProperty(fanart_image,$INFO[ListItem.Art(fanart)],home)</onload>
     <onload condition="Skin.HasSetting(MovieInformation.PlayTrailer)">AlarmClock(PlayTrailer,PlayMedia($INFO[ListItem.Trailer],false,1),00:01,silent)</onload>
     <onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
@@ -465,9 +464,10 @@
                         <item id="4">
                             <label>$LOCALIZE[20410]</label>
                             <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">PreviousMenu</onclick>
-                            <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+                            <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">
+	                            ActivateWindow(videos,$INFO[ListItem.Title,plugin://plugin.video.youtube/kodion/search/query/?q=, Trailer&amp;search_type=video&amp;hide_folders=true],return)</onclick>
                             <onclick condition="Skin.HasSetting(PlayTrailer.Minimized)">PlayMedia($INFO[ListItem.Trailer],false,1)</onclick>
-                            <visible>!String.IsEmpty(ListItem.Trailer)</visible>
+                            <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
                         </item>
                         <item id="5">
                             <description>Get Artwork</description>
@@ -524,41 +524,41 @@
                         <width>48</width>
                         <height>48</height>
                         <aspectratio>center</aspectratio>
-                        <texture>$INFO[Window.Property(AudioLanguage.1),flags/language/,.png]</texture>
+                        <texture>$INFO[ListItem.Property(AudioLanguage.1),flags/language/,.png]</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>!String.IsEmpty(Window.Property(AudioLanguage.1))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
                     </control>
                     <control type="image">
                         <width>48</width>
                         <height>48</height>
                         <aspectratio>center</aspectratio>
-                        <texture>$INFO[Window.Property(AudioLanguage.2),flags/language/,.png]</texture>
+                        <texture>$INFO[ListItem.Property(AudioLanguage.2),flags/language/,.png]</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>!String.IsEmpty(Window.Property(AudioLanguage.2))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
                     </control>
                     <control type="image">
                         <width>48</width>
                         <height>48</height>
                         <aspectratio>center</aspectratio>
-                        <texture>$INFO[Window.Property(AudioLanguage.3),flags/language/,.png]</texture>
+                        <texture>$INFO[ListItem.Property(AudioLanguage.3),flags/language/,.png]</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>!String.IsEmpty(Window.Property(AudioLanguage.3))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.3))</visible>
                     </control>
                     <control type="image">
                         <width>48</width>
                         <height>48</height>
                         <aspectratio>center</aspectratio>
-                        <texture>$INFO[Window.Property(AudioLanguage.4),flags/language/,.png]</texture>
+                        <texture>$INFO[ListItem.Property(AudioLanguage.4),flags/language/,.png]</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>!String.IsEmpty(Window.Property(AudioLanguage.4))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.4))</visible>
                     </control>
                     <control type="image">
                         <width>48</width>
                         <height>48</height>
                         <aspectratio>center</aspectratio>
-                        <texture>$INFO[Window.Property(AudioLanguage.5),flags/language/,.png]</texture>
+                        <texture>$INFO[ListItem.Property(AudioLanguage.5),flags/language/,.png]</texture>
                         <include>visiblehidefadeflags</include>
-                        <visible>!String.IsEmpty(Window.Property(AudioLanguage.5))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.5))</visible>
                     </control>
                 </control>
 
