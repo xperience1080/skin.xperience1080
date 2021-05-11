@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.xperience1080" version="8.9.0" name="Xperience1080" provider-name="xhaggi">
+<addon id="skin.xperience1080" version="8.9.1" name="Xperience1080" provider-name="xhaggi | krupama | luizoti">
     <requires>
         <import addon="xbmc.gui" version="5.15.0" />
         <import addon="service.skin.widgets" version="0.0.33" />
-        <import addon="script.tv.show.next.aired" version="6.0.15" />
         <import addon="script.globalsearch" version="4.0.2" />
         <import addon="script.favourites" version="6.0.1" />
         <import addon="script.artistslideshow" version="1.8.2" />
-        <import addon="script.videolanguage" version="0.1.2" />
         <import addon="script.toolbox" version="1.0.1" />
         <import addon="resource.images.studios.white" version="0.0.1"/>
         <import addon="resource.images.musicgenreicons.grey" version="0.0.5"/>
