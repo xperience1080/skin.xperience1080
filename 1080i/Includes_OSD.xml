@@ -155,7 +155,7 @@
                 <posy>0</posy>
                 <width>300</width>
                 <height>194</height>
-                <label>S0$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode]</label>
+                <label>S0$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode]</label>
                 <font>Font-Condensed-S34</font>
                 <disabledcolor>aawhite</disabledcolor>
                 <texturefocus></texturefocus>
