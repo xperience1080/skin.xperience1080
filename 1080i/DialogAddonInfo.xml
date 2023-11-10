@@ -168,10 +168,11 @@
                             <shadowcolor>33000000</shadowcolor>
                             <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
                             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
+                            <visible>Control.IsEnabled(6)</visible>
                         </control>
                         <control type="button" id="8">
-                            <description>Update add-on</description>
-                            <label>$LOCALIZE[24069]</label>
+                            <description>Install add-on</description>
+                            <label>$LOCALIZE[24138]</label>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>440</width>
@@ -185,6 +186,7 @@
                             <shadowcolor>33000000</shadowcolor>
                             <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
                             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
+                            <visible>Control.IsEnabled(8)</visible>
                         </control>
                         <control type="button" id="12">
                             <description>Launch add-on</description>
@@ -202,6 +204,7 @@
                             <shadowcolor>33000000</shadowcolor>
                             <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
                             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
+                            <visible>Control.IsEnabled(12)</visible>
                         </control>
                         <control type="button" id="9">
                             <description>Addon settings</description>
@@ -219,6 +222,7 @@
                             <shadowcolor>33000000</shadowcolor>
                             <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
                             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
+                            <visible>Control.IsEnabled(9)</visible>
                         </control>
                         <control type="button" id="10">
                             <description>Addon dependencies</description>
@@ -236,6 +240,7 @@
                             <shadowcolor>33000000</shadowcolor>
                             <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
                             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
+                            <visible>Control.IsEnabled(10)</visible>
                         </control>
                         <control type="button" id="7">
                             <description>Enable/Disable add-on</description>
@@ -252,10 +257,10 @@
                             <shadowcolor>33000000</shadowcolor>
                             <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
                             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
+                            <visible>Control.IsEnabled(7)</visible>
                         </control>
                         <control type="radiobutton" id="13">
                             <description>Auto update add-on</description>
-                            <visible>Control.IsEnabled(13)</visible>
                             <label>$LOCALIZE[21340]</label>
                             <posx>0</posx>
                             <posy>0</posy>
@@ -270,6 +275,7 @@
                             <disabledcolor>44FFFFFF</disabledcolor>
                             <shadowcolor>33000000</shadowcolor>
                             <texturefocus border="150,1,150,1">views/other/focus.png</texturefocus>
+                            <visible>Control.IsEnabled(13)</visible>
                         </control>
                         <control type="button" id="20">
                             <visible>!Control.IsEnabled(6) + !Control.IsEnabled(7) + !Control.IsEnabled(8) + !Control.IsEnabled(9) + !Control.IsEnabled(11) + !Control.IsEnabled(12)</visible>
