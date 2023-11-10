@@ -93,7 +93,7 @@
                     <disabledcolor>FF484848</disabledcolor>
                     <textoffsetx>25</textoffsetx>
                     <label>$VAR[LibraryEditorLabel]</label>
-                    <onclick>XBMC.RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
+                    <onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
                     <texturefocus>dialogs/options/buttons/default-fo.png</texturefocus>
                     <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + System.HasAddon(script.libraryeditor) + Control.IsVisible(1006)</visible>
                 </control>

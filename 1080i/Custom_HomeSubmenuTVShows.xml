@@ -124,7 +124,7 @@
                 <item id="3">
                     <label></label>
                     <onclick>PreviousMenu</onclick>
-                    <onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
+                    <onclick>RunScript(script.tv.show.next.aired)</onclick>
                 </item>
                 <item id="4">
                     <label></label>

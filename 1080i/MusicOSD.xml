@@ -250,10 +250,10 @@
                         <alttexturefocus>osd/fullscreen/buttons/lyrics-fo.png</alttexturefocus>
                         <alttexturenofocus>osd/fullscreen/buttons/lyrics-nofo.png</alttexturenofocus>
                         <onclick>Close</onclick>
-                        <onclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                        <onclick>RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
                         <altclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</altclick>
                         <altclick>Close</altclick>
-                        <altclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
+                        <altclick>RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
                         <usealttexture>String.IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
                         <onleft>6</onleft>
                         <onright>500</onright>
