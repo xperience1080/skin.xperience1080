@@ -188,6 +188,24 @@
                             <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
                             <visible>Control.IsEnabled(8)</visible>
                         </control>
+                        <control type="button" id="14">
+                            <description>Addon versions</description>
+                            <label>$LOCALIZE[24069]</label>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>440</width>
+                            <height>83</height>
+                            <textoffsetx>25</textoffsetx>
+                            <align>left</align>
+                            <font>Font-Condensed-S40</font>
+                            <textcolor>99FFFFFF</textcolor>
+                            <focusedcolor>eewhite</focusedcolor>
+                            <disabledcolor>44FFFFFF</disabledcolor>
+                            <shadowcolor>33000000</shadowcolor>
+                            <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
+                            <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
+                            <visible>Control.IsEnabled(14)</visible>
+                        </control>
                         <control type="button" id="12">
                             <description>Launch add-on</description>
                             <label>$LOCALIZE[518]</label>
