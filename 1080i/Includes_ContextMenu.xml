@@ -55,7 +55,7 @@
 
     <include name="ContextMenuDefault">
         <control type="group">
-            <posx>267</posx>
+            <posx>67</posx>
             <posy>517</posy>
             <control type="image">
                 <description>shadow image</description>
