@@ -773,7 +773,7 @@
             <visible allowhiddenfocus="true">false</visible>
           </control>
           <control type="button" id="12">
-            <onfocus>Skin.SetString(HomeWidget.2.Type,service.skin.widgets)</onfocus>
+            <onfocus>Skin.Reset(HomeWidget.2.Type)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.2.TypeName,$LOCALIZE[31551])</onfocus>
             <onfocus>Skin.SetString(HomeWidget.2.SubType,Movie)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.2.SubTypeName,$LOCALIZE[342])</onfocus>
@@ -784,7 +784,7 @@
             <visible allowhiddenfocus="true">false</visible>
           </control>
           <control type="button" id="13">
-            <onfocus>Skin.SetString(HomeWidget.3.Type,service.skin.widgets)</onfocus>
+            <onfocus>Skin.Reset(HomeWidget.3.Type)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.3.TypeName,$LOCALIZE[31552])</onfocus>
             <onfocus>Skin.SetString(HomeWidget.3.SubType,Movie)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.3.SubTypeName,$LOCALIZE[342])</onfocus>
@@ -795,7 +795,7 @@
             <visible allowhiddenfocus="true">false</visible>
           </control>
           <control type="button" id="14">
-            <onfocus>Skin.SetString(HomeWidget.4.Type,service.skin.widgets)</onfocus>
+            <onfocus>Skin.Reset(HomeWidget.4.Type)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.4.TypeName,$LOCALIZE[31553])</onfocus>
             <onfocus>Skin.SetString(HomeWidget.4.SubType,Episode)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.4.SubTypeName,$LOCALIZE[20360])</onfocus>
@@ -806,7 +806,7 @@
             <visible allowhiddenfocus="true">false</visible>
           </control>
           <control type="button" id="15">
-            <onfocus>Skin.SetString(HomeWidget.5.Type,service.skin.widgets.random)</onfocus>
+            <onfocus>Skin.Reset(HomeWidget.5.Type)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.5.TypeName,$LOCALIZE[31556])</onfocus>
             <onfocus>Skin.SetString(HomeWidget.5.SubType,Music)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.5.SubTypeName,$LOCALIZE[2])</onfocus>
@@ -817,7 +817,7 @@
             <visible allowhiddenfocus="true">false</visible>
           </control>
           <control type="button" id="16">
-            <onfocus>Skin.SetString(HomeWidget.6.Type,service.skin.widgets)</onfocus>
+            <onfocus>Skin.Reset(HomeWidget.6.Type)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.6.TypeName,$LOCALIZE[1])</onfocus>
             <onfocus>Skin.SetString(HomeWidget.6.SubType,Photo)</onfocus>
             <onfocus>Skin.SetString(HomeWidget.6.SubTypeName,Photo)</onfocus>
