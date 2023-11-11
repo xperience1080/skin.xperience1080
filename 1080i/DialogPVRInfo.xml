@@ -201,18 +201,25 @@
                             <onclick>SendClick(9)</onclick>
                         </item>
                         <item id="5">
+                            <description>Set reminder</description>
+                            <visible>Window.IsActive(pvrguideinfo)</visible>
+                            <visible>!ListItem.HasReminder</visible>
+                            <label>$LOCALIZE[826]</label>
+                            <onclick>SendClick(11)</onclick>
+                        </item>
+                        <item id="6">
                             <description>Play Record</description>
                             <visible>Window.IsActive(pvrrecordinginfo)</visible>
                             <label>$LOCALIZE[19687]</label>
                             <onclick>SendClick(8)</onclick>
                         </item>
-                        <item id="6">
+                        <item id="7">
                             <description>Record</description>
                             <visible>Window.IsActive(pvrguideinfo)</visible>
                             <label>$LOCALIZE[264]</label>
                             <onclick>SendClick(6)</onclick>
                         </item>
-                        <item id="7">
+                        <item id="8">
                             <description>Trailer</description>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                             <label>$LOCALIZE[20410]</label>
@@ -459,6 +466,10 @@
         </control>
         <control type="button" id="9">
             <description>Add timer</description>
+            <visible>false</visible>
+        </control>
+        <control type="button" id="11">
+            <description>Set reminder</description>
             <visible>false</visible>
         </control>
     </controls>
