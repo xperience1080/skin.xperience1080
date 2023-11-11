@@ -344,18 +344,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "הורד נעימות"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "אפשר הפרק הבא שישודר בתוכניות טלוויזיה"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "הגדרת הפרק הבא שישודר "
-
-msgctxt "#31293"
-msgid "Update Next Aired data on Start"
-msgstr "עדכן פרטי השידור הבא בעת ההפעלה"
-
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr "עדכן גרפיקה (פוסטר, תמונת נוף, פאנארט וכו') לאחר עדכון ספריה"

@@ -360,18 +360,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "테마 음악 다운로드"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "TV Show Next Aired 추가기능 사용"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "TV Show Next Aired 추가기능 설정"
-
-msgctxt "#31293"
-msgid "Update Next Aired data on Start"
-msgstr "시작할 때 Next Aired 애드온 정보 업데이트"
-
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr "라이브러리 업데이트 후 아트 (포스터, 랜드스케이프, 팬아트 등) 업데이트"

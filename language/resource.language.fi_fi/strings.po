@@ -176,14 +176,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Lataa teemamusiikki"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Aktivoi TV Show Next Aired"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Asetukset TV Show Next Aired"
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Kappaleet"

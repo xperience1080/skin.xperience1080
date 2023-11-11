@@ -212,14 +212,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "下载主题歌"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "启用剧集播出预告"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "配置剧集播出预告"
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "音轨"

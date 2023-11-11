@@ -204,14 +204,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Téma-hangok letöltése"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "TV show next aired engedélyezése"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "TV Show Next Aired konfigurálása"
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Számok"

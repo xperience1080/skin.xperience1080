@@ -204,14 +204,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Λήψη θεματικών τραγουδιών"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Ενεργοποίηση της Επόμενης Προβολής (TV Show Next Aired)"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Διαμόρφωση της Επόμενης Προβολής (TV Show Next Aired)"
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Κομμάτια"

@@ -720,40 +720,6 @@
                         </control>
                     </control>
                     <control type="group">
-                        <width>1044</width>
-                        <height>40</height>
-                        <visible>Container.Content(TVShows) + !String.IsEmpty(Window(Home).Property(NextAired.Status))</visible>
-                        <!-- Studio -->
-                        <control type="label">
-                            <posx>8</posx>
-                            <posy>0</posy>
-                            <width>1044</width>
-                            <height>36</height>
-                            <font>Font-Condensed-S34</font>
-                            <align>left</align>
-                            <label>$INFO[Window(Home).Property(NextAired.Status)]</label>
-                            <textcolor>aawhite</textcolor>
-                            <scroll>false</scroll>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <width>1044</width>
-                        <height>40</height>
-                        <visible>Container.Content(TVShows) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
-                        <!-- Studio -->
-                        <control type="label">
-                            <posx>8</posx>
-                            <posy>0</posy>
-                            <width>1044</width>
-                            <height>36</height>
-                            <font>Font-Condensed-S34</font>
-                            <align>left</align>
-                            <label>$INFO[Window(Home).Property(NextAired.NextNumber),→ ,]$INFO[Window(Home).Property(NextAired.NextTitle), ,]$INFO[Window(Home).Property(NextAired.NextDate), (,)]</label>
-                            <textcolor>ddwhite</textcolor>
-                            <scroll>false</scroll>
-                        </control>
-                    </control>
-                    <control type="group">
                         <!-- Director -->
                         <width>1044</width>
                         <height>40</height>

@@ -340,18 +340,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Muat turun lagu tema"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Benarkan Rancangan TV Keudara Berikutnya"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Konfigur Rancangan TV Keudara Berikutnya"
-
-msgctxt "#31293"
-msgid "Update Next Aired data on Start"
-msgstr "Kemaskini data Keudara Berikutnya semasa Permulaan"
-
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr "Kemaskini Seni (Poster, Lanskap, Seni Peminat dan lain-lain) selepas Kemaskini Pustaka"

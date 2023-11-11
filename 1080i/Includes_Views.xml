@@ -23,7 +23,6 @@
         <include>Viewtype-ThumbnailVideo</include>
         <include>Viewtype-Banner</include>
         <include>Viewtype-Fanart</include>
-        <include condition="Skin.HasSetting(NextAired.Enabled)">NextAiredInfo</include>
     </include>
     <include name="MusicViews">
         <include>Viewtype-MusicList</include>

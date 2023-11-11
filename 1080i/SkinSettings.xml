@@ -900,27 +900,6 @@
                         <label2>[COLOR=SelectedBlue]$INFO[system.addontitle(Skin.String(LyricScript_Path))][/COLOR]</label2>
                         <onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                     </control>
-                    <control type="radiobutton" id="7007">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(NextAired.Enabled)</selected>
-                        <onclick>Skin.ToggleSetting(NextAired.Enabled)</onclick>
-                        <label>$LOCALIZE[31285]</label>
-                    </control>
-                    <control type="radiobutton" id="7008">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(NextAired.Update)</selected>
-                        <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
-                        <label>- $LOCALIZE[31293]</label>
-                    </control>
-                    <control type="button" id="7009">
-                        <width>1210</width>
-                        <include>SettingsCategoryDefaultButtonVars</include>
-                        <onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
-                        <label>- $LOCALIZE[31290]</label>
-                        <visible>Skin.HasSetting(NextAired.Enabled)</visible>
-                    </control>
                 </control>
                 <control type="image" id="42">
                     <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>

@@ -200,14 +200,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Свали песен към сериала"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Включи \"следващо излъчване\" за сериали"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Конфигурирай \"следващо излъчване\" за сериали"
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Аудио записи"

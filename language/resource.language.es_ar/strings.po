@@ -148,14 +148,6 @@ msgctxt "#31283"
 msgid "Enable TVTunes add-on"
 msgstr "Habilitar el add-on TVTunes"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Habilitar TV Show Next Aired"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Configurar TV Show Next Aired"
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Pistas"

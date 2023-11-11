@@ -200,14 +200,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Stáhnout znělky"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Povolit informace o příští vysílané epizodě"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Upravit doplněk \"informace o příští vysílané epizodě\""
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Stopy"

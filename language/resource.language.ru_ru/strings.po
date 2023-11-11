@@ -216,14 +216,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Скачивать музыкальные темы"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Включить отображение даты премьеры следующей серии ТВ передачи"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Настроить отображение следующей ТВ передачи"
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Треки"

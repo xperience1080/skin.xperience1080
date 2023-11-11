@@ -500,18 +500,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Atsisiųsti temos dainas"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Įjungti 'TV Show Next Aired'"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Konfigūruoti 'TV Show Next Aired' priedą"
-
-msgctxt "#31293"
-msgid "Update Next Aired data on Start"
-msgstr "Atnaujinti kitos transliacijos duomenis paleidus"
-
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr "Atnaujinti iliustracijas (plakatas, gulsčia iliustracija, Fanart ir kt.) po bibliotekos atnaujinimo"

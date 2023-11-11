@@ -240,14 +240,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Descargar temas musicais"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Activar Vindeira Emisión da Series de TV"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Configurar a Vindeira Emisión da Serie de TV"
-
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Pistas"

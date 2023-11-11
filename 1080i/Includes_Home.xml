@@ -2618,13 +2618,12 @@
                                 <property name="animate">$INFO[Skin.String(HomeTVShowTile3.Animate)]</property>
                             </item>
                             <item id="2">
-                                <label fallback="31943">$INFO[Skin.String(HomeTVShowTile4.Label)]</label>
-                                <label2>$INFO[Window.Property(NextAired.TodayTotal)]</label2>
+                                <label fallback="1037">$INFO[Skin.String(HomeTVShowTile4.Label)]</label>
                                 <onclick condition="String.IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeTVShowTile4) + !String.IsEqual(Skin.String(HomeTVShowTile4.Type),4) + !String.IsEqual(Skin.String(HomeTVShowTile4.Type),5) + !String.IsEqual(Skin.String(HomeTVShowTile4.Type),6) + !String.IsEqual(Skin.String(HomeTVShowTile4.Type),7)">RunAddon($INFO[Skin.String(HomeTVShowTile4.Path)])</onclick>
                                 <onclick condition="String.IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeTVShowTile4) + String.IsEqual(Skin.String(HomeTVShowTile4.Type),4)">ActivateWindow(Videos,$INFO[Skin.String(HomeTVShowTile4.Path)],return)</onclick>
                                 <onclick condition="String.IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeTVShowTile4) + String.IsEqual(Skin.String(HomeTVShowTile4.Type),5)">ActivateWindow(Music,$INFO[Skin.String(HomeTVShowTile4.Path)],return)</onclick>
                                 <onclick condition="String.IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeTVShowTile4) + [String.IsEqual(Skin.String(HomeTVShowTile4.Type),6) | String.IsEqual(Skin.String(HomeTVShowTile4.Type),7)]">$INFO[Skin.String(HomeTVShowTile4.Path)]</onclick>
-                                <onclick condition="String.IsEmpty(Window.Property(EditTile)) + !Skin.HasSetting(HomeTVShowTile4)">RunAddon(script.tv.show.next.aired)</onclick>
+                                <onclick condition="String.IsEmpty(Window.Property(EditTile)) + !Skin.HasSetting(HomeTVShowTile4)">ActivateWindow(videos,addons,return)</onclick>
                                 <onclick condition="!String.IsEmpty(Window.Property(EditTile))">Skin.SetBool(HomeTVShowTile4)</onclick>
                                 <onclick condition="!String.IsEmpty(Window.Property(EditTile)) + String.IsEmpty(Skin.String(HomeTVShowTile4.Type))">Skin.SetString(HomeTVShowTile4.Type,0)</onclick>
                                 <onclick condition="!String.IsEmpty(Window.Property(EditTile)) + String.IsEmpty(Skin.String(HomeTVShowTile4.TypeName))">Skin.SetString(HomeTVShowTile4.TypeName,$LOCALIZE[31145])</onclick>
@@ -2637,7 +2636,7 @@
                                 <onclick condition="!String.IsEmpty(Window.Property(EditTile))">ActivateWindow(3003)</onclick>
                                 <onclick condition="!String.IsEmpty(Window.Property(EditTile))">ClearProperty(EditTile)</onclick>
                                 <thumb>$INFO[Skin.String(HomeTVShowTile4.Icon)]</thumb>
-                                <icon>windows/home/icons/tvguide.png</icon>
+                                <icon>windows/home/icons/videoaddons.png</icon>
                                 <property name="pos">top</property>
                                 <property name="showlabel">$INFO[Skin.String(HomeTVShowTile4.ShowLabel)]</property>
                                 <property name="path">$INFO[Skin.String(HomeTVShowTile4.Path)]</property>

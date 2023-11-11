@@ -500,18 +500,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Download titelsong"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Activeer TV serie volgende uitzending"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Configureer TV Show Next Aired"
-
-msgctxt "#31293"
-msgid "Update Next Aired data on Start"
-msgstr "Update volgende uitzending data tijdens opstarten"
-
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr "Update art (Poster, landschap, logo, etc.) na database update"

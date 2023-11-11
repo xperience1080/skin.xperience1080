@@ -328,18 +328,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr "Preuzmi glazbenu temu"
 
-msgctxt "#31285"
-msgid "Enable TV Show Next Aired"
-msgstr "Omogući prikaz sljedećeg emitiranja serija"
-
-msgctxt "#31290"
-msgid "Configure TV Show Next Aired"
-msgstr "Uredi opcije sljedećeg emitiranja serija"
-
-msgctxt "#31293"
-msgid "Update Next Aired data on Start"
-msgstr "Ažuriraj sljedeće emitiranje serija prilikom pokretanja"
-
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr "Ažuriraj slike (Poster, Landscape, Fanart itd.) nakon ažuriranja zbirke"
