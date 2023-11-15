@@ -44,7 +44,7 @@
                 </control>
                 <control type="label" id="311">
                     <description>Dialog Header</description>
-                    <visible>Integer.IsEqual(Container(9010).NumItems,0) | String.IsEmpty(Control.GetLabel(312).index(1))</visible>
+                    <visible>Integer.IsEqual(Container(9010).NumItems,0)</visible>
                     <posx>118</posx>
                     <posy>76</posy>
                     <width>1000</width>

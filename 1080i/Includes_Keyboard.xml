@@ -4,7 +4,7 @@
     <expression name="KeyboardHasAutoCompletion">System.HasAddon(plugin.program.autocompletion) + !System.HasHiddenInput</expression>
 
     <variable name="KeyboardAutoCompletionContent">
-        <value condition="$EXP[KeyboardHasAutoCompletion] + $EXP[KeyboardHasText]">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=4</value>
+        <value condition="$EXP[KeyboardHasAutoCompletion]">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=4</value>
     </variable>
 
     <include name="KeyboardAutoCompletionFontBold">
