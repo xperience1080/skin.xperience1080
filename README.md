@@ -1,4 +1,4 @@
-## Xperience1080 for Kodi 18.x (Leia)
+## Xperience1080 for Kodi 19.x (Matrix)
 
 ![Xperience1080 Logo](https://raw.githubusercontent.com/xperience1080/skin.xperience1080/master/resources/icon.png)
 
