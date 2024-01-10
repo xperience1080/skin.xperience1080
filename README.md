@@ -1,4 +1,4 @@
-## Xperience1080 Skin for Kodi 19.x (Matrix)
+## Xperience1080 Skin for Kodi 19+ (Matrix/Nexus)
 
 This repository merge changes from [krupama](https://github.com/krupama/skin.xperience1080) repo, i re included the original theme, deleted by him and put the Metro theme as a secondary, for my tests the theme works without problems.
 
