@@ -129,7 +129,7 @@
                 <height>100</height>
                 <texture>$VAR[OptionsMenuButtonTexture]</texture>
                 <include>homebuttonsanim3</include>
-                <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsVisible(movieinformation) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(addoninformation) + !Window.IsVisible(musicinformation) + !Window.IsVisible(songinformation) + !Window.IsVisible(1122) + !Window.IsActive(favourites)</visible>
+                <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsVisible(movieinformation) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(addoninformation) + !Window.IsVisible(musicinformation) + !Window.IsVisible(songinformation) + !Window.IsVisible(1122) + !Window.IsActive(favouritesbrowser)</visible>
             </control>
             <control type="label">
                 <description>Options Label</description>
@@ -142,7 +142,7 @@
                 <textcolor>eewhite</textcolor>
                 <shadowcolor>22000000</shadowcolor>
                 <include>homebuttonsanim4</include>
-                <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsVisible(movieinformation) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(addoninformation) + !Window.IsVisible(musicinformation) + !Window.IsVisible(songinformation) + !Window.IsVisible(1122) + !Window.IsActive(favourites)</visible>
+                <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsVisible(movieinformation) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(addoninformation) + !Window.IsVisible(musicinformation) + !Window.IsVisible(songinformation) + !Window.IsVisible(1122) + !Window.IsActive(favouritesbrowser)</visible>
             </control>
         </control>
     </include>

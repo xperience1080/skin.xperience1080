@@ -22,7 +22,7 @@
                 <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                 <effect type="zoom" start="100" end="85" time="300" center="960,600" tween="sine" easing="out" />
             </animation>
-            <visible>!Window.IsActive(favourites)</visible>
+            <visible>!Window.IsActive(favouritesbrowser)</visible>
 
             <control type="image">
                 <description>Shadow</description>

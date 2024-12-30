@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog">
+<window>
     <defaultcontrol always="true">450</defaultcontrol>
-    <!--<zorder>-1</zorder>-->
-    <onload condition="String.IsEmpty(Window(Home).Property(Favourites))">SetProperty(Favourites,1,Home)</onload>
-    <onload condition="String.IsEmpty(Window(Home).Property(Favourites))">Control.Move(450,-1)</onload>
-    <onload condition="!Control.IsVisible(63)">PreviousMenu</onload>
+    <menucontrol>9000</menucontrol>
+    <backgroundcolor>0</backgroundcolor>
+    <views>450</views>
     <controls>
+        <include>CommonItems</include>
+        <include>CommonInfo</include>
         <control type="group" id="63">
             <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(songinformation) + !Window.IsActive(addoninformation) + !Window.IsActive(script-globalsearch.xml) + !Window.IsActive(fullscreenvideo) + !Window.IsActive(visualisation) + !Window.IsActive(selectdialog) + !Window.IsActive(filebrowser) + !Window.IsActive(yesnodialog) + !Window.IsActive(progressdialog) + !Window.IsActive(virtualkeyboard) + ![Window.IsActive(contextmenu) + !Control.IsVisible(63)] + !Window.IsActive(numericinput) + !Window.IsActive(playercontrols) + !Window.IsActive(networksetup) + !Window.IsActive(mediasource) + !Window.IsActive(locksettings) + !Window.IsActive(contentsettings) + !Window.IsActive(visualisation) + !Window.IsActive(smartplaylisteditor) + !Window.IsActive(pictureinfo) + !Window.IsActive(addonsettings) + !Window.IsActive(sliderdialog) + !Window.IsActive(textviewer) + !Window.IsActive(mediafilter) + !Window.IsActive(pvrguideinfo) + !Window.IsActive(pvrrecordinginfo) + !Window.IsActive(pvrtimersetting) + !Window.IsActive(pvrgroupmanager) + !Window.IsActive(pvrchannelmanager) + !Window.IsActive(pvrguidesearch) + !Window.IsActive(okdialog) + !Window.IsActive(1122) + !Window.IsActive(3020) + !Window.IsActive(3021) + !Window.IsActive(3022) + !Window.IsActive(3023) + !Window.IsActive(3001) + !Window.IsActive(3002) + !Window.IsActive(3003) + !Window.IsActive(3006)</visible>
             <control type="group">

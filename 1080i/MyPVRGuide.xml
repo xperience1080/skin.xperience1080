@@ -22,7 +22,7 @@
                     <animation effect="slide" start="0" end="478" time="400" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus">Conditional</animation>
                     <include>ListEndAnimation</include>
                     <control type="group">
-                        <visible>Control.IsVisible(10) + !Window.IsActive(favourites)</visible>
+                        <visible>Control.IsVisible(10) + !Window.IsActive(favouritesbrowser)</visible>
                         <animation type="WindowOpen" condition="!Control.IsVisible(9001)">
                             <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" />
                             <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />

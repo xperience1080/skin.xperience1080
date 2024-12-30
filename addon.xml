@@ -2,13 +2,12 @@
 <addon id="skin.xperience1080" version="10.0.0-alpha.1" name="Xperience1080" provider-name="xhaggi">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
-        <import addon="script.globalsearch" version="9.0.4" />
-        <import addon="script.favourites" version="6.0.1" />
-        <import addon="script.artistslideshow" version="1.8.2" />
-        <import addon="script.toolbox" version="1.0.1" />
-        <import addon="resource.images.studios.white" version="0.0.1"/>
-        <import addon="resource.images.musicgenreicons.grey" version="0.0.5"/>
-        <import addon="resource.images.moviegenreicons.white" version="0.0.5"/>
+        <import addon="script.globalsearch" version="9.0.7" />
+        <import addon="script.favourites" version="8.1.2" />
+        <import addon="script.artistslideshow" version="3.3.6" />
+        <import addon="script.toolbox" version="2.0.0" />
+        <import addon="resource.images.studios.white" version="0.0.30"/>
+        <import addon="resource.images.musicgenreicons.grey" version="0.0.6"/>
         <import addon="resource.images.weatherfanart.multi" version="0.0.6"/>
     </requires>
     <extension point="xbmc.gui.skin" effectslowdown="0.80" debugging="false">

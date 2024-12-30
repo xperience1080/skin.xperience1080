@@ -7,7 +7,7 @@
     <include name="Viewtype-AddonList">
 
         <control type="group">
-            <visible>Control.IsVisible(50) + !Window.IsActive(addoninformation) + !Window.IsActive(favourites)</visible>
+            <visible>Control.IsVisible(50) + !Window.IsActive(addoninformation) + !Window.IsActive(favouritesbrowser)</visible>
             <include>CommonViewAnimations</include>
             <include>OptionsShutdownAnimation</include>
 
@@ -179,7 +179,7 @@
             <include>FullscreenDimensions</include>
             <include>OptionsShutdownAnimation</include>
             <control type="group">
-                <visible>Control.IsVisible(500) + !Window.IsActive(addoninformation) + !Window.IsActive(script-script.extendedinfo-DialogInfo.xml) + !Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml) + String.IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(500) + !Window.IsActive(addoninformation) + !Window.IsActive(script-script.extendedinfo-DialogInfo.xml) + !Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml) + String.IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
@@ -319,7 +319,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(500) + !Window.IsActive(addoninformation) + !Window.IsActive(script-script.extendedinfo-DialogInfo.xml) + !Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml) + String.IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(500) + !Window.IsActive(addoninformation) + !Window.IsActive(script-script.extendedinfo-DialogInfo.xml) + !Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml) + String.IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="105" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />

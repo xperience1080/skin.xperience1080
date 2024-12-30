@@ -147,7 +147,7 @@
                         <width>440</width>
                         <height>247</height>
                         <onleft condition="!Window.IsVisible(3008)">SetProperty(BounceLeft,1,Home)</onleft>
-                        <onright>9334</onright>
+                        <onright>9333</onright>
                         <onup>9333</onup>
                         <ondown>9333</ondown>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
