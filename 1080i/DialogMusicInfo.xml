@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9333</defaultcontrol>
+    <onunload>ClearProperty(ChooseArt,Home)</onunload>
     <controls>
         <!-- Albums, Artists information -->
         <control type="group">
