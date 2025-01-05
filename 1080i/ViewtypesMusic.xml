@@ -5,7 +5,7 @@
     <!-- ========= -->
     <include name="Viewtype-MusicList">
         <control type="group">
-            <visible>Control.IsVisible(50) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation) + !Window.IsActive(favourites)</visible>
+            <visible>Control.IsVisible(50) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation) + !Window.IsActive(favouritesbrowser)</visible>
             <include>CommonViewAnimations</include>
             <include>OptionsShutdownAnimation</include>
 
@@ -847,7 +847,7 @@
             <include>OptionsShutdownAnimation</include>
             <!-- List Panel -->
             <control type="group">
-                <visible>Control.IsVisible(52) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(52) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="750" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
@@ -887,7 +887,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(52) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(52) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="575" delay="175" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="175" />
@@ -1010,7 +1010,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(52) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(52) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="645" delay="105" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />
@@ -1370,7 +1370,7 @@
             <include>FullscreenDimensions</include>
             <include>OptionsShutdownAnimation</include>
             <control type="group">
-                <visible>Control.IsVisible(53) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(53) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="645" delay="105" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />
@@ -1458,7 +1458,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(53) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(53) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="750" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
@@ -1504,7 +1504,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(53) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(53) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="575" delay="175" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="175" />
@@ -1651,7 +1651,7 @@
                 </animation>
                 <animation effect="fade" start="0" end="100" time="0" delay="1000" reversible="false">Visible</animation>
                 <animation effect="fade" start="100" end="0" time="0" reversible="false">Hidden</animation>
-                <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
             </control>
 
             <control type="group">
@@ -1682,7 +1682,7 @@
                         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                         <effect type="zoom" start="100" end="85" time="300" center="960,260" tween="sine" easing="out" />
                     </animation>
-                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                     <control type="group">
                         <posx>-372</posx>
                         <control type="image">
@@ -1737,7 +1737,7 @@
                         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                         <effect type="zoom" start="100" end="85" time="300" center="960,260" tween="sine" easing="out" />
                     </animation>
-                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                     <control type="group">
                         <posx>1860</posx>
                         <control type="image">
@@ -1792,7 +1792,7 @@
                         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                         <effect type="zoom" start="100" end="85" time="300" center="960,260" tween="sine" easing="out" />
                     </animation>
-                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                     <control type="group">
                         <posx>1488</posx>
                         <control type="image">
@@ -1847,7 +1847,7 @@
                         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                         <effect type="zoom" start="100" end="85" time="300" center="960,260" tween="sine" easing="out" />
                     </animation>
-                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                     <control type="group">
                         <posx>1116</posx>
                         <control type="image">
@@ -1902,7 +1902,7 @@
                         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                         <effect type="zoom" start="100" end="85" time="300" center="960,260" tween="sine" easing="out" />
                     </animation>
-                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                     <control type="group">
                         <posx>744</posx>
                         <control type="image">
@@ -1957,7 +1957,7 @@
                         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                         <effect type="zoom" start="100" end="85" time="300" center="960,260" tween="sine" easing="out" />
                     </animation>
-                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                     <control type="group">
                         <posx>372</posx>
                         <control type="image">
@@ -2011,7 +2011,7 @@
                         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                         <effect type="zoom" start="100" end="85" time="300" center="960,260" tween="sine" easing="out" />
                     </animation>
-                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                    <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                     <control type="image">
                         <description>Reflection</description>
                         <posx>-4</posx>
@@ -2065,7 +2065,7 @@
             </control>
 
             <control type="group">
-                <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation effect="fade" start="100" end="0" time="0" reversible="false">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="0" delay="1000" reversible="false">Visible</animation>
                 <control type="fixedlist" id="55">
@@ -2209,7 +2209,7 @@
                 <animation type="WindowClose" reversible="false">
                     <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
                 </animation>
-                <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favourites)</visible>
+                <visible>!Window.IsActive(musicinformation) + Control.IsVisible(55) + !Window.IsActive(favouritesbrowser)</visible>
                 <control type="group">
                     <animation type="Visible" reversible="false">
                         <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="in" />
@@ -2278,7 +2278,7 @@
             <include>FullscreenDimensions</include>
             <include>OptionsShutdownAnimation</include>
             <control type="group">
-                <visible>Control.IsVisible(501) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(501) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
@@ -2403,7 +2403,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(501) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites)</visible>
+                <visible>Control.IsVisible(501) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser)</visible>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="105" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />

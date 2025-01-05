@@ -9,7 +9,7 @@
             <include>EventLogHeader</include>
 
             <control type="group">
-                <visible>!Window.IsActive(favourites)</visible>
+                <visible>!Window.IsActive(favouritesbrowser)</visible>
                 <include>CommonViewAnimations</include>
                 <include>OptionsShutdownAnimation</include>
                 <control type="image">

@@ -8,7 +8,7 @@
         <include>PVRHeader</include>
 
         <control type="group">
-            <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsActive(favourites)</visible>
+            <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsActive(favouritesbrowser)</visible>
             <include>CommonViewAnimations</include>
             <posx>0</posx>
             <animation type="WindowClose">
@@ -23,7 +23,7 @@
                 <animation effect="slide" start="0" end="428" time="400" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus">Conditional</animation>
                 <include>ListEndAnimation</include>
                 <control type="group">
-                    <visible>!Window.IsActive(favourites)</visible>
+                    <visible>!Window.IsActive(favouritesbrowser)</visible>
                     <animation type="WindowOpen" condition="!Control.IsVisible(9001)">
                         <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="105" />
                         <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="105" />

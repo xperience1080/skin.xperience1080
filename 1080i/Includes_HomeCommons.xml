@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <expression name="HomeHideOnActiveDialog">!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(favourites) + !Window.IsActive(script-globalsearch.xml) + ![Window.IsVisible(virtualkeyboard) + !String.IsEmpty(Window.Property(HomeSearch))]</expression>
+    <expression name="HomeHideOnActiveDialog">!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser) + !Window.IsActive(script-globalsearch.xml) + ![Window.IsVisible(virtualkeyboard) + !String.IsEmpty(Window.Property(HomeSearch))]</expression>
 
     <include name="FocusPosition">
         <focusposition>$PARAM[value]</focusposition>
@@ -81,7 +81,7 @@
                 <onclick>ActivateWindow(ShutdownMenu)</onclick>
                 <include>Animation_ShutdownButton</include>
                 <include>homebuttonsanim</include>
-                <visible allowhiddenfocus="true">!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols) + !Window.IsActive(movieinformation)</visible>
+                <visible allowhiddenfocus="true">!Window.IsVisible(favouritesbrowser) + !Window.IsVisible(script-globalsearch.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols) + !Window.IsActive(movieinformation)</visible>
             </control>
             <control type="label">
                 <description>Shutdown Label</description>
@@ -96,7 +96,7 @@
                 <scroll>false</scroll>
                 <include>Animation_ShutdownButton</include>
                 <include>homebuttonsanim2</include>
-                <visible>!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols) + !Window.IsActive(movieinformation)</visible>
+                <visible>!Window.IsVisible(favouritesbrowser) + !Window.IsVisible(script-globalsearch.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols) + !Window.IsActive(movieinformation)</visible>
             </control>
             <control type="button" id="22">
                 <description>Favourites Button</description>
@@ -128,11 +128,11 @@
                 <onright>21</onright>
                 <texturefocus>buttons/favourites_fo.png</texturefocus>
                 <texturenofocus>buttons/favourites_nofo.png</texturenofocus>
-                <onclick>ActivateWindow(Favourites)</onclick>
+                <onclick>ActivateWindow(favouritesbrowser)</onclick>
                 <include>Animation_FavButton</include>
                 <include>homebuttonsanim3</include>
                 <visible>!Skin.HasSetting(KioskMode)</visible>
-                <visible allowhiddenfocus="true">!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols) + !Window.IsActive(movieinformation)</visible>
+                <visible allowhiddenfocus="true">!Window.IsVisible(favouritesbrowser) + !Window.IsVisible(script-globalsearch.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols) + !Window.IsActive(movieinformation)</visible>
             </control>
             <control type="label">
                 <description>Favourites Label</description>
@@ -148,7 +148,7 @@
                 <include>Animation_FavButton</include>
                 <include>homebuttonsanim4</include>
                 <visible>!Skin.HasSetting(KioskMode)</visible>
-                <visible>!Window.IsVisible(favourites) + !Window.IsVisible(script-globalsearch.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols) + !Window.IsActive(movieinformation)</visible>
+                <visible>!Window.IsVisible(favouritesbrowser) + !Window.IsVisible(script-globalsearch.xml) + !Window.IsVisible(virtualkeyboard) + String.IsEmpty(Window.Property(HomeSearch)) + !Window.IsVisible(playercontrols) + !Window.IsActive(movieinformation)</visible>
             </control>
         </control>
     </include>

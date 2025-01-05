@@ -712,7 +712,7 @@
                 <effect type="zoom" start="100" end="50" center="1745,100" tween="sine" easing="inout" time="300" />
             </animation>
             <include>MoonPhaseDummyLabels</include>
-            <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Today.IsFetched)) + !String.IsEmpty(Window(Weather).Property(Today.moonphase)) + !Window.IsActive(favourites)</visible>
+            <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Today.IsFetched)) + !String.IsEmpty(Window(Weather).Property(Today.moonphase)) + !Window.IsActive(favouritesbrowser)</visible>
             <control type="group">
                 <control type="image">
                     <posx>0</posx>
@@ -771,7 +771,7 @@
                 <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                 <effect type="zoom" start="100" end="85" time="300" center="960,600" tween="sine" easing="out" />
             </animation>
-            <visible>!Window.IsActive(favourites)</visible>
+            <visible>!Window.IsActive(favouritesbrowser)</visible>
             <control type="group" id="100">
                 <posy>100</posy>
                 <width>633</width>
