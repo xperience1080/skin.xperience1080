@@ -188,8 +188,6 @@
                 <posy>0</posy>
                 <width>64</width>
                 <height>64</height>
-                <label>210</label>
-                <font></font>
                 <texturefocus>osd/lyrics/buttons/previous-fo.png</texturefocus>
                 <texturenofocus>osd/lyrics/buttons/previous-nofo.png</texturenofocus>
                 <onleft>607</onleft>
@@ -203,8 +201,6 @@
                 <posy>0</posy>
                 <width>64</width>
                 <height>64</height>
-                <label>31354</label>
-                <font></font>
                 <texturefocus>osd/lyrics/buttons/rewind-fo.png</texturefocus>
                 <texturenofocus>osd/lyrics/buttons/rewind-nofo.png</texturenofocus>
                 <onleft>600</onleft>
@@ -218,9 +214,6 @@
                 <posy>0</posy>
                 <width>64</width>
                 <height>64</height>
-                <label>31351</label>
-                <altlabel>208</altlabel>
-                <font></font>
                 <texturefocus>osd/lyrics/buttons/pause-fo.png</texturefocus>
                 <texturenofocus>osd/lyrics/buttons/pause-nofo.png</texturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -237,8 +230,6 @@
                 <posy>0</posy>
                 <width>64</width>
                 <height>64</height>
-                <label>31352</label>
-                <font></font>
                 <texturefocus>osd/lyrics/buttons/stop-fo.png</texturefocus>
                 <texturenofocus>osd/lyrics/buttons/stop-nofo.png</texturenofocus>
                 <onleft>602</onleft>
@@ -252,8 +243,6 @@
                 <posy>0</posy>
                 <width>64</width>
                 <height>64</height>
-                <label>31353</label>
-                <font></font>
                 <texturefocus>osd/lyrics/buttons/fast-forward-fo.png</texturefocus>
                 <texturenofocus>osd/lyrics/buttons/fast-forward-nofo.png</texturenofocus>
                 <onleft>603</onleft>
@@ -267,8 +256,6 @@
                 <posy>0</posy>
                 <width>64</width>
                 <height>64</height>
-                <label>209</label>
-                <font></font>
                 <texturefocus>osd/lyrics/buttons/next-fo.png</texturefocus>
                 <texturenofocus>osd/lyrics/buttons/next-nofo.png</texturenofocus>
                 <onleft>604</onleft>
@@ -282,8 +269,6 @@
                 <posy>0</posy>
                 <width>64</width>
                 <height>64</height>
-                <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
-                <font></font>
                 <texturefocus></texturefocus>
                 <texturenofocus></texturenofocus>
                 <onclick>PlayerControl(Repeat)</onclick>
@@ -351,8 +336,6 @@
                 <posy>0</posy>
                 <width>64</width>
                 <height>64</height>
-                <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
-                <font></font>
                 <texturefocus>osd/lyrics/buttons/shuffle_off-fo.png</texturefocus>
                 <texturenofocus>osd/lyrics/buttons/shuffle_off-nofo.png</texturenofocus>
                 <usealttexture>Playlist.IsRandom</usealttexture>
