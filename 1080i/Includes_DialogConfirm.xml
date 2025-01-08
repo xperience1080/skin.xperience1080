@@ -203,7 +203,7 @@
                     <posx>623</posx>
                     <posy>699</posy>
                     <description>Cancel</description>
-                    <label>$LOCALIZE[42001]</label>
+                    <label>$LOCALIZE[31922]</label>
                     <texturefocus>buttons/cancel-fo.png</texturefocus>
                     <texturenofocus>buttons/cancel-nf.png</texturenofocus>
                     <include>DialogButtonDimensions</include>

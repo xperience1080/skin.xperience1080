@@ -370,7 +370,7 @@
                         <posy>0</posy>
                         <width>1045</width>
                         <height>270</height>
-                        <label fallback="161">$INFO[ListItem.Plot]</label>
+                        <label fallback="10005">$INFO[ListItem.Plot]</label>
                         <textcolor>bbwhite</textcolor>
                         <align>justify</align>
                         <font>Font-Condensed-S40</font>

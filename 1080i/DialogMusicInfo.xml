@@ -326,7 +326,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Artist]</label>
+                                    <label fallback="10006">$INFO[ListItem.Artist]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -354,7 +354,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Property(Artist_Born)]</label>
+                                    <label fallback="10006">$INFO[ListItem.Property(Artist_Born)]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -382,7 +382,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Property(Artist_Formed)]</label>
+                                    <label fallback="10006">$INFO[ListItem.Property(Artist_Formed)]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -405,7 +405,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Genre]</label>
+                                    <label fallback="10006">$INFO[ListItem.Genre]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -428,7 +428,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Property(Artist_Style)]</label>
+                                    <label fallback="10006">$INFO[ListItem.Property(Artist_Style)]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -494,7 +494,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Album]</label>
+                                    <label fallback="10006">$INFO[ListItem.Album]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -521,7 +521,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Artist]</label>
+                                    <label fallback="10006">$INFO[ListItem.Artist]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -544,7 +544,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Year]</label>
+                                    <label fallback="10006">$INFO[ListItem.Year]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>
@@ -567,7 +567,7 @@
                                     <width>1050</width>
                                     <font>Font-Condensed-S34</font>
                                     <align>left</align>
-                                    <label fallback="416">$INFO[ListItem.Genre]</label>
+                                    <label fallback="10006">$INFO[ListItem.Genre]</label>
                                     <textcolor>aawhite</textcolor>
                                     <scroll>false</scroll>
                                 </control>

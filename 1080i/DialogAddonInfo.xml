@@ -328,7 +328,7 @@
                             <width>1100</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label fallback="416">$INFO[ListItem.AddonType]</label>
+                            <label fallback="10006">$INFO[ListItem.AddonType]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
@@ -355,7 +355,7 @@
                             <width>1100</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label fallback="416">$INFO[ListItem.AddonCreator]</label>
+                            <label fallback="10006">$INFO[ListItem.AddonCreator]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
@@ -378,7 +378,7 @@
                             <width>1100</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label fallback="416">$INFO[ListItem.AddonVersion]</label>
+                            <label fallback="10006">$INFO[ListItem.AddonVersion]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
@@ -401,7 +401,7 @@
                             <width>1100</width>
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
-                            <label fallback="416">$INFO[ListItem.AddonSummary]</label>
+                            <label fallback="10006">$INFO[ListItem.AddonSummary]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>
