@@ -1236,7 +1236,7 @@
                     <control type="label">
                         <width>300</width>
                         <height>100</height>
-                        <font>Font-Condensed-S47</font>
+                        <font>Font-Condensed-S36</font>
                         <textcolor>bbwhite</textcolor>
                         <focusedcolor>bbwhite</focusedcolor>
                         <shadowcolor>77000000</shadowcolor>
@@ -1250,7 +1250,7 @@
                     <control type="label">
                         <width>300</width>
                         <height>100</height>
-                        <font>Font-Condensed-S47</font>
+                        <font>Font-Condensed-S36</font>
                         <textcolor>bbwhite</textcolor>
                         <focusedcolor>bbwhite</focusedcolor>
                         <shadowcolor>77000000</shadowcolor>
