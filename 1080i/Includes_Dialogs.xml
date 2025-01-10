@@ -589,7 +589,7 @@
                     <ondown>8005</ondown>
                     <animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(11)">Conditional</animation>
                 </control>
-                <control type="button" id="30x">
+                <control type="button" id="30">
                     <posx>716</posx>
                     <description>Defaults</description>
                     <label>$LOCALIZE[409]</label>
